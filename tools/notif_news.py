@@ -357,6 +357,51 @@ NEW = {
       ('Can a Class 12 pass candidate apply for graduate posts?', 'No. Graduate posts (CEN 06/2026) need a degree. Class 12 pass candidates apply under CEN 07/2026 for Commercial cum Ticket Clerk, Accounts Clerk cum Typist, Junior Clerk cum Typist and Trains Clerk.'),
       ('Where can I practise RRB NTPC previous year papers?', 'On learnwithanil.in/rrb-ntpc/: real RRB NTPC CBT-1 and CBT-2 shift papers from 2025 and 2026 with RRB\'s answer key and explanations, in English and Hindi, as timed tests or subject-wise.'),
     ]),
+  # Anil, 15 Nov 2026 ("SSC MTS...add pyqs and other required details like other sites"). Checked 15 Nov 2026: no MTS 2026 notice on SSC's site as reported
+  # by vocab24 (13 Nov) and mockli (6 Nov); MTS 2025 dates from Careers360, Shiksha and Free Press Journal.
+  'ssc-mts-2026-notification.html': dict(
+    exam='ssc-mts', board='SSC', site='ssc.gov.in', crumb='SSC MTS 2026 Status',
+    title='SSC MTS 2026 Notification: Not Out Yet (Postponed from 30 June), Eligibility, Age, Exam Pattern, MTS 2025 Result & Previous Papers | Learn with Anil',
+    desc='SSC MTS & Havaldar 2026: the notice due on 30 June 2026 was postponed and is not out as of 15 November 2026. Eligibility (Class 10), age 18–25 / 18–27, '
+         'fee ₹100, the 90-question CBE pattern, where MTS 2025 stands, and SSC MTS previous year papers with answers in English and Hindi.',
+    h1='SSC MTS 2026 notification: not out yet',
+    lede='SSC\'s exam calendar for 2026-27 listed the Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination 2026 notice for 30 June 2026. '
+         'It was postponed, and SSC had not published it as of 15 November 2026. The last cycle, MTS 2025, was notified on 26 June 2025 and its computer-based exam '
+         'was held in February 2026. Below: where things stand, the rules of the last notice (they rarely change), the exam pattern and the MTS previous papers.',
+    hi='एसएससी एमटीएस 2026: 30 जून 2026 को आने वाला नोटिस स्थगित हुआ और 15 नवंबर 2026 तक जारी नहीं हुआ है। पात्रता: 10वीं पास; आयु 18–25 / 18–27 वर्ष।',
+    pdf='https://ssc.gov.in/', pdfname='Staff Selection Commission notices, ssc.gov.in (MTS and Havaldar Examination 2025 notice of 26 June 2025; the MTS 2026 notice is awaited)',
+    more_src=[('https://vocab24.com/ssc-mts/2026', 'Vocab24, 13 November 2026: MTS 2026 notice not published yet'),
+              ('https://news.careers360.com/ssc-mts-notification-2025-registration-begins-multi-tasking-staff-havaldar-recruitment-vacancy-age-limit-salary-syllabus-cut-off/amp', 'Careers360: MTS 2025 notice, age, fee and pattern'),
+              ('https://competition.careers360.com/exams/ssc-mts', 'Careers360: MTS 2025 exam held 4–20 February 2026, answer key 3 March 2026'),
+              ('https://www.freepressjournal.in/education/ssc-mts-havaldar-result-2026-out-at-sscgovin-8274-shortlisted-for-petpst-727-candidates-flagged-for-malpractice', 'Free Press Journal, 4 August 2026: MTS 2025 CBE result for the Havaldar PET/PST')],
+    sections=[
+      ('Where SSC MTS 2026 stands', 'table', [
+        ('Notice (SSC calendar date)', '30 June 2026 — postponed'), ('Notice published?', 'No, as of 15 November 2026'),
+        ('Applications', 'Will open with the notice, online at ssc.gov.in (about four weeks in past cycles)'),
+        ('Computer-based exam', 'Date to be announced with the notice'), ('Vacancies', 'Will be given in the notice (MTS 2025: 7,948 after revision)')]),
+      ('Where MTS 2025 stands (the last cycle)', 'table', [
+        ('Notice', '26 June 2025; applications 26 June to 24 July 2025'), ('Computer-based exam', '4 to about 20 February 2026 (rescheduled at some centres)'),
+        ('Answer key', '3 March 2026 (as reported)'), ('CBE result', '3 August 2026: list for the Havaldar PET/PST; a further list on 7 October 2026 (as reported)'),
+        ('Havaldar PET/PST', '24 to 31 August 2026'), ('Final result (MTS and Havaldar)', 'Reports differ; check ssc.gov.in')]),
+      ('Exam pattern (last notice)', 'table+', (['Session', 'Subjects (questions)', 'Marks · time · negative marking'], [
+        ('Session I', 'Numerical & Mathematical Ability (20), Reasoning Ability & Problem Solving (20)', '120 marks · 45 minutes · no negative marking'),
+        ('Session II', 'General Awareness (25), English Language & Comprehension (25)', '150 marks · 45 minutes · 1 mark cut per wrong answer'),
+        ('Havaldar only', 'Physical Efficiency Test and Physical Standard Test', 'qualifying')])),
+      ('Who could apply (last notice)', 'list', [
+        'Class 10 (matriculation) or equivalent, passed on or before the cut-off date in the notice.',
+        'Age on 1 August of the notice year: 18–25 years for MTS, 18–27 years for Havaldar (CBIC & CBN) and some MTS posts; relaxation OBC 3, SC/ST 5, PwBD 10 years.',
+        'Fee ₹100; women, SC, ST, PwBD and ex-servicemen pay nothing.',
+        'The paper is set in English, Hindi and 13 regional languages; you choose the language when you apply.']),
+    ],
+    faqs=[
+      ('Is the SSC MTS 2026 notification out?', 'No, not as of 15 November 2026. SSC\'s calendar had it on 30 June 2026, but it was postponed and SSC has not given a new date.'),
+      ('When will the SSC MTS 2026 notification come?', 'SSC has not announced a date. Coaching sites have guessed several months (October, November); none of these is an SSC date. Watch ssc.gov.in.'),
+      ('What is the SSC MTS age limit?', 'In the last notice: 18–25 years for MTS and 18–27 years for Havaldar and some MTS posts, on 1 August of the notice year, with the usual relaxations (OBC 3, SC/ST 5, PwBD 10 years).'),
+      ('What qualification do I need for SSC MTS?', 'Class 10 (matriculation) or equivalent from a recognised board.'),
+      ('Is there negative marking in SSC MTS?', 'Only in Session II (General Awareness and English): 1 mark is cut for each wrong answer. Session I (Maths and Reasoning) has no negative marking. Every question carries 3 marks.'),
+      ('Is the SSC MTS 2025 result out?', 'The computer-based exam result for the Havaldar PET/PST came on 3 August 2026, and the PET/PST was held from 24 to 31 August 2026. Check ssc.gov.in for the final result of MTS and Havaldar.'),
+      ('Where can I practise SSC MTS previous papers?', 'On the SSC MTS page of this site: whole shifts of MTS 2024 with SSC\'s answer key and an explanation for every question, in English and Hindi, as timed mock tests or by subject.'),
+    ]),
   'appsc-amvi-notification-2026.html': dict(
     exam='appsc-amvi', board='APPSC', site='psc.ap.gov.in', crumb='AMVI Notification 2026',
     title='APPSC AMVI Notification 2026 – 50 Posts, Apply Online 6–26 November, Eligibility, Licence, Pattern & Previous Papers | Learn with Anil',
@@ -478,7 +523,7 @@ NEW = {
 }
 
 
-ASOF_PAGE = {'rrb-ntpc-2026-notification.html': '15 November 2026', 'upsc-cse-2027-notification.html': '11 November 2026', 'ssc-cgl-2026-notification.html': '11 November 2026', 'tgpsc-hmwssb-manager-notification-2026.html': '11 November 2026', 'appsc-eo-grade-3-notification-2026.html': '11 November 2026', 'appsc-fro-notification-2026.html': '11 November 2026', 'appsc-analyst-grade-2-notification-2026.html': '11 November 2026', 'ap-police-si-notification-2026.html': '11 November 2026', 'ap-police-constable-notification-2026.html': '11 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '11 November 2026', 'ts-police-constable-exam-date-hall-ticket-2026.html': '11 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '11 November 2026', 'appsc-group-1-notification-2026.html': '11 November 2026', 'appsc-group-2-notification-2026.html': '11 November 2026', 'upsc-capf-2027-notification.html': '11 November 2026', 'upsc-epfo-apfc-2026-notification.html': '11 November 2026', 'tgpsc-amvi-notification.html': '11 November 2026', 'appsc-amvi-notification-2026.html': '11 November 2026', 'ts-police-si-answer-key-2026.html': '11 November 2026', 'ts-police-constable-answer-key-2026.html': '11 November 2026', 'tgpsc-mpso-aso-notification-2026.html': '11 November 2026'}   # pages whose answers were re-checked later (scheduled checks, 11 Nov 2026)
+ASOF_PAGE = {'ssc-mts-2026-notification.html': '15 November 2026', 'rrb-ntpc-2026-notification.html': '15 November 2026', 'upsc-cse-2027-notification.html': '11 November 2026', 'ssc-cgl-2026-notification.html': '11 November 2026', 'tgpsc-hmwssb-manager-notification-2026.html': '11 November 2026', 'appsc-eo-grade-3-notification-2026.html': '11 November 2026', 'appsc-fro-notification-2026.html': '11 November 2026', 'appsc-analyst-grade-2-notification-2026.html': '11 November 2026', 'ap-police-si-notification-2026.html': '11 November 2026', 'ap-police-constable-notification-2026.html': '11 November 2026', 'ts-police-si-exam-date-hall-ticket-2026.html': '11 November 2026', 'ts-police-constable-exam-date-hall-ticket-2026.html': '11 November 2026', 'appsc-assistant-environmental-engineer-notification-2026.html': '11 November 2026', 'appsc-group-1-notification-2026.html': '11 November 2026', 'appsc-group-2-notification-2026.html': '11 November 2026', 'upsc-capf-2027-notification.html': '11 November 2026', 'upsc-epfo-apfc-2026-notification.html': '11 November 2026', 'tgpsc-amvi-notification.html': '11 November 2026', 'appsc-amvi-notification-2026.html': '11 November 2026', 'ts-police-si-answer-key-2026.html': '11 November 2026', 'ts-police-constable-answer-key-2026.html': '11 November 2026', 'tgpsc-mpso-aso-notification-2026.html': '11 November 2026'}   # pages whose answers were re-checked later (scheduled checks, 11 Nov 2026)
 # ---------------------------------------------------------------- TGPSC MPSO / ASO (Anil, 8 Nov 2026: link to Notification 07/2026, "pls add pyqs for it in
 # telangana section"). The 2018 question booklets were not found online (only TSPSC's final keys), so Anil chose "start with what's available": this page,
 # with Paper I practice from TGPSC's General Studies & General Abilities papers already on the site. Add the 2018 papers as an exam when the booklets come.

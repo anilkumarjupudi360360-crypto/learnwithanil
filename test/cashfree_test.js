@@ -68,8 +68,8 @@ function makeEnv(extraProps) {
   const api = fn(...names.map(n => env[n]));
   const call = b => JSON.parse(api.doPost({postData: {contents: JSON.stringify(b)}, parameter: {}}).t);
   const cfHook = (type, order_id, extra) => JSON.parse(api.doPost({parameter: {}, postData: {type: 'application/json',
-    contents: JSON.stringify({type, event_time: '2026-11-04T10:00:00+05:30', data: Object.assign({order: {order_id, order_amount: 45}, payment: {cf_payment_id: '999', payment_status: 'SUCCESS'}}, extra || {})})}}).t);
-  const pay = id => { cf.orders[id].order_status = 'PAID'; cf.payments[id] = [{cf_payment_id: 5114915573, payment_status: 'SUCCESS', payment_amount: 45}]; };
+    contents: JSON.stringify({type, event_time: '2026-11-04T10:00:00+05:30', data: Object.assign({order: {order_id, order_amount: 149}, payment: {cf_payment_id: '999', payment_status: 'SUCCESS'}}, extra || {})})}}).t);
+  const pay = id => { cf.orders[id].order_status = 'PAID'; cf.payments[id] = [{cf_payment_id: 5114915573, payment_status: 'SUCCESS', payment_amount: 149}]; };
   const passes = () => (sheets.passes ? sheets.passes.rows.slice(1) : []);
   return {api, call, cfHook, pay, passes, sheets, im, cf, props};
 }
@@ -97,13 +97,13 @@ const buy = (E, who) => E.call(Object.assign({action: 'buy', exam: 'ts-police-si
   ok(r.ok && r.gateway === 'cashfree' && r.mode === 'production' && /^LWA\d{6}[0-9A-F]{6}$/.test(r.order) && r.session === 'session_' + r.order, 'buy gives a Cashfree session and an LWA order id');
   const c = E.cf.calls[0];
   ok(c.base === 'api' && c.method === 'post' && c.headers['x-api-version'] === '2026-01-01', 'production API, version 2026-01-01');
-  ok(c.body.order_amount === 45 && c.body.order_currency === 'INR', 'price ₹45 fixed by the script');
+  ok(c.body.order_amount === 149 && c.body.order_currency === 'INR', 'price ₹149 fixed by the script');
   ok(c.body.order_meta.return_url === 'https://learnwithanil.in/ts-police-si/?cf_order=' + r.order, 'student comes back to the same page with ?cf_order=');
   ok(c.body.order_meta.notify_url === 'https://script.google.com/macros/s/TEST/exec', 'Cashfree notifies this script');
   ok(c.body.customer_details.customer_id === 'lwa9876543210' && c.body.customer_details.customer_phone === '9876543210' &&
      c.body.customer_details.customer_email === 'ravi@example.com' && c.body.customer_details.customer_name === 'Ravi Kumar', 'customer details');
   const rq = E.sheets.requests.rows[1];
-  ok(rq[1] === r.order && rq[2] === '9876543210' && rq[3] === 'all' && rq[4] === 'pyq' && rq[5] === 45 && rq[8] === 'created', 'request row recorded');
+  ok(rq[1] === r.order && rq[2] === '9876543210' && rq[3] === 'all' && rq[4] === 'pyq' && rq[5] === 149 && rq[8] === 'created', 'request row recorded');
   const r2 = buy(E, Object.assign({}, S, {name: 'రవి', back: 'https://evil.example/'}));
   const c2 = E.cf.calls[E.cf.calls.length - 1];
   ok(!('customer_name' in c2.body.customer_details), 'a Telugu name is left out (optional for Cashfree)');
@@ -125,7 +125,7 @@ const buy = (E, who) => E.call(Object.assign({action: 'buy', exam: 'ts-police-si
   const v = E.call({action: 'verify', exam: 'ts-police-si', request: r.order, device: 'd1'});
   const p = E.passes();
   ok(v.ok && p.length === 1, 'verify after paying: pass recorded');
-  ok(p[0][1] === '9876543210' && p[0][2] === 'all' && p[0][3] === 'pyq' && p[0][5] === 'CF5114915573' && p[0][6] === r.order && p[0][7] === 45 && p[0][8] === 'verify', 'pass row: phone, all exams, Cashfree payment id, order id, ₹45');
+  ok(p[0][1] === '9876543210' && p[0][2] === 'all' && p[0][3] === 'pyq' && p[0][5] === 'CF5114915573' && p[0][6] === r.order && p[0][7] === 149 && p[0][8] === 'verify', 'pass row: phone, all exams, Cashfree payment id, order id, ₹149');
   ok(E.sheets.requests.rows[1][8] === 'paid', 'request marked paid');
   E.call({action: 'verify', exam: 'ts-police-si', request: r.order, device: 'd1'});
   ok(E.cfHook('PAYMENT_SUCCESS_WEBHOOK', r.order).ok && E.passes().length === 1, 'second verify and the webhook add nothing');
@@ -165,7 +165,7 @@ const buy = (E, who) => E.call(Object.assign({action: 'buy', exam: 'ts-police-si
   const E = makeEnv(CFKEYS);
   const r = buy(E);
   E.pay(r.order); E.cf.orders[r.order].order_amount = 1;
-  ok(!E.call({action: 'verify', exam: 'ts-police-si', request: r.order}).ok && E.passes().length === 0, 'order paid for ₹1 instead of ₹45: no pass');
+  ok(!E.call({action: 'verify', exam: 'ts-police-si', request: r.order}).ok && E.passes().length === 0, 'order paid for ₹1 instead of ₹149: no pass');
 }
 
 // 7. "Link my payment" with the LWA order id from the receipt

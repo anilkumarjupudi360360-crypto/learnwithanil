@@ -1,0 +1,856 @@
+# SSC Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination 2024, held 30 September 2024, Shift 1 (9:00 AM). 90 questions in two sessions: Session I Numerical & Mathematical Ability (Q1–20) and Reasoning Ability & Problem Solving (Q21–40); Session II General Awareness (Q41–65) and English Language & Comprehension (Q66–90).
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via sscportal.in); answers are the options SSC marked correct on that sheet (answer-key stage). Q3 is cut off and Q4 is missing on the sheet, so both are left out. Explanations by Learn with Anil.
+
+Q 1 | qa | Percentage, Profit & Interest
+Atul sold two sacks of rice for ₹19,200 each. On one, he gained 20% and on the other, he lost 20%. Find his gain or loss percentage in the whole transaction.
+(1) 7% profit
+(2) 8% profit
+(3) 5% loss
+(4) 4% loss
+= 4
+~ When two articles are sold at the same price, one at x% gain and the other at x% loss, there is always a loss of x²/100 %. Here 20²/100 = 4% loss. Check: cost prices are 19,200/1.2 = ₹16,000 and 19,200/0.8 = ₹24,000, total ₹40,000; selling price ₹38,400, so the loss is ₹1,600 = 4%.
+
+Q 2 | qa | Percentage, Profit & Interest
+Riya offers 12% discount on all her goods and offers an additional discount of 6% to those customers who pay in cash. How much will a customer have to pay for a fan marked for ₹2,400 if he pays in cash?
+(1) ₹2,300.50
+(2) ₹2,122.50
+(3) ₹1,985.28
+(4) ₹1,900
+= 3
+~ Successive discounts are applied one after the other, not added. After 12%: 2,400 × 0.88 = ₹2,112. After a further 6% for cash: 2,112 × 0.94 = ₹1,985.28. (Adding the discounts as 18% would give ₹1,968, which is not an option.)
+
+Q 5 | qa | Data Interpretation & Statistics
+The following bar graph shows the production of cement (in 10,000 tones) by 4 companies X, Y, Z and W during the period 2018 - 2020. Study the bar graph carefully and answer the question.
+Which company has the maximum average production over the course of 3 years?
+(1) X
+(2) W
+(3) Z
+(4) Y
+= 1
+! img/mts24a-q5.png
+~ Add each company's three bars (the same number of years, so the largest total has the largest average): X = 5.2 + 8 + 8.1 = 21.3 (average 7.1); Y = 6.5 + 6.6 + 7.6 = 20.7; Z = 7 + 7.2 + 6.2 = 20.4; W = 6.8 + 6.9 + 7 = 20.7. X has the maximum average production.
+
+Q 6 | qa | Ratio, Average & Mixtures
+In a 100-marks test, the average of marks scored by 50 students was found to be 65. Later on, it was discovered that a score of 88 was misread as 68. Find the correct average.
+(1) 65.60
+(2) 65.40
+(3) 65.70
+(4) 65.50
+= 2
+~ Original total = 50 × 65 = 3,250. The score 88 was read as 68, so the total was 20 marks short: correct total = 3,270. Correct average = 3,270 ÷ 50 = 65.40.
+
+Q 7 | qa | Time, Work, Speed & Distance
+A thief saw a policeman, and he started running at a speed of 18 m/s. After 12 seconds, the policeman starts running behind the thief at a certain speed. If the policeman covered 864 meters distance to reach the thief, then the speed (in m/s) of the policeman is:
+(1) 15
+(2) 30
+(3) 24
+(4) 28
+= 3
+~ In 12 seconds the thief gets a lead of 18 × 12 = 216 m. When caught, the policeman has run 864 m, so the thief has run 864 − 216 = 648 m in the same time: 648 ÷ 18 = 36 s. Policeman's speed = 864 ÷ 36 = 24 m/s.
+
+Q 8 | qa | Number System & Simplification
+Three numbers are in the ratio of 6:7:3 and their LCM is 3654.Their HCF is:
+(1) 27
+(2) 87
+(3) 29
+(4) 28
+= 2
+~ Let the numbers be 6x, 7x and 3x, where x is their HCF (6, 7 and 3 have no common factor). Their LCM is 42x, so 42x = 3,654 and x = 87. HCF = 87 (the numbers are 522, 609 and 261).
+
+Q 9 | qa | Time, Work, Speed & Distance
+Two trains, 148 m and 152 m long, are running towards each other on parallel lines at 62 km/h and 46km/h, respectively. In what time will they be clear of each other from the moment they meet?
+(1) 10 sec
+(2) 5 sec
+(3) 15 sec
+(4) 20 sec
+= 1
+~ Trains moving towards each other: relative speed = 62 + 46 = 108 km/h = 108 × 5/18 = 30 m/s. To be clear of each other they must cover both lengths, 148 + 152 = 300 m. Time = 300 ÷ 30 = 10 seconds.
+
+Q 10 | qa | Mensuration
+The area of an equilateral triangle is √5043/4 sq. cm. The side of the equilateral triangle is:
+(1) √29 cm
+(2) √41 cm
+(3) √23 cm
+(4) √47 cm
+= 2
+~ Area of an equilateral triangle = (√3/4)a². So (√3/4)a² = √5043/4, giving a² = √5043/√3 = √(5043 ÷ 3) = √1681 = 41. Hence a = √41 cm.
+
+Q 11 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹3500 as a sum borrowed at 7% per year rate of interest for 6 years.
+(1) 1410
+(2) 1470
+(3) 1510
+(4) 1430
+= 2
+~ Simple interest = P × R × T / 100 = 3,500 × 7 × 6 / 100 = ₹1,470.
+
+Q 12 | qa | Data Interpretation & Statistics
+Study the given table and answer the question that follows.
+The given table shows the number of new employees added to different categories of employees in a company for four years and the number of employees from these categories who left the company every year.
+Year | Managers (New) | Managers (Left) | Technicians (New) | Technicians (Left) | Accountants (New) | Accountants (Left)
+2001 | 280 | 120 | 260 | 50 | 200 | 100
+2002 | 300 | 92 | 340 | 160 | 228 | 95
+2003 | 310 | 150 | 450 | 200 | 254 | 125
+2004 | 420 | 120 | 480 | 180 | 260 | 120
+During the period between 2001 and 2004, the total number of Technicians who left the Company is what percentage (rounded off to the nearest integer) of the total number of Technicians who joined the Company?
+(1) 35%
+(2) 24%
+(3) 29%
+(4) 39%
+= 4
+~ Technicians who left = 50 + 160 + 200 + 180 = 590. Technicians who joined = 260 + 340 + 450 + 480 = 1,530. Percentage = 590 ÷ 1,530 × 100 = 38.56% ≈ 39%.
+
+Q 13 | qa | Ratio, Average & Mixtures
+In a college, 20% of the number of boys are equal to the three-fourth of the number of girls. What is the ratio of boys and girls in that college ?
+(1) 5 : 3
+(2) 13 : 4
+(3) 7 : 6
+(4) 15 : 4
+= 4
+~ 20% of boys = three-fourths of girls: 0.2B = 0.75G, so B/G = 0.75/0.2 = 15/4. The ratio of boys to girls is 15 : 4.
+
+Q 14 | qa | Ratio, Average & Mixtures
+The ratio of the present age of A and B is 3 : 1. Five years ago, the ratio of their ages was 5 : 1. The age of A (in years) after eight years will be:
+(1) 22
+(2) 38
+(3) 30
+(4) 40
+= 2
+~ Let the present ages be 3x and x. Five years ago: (3x − 5)/(x − 5) = 5/1, so 3x − 5 = 5x − 25 and x = 10. A is 30 now, so after eight years A will be 38.
+
+Q 15 | qa | Ratio, Average & Mixtures
+The average monthly expenditure of a family was ₹8,600 during the first three months, ₹9,750 during the next four months and ₹9,920 during the last five months of a year. If the total savings during the year was ₹65,300, the average monthly income (in ₹) of the family was:
+(1) 14,597
+(2) 15,794
+(3) 15,479
+(4) 14,975
+= 4
+~ Yearly expenditure = 3 × 8,600 + 4 × 9,750 + 5 × 9,920 = 25,800 + 39,000 + 49,600 = ₹1,14,400. Income = expenditure + savings = 1,14,400 + 65,300 = ₹1,79,700. Average monthly income = 1,79,700 ÷ 12 = ₹14,975.
+
+Q 16 | qa | Percentage, Profit & Interest
+A sum invested at 5% simple interest per annum grows to ₹806 in 6 years. If the amount remains the same, how much will it grow at a 12% simple interest rate in 5 years?
+(1) ₹1,120
+(2) ₹992
+(3) ₹1,000
+(4) ₹985
+= 2
+~ At 5% for 6 years the interest is 30% of the principal, so P × 1.30 = 806 and P = ₹620. At 12% for 5 years the interest is 60%: 620 × 0.60 = ₹372, so the amount = 620 + 372 = ₹992.
+
+Q 17 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹3000 as a sum borrowed at 7% per year rate of interest for 5 years.
+(1) 1090
+(2) 1010
+(3) 990
+(4) 1050
+= 4
+~ Simple interest = P × R × T / 100 = 3,000 × 7 × 5 / 100 = ₹1,050.
+
+Q 18 | qa | Ratio, Average & Mixtures
+The average monthly income of A and B is ₹3,590. The average monthly income of B and C is ₹4,250. The average monthly income of A and C is ₹6,500. What is the monthly income of C?
+(1) ₹7,545
+(2) ₹6,984
+(3) ₹8,190
+(4) ₹7,160
+= 4
+~ A + B = 2 × 3,590 = 7,180; B + C = 8,500; A + C = 13,000. Adding: 2(A + B + C) = 28,680, so A + B + C = 14,340. C = 14,340 − (A + B) = 14,340 − 7,180 = ₹7,160.
+
+Q 19 | qa | Percentage, Profit & Interest
+A man sells an article at a certain price and suffers a loss of 20%. If he sells the article at ₹100 more, he gets a profit of 30%. Find the cost price of the article (in ₹).
+(1) 200
+(2) 400
+(3) 300
+(4) 250
+= 1
+~ Going from a 20% loss to a 30% profit changes the selling price by 20% + 30% = 50% of the cost price. That change is ₹100, so 50% of CP = 100 and CP = ₹200. (Check: SP 160 at 20% loss; 260 gives 30% profit.)
+
+Q 20 | qa | Mensuration
+The area of a regular hexagon is 2048√3 cm². What is the length (in cm) of each side of the hexagon?
+(1) 64√3/3
+(2) 32√3/3
+(3) 64√3
+(4) 32√3
+= 1
+~ A regular hexagon is six equilateral triangles, so its area = (3√3/2)a². Then (3√3/2)a² = 2048√3 gives a² = 4096/3, so a = 64/√3 = 64√3/3 cm.
+
+Q 21 | rea | Series
+What should come in place of ? in the given series based on the English alphabetical order?
+ACE ,FHJ, KMO, PRT , ?
+(1) BCD
+(2) NOP
+(3) GJK
+(4) UWY
+= 4
+~ The first letters move 5 places: A, F, K, P, U. In every cluster the letters skip one letter (A_C_E, F_H_J, K_M_O, P_R_T). So the next cluster starts with U: U, W, Y = UWY.
+
+Q 22 | rea | Arrangement & Puzzles
+Seven people A, B, C, D, E, F and G are sitting around a circular table, facing the center (but not necessarily in the same order). C is sitting to the immediate right of E. D is sitting third to the left of C. A is the immediate neighbour of B and C. F is not the immediate neighbour of E.
+What is the position of G with respect to A?
+(1) To the immediate left
+(2) Second to the left
+(3) Second to the right
+(4) Third to the left
+= 4
+~ Facing the centre, a person's right is the next seat anticlockwise. C is right of E; A sits between C and B (on the side away from E); D is third to the left of C, which puts D two seats beyond B. The seats left are between B and D, and between D and E. F cannot sit next to E, so F is between B and D and G is between D and E. Order going right: C, A, B, F, D, G, E. Counting left from A: C, E, G, so G is third to the left of A.
+
+Q 23 | rea | Arrangement & Puzzles
+Seven people A, B, C, D, E, F and G are sitting around a circular table, facing the centre (but not necessarily in the same order). A is sitting second to the right of E. Only one person is sitting between D and A. B is sitting third to the right of G. F is an immediate neighbour of B. How many people are sitting between D and E when counted from the left of E?
+(1) One
+(2) Two
+(3) Four
+(4) Three
+= 2
+~ Take E's seat first. A is second to E's right; D, with one person between D and A, is two further to the right. B is third to the right of G: the only placement that leaves a free seat next to B for F puts G between A and D and B to the immediate left of E, with F beside B and C between E and A. Going left from E: B, F, then D, so two people (B and F) sit between D and E.
+
+Q 24 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some chickens are hens.
+No hen is an egg.
+Conclusions:
+(I) No chicken is an egg.
+(II) All hens are chickens.
+(1) Both conclusions I and II follow
+(2) Only conclusion II follows
+(3) Neither conclusion I nor II follows
+(4) Only conclusion I follows
+= 3
+~ 'Some chickens are hens' and 'No hen is an egg' say nothing about chickens that are not hens; they may or may not be eggs, so 'No chicken is an egg' is not certain. 'Some chickens are hens' does not mean every hen is a chicken. Neither conclusion follows.
+
+Q 25 | rea | Analogy & Classification
+HFLI is related to OMSP in a certain way based on the English alphabetical order. In the same way, KIOL is related to RPVS. To which of the following is MKQN related, following the same logic?
+(1) RTUX
+(2) RTXU
+(3) TRXU
+(4) TRUX
+= 3
+~ Each letter moves 7 places forward: H→O, F→M, L→S, I→P, and K→R, I→P, O→V, L→S. Applying +7 to MKQN: M→T, K→R, Q→X, N→U, giving TRXU.
+
+Q 26 | rea | Series
+What should come in place of '?' in the given series?
+-12, +24, -48, +96, ?, +384
+(1) -192
+(2) 96
+(3) -108
+(4) 108
+= 1
+~ Each term is the previous term multiplied by −2: −12 × −2 = 24, 24 × −2 = −48, −48 × −2 = 96, 96 × −2 = −192, and −192 × −2 = 384 confirms it.
+
+Q 27 | rea | Non-verbal Reasoning
+Select the option figure that will replace the question mark (?) in the figure given below to complete the pattern.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24a-q27.png
+~ The figure is symmetric about its vertical middle line. The inner square's left side lies halfway between the outer left edge and the centre, so its right side must lie halfway between the centre and the right edge. The missing triangle (apex at the centre, base on the right edge) must therefore have one vertical line halfway along it, as in option 2; option 1 puts it at the edge and option 3 near the apex.
+
+Q 28 | rea | Coding-Decoding
+In a code language, 'COLONY' is coded as '48' and 'INTERCHANGE' is coded as '88'. How will 'MOUNTAIN' be coded in the same language?
+(1) 66
+(2) 84
+(3) 64
+(4) 86
+= 3
+~ The code is 8 × the number of letters: COLONY has 6 letters (6 × 8 = 48) and INTERCHANGE has 11 (11 × 8 = 88). MOUNTAIN has 8 letters, so its code is 8 × 8 = 64.
+
+Q 29 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statement(s).
+Statements:
+No bus is a car.
+No car is a truck.
+Conclusions:
+(I) No car is a bus.
+(II) No truck is a car.
+(1) Both conclusions I and II follow.
+(2) Only conclusion I follows.
+(3) Neither conclusion I nor II follows.
+(4) Only conclusion II follows.
+= 1
+~ A universal negative statement can be reversed: 'No bus is a car' means 'No car is a bus' (I follows), and 'No car is a truck' means 'No truck is a car' (II follows). Both conclusions follow.
+
+Q 30 | rea | Mathematical Operations
+What will come in the place of ‘?’ in the following equation, if ‘+’ and ‘–‘ are
+interchanged and ‘×’ and ‘÷’ are interchanged?
+39 ÷ 3 – 24 + 60 × 12 = ?
+(1) 163
+(2) 190
+(3) 86
+(4) 136
+= 4
+~ After interchanging + with − and × with ÷, the equation becomes 39 × 3 + 24 − 60 ÷ 12. By BODMAS: 117 + 24 − 5 = 136.
+
+Q 31 | rea | Coding-Decoding
+In a certain code language, ‘WING’ is coded as ‘2618’ and ‘NEAT’ is coded as ‘3469’. What is the code for ‘N’ in that language?
+(1) 1
+(2) 3
+(3) 6
+(4) 8
+= 3
+~ The only letter common to WING and NEAT is N, and the only digit common to 2618 and 3469 is 6. So N is coded as 6.
+
+Q 32 | rea | Analogy & Classification
+JM12 is related to EH15 in a certain way. In the same way, QT34 is related to LO37. To which of the following is SV 23 related following the same logic?
+(1) MP26
+(2) NP27
+(3) NQ26
+(4) MQ27
+= 3
+~ Each letter moves 5 places back and the number increases by 3: J→E, M→H, 12→15 and Q→L, T→O, 34→37. For SV23: S→N, V→Q, 23→26, giving NQ26.
+
+Q 33 | rea | Non-verbal Reasoning
+Select the figure from among the given options that can replace the question mark (?) in the following series and complete the pattern.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/mts24a-q33.png
+~ The figures alternate: figure 1 changes into figure 3 by one fixed movement (K and 8 stay in the right column; every other symbol moves to a new cell), and figure 2 changes into figure 4 the same way. Applying that movement to figure 3 gives rows ↑ ᗡ K / A C 8 / Z △ P, which is option 4.
+
+Q 34 | rea | Mathematical Operations
+7 is related to 30 following a certain logic. Following the same logic, 14 is related to 100. To which of the following is 22 related following the same logic?
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 170
+(2) 180
+(3) 190
+(4) 189
+= 2
+~ Subtract 4 and multiply by 10: (7 − 4) × 10 = 30 and (14 − 4) × 10 = 100. So (22 − 4) × 10 = 180.
+
+Q 35 | rea | Coding-Decoding
+In a certain code language, ‘I swim fast’ is coded as ‘cp lk bs’ and ‘may I go’ is coded as ‘ap sb lk’. How is ‘I’ coded in that code language?
+(1) cp
+(2) lk
+(3) sb
+(4) bs
+= 2
+~ The word common to 'I swim fast' and 'may I go' is 'I', and the only code common to 'cp lk bs' and 'ap sb lk' is 'lk'. So 'I' is coded as lk.
+
+Q 36 | rea | Coding-Decoding
+In a code language, 'CAKE' is written as ‘ACIG’ and 'GOLD' is written as 'EQJF'. How will 'WIRE' be written in that language?
+(1) UKPG
+(2) GUKP
+(3) GPUK
+(4) GUPK
+= 1
+~ The letters move −2, +2, −2, +2 in turn: C−2 = A, A+2 = C, K−2 = I, E+2 = G, and G→E, O→Q, L→J, D→F. For WIRE: W−2 = U, I+2 = K, R−2 = P, E+2 = G, giving UKPG.
+
+Q 37 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying etc. to 13, can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(4, 35, 11)
+(1, 82, 61)
+(1) (2, 53, 6)
+(2) (13, 53, 20)
+(3) (8, 33, 15)
+(4) (21, 310, 23)
+= 2
+~ The middle number is the sum of the other two plus 20: 4 + 11 + 20 = 35 and 1 + 61 + 20 = 82. Only (13, 53, 20) fits: 13 + 20 + 20 = 53. The others give 28, 43 and 64 in the middle.
+
+Q 38 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/mts24a-q38.png
+~ With the mirror on the right side, the image shows the characters in reverse order (a, 1, 0, R, H) and each character is flipped left to right, while up and down stay the same. Option 1 shows exactly this; the other options keep some characters unflipped or in the wrong order.
+
+Q 39 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation if ‘+’ and ‘–’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+5 ÷ 6 × 3 – 4 + 11 = ?
+(1) 7
+(2) 14
+(3) 11
+(4) 3
+= 4
+~ After interchanging + with − and × with ÷, the equation becomes 5 × 6 ÷ 3 + 4 − 11. By BODMAS: 30 ÷ 3 = 10, then 10 + 4 − 11 = 3.
+
+Q 40 | rea | Non-verbal Reasoning
+Identify the figure from the given options that when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24a-q40.png
+~ The ∀ sign stays at the bottom. The other three symbols move round the top-left, top-right and middle-right places, repeating every three figures: figure 4 is the same as figure 1, so figure 5 must be the same as figure 2 — star at top-left, ram sign at top-right and the ⏀ sign at middle-right, which is option 2.
+
+Q 41 | cur | Static GK & Culture
+In which state/union territory is Losar celebrated to mark the start of the new year in that region?
+(1) Kerala
+(2) Ladakh
+(3) New Delhi
+(4) Bihar
+= 2
+~ Losar is the Tibetan Buddhist New Year, celebrated in Ladakh (and in Sikkim, Arunachal Pradesh and Himachal Pradesh) with prayers, masked dances and feasts. In Ladakh it falls around December–January by the Tibetan lunar calendar.
+
+Q 42 | cur | Sports
+Who was the captain of Royal Challengers Bangalore in the Women's Premier League event 2023?
+(1) Harmanpreet Kaur
+(2) Shafali Verma
+(3) Deepti Sharma
+(4) Smriti Mandhana
+= 4
+~ Smriti Mandhana captained Royal Challengers Bangalore in the first Women's Premier League in 2023. Harmanpreet Kaur led Mumbai Indians (the champions), and Shafali Verma and Deepti Sharma played for Delhi Capitals and UP Warriorz.
+
+Q 43 | pol | Government & Parliament
+As of 31st October 2023, the senior-most member (in terms of age) in the 17th Lok Sabha, Shafiqur Rahman Barq represents which political party?
+(1) Samajwadi Party
+(2) Bharatiya Janata Party
+(3) Indian National Congress
+(4) Rashtriya Janata Dal
+= 1
+~ Shafiqur Rahman Barq, the Samajwadi Party MP from Sambhal (Uttar Pradesh), was the oldest member of the 17th Lok Sabha. He died in February 2024.
+
+Q 44 | ih | Art & Culture
+With reference to medieval Indian architecture style, what is ‘Pietra Dura’?
+(1) Decorating the walls with floral designs made of semi-precious stones
+(2) Oil paintings on the walls of Taj Mahal
+(3) Fine quality clothes used by the Mughals
+(4) Sculpture art of the Mauryan period
+= 1
+~ Pietra dura (Italian for 'hard stone') is the inlay of cut semi-precious stones into marble to make floral and geometric designs. The Mughals used it widely under Jahangir and Shah Jahan, for example at the tomb of I'timad-ud-Daulah and the Taj Mahal.
+
+Q 45 | sci | Chemistry
+What is the chemical formula for sodium bicarbonate?
+(1) NaOH
+(2) NaCl
+(3) NaHCO₃
+(4) Na₂CO₃
+= 3
+~ Sodium bicarbonate (sodium hydrogen carbonate, baking soda) is NaHCO₃. NaOH is caustic soda, NaCl is common salt and Na₂CO₃ is sodium carbonate (washing soda when hydrated).
+
+Q 46 | geo | Indian Geography
+How many countries share their land borders with India?
+(1) Nine
+(2) Seven
+(3) Eight
+(4) Six
+= 2
+~ India shares land borders with seven countries: Pakistan, Afghanistan, China, Nepal, Bhutan, Bangladesh and Myanmar. Sri Lanka and the Maldives are maritime neighbours only.
+
+Q 47 | ih | Modern India
+Which of the following books is written by Dadabhai Naoroji?
+(1) Economics History of India
+(2) Poverty and Un-British Rule in India
+(3) Poverty and India
+(4) Important Chapters of Poverty
+= 2
+~ Dadabhai Naoroji wrote 'Poverty and Un-British Rule in India' (1901), which set out his drain theory: that Britain was draining India's wealth through home charges, salaries and profits sent abroad.
+
+Q 48 | sci | Chemistry
+The chemical compound present in turmeric is:
+(1) curcumin
+(2) capsaicin
+(3) carotene
+(4) tartaric acid
+= 1
+~ The yellow colour of turmeric comes from curcumin, a polyphenol. Capsaicin makes chillies hot, carotene is the orange pigment of carrots and tartaric acid is found in tamarind and grapes.
+
+Q 49 | ih | Medieval India
+Which of the following dynasties established the Vijayanagara kingdom in fourteenth century?
+(1) Sangama dynasty
+(2) Saluva dynasty
+(3) Tuluva dynasty
+(4) Aravidu dynasty
+= 1
+~ The Vijayanagara kingdom was founded in 1336 by Harihara I and Bukka Raya of the Sangama dynasty. The Saluva, Tuluva (Krishnadeva Raya's dynasty) and Aravidu dynasties came later.
+
+Q 50 | cur | Sports
+With which sport is Sanjana Bathula associated?
+(1) Roller skating
+(2) Shooting
+(3) Squash
+(4) Badminton
+= 1
+~ Sanjana Bathula is an Indian roller (speed) skater from Telangana. She was part of the women's 3000 m relay team that won bronze in roller skating at the 2022 Asian Games, held at Hangzhou in 2023.
+
+Q 51 | cur | Awards, Books & Persons
+The historical fiction ‘The Glory of Patan’ by KM Munshi was originally written in which Indian language?
+(1) Bengali
+(2) Tamil
+(3) Malayalam
+(4) Gujarati
+= 4
+~ K. M. Munshi wrote 'Patan ni Prabhuta' in Gujarati; it was translated into English as 'The Glory of Patan'. It is the first part of his Patan trilogy about the Solanki kings of Gujarat.
+
+Q 52 | geo | Indian Geography
+The Rabi season of agriculture begins in October-November and ends in __________.
+(1) May-June
+(2) June-July
+(3) March-April
+(4) January-February
+= 3
+~ Rabi crops such as wheat, gram and mustard are sown in October–November at the start of winter and harvested in March–April. Kharif crops are sown with the monsoon in June–July.
+
+Q 53 | pol | Government & Parliament
+On which date did Punjab abolish the Legislative Council?
+(1) 1 January 1971
+(2) 1 January 1975
+(3) 1 January 1970
+(4) 1 January 1977
+= 3
+~ Punjab's Legislative Council was abolished with effect from 1 January 1970 by the Punjab Legislative Council (Abolition) Act, 1969, passed under Article 169 after the State Assembly's resolution.
+
+Q 54 | geo | Indian Geography
+Which Union Territory had minimum literacy rate as per 2011 Census?
+(1) Chandigarh
+(2) Lakshadweep
+(3) Delhi
+(4) Dadra and Nagar Haveli
+= 4
+~ In the 2011 Census, Dadra and Nagar Haveli had the lowest literacy rate among the Union Territories, about 76.2%. Lakshadweep (about 91.8%) was the highest; Delhi and Chandigarh were about 86%.
+
+Q 55 | cur | Static GK & Culture
+Kanak Rele, who established Nalanda Dance Research Centre, was a performer of which of the following classical dance forms of India?
+(1) Mohiniyattam
+(2) Manipuri
+(3) Kathak
+(4) Sattriya
+= 1
+~ Dr Kanak Rele was a leading Mohiniyattam dancer and scholar. She founded the Nalanda Dance Research Centre in Mumbai in 1966 and received the Padma Shri and Padma Bhushan.
+
+Q 56 | cur | Static GK & Culture
+Who among the following established the Indore gharana?
+(1) Ustad Ghaghe Khuda Baksh
+(2) Tansen
+(3) Ustad Amir Khan
+(4) Bhimsen Joshi
+= 3
+~ The Indore gharana of Hindustani vocal music was founded by Ustad Amir Khan (1912–1974), known for his slow, meditative vilambit khayal.
+
+Q 57 | sci | Biology
+The red colour of tomatoes is due to the presence of:
+(1) limonene
+(2) beta carotene
+(3) alizarin
+(4) lycopene
+= 4
+~ The red colour of ripe tomatoes comes from lycopene, a carotenoid pigment. Beta-carotene gives carrots their orange colour, limonene is the scent of citrus peel and alizarin is a red dye from madder root.
+
+Q 58 | eco | Agriculture, Industry & Trade
+Which of the following is one of the features of capital goods?
+(1) They are durable.
+(2) They are Giffen goods.
+(3) They are inferior goods.
+(4) They are inexpensive.
+= 1
+~ Capital goods (machines, tools, buildings) are durable: they are used again and again over many years to produce other goods, and wear out slowly (depreciation). Giffen and inferior goods are types of consumer goods.
+
+Q 59 | pol | Constitution & Rights
+In 1976, in which Part of the Indian Constitution under Article 51A were Fundamental Duties added?
+(1) IV A
+(2) III
+(3) VI
+(4) V
+= 1
+~ The 42nd Amendment Act, 1976, on the Swaran Singh Committee's advice, added a new Part IV-A with Article 51A, listing ten Fundamental Duties. The 86th Amendment (2002) added the eleventh.
+
+Q 60 | cur | Awards, Books & Persons
+What is the decreasing order of the Padma awards?
+(1) Padma Shri, Padma Bhushan, Padma Vibhushan
+(2) Padma Shri, Padma Vibhushan, Padma Bhushan
+(3) Padma Bhushan, Padma Shri, Padma Vibhushan
+(4) Padma Vibhushan, Padma Bhushan, Padma Shri
+= 4
+~ After the Bharat Ratna, the Padma awards in decreasing order are the Padma Vibhushan (exceptional and distinguished service), the Padma Bhushan (distinguished service of a high order) and the Padma Shri (distinguished service).
+
+Q 61 | ih | Modern India
+Which of the following acts introduced the system of dyarchy in the provincial administration in India?
+(1) The Government of India Act of 1909
+(2) The Government of India Act of 1947
+(3) The Government of India Act of 1935
+(4) The Government of India Act of 1919
+= 4
+~ The Government of India Act, 1919 (Montagu–Chelmsford Reforms) introduced dyarchy in the provinces: 'transferred' subjects went to ministers answerable to the legislature, while 'reserved' subjects stayed with the Governor. The 1935 Act ended provincial dyarchy.
+
+Q 62 | geo | Indian Geography
+Which of the following statements is/are correct about the famous place Mawsynram? A. It is the wettest place on the earth.
+B. It is located in Meghalaya state of India.
+(1) Only A is correct.
+(2) Only B is correct.
+(3) Neither A nor B is correct.
+(4) A and B both are correct.
+= 4
+~ Mawsynram, in the East Khasi Hills of Meghalaya, receives the highest average annual rainfall in the world (about 11,800 mm) and is recorded as the wettest place on earth, ahead of nearby Cherrapunji (Sohra). Both statements are correct.
+
+Q 63 | ih | Ancient India
+Who was the founder of the Mauryan dynasty?
+(1) Bindusara
+(2) Ashoka
+(3) Vikramaditya
+(4) Chandragupta Maurya
+= 4
+~ Chandragupta Maurya founded the Maurya dynasty around 321 BCE by overthrowing the Nanda king with the help of Chanakya (Kautilya). Bindusara was his son and Ashoka his grandson.
+
+Q 64 | geo | Indian Geography
+In which part of India is cool mountain climate observed?
+(1) North
+(2) South
+(3) East
+(4) West
+= 1
+~ The cool mountain climate is found in the north, in the Himalayan regions of Jammu and Kashmir, Ladakh, Himachal Pradesh, Uttarakhand and the north-east hills, where temperature falls with height.
+
+Q 65 | cur | National
+The Pharmacy (Amendment) Bill, 2023 was introduced in Lok Sabha on 3 August 2023, which amends the ____________.
+(1) Pharmacy Act, 1947
+(2) Pharmacy Act, 1948
+(3) Pharmacy Act, 1950
+(4) Pharmacy Act, 1949
+= 2
+~ The Pharmacy (Amendment) Bill, 2023 amends the Pharmacy Act, 1948, which regulates the pharmacy profession and the Pharmacy Council of India. It mainly brings pharmacists of Jammu and Kashmir, registered under the old state law, into the central register.
+
+Q 66 | eng | Spelling
+Select the option that correctly rectifies the underlined spelling error.
+The "accideent" on the highway caused a long traffic jam.
+(1) accidnt
+(2) accident
+(3) acicdent
+(4) acident
+= 2
+~ The correct spelling is 'accident': a-c-c-i-d-e-n-t, with a double c and a single e. The other options drop or move letters.
+
+Q 67 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Accepting how wonderful you truly are and incorporating this _______ into your attitude and personality is perhaps one of the most difficult things to do in life.
+(1) insight
+(2) folly
+(3) craziness
+(4) glitch
+= 1
+~ 'Insight' means a clear understanding of something. Accepting how wonderful you are and building this understanding into your attitude fits the sentence. Folly and craziness mean foolishness, and a glitch is a small fault.
+
+Q 68 | eng | Spelling
+Select the option that correctly rectifies the underlined spelling error.
+The rainbow only appears after a "hurican".
+(1) hurrecain
+(2) hurricane
+(3) hurrican
+(4) hurrecane
+= 2
+~ The correct spelling is 'hurricane': h-u-r-r-i-c-a-n-e, with a double r and an e at the end.
+
+Q 69 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the given idiom.
+A piece of cake
+(1) Easy to do or achieve
+(2) A cake that broke into pieces
+(3) A cake which is sold as a piece
+(4) A slice of cake for eating
+= 1
+~ 'A piece of cake' means something very easy to do. Example: The test was a piece of cake for her.
+
+Q 70 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Cultural heritage is the lifeblood of any ________ and serves as a link between generations.
+(1) lethargy
+(2) birthright
+(3) believe
+(4) civilisation
+= 4
+~ A civilisation is a society with its culture, and cultural heritage keeps it alive and links its generations. 'Believe' is a verb, 'lethargy' means laziness and 'birthright' does not fit 'lifeblood of any …'.
+
+Q 71 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Disgust
+(2) Surrender
+(3) Consicstent
+(4) Trifle
+= 3
+~ 'Consistent' is the correct spelling (c-o-n-s-i-s-t-e-n-t); 'Consicstent' has an extra c. Disgust, Surrender and Trifle are spelt correctly.
+
+Q 72 | eng | Vocabulary
+Select the most appropriate synonym of the word 'pursue' from the given sentence. Dr. Kalam's success in the field of science has inspired young Indians to dream big and chase those dreams with immense hard work.
+(1) success
+(2) immense
+(3) inspired
+(4) chase
+= 4
+~ To pursue means to chase or follow something in order to achieve it. In the sentence, 'chase those dreams' uses 'chase' in exactly this sense.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a phrasal verb error.
+Mrs. Premlatha asked / Malini to hand down / all the / payment slips.
+(1) all the
+(2) payment slips
+(3) Mrs. Premlatha asked
+(4) Malini to hand down
+= 4
+~ To 'hand down' means to pass something on to a younger generation (traditions, clothes). Submitting or giving payment slips needs 'hand over' or 'hand in': Mrs Premlatha asked Malini to hand over all the payment slips.
+
+Q 74 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+My secretary is disposed of / discuss everything in great detail / before she begins / the actual work.
+(1) the actual work.
+(2) before she begins
+(3) discuss everything in great detail
+(4) My secretary is disposed of
+= 4
+~ 'Disposed to' means inclined or willing to do something, while 'disposed of' means got rid of. The sentence should read: My secretary is disposed to discuss everything in great detail before she begins the actual work.
+
+Q 75 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Please listen to all announcements _______.
+(1) generally
+(2) easily
+(3) hungrily
+(4) attentively
+= 4
+~ Announcements should be listened to carefully, that is, 'attentively'. 'Generally', 'easily' and 'hungrily' do not describe how one should listen to announcements.
+
+Q 76 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+He is _________ tired to finish his homework.
+(1) to
+(2) more
+(3) too
+(4) most
+= 3
+~ 'Too + adjective + to-infinitive' shows that something is more than enough to prevent an action: He is too tired to finish his homework. 'To' is a preposition, and 'more'/'most' would need 'than' or 'the'.
+
+Q 77 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Energy
+(1) Speed
+(2) Power
+(3) Frailty
+(4) strife
+= 2
+~ Energy means strength or power to act. Speed is how fast something moves, frailty means weakness and strife means conflict.
+
+Q 78 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into four segments. One of them contains an error. Select the segment that contains the error from the given options.
+Neither Smith / nor Rose / were in / the classroom.
+(1) the classroom
+(2) Neither Smith
+(3) nor Rose
+(4) were in
+= 4
+~ When two singular subjects are joined by 'neither … nor', the verb is singular (it agrees with the nearer subject, Rose): Neither Smith nor Rose was in the classroom. So 'were in' is wrong.
+
+Q 79 | eng | Error Spotting & Sentence Improvement
+Select the sentence that has a grammatical error.
+(1) He works as a software developer.
+(2) She always eats healthy meals.
+(3) The sun rises in the east.
+(4) We watches movies every Friday night.
+= 4
+~ 'We' takes the plural verb form 'watch'; '-es' is added only for he, she, it or a singular noun. Correct: We watch movies every Friday night.
+
+Q 80 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word.
+The detective's job was to "discern" the truth from the web of lies.
+(1) Perceive
+(2) Ignore
+(3) Confuse
+(4) Fabricate
+= 1
+~ To discern means to perceive or recognise something that is not obvious. Ignore, confuse and fabricate (make up) are unrelated or opposite in meaning.
+
+Q 81 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+The workers had been repairing / the mall road in / town for / several days now.
+(1) several days now
+(2) town for
+(3) The workers had been repairing
+(4) the mall road in
+= 3
+~ 'Now' shows that the repair work started in the past and is still going on, which needs the present perfect continuous: The workers have been repairing the mall road in town for several days now.
+
+Q 82 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Ecstatic
+(1) Happy
+(2) Shocked
+(3) Interested
+(4) Angry
+= 1
+~ Ecstatic means overwhelmingly happy or joyful. Shocked, interested and angry do not match.
+
+Q 83 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word
+The project’s tight deadline and complex requirements made it a "gruelling" task for the team.
+(1) Empowering
+(2) Accessible
+(3) Challenging
+(4) Inclusive
+= 3
+~ Gruelling means extremely tiring and demanding, so 'challenging' is the closest synonym. Empowering, accessible and inclusive have unrelated meanings.
+
+Q 84 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate verb form to fill in the blank.
+Arun __________ his bicycle to school every day.
+(1) rides
+(2) rode
+(3) riding
+(4) ride
+= 1
+~ 'Every day' shows a habit, which takes the simple present. Arun is singular, so the verb takes -s: Arun rides his bicycle to school every day.
+
+Q 85 | eng | Idioms & One-word Substitution
+What does it imply when people say to ‘read between the lines’?
+(1) To avoid detailed information
+(2) To skip initial and final lines in a paragraph
+(3) To read with an ability to infer the meaning
+(4) To read something fast
+= 3
+~ To 'read between the lines' is to understand the hidden or implied meaning that is not stated directly, that is, to read with an ability to infer.
+
+Q 86 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+My next pet, Ari, was a pigeon. He became convinced that he was not a bird at all and refused to (1)______. If he wanted to get on a table or a chair, he stood below it, cooing until someone picked him up. He would even try to come (2)______ walks with us. This, however, we had to stop for, (3)______ you carried him on your shoulder or else you let him walk behind. If you let him walk, you had to slow down your own (4)______ to suit his, for should you get too far ahead, you would find him running after you, cooing frantically, his chest pouted out with (5)______.
+Select the most appropriate option to fill in blank number 1.
+(1) file
+(2) flea
+(3) read
+(4) fly
+= 4
+~ Ari was a pigeon convinced he was not a bird, so he refused to fly; that is why he waited to be lifted onto tables and chairs. File, flea and read do not fit.
+
+Q 87 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+My next pet, Ari, was a pigeon. He became convinced that he was not a bird at all and refused to (1)______. If he wanted to get on a table or a chair, he stood below it, cooing until someone picked him up. He would even try to come (2)______ walks with us. This, however, we had to stop for, (3)______ you carried him on your shoulder or else you let him walk behind. If you let him walk, you had to slow down your own (4)______ to suit his, for should you get too far ahead, you would find him running after you, cooing frantically, his chest pouted out with (5)______.
+Select the most appropriate option to fill in blank number 2.
+(1) in
+(2) on
+(3) at
+(4) by
+= 2
+~ We go 'on' a walk: He would even try to come on walks with us.
+
+Q 88 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+My next pet, Ari, was a pigeon. He became convinced that he was not a bird at all and refused to (1)______. If he wanted to get on a table or a chair, he stood below it, cooing until someone picked him up. He would even try to come (2)______ walks with us. This, however, we had to stop for, (3)______ you carried him on your shoulder or else you let him walk behind. If you let him walk, you had to slow down your own (4)______ to suit his, for should you get too far ahead, you would find him running after you, cooing frantically, his chest pouted out with (5)______.
+Select the most appropriate option to fill in blank number 3.
+(1) either
+(2) neither
+(3) never
+(4) ever
+= 1
+~ 'Either … or' presents two alternatives: either you carried him on your shoulder or else you let him walk behind. 'Neither' would need 'nor'.
+
+Q 89 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+My next pet, Ari, was a pigeon. He became convinced that he was not a bird at all and refused to (1)______. If he wanted to get on a table or a chair, he stood below it, cooing until someone picked him up. He would even try to come (2)______ walks with us. This, however, we had to stop for, (3)______ you carried him on your shoulder or else you let him walk behind. If you let him walk, you had to slow down your own (4)______ to suit his, for should you get too far ahead, you would find him running after you, cooing frantically, his chest pouted out with (5)______.
+Select the most appropriate option to fill in blank number 4.
+(1) peace
+(2) pace
+(3) piece
+(4) space
+= 2
+~ Pace means speed of walking: you had to slow down your own pace to suit his. Peace, piece and space are look-alike words with different meanings.
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+My next pet, Ari, was a pigeon. He became convinced that he was not a bird at all and refused to (1)______. If he wanted to get on a table or a chair, he stood below it, cooing until someone picked him up. He would even try to come (2)______ walks with us. This, however, we had to stop for, (3)______ you carried him on your shoulder or else you let him walk behind. If you let him walk, you had to slow down your own (4)______ to suit his, for should you get too far ahead, you would find him running after you, cooing frantically, his chest pouted out with (5)______.
+Select the most appropriate option to fill in blank number 5.
+(1) indignation
+(2) inclination
+(3) intimation
+(4) ignition
+= 1
+~ Indignation is anger at being treated unfairly; the pigeon, left behind, ran after the family cooing frantically with his chest puffed out in indignation. Inclination, intimation and ignition do not fit.

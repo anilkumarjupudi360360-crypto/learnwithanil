@@ -1,0 +1,872 @@
+# SSC Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination 2024, held 30 September 2024, Shift 3 (4:00 PM). 90 questions in two sessions: Session I Numerical & Mathematical Ability (Q1–20) and Reasoning Ability & Problem Solving (Q21–40); Session II General Awareness (Q41–65) and English Language & Comprehension (Q66–90).
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via sscportal.in); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | qa | Percentage, Profit & Interest
+Sharad invested two equal amounts for 6 years and 3 years at the rate of 7% and 9% per annum, respectively. The sum of their simple interest is ₹1,587. The invested amount (in ₹) by Sharad is:
+(1) 4,600
+(2) 4,650
+(3) 4,550
+(4) 4,374
+= 1
+~ Let each equal amount be P. Interest = P × 7 × 6/100 + P × 9 × 3/100 = 0.42P + 0.27P = 0.69P = 1,587, so P = ₹2,300. Sharad invested two such amounts: 2 × 2,300 = ₹4,600.
+
+Q 2 | qa | Mensuration
+What is the number of gold coins, each having a radius of 0.875 cm and a thickness of 2 mm, that need to be melted to create a cuboid with dimensions 5.5 cm × 5 cm × 3.5 cm? (Use π = 22/7)
+(1) 225
+(2) 250
+(3) 200
+(4) 175
+= 3
+~ Volume of one coin (a thin cylinder) = πr²h = 22/7 × 0.875 × 0.875 × 0.2 = 0.48125 cm³. Volume of the cuboid = 5.5 × 5 × 3.5 = 96.25 cm³. Number of coins = 96.25 ÷ 0.48125 = 200.
+
+Q 3 | qa | Ratio, Average & Mixtures
+In a park there are rabbits and pigeons in the ratio 4 : 9. If legs are counted, the total number of legs is 340. Find the number of rabbits.
+(1) 70
+(2) 30
+(3) 20
+(4) 40
+= 4
+~ Let there be 4x rabbits (4 legs each) and 9x pigeons (2 legs each). Legs = 16x + 18x = 34x = 340, so x = 10 and there are 4 × 10 = 40 rabbits.
+
+Q 4 | qa | Percentage, Profit & Interest
+By selling an article for ₹19.5, a dealer makes a profit of 10%. By how much should he increase his selling price (in ₹, rounded off to two decimal place) so as to make a profit of 50%?
+(1) 8.09
+(2) 10.09
+(3) 7.09
+(4) 9.09
+= 3
+~ Cost price = 19.5 ÷ 1.10 = ₹17.727. For a 50% profit the selling price must be 17.727 × 1.5 = ₹26.59. Increase = 26.59 − 19.50 = ₹7.09.
+
+Q 5 | qa | Time, Work, Speed & Distance
+The speed of a boat in still water is 13 km/h and the speed of the stream is 4 km/h. How much more time will it take in going upstream than ingoing downstream a distance of 68 km? (Correct to the nearest minute)
+(1) 3 h 33 min
+(2) 3 h 30 min
+(3) 2 h 55 min
+(4) 3 h 50 min
+= 1
+~ Upstream speed = 13 − 4 = 9 km/h and downstream speed = 13 + 4 = 17 km/h. Times for 68 km: 68/9 = 7.556 h and 68/17 = 4 h. Difference = 3.556 h = 3 h 33 min (0.556 × 60 ≈ 33).
+
+Q 6 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹2000 as a sum borrowed at 9% per year rate of interest for 2 years.
+(1) 400
+(2) 320
+(3) 360
+(4) 300
+= 3
+~ Simple interest = P × R × T / 100 = 2,000 × 9 × 2 / 100 = ₹360.
+
+Q 7 | qa | Time, Work, Speed & Distance
+In a circular race of 1500 m, P and Q start from the same point and at the same time, at speeds of 20 km/h and 35 km/h, respectively. After what time will they meet for the first time on the track if they are running in the same direction?
+(1) 840 sec
+(2) 640 sec
+(3) 360 sec
+(4) 340 sec
+= 3
+~ Running the same way round, they meet first when the faster runner has gained one full lap (1,500 m). Relative speed = 35 − 20 = 15 km/h = 15 × 5/18 = 25/6 m/s. Time = 1,500 ÷ 25/6 = 360 seconds.
+
+Q 8 | qa | Number System & Simplification
+Three numbers are in the ratio 3 : 4 : 5 and their HCF is 60. The numbers are:
+(1) 90, 120, 150
+(2) 20, 15, 12
+(3) 45, 60,75
+(4) 180, 240, 300
+= 4
+~ Numbers in the ratio 3 : 4 : 5 are 3x, 4x and 5x, and since 3, 4 and 5 have no common factor their HCF is x. So x = 60 and the numbers are 180, 240 and 300.
+
+Q 9 | qa | Percentage, Profit & Interest
+Ramani sells her car to Sarla at a loss of 15%. If Sarla pays ₹1,91,250 for it, then what is the cost price of the car for Ramani?
+(1) ₹2,75,000
+(2) ₹2,25,000
+(3) ₹225600
+(4) ₹3,00,000
+= 2
+~ Ramani sold at a 15% loss, so Sarla's price is 85% of Ramani's cost: 0.85 × CP = 1,91,250 and CP = 1,91,250 ÷ 0.85 = ₹2,25,000.
+
+Q 10 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹3000 as a sum borrowed at 9% per year rate of interest for 3 years.
+(1) 850
+(2) 770
+(3) 750
+(4) 810
+= 4
+~ Simple interest = P × R × T / 100 = 3,000 × 9 × 3 / 100 = ₹810.
+
+Q 11 | qa | Ratio, Average & Mixtures
+The average weight of a family of five members (in kg) whose weights are 40 kg, 49 kg, 56 kg, 68 kg and 35 kg is:
+(1) 48.6
+(2) 51.6
+(3) 50.6
+(4) 49.6
+= 4
+~ Total weight = 40 + 49 + 56 + 68 + 35 = 248 kg. Average = 248 ÷ 5 = 49.6 kg.
+
+Q 12 | qa | Ratio, Average & Mixtures
+The average of the numbers 253, 245, 325, 120 and 115+2K is 212. Find the average of the numbers 353, 354, 225, 220 and 110+3K.
+(1) 253
+(2) 250
+(3) 251
+(4) 252
+= 1
+~ The first five numbers total 5 × 212 = 1,060: 253 + 245 + 325 + 120 + 115 + 2K = 1,058 + 2K, so K = 1. The second set is 353 + 354 + 225 + 220 + 113 = 1,265, and its average is 1,265 ÷ 5 = 253.
+
+Q 13 | qa | Mensuration
+The lengths of the two diagonals of a rhombus are 20 cm and 23 cm. What is the area (in cm²) of the rhombus?
+(1) 460
+(2) 345
+(3) 115
+(4) 230
+= 4
+~ Area of a rhombus = ½ × product of the diagonals = ½ × 20 × 23 = 230 cm².
+
+Q 14 | qa | Percentage, Profit & Interest
+The marked price of a chair is ₹1,800 and a discount of 18% is offered on the marked price. What additional discount must be offered to the customer now to bring the net price to ₹1,220? (Correct to two places of decimals.)
+(1) 13.47%
+(2) 17.34%
+(3) 14.37%
+(4) 31.47%
+= 2
+~ After the 18% discount the price is 1,800 × 0.82 = ₹1,476. To bring it to ₹1,220 a further ₹256 must be taken off: 256 ÷ 1,476 × 100 = 17.34%.
+
+Q 15 | qa | Percentage, Profit & Interest
+Two candidates contested in an election. One of them secured 62.5% of the total votes and won by 996 votes. What is the total number of votes cast?(all votes are valid)
+(1) 2656
+(2) 2988
+(3) 3984
+(4) 1594
+= 3
+~ The winner got 62.5% and the loser 37.5%, so the margin is 25% of all votes. 25% = 996, so the total = 996 × 4 = 3,984.
+
+Q 16 | qa | Data Interpretation & Statistics
+Refer to the given table and answer the question that follows.
+Month | Cumulative production of cars
+July | 350
+August | 600
+September | 1220
+October | 1450
+November | 2080
+December | 2470
+How many cars were manufactured in October and November?
+(1) 840
+(2) 880
+(3) 860
+(4) 900
+= 3
+~ The table gives running (cumulative) totals, so a month's production is the difference from the month before. October = 1,450 − 1,220 = 230 and November = 2,080 − 1,450 = 630. Together: 860 cars (equally, 2,080 − 1,220).
+
+Q 17 | qa | Mensuration
+The height of a right circular cylinder is three times its radius. If the curved surface area of the right circular cylinder is 3696 cm², then the volume of the cylinder is equal to (taking π = 22/7):
+(1) 25,872 cm³
+(2) 25,972 cm³
+(3) 25,892 cm³
+(4) 25,992 cm³
+= 1
+~ With h = 3r, curved surface area = 2πrh = 6πr² = 3,696, so πr² = 616 and r² = 616 × 7/22 = 196, r = 14 cm, h = 42 cm. Volume = πr²h = 616 × 42 = 25,872 cm³.
+
+Q 18 | qa | Ratio, Average & Mixtures
+The average weight of a class of 115 students is 52.4 kg. If the average weight of the 63 boys is 60 kg, then find the average weight (in kg) of the girls in the class.
+(Rounded off to one decimal place)
+(1) 47.6
+(2) 43.2
+(3) 45.5
+(4) 41.8
+= 2
+~ Total weight of the class = 115 × 52.4 = 6,026 kg; boys = 63 × 60 = 3,780 kg. The 52 girls weigh 6,026 − 3,780 = 2,246 kg, so their average = 2,246 ÷ 52 = 43.19 ≈ 43.2 kg.
+
+Q 19 | qa | Data Interpretation & Statistics
+The bar graph below shows the sale of books (in thousands) from five branches of a publishing company during 2008 and 2009.
+What is the ratio of the total sale of books from the branches B1, B2 and B5 in 2009 to the total sale of books from the branches B2, B3, B4 and B5 in 2008?
+(1) 32 : 45
+(2) 47 : 39
+(3) 45 : 32
+(4) 39 : 47
+= 1
+! img/mts24c-q19.png
+~ 2009 sales of B1, B2, B5 = 85 + 99 + 136 = 320. 2008 sales of B2, B3, B4, B5 = 83 + 108 + 135 + 124 = 450. Ratio = 320 : 450 = 32 : 45.
+
+Q 20 | qa | Ratio, Average & Mixtures
+The average score obtained by 64 boys and a certain number of girls in a test is 59.15, while the average score obtained by the boys is 55.25. If the average score of the girls is 68.75, then how many girls appeared for the test?
+(1) 25
+(2) 28
+(3) 27
+(4) 26
+= 4
+~ Balance the deviations from the overall average 59.15: boys are 3.9 below (59.15 − 55.25) and girls 9.6 above (68.75 − 59.15). So 64 × 3.9 = g × 9.6, giving 249.6 = 9.6g and g = 26 girls.
+
+Q 21 | rea | Mathematical Operations
+Which two signs should be interchanged to make the following equation
+mathematically correct?
+49 + 7 × 10 ÷ 6 – 3 = 73
+(1) + and –
+(2) × and ÷
+(3) – and ×
+(4) + and ÷
+= 4
+~ Interchanging + and ÷ gives 49 ÷ 7 × 10 + 6 − 3. By BODMAS: 7 × 10 = 70, then 70 + 6 − 3 = 73, which is correct.
+
+Q 22 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/mts24c-q22.png
+~ A mirror on the right side shows the characters in reverse order (b, 9, H, 5, 7, W) with each one flipped left to right; H and W look the same. Option 4 shows this; the other options get the flip of b, 9, 5 or 7 wrong.
+
+Q 23 | rea | Non-verbal Reasoning
+Identify the figure given in the options that when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/mts24c-q23.png
+~ The triangle turns 45° anticlockwise each time (pointing up, up-left, left, down-left), so in the fifth figure it points straight down. The letter outside moves on alphabetically (Q, R, S, T, so U) and turns with the triangle, and a new sign comes inside each time. Option 1 has the downward triangle with the new sign inside and the turned U outside.
+
+Q 24 | rea | Non-verbal Reasoning
+Select the figure from among the given options that can replace the question mark (?) in the following series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/mts24c-q24.png
+~ Figures 1 and 3 are linked by a half-turn of positions: each symbol moves to the diagonally opposite place (top-left ↔ bottom-right, top-middle ↔ bottom-middle, middle-left ↔ middle-right), while the symbols stay upright. Doing the same to figure 2 gives the black D top-left, △ top-middle, the black B top-right, ○ middle-left, ∞ middle-right and ■ bottom-left — option 1. Option 3 has the black shapes facing the wrong way.
+
+Q 25 | rea | Mathematical Operations
+10 is related to 102 following a certain logic. Following the same logic, 13 is related to 171. To which of the following is 16 related, following the same logic?
+(NOTE : Operations should be performed on the whole numbers, without breaking down the numbers into its constituent digits. E.g. 13 – Operations on 13 such as adding / subtracting / multiplying, etc., to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(1) 258
+(2) 251
+(3) 268
+(4) 265
+= 1
+~ Square the number and add 2: 10² + 2 = 102 and 13² + 2 = 171. So 16² + 2 = 256 + 2 = 258.
+
+Q 26 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order ?
+HAF, KDI, NGL, QJO, ?
+(1) RTW
+(2) SKP
+(3) TMR
+(4) PQR
+= 3
+~ Each letter of a term moves 3 places forward: H, K, N, Q, T; A, D, G, J, M; F, I, L, O, R. The next term is TMR.
+
+Q 27 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+90 − 6 + 69 ÷ 54 × 27 = ?
+(1) −44
+(2) −42
+(3) −43
+(4) −45
+= 2
+~ After interchanging + with − and × with ÷, the equation becomes 90 + 6 − 69 × 54 ÷ 27. By BODMAS: 54 ÷ 27 = 2, 69 × 2 = 138, and 96 − 138 = −42.
+
+Q 28 | rea | Series
+What should come in place of the question mark (?) in the given series?
+162 184 206 228 250 ?
+(1) 272
+(2) 277
+(3) 262
+(4) 284
+= 1
+~ Each term is 22 more than the one before: 162, 184, 206, 228, 250, so the next term is 250 + 22 = 272.
+
+Q 29 | rea | Coding-Decoding
+In a certain code language, ‘Do you follow’ is coded as ‘MP TQ IX’ and ‘How are you’ is coded as ‘TQ LV IJ’. How is ‘you’ coded in that code language?
+(1) IX
+(2) LU
+(3) MP
+(4) TQ
+= 4
+~ 'you' is the only word in both sentences, and TQ is the only code in both 'MP TQ IX' and 'TQ LV IJ'. So 'you' is coded as TQ.
+
+Q 30 | rea | Coding-Decoding
+In a certain code language, ‘BATH’ is coded as ‘9823’ and ‘DUMB’ is coded as ‘1526’. How is ‘B’ coded in the given language?
+(1) 9
+(2) 5
+(3) 3
+(4) 2
+= 4
+~ The only letter common to BATH and DUMB is B, and the only digit common to 9823 and 1526 is 2. So B is coded as 2.
+
+Q 31 | rea | Coding-Decoding
+In a certain code language, ‘MICE’ is coded as ‘6481’ and ‘RICE’ is coded as ‘1584’. What is the code for ‘R’ in the given code language?
+(1) 5
+(2) 1
+(3) 8
+(4) 4
+= 1
+~ MICE and RICE share I, C and E, and their codes share 4, 8 and 1. The letter left in RICE is R and the digit left in 1584 is 5, so R = 5.
+
+Q 32 | rea | Arrangement & Puzzles
+S, T, U, V, W and X are sitting around a circular table facing the centre (but not necessarily in the same order). W sits second to the right of U. T sits second to the right of W. X sits to the immediate right of T. Who sits to the immediate right of X?
+(1) W
+(2) U
+(3) S
+(4) V
+= 2
+~ Going to the right round the table from U: U, _, W, _, T, X (W is second right of U, T second right of W, X immediately right of T). With six seats, the seat to the immediate right of X is U's seat. So U sits to the immediate right of X.
+
+Q 33 | rea | Arrangement & Puzzles
+Six students Dhiraj, Mohan, Lokesh, Param, Rohan and Suresh are sitting around a circular table, facing the centre (but not necessarily in the same order). Rohan is sitting second to the right of Suresh. Param is sitting third to the right of Rohan. Param is an immediate neighbour of both Lokesh and Suresh. Mohan and Lokesh are immediate neighbours. Who is the immediate neighbour of both Dhiraj and Mohan?
+(1) Param
+(2) Lokesh
+(3) Suresh
+(4) Rohan
+= 4
+~ Take Suresh's seat; Rohan is second to his right and Param third to Rohan's right, which is Suresh's immediate left. Param's other neighbour is Lokesh, and Mohan sits next to Lokesh, which puts Mohan third from Suresh. The last seat, between Suresh and Rohan, is Dhiraj's. Going right from Suresh: Suresh, Dhiraj, Rohan, Mohan, Lokesh, Param. Rohan sits between Dhiraj and Mohan.
+
+Q 34 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).
+Statements:
+Some creepers are stones.
+Some stones are buds.
+Conclusions:
+(I) Some buds are stones.
+(II) No creeper is a bud.
+(1) Both conclusions (I) and (II) follow
+(2) Neither conclusion (I) nor (II) follows
+(3) Only conclusion (I) follows
+(4) Only conclusion (II) follows
+= 3
+~ 'Some stones are buds' can be reversed: 'Some buds are stones' follows. Nothing links creepers with buds, so 'No creeper is a bud' is not certain. Only conclusion I follows.
+
+Q 35 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(16, 3, 27)
+(10, 19, 37)
+(1) (5, 14, 20)
+(2) (15, 17, 30)
+(3) (19, 15, 32)
+(4) (7, 25, 40)
+= 4
+~ The third number = first + second + 8: 16 + 3 + 8 = 27 and 10 + 19 + 8 = 37. Only (7, 25, 40) fits: 7 + 25 + 8 = 40. The others would need 27, 40 and 42 as the third number.
+
+Q 36 | rea | Analogy & Classification
+UDLT is related to XGOW in a certain way based on the English alphabetical order. In the same way, ZIQY is related to CLTB. To which of the following is IQYH related, following the same logic?
+(1) LTBK
+(2) LTCL
+(3) MKBK
+(4) LGKK
+= 1
+~ Each letter moves 3 places forward: U→X, D→G, L→O, T→W, and Z→C, I→L, Q→T, Y→B (counting round from Z to A). For IQYH: I→L, Q→T, Y→B, H→K, giving LTBK.
+
+Q 37 | rea | Analogy & Classification
+ACDB is related to ZXWY in a certain way. In the same way, EGHF is related to VTSU. To which of the following is IKLJ related, following the same logic?
+(1) RPOQ
+(2) RPQO
+(3) PRQO
+(4) PROQ
+= 1
+~ Each letter is replaced by its opposite letter (A↔Z, B↔Y, C↔X …; the two add up to 27): A→Z, C→X, D→W, B→Y. For IKLJ: I→R, K→P, L→O, J→Q, giving RPOQ.
+
+Q 38 | rea | Coding-Decoding
+In a certain code language, ‘clean the room’ is written as ‘rt yp fs’ and ‘room is good’ is coded as ‘sw rt la’. How is ‘room’ coded in the given language
+(1) yp
+(2) sw
+(3) rt
+(4) fs
+= 3
+~ 'room' is the only word in both sentences, and 'rt' is the only code in both 'rt yp fs' and 'sw rt la'. So 'room' is coded as rt.
+
+Q 39 | rea | Non-verbal Reasoning
+A square sheet of paper is folded along the dotted line successively along the directions shown and is then punched as shown in the last figure. How would the paper look when unfolded?
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24c-q39.png
+~ Two folds make four layers, so every punch shows up four times, mirrored across the vertical and the horizontal diagonal. The two black holes near the outer edge give two holes near each of the four edges, and the small hole near the centre (off both fold lines) gives four small holes in a square around the centre — option 2. Option 1 has them in a diamond and option 4 shows only two.
+
+Q 40 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some actors are dancers.
+Some dancers are singers.
+Conclusions:
+(I) Some actors are singers.
+(II) No singer is a dancer.
+(1) Only conclusion II follows
+(2) Neither conclusion I nor II follows
+(3) Only conclusion I follows
+(4) Both conclusions I and II follow
+= 2
+~ The dancers who are actors and the dancers who are singers need not be the same, so 'Some actors are singers' is not certain. 'Some dancers are singers' directly contradicts 'No singer is a dancer'. Neither conclusion follows.
+
+Q 41 | sci | Biology
+On boiling an egg, why does the outer part become opaque and white?
+(1) The heat causes a change in the crystal structure of egg yolk.
+(2) The heat causes a change in the structure of egg protein.
+(3) The heat causes denaturation, hardening the albumin and colouring it opaque white
+(4) The heat causes a reaction of the egg with water and makes it opaque.
+= 3
+~ Egg white is mostly the protein albumin dissolved in water. Heat denatures it — the folded protein chains open up and bind into a solid network — so the white becomes hard and opaque. This change cannot be reversed by cooling.
+
+Q 42 | cur | Sports
+The first post-independence National Games were hosted by which of the following cities?
+(1) Lucknow
+(2) Madras
+(3) Jabalpur
+(4) Delhi
+= 1
+~ The first National Games after Independence were held at Lucknow in 1948. The Games began in 1924 as the Indian Olympic Games.
+
+Q 43 | geo | Environment & Ecology
+Which of the following National Parks is located in Madhya Pradesh?
+(1) Periyar
+(2) Silent Valley
+(3) Nanda Devi
+(4) Bandhavgarh
+= 4
+~ Bandhavgarh National Park, famous for its tigers and a hill fort, is in the Umaria district of Madhya Pradesh. Periyar and Silent Valley are in Kerala and Nanda Devi is in Uttarakhand.
+
+Q 44 | cur | Awards, Books & Persons
+R Muthukannammal, who was awarded the Padma Shri in 2022, is a ______________ dancer.
+(1) Rouf
+(2) Garba
+(3) Chhau
+(4) Sadir
+= 4
+~ R. Muthukannammal of Viralimalai, Tamil Nadu, is one of the last traditional Sadir dancers; Sadir is the temple dance of the devadasis from which Bharatanatyam grew. She received the Padma Shri in 2022.
+
+Q 45 | sci | Biology
+Calculate the Body Mass Index (BMI) of a person whose weight is 50 kg and height is 1.5 m.
+(1) 22.2 kg/m²
+(2) 25.0 kg/m²
+(3) 18.0 kg/m²
+(4) 16.6 kg/m²
+= 1
+~ BMI = weight in kg ÷ (height in m)² = 50 ÷ 1.5² = 50 ÷ 2.25 = 22.2 kg/m², within the normal range of 18.5–24.9.
+
+Q 46 | pol | Government & Parliament
+On 27th october 2019, Dushyant Chautala took an oath as Deputy Chief Minister of which of the following states?
+(1) Punjab
+(2) Madhya Pradesh
+(3) Himachal Pradesh
+(4) Haryana
+= 4
+~ Dushyant Chautala of the Jannayak Janta Party became Deputy Chief Minister of Haryana on 27 October 2019, when his party joined the BJP to form the government under Manohar Lal Khattar.
+
+Q 47 | eco | Schemes & Welfare
+Which of the following states of India marked the lowest in National Multi-dimensional Poverty Index: A Progress Review 2023?
+(1) Sikkim
+(2) Kerala
+(3) Tamil Nadu
+(4) Goa
+= 2
+~ In NITI Aayog's 'National Multidimensional Poverty Index: A Progress Review 2023', Kerala had the lowest share of multidimensionally poor people (about 0.55% in 2019–21). Bihar had the highest.
+
+Q 48 | ih | Modern India
+Where was the Hindu college established in the year 1791 to teach ancient Sanskrit texts?
+(1) Calcutta
+(2) Madras
+(3) Agra
+(4) Banaras
+= 4
+~ The Sanskrit College at Banaras (Varanasi), often called the Hindu college, was set up in 1791 by Jonathan Duncan, the British Resident, to teach ancient Sanskrit texts and Hindu law.
+
+Q 49 | geo | Indian Geography
+Identify the INCORRECT pair of cropping season and related crop from the following.
+(1) Kharif - Maize
+(2) Kharif – Soyabean
+(3) Rabi - Wheat
+(4) Rabi - Paddy
+= 4
+~ Paddy (rice) is a kharif crop, sown with the monsoon and harvested in autumn, so 'Rabi – Paddy' is the incorrect pair. Maize and soyabean are kharif crops and wheat is the main rabi crop.
+
+Q 50 | ih | Art & Culture
+The Ganesh-rath is one of the finest monolithic temples at _____________.
+(1) Sarnath
+(2) Mahabalipuram
+(3) Gangaikondacholapuram
+(4) Kanchipuram
+= 2
+~ The Ganesha Ratha is one of the monolithic rock-cut temples (rathas) at Mahabalipuram (Mamallapuram), built under the Pallavas in the 7th century. It is part of the UNESCO World Heritage group of monuments there.
+
+Q 51 | sci | Physics
+The average separation between the sun and the earth in terms of light years is 8.311 minutes. Here, minutes indicate:
+(1) distance
+(2) time
+(3) velocity
+(4) speed
+= 1
+~ Light takes about 8.3 minutes to reach the earth from the sun. Saying the sun is 8.3 light-minutes away uses time to express a distance — the distance light travels in that time — just as a light year is a distance.
+
+Q 52 | cur | Awards, Books & Persons
+The famous Hindi novel ‘Maila Aanchal’ is written by:
+(1) Premchand
+(2) Shrilal Shukla
+(3) Phanishwar Nath Renu
+(4) Mridula Garg
+= 3
+~ 'Maila Aanchal' (1954) is a famous Hindi regional novel by Phanishwar Nath 'Renu', set in a village of Purnia district in Bihar.
+
+Q 53 | cur | Static GK & Culture
+Which of the following is an Indian folk dance?
+(1) Mohiniyattam
+(2) Bihu
+(3) Bharatanatyam
+(4) Sattriya
+= 2
+~ Bihu is a folk dance of Assam, performed at the Bihu festivals. Mohiniyattam, Bharatanatyam and Sattriya are classical dances recognised by the Sangeet Natak Akademi.
+
+Q 54 | eco | Planning, Growth & Budget
+Which of the following is NOT a part of the capital receipts?
+(1) Borrowing
+(2) Disinvestment
+(3) Tax revenue
+(4) Recovery of loan
+= 3
+~ Capital receipts either create a liability or reduce assets: borrowings, disinvestment and recovery of loans. Tax revenue creates neither, so it is a revenue receipt, not a capital receipt.
+
+Q 55 | sci | Chemistry
+Which of the following is the compound with the chemical formula H₂SO₄?
+(1) Sulfurous Acid
+(2) Sulfuric Acid
+(3) Hydrogen Sulfide
+(4) Nitric Acid
+= 2
+~ H₂SO₄ is sulfuric acid, a strong mineral acid. Sulfurous acid is H₂SO₃, hydrogen sulfide is H₂S and nitric acid is HNO₃.
+
+Q 56 | pol | Government & Parliament
+According to Article 74(1), who is at the head of the Council of Ministers?
+(1) Speaker of the House
+(2) President
+(3) Prime Minister
+(4) Chief Justice
+= 3
+~ Article 74(1) says there shall be a Council of Ministers with the Prime Minister at the head to aid and advise the President, who shall act in accordance with such advice.
+
+Q 57 | ih | Medieval India
+The officer known as Diwan belonged to which of the following departments of the Mughal empire during Akbar’s reign?
+(1) Finance
+(2) Judicial
+(3) Foreign affairs
+(4) Military
+= 1
+~ Under Akbar the Diwan (Diwan-i-Kul or Wazir) was in charge of finance and revenue. The Mir Bakhshi handled the military, the Sadr-us-Sudur religious grants and the Qazi justice.
+
+Q 58 | cur | Awards, Books & Persons
+Who among the following personalities was the recipient of the Lata Mangeshkar Award for Music 2021, presented by the Madhya Pradesh government?
+(1) Darshan Raval
+(2) Shaan
+(3) Udit Narayan
+(4) Kumar Sanu
+= 4
+~ The Madhya Pradesh government's National Lata Mangeshkar Award for 2021 went to playback singer Kumar Sanu. It was presented in Indore on 28 September 2022 along with the awards for 2019 (Shailendra Singh) and 2020 (Anand–Milind).
+
+Q 59 | cur | Static GK & Culture
+In which of the following states is the Behdienkhlam Festival celebrated, in which the young men make a symbolic gesture of driving away of the evil spirit, plague and disease by beating the roof of every house with bamboo poles?
+(1) Meghalaya
+(2) Odisha
+(3) Manipur
+(4) Bihar
+= 1
+~ Behdienkhlam is the main festival of the Pnar (Jaintia) people of Meghalaya, held at Jowai in July. Young men beat the roofs of houses with bamboo poles to drive away evil spirits and disease.
+
+Q 60 | ih | Modern India
+Jyotiba Phule belonged from which state?
+(1) Gujarat
+(2) Karnataka
+(3) Tamil Nadu
+(4) Maharashtra
+= 4
+~ Jyotiba (Jyotirao) Phule was a social reformer from Maharashtra. He founded the Satyashodhak Samaj in 1873 and, with his wife Savitribai, opened a school for girls in Pune in 1848.
+
+Q 61 | ih | Ancient India
+The word ‘Megalith’ comes from two ________ words; ‘megas’ means great and ‘lithas’ means stone.
+(1) Greek
+(2) English
+(3) Latin
+(4) Hebrew
+= 1
+~ 'Megalith' comes from the Greek words 'megas' (great) and 'lithos' (stone). Megaliths are large stone structures built over burials, common in south India in the Iron Age.
+
+Q 62 | pol | Constitution & Rights
+Which of the following Articles on Fundamental Duties was added to the Indian Constitution by the 42nd Constitutional Amendment Act?
+(1) 52-A
+(2) 45A
+(3) 51-A
+(4) 40
+= 3
+~ The 42nd Constitutional Amendment Act, 1976 added Article 51-A in a new Part IV-A, listing the Fundamental Duties of citizens.
+
+Q 63 | cur | Sports
+Which country won the 4th Asian Kho-Kho Championship 2023 event in the Men's category?
+(1) Iran
+(2) India
+(3) South Korea
+(4) Indonesia
+= 2
+~ India won both the men's and women's titles at the 4th Asian Kho-Kho Championship held at Tamulpur, Assam, in March 2023.
+
+Q 64 | geo | World & Physical Geography
+The Hindu temples ‘Hinglaj Mata’ and ‘Katasraj’ are located in which neighbouring country of India?
+(1) Sri Lanka
+(2) Bhutan
+(3) Nepal
+(4) Pakistan
+= 4
+~ Hinglaj Mata, a Shakti Peetha, is in Balochistan, and the Katas Raj temples, linked with Lord Shiva, are in Punjab — both in Pakistan.
+
+Q 65 | cur | International
+Where was Global Technology Summit 2022 held?
+(1) Bengaluru
+(2) Jaipur
+(3) Varanasi
+(4) New Delhi
+= 4
+~ The Global Technology Summit 2022, organised by Carnegie India with the Ministry of External Affairs, was held in New Delhi from 29 November to 1 December 2022.
+
+Q 66 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word.
+Rakesh committed the mistake, and he must be "convicted".
+(1) Acquitted
+(2) Punished
+(3) Crucified
+(4) Sentenced
+= 1
+~ To be convicted is to be found guilty by a court; its opposite is acquitted (declared not guilty). Punished and sentenced follow a conviction, so they are not opposites.
+
+Q 67 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word in the given sentence. A "detrimental" attitude can always be cured with a cordial approach.
+(1) unmindful
+(2) cooperative
+(3) damaging
+(4) social
+= 3
+~ Detrimental means causing harm or damage, so damaging is the synonym. Unmindful, cooperative and social do not have this meaning.
+
+Q 68 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+It is essential that you "act in accordance" with the rules and regulations of the organisation.
+(1) comply
+(2) observe
+(3) obey
+(4) fulfill
+= 1
+~ To comply with means to act in accordance with rules or orders, and it takes 'with' just like the underlined phrase: you comply with the rules. 'Observe', 'obey' and 'fulfil' do not take 'with'.
+
+Q 69 | eng | Idioms & One-word Substitution
+Select the most appropriate option to fill in the blank.
+He needs to ___________ as his exams are approaching.
+(1) bury himself in
+(2) learn the ropes
+(3) hit the sack
+(4) hit the books
+= 4
+~ To 'hit the books' means to study hard, which suits exams approaching. 'Hit the sack' means go to bed and 'learn the ropes' means learn how to do a job.
+
+Q 70 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into parts. One of them may contain an error. Select the part that contains the error from the given options. If you don’t find any error, mark ‘No error’ as your answer.
+By next December / we will has lived / in this city for 28 years.
+(1) in this city for 28 years
+(2) we will has lived
+(3) by next December
+(4) no error
+= 2
+~ The future perfect tense is will + have + past participle for every subject: By next December we will have lived in this city for 28 years. 'Will has' is wrong.
+
+Q 71 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word in the given sentence. It is impossible to think of Lady Stranleigh as an "ordinary" mother.
+(1) Unlucky
+(2) Blessed
+(3) Usual
+(4) Strange
+= 3
+~ Ordinary means normal, common or usual. Unlucky, blessed and strange do not have this meaning; strange is almost the opposite.
+
+Q 72 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select ‘No substitution’.
+"If you do not followed the rules", you will not be allowed to stay at this hostel.
+(1) If you should not follow the rules
+(2) If you do not follow the rules
+(3) No substitution
+(4) If you cannot be following the rules
+= 2
+~ After 'do not' the verb takes its base form: If you do not follow the rules. 'Do not followed' mixes two forms, so a substitution is needed.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains an error.
+A Gita is considered / to be a dialogue between / the Pandava prince, Arjuna, / and Lord Krishna.
+(1) A Gita is considered
+(2) and Lord Krishna
+(3) to be a dialogue between
+(4) the Pandava prince, Arjuna
+= 1
+~ The Gita is a particular, unique text, so it takes the definite article: The Gita is considered to be a dialogue between the Pandava prince, Arjuna, and Lord Krishna.
+
+Q 74 | eng | Vocabulary
+Select the most appropriate word to replace the underlined word in the following sentence.
+The officer was "polite" to the workers.
+(1) officious
+(2) harsh
+(3) humble
+(4) adamant
+= 3
+~ Polite means courteous and respectful. Of the options, humble (modest and respectful) is closest in meaning; officious (bossy), harsh and adamant (stubborn) suggest the opposite attitude.
+
+Q 75 | eng | Error Spotting & Sentence Improvement
+Which of the following sentences contains an error in the use of a phrasal verb?
+(1) Can you please take care for my belongings for some time?
+(2) While visiting the library, I came across an interesting book.
+(3) Let's call off the picnic as there is a possibility of heavy rain.
+(4) It is wise to put up with one's quarrelsome neighbours.
+= 1
+~ The phrasal verb is 'take care of', not 'take care for': Can you please take care of my belongings for some time? Came across, call off and put up with are used correctly.
+
+Q 76 | eng | Error Spotting & Sentence Improvement
+The given sentence is divided into four segments. Select the option that has the segment with the grammatical error.
+Mahesh and his workers / will have been worked / on the project / for a long time.
+(1) for a long time
+(2) Mahesh and his workers
+(3) on the project
+(4) will have been worked
+= 4
+~ The future perfect continuous tense uses will have been + verb-ing (active voice): will have been working. 'Will have been worked' is a wrong passive form here.
+
+Q 77 | eng | Spelling
+Select the correct spelling of the underlined word.
+"Today's "whether" is very pleasant", said Maya.
+(1) Wether
+(2) Weather
+(3) Weathur
+(4) Wheather
+= 2
+~ The word needed is 'weather', meaning the state of the atmosphere. 'Whether' (if) is a different word with a similar sound.
+
+Q 78 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Cemetery
+(2) Accommodate
+(3) Calender
+(4) Conscience
+= 3
+~ The correct spelling is 'calendar', ending in -dar. Cemetery, accommodate and conscience are spelt correctly.
+
+Q 79 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined word in the given sentence.
+Mita is "smart" than many other kids in the school.
+(1) most smart
+(2) smartest
+(3) smarter
+(4) less smart
+= 3
+~ 'Than' shows a comparison between two, so the comparative form is needed: Mita is smarter than many other kids in the school.
+
+Q 80 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) Motevate
+(2) Mutual
+(3) Nostalgia
+(4) Neutral
+= 1
+~ The correct spelling is 'motivate' (m-o-t-i-v-a-t-e). Mutual, nostalgia and neutral are spelt correctly.
+
+Q 81 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence. If there is no need to substitute it, select ‘No substitution’.
+"After she will get her degree", she moved to Germany.
+(1) No substitution
+(2) After she got her degree
+(3) After she gets her degree
+(4) After she get her degree
+= 2
+~ The main clause is in the past (she moved to Germany), so the 'after' clause must be in the past too: After she got her degree, she moved to Germany.
+
+Q 82 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+In accordance to / the factual data, / serious measures are required / to control the loss.
+(1) serious measures are required
+(2) In accordance to
+(3) the factual data
+(4) to control the loss
+= 2
+~ The correct phrase is 'in accordance with': In accordance with the factual data, serious measures are required to control the loss.
+
+Q 83 | eng | Idioms & One-word Substitution
+Select the most appropriate option to fill in the blank and complete the phrase/idiom. When Jane realised that she had made a serious mistake at work, she knew she had to face the ______and take responsibility for her actions.
+(1) mirror
+(2) fun
+(3) music
+(4) band
+= 3
+~ To 'face the music' means to accept the unpleasant results of one's actions, which fits taking responsibility for a mistake.
+
+Q 84 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+The billionaire knows how to _____ money.
+(1) develop
+(2) do
+(3) form
+(4) make
+= 4
+~ The fixed expression is 'make money', meaning earn money. We do not say develop, do or form money.
+
+Q 85 | eng | Vocabulary
+Select the most appropriate synonym of the underlined word.
+The "lavish" party had a luxurious atmosphere and elegant decorations.
+(1) Excessive
+(2) Middling
+(3) Simple
+(4) Happy
+= 1
+~ Lavish means rich, costly and more than needed, so excessive is the closest synonym. Middling and simple are nearly opposite.
+
+Q 86 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Credit cards originated in the 1920s in the US, with European references dating back to 1890. John Biggins, (1)______ of the first bank-issued credit card, invented the 'Charge-It' programme in 1946, (2)______ bank customers and local merchants. In 1950, Diners Club introduced their credit card in the US, (3)______ customers to pay restaurant bills without cash. American Express (4)______ their first credit card in 1958, while the Bank of America introduced the Bank America Card (now Visa) in 1958. Visa, now known as the Visa International Service Association, is accepted in over 150 countries, making it one of the most (5)______ credit cards available.
+Select the most appropriate option to fill in blank number 1.
+(1) discoverer
+(2) inventor
+(3) finder
+(4) producer
+= 2
+~ John Biggins created the first bank-issued credit card, so he was its inventor. A discoverer finds something that already exists.
+
+Q 87 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Credit cards originated in the 1920s in the US, with European references dating back to 1890. John Biggins, (1)______ of the first bank-issued credit card, invented the 'Charge-It' programme in 1946, (2)______ bank customers and local merchants. In 1950, Diners Club introduced their credit card in the US, (3)______ customers to pay restaurant bills without cash. American Express (4)______ their first credit card in 1958, while the Bank of America introduced the Bank America Card (now Visa) in 1958. Visa, now known as the Visa International Service Association, is accepted in over 150 countries, making it one of the most (5)______ credit cards available.
+Select the most appropriate option to fill in blank number 2.
+(1) connecting
+(2) smashing
+(3) untangling
+(4) splitting
+= 1
+~ The Charge-It programme linked bank customers with local merchants, so 'connecting' fits. Smashing, untangling and splitting suggest breaking apart.
+
+Q 88 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Credit cards originated in the 1920s in the US, with European references dating back to 1890. John Biggins, (1)______ of the first bank-issued credit card, invented the 'Charge-It' programme in 1946, (2)______ bank customers and local merchants. In 1950, Diners Club introduced their credit card in the US, (3)______ customers to pay restaurant bills without cash. American Express (4)______ their first credit card in 1958, while the Bank of America introduced the Bank America Card (now Visa) in 1958. Visa, now known as the Visa International Service Association, is accepted in over 150 countries, making it one of the most (5)______ credit cards available.
+Select the most appropriate option to fill in blank number 3.
+(1) enjoying
+(2) prohibiting
+(3) forbidding
+(4) allowing
+= 4
+~ The Diners Club card let customers pay restaurant bills without cash, so 'allowing' fits. Prohibiting and forbidding mean the opposite.
+
+Q 89 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Credit cards originated in the 1920s in the US, with European references dating back to 1890. John Biggins, (1)______ of the first bank-issued credit card, invented the 'Charge-It' programme in 1946, (2)______ bank customers and local merchants. In 1950, Diners Club introduced their credit card in the US, (3)______ customers to pay restaurant bills without cash. American Express (4)______ their first credit card in 1958, while the Bank of America introduced the Bank America Card (now Visa) in 1958. Visa, now known as the Visa International Service Association, is accepted in over 150 countries, making it one of the most (5)______ credit cards available.
+Select the most appropriate option to fill in blank number 4.
+(1) issued
+(2) censored
+(3) published
+(4) suppressed
+= 1
+~ Banks and companies issue credit cards: American Express issued its first credit card in 1958. 'Published' is for books and newspapers.
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Credit cards originated in the 1920s in the US, with European references dating back to 1890. John Biggins, (1)______ of the first bank-issued credit card, invented the 'Charge-It' programme in 1946, (2)______ bank customers and local merchants. In 1950, Diners Club introduced their credit card in the US, (3)______ customers to pay restaurant bills without cash. American Express (4)______ their first credit card in 1958, while the Bank of America introduced the Bank America Card (now Visa) in 1958. Visa, now known as the Visa International Service Association, is accepted in over 150 countries, making it one of the most (5)______ credit cards available.
+Select the most appropriate option to fill in blank number 5.
+(1) entitle
+(2) solidify
+(3) universal
+(4) amateur
+= 3
+~ A card accepted in over 150 countries is one of the most universal (used everywhere) credit cards. The blank needs an adjective after 'most', and only 'universal' makes sense.

@@ -296,9 +296,9 @@ def FAQ_PRE(total, npapers):
        f'This page has {total} questions from {npapers} UPSC Civil Services (Preliminary) papers, General Studies Paper I and CSAT (Paper II) of {P["ylist"]}, '
        'in English and Hindi as printed in the official question booklets, with UPSC\'s answer keys. Every question has a short explanation. You can practise '
        'each paper as a quiz or a timed test, or subject-wise (polity, history, geography, economy, environment, science, current affairs, CSAT), '
-       'with one ₹45 All-in-One Pass for every exam.'),
-      ('What does it cost, and what does the ₹45 All-in-One Pass cover?',
-       'One plan: the ₹45 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, '
+       'with one ₹149 All-in-One Pass for every exam.'),
+      ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
+       'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, '
        'with answers, explanations, quizzes, timed tests and all study tools, every mock test series and the study books (the UPSC and APPSC Mains model answers are free to read). '
        'Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 '
        'questions of each paper.'),
@@ -318,7 +318,7 @@ def FAQ_PRE(total, npapers):
        'UPSC Mains General Studies Papers I–IV (2019–2026), with a model answer for every question, are on the UPSC Civil Services page: '
        'learnwithanil.in/upsc-cse/.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass '
        'opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -449,6 +449,36 @@ GD_SUBJECTS = [
   ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
   ('cur', 'Current Affairs & Static GK', 'current-affairs-static-gk', ['National', 'International', 'Sports', 'Awards, Books & Persons', 'Static GK & Culture']),
 ]
+
+# ---------- SSC MTS (Multi-Tasking (Non-Technical) Staff & Havaldar (CBIC & CBN)): SSC's own response sheets (SSC's key marked on them) ----------
+# Anil, 15 Nov 2026: "SSC MTS...add pyqs and other required details like other sites". Sources: candidates' response sheets of MTS 2024
+# (English and Hindi, via sscportal.in), matched by SSC's Question and Option IDs. Work files: /home/claude/mts (scripts/, ann/, hrev/).
+MTS_BLURB = ('One computer-based exam in two sessions of 45 minutes each. Session I: Numerical & Mathematical Ability (20) and Reasoning Ability & '
+             'Problem Solving (20), no negative marking. Session II: General Awareness (25) and English Language & Comprehension (25), −1 for a wrong '
+             'answer. 90 questions, 3 marks each, 270 marks.')
+def _mts(pid, day, shift, time_, file_):
+    return dict(id=pid, file=file_, year=2024, stage='Computer Based Examination', short=f'MTS 2024 · {day} S{shift}',
+                title=f'SSC MTS 2024, {day} 2024, Shift {shift}', notif=f'Shift {shift} ({time_}) · SSC key', held=f'{day} 2024',
+                key="SSC's answer key as marked on the candidate's response sheet", fmt='mcq',
+                slug=f'ssc-mts-2024-{day.lower().replace(" ", "-")}-shift-{shift}-question-paper-with-answers',
+                kwname=f'SSC MTS 2024 ({day} Shift {shift})', hi_paper=f'({day}, पाली {shift})', blurb=MTS_BLURB, mins=90)
+MTS_PAPERS = [
+  _mts('mts24a', '30 September', 1, '9:00 AM', 'mts-2024-30sep-shift1.txt'),
+  _mts('mts24b', '30 September', 2, '12:30 PM', 'mts-2024-30sep-shift2.txt'),
+  _mts('mts24c', '30 September', 3, '4:00 PM', 'mts-2024-30sep-shift3.txt'),
+  _mts('mts24d', '1 October', 1, '9:00 AM', 'mts-2024-01oct-shift1.txt'),
+]
+MTS_SUBJECTS = [
+  ('qa',  'Numerical & Mathematical Ability', 'maths', ['Number System & Simplification', 'Percentage, Profit & Interest', 'Ratio, Average & Mixtures', 'Time, Work, Speed & Distance', 'Algebra', 'Geometry', 'Mensuration', 'Trigonometry & Heights', 'Data Interpretation & Statistics']),
+  ('rea', 'Reasoning Ability & Problem Solving', 'reasoning', ['Analogy & Classification', 'Series', 'Coding-Decoding', 'Blood Relations & Directions', 'Arrangement & Puzzles', 'Syllogism & Statements', 'Mathematical Operations', 'Non-verbal Reasoning', 'Miscellaneous Reasoning']),
+  ('eng', 'English Language & Comprehension', 'english', ['Vocabulary', 'Idioms & One-word Substitution', 'Spelling', 'Error Spotting & Sentence Improvement', 'Fill in the Blanks & Cloze Test', 'Voice & Narration', 'Sentence Arrangement', 'Reading Comprehension']),
+  ('ih',  'History & Culture', 'history', ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Rights', 'Government & Parliament', 'Judiciary & Constitutional Bodies', 'Local Government & Governance']),
+  ('geo', 'Geography', 'geography', ['Indian Geography', 'World & Physical Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Planning, Growth & Budget', 'Money, Banking & Finance', 'Agriculture, Industry & Trade', 'Schemes & Welfare']),
+  ('sci', 'General Science', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs & Static GK', 'current-affairs-static-gk', ['National', 'International', 'Sports', 'Awards, Books & Persons', 'Static GK & Culture']),
+]
 GD_SUBJ_HI = {'rea': 'सामान्य बुद्धि और तर्कशक्ति (रीजनिंग)', 'qa': 'प्रारंभिक गणित', 'eng': 'अंग्रेज़ी', 'ih': 'इतिहास और संस्कृति',
               'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल', 'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान',
               'cur': 'करेंट अफेयर्स और स्टैटिक जीके'}
@@ -532,12 +562,12 @@ def FAQ_TN4(total, npapers):
        'and the explanations are in Tamil too. In English mode Part B is in English and Part A stays in Tamil.'),
       ('Is there a TNPSC Group 4 mock test?',
        'Yes. Every paper here can be taken as a full 200-question mock test with the real 3-hour limit, and the sectional tests take all the previous questions of one subject, '
-       'for example General Tamil or Aptitude. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'for example General Tamil or Aptitude. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('When is the TNPSC Group 4 exam in 2027?',
        'TNPSC Notification No. 11/2026 (6 October 2026) fixes the written examination for Sunday, 10 January 2027, 9.30 am to 12.30 pm, for 6,574 vacancies. '
        'Online applications closed on 8 November 2026 (extended from 5 November). The hall ticket comes on tnpscexams.in before the exam; it is not sent by post.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers '
        'of every exam for 12 months. There is no password.'),
     ]
 
@@ -621,7 +651,7 @@ def FAQ_KFS(total, npapers):
        'General Kannada is in Kannada only and General English in English only, as in the exam. The explanations are in Kannada and English.'),
       ('Is there a KEA FDA/SDA mock test?',
        'Yes. Every paper here can be taken as a full 100-question mock test with the real 2-hour limit and negative marking, and the sectional tests take '
-       'all the previous questions of one subject, such as General Kannada or Computer Knowledge. Answers and explanations open with the ₹45 '
+       'all the previous questions of one subject, such as General Kannada or Computer Knowledge. Answers and explanations open with the ₹149 '
        'All-in-One Pass, which covers every exam on the site.'),
       ('When is the KEA FDA and SDA exam in 2027?',
        'KEA\'s four notifications of 29 October 2026 (5,431 posts) fix the Kannada language test for 8 January 2027; the FDA-level papers on 9 January '
@@ -629,7 +659,7 @@ def FAQ_KFS(total, npapers):
        '(rest of Karnataka). Paper-1 is from 10.30 am to 12.30 pm and Paper-2 from 2.30 to 4.30 pm. Online applications close on 25 November 2026 '
        '(fee by 26 November) on cetonline.karnataka.gov.in/kea.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -686,12 +716,12 @@ def FAQ_GPS(total, npapers):
        'Kannada only and General English in English only, as in the exam. The explanations are in Kannada and English.'),
       ('Is there a GPSTR mock test?',
        'Yes. The paper can be taken as a full mock test with a timer, and the sectional tests take all the previous questions of one subject, such as '
-       'Educational Psychology or General Kannada. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'Educational Psychology or General Kannada. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('When is the Karnataka teacher recruitment exam 2026?',
        'Not announced yet (as of 16 November 2026). Online applications for the 15,000 posts closed on 16 November 2026 after extensions; corrections are '
        'allowed till 18 November and the fee till 28 November. An October timetable in the August guidelines was dropped when the dates were extended.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -749,12 +779,12 @@ def FAQ_MGC(total, npapers):
        'Yes. Tap मराठी at the top of the page: every question and its options show in Marathi exactly as MPSC printed them, and the explanations are in Marathi and English.'),
       ('Is there an MPSC Group C mock test?',
        'Yes. Every paper here can be taken as a full 100-question mock test with the real 1-hour limit and negative marking, and the sectional tests take all the previous '
-       'questions of one subject, such as Maharashtra history or arithmetic. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'questions of one subject, such as Maharashtra history or arithmetic. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('When is the MPSC Group C prelims 2026 exam?',
        'On 24 January 2027. MPSC\'s corrigendum of 6 November 2026 (Advt. No. 017/2026) raised the posts to 16,717 in 27 cadres, reopened online applications from '
        '13 to 27 November 2026 (fee by 30 November) and moved the prelims from 3 January to 24 January 2027. It is an offline (OMR) exam held at every district centre.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -807,13 +837,13 @@ def FAQ_GCC(total, npapers):
        'Gujarati and the English section in English, and every explanation is in Gujarati and English.'),
       ('Is there a GSSSB CCE mock test?',
        'Yes. Every paper here can be taken as a full 100-question mock test with the real 60-minute limit and negative marking, and the sectional tests take all the '
-       'previous questions of one subject, such as Reasoning or Gujarati. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'previous questions of one subject, such as Reasoning or Gujarati. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('What is the last date to apply for GSSSB CCE 2.0?',
        'Online applications on ojas.gujarat.gov.in are open from 5 November (2 pm) to 30 November 2026 (11.59 pm), and the fee must be paid by 2 December 2026. '
        'The advertisement (No. 468/2026-27) has 1,237 posts: 243 Group-A posts (Senior Clerk, Head Clerk, Social Welfare Inspector, Sub Registrar and others) and '
        '994 Junior Clerk posts in Group-B. GSSSB will announce the Preliminary exam date.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -878,9 +908,9 @@ def FAQ_USI(total, npapers):
        'Yes. UPSSSC prints every question in Hindi and English. Tap हिन्दी at the top of the page to read the questions and explanations in Hindi.'),
       ('Is there a UPSSSC Mains mock test?',
        'Yes. Every paper here can be taken as a full 100-question mock test with the real 2-hour limit and negative marking, and the sectional tests take all the '
-       'previous questions of one subject, such as UP GK or Computer. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'previous questions of one subject, such as UP GK or Computer. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -939,9 +969,9 @@ def FAQ_URA(total, npapers):
        'are allowed till 3 December 2026. Advt. A-4/E-1/2026 has 501 posts.'),
       ('Is there a UPPSC RO/ARO mock test?',
        'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
-       'questions of one subject, such as General Hindi or UP GK. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'questions of one subject, such as General Hindi or UP GK. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1000,9 +1030,9 @@ def FAQ_UKL(total, npapers):
        'from 3 to 12 December 2026. Advt. A-1/E-2/DR/LSS/2026-27 has 54 posts.'),
       ('Is there a UKPSC Lower PCS mock test?',
        'Yes. Every paper here can be taken as a full 2-hour mock test with negative marking, and the sectional tests take all the previous questions of '
-       'one subject, such as Uttarakhand GK or General Aptitude. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'one subject, such as Uttarakhand GK or General Aptitude. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1058,9 +1088,9 @@ def FAQ_CGV(total, npapers):
        'Online applications on cgssb.cgstate.gov.in are open from 5 November to 27 November 2026 (5 pm); corrections are allowed from 28 to 30 November 2026.'),
       ('Is there a CG Vyapam mock test?',
        'Yes. Every paper here can be taken as a full mock test with negative marking, and the sectional tests take all the previous questions of one part, '
-       'such as Computer or Chhattisgarh GK. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'such as Computer or Chhattisgarh GK. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1126,9 +1156,9 @@ def FAQ_OAS(total, npapers):
        'The written exam is on Sunday, 17 January 2027. Online applications on opsc.gov.in are open from 9 to 30 November 2026 (5 pm). Advt. No. 15 of 2026-27 has 340 posts.'),
       ('Is there an OPSC ASO mock test?',
        'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
-       'questions of one subject, such as Odisha GK or Odia. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'questions of one subject, such as Odisha GK or Odia. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1191,10 +1221,10 @@ def FAQ_WBI(total, npapers):
        '26 November 2026 (3 pm) on psc.wb.gov.in, for both the application and the fee (Advt. No. 15/2024, 247 posts). WBPSC will announce the exam date later.'),
       ('Is there a WBPSC IDO mock test?',
        'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
-       'questions of one subject, such as Industrial Safety or Mental Ability. Answers and explanations open with the ₹45 All-in-One Pass, which covers every '
+       'questions of one subject, such as Industrial Safety or Mental Ability. Answers and explanations open with the ₹149 All-in-One Pass, which covers every '
        'exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1254,9 +1284,9 @@ def FAQ_DSB(total, npapers):
        '11 December 2026 (11:59 pm) on dsssbonline.nic.in (Advt. No. 06/2026: 1,075 MTS and 185 JE posts). DSSSB will announce the exam dates on its website.'),
       ('Is there a DSSSB mock test?',
        'Yes. Each paper can be taken as a full 2-hour mock test with negative marking, and the sectional tests take all the previous questions of one part, '
-       'such as Reasoning, Hindi or Electrical Engineering. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+       'such as Reasoning, Hindi or Electrical Engineering. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
@@ -1305,6 +1335,19 @@ def rrbd_text():
     yr = f'{years[0]}–{years[-1]}' if len(years) > 1 else str(years[0])
     return dict(n=len(have), years=yr, days=' and '.join(days) if days else '27 November 2025',
                 what=f'{len(have)} CBT shift paper{"s" if len(have) != 1 else ""}')
+MTS_SUBJ_HI = {'qa': 'संख्यात्मक और गणितीय क्षमता', 'rea': 'तर्कशक्ति और समस्या समाधान', 'eng': 'अंग्रेज़ी भाषा और बोध', 'ih': 'इतिहास और संस्कृति',
+               'pol': 'भारतीय राजव्यवस्था', 'geo': 'भूगोल', 'eco': 'भारतीय अर्थव्यवस्था', 'sci': 'सामान्य विज्ञान',
+               'cur': 'करेंट अफेयर्स और स्टैटिक जीके'}
+
+
+def mts_text():
+    """Wording for the SSC MTS page that depends on which papers are on the site."""
+    have = [p for p in MTS_PAPERS if p['id'] in have_src('ssc-mts', MTS_PAPERS)]
+    days = []
+    for p in have:
+        d = p['held'].replace(' 2024', '')
+        if d not in days: days.append(d)
+    return dict(n=len(have), days=' and '.join(days) or '30 September', what=f'{len(have)} shift paper{"s" if len(have) != 1 else ""}')
 
 
 # ---------- Telangana Police (TSLPRB, now TGPRB): SI and Constable Preliminary Written Tests ----------
@@ -1989,9 +2032,9 @@ def FAQ_RPF(post):
           (f'Is the {name} question paper available in Hindi?',
            'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in RRB\'s Hindi paper of the same shift, with the explanation in Hindi.'),
           (f'Is there an {name} mock test?',
-           'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and the sectional tests take all the previous questions of one subject. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+           'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and the sectional tests take all the previous questions of one subject. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
           ('Do I need to register?',
-           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
         ]
     return faq
 
@@ -2301,7 +2344,7 @@ def FAQ_SBIPO(total, npapers):
       ('Are the SBI PO mock tests in Hindi?',
        'Yes. Quantitative Aptitude and Reasoning questions, options and explanations are in English and Hindi: tap हिंदी at the top. The English Language section is in English only, as in the real exam.'),
       ('How much do the SBI PO mock tests cost?',
-       'They are included in the ₹45 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months. Register once (free) and pay once.'),
+       'They are included in the ₹149 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months. Register once (free) and pay once.'),
       ('Can I take one section at a time?',
        'Yes. Each mock opens as a full 60-minute test or section by section (English, Quantitative Aptitude or Reasoning) with the real 20-minute limit, in exam mode or practice mode with answers as you go.'),
     ]
@@ -2323,7 +2366,7 @@ def FAQ_IBPSSO(total, npapers):
       ('Are the IBPS SO mock tests in Hindi?',
        'Yes. Reasoning, Quantitative Aptitude and Professional Knowledge questions, options and explanations are in English and Hindi: tap हिंदी at the top. English Language is in English only, as in the real exam.'),
       ('How much do the IBPS SO mock tests cost?',
-       'They are included in the ₹45 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months.'),
+       'They are included in the ₹149 All-in-One Pass, which opens every exam, mock series and study book on Learn with Anil for 12 months.'),
     ]
 
 
@@ -2342,9 +2385,9 @@ def bank_confs():
            h1='SBI PO Prelims mock tests <em>in the latest pattern.</em>',
            aka='State Bank of India Probationary Officer (PO) Preliminary Examination: English Language 40, Quantitative Aptitude 30 and Reasoning Ability 30 questions, 20 minutes each.',
            aka_short='State Bank of India Probationary Officer (PO) Prelims',
-           l2line='एसबीआई पीओ प्रारंभिक परीक्षा के नए पैटर्न में मॉक टेस्ट — संख्यात्मक अभियोग्यता और तर्कशक्ति हिंदी और अंग्रेज़ी में, हर उत्तर की व्याख्या के साथ; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='एसबीआई पीओ प्रारंभिक परीक्षा के नए पैटर्न में मॉक टेस्ट — संख्यात्मक अभियोग्यता और तर्कशक्ति हिंदी और अंग्रेज़ी में, हर उत्तर की व्याख्या के साथ; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: ('SBI PO Prelims mock tests by Learn with Anil in the latest pattern (English 40, Quantitative Aptitude 30, Reasoning 30; 20 minutes each), '
-                           'new questions in English and Hindi with an explanation for every answer, as full mocks or sectional tests, in the ₹45 All-in-One Pass.'),
+                           'new questions in English and Hindi with an explanation for every answer, as full mocks or sectional tests, in the ₹149 All-in-One Pass.'),
            eyebrow='State Bank of India · Probationary Officers · Prelims mock tests',
            papers_note='SBI does not publish its PO question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
       dict(id='ibps-so', dir='ibps-so', src='ibps-so', key='ibps-so', name='IBPS SO', short='IBPS SO', seo='IBPS SO', mockonly=True,
@@ -2355,9 +2398,9 @@ def bank_confs():
            h1='IBPS SO Prelims mock tests <em>in the new 2026 pattern.</em>',
            aka='IBPS Specialist Officers (CRP SPL-XVI) Preliminary Examination: English, Reasoning, Quantitative Aptitude and Professional Knowledge, 25 questions each, for IT Officer, Agriculture Field Officer, HR/Personnel Officer and Marketing Officer.',
            aka_short='IBPS Specialist Officers (SO) Prelims, CRP SPL-XVI',
-           l2line='आईबीपीएस एसओ प्रारंभिक परीक्षा (नया पैटर्न, व्यावसायिक ज्ञान सहित) के मॉक टेस्ट — आईटी, कृषि, मानव संसाधन और विपणन अधिकारी के लिए, हिंदी और अंग्रेज़ी में; एक ₹45 ऑल-इन-वन पास।',
+           l2line='आईबीपीएस एसओ प्रारंभिक परीक्षा (नया पैटर्न, व्यावसायिक ज्ञान सहित) के मॉक टेस्ट — आईटी, कृषि, मानव संसाधन और विपणन अधिकारी के लिए, हिंदी और अंग्रेज़ी में; एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: ('IBPS SO Prelims mock tests by Learn with Anil in the 2026-27 pattern with Professional Knowledge: versions for IT Officer, Agriculture Field Officer, '
-                           'HR/Personnel Officer and Marketing Officer, new questions in English and Hindi with explanations, in the ₹45 All-in-One Pass.'),
+                           'HR/Personnel Officer and Marketing Officer, new questions in English and Hindi with explanations, in the ₹149 All-in-One Pass.'),
            eyebrow='IBPS · Specialist Officers · Prelims mock tests (new pattern)',
            papers_note='IBPS does not publish its SO question papers, so this page has Learn with Anil\'s own mock tests, not previous papers.'),
     ]
@@ -2376,11 +2419,11 @@ def exam_confs():
            slugp='appsc-group-2', papers=PAPERS, subjects=SUBJECTS, faq=FAQ, board='APPSC', l2=L2_TE, pb='/appsc-group-2/',
            title='APPSC Group 2 Previous Year Question Papers (PYQs) with Answers – Prelims & Mains 2019–2025, English & Telugu | Learn with Anil',
            h1='APPSC Group 2 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='APPSC గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు (ప్రిలిమ్స్, మెయిన్స్) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as AP Group 2 or APPSC Group-II Services. Old question papers, PYQs and practice bits, all with the final key.',
            desc=lambda t: (f"APPSC Group 2 (AP Group 2) previous year question papers and old papers with answers from APPSC's final key: Prelims (Screening Test) 2024 and 2019, "
                            f"Mains 2025 Paper 1 and Paper 2, and Mains 2019. {t:,} questions in English and Telugu with explanations; "
-                           f"practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
            # Group-II Micro-Syllabus book added 29 Oct 2026 (Anil); the AP Economy and S&T books stay on this page too
@@ -2406,11 +2449,11 @@ def exam_confs():
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
            h1='APPSC Group 1 previous year question papers <em>with answers.</em>',
-           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='APPSC గ్రూప్ 1 ప్రిలిమ్స్ మునుపటి సంవత్సరం ప్రశ్నపత్రాలు, పాత ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as AP Group 1 or APPSC Group-I Services. Old question papers and PYQs of the Prelims, with the final key.',
            desc=lambda t: (f"APPSC Group 1 (AP Group 1) Prelims previous year question papers and old papers with answers from APPSC's final key: 2024, 2023 and 2019, "
                            f"Paper 1 General Studies and Paper 2 General Aptitude. {t:,} questions in English and Telugu with explanations; "
-                           f"practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='APPSC Group-I · Prelims · 2019–2024',
            papers_note="Every paper uses APPSC's official final key. The 2024 key shows all four options. The 2023 and 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the All-in-One Pass)."),
       dict(id='upsc-capf', dir='upsc-capf', src='upsc-capf', key='upsc-capf', name='UPSC CAPF (AC)', short='CAPF (AC)', seo='UPSC CAPF AC',
@@ -2419,10 +2462,10 @@ def exam_confs():
            title='UPSC CAPF AC Previous Year Question Papers with Answers (2024–2026), English & Hindi | Learn with Anil',
            h1='UPSC CAPF AC previous year question papers <em>with answers.</em>',
            aka='Also known as the CAPF Assistant Commandant (AC) exam. PYQs of Paper 1 (General Ability and Intelligence), subject-wise, with the answer key.',
-           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='यूपीएससी सीएपीएफ असिस्टेंट कमांडेंट के पिछले वर्षों के प्रश्न पत्र, उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"UPSC CAPF AC (Assistant Commandant) previous year question papers: Paper 1 General Ability and Intelligence "
                            f"2026, 2025 and 2024 with answer keys and explanations. {t:,} questions in English and Hindi; "
-                           f"subject-wise practice and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"subject-wise practice and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='UPSC CAPF (Assistant Commandants) · Paper I · 2024–2026',
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
       dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name=('UPSC EPFO (APFC, EO/AO, PA)' if E.get('pa') else 'UPSC EPFO (APFC, EO/AO)'), short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
@@ -2441,14 +2484,14 @@ def exam_confs():
                   'PYQs with UPSC\'s official answer key, subject-wise: labour laws, social security, accounting, polity, economy, history, science, aptitude and English.'),
            aka_short=('UPSC EPFO APFC, EO/AO (Enforcement Officer / Accounts Officer) and PA (Personal Assistant)' if E['pa'] else
                       'UPSC EPFO APFC and EO/AO (Enforcement Officer / Accounts Officer)' if E['eo'] else 'UPSC EPFO Assistant Provident Fund Commissioner (APFC)'),
-           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC), प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) और वैयक्तिक सहायक (PA) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, उत्तर सहित (जहाँ यूपीएससी ने कुंजी जारी की है, वहाँ आधिकारिक उत्तर कुंजी से) — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।' if E['pa'] and E['nokey'] else
-                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।' if E['eo'] else
-                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।'),
+           l2line=('यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC), प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) और वैयक्तिक सहायक (PA) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, उत्तर सहित (जहाँ यूपीएससी ने कुंजी जारी की है, वहाँ आधिकारिक उत्तर कुंजी से) — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।' if E['pa'] and E['nokey'] else
+                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) और प्रवर्तन अधिकारी/लेखा अधिकारी (EO/AO) भर्ती परीक्षाओं के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।' if E['eo'] else
+                   'यूपीएससी ईपीएफओ सहायक भविष्य निधि आयुक्त (APFC) भर्ती परीक्षा का पिछले वर्ष का प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।'),
            desc=lambda t: ((f"UPSC EPFO previous year question papers with answers and explanations: {E['papers']} (APFC, Enforcement Officer / Accounts Officer and Personal Assistant recruitment tests). " if E['many'] else
                             f"UPSC EPFO previous year question papers with UPSC's official answer keys and explanations: the APFC 2023 recruitment test and the EO/AO (Enforcement Officer / Accounts Officer) {E['eoy'].replace(' & ', ' and ')} test{'s' if E['eo21'] else ''}. " if E['eo'] else
                             f"UPSC EPFO APFC (Assistant Provident Fund Commissioner) previous year question paper: the 2023 recruitment test with UPSC's official answer key and explanations. ")
                            + f"{t:,} questions in English and Hindi on labour laws, social security, accounting, polity, economy, history, science, aptitude and English; "
-                           f"subject-wise practice and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"subject-wise practice and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow=(f"UPSC · EPFO APFC, EO/AO &amp; PA · Recruitment Tests {E['years']}" if E['pa'] else
                     f"UPSC · EPFO APFC &amp; EO/AO · Recruitment Tests {E['years']}" if E['eo'] else 'UPSC · EPFO Assistant Provident Fund Commissioner · Recruitment Test 2023'),
            papers_note=(epfo_keynote(E) + " Part A (General English) is in English only; every other question is in English and Hindi, as printed in the booklets." if E['many'] else
@@ -2466,10 +2509,10 @@ def exam_confs():
                 'CSAT (Paper II), year-wise and subject-wise, with UPSC\'s answer keys.'),
            aka_short='UPSC Civil Services (Preliminary) Examination: General Studies Paper I and CSAT',
            l2line=('यूपीएससी सिविल सेवा प्रारंभिक परीक्षा (IAS Prelims) के पिछले वर्षों के प्रश्न पत्र — सामान्य अध्ययन प्रश्न-पत्र I और सीसैट, '
-                   'यूपीएससी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।'),
+                   'यूपीएससी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।'),
            desc=lambda t: (f"UPSC Prelims (IAS / CSE Prelims) previous year question papers with answers: General Studies Paper 1 and CSAT Paper 2, "
                            f"{P['years']}, with UPSC's answer keys and explanations. {t:,} questions in English and Hindi; year-wise and subject-wise "
-                           f"practice and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"practice and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow=f"UPSC Civil Services · Prelims · GS Paper I &amp; CSAT · {P['years']}",
            papers_note=P['note']),
       dict(id='ssc-cgl', dir='ssc-cgl', src='ssc-cgl', key='ssc-cgl', name='SSC CGL', short='SSC CGL', seo='SSC CGL',
@@ -2527,7 +2570,7 @@ def exam_confs():
            aka=('SSC Constable (GD) in CAPFs (BSF, CISF, CRPF, ITBP, SSB), SSF, Rifleman (GD) in Assam Rifles and Sepoy in NCB: '
                 'shift-wise computer-based exam papers with SSC\'s answer key, subject-wise: reasoning, general knowledge, elementary maths and English.'),
            aka_short='SSC Constable (GD) in CAPFs, SSF, Assam Rifles and NCB',
-           l2line='एसएससी जीडी कांस्टेबल के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — रीजनिंग, सामान्य ज्ञान, प्रारंभिक गणित और अंग्रेज़ी; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='एसएससी जीडी कांस्टेबल के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — रीजनिंग, सामान्य ज्ञान, प्रारंभिक गणित और अंग्रेज़ी; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"SSC GD Constable previous year question papers with SSC's answer key and explanations: {gd_text()['what']} ({gd_text()['days']}), "
                            f"from SSC's own response sheets. {t:,} questions on reasoning, general knowledge, elementary maths and English; subject-wise practice "
                            f"and 60-minute timed mock tests."),
@@ -2538,6 +2581,24 @@ def exam_confs():
                         "The Hindi text of Parts A–C and the Hindi explanations are Learn with Anil's translation (SSC's Hindi-medium paper may word them differently); Part D English is in English only."),
            l2_line=("Parts A–C are shown in English and in Hindi (Hindi translation by Learn with Anil; SSC's Hindi-medium paper may word them differently). "
                     "Part D (English) is in English only.")),
+      dict(id='ssc-mts', dir='ssc-mts', src='ssc-mts', key='ssc-mts', name='SSC MTS', short='SSC MTS', seo='SSC MTS',
+           slugp='ssc-mts', papers=MTS_PAPERS, subjects=MTS_SUBJECTS, faq=FAQ_MTS, board='SSC', l2=L2_HI, pb='/ssc-mts/',
+           keyname="SSC's answer key", keyshort="SSC's answer key (as marked on the response sheets)",
+           hi_name='एसएससी एमटीएस', hi_paper='प्रश्न पत्र', subj_te=MTS_SUBJ_HI,
+           title='SSC MTS Previous Year Question Papers with Answers – 2024 Shift-wise, English & Hindi (MTS & Havaldar) | Learn with Anil',
+           h1='SSC MTS previous year question papers <em>with answers.</em>',
+           aka=('SSC Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination: shift-wise papers with SSC\'s answer key, subject-wise: '
+                'maths, reasoning, general awareness and English.'),
+           aka_short='SSC Multi-Tasking Staff (MTS) and Havaldar',
+           l2line='एसएससी एमटीएस और हवलदार परीक्षा के पिछले वर्षों के प्रश्न पत्र, एसएससी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; गणित, रीजनिंग, सामान्य जागरूकता और अंग्रेज़ी।',
+           desc=lambda t: (f"SSC MTS previous year question papers with SSC's answer key and explanations: MTS & Havaldar 2024, {mts_text()['what']} ({mts_text()['days']} 2024), "
+                           f"from SSC's own response sheets. {t:,} questions in English and Hindi on maths, reasoning, general awareness and English; "
+                           f"subject-wise practice and 90-minute timed mock tests."),
+           eyebrow='SSC · Multi-Tasking (Non-Technical) Staff &amp; Havaldar · 2024',
+           papers_note=("Every paper is SSC's own question paper as candidates print it from SSC's portal (the response sheet), with the answer SSC marked as correct. "
+                        "The sheets are from the answer-key stage, so SSC's final key may differ for a few questions. Each shift had a different paper. "
+                        "The English Language section is in English only; the other questions are in English and Hindi as printed in SSC's Hindi paper, except a few "
+                        "that could not be read on the Hindi sheet. Two questions of 30 September Shift 1 are cut off on the sheet and are left out.")),
       dict(id='ts-police-si', dir='ts-police-si', src='ts-police-si', key='ts-si', name='TS Police SI', short='TS Police SI', seo='TS Police SI',
            slugp='ts-police-si', papers=TS_SI_PAPERS, subjects=TS_SUBJECTS, faq=FAQ_TS('SI', T['si']), board='TSLPRB', l2=L2_TE, pb='/ts-police-si/',
            keyname="TSLPRB's final key", keyshort="TSLPRB's final key", bits=True,
@@ -2545,13 +2606,13 @@ def exam_confs():
            title=('TS Police SI Previous Question Papers with Answers – Telangana SI Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if si_m else
                   'TS Police SI Previous Question Papers with Answers – Telangana SI (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police SI previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.' if si_m else
-                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.'),
+           l2line=('తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.' if si_m else
+                   'తెలంగాణ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.'),
            aka='Also known as the Telangana (TG) Police SI exam: SCT SI (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police SI (TSLPRB / TGPRB)',
            desc=lambda t: ((f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination {T['si_fwe']}) with answers from TSLPRB's final keys. " if si_m else
                             f"TS Police SI (Telangana SI, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           + f"{t:,} questions on arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow=('TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if si_m else
                     'TSLPRB / TGPRB · SI (Civil) &amp; equivalent · Preliminary Written Test'),
            papers_note=("Answers come from TSLPRB's final keys: booklet A for the 2022 Preliminary Written Test (key released on 21 October 2022) and booklet D for the 2023 Final Written Examination. "
@@ -2565,14 +2626,14 @@ def exam_confs():
                   'TS Police Constable Previous Question Papers with Answers – Telangana Constable Prelims 2022 & Mains 2023 (TSLPRB), English & Telugu | Learn with Anil' if pc_m else
                   'TS Police Constable Previous Question Papers with Answers – Telangana Constable (TSLPRB) Prelims 2022, English & Telugu | Learn with Anil'),
            h1='TS Police Constable previous year question papers <em>with answers.</em>',
-           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.' if pc_m else
-                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.'),
+           l2line=('తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ, ఫైనల్ రాత పరీక్షల పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.' if pc_m else
+                   'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.'),
            aka='Also known as the Telangana (TG) Police Constable or TS PC exam: SCT PC (Civil) and equivalent posts, conducted by TSLPRB, now TGPRB.',
            aka_short='Telangana Police Constable (TSLPRB / TGPRB)',
            desc=lambda t: ((f"TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims ({T['pc_pre'].replace(' & ', ' and ')}) and Mains / Final Written Examination ({T['pc_fwe'].replace(' & ', ' and ')}) with answers from TSLPRB's keys. " if T['pcmany'] else
                             "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question papers: Prelims 2022 and Mains 2023 (Final Written Examination, 30 April 2023) with answers from TSLPRB's final keys. " if pc_m else
                             "TS Police Constable (Telangana Constable, TSLPRB / TGPRB) previous question paper: Preliminary Written Test 2022 with answers from TSLPRB's final key. ")
-                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           + f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow=(f"TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims &amp; Final Written Exams {T['pc_years']}" if T['pcmany'] else
                     'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Prelims 2022 &amp; Final Written Exam 2023' if pc_m else
                     'TSLPRB / TGPRB · Police Constable (Civil) &amp; equivalent · Preliminary Written Test'),
@@ -2589,12 +2650,12 @@ def exam_confs():
            te_name='టీజీపీఎస్సీ గ్రూప్-1 సర్వీసెస్', te_paper='ప్రిలిమినరీ టెస్ట్', subj_te=TGG_SUBJ_TE,
            title='TGPSC Group 1 Prelims Previous Question Papers with Answers – 2024, 2023 & 2022 (Cancelled) Papers, English & Telugu | Learn with Anil',
            h1='TGPSC Group 1 Prelims previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) గ్రూప్-1 ప్రిలిమ్స్ పాత ప్రశ్నాపత్రాలు సమాధానాలతో — 2024, రద్దయిన 2023, 2022 పరీక్షలు, తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) గ్రూప్-1 ప్రిలిమ్స్ పాత ప్రశ్నాపత్రాలు సమాధానాలతో — 2024, రద్దయిన 2023, 2022 పరీక్షలు, తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as TSPSC Group 1 or Telangana Group-I Services. Old question papers and PYQs of the Preliminary Test, with the final key.',
            aka_short='TGPSC (TSPSC) Group-I Services, Telangana',
            desc=lambda t: (f"TGPSC (TSPSC) Group 1 Prelims previous question papers with answers from the final keys: the 9 June 2024 paper and the two cancelled papers of "
                            f"16 October 2022 and 11 June 2023, General Studies & Mental Ability. {t:,} questions in English and Telugu with explanations; "
-                           f"practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Group-I Services · Preliminary Test · 2022–2024',
            papers_note="Answers come from the commission's final keys on the master booklets: the Preliminary Test of 9 June 2024 (Notification 02/2024) and the two Preliminary Tests "
                        "of Notification 04/2022, held on 16 October 2022 (cancelled by TSPSC in March 2023 after the question paper leak) and 11 June 2023 (set aside by the High Court "
@@ -2606,12 +2667,12 @@ def exam_confs():
            te_name='టీజీపీఎస్సీ గ్రూప్-2 సర్వీసెస్', te_paper='రాత పరీక్ష', subj_te=TGG_SUBJ_TE,
            title='TGPSC Group 2 Previous Question Papers with Answers – 2024 Papers I, II, III & IV, English & Telugu | Learn with Anil',
            h1='TGPSC Group 2 previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) గ్రూప్-2 పాత ప్రశ్నాపత్రాలు సమాధానాలతో — 2024 పేపర్-1, 2, 3, 4, తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) గ్రూప్-2 పాత ప్రశ్నాపత్రాలు సమాధానాలతో — 2024 పేపర్-1, 2, 3, 4, తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as TSPSC Group 2 or Telangana Group-II Services. Old question papers and PYQs with the final key.',
            aka_short='TGPSC (TSPSC) Group-II Services, Telangana',
            desc=lambda t: (f"TGPSC (TSPSC) Group 2 previous question papers with answers from TGPSC's final key: the December 2024 Paper I General Studies & General Abilities, "
                            f"Paper II History, Polity & Society, Paper III Economy & Development and Paper IV Telangana Movement & State Formation. {t:,} questions in English and Telugu "
-                           f"with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Group-II Services · Papers I–IV · 2024',
            papers_note="Answers come from TGPSC's final key on the master booklets of the written examination held on 15 and 16 December 2024 (Notification 28/2022). "
                        "Questions the key deleted are left out; where the key accepted more than one option, each accepted option is shown as correct. "
@@ -2622,11 +2683,11 @@ def exam_confs():
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
            title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS, Civil, ECE & CSE, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్ (ECE), కంప్యూటర్ సైన్స్ & ఐటీ (CSE); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), సివిల్ ఇంజనీరింగ్, ఎలక్ట్రానిక్స్ & కమ్యూనికేషన్ ఇంజనీరింగ్ (ECE), కంప్యూటర్ సైన్స్ & ఐటీ (CSE); అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Manager (Engineering) in the Hyderabad Metropolitan Water Supply and Sewerage Board (HMWSSB, Jalamandali), recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Manager (Engineering), Hyderabad Metro Water Board',
            desc=lambda t: (f"TGPSC (TSPSC) HMWSSB Manager (Engineering) previous question papers: the 2015 Paper 1 General Studies (English and Telugu) "
-                           f"and Paper 2 Civil Engineering, Electronics & Communication Engineering (ECE) and Computer Science & IT (CSE) with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"and Paper 2 Civil Engineering, Electronics & Communication Engineering (ECE) and Computer Science & IT (CSE) with answers from TSPSC's final key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Manager (Engineering), HMWSSB · Notification 13/2015',
            papers_note="Answers come from TSPSC's final key for booklet Series A (Notification 13/2015, written test held on 1 November 2015). Questions for which TSPSC gave the mark to every candidate are left out. Paper 1 is in English and Telugu as printed (its English-language questions in English only); the Paper 2 subject papers (Civil Engineering, Electronics & Communication Engineering, Computer Science & Information Technology) are in English only. Where the key accepted two options, both are shown as correct."),
       dict(id='appsc-amvi', dir='appsc-amvi', src='appsc-amvi', key='ap-amvi', name='APPSC AMVI (Assistant Motor Vehicle Inspector)',
@@ -2635,11 +2696,11 @@ def exam_confs():
            te_name='ఏపీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్ ఇన్‌స్పెక్టర్ (AMVI)', te_paper='రాత పరీక్ష', subj_te=AMVI_AP_SUBJ_TE,
            title='APPSC AMVI Previous Question Papers with Answers – Assistant Motor Vehicle Inspector 2019, 2023 & 2026, GS & Automobile Engineering | Learn with Anil',
            h1='APPSC AMVI previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్ ఇన్‌స్పెక్టర్ (AMVI) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్ ఇన్‌స్పెక్టర్ (AMVI) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Assistant Motor Vehicle Inspector (AMVI) in the A.P. Transport Subordinate Service, recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Assistant Motor Vehicle Inspector (AP Transport Department)',
            desc=lambda t: (f"APPSC AMVI (Assistant Motor Vehicle Inspector) previous question papers: Paper I General Studies & Mental Ability (English and Telugu) and Paper II Automobile Engineering "
-                           f"of 2026, 2023 and 2019 with answers from APPSC's final keys. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"of 2026, 2023 and 2019 with answers from APPSC's final keys. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Assistant Motor Vehicle Inspector · Transport Department · 2019, 2023 &amp; 2026',
            papers_note="Answers come from APPSC's final keys: the boxed answers of the 2026 Series A booklets (Notification 21/2025), the APOnline final key of the 6 October 2023 computer-based test (Notification 12/2022) and the 2019 final and revised keys (Notification 11/2018). Questions APPSC deleted or ignored for all candidates are left out. APPSC's 2019 keys print only the correct answer, so the 2019 papers are quick-recall questions. Paper I is in English and Telugu as printed (2019: English only); Paper II (Automobile Engineering) is in English only."),
       dict(id='tgpsc-amvi', dir='tgpsc-amvi', src='tgpsc-amvi', key='tg-amvi', name='TGPSC AMVI (Assistant Motor Vehicles Inspector)',
@@ -2648,11 +2709,11 @@ def exam_confs():
            te_name='టీజీపీఎస్సీ అసిస్టెంట్ మోటార్ వెహికల్స్ ఇన్‌స్పెక్టర్ (AMVI)', te_paper='రాత పరీక్ష', subj_te=AMVI_TG_SUBJ_TE,
            title='TGPSC (TSPSC) AMVI Previous Question Papers with Answers – Assistant Motor Vehicles Inspector 2023, GS & Automobile Engineering | Learn with Anil',
            h1='TGPSC AMVI previous question papers <em>with answers.</em>',
-           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) అసిస్టెంట్ మోటార్ వెహికల్స్ ఇన్‌స్పెక్టర్ (AMVI) 2023 ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='టీజీపీఎస్సీ (టీఎస్‌పీఎస్సీ) అసిస్టెంట్ మోటార్ వెహికల్స్ ఇన్‌స్పెక్టర్ (AMVI) 2023 ప్రశ్నాపత్రాలు సమాధానాలతో — జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్), ఆటోమొబైల్ ఇంజనీరింగ్; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Assistant Motor Vehicles Inspector (AMVI) in the Telangana Transport Department, recruited by TGPSC, formerly TSPSC.',
            aka_short='TGPSC (TSPSC) Assistant Motor Vehicles Inspector (Telangana Transport Department)',
            desc=lambda t: (f"TGPSC (TSPSC) AMVI (Assistant Motor Vehicles Inspector) previous question papers: the 2023 Paper I General Studies & General Abilities (English and Telugu) and Paper II Automobile Engineering "
-                           f"with answers from TSPSC's preliminary key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"with answers from TSPSC's preliminary key. {t:,} questions with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='TGPSC (TSPSC) · Assistant Motor Vehicles Inspector · Notification 31/2022',
            papers_note="Answers come from TSPSC's preliminary key on the master question papers of the computer-based test held on 28 June 2023 (Notification 31/2022). TSPSC released its final key on 7 February 2024 only on candidates' individual response sheets, so a few answers may differ from the final key; doubtful ones are marked in the explanations. Paper I is in English and Telugu as printed; Paper II (Automobile Engineering) is in English only."),
       dict(id='appsc-eo', dir='appsc-endowment-officer', src='appsc-eo', key='ap-eo', name='APPSC Executive Officer Grade-III (Endowments)',
@@ -2661,11 +2722,11 @@ def exam_confs():
            te_name='ఏపీపీఎస్సీ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III (దేవాదాయ శాఖ)', te_paper='రాత పరీక్ష', subj_te=EO_SUBJ_TE,
            title='APPSC Endowment Officer (EO Grade 3) Previous Question Papers with Answers – Hindu Philosophy & Temple System, GS, 2022–2026 | Learn with Anil',
            h1='APPSC Endowment Officer (EO Grade-III) previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III పాత ప్రశ్నాపత్రాలు సమాధానాలతో — హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ, జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్); స్టడీ నోట్స్‌తో పాటు అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ దేవాదాయ శాఖ ఎగ్జిక్యూటివ్ ఆఫీసర్ గ్రేడ్-III పాత ప్రశ్నాపత్రాలు సమాధానాలతో — హిందూ తత్వశాస్త్రం & దేవాలయ వ్యవస్థ, జనరల్ స్టడీస్ (తెలుగు, ఇంగ్లీష్); స్టడీ నోట్స్‌తో పాటు అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Executive Officer Grade-III in the A.P. Endowments Subordinate Service (temple Executive Officer, Endowments Department), recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Executive Officer Grade-III (AP Endowments Department)',
            desc=lambda t: (f"APPSC Endowment Officer (Executive Officer Grade-III, AP Endowments) previous question papers: Paper II Hindu Philosophy & Temple System and Paper I General Studies & Mental Ability "
-                           f"of 2026 and the 2023 Mains, and the 2022 Screening Test, with answers from APPSC's final keys. {t:,} questions in English and Telugu with explanations; practice quizzes, timed mock tests and study notes with the ₹45 All-in-One Pass."),
+                           f"of 2026 and the 2023 Mains, and the 2022 Screening Test, with answers from APPSC's final keys. {t:,} questions in English and Telugu with explanations; practice quizzes, timed mock tests and study notes with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Executive Officer Grade-III · Endowments Department · 2022–2026',
            notes_title='Study material for APPSC EO Grade-III and other APPSC exams',   # all books since 8 Nov 2026, EO books first
            notes_seo=('Hindu Philosophy & Temple System Notes – APPSC EO Grade 3 (Endowment Officer) Paper II Study Material | Learn with Anil',
@@ -2679,11 +2740,11 @@ def exam_confs():
            te_name='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=ANALYST_SUBJ_TE,
            title='APPSC Analyst Grade 2 Previous Question Papers with Answers – AP Pollution Control Board, GS & Mental Ability, Chemistry, Biochemistry, Biology & Environmental Science | Learn with Anil',
            h1='APPSC Analyst Grade-II previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ అనలిస్ట్ గ్రేడ్-II (ఏపీ కాలుష్య నియంత్రణ మండలి) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), పేపర్-2 కెమిస్ట్రీ, బయోకెమిస్ట్రీ, బయాలజీ, ఎన్విరాన్‌మెంటల్ సైన్స్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Analyst Grade-II in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Analyst Grade-II (AP Pollution Control Board)',
            desc=lambda t: (f"APPSC Analyst Grade-II (A.P. Pollution Control Board) previous question papers: the 2025 Paper I General Studies & Mental Ability (English and Telugu) and Paper II Chemistry, Biochemistry, Biology and Environmental Science papers "
-                           f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 exam with the ₹45 All-in-One Pass."),
+                           f"with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests for the 2026 exam with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Analyst Grade-II · A.P. Pollution Control Board · 2025',
            papers_note="Answers come from APPSC's final keys on the master question papers of the March 2025 computer-based test (Notification 02/2024): the option marked correct there is the answer. Questions APPSC ignored for all candidates are left out; where APPSC accepted two options, both are shown as correct. In 2025 Paper II was set separately for each degree subject; from 2026 it is one Common Paper with all four subjects, so practise all four. Paper I (General Studies & Mental Ability, held 25 March 2025, the same paper as for Assistant Environmental Engineer) is in English and Telugu as printed; the Paper II papers are in English only."),
       dict(id='appsc-env-engineer', dir='appsc-assistant-environmental-engineer', src='appsc-env-engineer', key='ap-enveng', name='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board)',
@@ -2693,12 +2754,12 @@ def exam_confs():
            title=('APPSC Assistant Environmental Engineer Previous Question Papers with Answers – AP Pollution Control Board AEE 2025, ' + ('GS & Common Subject' if aee_p1() else 'Paper 2 Common Subject') + ' | Learn with Anil'),
            h1='APPSC Assistant Environmental Engineer previous question papers <em>with answers.</em>',
            l2line=('ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి) 2025 ప్రశ్నాపత్రాలు సమాధానాలతో — '
-                   + ('పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ' if aee_p1() else '') + 'పేపర్-2 కామన్ సబ్జెక్ట్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.'),
+                   + ('పేపర్-1 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), ' if aee_p1() else '') + 'పేపర్-2 కామన్ సబ్జెక్ట్ (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.'),
            aka='Assistant Environmental Engineer (AEE) in the A.P. Pollution Control Board (APPCB), recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Assistant Environmental Engineer (AP Pollution Control Board)',
            desc=lambda t: (f"APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) previous question papers: the 2025 "
                            + ("Paper I General Studies & Mental Ability (English and Telugu) and Paper II Common Subject" if aee_p1() else "Paper II Common Subject (environmental engineering)")
-                           + f" with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           + f" with answers from APPSC's final keys, {t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Assistant Environmental Engineer · A.P. Pollution Control Board · 2025',
            papers_note="Answers come from APPSC's final keys (6 August 2025) on the master question papers of the computer-based test held on 25 March 2025 (Notification 15/2023): the option marked correct there is the answer. "
                        "Questions APPSC ignored for all candidates are left out; where APPSC accepted more than one option, each accepted option is shown as correct. "
@@ -2710,12 +2771,12 @@ def exam_confs():
            te_name='ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO)', te_paper='రాత పరీక్ష', subj_te=ASO_SUBJ_TE,
            title=f'APPSC ASO Previous Question Papers with Answers – Assistant Statistical Officer {aso_years()} Paper 2 Statistics & Economics | Learn with Anil',
            h1='APPSC Assistant Statistical Officer (ASO) previous question papers <em>with answers.</em>',
-           l2line=f'ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO) {aso_years()} పేపర్-2 (స్టాటిస్టిక్స్, ఎకనామిక్స్, అకౌంటెన్సీ, కంప్యూటర్స్) ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line=f'ఏపీపీఎస్సీ అసిస్టెంట్ స్టాటిస్టికల్ ఆఫీసర్ (ASO) {aso_years()} పేపర్-2 (స్టాటిస్టిక్స్, ఎకనామిక్స్, అకౌంటెన్సీ, కంప్యూటర్స్) ప్రశ్నాపత్రాలు సమాధానాలతో — తెలుగు, ఇంగ్లీష్; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Assistant Statistical Officer (ASO) in the A.P. Economics & Statistical Subordinate Service, recruited by the Andhra Pradesh Public Service Commission. The same Paper II subjects are asked in the TGPSC MPSO / ASO exam.',
            aka_short='APPSC Assistant Statistical Officer (AP Economics & Statistics Department)',
            desc=lambda t: (f"APPSC Assistant Statistical Officer (ASO) previous question papers: Paper II (Subject) of {aso_years()} with answers from APPSC's final keys, "
                            f"{t:,} questions on statistics, economics, accountancy and computers in English and Telugu with explanations. Useful for TGPSC MPSO / ASO too. "
-                           f"Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"Practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow=f'APPSC · Assistant Statistical Officer · A.P. Economics &amp; Statistical Sub-Service · {aso_years().replace(" and ", " &amp; ")}',
            papers_note=("Answers come from APPSC's final keys on the master question papers of the computer-based tests (Notification 12/2024, 29 April 2025"
                         + ("; Notification 20/2021, 4 November 2022" if 'aso22' in aso_have() else '') + "): the option marked correct there is the answer. "
@@ -2726,11 +2787,11 @@ def exam_confs():
            te_name='ఏపీ డీఎస్సీ', te_paper='టీచర్ రిక్రూట్‌మెంట్ టెస్ట్', subj_te=DSC_SUBJ_TE,
            title='AP DSC Previous Question Papers with Answers – Mega DSC 2025 SGT, School Assistant & PET Final Key, Telugu & English | Learn with Anil',
            h1='AP DSC previous question papers <em>with answers.</em>',
-           l2line='ఏపీ డీఎస్సీ (మెగా డీఎస్సీ 2025) పాత ప్రశ్నాపత్రాలు ఫైనల్ కీ సమాధానాలతో — ఎస్జీటీ, స్కూల్ అసిస్టెంట్ (తెలుగు, హిందీ, ఇంగ్లీష్, గణితం, భౌతిక శాస్త్రం, జీవ శాస్త్రం, సాంఘిక శాస్త్రం, వ్యాయామ విద్య), పీఈటీ; తెలుగు, ఇంగ్లీష్‌లో వివరణలతో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీ డీఎస్సీ (మెగా డీఎస్సీ 2025) పాత ప్రశ్నాపత్రాలు ఫైనల్ కీ సమాధానాలతో — ఎస్జీటీ, స్కూల్ అసిస్టెంట్ (తెలుగు, హిందీ, ఇంగ్లీష్, గణితం, భౌతిక శాస్త్రం, జీవ శాస్త్రం, సాంఘిక శాస్త్రం, వ్యాయామ విద్య), పీఈటీ; తెలుగు, ఇంగ్లీష్‌లో వివరణలతో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as AP TRT (Teacher Recruitment Test) or AP Mega DSC: School Assistant (SA), Secondary Grade Teacher (SGT), PET and other teacher posts in Andhra Pradesh government, ZP, MPP and municipal schools, recruited by the District Selection Committees of the School Education Department.',
            aka_short='Andhra Pradesh DSC / TRT teacher recruitment (School Education Department)',
            desc=lambda t: (f"AP DSC previous question papers with answers from the final key: Mega DSC 2025 {dsc_posts()}, {t:,} questions in English and Telugu "
-                           f"with explanations, for AP DSC 2026 (2,721 posts). Practice quizzes, subject-wise bits and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"with explanations, for AP DSC 2026 (2,721 posts). Practice quizzes, subject-wise bits and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='AP DSC · Teacher Recruitment Test · SGT, School Assistant &amp; PET · Mega DSC 2025',
            papers_note=("Answers come from the final keys published by the School Education Department, Andhra Pradesh, on tet2dsc.apcfss.in for the Mega DSC 2025 computer-based test "
                         "(6 June to 2 July 2025): the option ticked correct there is the answer. Questions for which the final key ticked all four options (marks to everyone) are left out; "
@@ -2742,11 +2803,11 @@ def exam_confs():
            te_name='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO)', te_paper='రాత పరీక్ష', subj_te=FRO_SUBJ_TE,
            title='APPSC FRO Previous Question Papers with Answers – Forest Range Officer Screening 2019 & 2025, Mains 2020 & 2023 GS and General Forestry | Learn with Anil',
            h1='APPSC Forest Range Officer (FRO) previous question papers <em>with answers.</em>',
-           l2line='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — స్క్రీనింగ్ టెస్ట్ 2019, 2025; మెయిన్స్ 2020, 2023 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), జనరల్ ఫారెస్ట్రీ-1, 2 (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — స్క్రీనింగ్ టెస్ట్ 2019, 2025; మెయిన్స్ 2020, 2023 జనరల్ స్టడీస్ & మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), జనరల్ ఫారెస్ట్రీ-1, 2 (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Forest Range Officer (FRO) in the A.P. Forest Service, Andhra Pradesh Forest Department, recruited by the Andhra Pradesh Public Service Commission.',
            aka_short='APPSC Forest Range Officer (AP Forest Department)',
            desc=lambda t: (f"APPSC Forest Range Officer (FRO) previous question papers: the 2025 and 2019 Screening Tests, Paper I General Studies & Mental Ability and General Forestry I and II of the 2023 and 2020 Mains, with answers from APPSC's final keys, "
-                           f"{t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"{t:,} questions with explanations. Practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Forest Range Officer · A.P. Forest Service · Screening &amp; Mains, 2019–2025',
            papers_note="Answers come from APPSC's final keys on the master question papers of the computer-based Screening Test of 16 March 2025 (Notification 11/2024) and Main Examinations of September 2023 (Notification 21/2022) and March 2020 (Notification 10/2018): the option marked correct there is the answer. The 2019 Screening Test key prints only the correct answer, so that paper is quick-recall questions. Questions APPSC ignored or deleted for all candidates are left out; where APPSC accepted two options, both are shown as correct. The 2023 Mains Paper I and the first section of the 2025 Screening Test are in English and Telugu as printed; the other papers are in English only. APPSC has published only the initial keys of the 2025 Mains (Notification 11/2024), so those papers are not here yet."),
       dict(id='ap-police-si', dir='ap-police-si', src='ap-police-si', key='ap-si', name='AP Police SI', short='AP Police SI', seo='AP Police SI',
@@ -2755,11 +2816,11 @@ def exam_confs():
            te_name='ఏపీ పోలీస్ ఎస్ఐ', te_paper='ప్రిలిమినరీ పరీక్ష', subj_te=AP_POLICE_SUBJ_TE,
            title='AP Police SI Previous Question Papers with Answers – SLPRB AP SI Prelims 2023 Paper 1 & 2, English & Telugu | Learn with Anil',
            h1='AP Police SI previous year question papers <em>with answers.</em>',
-           l2line='ఏపీ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రాలు (పేపర్-1 అర్థమెటిక్, రీజనింగ్; పేపర్-2 జనరల్ స్టడీస్) SLPRB కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీ పోలీస్ ఎస్ఐ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రాలు (పేపర్-1 అర్థమెటిక్, రీజనింగ్; పేపర్-2 జనరల్ స్టడీస్) SLPRB కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as the Andhra Pradesh Police Sub-Inspector exam: SCT SI (Civil), RSI (AR) and SI (SPF) posts, conducted by the State Level Police Recruitment Board, Andhra Pradesh (SLPRB AP / APSLPRB).',
            aka_short='Andhra Pradesh Police SI (SLPRB AP)',
            desc=lambda t: (f"AP Police SI (SLPRB AP / APSLPRB) previous question papers: the Preliminary Written Test of 19 February 2023, Paper I Arithmetic & Reasoning and Paper II General Studies, "
-                           f"with answers from SLPRB's keys. {t:,} questions in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"with answers from SLPRB's keys. {t:,} questions in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='SLPRB AP · SCT SI (Civil) &amp; RSI · Preliminary Written Test 2023',
            papers_note=("Answers come from SLPRB AP's keys for the booklet code of each paper (Paper I booklet A, Paper II booklet C) of the Preliminary Written Test held on 19 February 2023. For Paper I the final key made no change to the preliminary key. "
                         "For Paper II the final key accepted more than one answer for one question, but that file is no longer on SLPRB's website, so Paper II shows the preliminary key's answers. "
@@ -2770,11 +2831,11 @@ def exam_confs():
            te_name='ఏపీ పోలీస్ కానిస్టేబుల్', te_paper='ప్రిలిమినరీ పరీక్ష', subj_te=AP_POLICE_SUBJ_TE,
            title='AP Police Constable Previous Question Papers with Answers – SLPRB AP Constable Prelims 2023, English & Telugu | Learn with Anil',
            h1='AP Police Constable previous year question papers <em>with answers.</em>',
-           l2line='ఏపీ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) SLPRB ఫైనల్ కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.',
+           l2line='ఏపీ పోలీస్ కానిస్టేబుల్ ప్రిలిమినరీ పరీక్ష పాత ప్రశ్నాపత్రం (మునుపటి ప్రశ్నపత్రం) SLPRB ఫైనల్ కీ సమాధానాలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.',
            aka='Also known as the Andhra Pradesh Police Constable (AP PC) exam: SCT PC (Civil), PC (AR), Firemen and Warders, conducted by the State Level Police Recruitment Board, Andhra Pradesh (SLPRB AP / APSLPRB).',
            aka_short='Andhra Pradesh Police Constable (SLPRB AP)',
            desc=lambda t: (f"AP Police Constable (SLPRB AP / APSLPRB) previous question paper: the Preliminary Written Test of 22 January 2023 with answers from SLPRB's final key. "
-                           f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹45 All-in-One Pass."),
+                           f"{t:,} questions on English, arithmetic, reasoning and general studies in English and Telugu with explanations; practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='SLPRB AP · SCT PC (Civil) &amp; APSP · Preliminary Written Test 2023',
            papers_note=("Answers come from SLPRB AP's final key for booklet A of the Preliminary Written Test held on 22 January 2023; the question booklet is SLPRB's own copy. "
                         "The English-language questions are in English only; every other question is in English and Telugu, as printed in the booklet.")),
@@ -2786,10 +2847,10 @@ def exam_confs():
            h1='RPF SI previous year question papers <em>with answers.</em>',
            aka='Also known as the RPF Sub-Inspector (Executive) exam of the Railway Protection Force and Railway Protection Special Force (RPSF), conducted by the Railway Recruitment Boards (RRB) under CEN RPF 01/2024; SSC conducts it from the next cycle.',
            aka_short='RPF Sub-Inspector (Executive), RRB CEN RPF 01/2024',
-           l2line='आरपीएफ एसआई (सब-इंस्पेक्टर) सीबीटी 2024 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='आरपीएफ एसआई (सब-इंस्पेक्टर) सीबीटी 2024 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"RPF SI previous year question papers with answers: the Sub-Inspector (Executive) CBT of CEN RPF 01/2024, shift-wise papers of {rpf_text('SI')['days']}, "
                            f"from RRB's own response sheets with RRB's answer key and explanations. {t:,} questions in English and Hindi on general awareness, arithmetic and reasoning; "
-                           f"subject-wise practice and 90-minute timed mock tests with the ₹45 All-in-One Pass."),
+                           f"subject-wise practice and 90-minute timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='Railways · RPF Sub-Inspector (Executive) · CBT 2024',
            papers_note=("Every paper is RRB's own question paper as candidates printed it from the RRB portal (the response sheet), with the answer RRB marked as correct. "
                         "The sheets are from the answer-key stage (17 December 2024), so RRB's final key may differ for a few questions. "
@@ -2802,10 +2863,10 @@ def exam_confs():
            h1='RPF Constable previous year question papers <em>with answers.</em>',
            aka='Also known as the RPF Constable (Executive) exam of the Railway Protection Force and Railway Protection Special Force (RPSF), conducted by the Railway Recruitment Boards (RRB) under CEN RPF 02/2024; SSC conducts it from the next cycle.',
            aka_short='RPF Constable (Executive), RRB CEN RPF 02/2024',
-           l2line='आरपीएफ कांस्टेबल सीबीटी 2025 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='आरपीएफ कांस्टेबल सीबीटी 2025 के पिछले वर्षों के प्रश्न पत्र, आरआरबी की उत्तर कुंजी सहित — हिंदी और अंग्रेज़ी में; सामान्य जागरूकता, अंकगणित और रीजनिंग; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"RPF Constable previous year question papers with answers: the Constable (Executive) CBT of CEN RPF 02/2024, shift-wise papers of {rpf_text('Constable')['days']}, "
                            f"from RRB's own response sheets with RRB's answer key and explanations. {t:,} questions in English and Hindi on general awareness, arithmetic and reasoning; "
-                           f"subject-wise practice and 90-minute timed mock tests with the ₹45 All-in-One Pass."),
+                           f"subject-wise practice and 90-minute timed mock tests with the ₹149 All-in-One Pass."),
            eyebrow='Railways · RPF Constable (Executive) · CBT 2025',
            papers_note=("Every paper is RRB's own question paper as candidates printed it from the RRB portal (the response sheet), with the answer RRB marked as correct. "
                         "The sheets are from the answer-key stage (24 March 2025), so RRB's final key may differ for a few questions. "
@@ -2819,7 +2880,7 @@ def exam_confs():
            aka=('TNPSC Combined Civil Services Examination-IV (CCSE-IV, Group-IV Services): Village Administrative Officer (VAO), Junior Assistant, Typist, '
                 'Steno-Typist, Bill Collector, Field Surveyor, Forest Guard and Forest Watcher. Part A General Tamil and Part B General Studies with Aptitude, with TNPSC\'s final key.'),
            aka_short='TNPSC CCSE-IV (Group 4): VAO, Junior Assistant, Typist and other posts',
-           l2line='டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹45 ஆல்-இன்-ஒன் பாஸ்.',
+           l2line='டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹149 ஆல்-இன்-ஒன் பாஸ்.',
            desc=lambda t: (f"TNPSC Group 4 (CCSE-IV) previous year question papers with answers from TNPSC's final key: {tn4_text()['years']} papers, Part A General Tamil "
                            f"and Part B General Studies & Aptitude. {t:,} questions in Tamil and English with explanations; subject-wise practice and 3-hour timed mock tests "
                            f"for VAO, Junior Assistant and Typist aspirants."),
@@ -2836,7 +2897,7 @@ def exam_confs():
            aka=('Karnataka Examinations Authority (KEA) Group-C recruitment: First Division Assistant (FDA), Second Division Assistant (SDA) and equivalent posts '
                 '(Accounts Assistant, Junior Assistant, GP Secretary, Warden). Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge, with KEA\'s revised key.'),
            aka_short='KEA Group-C: First and Second Division Assistant and equivalent posts',
-           l2line='ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           l2line='ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
            desc=lambda t: (f"KEA FDA and SDA previous year question papers with answers from KEA's revised key: the 2026 FDA-level, SDA-level and Kalyana Karnataka "
                            f"papers, Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge. {t:,} questions in Kannada and English with explanations; "
                            f"subject-wise practice and 2-hour timed mock tests for Karnataka FDA, SDA and Group-C aspirants."),
@@ -2858,7 +2919,7 @@ def exam_confs():
            aka=('Karnataka teacher recruitment by the School Education Department: Graduate Primary Teacher (GPT / GPSTR, classes 6–8), and for 2026 also Assistant '
                 'Master, Primary School Teacher, PE and Computer Science teacher posts (15,000 in all). GPSTR 2022 Paper-1 General Studies with the department\'s key.'),
            aka_short='Karnataka teacher recruitment: Graduate Primary Teacher (GPT) and other posts',
-           l2line='ಜಿಪಿಎಸ್‌ಟಿಆರ್ (ಪದವೀಧರ ಪ್ರಾಥಮಿಕ ಶಾಲಾ ಶಿಕ್ಷಕರ ನೇಮಕಾತಿ) 2022 ಪತ್ರಿಕೆ-1 ಸಾಮಾನ್ಯ ಅಧ್ಯಯನ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಶೈಕ್ಷಣಿಕ ಮನೋವಿಜ್ಞಾನ, ಆರೋಗ್ಯ ಮತ್ತು ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕಂಪ್ಯೂಟರ್; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           l2line='ಜಿಪಿಎಸ್‌ಟಿಆರ್ (ಪದವೀಧರ ಪ್ರಾಥಮಿಕ ಶಾಲಾ ಶಿಕ್ಷಕರ ನೇಮಕಾತಿ) 2022 ಪತ್ರಿಕೆ-1 ಸಾಮಾನ್ಯ ಅಧ್ಯಯನ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಶೈಕ್ಷಣಿಕ ಮನೋವಿಜ್ಞಾನ, ಆರೋಗ್ಯ ಮತ್ತು ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕಂಪ್ಯೂಟರ್; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
            desc=lambda t: (f"GPSTR previous year question paper with answers from the School Education Department's key: GPSTR 2022 Paper-1 General Studies "
                            f"(General Kannada, English, GK, Educational Psychology, Health & Value Education, Computer). {t:,} questions in Kannada and English with "
                            f"explanations; subject-wise practice and timed mock tests for Karnataka teacher recruitment 2026 (GPT, PST, AM)."),
@@ -2875,7 +2936,7 @@ def exam_confs():
            aka=('Maharashtra Public Service Commission (MPSC) Group-C Services Combined Preliminary Examination: Clerk-Typist, Tax Assistant, Talathi, AMVI, Industry '
                 'Inspector and other Group-C posts. The General Ability Test (सामान्य क्षमता चाचणी) papers, with MPSC\'s final answer key.'),
            aka_short='MPSC Group-C Combined Prelims: Clerk-Typist, Tax Assistant, Talathi, AMVI and other posts',
-           l2line='एमपीएससी गट-क संयुक्त पूर्व परीक्षेच्या मागील वर्षांच्या प्रश्नपत्रिका अंतिम उत्तरतालिकेसह — सामान्य क्षमता चाचणी 2025, 2024, 2023; मराठी व इंग्रजीतून स्पष्टीकरणे; सर्व परीक्षांसाठी एकच ₹45 ऑल-इन-वन पास.',
+           l2line='एमपीएससी गट-क संयुक्त पूर्व परीक्षेच्या मागील वर्षांच्या प्रश्नपत्रिका अंतिम उत्तरतालिकेसह — सामान्य क्षमता चाचणी 2025, 2024, 2023; मराठी व इंग्रजीतून स्पष्टीकरणे; सर्व परीक्षांसाठी एकच ₹149 ऑल-इन-वन पास.',
            desc=lambda t: (f"MPSC Group C previous year question papers with answers from MPSC's final answer key: the Group-C Combined Prelims 2025 and 2024 and the "
                            f"Group-B & C Combined Prelims 2023 (General Ability Test). {t:,} questions in Marathi and English with explanations; subject-wise practice "
                            f"and 1-hour timed mock tests for MPSC Clerk-Typist, Tax Assistant, Talathi and other Group-C aspirants."),
@@ -2891,7 +2952,7 @@ def exam_confs():
            aka=('Gujarat Subordinate Service Selection Board (GSSSB) Class-III Combined Competitive Examination (CCE), Group-A and Group-B: Junior Clerk, Senior Clerk, '
                 'Head Clerk, Social Welfare Inspector, Sub Registrar and other posts. GSSSB\'s own Preliminary papers with its final answers.'),
            aka_short='GSSSB Class-III CCE (Group-A & B): Junior Clerk, Senior Clerk and other posts',
-           l2line='જીએસએસએસબી સીસીઈ (ગ્રુપ-A અને ગ્રુપ-B) પ્રાથમિક પરીક્ષાના અગાઉના પ્રશ્નપત્રો આખરી જવાબો સાથે — રિઝનિંગ, ગણિત, અંગ્રેજી, ગુજરાતી; ગુજરાતી અને અંગ્રેજીમાં સમજૂતી; તમામ પરીક્ષાઓ માટે એક જ ₹45 ઓલ-ઇન-વન પાસ.',
+           l2line='જીએસએસએસબી સીસીઈ (ગ્રુપ-A અને ગ્રુપ-B) પ્રાથમિક પરીક્ષાના અગાઉના પ્રશ્નપત્રો આખરી જવાબો સાથે — રિઝનિંગ, ગણિત, અંગ્રેજી, ગુજરાતી; ગુજરાતી અને અંગ્રેજીમાં સમજૂતી; તમામ પરીક્ષાઓ માટે એક જ ₹149 ઓલ-ઇન-વન પાસ.',
            desc=lambda t: (f"GSSSB CCE previous year question papers with answers: GSSSB's own Preliminary papers of 2024 (Advt. 212/2023-24, Group-A & B) with its final "
                            f"answers. {t:,} questions in Gujarati and English with explanations; Reasoning, Quantitative Aptitude, English and Gujarati practice and "
                            f"timed mock tests for GSSSB CCE 2.0 (Junior Clerk, Senior Clerk) aspirants."),
@@ -2909,7 +2970,7 @@ def exam_confs():
                 'candidates (Advt. 26-Exam/2026): Gram Vikas Adhikari, Gram Panchayat Adhikari, Vanijya Kar Sangrah Amin, Bhumi Arjan Amin and other posts. '
                 'UPSSSC Mains papers in the same pattern with UPSSSC\'s revised answer key.'),
            aka_short='UPSSSC Combined Lower Subordinate (Intermediate Level) Mains, PET-2025',
-           l2line='यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा के लिए उसी पैटर्न के पिछले प्रश्न पत्र (लेखपाल 2026, स्नातक स्तरीय 2026, ग्राम पंचायत अधिकारी 2025) — आयोग की संशोधित उत्तर कुंजी, हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='यूपीएसएसएससी इंटर स्तरीय मुख्य परीक्षा के लिए उसी पैटर्न के पिछले प्रश्न पत्र (लेखपाल 2026, स्नातक स्तरीय 2026, ग्राम पंचायत अधिकारी 2025) — आयोग की संशोधित उत्तर कुंजी, हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"UPSSSC Inter level Mains previous year question papers with answers: Lekhpal Mains 2026, Lower Subordinate (Graduate Level) Mains 2026 and "
                            f"Gram Panchayat Adhikari Mains 2025, {t:,} questions in Hindi and English with UPSSSC's revised key and explanations; UP GK, Computer, "
                            f"General Hindi and general studies practice and 2-hour mock tests for Advt. 26-Exam/2026."),
@@ -2926,7 +2987,7 @@ def exam_confs():
            aka=('Uttar Pradesh Public Service Commission (UPPSC) Samiksha Adhikari / Sahayak Samiksha Adhikari (Review Officer / Assistant Review Officer) '
                 'Preliminary Examination: General Studies and General Hindi. UPPSC\'s own 2025 booklet with its answer key, and the 2021 papers with UPPSC\'s key sheets.'),
            aka_short='UPPSC Samiksha Adhikari / Sahayak Samiksha Adhikari (RO/ARO) Prelims',
-           l2line='यूपीपीएससी समीक्षा अधिकारी/सहायक समीक्षा अधिकारी (आरओ/एआरओ) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2025, 2021) आयोग की उत्तर कुंजी के साथ — सामान्य अध्ययन और सामान्य हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='यूपीपीएससी समीक्षा अधिकारी/सहायक समीक्षा अधिकारी (आरओ/एआरओ) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2025, 2021) आयोग की उत्तर कुंजी के साथ — सामान्य अध्ययन और सामान्य हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"UPPSC RO ARO previous year question papers with answers: the 27 July 2025 Prelims (General Studies and General Hindi, UPPSC's own booklet "
                            f"with its key) and the 2021 Prelims papers, {t:,} questions in Hindi and English with explanations; General Hindi, UP GK and General Studies "
                            f"practice and timed mock tests for UPPSC RO/ARO 2026 (Advt. A-4/E-1/2026)."),
@@ -2944,7 +3005,7 @@ def exam_confs():
            aka=('Uttarakhand Public Service Commission (UKPSC) Combined State (Civil) Lower Subordinate Services Examination (Lower PCS / Lower Subordinate) '
                 'Preliminary: General Studies & General Aptitude Test. UKPSC\'s own booklets with its final answer keys.'),
            aka_short='UKPSC Combined State (Civil) Lower Subordinate Services (Lower PCS) Prelims',
-           l2line='उत्तराखंड लोक सेवा आयोग सम्मिलित राज्य (सिविल) अवर अधीनस्थ सेवा (लोअर पीसीएस) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2024, 2021) और समीक्षा अधिकारी/सहायक समीक्षा अधिकारी 2023 — आयोग की अंतिम उत्तर कुंजी के साथ; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='उत्तराखंड लोक सेवा आयोग सम्मिलित राज्य (सिविल) अवर अधीनस्थ सेवा (लोअर पीसीएस) प्रारंभिक परीक्षा के पिछले प्रश्न पत्र (2024, 2021) और समीक्षा अधिकारी/सहायक समीक्षा अधिकारी 2023 — आयोग की अंतिम उत्तर कुंजी के साथ; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"UKPSC Lower PCS previous year question papers with answers: the Lower Subordinate prelims 2024 and 2021 and the RO/ARO prelims 2023 "
                            f"(UKPSC's own booklets), {t:,} questions in Hindi and English with UKPSC's final key and explanations; Uttarakhand GK, General Aptitude "
                            f"and General Studies practice and 2-hour mock tests for UKPSC Lower PCS 2026 (Advt. A-1/E-2/DR/LSS/2026-27)."),
@@ -2961,7 +3022,7 @@ def exam_confs():
            aka=('Chhattisgarh Karmchari Chayan Mandal (CGSSB, formerly CG Vyapam) Group-2 Class III (graduate level) Sub-group-02 exam: Assistant Grade-3, '
                 'Stenographer, Steno Typist, Data Entry Operator, Registration Clerk and ASI. Vyapam\'s own 2021 booklets with its final answer keys.'),
            aka_short='CG Vyapam (CGSSB) Group 2: Assistant Grade-3, Stenographer, DEO & ASI',
-           l2line='छत्तीसगढ़ व्यापम (कर्मचारी चयन मण्डल) के पिछले प्रश्न पत्र — सहायक ग्रेड-3 एवं डाटा एंट्री ऑपरेटर (वीडीएजी 2021, एजीडीओ 2021) और शीघ्रलेखक 2021 सामान्य प्रश्न पत्र, व्यापम की अंतिम उत्तर कुंजी के साथ; कंप्यूटर, छत्तीसगढ़ सामान्य ज्ञान, गणित, हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।',
+           l2line='छत्तीसगढ़ व्यापम (कर्मचारी चयन मण्डल) के पिछले प्रश्न पत्र — सहायक ग्रेड-3 एवं डाटा एंट्री ऑपरेटर (वीडीएजी 2021, एजीडीओ 2021) और शीघ्रलेखक 2021 सामान्य प्रश्न पत्र, व्यापम की अंतिम उत्तर कुंजी के साथ; कंप्यूटर, छत्तीसगढ़ सामान्य ज्ञान, गणित, हिंदी; हिंदी और अंग्रेज़ी में व्याख्या; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
            desc=lambda t: (f"CG Vyapam Assistant Grade 3 previous year question papers with answers: VDAG 2021, AGDO 2021 and the Stenographer 2021 general paper "
                            f"(Vyapam's own booklets), {t:,} questions in Hindi and English with Vyapam's final key and explanations; Computer, Chhattisgarh GK, "
                            f"Maths and Hindi practice and mock tests for the CGSSB Group 2 exam of 10 January 2027."),
@@ -2978,7 +3039,7 @@ def exam_confs():
            aka=('Odisha Public Service Commission (OPSC) Assistant Section Officer (ASO) written examination: Paper I General Awareness, Paper II Reasoning & '
                 'Mathematics, Paper III English & Odia. OPSC\'s own booklets of 2025 and 2022 with its answer keys.'),
            aka_short='OPSC Assistant Section Officer (ASO), Odisha Secretariat',
-           l2line='ଓଡ଼ିଶା ଲୋକ ସେବା ଆୟୋଗ ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO) ପରୀକ୍ଷାର ପୂର୍ବ ବର୍ଷର ପ୍ରଶ୍ନପତ୍ର (2025, 2022) ଆୟୋଗଙ୍କ ଉତ୍ତର ଚାବି ସହିତ — ସାଧାରଣ ସଚେତନତା, ତର୍କଶକ୍ତି ଓ ଗଣିତ, ଇଂରାଜୀ ଓ ଓଡ଼ିଆ; ଓଡ଼ିଆ ପ୍ରଶ୍ନର ବ୍ୟାଖ୍ୟା ଓଡ଼ିଆରେ; ସମସ୍ତ ପରୀକ୍ଷା ପାଇଁ ଗୋଟିଏ ₹45 ଅଲ୍-ଇନ୍-ୱାନ୍ ପାସ୍।',
+           l2line='ଓଡ଼ିଶା ଲୋକ ସେବା ଆୟୋଗ ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO) ପରୀକ୍ଷାର ପୂର୍ବ ବର୍ଷର ପ୍ରଶ୍ନପତ୍ର (2025, 2022) ଆୟୋଗଙ୍କ ଉତ୍ତର ଚାବି ସହିତ — ସାଧାରଣ ସଚେତନତା, ତର୍କଶକ୍ତି ଓ ଗଣିତ, ଇଂରାଜୀ ଓ ଓଡ଼ିଆ; ଓଡ଼ିଆ ପ୍ରଶ୍ନର ବ୍ୟାଖ୍ୟା ଓଡ଼ିଆରେ; ସମସ୍ତ ପରୀକ୍ଷା ପାଇଁ ଗୋଟିଏ ₹149 ଅଲ୍-ଇନ୍-ୱାନ୍ ପାସ୍।',
            desc=lambda t: (f"OPSC ASO previous year question papers with answers: Papers I, II and III of the 2025 and 2022 Assistant Section Officer exams (OPSC's own "
                            f"booklets), {t:,} questions with OPSC's key and explanations, the Odia section in Odia; Odisha GK, Reasoning, Maths, English and Odia "
                            f"practice and timed mock tests for OPSC ASO 2026 (Advt. 15 of 2026-27)."),
@@ -3150,7 +3211,7 @@ def main():
         tiles = tiles_html(conf, papers, questions, links, emains)
 
         HERO_P = ('<p>{{TOTAL}} questions from {{FROMPAPERS}}, answered from {{KEYSHORT}} and explained, in {{LANGS}}. Practise by topic, take timed tests and revise your mistakes, '
-                  'with one ₹45 All-in-One Pass for every exam on the site.</p>')
+                  'with one ₹149 All-in-One Pass for every exam on the site.</p>')
         FIG12 = ('      <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>\n'
                  '      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">{{PAPERSK}}</div></div>\n')
         if conf.get('mockonly'):   # SBI PO / IBPS SO: mock tests only (no previous papers published by the recruiting body)
@@ -3158,7 +3219,7 @@ def main():
             _live = list(dict.fromkeys(m.get('group', m['name']) for m in _mk['mocks'] if m['live']))
             _all = list(dict.fromkeys(m.get('group', m['name']) for m in _mk['mocks']))
             HERO_P = (f'<p>{esc(_mk["title"])}: new questions by Learn with Anil in the real exam pattern, with an explanation for every answer, in English and Hindi. '
-                      f'{esc(conf["papers_note"])} Take a full mock or one section at a time, with one ₹45 All-in-One Pass for every exam on the site.</p>')
+                      f'{esc(conf["papers_note"])} Take a full mock or one section at a time, with one ₹149 All-in-One Pass for every exam on the site.</p>')
             FIG12 = (f'      <div class="figure"><div class="v">{len(_live)}/{len(_all)}</div><div class="k">Mock tests released</div></div>\n'
                      f'      <div class="figure"><div class="v">{len(_mk["mocks"][0]["parts"])}</div><div class="k">Sections, each also as a sectional test</div></div>\n')
         if conf.get('ncert'): HERO_P, FIG12 = _ncert().hero(conf, papers, questions)   # NCERT: chapters, not previous papers
@@ -3212,7 +3273,7 @@ def main():
         root_desc = (f'Learn with Anil (learnwithanil.in): previous year question papers (PYQs) with answers for UPSC Civil Services Prelims GS Paper I & CSAT{pre_y} in English & Hindi, '
                      f'APPSC Group 1 & Group 2 (AP Group 1, AP Group 2), TS Police SI & Constable '
                      f'(Telangana police, TSLPRB / TGPRB), UPSC CAPF AC, UPSC EPFO (APFC, EO/AO), SSC CGL, TGPSC HMWSSB Manager, APPSC & TGPSC AMVI (Assistant Motor Vehicle Inspector), APPSC Endowment Officer (EO Grade-III), APPSC Analyst Grade-II and APPSC Forest Range Officer (FRO). {grand:,} questions from the official keys, with explanations in English, Telugu and Hindi. '
-                     f'UPSC Civil Services Mains GS 1–4 (2019–2026), UPSC Anthropology optional Papers I & II and APPSC Group 1 Mains questions with model answers. One ₹45 All-in-One Pass for every exam.')
+                     f'UPSC Civil Services Mains GS 1–4 (2019–2026), UPSC Anthropology optional Papers I & II and APPSC Group 1 Mains questions with model answers. One ₹149 All-in-One Pass for every exam.')
         home_title = conf['title']
         ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
@@ -3226,7 +3287,7 @@ def main():
           'papers': ('', '', pb + 'papers/', False) if not papers else ((f'{seo_name} Previous Year Question Papers with Answers – All {len(papers)} Papers | Learn with Anil' if len(papers) > 1 else
                       f'{seo_name} Previous Question Paper with Answers – {paper_kw(conf, papers[0]).replace(seo_name + " ", "")}, English & {conf["l2"]["name"]} | Learn with Anil'),
                      (f'All {len(papers)} {seo_name} previous year question papers' if len(papers) > 1 else f'{seo_name} previous question paper') + f' ({", ".join(paper_kw(conf, p).replace(seo_name + " ", "") for p in sorted(papers, key=lambda p: (-p["year"], p["id"])))}): '
-                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations, with the ₹45 All-in-One Pass.', pb + 'papers/', True),
+                     f'practise {"each paper" if len(papers) > 1 else "it"} online as a quiz or a timed mock test, with answers and explanations, with the ₹149 All-in-One Pass.', pb + 'papers/', True),
           'practice': (f'{seo_name} Mock Test & Topic-wise Quiz from Previous Papers | Learn with Anil',
                        f'{seo_name} mock test and topic-wise quiz made from {total:,} real previous year questions{" (practice bits)" if conf["board"] == "APPSC" or conf.get("bits") else ""}: '
                        f'choose papers, subjects and topics, then practise with answers or take a timed test.', pb + 'practice/', True),
@@ -3292,7 +3353,7 @@ def main():
         if emains:
             views['mains'] = ('APPSC Group 1 Mains Answer Writing Tool Kit – Previous Questions of Papers I to IV by Syllabus | Learn with Anil',
                               'APPSC Group 1 Mains previous questions of 2020, 2023 and 2025 for Paper I (Essay), II (History & Geography), III (Polity & Ethics) '
-                              'and IV (Economy), sorted by syllabus, with practice questions: four PDF books by Jupudi Anil Kumar, part of the ₹45 All-in-One Pass.',
+                              'and IV (Economy), sorted by syllabus, with practice questions: four PDF books by Jupudi Anil Kumar, part of the ₹149 All-in-One Pass.',
                               pb + 'mains/', True)
         site_pages = {}   # path under the site root -> html
         if is_root:
@@ -3634,6 +3695,7 @@ def exam_terms(e, cat):
     if 'hmwssb' in e['id']: words += ['hmwssb', 'water board', 'jalamandali', 'metro water', 'manager engineering', 'civil engineering', 'hmws', 'ece', 'electronics', 'electronics and communication', 'communication engineering']
     if 'civil-judge' in e['id']: words += ['civil judge', 'junior civil judge', 'jcj', 'judiciary', 'high court', 'llb', 'law']
     if e['id'].startswith('rpf'): words += ['rpf', 'railway protection force', 'rpsf', 'railway police', 'rrb', 'railway', 'railways', 'cen rpf', 'si', 'sub inspector', 'constable', 'police']
+    if e['id'] == 'ssc-mts': words += ['mts', 'multi tasking staff', 'multi-tasking staff', 'multitasking', 'havaldar', 'hawaldar', 'cbic', 'cbn', '10th pass', 'matric', 'ssc mts mock test', 'एमटीएस', 'हवलदार']
     if e['cat'] == 'ap': words += ['appsc', 'andhra'] + ([f'ap group {ROMAN[m.group(1)]}'] if m else [])
     if e['id'] in MAINS_EXAMS and MAINS_KIT: words += ['mains', 'answer writing', 'tool kit', 'toolkit', 'essay']
     return ' '.join(w.lower() for w in words if w)
@@ -4078,9 +4140,9 @@ def home_paper_card(p):
 def FAQ(total, npapers):
     return [
       ('Where can I get APPSC Group 2 previous year question papers with answers?',
-       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
-      ('What does it cost, and what does the ₹45 All-in-One Pass cover?',
-       'One plan: the ₹45 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       f'This site has {total} questions from {npapers} APPSC Group-II papers: the Screening Test 2024, Mains 2025 Paper I and Paper II, and the 2019 Screening and Mains papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹149 All-in-One Pass for every exam.'),
+      ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
+       'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Are the APPSC Group 2 previous papers available in Telugu?',
        'Yes. Almost every question has APPSC\'s own Telugu text, as printed in the question booklet. Tap తెలుగు at the top of the page to practise in Telugu.'),
       ('Is there a APPSC Group 2 mock test?',
@@ -4092,16 +4154,16 @@ def FAQ(total, npapers):
       ('Where do the options of the 2019 papers come from?',
        'APPSC\'s 2019 final keys print each question with only the correct answer, and APPSC has not published the original options. In the All-in-One Pass, the correct option of each 2019 question is APPSC\'s official answer and the other three options are written by Learn with Anil; every such question is labelled. The 2024 and 2025 papers show APPSC\'s own four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_G1(total, npapers):
     return [
       ('Where can I get APPSC Group 1 previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
-      ('What does it cost, and what does the ₹45 All-in-One Pass cover?',
-       'One plan: the ₹45 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       f'This page has {total} questions from {npapers} APPSC Group-I Prelims papers: Paper I (General Studies) and Paper II (General Aptitude) of the 2024 exam, and the 2023 and 2019 Prelims papers. Every answer is taken from APPSC\'s official final key, and each question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹149 All-in-One Pass for every exam.'),
+      ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
+       'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
       ('Is there a APPSC Group 1 mock test?',
@@ -4113,16 +4175,16 @@ def FAQ_G1(total, npapers):
       ('Where do the options of the 2023 and 2019 papers come from?',
        'APPSC\'s 2023 and 2019 final keys print each question with only the correct answer, and APPSC has not published the original options. In the All-in-One Pass, the correct option of each 2023 and 2019 question is APPSC\'s official answer and the other three options are written by Learn with Anil; every such question is labelled. The 2024 papers show APPSC\'s own four options.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
 def FAQ_CAPF(total, npapers):
     return [
       ('Where can I get UPSC CAPF AC previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
-      ('What does it cost, and what does the ₹45 All-in-One Pass cover?',
-       'One plan: the ₹45 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
+       f'This page has {total} questions from {npapers} UPSC CAPF (Assistant Commandants) Paper I papers, General Ability and Intelligence (2024, 2025 and 2026), in English and Hindi as printed in the official question booklets. Every question has a short explanation. You can practise each paper as a quiz or a timed test, with answers and explanations with one ₹149 All-in-One Pass for every exam.'),
+      ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
+       'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the CAPF AC 2026 answer key?',
        'Every 2026 question on this site shows the answer from UPSC\'s provisional answer key (Series A booklet), published three days after the exam on 19 July 2026. UPSC\'s final key can differ for a few questions.'),
       ('Is there a CAPF AC mock test?',
@@ -4134,7 +4196,7 @@ def FAQ_CAPF(total, npapers):
       ('Is the CAPF AC previous year question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, exactly as printed in UPSC\'s booklet. Tap EN to switch back.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password. Your scores are saved with Learn with Anil so Anil can guide you, and your practice attempts, mistakes notebook and bookmarks stay on your own device.'),
     ]
 
 
@@ -4148,7 +4210,7 @@ def FAQ_EPFO(total, npapers):
         f'This page has {total} questions from the UPSC recruitment test for Assistant Provident Fund Commissioner (APFC) in EPFO, held on 2 July 2023. ')
        + ('Every question is in English and Hindi as printed in the booklet (Series A), apart from the General English part. Answers are from UPSC\'s official answer keys where UPSC has published one (see the next answer), and every question has a short explanation. ' if E['many'] else
           'Every question is in English and Hindi as printed in the official booklet (Series A), apart from the General English part. Every answer is taken from UPSC\'s official answer key and every question has a short explanation. ')
-       + 'You can practise each paper question by question, subject-wise or as a timed test with one ₹45 All-in-One Pass for every exam.'),
+       + 'You can practise each paper question by question, subject-wise or as a timed test with one ₹149 All-in-One Pass for every exam.'),
       ('Are the answers official?',
        ('For most papers, yes. ' if E['nokey'] else '') + (epfo_keynote(E) + ' ' if E['many'] else '') + ('' if E['many'] else
        ('Yes. They come from UPSC\'s official answer keys for Series A, published on upsc.gov.in after each recruitment was completed. UPSC dropped no question in the 2023 papers'
@@ -4180,7 +4242,7 @@ def FAQ_EPFO(total, npapers):
         'Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
        + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
 
@@ -4201,7 +4263,7 @@ def FAQ_CGL(total, npapers):
       ('Is the SSC CGL question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in SSC\'s paper, with the explanation in Hindi. English Comprehension questions are in English only.'),
       ('Is there an SSC CGL mock test?',
-       'Yes. Every shift paper here can be taken as a timed mock test with the real time limit. Mission CGL, Learn with Anil\'s series of new full-length Tier-I and Tier-II mock tests in English and Hindi, is included in the same ₹45 All-in-One Pass.'),
+       'Yes. Every shift paper here can be taken as a timed mock test with the real time limit. Mission CGL, Learn with Anil\'s series of new full-length Tier-I and Tier-II mock tests in English and Hindi, is included in the same ₹149 All-in-One Pass.'),
     ]
 
 
@@ -4222,9 +4284,9 @@ def FAQ_NTPC(total, npapers):
       ('Is the RRB NTPC question paper available in Hindi?',
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in RRB\'s Hindi paper of the same shift, with the explanation in Hindi. Tap EN to switch back.'),
       ('Is there an RRB NTPC mock test?',
-       'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and subject-wise sectional tests (Mathematics, Reasoning, General Awareness) are built from the same RRB questions. All of it is in the ₹45 All-in-One Pass.'),
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute limit, and subject-wise sectional tests (Mathematics, Reasoning, General Awareness) are built from the same RRB questions. All of it is in the ₹149 All-in-One Pass.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
 
@@ -4250,7 +4312,7 @@ def FAQ_RRBD(total, npapers):
        'Yes. Tap हिंदी at the top of the page to see every question and option in Hindi, as printed in RRB\'s Hindi paper of the same shift, with the explanation in Hindi.'),
       ('Is there an RRB Group D mock test?',
        'Yes. Every shift paper here can be taken as a timed 90-minute mock test, and the sectional tests let you practise General Science, Maths, Reasoning or General Awareness alone. '
-       'They are part of the ₹45 All-in-One Pass, which also opens every other exam on the website.'),
+       'They are part of the ₹149 All-in-One Pass, which also opens every other exam on the website.'),
     ]
 
 
@@ -4278,7 +4340,36 @@ def FAQ_GD(total, npapers):
        'A Class 10 (matriculation) pass, aged 18 to 23 years on the cut-off date (1 January 2026 for the 2026 exam), with age relaxation of 3 years for OBC and 5 years for SC and ST. '
        'The posts are Constable (GD) in the BSF, CISF, CRPF, ITBP, SSB and SSF, Rifleman (GD) in the Assam Rifles and Sepoy in the NCB, at Pay Level 3 (₹21,700 – ₹69,100).'),
       ('Is there an SSC GD mock test?',
-       'Yes. Every shift paper here can be taken as a timed mock test with the real 60-minute limit and SSC\'s marking, with the same ₹45 All-in-One Pass that opens every exam on the site.'),
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 60-minute limit and SSC\'s marking, with the same ₹149 All-in-One Pass that opens every exam on the site.'),
+    ]
+
+
+def FAQ_MTS(total, npapers):
+    M = mts_text()
+    return [
+      ('Where can I get SSC MTS previous year question papers with answers?',
+       f'This page has {total} questions from {M["what"]} of the SSC Multi-Tasking (Non-Technical) Staff and Havaldar Examination 2024 (held on {M["days"]} 2024). '
+       'Each is SSC\'s own question paper as candidates print it from SSC\'s portal, with the answer SSC marked as correct, and every question has a short explanation. '
+       'Take a whole shift as a timed mock test, or practise by subject and topic.'),
+      ('Are the answers official?',
+       'Yes. Every answer is the one SSC marked as correct on the candidate\'s response sheet. The sheets come from the answer-key stage, so SSC\'s final key can '
+       'differ for a few questions. The explanations are written by Learn with Anil.'),
+      ('What is the SSC MTS exam pattern?',
+       'One computer-based exam in two sessions on the same day, 45 minutes each. Session I has Numerical & Mathematical Ability (20 questions) and Reasoning '
+       'Ability & Problem Solving (20) with no negative marking. Session II has General Awareness (25) and English Language & Comprehension (25), and one mark '
+       'is cut for each wrong answer. Each question carries 3 marks: 90 questions, 270 marks. Havaldar candidates also take a PET/PST.'),
+      ('Is the SSC MTS question paper available in Hindi?',
+       'Yes. Tap हिंदी at the top of the page to see the question and options in Hindi, as printed in SSC\'s Hindi paper, with the explanation in Hindi. The '
+       'English Language section is in English only, and a few questions whose Hindi copy was not readable on the sheet show in English.'),
+      ('Who can apply for SSC MTS, and what is the salary?',
+       'Anyone who has passed Class 10 (matriculation). In the last cycle the age limit was 18–25 years for most MTS posts and 18–27 years for Havaldar and some MTS posts, '
+       'with the usual relaxation for reserved categories. MTS and Havaldar are Group C posts in Pay Level 1 (₹18,000–56,900) plus allowances.'),
+      ('Is there an SSC MTS mock test?',
+       'Yes. Every shift paper here can be taken as a timed mock test with the real 90-minute time limit (two sessions of 45 minutes), and you can make your own '
+       'quiz from any subject or topic.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass '
+       'opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
 
@@ -4287,7 +4378,7 @@ def FAQ_HM(total, npapers):
       ('Where can I get TGPSC HMWSSB Manager (Engineering) previous question papers with answers?',
        f'This page has {total} questions from the TSPSC Manager (Engineering) written test for HMWSSB, Notification 13/2015, held on 1 November 2015: '
        'Paper 1 General Studies in English and Telugu, and Paper 2 in Civil Engineering, in Electronics & Communication Engineering (ECE) and in Computer Science & Information Technology (CSE). Every answer is taken from TSPSC\'s final key (Series A), and each question has a short explanation. '
-       'You can practise each paper as a quiz or a timed mock test, with answers and explanations with one ₹45 All-in-One Pass for every exam.'),
+       'You can practise each paper as a quiz or a timed mock test, with answers and explanations with one ₹149 All-in-One Pass for every exam.'),
       ('What is the TGPSC HMWSSB Manager (Engineering) 2026 exam pattern?',
        'Two objective papers: Paper 1 General Studies and General Abilities (150 questions, 150 marks, in English and Telugu) and Paper 2 in the candidate\'s engineering '
        'subject (150 questions, 300 marks, in English), 450 marks in all. Notification 04/2026 has 130 posts, mostly Civil, and the exam is tentatively in December 2026; confirm dates on tgpsc.gov.in.'),
@@ -4296,7 +4387,7 @@ def FAQ_HM(total, npapers):
       ('Is there a HMWSSB Manager mock test?',
        'Yes. Open the mock test page and take a real 2015 paper with a timer, or tap Create a quiz to choose subjects such as Environmental Engineering, Computer Networks or Telangana History. You get your score, the official answer and an explanation for every question.'),
       ('Do I need to register?',
-       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
       ('Which questions are left out?',
        'TSPSC\'s final key gave the mark to every candidate for five questions of Paper 2 Civil (Q3, 37, 64, 95 and 128 in Series A), five of Paper 2 ECE (Q38, 47, 53, 123 and 134) and three of Paper 2 Computer Science & IT (Q72, 96 and 106); they are left out. For CSE Q2 the key accepts option 1 or 4, so both are shown as correct. The Mechanical and Electrical papers are not on the site yet.'),
     ]
@@ -4310,11 +4401,11 @@ def FAQ_AMVI(state):
         if ap:
             where = (f'This page has {total:,} questions from {npapers} APPSC Assistant Motor Vehicle Inspector papers: Paper I General Studies & Mental Ability and Paper II Automobile Engineering '
                      'of the 2026 (Notification 21/2025, held 27 and 28 January 2026), 2023 (Notification 12/2022, computer-based test of 6 October 2023) and 2019 (Notification 11/2018) exams. '
-                     'Every answer is taken from APPSC\'s final key, and each question has a short explanation. You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹45 All-in-One Pass for every exam.')
+                     'Every answer is taken from APPSC\'s final key, and each question has a short explanation. You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹149 All-in-One Pass for every exam.')
         else:
             where = (f'This page has {total:,} questions from the TSPSC (now TGPSC) Assistant Motor Vehicles Inspector computer-based test of 28 June 2023 (Notification 31/2022): Paper I General Studies & General Abilities in English and Telugu, and Paper II Automobile Engineering. '
                      'The answers are from TSPSC\'s preliminary key, because the final key was released only on candidates\' individual response sheets; a few answers may differ from the final key. Each question has a short explanation. '
-                     'You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹45 All-in-One Pass for every exam.')
+                     'You can practise each paper as a quiz or a timed mock test, with answers and explanations, with one ₹149 All-in-One Pass for every exam.')
         return [
           (f'Where can I get {name} previous year question papers with answers?', where),
           (f'What is the {name} exam pattern?',
@@ -4327,7 +4418,7 @@ def FAQ_AMVI(state):
           (f'Is there a {name} mock test?',
            'Yes. Open the mock test page and take a real AMVI paper with a timer, or tap Create a quiz to choose subjects such as IC Engines, Brakes, the Motor Vehicles Act or Current Affairs. You get your score, the answer and an explanation for every question.'),
           ('Do I need to register?',
-           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
           ('Which questions are left out?',
            ('Questions that APPSC deleted or ignored for all candidates are left out. APPSC\'s 2019 keys print only the correct answer, so the 2019 papers are quick-recall questions (question and answer), and a few 2019 questions whose answer makes no sense without the options are left out.'
             if ap else
@@ -4348,7 +4439,7 @@ def FAQ_AP(post):
             if si else
             f'This page has {total:,} questions from the SLPRB AP Police Constable Preliminary Written Test held on 22 January 2023 (booklet A), in English and Telugu as printed, '
             "with answers from SLPRB's final key and a short explanation for every question. ")
-           + 'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+           + 'Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam.'),
           (f'How many posts are in the AP Police {"SI" if si else "Constable"} 2026 notification?',
            ('SLPRB AP notification Rc.No.81/SLPRB/Rect.1/2026 of 16 September 2026 has 378 posts: 253 SCT SI (Civil), 116 SCT RSI (AR) and 9 SI in the Special Protection Force; '
             'a separate notification has 50 SI (Communications) and 10 SI (PTO) posts. SLPRB will announce the application and exam dates in a press note.'
@@ -4378,7 +4469,7 @@ def FAQ_ANALYST(total, npapers):
     return [
       ('Where can I get APPSC Analyst Grade-II previous question papers with answers?',
        f'This page has {total:,} questions from {npapers} APPSC Analyst Grade-II (A.P. Pollution Control Board) papers: the 2025 Paper I General Studies & Mental Ability and the Paper II Chemistry, Biochemistry, Biology and Environmental Science papers '
-       "(Notification 02/2024, computer-based test, March 2025). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+       "(Notification 02/2024, computer-based test, March 2025). Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam."),
       ('What is the APPSC Analyst Grade-II exam pattern in 2026?',
        'Notification 21/2026 (18 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II, a Common Paper of Chemistry, '
        'Biochemistry, Biology and Environmental Science (150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying '
@@ -4400,7 +4491,7 @@ def FAQ_FRO(total, npapers):
     return [
       ('Where can I get APPSC Forest Range Officer previous question papers with answers?',
        f'This page has {total:,} questions from {npapers} APPSC Forest Range Officer (FRO) papers: the 2025 Screening Test (Notification 11/2024), Paper I General Studies & Mental Ability, General Forestry I and General Forestry II '
-       "of the 2023 Mains (Notification 21/2022) and the 2020 Mains (Notification 10/2018), and the 2019 Screening Test. Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+       "of the 2023 Mains (Notification 21/2022) and the 2020 Mains (Notification 10/2018), and the 2019 Screening Test. Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam."),
       ('What is the APPSC FRO exam pattern?',
        'Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies & Mental Ability, '
        'Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. '
@@ -4425,7 +4516,7 @@ def FAQ_TG1(total, npapers):
       ('Where can I get TGPSC Group 1 Prelims previous question papers with answers?',
        f'This page has {total:,} questions from {npapers} TSPSC/TGPSC Group-I Preliminary Test papers: the exam of 9 June 2024 (Notification 02/2024) and the two exams of '
        'Notification 04/2022 that were later cancelled (16 October 2022 and 11 June 2023). Every answer is from the final key, and each question has a short explanation in English and Telugu. '
-       'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+       'Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam.'),
       ('Why were the 2022 and 2023 Group-I Prelims cancelled?',
        'TSPSC cancelled the Prelims of 16 October 2022 in March 2023 after its question paper leaked. The exam was held again on 11 June 2023, and the Telangana High Court set it aside on '
        '23 September 2023 because the commission had not followed its own procedure (biometric attendance was not taken). On 19 February 2024 the commission withdrew Notification 04/2022 '
@@ -4467,7 +4558,7 @@ def FAQ_AEE(total, npapers):
       ('Where can I get APPSC Assistant Environmental Engineer previous question papers with answers?',
        f'This page has {total:,} questions from the APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) exam held on 25 March 2025 (Notification 15/2023): '
        + ('Paper I General Studies & Mental Ability and Paper II Common Subject. ' if aee_p1() else 'Paper II Common Subject; Paper I General Studies & Mental Ability is being added next. ')
-       + "Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+       + "Every answer is from APPSC's final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam."),
       ('What is the APPSC Assistant Environmental Engineer exam pattern in 2026?',
        'Notification 08/2026 (41 posts) has two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Common Subject '
        '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
@@ -4492,7 +4583,7 @@ def FAQ_ASO(total, npapers):
       ('Where can I get APPSC ASO previous question papers with answers?',
        f'This page has {total:,} questions from the APPSC Assistant Statistical Officer Paper II (Subject) of {aso_years()}: statistics, economics, financial accounting and computers, '
        "in English and Telugu as APPSC printed them. Every answer is from APPSC's final key, and each question has a short explanation. "
-       'Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+       'Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam.'),
       ('What is the APPSC ASO exam pattern?',
        'Two objective papers of degree standard, computer-based: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Subject '
        '(150 questions, 150 marks, 150 minutes), 300 marks in all, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test (60 minutes, 100 marks).'),
@@ -4518,7 +4609,7 @@ def FAQ_DSC(total, npapers):
       ('Where can I get AP DSC previous question papers with answers?',
        f'This page has {total:,} questions from {npapers} AP Mega DSC 2025 question papers ({dsc_posts()}), with every answer taken from the final key of the '
        'School Education Department, Andhra Pradesh, and a short explanation in English and Telugu. The questions are shown in English and Telugu as printed in the '
-       'computer-based test (the Telugu, Hindi and English sections in their own language). Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam.'),
+       'computer-based test (the Telugu, Hindi and English sections in their own language). Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam.'),
       ('What is the AP DSC 2026 exam pattern?',
        'From the 2026 Information Bulletin: School Assistant (languages and non-languages) — 160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 20, perspectives in education 10, '
        'classroom implications of educational psychology 10, subject content 80 and methodology 40 questions. SGT — 160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 16, '
@@ -4546,7 +4637,7 @@ def FAQ_EO(total, npapers):
       ('Where can I get APPSC Executive Officer Grade-III previous question papers with answers?',
        f'This page has {total:,} questions from {npapers} APPSC Executive Officer Grade-III (Endowments) papers: Paper I General Studies & Mental Ability and Paper II Hindu Philosophy & Temple System '
        'of the 2026 exam (Notification 10/2025, held 11 February 2026) and the 2023 Mains (Notification 24/2021, computer-based test), plus the 2022 Screening Test. '
-       "Every answer is taken from APPSC's final key, and each question has a short explanation in English and Telugu. Practise each paper as a quiz or a timed mock test with one ₹45 All-in-One Pass for every exam."),
+       "Every answer is taken from APPSC's final key, and each question has a short explanation in English and Telugu. Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam."),
       ('What is the APPSC EO Grade-III exam pattern?',
        'Two objective papers of degree standard: Paper I General Studies & Mental Ability (150 questions, 150 marks, 150 minutes) and Paper II Hindu Philosophy & Temple System '
        '(150 questions, 150 marks, 150 minutes), 300 marks in all, computer-based, with one-third of a mark deducted for each wrong answer, followed by a qualifying Computer Proficiency Test. '
@@ -4575,16 +4666,16 @@ def FAQ_TS(post, mains=()):
             where = (f'This page has {total:,} questions from {npapers} TSLPRB Police Constable papers: {T["pc_list"]}, in English and Telugu as printed. '
                      'Every answer is taken from TSLPRB\'s final key for that paper'
                      + (f' (for {" and ".join(T["pc_prelim"])} only the preliminary key could be found, so a few answers may differ from the final key)' if T['pc_prelim'] else '')
-                     + ', and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations, with one ₹45 All-in-One Pass for every exam.')
+                     + ', and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations, with one ₹149 All-in-One Pass for every exam.')
         elif mains:
             fwe = (' and '.join(x for i, x in (('s2023c', 'Paper III, Arithmetic & Reasoning, on 8 April'), ('s2023d', 'Paper IV, General Studies, on 9 April')) if i in mains)
                    + ' 2023, booklet D') if si else '30 April 2023, booklet A'
             where = (f'This page has {total:,} questions from {npapers} TSLPRB papers: the {"SI" if si else "Police Constable"} Preliminary Written Test of {"7 August" if si else "28 August"} 2022 (booklet A) '
                      f'and the Final Written Examination ({fwe}), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations with one ₹45 All-in-One Pass for every exam.')
+                     f'Every answer is taken from TSLPRB\'s final key for that paper, and each question has a short explanation. You can practise each paper as a quiz or a mock test, with answers and explanations with one ₹149 All-in-One Pass for every exam.')
         else:
             where = (f'This page has {total} questions from the {"SI" if si else "Police Constable"} Preliminary Written Test held by TSLPRB on {"7 August" if si else "28 August"} 2022 (booklet A), in English and Telugu as printed. '
-                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can practise the paper as a quiz, with answers and explanations with one ₹45 All-in-One Pass for every exam.')
+                     f'Every answer is taken from TSLPRB\'s final key, released on 21 October 2022, and each question has a short explanation. You can practise the paper as a quiz, with answers and explanations with one ₹149 All-in-One Pass for every exam.')
         return [
           (f'Where can I get {name} previous year question papers with answers?', where),
           (f'What is the {name} Preliminary Written Test pattern?',
@@ -4605,7 +4696,7 @@ def FAQ_TS(post, mains=()):
            if mkp else
            f'Yes. Tap Create a quiz, choose subjects or topics, and pick Timed test: you get a mock test made of real TSLPRB questions, with your score and a topic-wise analysis at the end. Practice mode works like practice bits, one question at a time with the answer and explanation.'),
           ('Do I need to register?',
-           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
           ('Which questions are left out?',
            ('Questions that TSLPRB deleted in its key, questions for which the key accepted three or four options, and the few that have no correct option as printed in the booklet are left out. '
             if not si and T['pcmany'] else
@@ -4736,7 +4827,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -4952,7 +5043,7 @@ def llms_txt(loaded, grand):
     for rel, N in NOTIFS.items():
         if not N.get('exam') or any(c['id'] == N['exam'] for c in exams): L.append(f'- [{re.sub("<[^>]+>", "", N["h1"])}]({SITE_URL}/{rel})')
     L += ['', '## About', f'- [About Jupudi Anil Kumar]({SITE_URL}/appsc-group-2/about/): civil-services educator, 2.5 years of UPSC, APPSC and TGPSC teaching and mentorship.',
-          f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning, with the goal of 1 lakh PYQs of various government exams under one roof for ₹45; Anil needs help from funders, which in turn helps him help the students.',
+          f'- [Fund Learn with Anil]({SITE_URL}/funders.html): a one-person project built to be student-friendly and to democratise learning, with the goal of 1 lakh PYQs of various government exams under one roof for ₹149; Anil needs help from funders, which in turn helps him help the students.',
           f'- Instagram: https://www.instagram.com/{INSTAGRAM}/ · Telegram: https://t.me/learn_with_anil06 · YouTube: https://www.youtube.com/@learn_with_anil06', f'- Sitemap: {SITE_URL}/sitemap.xml', '']
     return '\n'.join(L)
 
@@ -5181,7 +5272,7 @@ def contact_page():
     ])
 
 def funders_page(loaded):
-    """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026). Goal: 1 lakh PYQs of various government exams under one roof for ₹45;
+    """/funders.html: Fund Learn with Anil (Anil, 26 Oct 2026). Goal: 1 lakh PYQs of various government exams under one roof for ₹149;
     Anil is the only person developing the site and needs help from funders, which in turn helps him help the students.
     Built in the start page's own style (app.html CSS, top bar, blue hero, figures, feature cards) with the EN / हिंदी / తెలుగు switch
     (remembered in localStorage 'lwa-lang', shared with the rest of the site). No money is taken through this page."""
@@ -5219,15 +5310,15 @@ def funders_page(loaded):
     LIVE_TOT = [amount_lang(live_total, li, True) for li in range(3)]
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
     mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
-    share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹45. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
+    share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹149. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
     T = {
       'eyebrow': ('Fund Learn with Anil', 'Learn with Anil को सहयोग दें', 'Learn with Anil‌కు నిధులు ఇవ్వండి'),
-      'h1': ('1 lakh PYQs under one roof, <em>for just ₹45.</em>', '1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹45 में।</em>', '1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹45కే.</em>'),
-      'lede': ('That is the goal of Learn with Anil, along with a mock test series for every exam, all in the same ₹45 pass. I am building this website to be student-friendly and to democratise learning. '
+      'h1': ('1 lakh PYQs under one roof, <em>for just ₹149.</em>', '1 लाख PYQs एक ही जगह, <em>सिर्फ़ ₹149 में।</em>', '1 లక్ష PYQs ఒకే చోట, <em>కేవలం ₹149కే.</em>'),
+      'lede': ('That is the goal of Learn with Anil, along with a mock test series for every exam, all in the same ₹149 pass. I am building this website to be student-friendly and to democratise learning. '
                'I am the only person developing it, and I need help from funders: your support, in turn, helps me help the students.',
-               'यही Learn with Anil का लक्ष्य है, साथ ही हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़, सब उसी ₹45 पास में। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
+               'यही Learn with Anil का लक्ष्य है, साथ ही हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़, सब उसी ₹149 पास में। मैं यह वेबसाइट विद्यार्थियों के अनुकूल बनाने और शिक्षा को सबके लिए सुलभ बनाने के लिए बना रहा हूँ। '
                'इसे बनाने वाला मैं अकेला व्यक्ति हूँ, और मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
-               'ఇదే Learn with Anil లక్ష్యం, దానితో పాటు ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్, అన్నీ అదే ₹45 పాస్‌లో. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
+               'ఇదే Learn with Anil లక్ష్యం, దానితో పాటు ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్, అన్నీ అదే ₹149 పాస్‌లో. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఈ వెబ్‌సైట్‌ను నిర్మిస్తున్నాను. '
                'దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'),
       'wa': ('WhatsApp me', 'WhatsApp पर संपर्क करें', 'WhatsAppలో సంప్రదించండి'),
       'mail': ('Email me', 'ईमेल करें', 'ఈమెయిల్ చేయండి'),
@@ -5242,9 +5333,9 @@ def funders_page(loaded):
       'msgP1': ('Lakhs of aspirants in our towns and villages prepare for government jobs without the money for coaching. All they need is the real questions, the right answers and simple explanations, in their own language.',
                 'हमारे कस्बों और गाँवों के लाखों अभ्यर्थी कोचिंग के पैसे के बिना सरकारी नौकरियों की तैयारी करते हैं। उन्हें बस असली प्रश्न, सही उत्तर और अपनी भाषा में सरल व्याख्याएँ चाहिए।',
                 'మన పట్టణాలు, గ్రామాల్లో లక్షలాది అభ్యర్థులు కోచింగ్‌కు డబ్బు లేకుండానే ప్రభుత్వ ఉద్యోగాలకు సిద్ధమవుతున్నారు. వారికి కావలసింది అసలు ప్రశ్నలు, సరైన సమాధానాలు, తమ భాషలో సులభమైన వివరణలు మాత్రమే.'),
-      'msgP2': (f'My dream: <b>1 lakh PYQs of every government exam, with a mock test series for each, under one roof for just ₹45 a year</b>, for the <b>{TOT[0]}+</b> aspirants who apply.',
-                f'मेरा सपना: <b>हर सरकारी परीक्षा के 1 लाख PYQs, हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़ के साथ, एक ही जगह, सिर्फ़ ₹45 प्रति वर्ष में</b>, आवेदन करने वाले <b>{TOT[1]}+</b> अभ्यर्थियों के लिए।',
-                f'నా కల: <b>ప్రతి ప్రభుత్వ పరీక్షకు 1 లక్ష PYQs, ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్‌తో, ఒకే చోట, సంవత్సరానికి కేవలం ₹45కే</b>, దరఖాస్తు చేసే <b>{TOT[2]}+</b> అభ్యర్థుల కోసం.'),
+      'msgP2': (f'My dream: <b>1 lakh PYQs of every government exam, with a mock test series for each, under one roof for just ₹149 a year</b>, for the <b>{TOT[0]}+</b> aspirants who apply.',
+                f'मेरा सपना: <b>हर सरकारी परीक्षा के 1 लाख PYQs, हर परीक्षा के लिए एक मॉक टेस्ट सीरीज़ के साथ, एक ही जगह, सिर्फ़ ₹149 प्रति वर्ष में</b>, आवेदन करने वाले <b>{TOT[1]}+</b> अभ्यर्थियों के लिए।',
+                f'నా కల: <b>ప్రతి ప్రభుత్వ పరీక్షకు 1 లక్ష PYQs, ప్రతి పరీక్షకు ఒక మాక్ టెస్ట్ సిరీస్‌తో, ఒకే చోట, సంవత్సరానికి కేవలం ₹149కే</b>, దరఖాస్తు చేసే <b>{TOT[2]}+</b> అభ్యర్థుల కోసం.'),
       'msgP3': ('I am building this alone. <b>Your support, in turn, helps me help the students.</b> Please stand with me.',
                 'मैं यह अकेले बना रहा हूँ। <b>आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।</b> कृपया मेरा साथ दें।',
                 'దీన్ని నేను ఒక్కడినే నిర్మిస్తున్నాను. <b>మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.</b> దయచేసి నాకు తోడుగా నిలవండి.'),
@@ -5276,11 +5367,11 @@ def funders_page(loaded):
       'srcT': ('Sources for every number', 'हर संख्या के स्रोत', 'ప్రతి సంఖ్యకు ఆధారం'),
       'expandT': ('Next: exams of other states too', 'आगे: दूसरे राज्यों की परीक्षाएँ भी', 'తరువాత: ఇతర రాష్ట్రాల పరీక్షలు కూడా'),
       'expandP': ('Learn with Anil will not stop at Andhra Pradesh, Telangana and the central exams. It will expand to the public service commission, police and other recruitment exams of other states too, '
-                  'so that aspirants across India can find their exam here, all under the same ₹45 All-in-One Pass.',
+                  'so that aspirants across India can find their exam here, all under the same ₹149 All-in-One Pass.',
                   'Learn with Anil आंध्र प्रदेश, तेलंगाना और केंद्रीय परीक्षाओं तक ही सीमित नहीं रहेगा। यह दूसरे राज्यों के लोक सेवा आयोग, पुलिस और अन्य भर्ती परीक्षाओं तक भी विस्तार करेगा, '
-                  'ताकि पूरे भारत के अभ्यर्थियों को अपनी परीक्षा यहीं मिले, सब कुछ उसी ₹45 ऑल-इन-वन पास में।',
+                  'ताकि पूरे भारत के अभ्यर्थियों को अपनी परीक्षा यहीं मिले, सब कुछ उसी ₹149 ऑल-इन-वन पास में।',
                   'Learn with Anil ఆంధ్రప్రదేశ్, తెలంగాణ, కేంద్ర పరీక్షల వద్దే ఆగిపోదు. ఇతర రాష్ట్రాల పబ్లిక్ సర్వీస్ కమిషన్, పోలీస్, ఇతర నియామక పరీక్షలకు కూడా విస్తరిస్తుంది, '
-                  'తద్వారా దేశవ్యాప్తంగా అభ్యర్థులు తమ పరీక్షను ఇక్కడే, అదే ₹45 ఆల్-ఇన్-వన్ పాస్‌లో పొందగలరు.'),
+                  'తద్వారా దేశవ్యాప్తంగా అభ్యర్థులు తమ పరీక్షను ఇక్కడే, అదే ₹149 ఆల్-ఇన్-వన్ పాస్‌లో పొందగలరు.'),
       'f4': ('One pass for every exam, PYQs and mock tests · 12 months', 'हर परीक्षा, PYQs और मॉक टेस्ट के लिए एक पास · 12 महीने', 'అన్ని పరీక్షలు, PYQs, మాక్ టెస్ట్‌లకు ఒకే పాస్ · 12 నెలలు'),
       'progT': ('Progress to 1 lakh', '1 लाख की ओर प्रगति', '1 లక్ష వైపు ప్రగతి'),
       'progP': (f'So far: <b>{NQ}</b> of 1,00,000 questions ({PCT}%). Your support helps me reach the goal sooner.',
@@ -5297,17 +5388,17 @@ def funders_page(loaded):
               'ప్రశ్నలు, వివరణలు ఇంగ్లీష్, తెలుగు, హిందీలో (ప్రతి పరీక్ష దాని ప్రశ్నపత్రం భాషల్లో), ఏ ఫోన్‌లోనైనా.'),
       'b3t': ('Prepare without a coaching fee', 'बिना कोचिंग फ़ीस के तैयारी', 'కోచింగ్ ఫీజు లేకుండా సన్నద్ధత'),
       'b3p': ('Topic-wise practice, timed mock tests and a mistakes notebook.', 'विषयवार अभ्यास, समयबद्ध मॉक टेस्ट और गलतियों की नोटबुक।', 'అంశాలవారీ ప్రాక్టీస్, సమయబద్ధ మాక్ టెస్ట్‌లు, తప్పుల నోట్‌బుక్.'),
-      'b4t': ('Free to read, ₹45 to practise', 'पढ़ना मुफ़्त, अभ्यास ₹45 में', 'చదవడం ఉచితం, ప్రాక్టీస్ ₹45కే'),
-      'b4p': ('Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹45 All-in-One Pass, for 12 months, opens everything: every explanation, all the online practice and tests, every mock test series and the study books.',
-              'हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹45 ऑल-इन-वन पास 12 महीनों के लिए सब कुछ खोल देता है: सभी व्याख्याएँ, सारा ऑनलाइन अभ्यास व टेस्ट, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें।',
-              'ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్‌తో 12 నెలల పాటు అన్నీ తెరుచుకుంటాయి: అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు.'),
+      'b4t': ('Free to read, ₹149 to practise', 'पढ़ना मुफ़्त, अभ्यास ₹149 में', 'చదవడం ఉచితం, ప్రాక్టీస్ ₹149కే'),
+      'b4p': ('Every question and its correct answer can be read for free, along with the explanations for the first 10 questions of every paper. One ₹149 All-in-One Pass, for 12 months, opens everything: every explanation, all the online practice and tests, every mock test series and the study books.',
+              'हर प्रश्न और उसका सही उत्तर मुफ़्त में पढ़ा जा सकता है, साथ ही हर प्रश्न पत्र के पहले 10 प्रश्नों की व्याख्याएँ भी। एक ₹149 ऑल-इन-वन पास 12 महीनों के लिए सब कुछ खोल देता है: सभी व्याख्याएँ, सारा ऑनलाइन अभ्यास व टेस्ट, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें।',
+              'ప్రతి ప్రశ్న, దాని సరైన సమాధానం ఉచితంగా చదవొచ్చు; ప్రతి ప్రశ్నపత్రంలోని మొదటి 10 ప్రశ్నల వివరణలు కూడా ఉచితం. ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్‌తో 12 నెలల పాటు అన్నీ తెరుచుకుంటాయి: అన్ని వివరణలు, ఆన్‌లైన్ ప్రాక్టీస్, టెస్ట్‌లు, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు.'),
       'whyT': ('Why the project needs funding', 'इस परियोजना को धन की ज़रूरत क्यों है', 'ఈ ప్రాజెక్ట్‌కు నిధులు ఎందుకు అవసరం'),
       'whyP': ('I am the only person developing Learn with Anil. Every paper has to be found, typed from the official question booklet, checked against the official answer key, explained and translated, and then kept up to date whenever the keys change. '
-               'The website itself also has to be built and kept running. I keep the price at ₹45 so that every aspirant can afford it, which means that fees alone cannot pay for this work.',
+               'The website itself also has to be built and kept running. I keep the price at ₹149 so that every aspirant can afford it, which means that fees alone cannot pay for this work.',
                'Learn with Anil को बनाने वाला मैं अकेला व्यक्ति हूँ। हर प्रश्न पत्र को खोजना, आधिकारिक प्रश्न पुस्तिका से टाइप करना, आधिकारिक उत्तर कुंजी से मिलाना, समझाना और अनुवाद करना पड़ता है, और जब भी कुंजी बदले, उसे अपडेट रखना पड़ता है। '
-               'वेबसाइट को भी बनाना और चलाते रहना पड़ता है। मैं कीमत ₹45 रखता हूँ ताकि हर अभ्यर्थी इसे ले सके, इसलिए सिर्फ़ फ़ीस से यह काम नहीं चल सकता।',
+               'वेबसाइट को भी बनाना और चलाते रहना पड़ता है। मैं कीमत ₹149 रखता हूँ ताकि हर अभ्यर्थी इसे ले सके, इसलिए सिर्फ़ फ़ीस से यह काम नहीं चल सकता।',
                'Learn with Anil‌ను అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే. ప్రతి ప్రశ్నపత్రాన్ని వెతకాలి, అధికారిక ప్రశ్నాపత్రం నుంచి టైప్ చేయాలి, అధికారిక సమాధాన కీతో సరిచూడాలి, వివరణ రాయాలి, అనువదించాలి, కీ మారినప్పుడల్లా అప్‌డేట్ చేయాలి. '
-               'వెబ్‌సైట్‌ను కూడా నిర్మించి, నడుపుతూ ఉండాలి. ప్రతి అభ్యర్థి కొనగలిగేలా ధరను ₹45గా ఉంచుతున్నాను, అందుకే కేవలం ఫీజులతో ఈ పని నడవదు.'),
+               'వెబ్‌సైట్‌ను కూడా నిర్మించి, నడుపుతూ ఉండాలి. ప్రతి అభ్యర్థి కొనగలిగేలా ధరను ₹149గా ఉంచుతున్నాను, అందుకే కేవలం ఫీజులతో ఈ పని నడవదు.'),
       'helpT': ('What your support will help me do', 'आपका सहयोग मुझे क्या करने में मदद करेगा', 'మీ సహాయం దేనికి ఉపయోగపడుతుంది'),
       'h1t': ('Reach 1 lakh PYQs sooner', '1 लाख PYQs तक जल्दी पहुँचना', '1 లక్ష PYQsను త్వరగా చేరుకోవడం'),
       'h1p': ('Add the remaining government exams, including other states’ exams (state PSCs, police, SSC, banks, railways and defence), so that every aspirant finds their exam here.',
@@ -5319,8 +5410,8 @@ def funders_page(loaded):
       'h4p': ('Write full-length mock tests in each exam’s own pattern, like Mission Khaki for TS Police SI and Mission CGL for SSC CGL, so that every aspirant can practise for their exam, not just read old papers.',
               'हर परीक्षा के अपने पैटर्न में पूरी लंबाई के मॉक टेस्ट तैयार करना, जैसे TS पुलिस SI के लिए Mission Khaki और SSC CGL के लिए Mission CGL, ताकि हर अभ्यर्थी केवल पुराने प्रश्न पत्र पढ़े नहीं, अपनी परीक्षा का अभ्यास भी करे।',
               'ప్రతి పరీక్ష సొంత నమూనాలో పూర్తి నిడివి మాక్ టెస్ట్‌లు రాయడం, TS పోలీస్ SIకి Mission Khaki, SSC CGLకి Mission CGL లాగా, తద్వారా ప్రతి అభ్యర్థి పాత ప్రశ్నపత్రాలు చదవడమే కాకుండా తన పరీక్షకు ప్రాక్టీస్ కూడా చేయగలరు.'),
-      'h3t': ('Keep it at ₹45', 'कीमत ₹45 ही रखना', 'ధర ₹45గానే ఉంచడం'),
-      'h3p': ('Keep everything (every PYQ, every mock test series and the study books) in one ₹45 pass, within reach of every student.', 'सब कुछ (हर PYQ, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें) एक ही ₹45 पास में रखना, हर विद्यार्थी की पहुँच में।', 'అన్నింటినీ (ప్రతి PYQ, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు) ఒకే ₹45 పాస్‌లో ఉంచడం, ప్రతి విద్యార్థికి అందుబాటులో.'),
+      'h3t': ('Keep it at ₹149', 'कीमत ₹149 ही रखना', 'ధర ₹149గానే ఉంచడం'),
+      'h3p': ('Keep everything (every PYQ, every mock test series and the study books) in one ₹149 pass, within reach of every student.', 'सब कुछ (हर PYQ, हर मॉक टेस्ट सीरीज़ और अध्ययन पुस्तकें) एक ही ₹149 पास में रखना, हर विद्यार्थी की पहुँच में।', 'అన్నింటినీ (ప్రతి PYQ, ప్రతి మాక్ టెస్ట్ సిరీస్, స్టడీ పుస్తకాలు) ఒకే ₹149 పాస్‌లో ఉంచడం, ప్రతి విద్యార్థికి అందుబాటులో.'),
       'whoT': ('Who can fund', 'कौन सहयोग कर सकता है', 'ఎవరు నిధులు ఇవ్వవచ్చు'),
       'whoP': ('I welcome support from individuals, alumni, teachers, institutions, companies and foundations who believe that good exam preparation should not depend on how much a student can pay. '
                'Support can take the form of a grant, a sponsorship or a partnership, and I will work out the details with you.',
@@ -5378,9 +5469,9 @@ def funders_page(loaded):
     nav = ''.join(f'<a href="{c["pb"]}">{esc(c["short"])}</a>' for c, _, _ in loaded)
     app = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     css = app[app.index('<style>') + 7: app.index('</style>')]
-    title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹45 + Mock Tests for Every Exam'
+    title = 'Fund Learn with Anil – 1 Lakh PYQs Under One Roof for ₹149 + Mock Tests for Every Exam'
     desc = ('Fund Learn with Anil, a one-person project with one goal: 1 lakh previous-year questions (PYQs) of various government exams under one roof '
-            f'with answers and explanations, plus a mock test series for every exam, all for ₹45, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
+            f'with answers and explanations, plus a mock test series for every exam, all for ₹149, for the {TOT[0]}+ aspirants who apply for these exams, expanding to other states. Individuals and organisations can sponsor or partner.')
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": can, "image": SITE_URL + '/og-funders.jpg', "inLanguage": ["en", "hi", "te"],
           "keywords": "fund education India, sponsor students, support free exam preparation, government exam PYQs, Learn with Anil, democratise learning",
           "about": {"@type": "EducationalOrganization", "name": "Learn with Anil", "url": SITE_URL + '/', "founder": {"@type": "Person", "name": "Jupudi Anil Kumar"}},
@@ -5398,7 +5489,7 @@ def funders_page(loaded):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{can}">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{can}"><meta property="og:image" content="{SITE_URL}/og-funders.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof, for ₹45"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Learn with Anil"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{can}"><meta property="og:image" content="{SITE_URL}/og-funders.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Learn with Anil: 1 lakh PYQs under one roof, for ₹149"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
 <style>{css}
@@ -5477,7 +5568,7 @@ def funders_page(loaded):
       <div class="figure"><div class="v">{NQ}</div>{t('f1', 'div', 'class="k"')}</div>
       <div class="figure"><div class="v">1,00,000</div>{t('f2', 'div', 'class="k"')}</div>
       <div class="figure">{t('reachV', 'div', 'class="v"')}{t('f3', 'div', 'class="k"')}</div>
-      <div class="figure"><div class="v">₹45</div>{t('f4', 'div', 'class="k"')}</div>
+      <div class="figure"><div class="v">₹149</div>{t('f4', 'div', 'class="k"')}</div>
     </div>
   </section>
 
@@ -5533,7 +5624,7 @@ def funders_page(loaded):
     <div class="section-title">{t('shareT', 'h2')}</div>
     <div class="card fund-box">
       {t('shareP', 'p', 'class="muted"')}
-      <img class="fund-poster" src="/og-funders.jpg" data-lsrc-en="/og-funders.jpg" data-lsrc-hi="/og-funders-hi.jpg" data-lsrc-te="/og-funders-te.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹45, plus a mock test series for every exam. Fund this project." width="1200" height="630" loading="lazy">
+      <img class="fund-poster" src="/og-funders.jpg" data-lsrc-en="/og-funders.jpg" data-lsrc-hi="/og-funders-hi.jpg" data-lsrc-te="/og-funders-te.jpg" alt="Learn with Anil: 1 lakh PYQs under one roof, for ₹149, plus a mock test series for every exam. Fund this project." width="1200" height="630" loading="lazy">
       <div class="row"><a class="btn btn-primary" href="{share}" target="_blank" rel="noopener">{t('shareWa')}</a><a class="btn btn-secondary" href="/og-funders.jpg" data-lhref-en="/og-funders.jpg" data-lhref-hi="/og-funders-hi.jpg" data-lhref-te="/og-funders-te.jpg" download="LearnWithAnil-Fund-poster.jpg">{t('poster')}</a></div>
     </div>
   </section>
@@ -5565,13 +5656,13 @@ LANDINGS = {
       board='APPSC', ename='APPSC', crumb='APPSC PYQs',
       title='APPSC Previous Year Question Papers with Answers – Group 1, Group 2, AMVI, Endowment Officer, Analyst, Environmental Engineer, ASO & FRO PYQs | Learn with Anil',
       desc='All APPSC previous year question papers in one place: Group 1 Prelims 2019–2024, Group 2 Prelims & Mains 2019–2025 AMVI (Assistant Motor Vehicle Inspector) 2019, 2023 & 2026, Endowment Officer (EO Grade-III) 2022–2026, Analyst Grade-II 2025, Assistant Environmental Engineer 2025, Assistant Statistical Officer (ASO) ' + aso_years().replace(' and ', ' & ') + ' and Forest Range Officer (FRO) 2020 & 2023, '
-           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with final-key answers and explanations in English and Telugu. Practise them online with answers and explanations with one ₹149 All-in-One Pass for every exam.',
       h1='APPSC previous year question papers with answers',
       lede="Every APPSC Group 1, Group 2, AMVI, Endowment Officer (EO Grade-III), Analyst Grade-II, Assistant Environmental Engineer, Assistant Statistical Officer (ASO) and Forest Range Officer previous question paper on Learn with Anil, {n} questions in all. "
            "Answers come from APPSC's official final keys, and every question has a short explanation, in English and Telugu (AMVI Automobile Engineering, Analyst Paper II, Environmental Engineer Paper II and FRO General Forestry papers in English).",
       intro='<p>Looking for AP Group 2 or AP Group 1 previous papers, APPSC AMVI (Assistant Motor Vehicle Inspector) or Endowment Officer (EO Grade-III) previous papers, APPSC old question papers with the key, or an APPSC mock test? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
+            '<p lang="te">APPSC గ్రూప్ 1, గ్రూప్ 2 మునుపటి సంవత్సరం ప్రశ్నపత్రాలు (పాత ప్రశ్నాపత్రాలు) అధికారిక ఫైనల్ కీ సమాధానాలు, వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.</p>'
             '<p class="note">New: <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> (720 posts, apply till 11 December, screening test 21 February 2027) and '
             '<a href="/appsc-group-1-notification-2026.html">APPSC Group 1 Notification 2026</a> (166 posts, applications closed, screening test 24 January 2027) and '
             '<a href="/appsc-eo-grade-3-notification-2026.html">APPSC EO Grade-III Notification 2026</a> (104 Endowments Executive Officer posts, last date extended to 12 November), '
@@ -5585,13 +5676,13 @@ LANDINGS = {
       board='TSLPRB', ename='TS Police', crumb='TS Police PYQs',
       title='TS Police Previous Question Papers with Answers – SI & Constable PYQs (TSLPRB / TGPRB), English & Telugu | Learn with Anil',
       desc='Telangana Police SI and Constable previous question papers in one place: TSLPRB Preliminary Written Test and Final Written Examination papers from 2016 to 2023, '
-           '{n} questions with answers from TSLPRB\'s keys and explanations in English and Telugu. Practise them online with answers and explanations with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with answers from TSLPRB\'s keys and explanations in English and Telugu. Practise them online with answers and explanations with one ₹149 All-in-One Pass for every exam.',
       h1='TS Police SI & Constable previous question papers with answers',
       lede="Every Telangana Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
            "Answers come from TSLPRB's keys (the final key wherever it could be found), and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for TS Police SI previous papers, the TS SI or Constable mains 2023 question paper, the TS Constable question paper 2022, the older Constable papers of 2016, 2018 and 2019, TSLPRB / TGPRB previous question papers with answers, '
             'or a Telangana police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
+            '<p lang="te">తెలంగాణ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) TSLPRB ఫైనల్ కీ సమాధానాలు, తెలుగులో వివరణలతో — ప్రాక్టీస్ క్విజ్‌లు, మాక్ టెస్ట్‌లు; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.</p>'
             '<p class="note">2026 prelims are tentatively on 29 November (SI) and 20 December (Constable). Full mock tests with a timer: '
             '<a href="/ts-police-si/mock-test.html">TS Police SI mock test</a> · <a href="/ts-police-constable/mock-test.html">TS Police Constable mock test</a>.</p>',
       te={'TS Police SI': 'తెలంగాణ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'TS Constable': 'తెలంగాణ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
@@ -5600,13 +5691,13 @@ LANDINGS = {
       board='SLPRB', ename='AP Police', crumb='AP Police PYQs',
       title='AP Police Previous Question Papers with Answers – SI & Constable PYQs (SLPRB AP), English & Telugu | Learn with Anil',
       desc='Andhra Pradesh Police SI and Constable previous question papers in one place: SLPRB AP Preliminary Written Test papers of 2023, '
-           '{n} questions with answers from SLPRB\'s keys and explanations, in English and Telugu. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with answers from SLPRB\'s keys and explanations, in English and Telugu. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='AP Police SI & Constable previous question papers with answers',
       lede="Every Andhra Pradesh Police SI and Constable question paper on Learn with Anil, {n} questions in all. "
            "Answers come from SLPRB AP's keys, and every question has a short explanation, in English and Telugu.",
       intro='<p>Looking for AP Police SI previous papers, the AP SI prelims 2023 Paper 1 or Paper 2, the AP Police Constable question paper 2023, SLPRB AP / APSLPRB previous question papers with answers, '
             'or an AP police mock test? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="te">ఏపీ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) SLPRB కీ సమాధానాలు, వివరణలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹45 ఆల్-ఇన్-వన్ పాస్.</p>'
+            '<p lang="te">ఏపీ పోలీస్ ఎస్ఐ, కానిస్టేబుల్ పాత ప్రశ్నాపత్రాలు (మునుపటి ప్రశ్నపత్రాలు) SLPRB కీ సమాధానాలు, వివరణలతో — తెలుగు, ఇంగ్లీష్‌లో; అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.</p>'
             '<p class="note">New: <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> (378 posts) and '
             '<a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> (1,156 posts); SLPRB will announce the application dates in a press note.</p>',
       te={'AP Police SI': 'ఏపీ పోలీస్ ఎస్ఐ ప్రశ్నాపత్రాలు', 'AP Constable': 'ఏపీ పోలీస్ కానిస్టేబుల్ ప్రశ్నాపత్రాలు'},
@@ -5615,13 +5706,13 @@ LANDINGS = {
       board='RRB', ename='RPF', crumb='RPF PYQs', lang='hi',
       title='RPF Previous Year Question Papers with Answers – RPF SI & Constable CBT PYQs (RRB), English & Hindi | Learn with Anil',
       desc='Railway Protection Force SI and Constable previous year question papers in one place: RRB\'s CBT papers of CEN RPF 01/2024 (SI, December 2024) and '
-           'CEN RPF 02/2024 (Constable, March 2025), shift-wise, {n} questions with RRB\'s answer key and explanations in English and Hindi. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'CEN RPF 02/2024 (Constable, March 2025), shift-wise, {n} questions with RRB\'s answer key and explanations in English and Hindi. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='RPF SI & Constable previous question papers with answers',
       lede="Every RPF Sub-Inspector and Constable question paper on Learn with Anil, {n} questions in all. "
            "Each is RRB's own paper (the candidate response sheet) with the answer RRB marked as correct, and every question has a short explanation, in English and Hindi.",
       intro='<p>Looking for the RPF SI question paper 2024, the RPF Constable question paper 2025, shift-wise RPF previous year papers with the answer key, '
             'or an RPF mock test in Hindi? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="hi">आरपीएफ एसआई और कांस्टेबल के पिछले वर्षों के प्रश्न पत्र (शिफ्ट-वार), आरआरबी की उत्तर कुंजी और व्याख्या सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹45 ऑल-इन-वन पास।</p>'
+            '<p lang="hi">आरपीएफ एसआई और कांस्टेबल के पिछले वर्षों के प्रश्न पत्र (शिफ्ट-वार), आरआरबी की उत्तर कुंजी और व्याख्या सहित — हिंदी और अंग्रेज़ी में; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।</p>'
             '<p class="note">From the next cycle the Staff Selection Commission (SSC) conducts RPF SI and Constable recruitment: '
             '<a href="/rpf-si-notification-2026.html">RPF SI 2026 notification status</a> · <a href="/rpf-constable-notification-2026.html">RPF Constable 2026 notification status</a>. '
             'Full shift papers with a 90-minute timer: <a href="/rpf-si/mock-test.html">RPF SI mock test</a> · <a href="/rpf-constable/mock-test.html">RPF Constable mock test</a>.</p>',
@@ -5631,13 +5722,13 @@ LANDINGS = {
       board='TNPSC', ename='TNPSC', crumb='TNPSC PYQs', lang='ta',
       title='TNPSC Previous Year Question Papers with Answers – Group 4 PYQs (General Tamil & GS), Tamil & English | Learn with Anil',
       desc='TNPSC previous year question papers in one place: TNPSC Group 4 (CCSE-IV) papers of 2025, 2024 and 2022, Part A General Tamil and Part B General Studies '
-           '& Aptitude, {n} questions with TNPSC\'s final answer key and explanations in Tamil and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '& Aptitude, {n} questions with TNPSC\'s final answer key and explanations in Tamil and English. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='TNPSC previous question papers with answers',
       lede="Every TNPSC question paper on Learn with Anil, {n} questions in all. Each is TNPSC's own question booklet with the answer from TNPSC's final key, "
            "and every question has a short explanation in Tamil and English.",
       intro='<p>Looking for the TNPSC Group 4 question paper 2025 or 2024 with the answer key, General Tamil (பொதுத் தமிழ்) previous questions, or a TNPSC Group 4 mock test in Tamil? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="ta">டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் (2025, 2024, 2022) இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹45 ஆல்-இன்-ஒன் பாஸ்.</p>'
+            '<p lang="ta">டிஎன்பிஎஸ்சி குரூப் 4 முந்தைய ஆண்டு வினாத்தாள்கள் (2025, 2024, 2022) இறுதி விடைக்குறிப்புடன் — பொதுத் தமிழ், பொது அறிவு, திறனறிவு; தமிழ், ஆங்கிலத்தில் விளக்கங்களுடன்; அனைத்துத் தேர்வுகளுக்கும் ஒரே ₹149 ஆல்-இன்-ஒன் பாஸ்.</p>'
             '<p class="note">TNPSC Group 4 2026: <a href="/tnpsc-group-4-notification-2026.html">Notification No. 11/2026, 6,574 posts, exam on 10 January 2027</a>. '
             'Full papers with a 3-hour timer: <a href="/tnpsc-group-4/mock-test.html">TNPSC Group 4 mock test</a>.</p>',
       te={'TNPSC Group 4': 'டிஎன்பிஎஸ்சி குரூப் 4 வினாத்தாள்கள்'},
@@ -5647,13 +5738,13 @@ LANDINGS = {
       title='KEA Previous Year Question Papers with Answers – FDA & SDA PYQs (GK, Kannada, English, Computer), Kannada & English | Learn with Anil',
       desc='KEA (Karnataka Examinations Authority) previous year question papers in one place: the 2026 FDA-level, SDA-level and Kalyana Karnataka Group-C papers, '
            'Paper-1 General Knowledge and Paper-2 Kannada, English & Computer Knowledge, {n} questions with KEA\'s revised key and explanations in Kannada and English. '
-           'Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='KEA previous question papers with answers',
       lede="Every KEA question paper on Learn with Anil, {n} questions in all. Each is KEA's own question booklet with the answer from KEA's revised key, "
            "and every question has a short explanation in Kannada and English.",
       intro='<p>Looking for the KEA FDA or SDA question paper 2026 with the key answer, General Kannada (ಸಾಮಾನ್ಯ ಕನ್ನಡ) previous questions, or a Karnataka FDA SDA mock test in Kannada? '
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
-            '<p lang="kn">ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು (2026) ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹45 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
+            '<p lang="kn">ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು (2026) ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
             '<p class="note">KEA FDA &amp; SDA 2026: <a href="/kea-fda-sda-notification-2026.html">four notifications, 5,431 posts, exams 8–17 January 2027</a>. '
             'Full papers with a 2-hour timer: <a href="/karnataka-fda-sda/mock-test.html">KEA FDA SDA mock test</a>.</p>',
       te={'KEA FDA & SDA': 'ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು'},
@@ -5663,7 +5754,7 @@ LANDINGS = {
       title='MPSC Previous Year Question Papers with Answers – Group C Prelims PYQs (2025, 2024, 2023), Marathi & English | Learn with Anil',
       desc='MPSC (Maharashtra Public Service Commission) previous year question papers in one place: the Group-C Combined Preliminary Examination 2025 and 2024 and the '
            'Group-B & Group-C Combined Prelims 2023, {n} questions with MPSC\'s final answer key and explanations in Marathi and English. '
-           'Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='MPSC previous question papers with answers',
       lede="Every MPSC question paper on Learn with Anil, {n} questions in all. Each is MPSC's own question booklet with the answer from MPSC's final answer key, "
            "and every question has a short explanation in Marathi and English.",
@@ -5678,7 +5769,7 @@ LANDINGS = {
       board='GSSSB', ename='GSSSB', crumb='GSSSB PYQs', lang='gu',
       title='GSSSB Previous Year Question Papers with Answers – CCE Prelims 2024 PYQs, Gujarati & English | Learn with Anil',
       desc='GSSSB (Gujarat Subordinate Service Selection Board) previous year question papers in one place: CCE Preliminary papers of 2024 (Advt. 212/2023-24, Group-A '
-           'and Group-B), {n} questions with GSSSB\'s final answers and explanations in Gujarati and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'and Group-B), {n} questions with GSSSB\'s final answers and explanations in Gujarati and English. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='GSSSB previous question papers with answers',
       lede="Every GSSSB question paper on Learn with Anil, {n} questions in all. Each is GSSSB's own computer-based question paper with the final answers GSSSB published, "
            "and every question has a short explanation in Gujarati and English.",
@@ -5694,7 +5785,7 @@ LANDINGS = {
       title='UPSSSC Previous Year Question Papers with Answers – Lekhpal, Lower Subordinate & GPA Mains PYQs, Hindi & English | Learn with Anil',
       desc='UPSSSC (Uttar Pradesh Subordinate Services Selection Commission) previous year question papers in one place: Lekhpal Mains 2026, Lower Subordinate '
            '(Graduate Level) Mains 2026 and Gram Panchayat Adhikari Mains 2025, {n} questions with UPSSSC\'s revised answer key and explanations in Hindi and English. '
-           'Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='UPSSSC previous question papers with answers',
       lede="Every UPSSSC question paper on Learn with Anil, {n} questions in all. Each answer is from UPSSSC's revised answer key (master set), "
            "and every question has a short explanation in Hindi and English.",
@@ -5709,7 +5800,7 @@ LANDINGS = {
       board='UPPSC', ename='UPPSC', crumb='UPPSC PYQs', lang='hi',
       title='UPPSC Previous Year Question Papers with Answers – RO/ARO Prelims 2025 & 2021 PYQs, Hindi & English | Learn with Anil',
       desc='UPPSC (Uttar Pradesh Public Service Commission) previous year question papers in one place: RO/ARO (Samiksha Adhikari) Prelims 2025 and 2021, '
-           '{n} questions with UPPSC\'s answer keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with UPPSC\'s answer keys and explanations in Hindi and English. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='UPPSC previous question papers with answers',
       lede="Every UPPSC question paper on Learn with Anil, {n} questions in all, each with UPPSC's answer key and a short explanation in Hindi and English.",
       intro='<p>Looking for the UPPSC RO ARO question paper 2025 with the answer key, General Hindi (सामान्य हिंदी) previous questions, or a UPPSC RO/ARO mock test in Hindi? '
@@ -5724,7 +5815,7 @@ LANDINGS = {
       board='UKPSC', ename='UKPSC', crumb='UKPSC PYQs', lang='hi',
       title='UKPSC Previous Year Question Papers with Answers – Lower PCS Prelims 2024 & 2021, RO/ARO 2023, Hindi & English | Learn with Anil',
       desc='UKPSC (Uttarakhand Public Service Commission) previous year question papers in one place: Lower PCS (Lower Subordinate) prelims 2024 and 2021 and '
-           'RO/ARO prelims 2023, {n} questions with UKPSC\'s final keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'RO/ARO prelims 2023, {n} questions with UKPSC\'s final keys and explanations in Hindi and English. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='UKPSC previous question papers with answers',
       lede="Every UKPSC question paper on Learn with Anil, {n} questions in all, each with UKPSC's final answer key and a short explanation in Hindi and English.",
       intro='<p>Looking for the UKPSC Lower PCS question paper with the answer key, Uttarakhand GK previous questions, or a UKPSC mock test in Hindi? '
@@ -5739,7 +5830,7 @@ LANDINGS = {
       board='CG Vyapam', ename='CG Vyapam', crumb='CG Vyapam PYQs', lang='hi',
       title='CG Vyapam Previous Year Question Papers with Answers – Assistant Grade 3, DEO & Steno 2021, Hindi & English | Learn with Anil',
       desc='CG Vyapam (Chhattisgarh Karmchari Chayan Mandal, CGSSB) previous year question papers in one place: VDAG 2021, AGDO 2021 and the Stenographer 2021 '
-           'general paper, {n} questions with Vyapam\'s final keys and explanations in Hindi and English. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'general paper, {n} questions with Vyapam\'s final keys and explanations in Hindi and English. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='CG Vyapam previous question papers with answers',
       lede="Every CG Vyapam question paper on Learn with Anil, {n} questions in all, each with Vyapam's final answer key and a short explanation in Hindi and English.",
       intro='<p>Looking for the CG Vyapam Assistant Grade 3 question paper with answers, Chhattisgarh GK and computer previous questions, or a CG Vyapam mock test in Hindi? '
@@ -5754,7 +5845,7 @@ LANDINGS = {
       board='OPSC', ename='OPSC', crumb='OPSC PYQs', lang='or',
       title='OPSC Previous Year Question Papers with Answers – ASO 2025 & 2022 (General Awareness, Reasoning, Maths, English, Odia) | Learn with Anil',
       desc='OPSC (Odisha Public Service Commission) previous year question papers in one place: Assistant Section Officer 2025 and 2022, Papers I, II and III, '
-           '{n} questions with OPSC\'s answer keys and explanations, the Odia section in Odia. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           '{n} questions with OPSC\'s answer keys and explanations, the Odia section in Odia. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='OPSC previous question papers with answers',
       lede="Every OPSC question paper on Learn with Anil, {n} questions in all, each with OPSC's answer key and a short explanation.",
       intro='<p>Looking for the OPSC ASO question paper with the answer key, Odisha GK and Odia grammar previous questions, or an OPSC ASO mock test? '
@@ -5769,7 +5860,7 @@ LANDINGS = {
       title='WBPSC Previous Year Question Papers with Answers – IDO 2019 & Miscellaneous Prelims 2023 (English & Bengali) | Learn with Anil',
       desc='WBPSC (West Bengal Public Service Commission) previous year question papers in one place: the Industrial Development Officer screening test 2019 and '
            'the Miscellaneous Services (Prelims) 2023 paper, {n} questions with WBPSC\'s answer keys and explanations in English and Bengali. Practise them '
-           'online with one ₹45 All-in-One Pass for every exam.',
+           'online with one ₹149 All-in-One Pass for every exam.',
       h1='WBPSC previous question papers with answers',
       lede="Every WBPSC question paper on Learn with Anil, {n} questions in all, each with WBPSC's answer key and a short explanation.",
       intro='<p>Looking for the WBPSC IDO question paper with the answer key, the WBPSC Miscellaneous prelims paper in Bengali, or a WBPSC mock test? '
@@ -5783,7 +5874,7 @@ LANDINGS = {
       board='DSSSB', ename='DSSSB', crumb='DSSSB PYQs', lang='hi',
       title='DSSSB Previous Year Question Papers with Answers – JE Electrical 2022 & Patwari 2022 (Hindi & English) for MTS & JE 2026 | Learn with Anil',
       desc='DSSSB (Delhi Subordinate Services Selection Board) previous year question papers in one place: JE (Electrical) 2022 and Patwari 2022, {n} questions '
-           'with DSSSB\'s own answers and explanations in Hindi and English, for DSSSB MTS and JE 2026. Practise them online with one ₹45 All-in-One Pass for every exam.',
+           'with DSSSB\'s own answers and explanations in Hindi and English, for DSSSB MTS and JE 2026. Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='DSSSB previous question papers with answers',
       lede="Every DSSSB question paper on Learn with Anil, {n} questions in all, each with DSSSB's answer and a short explanation in Hindi and English.",
       intro='<p>Looking for the DSSSB MTS question paper with answers, DSSSB JE Electrical previous questions, or a DSSSB mock test? '
@@ -6289,7 +6380,7 @@ NOTIFS = {
        '<p>Learn with Anil\'s <b>Hindu Philosophy &amp; Temple System</b> notes cover every Paper II topic, from Ramayanam to the Endowments Act, '
        'written from the questions APPSC has actually asked, with APPSC\'s 2023 and 2026 Paper II questions and official answers at the end. '
        '<a href="/LearnWithAnil-EO-Grade-3-Hindu-Philosophy-Temple-System-Free-Sample.pdf">Download the free sample chapter (PDF)</a>; '
-       'the full book is part of the ₹45 All-in-One Pass, under <a href="/appsc-endowment-officer/#notes">Study Material</a>.</p>'),
+       'the full book is part of the ₹149 All-in-One Pass, under <a href="/appsc-endowment-officer/#notes">Study Material</a>.</p>'),
       ('Paper I syllabus: General Studies & Mental Ability', 'p',
        'Current events (international, national, Andhra Pradesh); general science and technology; history of India with a focus on AP and the national movement; geography of India and AP; '
        'Indian polity and governance; Indian economy and planning; sustainable development and environment; disaster management; logical reasoning; data analysis.'),
@@ -6981,7 +7072,7 @@ ROOT_NOTES = ('Study material: every book on the site',   # the start page's Stu
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
 # APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every
-# previous question of 2020, 2023 and 2025 sorted by syllabus part, and practice questions on each part. Part of the ₹45
+# previous question of 2020, 2023 and 2025 sorted by syllabus part, and practice questions on each part. Part of the ₹149
 # All-in-One Pass: the app shows the download buttons only on a device with the paid pass. Paper V is not on the site: students
 # message Anil on WhatsApp. Source files: src/appsc-group-1/mains/<file>.pdf and <file>-cover.jpg; published under
 # /appsc-group-1/mains/kit/ with a content hash in the name (robots.txt keeps search engines out of that folder).
@@ -7031,7 +7122,7 @@ def mains_section(conf, books):
 PAY = dict(
     on=True,    # Anil, 23 Oct 2026: attempting any PYQ needs the paid All-in-One Pass (no free trial) (False = everything free, never again)
     api='https://script.google.com/macros/s/AKfycbxgNi2CfnbaEsVpA1Ghgy0AdYdUG7eYBkol5zqcbMgA2Q4D0Pvy0rndLxeyE7MlPy_3Rg/exec',   # the payments script (Apps Script web app, deployed 23 Oct 2026)
-    pyq_price=45,
+    pyq_price=149,
     gid=(open(os.path.join(SRC, 'google-client-id.txt')).read().strip() if os.path.exists(os.path.join(SRC, 'google-client-id.txt')) else ''),   # "Continue with Google" (public OAuth client id; Anil, 2 Nov 2026)
     exams='',   # names of every live exam, for the pay dialog ("one payment for the whole website"); set in main()
     otp=False,  # off (Anil, 4 Nov 2026, 06:10: "let the students login previously as done yesterday"); was True: Anil, 4 Nov 2026: a first registration with phone + email is confirmed with a 6-digit code emailed by the payments script
@@ -7047,16 +7138,16 @@ import notif_news   # Quick answers on every notification page + notification pa
 notif_news.apply(NOTIFS)
 _eos = eo_syllabus_notif()   # the APPSC EO Grade-III syllabus page
 if _eos: NOTIFS['appsc-eo-grade-3-syllabus-2026.html'] = _eos
-# Anil, 26 Oct 2026: "one ₹45 = everything". The ₹45 All-in-One Pass opens every previous paper, every mock test series
+# Anil, 26 Oct 2026: "one ₹149 = everything". The ₹149 All-in-One Pass opens every previous paper, every mock test series
 # (Mission Khaki SI & Constable, Mission CGL, Bahubali, and the series still to come) and the study books. Mock packs,
 # the combo, the Bahubali series and the books are no longer sold on their own (nobody had bought one).
-INCL = 'Included in the ₹45 All-in-One Pass'   # price line on every mock pack, test series and book (₹45 = PAY["pyq_price"])
+INCL = 'Included in the ₹149 All-in-One Pass'   # price line on every mock pack, test series and book (₹149 = PAY["pyq_price"])
 EVERYTHING = ('every previous paper of every exam on the site (and exams added later), every mock test series '
               '(Mission Khaki for TS SI and Constable, Mission CGL, the Bahubali Group-II Mains tests, and new series as they come) '
               'and the study books (AP Economy notes, Science &amp; Technology for Mains, the Group-1 Mains tool kit)')
 TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid All-in-One Pass (was 3)
 # Anil, 28 Oct 2026: TS Police papers free to attempt (registration needed): questions, answers and score. The explanations
-# (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹45 All-in-One Pass.
+# (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹149 All-in-One Pass.
 PRE_LIVE = None
 FREE_PYQ = {'ts-police-si', 'ts-police-constable'}
 FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or a timed test, with the correct answers and your score. '
@@ -7102,13 +7193,13 @@ MOCK_PACKS = {
                          'Each mock: English 25 (in English only, as in the real exam), Arithmetic 25, Reasoning & Mental Ability 25 and General Studies 125 '
                          '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
                          'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
-                         'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹45 All-in-One Pass.'],
+                         'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹149 All-in-One Pass.'],
                   mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 5), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
   # Ids start with "bk-" so the payments script gives the keys to any paid All-in-One Pass holder (no script change); 'dir' = the exam folder.
-  'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 3 mocks (6 papers) are available now', price=45, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
+  'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 3 mocks (6 papers) are available now', price=149, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
                    title='APPSC EO Grade-III Test Series – Paper I & Paper II Full-Length Mocks',
                    summary='3 full-length APPSC EO Grade-III mock tests, each with Paper I (General Studies & Mental Ability, 150 questions) and Paper II '
                            '(Hindu Philosophy & Temple System, 150 questions), in English and Telugu, with an explanation for every answer. Every section can also be taken on its own as a sectional test.',
@@ -7130,7 +7221,7 @@ MOCK_PACKS = {
   # Each mock: History, Geography and Mental Ability = real questions from the site's other APPSC (and police) papers with official keys;
   # Indian Society and Current Affairs = new questions. Ids start with "bk-" (any paid All-in-One Pass holder); bk-g2mk-1 is in the
   # payments script's FREE_MOCKS. Sealed source: private (/home/claude/g2mk), sealed files in src/appsc-group-2-mocks/.
-  'appsc-group-2': dict(id='bk-g2mk', name='Bahubali Prelims', price=45, src='appsc-group-2-mocks', dir='appsc-group-2', langs='English &amp; Telugu',
+  'appsc-group-2': dict(id='bk-g2mk', name='Bahubali Prelims', price=149, src='appsc-group-2-mocks', dir='appsc-group-2', langs='English &amp; Telugu',
                    title='Bahubali Prelims – APPSC Group-II Screening Test Series (Mock Tests)',
                    summary='10 full-length APPSC Group-II Screening Test mocks in the real pattern, 150 questions in 150 minutes '
                            '(Indian History, Geography, Indian Society, Current Affairs and Mental Ability, 30 each), in English and Telugu, '
@@ -7148,7 +7239,7 @@ MOCK_PACKS = {
   # Anil, 8 Nov 2026: SBI PO and IBPS SO — original Learn with Anil mocks (no previous papers exist to publish; see BANK_SUBJECTS).
   # Ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Five options per question, as in the real exams.
   # pmins: the real 20-minute limit of each section when it is taken on its own (the full mock runs on one timer).
-  'sbi-po': dict(id='bk-sbipo', name='SBI PO Prelims', price=45, src='sbi-po-mocks', dir='sbi-po', langs='English &amp; Hindi',
+  'sbi-po': dict(id='bk-sbipo', name='SBI PO Prelims', price=149, src='sbi-po-mocks', dir='sbi-po', langs='English &amp; Hindi',
                  title='SBI PO Prelims Mock Test Series (Latest Pattern)',
                  summary='10 full-length SBI PO Preliminary mock tests in the latest pattern, 100 questions in 60 minutes (English Language 40, Quantitative Aptitude 30, '
                          'Reasoning Ability 30), in English and Hindi, with an explanation for every answer. Each section can also be taken on its own with its 20-minute limit.',
@@ -7162,7 +7253,7 @@ MOCK_PACKS = {
                  mocks=[dict(id=f'bk-sbipo-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i == 1), pmins={'eng': 20, 'qa': 20, 'rea': 20},
                              parts=[('eng', 'English Language', ['eng']), ('qa', 'Quantitative Aptitude', ['qa']), ('rea', 'Reasoning Ability', ['rea'])])
                         for i in range(1, 11)]),
-  'ibps-so': dict(id='bk-ibpsso', name='IBPS SO Prelims', price=45, src='ibps-so-mocks', dir='ibps-so', langs='English &amp; Hindi',
+  'ibps-so': dict(id='bk-ibpsso', name='IBPS SO Prelims', price=149, src='ibps-so-mocks', dir='ibps-so', langs='English &amp; Hindi',
                   title='IBPS SO Prelims Mock Test Series (2026-27 Pattern, with Professional Knowledge)',
                   summary='10 IBPS SO Preliminary mock tests in the new CRP SPL-XVI pattern, each in four versions (IT Officer, Agriculture Field Officer, HR/Personnel Officer, '
                           'Marketing Officer): English 25, Reasoning 25, Quantitative Aptitude 25 and Professional Knowledge 25, 100 questions in 80 minutes, in English and Hindi, '
@@ -7185,7 +7276,7 @@ MOCK_PACKS = {
   # "Vijaya FDA-SDA". Each mock = Paper-1 General Knowledge (100) + Paper-2 Kannada 35, English 35, Computer 30 (100), 2 hours each, as in
   # KEA's 2026 pattern. New questions written for the series by writer agents and checked by separate checker agents (private source
   # /home/claude/kmk). Ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Sealed files: src/karnataka-fda-sda-mocks/.
-  'karnataka-fda-sda': dict(id='bk-kfsmk', name='Vijaya FDA-SDA', price=45, src='karnataka-fda-sda-mocks', dir='karnataka-fda-sda', langs='English &amp; Kannada',
+  'karnataka-fda-sda': dict(id='bk-kfsmk', name='Vijaya FDA-SDA', price=149, src='karnataka-fda-sda-mocks', dir='karnataka-fda-sda', langs='English &amp; Kannada',
                    title='Vijaya FDA-SDA – KEA FDA & SDA Mock Test Series (Paper-1 & Paper-2)',
                    summary='10 full-length KEA FDA & SDA mock tests in the 2026 pattern, each with Paper-1 General Knowledge (100 questions, 2 hours) and '
                            'Paper-2 General Kannada, General English and Computer Knowledge (100 questions, 2 hours), in Kannada and English, with an '
@@ -7260,6 +7351,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'ssc-gd': ('SSC GD Constable 2027 computer-based exam', None, "SSC's exam calendar puts the GD 2027 computer-based exam in January–March 2027; the notification, listed for 30 September 2026, was not out as of 15 November 2026."),
   'ssc-cgl': ('SSC CGL 2026 Tier-II', None, 'CGL 2026 Tier-I is being held from 30 September to 30 October 2026; SSC has not announced the Tier-II date yet.'),
   'rrb-ntpc': ('RRB NTPC 2026 CBT-1 (CEN 06/2026 and 07/2026)', None, 'Applications closed (graduate 8 November, undergraduate 13 November 2026); RRB has not announced the CBT-1 dates yet. One report says the graduate CBT-1 may be in the fourth week of December 2026.'),
+  'ssc-mts': ('SSC MTS & Havaldar 2026 Computer Based Examination', None, 'SSC Calendar 2026 had the MTS notice on 30 June 2026; it was postponed and SSC has not published the MTS 2026 notice or exam date yet.'),
   'upsc-epfo': ('UPSC EPFO APFC Recruitment Test 2026', '2026-12-20', 'UPSC Special Advertisement 52/2026 (80 APFC posts): pen-and-paper Recruitment Test on 20 December 2026.'),
   'appsc-analyst': ('APPSC Analyst Grade-II written examination', None, 'Applications 13 October to 2 November 2026, reported extended to 12 November (Notification 21/2026); APPSC has not announced the exam date yet.'),
   'appsc-env-engineer': ('APPSC Assistant Environmental Engineer written examination', None, 'Applications closed on 9 November 2026 (Notification 08/2026, extended from 27 October); APPSC has not announced the exam date yet.'),
@@ -7358,7 +7450,7 @@ def pay_data(conf):
                 mock=(dict(id=mk['id'], name=mk['name'], title=mk['title'], price=PAY['pyq_price'], n=mk['n'], live=mk['live'],
                            valid=pass_until_text(conf)[0].upper() + pass_until_text(conf)[1:],
                            mocks=[dict(id=m['id'], name=m['name'], mins=m['mins'], live=m['live'], free=bool(m.get('free')), parts=m['parts'], pmins=m.get('pmins')) for m in mk.get('mocks', [])]) if mk else None),
-                combo=None,   # no longer sold (26 Oct 2026): the ₹45 All-in-One Pass opens both Mission Khaki packs
+                combo=None,   # no longer sold (26 Oct 2026): the ₹149 All-in-One Pass opens both Mission Khaki packs
                 pages=dict(pyq=pb + 'pyqs.html', mock=pb + 'mock-test.html', sec=pb + 'sectional-tests.html'))
 
 
@@ -7373,6 +7465,7 @@ EXAM_NOTIF = {
     'ap-police-si': 'ap-police-si-notification-2026.html', 'ap-police-constable': 'ap-police-constable-notification-2026.html',
     'ap-dsc': 'ap-dsc-2026-notification.html', 'tgpsc-amvi': 'tgpsc-amvi-notification.html',
     'tgpsc-hmwssb-manager': 'tgpsc-hmwssb-manager-notification-2026.html', 'ssc-cgl': 'ssc-cgl-2026-notification.html',
+    'ssc-mts': 'ssc-mts-2026-notification.html',
     'ssc-gd': 'ssc-gd-constable-2027-notification.html', 'rrb-ntpc': 'rrb-ntpc-2026-notification.html',
     'rpf-si': 'rpf-si-notification-2026.html', 'rpf-constable': 'rpf-constable-notification-2026.html',
     'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
@@ -7556,7 +7649,7 @@ def plans_html(conf):
             'Plans are linked to the phone number and email you register with, on up to 3 devices; pay with the same details.</p>')
 
 
-TOOLS_NOTE = 'Included in the ₹45 All-in-One Pass, with every previous paper and every mock test series.'
+TOOLS_NOTE = 'Included in the ₹149 All-in-One Pass, with every previous paper and every mock test series.'
 
 
 FEATURES = {   # how the practice tools work (shown on the PYQs and mock-test pages; the app pages are /<exam>/<view>/)
@@ -7577,7 +7670,7 @@ def subjects_html(conf, questions):
                                            for s in conf['subjects'] if cnt.get(s[0])) + '</div>'
 
 
-FREE_SAMPLE_N = 10   # Anil, 24 Oct 2026: 10 free questions to try on each exam's PYQs page, where the ₹45 All-in-One Pass is sold
+FREE_SAMPLE_N = 10   # Anil, 24 Oct 2026: 10 free questions to try on each exam's PYQs page, where the ₹149 All-in-One Pass is sold
 
 
 def free_sample(conf, papers, questions, n=FREE_SAMPLE_N):
@@ -8015,7 +8108,7 @@ def build_static(conf, papers, subjects, questions, subj):
                  else pkey if p.get('nokey')
                  else f'answers from {pkey}')
         desc = (f'{kw} question paper{f" ({alt})" if alt else ""}, held {p["held"]}: all {len(qs)} questions in {"English" if p.get("en_only") else "English and " + conf["l2"]["name"]} '
-                f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test with the ₹45 All-in-One Pass.'
+                f'with {kdesc} and explanations. Practise it online as a quiz or a timed mock test with the ₹149 All-in-One Pass.'
                 + (f' {conf["aka_short"]}.' if conf.get('aka_short') else ''))
         subs = {}
         for q in qs: subs.setdefault(q['s'], 0); subs[q['s']] += 1
@@ -8043,7 +8136,7 @@ def build_static(conf, papers, subjects, questions, subj):
         bits = ' & Practice Bits' if conf['board'] == 'APPSC' or conf.get('bits') else ' (Subject-wise)'
         title = f'{seo} {s["name"]} Previous Year Questions (PYQs) with Answers{bits} | Learn with Anil'
         desc = (f'{len(qs)} {seo} {s["name"]} previous year questions from {", ".join(paper_kw(conf, pmap[pid]).replace(seo + " ", "") for pid in dict.fromkeys(q["p"] for q in qs))}, '
-                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them as a quiz or a timed test with the ₹45 All-in-One Pass.')
+                f'topic-wise, with answers, explanations and {conf["l2"]["name"]} text. Practise them as a quiz or a timed test with the ₹149 All-in-One Pass.')
         l2l = subject_l2_line(conf, s)
         body = ([f'<p lang="{conf["l2"]["code"]}" style="margin:0 0 6px">{esc(l2l)}</p>'] if l2l else []) + [f'<a class="cta" href="{conf["pb"]}practice/">Practise {esc(s["name"])} online</a>']
         tops = {}
@@ -8120,7 +8213,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", "/ncert-class-11/", "/ncert-class-12/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -8134,7 +8227,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <h1>This page does not exist</h1>
 <p>The address may be mistyped, or the page has moved. Try one of these:</p>
 <ul><li><a href="/">All exams on Learn with Anil</a></li><li><a href="/appsc-group-2/">APPSC Group-II PYQs</a></li>
-<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
+<li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-mts/">SSC MTS PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
 <li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li></ul>

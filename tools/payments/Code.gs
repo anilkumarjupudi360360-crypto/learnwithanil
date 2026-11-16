@@ -2,13 +2,14 @@
  * Learn with Anil — passes and payments (Google Apps Script; its data lives in the private "Learn with Anil – Passes" spreadsheet).
  *
  * Passes
- *  - PYQ Pass (₹45): EVERYTHING on the website for 12 months from the day of payment (Anil, 26 Oct 2026: "one ₹45 =
+ *  - PYQ Pass, shown on the site as the "All-in-One Pass" (₹149 since 16 Nov 2026, Anil: "ok rise to 149"; ₹45 from 26 Oct to
+ *    16 Nov 2026): EVERYTHING on the website for 12 months from the day of payment (Anil, 26 Oct 2026: "one ₹45 =
  *    everything"): every previous paper of every exam (including exams added later), every mock test series
  *    (Mission Khaki SI and Constable, Mission CGL, Bahubali, and later series) and the study books. Stored with exam = 'all'.
  *  - Free trial: the same access as the PYQ Pass for 3 days, once per phone number, starting the first time a registered
  *    student's phone and email reach this script (right after they register on the site). Stored in the 'trials' tab.
  *  - Mock packs are no longer sold on their own (they were ₹150 / ₹99 / ₹149, combo ₹199, until 26 Oct 2026; nobody bought
- *    one). Old 'mock' rows in the passes tab still work; a 'buy' for a mock or combo now opens the ₹45 PYQ Pass checkout.
+ *    one). Old 'mock' rows in the passes tab still work; a 'buy' for a mock or combo now opens the PYQ Pass checkout.
  *  - Free mocks (FREE_MOCKS): open to every registered student, no pass needed; each opening is logged in the 'free' tab.
  *
  * What it does
@@ -44,7 +45,9 @@
  */
 
 const SITE = 'https://learnwithanil.in/';
-const PYQ = {price: 45, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
+const PYQ = {price: 149, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
+// "Link my payment" accepts any genuine pass payment, including ₹45 ones made before the price went to ₹149 on 16 Nov 2026.
+const PYQ_MIN_CLAIM = 45;
 const TRIAL_DAYS = 0;   // free trial switched off (Anil, 23 Oct 2026: every PYQ needs the paid pass). Was 3.
 const MOCKS = {   // exam id: that exam's mock series (old price and checkout name, last day an old mock pass is valid or months
                   // from payment, and the prefix every mock id of that pack starts with). Since 26 Oct 2026 the ₹45 PYQ Pass opens
@@ -567,11 +570,11 @@ function claim(b, exam) {
     let src = rows[0];
     if (!src && cf) {   // not recorded yet (webhook missed): ask Cashfree directly
       let o = {}; try { o = cf_('get', '/orders/' + encodeURIComponent(pid)); } catch (e) { o = {}; }
-      if (String(o.order_status) !== 'PAID' || Number(o.order_amount) < PYQ.price) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
+      if (String(o.order_status) !== 'PAID' || Number(o.order_amount) < PYQ_MIN_CLAIM) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
       sh.appendRow([new Date(), phone, 'all', 'pyq', inMonths_(PYQ.months), cfPaymentId_(pid) || ('cf-' + pid), pid, o.order_amount, 'claim (cashfree)', email]);
     } else if (!src) {   // not recorded yet (webhook missed): ask Instamojo directly
       let p = {}; try { p = im_('get', '/v2/payments/' + encodeURIComponent(pid) + '/'); } catch (e) { p = {}; }
-      if (!p || p.status !== true || Number(p.amount) < PYQ.price) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
+      if (!p || p.status !== true || Number(p.amount) < PYQ_MIN_CLAIM) return {ok: false, error: 'We could not find this payment. Please check the ID, or write to us at learnwithanil.in/help.html with a screenshot.'};
       sh.appendRow([new Date(), phone, 'all', 'pyq', inMonths_(PYQ.months), pid, String(p.payment_request || ''), p.amount, 'claim (instamojo)', email]);
     } else {
       if (String(src[3]) !== 'pyq' || day_(src[4]) < today_()) return {ok: false, error: 'This payment is not an active PYQ Pass.'};

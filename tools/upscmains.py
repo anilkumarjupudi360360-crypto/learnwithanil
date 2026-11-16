@@ -2,7 +2,7 @@
 
 Anil: "can u do same for upsc mains ... (2019-26)" (same as the APPSC Group-1 Mains pages, tools/g1mains.py): GS 1-4 of the
 2019-2026 Civil Services (Main) Examinations, long model answers in the Group-1 style, questions free, the first two answers
-of every paper free, the rest in the ₹45 All-in-One Pass. Box design: a paper page lists its questions as cards; every answer has
+of every paper free, the rest in the ₹149 All-in-One Pass. Box design: a paper page lists its questions as cards; every answer has
 its own page.
 
 Data (src/upsc-cse/mains-pyqs/):
@@ -176,7 +176,7 @@ def course_pages(B, code):
     payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} All-in-One Pass.'
     years = [y for y in YEARS if any(q['year'] == y for q in qs)]
     done = sorted({int(k[:4]) for k in files} | {y for y in {q['year'] for q in qs} if all(q['id'] in (man.get('free') or {}) for q in qs if q['year'] == y)}, reverse=True)
-    buyurl = '/upsc-epfo/?buy=pyq'   # the pass checkout lives in the exam apps (one ₹45 All-in-One Pass for the whole site)
+    buyurl = '/upsc-epfo/?buy=pyq'   # the pass checkout lives in the exam apps (one ₹149 All-in-One Pass for the whole site)
     buy = (f'<div class="buy mbuy"><div><b>{C["seo"]} model answers</b><p>{C["what"]} of the {C["fexam"]} {years[-1]}–{years[0]} with a '
            f'model answer: key words and an introduction, every part of the question in numbered points, diagrams, flowcharts or tables, and a conclusion. '
            f'Included in the ₹{price} All-in-One Pass, with every previous paper, mock test series and study book on the site.</p>'

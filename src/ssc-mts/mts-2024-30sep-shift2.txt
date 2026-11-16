@@ -1,0 +1,876 @@
+# SSC Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination 2024, held 30 September 2024, Shift 2 (12:30 PM). 90 questions in two sessions: Session I Numerical & Mathematical Ability (Q1–20) and Reasoning Ability & Problem Solving (Q21–40); Session II General Awareness (Q41–65) and English Language & Comprehension (Q66–90).
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via sscportal.in); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | qa | Time, Work, Speed & Distance
+A policeman chases a thief. The speed of the policeman and thief are 10 kmph and 8 kmph, respectively. If the policeman started 15 minutes late, find the time taken by the policeman to catch the thief.
+(1) 60 minutes
+(2) 15 minutes
+(3) 45 minutes
+(4) 30 minutes
+= 1
+~ In the 15 minutes (1/4 hour) before the policeman starts, the thief runs 8 × 1/4 = 2 km. The policeman gains 10 − 8 = 2 km every hour, so he needs 2 ÷ 2 = 1 hour = 60 minutes to catch the thief.
+
+Q 2 | qa | Mensuration
+A shot-put made of iron with a diameter of 12 cm is melted into a solid cylinder with a height of 2 cm. What is the diameter of the cylinder made?
+(1) 18 cm
+(2) 21 cm
+(3) 24 cm
+(4) 12 cm
+= 3
+~ Volume is unchanged on melting. Sphere of radius 6 cm: (4/3)π × 6³ = 288π cm³. Cylinder of height 2 cm: πR² × 2 = 288π, so R² = 144 and R = 12 cm. The diameter of the cylinder is 24 cm.
+
+Q 3 | qa | Number System & Simplification
+An oil dealer had three types of oil. 403 litres of the first kind, 434 litres of the second kind and 465 litres of the third kind. Find the maximum volume of oil, filled in each barrel, if equal number of barrels are filled.
+(1) 31 litres
+(2) 41 litres
+(3) 52 litres
+(4) 48 litres
+= 1
+~ The largest barrel that fills all three exactly is the HCF of 403, 434 and 465. The differences are 31 and 31, and 403 = 31 × 13, 434 = 31 × 14, 465 = 31 × 15. So each barrel holds 31 litres.
+
+Q 4 | qa | Percentage, Profit & Interest
+The marked price of a scooter is ₹1,80,000. The shopkeeper gave a scheme discount of 4% on ₹1,20,000 and 2.5% on the remaining amount. The selling price (in ₹) of the scooter is:
+(1) 1,37,700
+(2) 1,73,070
+(3) 1,73,700
+(4) 1,77,300
+= 3
+~ Discount on the first ₹1,20,000 at 4% = ₹4,800. Discount on the remaining ₹60,000 at 2.5% = ₹1,500. Total discount = ₹6,300, so the selling price = 1,80,000 − 6,300 = ₹1,73,700.
+
+Q 5 | qa | Percentage, Profit & Interest
+A trader marks his goods at 20% higher than the cost price. Further, he uses a weighing balance which shows 1200 grams for a kilogram. What is his profit percentage?
+(1) 50%
+(2) 66%
+(3) 55%
+(4) 44%
+= 4
+~ Take the cost as ₹1 per gram. When the balance shows 1,200 g, the customer actually gets 1,000 g (cost ₹1,000) but pays for 1,200 g at the marked price of ₹1.20 a gram: ₹1,440. Profit = 440 on 1,000 = 44%. Short-cut: 1.2 × 1.2 = 1.44.
+
+Q 6 | qa | Data Interpretation & Statistics
+The given table shows the number of the suitcases sold by different showrooms from 2018 to 2022.
+Year/showrooms | A | B | C | D | E
+2018 | 219 | 225 | 227 | 228 | 240
+2019 | 203 | 212 | 215 | 204 | 202
+2020 | 190 | 194 | 196 | 195 | 198
+2021 | 220 | 224 | 202 | 225 | 231
+2022 | 230 | 212 | 208 | 210 | 220
+The suitcases sold by the showroom D in 2019 is what percentage (rounded off to two places of decimals) less than that sold by showroom B in 2021?
+(1) 8.93%
+(2) 9.93%
+(3) 8.02%
+(4) 7.93%
+= 1
+~ D in 2019 = 204 and B in 2021 = 224. 'Less than B' is measured on B: (224 − 204) ÷ 224 × 100 = 20 ÷ 224 × 100 = 8.93%.
+
+Q 7 | qa | Time, Work, Speed & Distance
+If Anil takes 5 days to complete a task when he works for 8 hours a day, how many days will he take to complete the task if he works 6 hours a day?
+(1) 7½ days
+(2) 6⅔ days
+(3) 7⅔ days
+(4) 6 days
+= 2
+~ The task takes 5 × 8 = 40 working hours. At 6 hours a day it takes 40 ÷ 6 = 6⅔ days.
+
+Q 8 | qa | Percentage, Profit & Interest
+Rohan deposited ₹500 for 2 years, ₹650 for 4 years and ₹1,300 for 6 years, at the same rate of interest. He received the total simple interest of ₹1,140. What is the rate of interest per annum?
+(1) 11%
+(2) 10.5%
+(3) 9.5%
+(4) 10%
+= 4
+~ Simple interest at r% = (500 × 2 + 650 × 4 + 1,300 × 6) × r/100 = (1,000 + 2,600 + 7,800) × r/100 = 114r. So 114r = 1,140 and r = 10% per annum.
+
+Q 9 | qa | Percentage, Profit & Interest
+In an election contested by two candidates, one candidate got 25% of the total votes and still lost by 20,000 votes. Find the total number of votes cast? (all votes are valid)
+(1) 55000
+(2) 35000
+(3) 25000
+(4) 40000
+= 4
+~ With two candidates and all votes valid, the loser got 25% and the winner 75%. The winning margin is 75% − 25% = 50% of the votes = 20,000, so the total is 40,000.
+
+Q 10 | qa | Time, Work, Speed & Distance
+A policeman follows a thief, who is 150 metres ahead of him., and they run at the speed of 6 km/h and 5 km/h, respectively.What distance does the policeman cover to catch up with the thief?
+(1) 870 metres
+(2) 880 metres
+(3) 890 metres
+(4) 900 metres
+= 4
+~ The policeman gains 6 − 5 = 1 km/h on the thief, so he closes the 150 m (0.15 km) gap in 0.15 hour. In that time he runs 6 × 0.15 = 0.9 km = 900 metres.
+
+Q 11 | qa | Percentage, Profit & Interest
+A dishonest shopkeeper claims to sell rice at the cost price of ₹95 per kg, but the weight he uses has 1 kg written on it, while it actually weighs 950 gm. The profit he thus earns on selling rice having an actual weight of 95 kg rice is:
+(1) ₹375
+(2) ₹275
+(3) ₹475
+(4) ₹500
+= 3
+~ His '1 kg' is really 950 g, so for 95 kg of real rice he charges for 95 ÷ 0.95 = 100 'kg' at ₹95: ₹9,500. The rice costs him 95 × 95 = ₹9,025. Profit = 9,500 − 9,025 = ₹475.
+
+Q 12 | qa | Data Interpretation & Statistics
+The graph given below represents the number of students (in thousands), who opted for the given three subjects during the given four years.
+Out of the total number of students who opted for the given three subjects in the year 2022, 42% were girls. How many boys chose the given three subjects?
+(1) 40,600
+(2) 38,900
+(3) 31,500
+(4) 29,300
+= 1
+! img/mts24b-q12.png
+~ In 2022 the graph shows History 15, Mathematics 20 and Science 35 thousand students: 70,000 in all. Girls were 42%, so boys were 58%: 0.58 × 70,000 = 40,600.
+
+Q 13 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹2500 as a sum borrowed at 6% per year rate of interest for 3 years.
+(1) 390
+(2) 490
+(3) 450
+(4) 410
+= 3
+~ Simple interest = P × R × T / 100 = 2,500 × 6 × 3 / 100 = ₹450.
+
+Q 14 | qa | Mensuration
+A right circular cone of height h and radius R is cut by a plane parallel to the base at a distance h/4 from the base. The ratio of the curved surface areas of the resulting cone to the frustum is:
+(1) 9 : 7
+(2) 16 : 7
+(3) 7 : 16
+(4) 16 : 9
+= 1
+~ The cut is h/4 above the base, so the small cone on top has height 3h/4 and is similar to the whole cone with ratio 3 : 4. Curved surface areas of similar cones go as the square: 9 : 16. So small cone : frustum = 9 : (16 − 9) = 9 : 7.
+
+Q 15 | qa | Mensuration
+Find the area of a square whose diagonal is of 14 cm length.
+(1) 94 cm²
+(2) 95 cm²
+(3) 98 cm²
+(4) 96 cm²
+= 3
+~ Area of a square = (diagonal)²/2 = 14²/2 = 196/2 = 98 cm². (Side = 14/√2 = 7√2 cm, and (7√2)² = 98.)
+
+Q 16 | qa | Ratio, Average & Mixtures
+The mean (rounded off to two decimal place) of the first 6 odd prime numbers is:
+(1) 10.71
+(2) 8.61
+(3) 7.93
+(4) 9.33
+= 4
+~ The first six odd prime numbers are 3, 5, 7, 11, 13 and 17 (2 is the only even prime). Their sum is 56, so the mean = 56 ÷ 6 = 9.33.
+
+Q 17 | qa | Ratio, Average & Mixtures
+The average of the sales of an electronics shop in the years 1991, 1992, 1993 and 1994 is 2000, and that for the years 1992, 1993, 1994 and 1995 is 2200. If the sales in 1995 are 1800, find the sales in 1991.
+(1) 1200
+(2) 500
+(3) 800
+(4) 1000
+= 4
+~ Sales 1991–94 total 4 × 2,000 = 8,000 and sales 1992–95 total 4 × 2,200 = 8,800. The two totals share 1992–94, so 1995 − 1991 = 800. With 1995 sales at 1,800, the 1991 sales were 1,800 − 800 = 1,000.
+
+Q 18 | qa | Ratio, Average & Mixtures
+In the first 5 overs of a T-20 international cricket match, the run rate was only 5.6. What should be the run rate (approximately) in the remaining 15 overs to reach a target of 185 runs?
+(1) 9.55
+(2) 10.25
+(3) 10.46
+(4) 11.15
+= 3
+~ Runs in the first 5 overs = 5 × 5.6 = 28. Runs still needed = 185 − 28 = 157 in 15 overs. Required run rate = 157 ÷ 15 = 10.47, about 10.46 as given.
+
+Q 19 | qa | Ratio, Average & Mixtures
+In a mock test conducted by a coaching institute, 20 students average scored 75% marks and the remaining 15 students average scored 54% marks. Find the average score.
+(1) 66%
+(2) 62%
+(3) 63%
+(4) 67%
+= 1
+~ Weighted average = (20 × 75 + 15 × 54) ÷ 35 = (1,500 + 810) ÷ 35 = 2,310 ÷ 35 = 66%.
+
+Q 20 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹3500 as a sum borrowed at 5% per year rate of interest for 5 years.
+(1) 815
+(2) 875
+(3) 915
+(4) 835
+= 2
+~ Simple interest = P × R × T / 100 = 3,500 × 5 × 5 / 100 = ₹875.
+
+Q 21 | rea | Analogy & Classification
+TAHO is related to XELS in a certain way based on the English alphabetical order. In the same way, HOVC is related to LSZG. To which of the following is NUBI related, following the same logic?
+(1) RYFM
+(2) RYKM
+(3) RYGM
+(4) FYKM
+= 1
+~ Each letter moves 4 places forward: T→X, A→E, H→L, O→S, and H→L, O→S, V→Z, C→G. For NUBI: N→R, U→Y, B→F, I→M, giving RYFM.
+
+Q 22 | rea | Mathematical Operations
+12 is related to 59 following a certain logic. Following the same logic, 17 is related to 79. To which ofthe following is 24 related, following the same logic?(NOTE: Operations should be performed on the whole numbers, without breaking down the numbersinto its constituent digits. E.g. 13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1and 3 is not allowed)
+(1) 107
+(2) 96
+(3) 101
+(4) 117
+= 1
+~ Multiply by 4 and add 11: 12 × 4 + 11 = 59 and 17 × 4 + 11 = 79. So 24 × 4 + 11 = 107.
+
+Q 23 | rea | Non-verbal Reasoning
+Select the option in which the given figure is embedded (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24b-q23.png
+~ Look for the figure without turning it. In option 2 the large triangle has the same tilt as the given one (a corner at the left, one at the top right and one pointing down), and the circle sits on its lower-left corner between the two slanting lines, exactly as in the figure. In the other options the triangle points another way.
+
+Q 24 | rea | Non-verbal Reasoning
+Identify the figure given in the options which when put in place of (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24b-q24.png
+~ The four symbols move one place each time along the path top-left → top-right → centre → bottom-left → top-left: % goes top-left, top-right, centre, bottom-left in figures 1–4. In figure 4 the order is # top-left, □ top-right, @ centre and % bottom-left, which is option 2.
+
+Q 25 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(20, 76, 91)
+(87, 41, 123)
+(1) (40, 80, 15)
+(2) (57, 18, 100)
+(3) (47, 19, 51)
+(4) (84, 47, 126)
+= 4
+~ The middle number = third − first + 5: 91 − 20 + 5 = 76 and 123 − 87 + 5 = 41. Only (84, 47, 126) fits: 126 − 84 + 5 = 47. The others give −20, 48 and 9.
+
+Q 26 | rea | Coding-Decoding
+In a certain code language, ‘DONER’ is coded as ‘52369’ and ‘DROVE’ is coded as ‘32957’. What is the code for ‘N’ in the given code language?
+(1) 7
+(2) 9
+(3) 5
+(4) 6
+= 4
+~ DONER and DROVE share the letters D, O, R and E, and their codes share the digits 2, 3, 5 and 9. The letter left over in DONER is N and the digit left over in 52369 is 6, so N = 6.
+
+Q 27 | rea | Mathematical Operations
+What will come in place of the question mark (?) in the following equation, if ‘+’ and ‘−’ are interchanged and ‘×’ and ‘÷’ are interchanged?
+140 × 2 − 4 ÷ 56 + 82 = ?
+(1) 268
+(2) 241
+(3) 262
+(4) 212
+= 4
+~ After interchanging + with − and × with ÷, the equation becomes 140 ÷ 2 + 4 × 56 − 82. By BODMAS: 70 + 224 − 82 = 212.
+
+Q 28 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+EGC, IFG, MEK, QDO, ?
+(1) WSU
+(2) UCS
+(3) SWU
+(4) VWS
+= 2
+~ First letters move +4 (E, I, M, Q, U), second letters move −1 (G, F, E, D, C) and third letters move +4 (C, G, K, O, S). The next term is UCS.
+
+Q 29 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/mts24b-q29.png
+~ A mirror on the right side shows the letters in reverse order (E, B, A, B, A) with each letter flipped left to right; A looks the same, while E and B appear reversed. Option 1 shows this; option 2 turns an A upside down, option 3 has the wrong order and option 4 leaves the B's unflipped.
+
+Q 30 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusion(s) logically follow(s) from the statement(s).
+Statements:
+Some metals are iron.
+Some iron are steel.
+Conclusions:
+(I) Some metals are steel.
+(II) All steel are iron.
+(1) Neither conclusion (I) nor (II) follows.
+(2) Only conclusion (II) follows.
+(3) Both conclusions (I) and (II) follow.
+(4) Only conclusion (I) follows.
+= 1
+~ The metals that are iron and the iron that is steel need not overlap, so 'Some metals are steel' is not certain. 'Some iron are steel' does not mean all steel is iron. Neither conclusion follows.
+
+Q 31 | rea | Arrangement & Puzzles
+Rajan, Pragyan, Kamal, Sachin, Ashok, Narendra, and Laksh are sitting around a circular table, facing the centre (but not necessarily in the same order).
+Rajan sits 3rd to the right of Narendra. Kamal sits 2nd to the right of Rajan. Ashok is an immediate neighbour of Narendra. Pragyan sits to the immediate right of Sachin. Who is sitting 3rd to the left of Narendra?
+(1) Sachin
+(2) Laksh
+(3) Pragyan
+(4) Kamal
+= 2
+~ Put Narendra at a seat; Rajan is 3rd to his right and Kamal 2nd to Rajan's right. Pragyan must be immediately right of Sachin, and the only two adjacent free seats are the two between Narendra and Rajan: Sachin next to Narendra, Pragyan next to Rajan. Ashok must then sit on Narendra's other side and Laksh takes the last seat, between Rajan and Kamal. Counting left from Narendra: Ashok, Kamal, Laksh — Laksh is 3rd to the left.
+
+Q 32 | rea | Coding-Decoding
+In a certain code language, ‘FAST’ is coded as ‘6842’ and ‘TILE’ is coded as
+‘5761’.What is the code for ‘T’ in the given code language?
+(1) 5
+(2) 1
+(3) 6
+(4) 2
+= 3
+~ The only letter common to FAST and TILE is T, and the only digit common to 6842 and 5761 is 6. So T is coded as 6.
+
+Q 33 | rea | Coding-Decoding
+In a certain code language, ‘checked his mirror’ is written as ‘aw ar ae’ and ‘book inevitably mirror’ is coded as ‘al aw ao’. How is ‘mirror’ coded in that language?
+(1) al
+(2) aw
+(3) ae
+(4) ao
+= 2
+~ 'mirror' is the only word in both sentences, and 'aw' is the only code in both 'aw ar ae' and 'al aw ao'. So mirror = aw.
+
+Q 34 | rea | Arrangement & Puzzles
+P, Q, R, S, T, U, V and W are sitting around a circular table facing the centre(but not necessarily in the same order). P is sitting to the immediate right of V and third to the left of U. S is sitting fourth to the right of Q, who is not an immediate neighbour of P and T. Q is sitting to the second right of U. R is sitting to the immediate right of Q and second to the left of P.
+How many people are sitting between R and T when counted from the left of T?
+(1) Four
+(2) Five
+(3) Three
+(4) Two
+= 3
+~ Take P's seat; V is to P's left, U is third to P's right, Q is second to U's right, R is right of Q (and second to the left of P), and S is fourth to the right of Q, next to P. Going right from P: P, S, _, U, _, Q, R, V. T cannot sit next to Q, so T takes the seat between S and U and W the one between U and Q. Counting left from T: S, P, V and then R — three people sit between them.
+
+Q 35 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some hooks are rags.
+All rags are bottles.
+Conclusions:
+(I) Some bottles are hooks.
+(II) All bottles are rags.
+(1) Only conclusion (II) follows
+(2) Both conclusions (I) and (II) follow
+(3) Neither conclusion (I) nor (II) follows
+(4) Only conclusion (I) follows
+= 4
+~ Some hooks are rags and all rags are bottles, so those hooks are bottles: 'Some bottles are hooks' follows. 'All rags are bottles' cannot be reversed into 'All bottles are rags'. Only conclusion I follows.
+
+Q 36 | rea | Mathematical Operations
+Which two signs should be interchanged to make the following equation correct?
+27 − 45 × 15 ÷ 8 + 3 = 6
+(1) − and +
+(2) − and ×
+(3) ÷ and ×
+(4) + and ×
+= 3
+~ Interchanging ÷ and × gives 27 − 45 ÷ 15 × 8 + 3. By BODMAS: 45 ÷ 15 = 3, 3 × 8 = 24, and 27 − 24 + 3 = 6, which is correct.
+
+Q 37 | rea | Series
+What should come in place of the question mark (?) in the given series?
+34 51 85 102 136 ?
+(1) 153
+(2) 157
+(3) 142
+(4) 146
+= 1
+~ The differences alternate +17 and +34: 34 + 17 = 51, 51 + 34 = 85, 85 + 17 = 102, 102 + 34 = 136, so the next term is 136 + 17 = 153. (All terms are multiples of 17: 2, 3, 5, 6, 8, 9.)
+
+Q 38 | rea | Analogy & Classification
+GMIE is related to HNJF in a certain way based on the English alphabetical order. In the same way, KQMI is related to LRNJ. To which of the following is NTPL related, following the same logic?
+(1) OUMQ
+(2) UOMQ
+(3) UOQM
+(4) OUQM
+= 4
+~ Each letter moves one place forward: G→H, M→N, I→J, E→F, and K→L, Q→R, M→N, I→J. For NTPL: N→O, T→U, P→Q, L→M, giving OUQM.
+
+Q 39 | rea | Non-verbal Reasoning
+Select the figure from among the given options that can replace the question mark (?) in the following series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 2
+! img/mts24b-q39.png
+~ Two rules alternate. Figures 1→2 and 3→4: four pairs of places swap their symbols. Figure 2→3: the two top symbols swap, the two beside the middle of the diagonal swap, the two at the bottom right swap, and the top-right and bottom-left corners get new symbols. Applying the second rule to figure 4: S and ⊢ swap at the top, O goes left and B right of the diagonal, ⅂ and 2 swap, and V and 8 come in at the corners — option 2.
+
+Q 40 | rea | Coding-Decoding
+In a certain code language, ‘will make you’ is written as ‘ft fy fd’ and ‘you see what’ is writtenas ‘fi fo ft’. How will ‘you’ be writtenin the given language?
+(1) fd
+(2) ft
+(3) fo
+(4) fy
+= 2
+~ 'you' is the only word in both sentences, and 'ft' is the only code in both 'ft fy fd' and 'fi fo ft'. So 'you' is written as ft.
+
+Q 41 | eco | Planning, Growth & Budget
+Calculate the revenue receipts from the following information.
+Revenue deficit= 2.80% of GDP Revenue expenditure= 10.80% of GDP
+(1) 13.60
+(2) 12.80
+(3) 8.00
+(4) 2.70
+= 3
+~ Revenue deficit = revenue expenditure − revenue receipts. So revenue receipts = 10.80 − 2.80 = 8.00% of GDP.
+
+Q 42 | cur | National
+How many cities have been selected to be developed as sustainable and responsible destinations as per the Swadesh Darshan 2.0 scheme launched by the Union Ministry of Tourism in January 2023?
+(1) 21
+(2) 67
+(3) 30
+(4) 45
+= 3
+~ In January 2023 reports on the first phase of Swadesh Darshan 2.0 said about 30 cities in 15 states were being shortlisted as sustainable and responsible destinations. The Ministry of Tourism's list later grew to 57 destinations. (SSC key; some sources differ.)
+
+Q 43 | ih | Modern India
+In 1928, who among the following wrote the Congress Party’s Nehru Report, a future constitution for independent India, based on the granting of dominion status?
+(1) Subhash Chandra Bose
+(2) Mahatma Gandhi
+(3) Jawaharlal Nehru
+(4) Motilal Nehru
+= 4
+~ The Nehru Report (1928) was drafted by a committee of the All Parties Conference chaired by Motilal Nehru, with Jawaharlal Nehru as secretary. It demanded dominion status for India and was the first Indian attempt to draft a constitution.
+
+Q 44 | cur | Awards, Books & Persons
+The autobiography 'Wings of Fire' chronicles the life of which notable Indian personality?
+(1) Kiran Bedi
+(2) Arundhati Roy
+(3) Ratan Tata
+(4) APJ Abdul Kalam
+= 4
+~ 'Wings of Fire' (1999) is the autobiography of Dr A. P. J. Abdul Kalam, written with Arun Tiwari. It covers his early life and work on India's space and missile programmes.
+
+Q 45 | sci | Biology
+In animal cells, the breakdown of very long chain fatty acids through ꞵ-oxidation is conducted by which of the following organelles?
+(1) Peroxisome
+(2) Golgi apparatus
+(3) Mitochondria
+(4) Ribosome
+= 1
+~ Peroxisomes break down very long chain fatty acids by β-oxidation (shortening them so that mitochondria can finish the job) and also break down hydrogen peroxide with catalase.
+
+Q 46 | pol | Constitution & Rights
+Which of the following correctly describes the nature of the Indian Constitution?
+(1) Rigid
+(2) Flexible
+(3) Very rigid and difficult to amend
+(4) Neither rigid nor flexible
+= 4
+~ The Indian Constitution is a mix of rigidity and flexibility. Some provisions change by a simple majority, most need a special majority under Article 368, and a few also need ratification by half the states. So it is neither wholly rigid nor wholly flexible.
+
+Q 47 | eco | Schemes & Welfare
+Which programme, that was introduced in the year 2000-2001, aims to offer homes, drinking water, primary education and basic healthcare in rural areas?
+(1) Pradhan Mantri Kisan Samman Nidhi
+(2) Pradhan Mantri Vaya Vandana Yojana
+(3) Pradhan Mantri Gramodaya Yojana
+(4) The Pradhan Mantri Gram Sadak Yojana
+= 3
+~ The Pradhan Mantri Gramodaya Yojana (2000–01) gave extra central help to states for primary health, primary education, rural shelter (housing), rural drinking water and nutrition, with the aim of better quality of life in villages.
+
+Q 48 | cur | Static GK & Culture
+Which of the following dances is traditionally performed by the males of three adjacent states - Jharkhand, Odisha and West Bengal?
+(1) Kuchipudi
+(2) Odissi
+(3) Chhau
+(4) Sattriya
+= 3
+~ Chhau is a martial dance-drama of eastern India in three styles: Seraikella (Jharkhand), Mayurbhanj (Odisha) and Purulia (West Bengal). It was traditionally performed only by men. UNESCO listed it as intangible cultural heritage in 2010.
+
+Q 49 | ih | Modern India
+Which of the following revolutionaries, who was arrested in Lahore conspiracy case by the British Government of India, was martyred in the hunger strike of 63 days in jail?
+(1) Jatindra Nath Das
+(2) Ram Prasad Bismil
+(3) Rash Behari Bose
+(4) Prafulla Chaki
+= 1
+~ Jatindra Nath Das, arrested in the Lahore Conspiracy Case (1929), went on a hunger strike in Lahore jail demanding equal treatment for political prisoners. He died on 13 September 1929 after 63 days.
+
+Q 50 | cur | Sports
+The term 'foot fault' is associated with which of the following games?
+(1) Basketball
+(2) Hockey
+(3) Tennis
+(4) Archery
+= 3
+~ In tennis, a foot fault is called when the server's foot touches the baseline or the court inside it before the ball is hit. The term is also used in badminton and volleyball, but not in the other three games listed.
+
+Q 51 | geo | Indian Geography
+Which of the following dams is a part of the Damodar Valley Corporation?
+(1) Rihand
+(2) Koyna
+(3) Salal
+(4) Maithon
+= 4
+~ The Damodar Valley Corporation (1948), India's first multipurpose river valley project, has dams at Tilaiya, Konar, Maithon and Panchet. Rihand is in Uttar Pradesh, Koyna in Maharashtra and Salal in Jammu and Kashmir.
+
+Q 52 | sci | Chemistry
+When a large amount of carbon dioxide dissolves in a water body, the water becomes acidic because of the formation of which of the following acids?
+(1) Carbonic acid
+(2) Carbolic acid
+(3) Carboxylic acid
+(4) Carbamic acid
+= 1
+~ Carbon dioxide dissolves in water and forms carbonic acid (CO₂ + H₂O → H₂CO₃), a weak acid. This is why large CO₂ absorption makes oceans and lakes more acidic.
+
+Q 53 | sci | Chemistry
+Select the INCORRECT pair of molecule/formula units and their molar mass from the following.
+(1) NaCl - 58.5
+(2) CH₄ - 16
+(3) HCl - 36.5
+(4) HNO₃ - 62
+= 4
+~ HNO₃ = 1 (H) + 14 (N) + 3 × 16 (O) = 63 g/mol, not 62. The others are right: NaCl 23 + 35.5 = 58.5, CH₄ 12 + 4 = 16 and HCl 1 + 35.5 = 36.5.
+
+Q 54 | geo | Indian Geography
+The Patkai hills are part of the ____________ mountains.
+(1) Purvachal
+(2) Eastern Ghats
+(3) Western Ghats
+(4) Karakoram
+= 1
+~ The Patkai Bum hills lie along the India–Myanmar border in Arunachal Pradesh. Together with the Naga, Mizo and Manipur hills they form the Purvachal, the eastern hills of the Himalayas.
+
+Q 55 | cur | Sports
+In which of the following events did India get its first individual Olympic gold medal?
+(1) Boxing
+(2) Weightlifting
+(3) Wrestling
+(4) Shooting
+= 4
+~ Abhinav Bindra won India's first individual Olympic gold in shooting, in the men's 10 m air rifle at Beijing 2008. Neeraj Chopra won the second, in javelin, at Tokyo 2020.
+
+Q 56 | geo | Indian Geography
+In the 1991 Census, which state was the highest in rank in terms of literacy rate and held higher than the national average of literacy rate?
+(1) Tamil Nadu
+(2) Karnataka
+(3) West Bengal
+(4) Kerala
+= 4
+~ In the 1991 Census Kerala had the highest literacy rate in India, about 90%, far above the national average of about 52%.
+
+Q 57 | cur | Static GK & Culture
+Raga Deepak has been associated with which famous musician?
+(1) Lal Kalawant
+(2) Ali Khan Karori
+(3) Tansen
+(4) Khusrau
+= 3
+~ Raga Deepak is linked with Tansen, a court musician of Akbar. Legend says that when he sang it, lamps lit by themselves. Tansen is one of the nine jewels (navaratnas) of Akbar's court.
+
+Q 58 | pol | Government & Parliament
+As per Article 181, the ___________ can not preside while a resolution for his removal from office is under consideration in State Legislative Assembly.
+(1) Advocate General
+(2) Speaker
+(3) Deputy Chairman
+(4) Chairman
+= 2
+~ Article 181 says the Speaker (or the Deputy Speaker) of a State Legislative Assembly shall not preside while a resolution for his removal is under consideration, though he may speak and vote in it. Article 96 says the same for the Lok Sabha.
+
+Q 59 | cur | Static GK & Culture
+The 'Bathukamma' festival is associated with which state?
+(1) Sikkim
+(2) Punjab
+(3) Tripura
+(4) Telangana
+= 4
+~ Bathukamma is the floral festival of Telangana, celebrated by women for nine days during Navaratri with stacks of flowers. It is the state festival of Telangana.
+
+Q 60 | sci | Biology
+Which organelle contains ribosomal RNA and is involved in the production of ribosomes?
+(1) Endoplasmic reticulum
+(2) Nucleus
+(3) Nucleolus
+(4) Golgi apparatus
+= 3
+~ The nucleolus, a dense body inside the nucleus, makes ribosomal RNA (rRNA) and assembles ribosome subunits. The endoplasmic reticulum and Golgi apparatus handle making and packing proteins and lipids.
+
+Q 61 | ih | Ancient India
+Who was the court poet of king Harshavardhana?
+(1) Vatsbhatti
+(2) Ravikirti
+(3) Kalidas
+(4) Banabhatta
+= 4
+~ Banabhatta was the court poet of King Harshavardhana (7th century CE). He wrote 'Harshacharita', a biography of Harsha, and the prose romance 'Kadambari'.
+
+Q 62 | ih | Medieval India
+Balban’s rule as an absolute despot led to which of the following events?
+(1) Granting Jagirs to Nobles
+(2) Respected common man
+(3) Destruction of the Forty
+(4) Appointed Hindus in administration
+= 3
+~ Balban followed a policy of 'blood and iron' and the theory of the king's divine right. To make the throne supreme he crushed the Turkan-i-Chahalgani, the powerful group of Forty Turkish nobles.
+
+Q 63 | cur | Static GK & Culture
+Which of the following institutes/projects is declared as a masterpiece of oral and intangible heritage of humanity by UNESCO in May 2001?
+(1) National Project to support Kuttiyattam
+(2) Music Academy Madras
+(3) Jawaharlal Nehru Manipur Dance Academy
+(4) National Institute of Kathak Dance
+= 1
+~ In May 2001 UNESCO proclaimed Kutiyattam, the Sanskrit theatre of Kerala, a Masterpiece of the Oral and Intangible Heritage of Humanity. It was the first Indian art form to get this recognition.
+
+Q 64 | cur | National
+In September 2023, after the retirement of Incumbent Sanjay Kumar Mishra, who was appointed as In-charge Director of ED?
+(1) TV Somanathan
+(2) Tushar Mehta
+(3) Rahul Navin
+(4) Samant Goel
+= 3
+~ Rahul Navin, a 1993-batch IRS officer, was made in-charge Director of the Enforcement Directorate in September 2023 when Sanjay Kumar Mishra's tenure ended. He was later appointed full-time Director.
+
+Q 65 | ih | Ancient India
+Which of the following architectural elements is excluded from the construction sites of the Indus Valley Civilisation?
+(1) Baked Bricks
+(2) Mortar of Gypsum
+(3) Iron Slabs
+(4) Sun Dried Bricks
+= 3
+~ The Indus Valley Civilisation was a Bronze Age culture: iron was not known, so iron slabs were never used. Its builders used baked bricks, sun-dried (mud) bricks and gypsum mortar, as in the drains and the Great Bath.
+
+Q 66 | eng | Spelling
+One of the four underlined words in the given sentence is incorrectly spelt. Select the INCORRECTLY spelt word.
+Let us "appreciate", support and "contribute" our might to the "promotional" efforts of the "comunity".
+(1) appreciate
+(2) contribute
+(3) comunity
+(4) promotional
+= 3
+~ The correct spelling is 'community', with a double m. Appreciate, contribute and promotional are spelt correctly.
+
+Q 67 | eng | Error Spotting & Sentence Improvement
+Select the option that has an error in the use of phrasal verb.
+(1) Clean up the mess in the kitchen. It is unhygienic.
+(2) We look forward to seeing you during the event.
+(3) To earn a significant profit, you are advised to deal in electronic items.
+(4) Why does she break out with all her near and dear ones?
+= 4
+~ To 'break out' means to start suddenly (a fire, a war) or to escape. Quarrelling with someone is 'fall out with' (or 'break up with' for ending a relationship). The other phrasal verbs — clean up, look forward to, deal in — are used correctly.
+
+Q 68 | eng | Vocabulary
+Select the most appropriate ANTONYM of the underlined word in the given sentence.
+The company plans to "expand" its operations into global markets soon.
+(1) Spread
+(2) Diversify
+(3) Restrict
+(4) Eliminate
+= 3
+~ To expand is to make larger; its opposite is to restrict (limit, reduce). Spread and diversify are close in meaning to expand, and eliminate means remove completely.
+
+Q 69 | eng | Vocabulary
+Select the most appropriate ANTONYM of the given word.
+Triumph
+(1) Lapse
+(2) Delay
+(3) Failure
+(4) Attentiveness
+= 3
+~ Triumph means a great victory or success, so its antonym is failure. Lapse, delay and attentiveness are not opposites of triumph.
+
+Q 70 | eng | Vocabulary
+Select the most appropriate meaning of the underlined word.
+I cannot see without my "glasses".
+(1) An unbreakable object
+(2) A device used to correct the defects of vision
+(3) A fragile object
+(4) A container
+= 2
+~ Here 'glasses' means spectacles — lenses in a frame worn to correct defects of vision, which explains 'I cannot see without' them.
+
+Q 71 | eng | Idioms & One-word Substitution
+Select the most appropriate meaning of the idiom from the options given below. To show the white feather
+(1) To act cowardly
+(2) To maintain peace
+(3) To act bravely
+(4) To show anger
+= 1
+~ 'To show the white feather' means to act like a coward. (A white tail feather was once thought to mark a poor fighting cock.)
+
+Q 72 | eng | Spelling
+Select the correct spelling of the underlined word in the given sentence.
+After their disagreement, they decided to "saparate" their belongings and part ways.
+(1) seperate
+(2) separate
+(3) seprete
+(4) seprate
+= 2
+~ The correct spelling is 'separate': s-e-p-a-r-a-t-e, with 'par' in the middle. 'Seperate' is a very common misspelling.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+Select the grammatically correct sentence from the given options.
+(1) An unexpected power failure completely foiled an plan of the team.
+(2) An unexpected power failure completely foiled the plan of the team.
+(3) A unexpected power failure completely foiled the plan of a team.
+(4) An unexpected power failure completely foiled a plan of a team.
+= 2
+~ 'An' is used before vowel sounds (an unexpected) and 'the' before a specific noun known to the reader — the plan of the team. The other options use 'an plan', 'a unexpected' or 'a plan of a team', which are wrong.
+
+Q 74 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+My brother trains young girls / at the football academy, whereas / I gets a handsome salary / to teach mathematics at the same place.
+(1) to teach mathematics at the same place
+(2) I gets a handsome salary
+(3) at the football academy, whereas
+(4) My brother trains young girls
+= 2
+~ The pronoun 'I' takes the base form of the verb: 'I get a handsome salary'. The -s form is used only with he, she, it and singular nouns.
+
+Q 75 | eng | Error Spotting & Sentence Improvement
+In the following sentence the underlined part contains as error. Alternatives to the underlined part are given as options. Select the correct alternative.
+The bread was "drier" and stale.
+(1) much drier
+(2) driest
+(3) more drier
+(4) dry
+= 4
+~ No comparison is being made, so the plain adjective is needed: The bread was dry and stale. The comparative 'drier' needs 'than'; 'more drier' is a double comparative.
+
+Q 76 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in the blanks.
+Johannes Gutenberg invented the first printing press that could print thousands of ______________ a day. This made books cheaper and information ______________ widely available.
+(1) sheet; much
+(2) sides; most
+(3) leaf; many
+(4) pages; more
+= 4
+~ A printing press prints 'pages' (thousands of pages, plural), and printing made information 'more' widely available than before. 'Sheet' and 'leaf' are singular, and 'much'/'most' do not fit the comparison.
+
+Q 77 | eng | Error Spotting & Sentence Improvement
+In the following sentence the underlined part contains an error. Alternatives to the underlined part are given as options.
+Select the correct alternative.
+All in all, he had the "more splendid" collection of antique paintings ever.
+(1) most splendid
+(2) splendid
+(3) splendidest
+(4) more splendider
+= 1
+~ 'The … ever' shows that his collection is compared with all others, which needs the superlative: the most splendid collection ever. 'Splendidest' and 'more splendider' are not correct forms.
+
+Q 78 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+The scientist conducted a series of experiments to _______ his hypothesis.
+(1) variable
+(2) vague
+(3) verify
+(4) variation
+= 3
+~ Scientists conduct experiments to verify (test and confirm) a hypothesis. 'Variable' and 'vague' are adjectives here and 'variation' is a noun, so they cannot follow 'to'.
+
+Q 79 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Reverent
+(1) Rushed
+(2) Important
+(3) Respectful
+(4) Related
+= 3
+~ Reverent means feeling or showing deep respect, so its synonym is respectful.
+
+Q 80 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+I "long from travel" outside the country, dreaming of adventures among the towering Alps and basking in the turquoise waters of the Caribbean.
+(1) long to travel
+(2) long for travelling
+(3) long for travelled
+(4) long at travel
+= 1
+~ 'Long' (desire strongly) is followed by 'to' + verb or 'for' + noun: I long to travel outside the country. 'Long from', 'long at' and 'long for travelled' are wrong.
+
+Q 81 | eng | Spelling
+Rectify the sentence by selecting the correct spelling from the options.
+All the political parties of India appaer lost in the physical exercise of fighting elections.
+(1) Appear
+(2) Apeear
+(3) Aapear
+(4) Apearr
+= 1
+~ The correct spelling is 'appear': a-p-p-e-a-r. The sentence means the parties seem lost in the physical effort of fighting elections.
+
+Q 82 | eng | Idioms & One-word Substitution
+Select the option that can be used as a one-word substitute for the given group of words.
+A building where animals are butchered
+(1) Burrow
+(2) Cemetery
+(3) Decanter
+(4) Abattoir
+= 4
+~ An abattoir is a slaughterhouse, a building where animals are killed for meat. A burrow is an animal's hole, a cemetery is a burial ground and a decanter is a glass bottle for wine.
+
+Q 83 | eng | Vocabulary
+Select the most appropriate ANTONYM that can substitute the underlined segment in the given sentence.
+They all felt that the movie was truly "captivating" and unforgettable.
+(1) charismatic
+(2) repugnant
+(3) relatable
+(4) tantalising
+= 2
+~ Captivating means very attractive and holding attention; its opposite is repugnant (causing strong dislike). Charismatic and tantalising are close in meaning to captivating, and relatable is unrelated.
+
+Q 84 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+Although she is usually / rude with everyone, / she behaved nice / with all of us today.
+(1) rude with everyone
+(2) with all of us today
+(3) she behaved nice
+(4) Although she is usually
+= 3
+~ 'Behaved' is a verb, so it must be described by an adverb: she behaved nicely. 'Nice' is an adjective. The rest of the sentence is correct.
+
+Q 85 | eng | Idioms & One-word Substitution
+Select the most appropriate idiom that can substitute the underlined segment in the given sentence.
+She is "someone who always discourages our enthusiasm;" therefore, we have decided to keep our distance from her.
+(1) a wet blanket
+(2) a nine days' wonder
+(3) a cash cow
+(4) a fish out of water
+= 1
+~ A 'wet blanket' is a person who spoils others' fun or enthusiasm. A nine days' wonder is something that causes excitement for a short time, a cash cow earns steady money and a fish out of water feels out of place.
+
+Q 86 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Goddess Shailputri is the first form of Goddess Durga, who is worshipped (1)______ Navaratri. In this form, she is worshipped as the daughter of (2)______ Himalayas. She is the goddess (3)______ nature and is adorned with flowers. She (4)______ a bull and holds a trident in one hand and a lotus flower in another. During Navaratri, nine different forms of Durga are worshipped. Durga is a (5)______, (6)______, (7)______ deity who is also known as Adishakti—the energy that manifested to create the universe.
+Select the most appropriate option to fill in blank number 1.
+(1) during
+(2) among
+(3) to
+(4) by
+= 1
+~ 'During' means throughout a period: she is worshipped during Navaratri, the nine-night festival.
+
+Q 87 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Goddess Shailputri is the first form of Goddess Durga, who is worshipped (1)______ Navaratri. In this form, she is worshipped as the daughter of (2)______ Himalayas. She is the goddess (3)______ nature and is adorned with flowers. She (4)______ a bull and holds a trident in one hand and a lotus flower in another. During Navaratri, nine different forms of Durga are worshipped. Durga is a (5)______, (6)______, (7)______ deity who is also known as Adishakti—the energy that manifested to create the universe.
+Select the most appropriate article to fill in blank number 2.
+(1) an
+(2) a
+(3) no article
+(4) the
+= 4
+~ Names of mountain ranges in the plural take 'the': the Himalayas. So Shailputri is the daughter of the Himalayas (Parvati as the daughter of the mountain king).
+
+Q 88 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Goddess Shailputri is the first form of Goddess Durga, who is worshipped (1)______ Navaratri. In this form, she is worshipped as the daughter of (2)______ Himalayas. She is the goddess (3)______ nature and is adorned with flowers. She (4)______ a bull and holds a trident in one hand and a lotus flower in another. During Navaratri, nine different forms of Durga are worshipped. Durga is a (5)______, (6)______, (7)______ deity who is also known as Adishakti—the energy that manifested to create the universe.
+Select the most appropriate option to fill in blank number 3.
+(1) around
+(2) at
+(3) with
+(4) of
+= 4
+~ 'The goddess of nature' uses 'of' to show what she is goddess of, as in 'god of rain'.
+
+Q 89 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Goddess Shailputri is the first form of Goddess Durga, who is worshipped (1)______ Navaratri. In this form, she is worshipped as the daughter of (2)______ Himalayas. She is the goddess (3)______ nature and is adorned with flowers. She (4)______ a bull and holds a trident in one hand and a lotus flower in another. During Navaratri, nine different forms of Durga are worshipped. Durga is a (5)______, (6)______, (7)______ deity who is also known as Adishakti—the energy that manifested to create the universe.
+Select the most appropriate option to fill in blank number 4.
+(1) was riding
+(2) had ridden
+(3) rode
+(4) rides
+= 4
+~ The passage describes the goddess in the simple present (is worshipped, is adorned, holds), so the verb is 'rides': She rides a bull (Nandi).
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+Goddess Shailputri is the first form of Goddess Durga, who is worshipped (1)______ Navaratri. In this form, she is worshipped as the daughter of (2)______ Himalayas. She is the goddess (3)______ nature and is adorned with flowers. She (4)______ a bull and holds a trident in one hand and a lotus flower in another. During Navaratri, nine different forms of Durga are worshipped. Durga is a (5)______, (6)______, (7)______ deity who is also known as Adishakti—the energy that manifested to create the universe.
+Select the most appropriate option to fill in blanks number 5.
+(1) Indian; radiant; powerful
+(2) radiant; Indian; powerful
+(3) powerful; radiant; Indian
+(4) powerful; Indian; radiant
+= 3
+~ English adjectives follow the order opinion/quality → … → origin, and the origin adjective comes last, just before the noun: a powerful, radiant, Indian deity.

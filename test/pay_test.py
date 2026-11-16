@@ -44,7 +44,7 @@ async def main():
     srv = http.server.ThreadingHTTPServer(('127.0.0.1', 0), functools.partial(http.server.SimpleHTTPRequestHandler, directory=SITE))
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     url = f'http://127.0.0.1:{srv.server_port}/'
-    # fake payments script: the ₹45 All-in-One Pass covers every exam ('all') and, since 26 Oct 2026, every mock series too
+    # fake payments script: the ₹149 All-in-One Pass covers every exam ('all') and, since 26 Oct 2026, every mock series too
     # (the script reports mock = the All-in-One Pass date); a 'buy' of any kind is the All-in-One Pass
     state = {'mock': False, 'pyq': False, 'trial': 'expired', 'calls': [], 'kind': ''}
     def passes():
@@ -118,10 +118,10 @@ async def main():
         for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
             await pg.goto(url + f'appsc-group-2/{view}/'); await pg.wait_for_timeout(700)
             if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
-        # 2. a mock without a pass opens the ₹45 All-in-One Pass checkout, which includes Mission Khaki (no mock-only pack any more)
+        # 2. a mock without a pass opens the ₹149 All-in-One Pass checkout, which includes Mission Khaki (no mock-only pack any more)
         await pg.goto(url + 'ts-police-si/?mock=mk-si-1'); await pg.wait_for_timeout(800)
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if 'Mission Khaki' not in txt or 'All-in-One Pass' not in txt or '₹45' not in txt or 'Mock tests only' in txt or '₹150' in txt: errors.append(f'a mock without a pass should open the ₹45 All-in-One Pass checkout listing Mission Khaki: {txt[:200]!r}')
+        if 'Mission Khaki' not in txt or 'All-in-One Pass' not in txt or '₹149' not in txt or 'Mock tests only' in txt or '₹150' in txt: errors.append(f'a mock without a pass should open the ₹149 All-in-One Pass checkout listing Mission Khaki: {txt[:200]!r}')
         # 3. pay: buy -> (fake Instamojo) -> back with payment_request_id -> verify -> unlocked
         await pg.click('[data-act="paybuy"]'); await pg.wait_for_timeout(1500)
         if not state['pyq']: errors.append(f'payment not verified, calls {state["calls"]}')
@@ -208,7 +208,7 @@ async def main():
         await pg.reload(); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('a student who already paid was asked to pay again')
         # D. Mission Khaki – Constable (25 Oct 2026): Mock 1 is free for a registered student; Mock 2 and an old ?buy=combo link
-        #    open the ₹45 All-in-One Pass checkout (26 Oct 2026: no separate packs or combo)
+        #    open the ₹149 All-in-One Pass checkout (26 Oct 2026: no separate packs or combo)
         state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-1'); await pg.wait_for_timeout(1500)
         if await pg.locator('#payDlg[open]').count(): errors.append('free Constable Mock 1 asked for payment')
@@ -219,10 +219,10 @@ async def main():
         if 'English sectional' not in body: errors.append(f'Constable English sectional did not open: {body[:200]!r}')
         await pg.goto(url + 'ts-police-constable/?mock=mk-pc-2'); await pg.wait_for_timeout(1500)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹45' not in t or '₹99' in t: errors.append(f'Constable Mock 2 did not ask for the ₹45 All-in-One Pass: {t[:160]!r}')
+        if '₹149' not in t or '₹99' in t: errors.append(f'Constable Mock 2 did not ask for the ₹149 All-in-One Pass: {t[:160]!r}')
         await pg.goto(url + 'ts-police-constable/?buy=combo'); await pg.wait_for_timeout(1000)
         t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-        if '₹45' not in t or '₹199' in t or 'Mission Khaki' not in t: errors.append(f'old combo link should open the ₹45 All-in-One Pass checkout: {t[:200]!r}')
+        if '₹149' not in t or '₹199' in t or 'Mission Khaki' not in t: errors.append(f'old combo link should open the ₹149 All-in-One Pass checkout: {t[:200]!r}')
         state['slowbuy'] = True
         await pg.click('#payDlg [data-act="paybuy"]'); await pg.wait_for_timeout(1300)
         if state['kind'] != 'pyq': errors.append(f'old combo link checkout sent kind {state["kind"]!r} (want pyq)')

@@ -187,7 +187,7 @@ def faq(cls):
              'UPSC Prelims, APPSC and TGPSC Group exams, SSC and police exams ask many questions straight from NCERT ideas: the Constitution, '
              'history, geography, economy and science. Practising each chapter as MCQs shows you what you have really understood and what to revise.'),
             ('What does it cost?',
-             'The NCERT questions are part of the ₹45 All-in-One Pass, valid for 12 months, the same pass that opens every previous paper, mock test and '
+             'The NCERT questions are part of the ₹149 All-in-One Pass, valid for 12 months, the same pass that opens every previous paper, mock test and '
              'study book on the site. Without the pass you can read every chapter\'s questions with their answers on the chapter pages, with the '
              'explanations of the first 10 questions of each chapter.'),
             ('Are the questions available in Hindi or Telugu?',
@@ -213,7 +213,7 @@ def confs(B):
             aka_short=f'NCERT Class {cls} textbooks',
             desc=lambda t, cls=cls: (f'NCERT Class {cls} chapter-wise MCQs with answers and explanations: Polity, History, Geography, Economics, Sociology, '
                                      f'Indian Art, Physics, Chemistry and Biology, book by book. {t:,} questions written by Learn with Anil for UPSC, state PSC and '
-                                     f'SSC preparation; practise each chapter as a quiz or a timed test with the ₹45 All-in-One Pass.'),
+                                     f'SSC preparation; practise each chapter as a quiz or a timed test with the ₹149 All-in-One Pass.'),
             eyebrow=f'NCERT · Class {cls} · Subject-wise &amp; chapter-wise MCQs',
             papers_note=(f'One set of MCQs for every chapter of the NCERT Class {cls} textbooks, written by Learn with Anil, with answers and explanations. '
                          'Chapters are added every week.')))
@@ -312,7 +312,7 @@ def browser(conf, papers, abs_links=False):
             f'<span class="muted" style="font-size:14px">{total:,} questions in {len(papers)} of {allch} chapters · new chapters every week</span></div>'
             f'<nav class="ncb-nav" aria-label="Subjects">{"".join(nav)}</nav>{"".join(secs)}'
             f'<p class="ncb-note">Tap a chapter name to read its questions with answers (free). <b>Practise</b> checks each answer as you go; '
-            f'<b>Timed test</b> gives one minute a question. Both open with the ₹45 All-in-One Pass, the same pass for every exam, mock test and book on the site.</p>'
+            f'<b>Timed test</b> gives one minute a question. Both open with the ₹149 All-in-One Pass, the same pass for every exam, mock test and book on the site.</p>'
             '</section>' + JS)
 
 
@@ -322,7 +322,7 @@ def hero(conf, papers, questions):
     allch = sum(len(c) for _, _, _, c in BOOKS[cls])
     hp = (f'<p>{len(questions):,} questions on {len(papers)} chapter{"s" if len(papers) != 1 else ""} of the NCERT Class {cls} textbooks so far, each with the answer and a short explanation. '
           f'Pick a subject, then a chapter: practise it question by question or take it as a timed test, and revise your mistakes, '
-          f'with one ₹45 All-in-One Pass for every exam on the site.</p>')
+          f'with one ₹149 All-in-One Pass for every exam on the site.</p>')
     fig = (f'      <div class="figure"><div class="v">{len(questions):,}</div><div class="k">NCERT MCQs written so far</div></div>\n'
            f'      <div class="figure"><div class="v">{len(papers)}/{allch}</div><div class="k">Chapters live</div></div>\n')
     return hp, fig

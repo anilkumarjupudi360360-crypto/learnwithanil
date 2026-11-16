@@ -82,6 +82,7 @@ def time_marks(conf, p):
     if conf['id'] == 'ukpsc-lower-pcs': return '2 Hours', 150   # UKPSC prelims: 150 questions, 150 marks
     if conf['id'] == 'cg-vyapam-group-2': return {'vd': ('3 Hours', 200), 'ag': ('3 Hours', 200), 'sg': ('2 Hours 30 Minutes', 150)}[p['id']]   # Vyapam 2021 papers
     if conf['id'] == 'uppsc-ro-aro': return {'r25': ('3 Hours', 200), 'g21': ('2 Hours', 140), 'h21': ('1 Hour', 60)}[p['id']]   # RO/ARO prelims
+    if conf['id'] == 'ssc-mts': return '90 Minutes (two sessions of 45)', 270   # MTS: 90 questions, 3 marks each
     return (f'{p["mins"]} Minutes' if p.get('mins') else ''), ''
 
 CSS = """

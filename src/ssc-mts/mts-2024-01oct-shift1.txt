@@ -1,0 +1,874 @@
+# SSC Multi-Tasking (Non-Technical) Staff and Havaldar (CBIC & CBN) Examination 2024, held 1 October 2024, Shift 1 (9:00 AM). 90 questions in two sessions: Session I Numerical & Mathematical Ability (Q1–20) and Reasoning Ability & Problem Solving (Q21–40); Session II General Awareness (Q41–65) and English Language & Comprehension (Q66–90).
+# Source: SSC's question paper as printed from SSC's portal (candidate response sheet, via sscportal.in); answers are the options SSC marked correct on that sheet (answer-key stage). Explanations by Learn with Anil.
+
+Q 1 | qa | Data Interpretation & Statistics
+The given bar graph shows the production of onions (in quintals) from the year 2018 to 2022. Study the graph and answer the question that follows.
+Considering the average production during this period, the number of years in which the production is above the average is:
+(1) 2
+(2) 4
+(3) 3
+(4) 1
+= 1
+! img/mts24d-q1.png
+~ Average production = (632 + 876 + 531 + 426 + 785) ÷ 5 = 3,250 ÷ 5 = 650 quintals. Only 2019 (876) and 2022 (785) are above 650, so the answer is 2 years.
+
+Q 2 | qa | Time, Work, Speed & Distance
+Ravi goes to college from his village at the speed of 5km/h and returns at the speed of 4km/h. If he takes 9 hours in all, find the distance (in km) between the village and the college.
+(1) 18
+(2) 20
+(3) 9
+(4) 40
+= 2
+~ Let the distance be d km. Time going + time returning = d/5 + d/4 = 9d/20 = 9 hours, so d = 20 km.
+
+Q 3 | qa | Percentage, Profit & Interest
+Find the simple interest (in ₹) on ₹2500 as a sum borrowed at 7% per year rate of interest for 5 years.
+(1) 915
+(2) 815
+(3) 835
+(4) 875
+= 4
+~ Simple interest = P × R × T / 100 = 2,500 × 7 × 5 / 100 = ₹875.
+
+Q 4 | qa | Percentage, Profit & Interest
+A borrows ₹89,500 for 3 years at 7% p.a. simple interest. B borrows the same amount at simple interest of 9% for the first year, 8% for the second year, and 7% for the third year. What is the total simple interest (in ₹) paid by A and B?
+(1) 42,075
+(2) 40,275
+(3) 47,025
+(4) 45,027
+= 2
+~ A pays 7% for 3 years = 21% of ₹89,500 = ₹18,795. B pays 9% + 8% + 7% = 24% of ₹89,500 = ₹21,480. Together = 18,795 + 21,480 = ₹40,275.
+
+Q 5 | qa | Time, Work, Speed & Distance
+Two trains running towards each other on parallel tracks, at speeds of 45 km/hr and 51 km/hr, take 21 seconds to cross each other. If the length of one train is 290 m, then the length (in m) of the other train is:
+(1) 250
+(2) 230
+(3) 290
+(4) 270
+= 4
+~ Relative speed = 45 + 51 = 96 km/h = 96 × 5/18 = 80/3 m/s. In 21 seconds they cover 80/3 × 21 = 560 m, the sum of both lengths. The other train = 560 − 290 = 270 m.
+
+Q 6 | qa | Mensuration
+A cylindrical tank of height 10 m and radius 5 m has a small circular cut of 0.5 m radius on its top surface. What would be the total surface area of the tank?
+(1) 150π m²
+(2) 599π/4 m²
+(3) 156π m²
+(4) 299π/2 m²
+= 2
+~ A closed cylinder's total surface area = 2πrh + 2πr² = 2π × 5 × 10 + 2π × 25 = 100π + 50π = 150π m². The circular cut removes π × 0.5² = π/4 m² from the top, leaving 150π − π/4 = 599π/4 m².
+
+Q 7 | qa | Ratio, Average & Mixtures
+The average weight of a certain number of students in a group was 72 kg. If 11 students, with an average weight of 76 kg each, leave the group, and 5 students, each with an average weight of 79 kg, join the group, the average weight of the students in the group decreases by 0.6 kg. The number of students initially in the group was:
+(1) 19
+(2) 25
+(3) 21
+(4) 17
+= 3
+~ Let there be n students at first (total 72n). After 11 leave (836 kg) and 5 join (395 kg) there are n − 6 students averaging 71.4 kg: 72n − 836 + 395 = 71.4(n − 6). So 72n − 441 = 71.4n − 428.4, 0.6n = 12.6 and n = 21.
+
+Q 8 | qa | Ratio, Average & Mixtures
+The average of 9 numbers is 3. If the average of the first 8 of these numbers is 2, the 9th number is:
+(1) 15
+(2) 14
+(3) 12
+(4) 11
+= 4
+~ Total of 9 numbers = 9 × 3 = 27 and total of the first 8 = 8 × 2 = 16. The 9th number = 27 − 16 = 11.
+
+Q 9 | qa | Percentage, Profit & Interest
+Two successive increases of 15% each, is by what percentage more than the two successive decreases of 12% each? (Rounded off to 2 decimal places)
+(1) 42.95%
+(2) 30.56%
+(3) 28.25%
+(4) 22.12%
+= 1
+~ Two 15% increases: 1.15 × 1.15 = 1.3225, a rise of 32.25%. Two 12% decreases: 0.88 × 0.88 = 0.7744, a fall of 22.56%. The first change is (32.25 − 22.56) ÷ 22.56 × 100 = 42.95% more than the second.
+
+Q 10 | qa | Algebra
+Two mixers and one TV cost ₹7,000, while two TVs and one mixer cost ₹9,800. The value of one TV is:
+(1) ₹4,200
+(2) ₹3,200
+(3) ₹4,600
+(4) ₹3,600
+= 1
+~ Let a mixer cost M and a TV cost T: 2M + T = 7,000 and M + 2T = 9,800. Adding gives 3(M + T) = 16,800, so M + T = 5,600. Subtracting the first equation from the second: T − M = 2,800. So T = (5,600 + 2,800) ÷ 2 = ₹4,200.
+
+Q 11 | qa | Data Interpretation & Statistics
+Refer to the given table and answer the question that follows.
+Year | Company's % profit
+2017 | 30
+2018 | 10
+2019 | 20
+2020 | 15
+2021 | 25
+What was the revenue of the company if its expenditure was ₹600 crores in the year when its percentage profit was the maximum?
+(1) ₹800 crores
+(2) ₹820 crores
+(3) ₹780 crores
+(4) ₹760 crores
+= 3
+~ The highest profit, 30%, was in 2017. Profit % is on expenditure, so revenue = expenditure × 1.30 = 600 × 1.3 = ₹780 crores.
+
+Q 12 | qa | Ratio, Average & Mixtures
+The ratio of the present ages of Ram and Shyam is 3 : 4, and 4 years ago the ratio was 2 : 3. What will be the ratio of the ages of Ram and Shyam 4 years from now?
+(1) 1 : 5
+(2) 2 : 5
+(3) 4 : 5
+(4) 3 : 5
+= 3
+~ Let the ages be 3x and 4x. Four years ago: (3x − 4)/(4x − 4) = 2/3, so 9x − 12 = 8x − 8 and x = 4. The ages are 12 and 16; in 4 years they will be 16 and 20, a ratio of 4 : 5.
+
+Q 13 | qa | Geometry
+Find the area of the quadrilateral ABCD, the coordinates of whose vertices are A(6, −3), B(−4, −2), C(3, 1) and D(5, 0)?
+(1) 30 unit²
+(2) 16 unit²
+(3) 25 unit²
+(4) 21 unit²
+= 4
+~ Use the shoelace formula: area = ½|Σ(xᵢyᵢ₊₁ − xᵢ₊₁yᵢ)|. Terms: A→B 6(−2) − (−4)(−3) = −24; B→C (−4)(1) − 3(−2) = 2; C→D 3(0) − 5(1) = −5; D→A 5(−3) − 6(0) = −15. Sum = −42, so the area = 42 ÷ 2 = 21 square units.
+
+Q 14 | qa | Ratio, Average & Mixtures
+Find the average of 300, 129, 49, 120 and 102.
+(1) 120
+(2) 130
+(3) 140
+(4) 150
+= 3
+~ Sum = 300 + 129 + 49 + 120 + 102 = 700. Average = 700 ÷ 5 = 140.
+
+Q 15 | qa | Mensuration
+A cylindrical disc of thickness 1 cm is made by melting two solid cylinders of radii 4 cm and 5 cm, and length 6 cm and 4 cm, respectively. The radius of the new cylinder is:
+(1) 21 cm
+(2) 7 cm
+(3) 14 cm
+(4) 28 cm
+= 3
+~ Total volume = π(4² × 6 + 5² × 4) = π(96 + 100) = 196π cm³. The disc of thickness 1 cm has πr² × 1 = 196π, so r² = 196 and r = 14 cm.
+
+Q 16 | qa | Ratio, Average & Mixtures
+A grocer mixes two varieties of tea worth ₹120/kg and ₹125/kg in a ratio to produce a new variety worth ₹122/kg. What is the ratio of the varieties to be mixed to obtain the new variety?
+(1) 2 : 5
+(2) 1 : 3
+(3) 3 : 2
+(4) 4 : 4
+= 3
+~ By the rule of alligation: cheaper : dearer = (125 − 122) : (122 − 120) = 3 : 2.
+
+Q 17 | qa | Percentage, Profit & Interest
+By selling an article for ₹20, a dealer makes a profit of 10%. By how much should he increase his selling price (in ₹, rounded off to two decimal place) so as to make a profit of 20%?
+(1) 3.82
+(2) 1.82
+(3) 4.82
+(4) 2.82
+= 2
+~ Cost price = 20 ÷ 1.10 = ₹18.18. For a 20% profit the selling price must be 18.18 × 1.2 = ₹21.82. Increase = 21.82 − 20 = ₹1.82.
+
+Q 18 | qa | Percentage, Profit & Interest
+A retailer allows a trade discount of 25% and a further discount of 8% on the marked price of the products, if paid along with his shop’s membership card. He makes a net profit of 15% on the cost. By what percentage are the products marked up by him?
+(1) 66⅔%
+(2) 84⅓%
+(3) 59⅔%
+(4) 46⅓%
+= 1
+~ Take the cost as ₹100, so the selling price is ₹115. The two discounts leave 0.75 × 0.92 = 0.69 of the marked price, so the marked price = 115 ÷ 0.69 = ₹166.67. The goods are marked up 66⅔%.
+
+Q 19 | qa | Percentage, Profit & Interest
+What sum (in ₹) will earn a simple interest of ₹240 in 4 years at 12% per year rate of interest?
+(1) 750
+(2) 500
+(3) 250
+(4) 1000
+= 2
+~ Principal = SI × 100 ÷ (R × T) = 240 × 100 ÷ (12 × 4) = ₹500.
+
+Q 20 | qa | Number System & Simplification
+The least number of square tiles required to pave the ceiling of a room 525 centimetre long and 378 centimetre broad is:
+(1) 450
+(2) 150
+(3) 178
+(4) 380
+= 1
+~ The largest square tile has side equal to the HCF of 525 and 378, which is 21 cm (525 = 3 × 5² × 7, 378 = 2 × 3³ × 7). Number of tiles = (525 ÷ 21) × (378 ÷ 21) = 25 × 18 = 450.
+
+Q 21 | rea | Series
+What should come in place of the question mark (?) in the given series?
+53, 52, 39, 38, ?, 24
+(1) 25
+(2) 26
+(3) 28
+(4) 23
+= 1
+~ The differences alternate −1 and −13: 53 − 1 = 52, 52 − 13 = 39, 39 − 1 = 38, 38 − 13 = 25, and 25 − 1 = 24 checks the last term.
+
+Q 22 | rea | Series
+What should come in place of the question mark (?) in the given series based on the English alphabetical order?
+TKU, UNP, VQK, WTF, ?
+(1) WAW
+(2) XWA
+(3) YXB
+(4) XXA
+= 2
+~ First letters move +1 (T, U, V, W, X), second letters +3 (K, N, Q, T, W) and third letters −5 (U, P, K, F, A). The next term is XWA.
+
+Q 23 | rea | Analogy & Classification
+GY 16 is related to DV 23 in a certain way. In the same way, OD 11 is related to LA 18. To which of the following is LW 13 related, following the same logic?
+(1) HT 19
+(2) IT 20
+(3) IS 20
+(4) HS 20
+= 2
+~ Each letter moves 3 places back and the number increases by 7: G→D, Y→V, 16→23 and O→L, D→A, 11→18. For LW13: L→I, W→T, 13→20, giving IT 20.
+
+Q 24 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+Some carrots are radishes.
+Some cucumbers are radishes.
+Conclusions:
+I. All cucumbers are carrots.
+II. Some cucumbers are carrots.
+(1) Only conclusion II follows
+(2) Only conclusion I follows
+(3) Both conclusions I and II follow
+(4) Neither conclusion I nor II follows
+= 4
+~ Carrots and cucumbers are both linked only through radishes, and the two 'some' groups of radishes need not overlap. So neither 'All cucumbers are carrots' nor 'Some cucumbers are carrots' is certain. Neither conclusion follows.
+
+Q 25 | rea | Analogy & Classification
+Select the set in which the numbers are related in the same way as are the numbers of the following sets.
+(NOTE: Operations should be performed on the whole numbers, without breaking down the numbers into their constituent digits. E.g. 13 – Operations on 13 such as adding/subtracting/multiplying etc. to 13 can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1 and 3 is not allowed.)
+(12, 4, 160)
+(6, 11, 157)
+(1) (9, 15, 90)
+(2) (14, 7, 245)
+(3) (6, 15, 90)
+(4) (21, 4, 168)
+= 2
+~ The third number is the sum of the squares of the first two: 12² + 4² = 144 + 16 = 160 and 6² + 11² = 36 + 121 = 157. Only (14, 7, 245) fits: 196 + 49 = 245.
+
+Q 26 | rea | Arrangement & Puzzles
+P, Q, R, S, T and U are sitting around a circular table facing the centre (but not necessarily in the same order). P is second to the left of T. Q is an immediate neighbour of both U and P. S and P are immediate neighbours. Who among the following has both T and U as his immediate neighbours?
+(1) P
+(2) R
+(3) Q
+(4) S
+= 2
+~ Take T's seat; P is second to T's left, so one seat lies between them on that side. P's two neighbours are Q and S. If Q took the seat between P and T, U would need T's seat, so S sits there and Q is on P's other side, with U next to Q. The last seat, between U and T, is R's, so R has T and U as neighbours.
+
+Q 27 | rea | Coding-Decoding
+In a certain code language, ‘22 55 77’ is coded as ‘rr pp tt’ and ‘77 66 44’ is coded as ‘pp kk ll’ and ‘66 11 22’ is coded as ‘kk tt zz’. How is ‘11’ coded in the given language?
+(1) pp
+(2) zz
+(3) kk
+(4) tt
+= 2
+~ 77 is common to the first two groups, so 77 = pp. 22 is common to the first and third, so 22 = tt; 66 is common to the second and third, so 66 = kk. In '66 11 22' = 'kk tt zz', the code left for 11 is zz.
+
+Q 28 | rea | Coding-Decoding
+In a certain code language, ‘TALE’ is coded as ‘5173’ and ‘AIDS’ is coded as
+‘6452’.What is the code for ‘A’ in the given code language?
+(1) 2
+(2) 5
+(3) 6
+(4) 1
+= 2
+~ The only letter common to TALE and AIDS is A, and the only digit common to 5173 and 6452 is 5. So A is coded as 5.
+
+Q 29 | rea | Non-verbal Reasoning
+Select the option figure in which the given figure (X) is embedded as its part (rotation is NOT allowed).
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/mts24d-q29.png
+~ Figure (X) — two squares joined by a vertical line, a hook on the left and a second square with a stepped line on the right — appears without turning in the lower part of option 4. In the other options the squares or the connecting lines are placed differently.
+
+Q 30 | rea | Mathematical Operations
+Which of the following interchanges of signs would make the given equation correct? 15 − 54 × 18 + 16 ÷ 2 = 44
+(1) + and ×
+(2) − and +
+(3) ÷ and ×
+(4) − and ÷
+= 3
+~ Interchanging ÷ and × gives 15 − 54 ÷ 18 + 16 × 2. By BODMAS: 54 ÷ 18 = 3 and 16 × 2 = 32, so 15 − 3 + 32 = 44, which is correct.
+
+Q 31 | rea | Syllogism & Statements
+Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.
+Statements:
+All parrots are eagles.
+No parrot is a crow.
+Conclusions:
+(I) No eagle is a crow.
+(II) All crows are parrots.
+(1) Only conclusion I follows
+(2) Neither conclusion I nor II follows
+(3) Both conclusions I and II follow
+(4) Only conclusion II follows
+= 2
+~ Only the eagles that are parrots are known not to be crows; other eagles may be crows, so 'No eagle is a crow' is not certain. 'No parrot is a crow' rules out 'All crows are parrots'. Neither conclusion follows.
+
+Q 32 | rea | Coding-Decoding
+In a certain code language, 'EAGER' is writtenas ‘CGGTG’ and 'LEARN' is writtenas ‘GNAPT’. How will 'HINDI' be written in that language?
+(1) JKNKF
+(2) KJNKF
+(3) KJNFK
+(4) KJPKF
+= 2
+~ Each letter except the middle one moves 2 places forward, the middle letter stays, and then the first two letters swap and the last two swap. EAGER → G C G G T → CGGTG; LEARN → N G A T P → GNAPT. HINDI → J K N F K → KJNKF.
+
+Q 33 | rea | Mathematical Operations
+18 is related to 80 following a certain logic. Following the same logic, 23 is related to 100. To which ofthe following is 36 related, following the same logic?(NOTE: Operations should be performed on the whole numbers, without breaking down the numbersinto its constituent digits. E.g. 13 – Operations on 13 such as adding /subtracting /multiplying etc. to 13can be performed. Breaking down 13 into 1 and 3 and then performing mathematical operations on 1and 3 is not allowed)
+(1) 144
+(2) 152
+(3) 142
+(4) 138
+= 2
+~ Multiply by 4 and add 8: 18 × 4 + 8 = 80 and 23 × 4 + 8 = 100. So 36 × 4 + 8 = 152.
+
+Q 34 | rea | Analogy & Classification
+UBIP is related to YFMT in a certain way based on the English alphabetical order. In the same way, IPWD is related to MTAH. To which of the following is OVCJ related, following the same logic?
+(1) SZGN
+(2) SMGJ
+(3) SZMG
+(4) SJZM
+= 1
+~ Each letter moves 4 places forward: U→Y, B→F, I→M, P→T, and I→M, P→T, W→A, D→H. For OVCJ: O→S, V→Z, C→G, J→N, giving SZGN.
+
+Q 35 | rea | Coding-Decoding
+In a certain code language, ‘PLAY’ is coded as ‘4831’ and ‘CLAY’ is coded as ‘1824’. What is the code for ‘C’ in that language?
+(1) 4
+(2) 2
+(3) 8
+(4) 1
+= 2
+~ PLAY and CLAY share L, A and Y, and their codes share 8, 1 and 4. The letter left in CLAY is C and the digit left in 1824 is 2, so C = 2.
+
+Q 36 | rea | Arrangement & Puzzles
+Seven people A, B, C, D, E, F and G are sitting around a circular table, facing the center (but not necessarily in the same order). G is sitting third to the left of E. A is sitting to the immediate left of G. D is the immediate neighbour of A and B. F is sitting to the immediate left of C.
+How many people are sitting between F and D when counted from the right of F?
+(1) Three
+(2) Four
+(3) Five
+(4) Two
+= 1
+~ Take E's seat. G is third to E's left, A immediately left of G, and D next to A on the far side; B, D's other neighbour, is then immediately right of E. The two seats left are between G and E: F immediately left of C means C sits next to E and F next to G. Counting right from F: C, E, B, then D — three people sit between them.
+
+Q 37 | rea | Mathematical Operations
+What will come in the place of the question mark (?) in the following equation if ‘–’ and ‘×’ are interchanged and ‘÷’ and ‘+’ are interchanged?
+6 − 8 ÷ 12 + 3 × 9 + 3 ÷ 17 = ?
+(1) 71
+(2) 66
+(3) 56
+(4) 2
+= 2
+~ After interchanging − with × and ÷ with +, the equation becomes 6 × 8 + 12 ÷ 3 − 9 ÷ 3 + 17. By BODMAS: 48 + 4 − 3 + 17 = 66.
+
+Q 38 | rea | Non-verbal Reasoning
+Select the correct mirror image of the given figure when the mirror is placed at MN as shown below.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/mts24d-q38.png
+~ A mirror on the right reverses the order of the characters and flips each one left to right: '>>' becomes '<<', the 2s turn backwards, d becomes b and R turns back to front. Reading the image from the left: << then the two reversed 2s, b, the reversed R, and >>. Option 4 shows this; option 2 ends in '<<'.
+
+Q 39 | rea | Non-verbal Reasoning
+Select the figure that will come next in the following figure series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 1
+! img/mts24d-q39.png
+~ The four circles stay the same while the small key-shaped attachment moves one corner clockwise each time: top-left, top-right, bottom-right, so next bottom-left. Option 1 has the same key shape at the bottom-left; option 2 has only a plain small circle and option 4 adds a shaded part.
+
+Q 40 | rea | Non-verbal Reasoning
+Select the figure given in the options which when put in place of the question mark (?) will logically complete the series.
+(1) Figure 1
+(2) Figure 2
+(3) Figure 3
+(4) Figure 4
+= 4
+! img/mts24d-q40.png
+~ The four corner symbols move one corner clockwise each time (the + goes top-left, top-right, bottom-right), and each arrow also turns 90° anticlockwise as it moves; the two dots stay. In the fourth figure: # top-left, + bottom-left, the white arrow pointing down at top-right and the black arrow pointing right at bottom-right — option 4.
+
+Q 41 | ih | Modern India
+After which of the following Acts did India come to be governed in the name of the British crown?
+(1) Charter Act of 1833
+(2) Charter Act of 1853
+(3) Government of India Act, 1858
+(4) Government of India Act, 1919
+= 3
+~ After the Revolt of 1857, the Government of India Act, 1858 ended the East India Company's rule and transferred power to the British Crown. A Secretary of State for India was created and the Governor-General became the Viceroy.
+
+Q 42 | cur | Sports
+Who was the Indian match referee in the ICC - T20 World Cup 2021 tournament?
+(1) Venkatesh Prasad
+(2) Sunil Gavaskar
+(3) Rahul Dravid
+(4) Javagal Srinath
+= 4
+~ Former India fast bowler Javagal Srinath, a member of the ICC Elite Panel of Match Referees, was a match referee at the ICC Men's T20 World Cup 2021 in the UAE and Oman.
+
+Q 43 | eco | Planning, Growth & Budget
+In general, deficit is considered as a ________ concept.
+(1) flow
+(2) surplus
+(3) margin
+(4) stock
+= 1
+~ A deficit is measured over a period of time (for example, the fiscal deficit of a year), so it is a flow concept. Debt is a stock concept: it is the total at a point of time, built up from past deficits.
+
+Q 44 | cur | Static GK & Culture
+Which of the following dances of Goa is performed to celebrate the victory of the Maratha warriors over the Portuguese?
+(1) Goff
+(2) Morulem
+(3) Zemmado
+(4) Ghodemodni
+= 4
+~ Ghodemodni (horse dance) is a folk dance of Goa performed by men wearing dummy horses, celebrating the victory of the Maratha warriors over the Portuguese.
+
+Q 45 | geo | Indian Geography
+What is the approx width of broad-gauge railway network in India?
+(1) 1.3 metres
+(2) 1.2 metres
+(3) 1.6 metres
+(4) 1 metre
+= 3
+~ India's broad gauge is 1,676 mm (5 ft 6 in) between the rails, about 1.6 metres. Metre gauge is 1,000 mm and narrow gauge 762 mm or 610 mm.
+
+Q 46 | sci | Biology
+A coastal area was flooded with sea water and resulted in heavy salt deposits in the nearby area. After a few days, it was observed that many plants died. Based on these statements, which of the following is the most probable cause of the plant deaths? A. Plants died due to infection from sea water borne germs.
+B. Plants died due to absence of sunlight.
+C. Plants died due to plasmolysis in the plant cells.
+D. Plants died because they were eaten by sea organisms.
+(1) A
+(2) B
+(3) C
+(4) D
+= 3
+~ Salt deposits make the soil water more concentrated than the cell sap, so water moves out of the plant cells by osmosis. The cell membrane shrinks away from the cell wall (plasmolysis) and the plants wilt and die.
+
+Q 47 | pol | Constitution & Rights
+The Universal Adult Franchise in Indian Constitution is applicable to Indian Citizens from the age of _______________.
+(1) 22 years
+(2) 17 years
+(3) 18 years
+(4) 21 years
+= 3
+~ Under Article 326, elections are held on the basis of adult suffrage. The 61st Amendment Act, 1988 lowered the voting age from 21 to 18 years.
+
+Q 48 | eco | Schemes & Welfare
+The PM-SVANidhi Scheme (2020) is run by which Ministry of the Government of India?
+(1) Ministry of Rural Development
+(2) Ministry of Housing and Urban Affairs
+(3) Ministry of Finance
+(4) Ministry of Labour and Employment
+= 2
+~ PM SVANidhi (PM Street Vendor's AtmaNirbhar Nidhi), launched in June 2020, gives street vendors small collateral-free working-capital loans. It is run by the Ministry of Housing and Urban Affairs.
+
+Q 49 | cur | Sports
+In which stadium did Indian cricketer Saurav Ganguly take off and waive his t-shirt?
+(1) The Melbourne Cricket Ground, Australia
+(2) Cape Town Stadium, South Africa
+(3) Perth Stadium, Australia
+(4) Lord’s Stadium, England
+= 4
+~ Sourav Ganguly took off his shirt and waved it from the balcony of Lord's, London, after India won the NatWest Series final against England in July 2002.
+
+Q 50 | ih | Modern India
+Who was appointed as the Viceroy of India in place of Lord Wavell in February 1947?
+(1) Lord Irwin
+(2) Lord Linlithgow
+(3) Lord Willingdon
+(4) Lord Mountbatten
+= 4
+~ In February 1947 Prime Minister Attlee announced that Lord Mountbatten would replace Lord Wavell as Viceroy; Mountbatten took charge in March 1947 and oversaw the transfer of power.
+
+Q 51 | eco | Agriculture, Industry & Trade
+Which of the following age groups is considered as working population or working age in India?
+(1) 25-65 years
+(2) 15-40 years
+(3) 15-59 years
+(4) 0-60 years
+= 3
+~ In India the working-age population is usually taken as people aged 15–59 years. Those below 15 and 60 and above are treated as the dependent population.
+
+Q 52 | ih | Medieval India
+The Bidar Fort of Karnataka is irregularly ______ in shape.
+(1) rectangular
+(2) circular
+(3) square
+(4) rhomboid
+= 4
+~ Bidar Fort in Karnataka, rebuilt by the Bahmani Sultan Ahmad Shah Wali in the 15th century, is irregular rhomboid in shape, with a triple moat on parts of its circuit.
+
+Q 53 | pol | Judiciary & Constitutional Bodies
+When was National Judicial Commission Bill, which is a private member bill to regulate the appointment of judges through the National Judicial Commission, introduced in Rajya Sabha?
+(1) August 2023
+(2) July 2023
+(3) March 2022
+(4) December 2022
+= 4
+~ The National Judicial Commission Bill, 2022, a private member's bill to regulate the appointment of judges through a National Judicial Commission, was introduced in the Rajya Sabha in December 2022.
+
+Q 54 | cur | Static GK & Culture
+Which musical duo is part of the Khayal singing lineage of the Banaras Gharana?
+(1) Salamat Ali and Nazakat Ali Khan
+(2) Rajan and Sajan Mishra
+(3) Subhan Kasim and Subhan Bab
+(4) Sandhya and Prasun Banerjee
+= 2
+~ Rajan and Sajan Mishra, brothers from Varanasi, were khayal singers of the Banaras gharana. They received the Padma Bhushan in 2007.
+
+Q 55 | ih | Ancient India
+Who among the following deciphered the Brahmi Script of the Mauryan period?
+(1) Rakhal Das Banerji
+(2) Herbert Hope Risley
+(3) James Prinsep
+(4) James Mill
+= 3
+~ James Prinsep, an official of the Asiatic Society of Bengal, deciphered the Brahmi script in 1837, which made Ashoka's inscriptions readable.
+
+Q 56 | geo | Indian Geography
+According to Indian Meteorology, which of the following is NOT a season experienced in India?
+(1) The hot weather season
+(2) The southwest monsoon season
+(3) Equatorial season
+(4) The cold weather season
+= 3
+~ The India Meteorological Department recognises four seasons: the cold weather season, the hot weather season, the southwest monsoon season and the retreating (post-) monsoon season. 'Equatorial season' is not one of them.
+
+Q 57 | sci | Biology
+Which of the following can be a basis of difference between a salamander and a house-wall lizard apart from their habitat?
+(1) Scales on the skin
+(2) Three-chambered heart
+(3) Cold-blood
+(4) Egg-laying feature
+= 1
+~ A salamander is an amphibian with smooth, moist, scaleless skin, while a house-wall lizard is a reptile with dry, scaly skin. Both are cold-blooded, both lay eggs and both have three-chambered hearts, so scales are the real difference.
+
+Q 58 | sci | Chemistry
+The IUPAC name of CH₃-(CH₂)₁₈-CH₃ is ________.
+(1) icosane
+(2) dodecane
+(3) decane
+(4) triacontane
+= 1
+~ The molecule has 1 + 18 + 1 = 20 carbon atoms in a straight chain (C₂₀H₄₂), an alkane named icosane (eicosane). Decane has 10 carbons, dodecane 12 and triacontane 30.
+
+Q 59 | pol | Judiciary & Constitutional Bodies
+A party recognised by the Election Commission of India that secures at least ________ of the total votes in the General Election to Lok Sabha or Legislative Assembly in four or more states in addition to winning four Lok Sabha seats is called a National Party.
+(1) eight per cent
+(2) one per cent
+(3) six per cent
+(4) three per cent
+= 3
+~ Under the Election Symbols Order, one way to be a national party is to win at least 6% of the valid votes in four or more states in a Lok Sabha or Assembly election plus at least four Lok Sabha seats.
+
+Q 60 | cur | Static GK & Culture
+Hornbill festival is organised every year in which of the following states?
+(1) Goa
+(2) Sikkim
+(3) Tripura
+(4) Nagaland
+= 4
+~ The Hornbill Festival, the 'festival of festivals', is held in Nagaland every year from 1 to 10 December at Kisama Heritage Village near Kohima.
+
+Q 61 | cur | Awards, Books & Persons
+Which of the following novels is NOT written by Aravind Adiga?
+(1) Selection Day
+(2) Last Man in Tower
+(3) The English Teacher
+(4) The White Tiger
+= 3
+~ 'The English Teacher' (1945) is a novel by R. K. Narayan. Aravind Adiga wrote 'The White Tiger' (Booker Prize 2008), 'Last Man in Tower' and 'Selection Day'.
+
+Q 62 | ih | Medieval India
+The Mughal emperor, Babur was a devotee of the ______Sufi Silsila.
+(1) Qadri
+(2) Chisti
+(3) Suhrawardi
+(4) Naqshbandi
+= 4
+~ Babur was a follower of the Naqshbandi Sufi order, which came to India with the Mughals. Akbar was close to the Chishti saint Salim Chishti.
+
+Q 63 | geo | Indian Geography
+Bawris are traditionally used for:
+(1) getting petroleum oil
+(2) collecting garbage
+(3) getting useful minerals
+(4) storing and recharging water
+= 4
+~ Bawris (baolis) are stepwells, found especially in Rajasthan, Gujarat and Delhi, built to store rainwater and recharge groundwater; steps lead down to the water level.
+
+Q 64 | cur | Awards, Books & Persons
+Which of the following Kathak dancers received the Padma Shri of 2022?
+(1) Kamalini and Nalini Asthana
+(2) Shovana Narayan
+(3) Sunayana Hazarlal Agrawal
+(4) Shakti and Mukti Mohan
+= 1
+~ The Kathak dancer sisters Kamalini Asthana and Nalini Asthana of the Banaras gharana received the Padma Shri in 2022.
+
+Q 65 | cur | Awards, Books & Persons
+At the Sansad Ratna Awards 2023, who among the following received the Dr. APJ Abdul Kalam Lifetime Achievement Award?
+(1) HD Deve Gowda
+(2) Laxminarayan Yadav
+(3) Nagendra Singh
+(4) TK Rangarajan
+= 4
+~ At the Sansad Ratna Awards 2023, former Rajya Sabha MP T. K. Rangarajan (CPI-M) received the Dr A. P. J. Abdul Kalam Lifetime Achievement Award.
+
+Q 66 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+He dropped out / at his friend's house / on his way home / the day before yesterday.
+(1) at his friend's house
+(2) on his way home
+(3) He dropped out
+(4) the day before yesterday
+= 3
+~ To 'drop out' means to leave a course or race; a short unplanned visit is 'drop in': He dropped in at his friend's house on his way home the day before yesterday.
+
+Q 67 | eng | Idioms & One-word Substitution
+Select the most appropriate expression that can substitute the underlined word in the given sentence.
+Sonali is "contemplating" whether to accept the offer from Saanvi or not; she is still not in a position to be able to arrive at a decision.
+(1) chewing the cud
+(2) blowing hot and cold
+(3) getting her act together
+(4) raising the eyebrows
+= 1
+~ To 'chew the cud' means to think deeply about something before deciding, which matches 'contemplating'. Blowing hot and cold means keep changing one's mind, getting one's act together means getting organised, and raising eyebrows shows surprise.
+
+Q 68 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into parts. One of them may contain an error. Select the part that contains the error from the given options. If you don’t find any error, mark ‘No error’ as your answer.
+I am / cleaning the sofa / when she called me.
+(1) I am
+(2) cleaning the sofa
+(3) No error
+(4) when she called me
+= 1
+~ An action going on when another happened in the past takes the past continuous: I was cleaning the sofa when she called me. So 'I am' is the error.
+
+Q 69 | eng | Spelling
+Select the correctly spelt word to fill in the blank.
+Arvind wanted to bake a cake for Riya's birthday, so he mixed the ______________, eggs and butter.
+(1) flawer
+(2) flover
+(3) flower
+(4) flour
+= 4
+~ Cakes are made with flour (ground grain). 'Flower' is a bloom; 'flawer' and 'flover' are not words.
+
+Q 70 | eng | Spelling
+Select the option that rectifies the spelling error in the given sentence.
+The student received an A+ for her exellent performance.
+(1) perfarmence
+(2) performence
+(3) excelleant
+(4) excellent
+= 4
+~ The misspelt word is 'exellent'; the correct spelling is 'excellent', with -xc-. 'Performance' is spelt correctly in the sentence.
+
+Q 71 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+The __________ of the scientific experiment raised questions about the validity of the results.
+(1) transparency
+(2) verbosity
+(3) ambiguity
+(4) meticulousness
+= 3
+~ Ambiguity (being unclear or open to more than one meaning) is what would raise questions about whether the results are valid. Transparency and meticulousness would increase confidence in the results.
+
+Q 72 | eng | Vocabulary
+Select the most appropriate synonym of the given word.
+Inspire
+(1) Reach
+(2) Aspire
+(3) Stimulate
+(4) Daunt
+= 3
+~ To inspire is to fill someone with the urge or ability to do something, so stimulate is the synonym. Daunt (discourage) is the opposite.
+
+Q 73 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+The teacher checked / whether each of them / have a blanket / as it was a cold night.
+(1) have a blanket
+(2) whether each of them
+(3) as it was a cold night
+(4) The teacher checked
+= 1
+~ 'Each' is singular and the sentence is in the past, so the verb should be 'had': The teacher checked whether each of them had a blanket as it was a cold night.
+
+Q 74 | eng | Error Spotting & Sentence Improvement
+The following sentence has been divided into parts. One of them may contain an error. Select the part that contains the error from the given options. If you don’t find any error, mark ‘No error’ as your answer.
+She is / as more intelligent as / her brothers are.
+(1) her brothers are.
+(2) as more intelligent as
+(3) She is
+(4) No error.
+= 2
+~ Equal comparison uses 'as + adjective + as' without 'more': She is as intelligent as her brothers are.
+
+Q 75 | eng | Spelling
+Select the INCORRECTLY spelt word.
+(1) tentative
+(2) perepharal
+(3) belated
+(4) stringent
+= 2
+~ The correct spelling is 'peripheral' (p-e-r-i-p-h-e-r-a-l). Tentative, belated and stringent are spelt correctly.
+
+Q 76 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the given sentence.
+Raghav, who "studies tourism" at present, is planning to go abroad after his graduation.
+(1) is studying
+(2) will study
+(3) study
+(4) studied
+= 1
+~ 'At present' shows an action going on now, so the present continuous fits: Raghav, who is studying (tourism) at present, is planning to go abroad. 'Will study' and 'studied' are the wrong time, and 'study' does not agree with Raghav.
+
+Q 77 | eng | Vocabulary
+Select the word that has the same meaning (SYNONYM) as the underlined word in the given sentence.
+The disposal of "hazardous" waste in hospitals and factories is a serious problem and needs to be taken care of urgently.
+(1) belligerent
+(2) dangerous
+(3) hazy
+(4) benign
+= 2
+~ Hazardous means risky or harmful, so dangerous is the synonym. Hazy means unclear, belligerent means aggressive and benign means harmless.
+
+Q 78 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+The student leader has _____ politics recently.
+(1) gathered
+(2) jumped
+(3) approached
+(4) entered
+= 4
+~ The usual collocation is 'enter politics', meaning begin a career in politics.
+
+Q 79 | eng | Spelling
+Select the INCORRECTLY spelt word from the given sentence.
+The gardener's meticulous care ensured the vibrent colours of the flowers.
+(1) Gardener's
+(2) Vibrent
+(3) Care
+(4) Meticulous
+= 2
+~ The misspelt word is 'vibrent'; the correct spelling is 'vibrant'. Gardener's, care and meticulous are spelt correctly.
+
+Q 80 | eng | Fill in the Blanks & Cloze Test
+Select the most appropriate option to fill in the blank.
+Please put the dishes in the _________ after you finish eating.
+(1) sink
+(2) sync
+(3) shrink
+(4) cinque
+= 1
+~ Dishes are put in the sink (a basin with a tap) after a meal. 'Sync' and 'cinque' only sound similar, and 'shrink' is a verb.
+
+Q 81 | eng | Idioms & One-word Substitution
+You overhear someone say, "He's always on cloud nine." What does this idiom mean in the given context?
+(1) Always busy
+(2) Extremely happy
+(3) Often absent
+(4) Frequently daydreaming
+= 2
+~ To be 'on cloud nine' means to be extremely happy.
+
+Q 82 | eng | Vocabulary
+Select the most appropriate synonym of ‘scanty’ in the sentence given below. India has varied regions which have excess, moderate and deficient rainfall all through the year.
+(1) Excess
+(2) Moderate
+(3) Varied
+(4) Deficient
+= 4
+~ Scanty means too little or insufficient. In the sentence, 'deficient' (rainfall) has this meaning.
+
+Q 83 | eng | Error Spotting & Sentence Improvement
+The following sentence has been split into four segments. Identify the segment that contains a grammatical error.
+The society / of the / our place / is good.
+(1) The society
+(2) is good
+(3) our place
+(4) of the
+= 4
+~ 'The' and 'our' cannot be used together before a noun. Correct: The society of our place is good.
+
+Q 84 | eng | Error Spotting & Sentence Improvement
+Select the present perfect tense of the verb given in the brackets to fill in the blank. Alex _______ (study) two programming languages.
+(1) have study
+(2) has studied
+(3) had studied
+(4) has been studying
+= 2
+~ The present perfect is has/have + past participle, and Alex is singular: Alex has studied two programming languages.
+
+Q 85 | eng | Error Spotting & Sentence Improvement
+Select the most appropriate option that can substitute the underlined segment in the sentence.
+She was deeply "effected by" the news, to the point of tears.
+(1) affected by
+(2) effected from
+(3) affect from
+(4) affected of
+= 1
+~ 'Affect' (verb) means to influence or move someone emotionally; 'effect' is usually a noun. The passive form takes 'by': She was deeply affected by the news.
+
+Q 86 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+It was one January morning, very early — a pinching, frosty morning — the cove all grey (1)______ hoar-frost and the ripple lapping softly on the stones. The captain had (2)______ earlier than usual and set out down the beach. Mother was upstairs with father and I was (3)______ the breakfast table against the captain’s return when the parlour door opened and a man stepped in on whom I had never set my eyes before. He was a pale, tallowy creature, wanting two fingers of the left hand, and (4)______ he wore a cutlass, he did not look much like a fighter. I had always my eye open for seafaring (5)______ with one leg or two, and I remember this one puzzled me.
+Select the most appropriate option to fill in blank number 1.
+(1) among
+(2) amongst
+(3) with
+(4) about
+= 3
+~ Something covered by a substance is 'grey with' it: the cove all grey with hoar-frost (white frost).
+
+Q 87 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+It was one January morning, very early — a pinching, frosty morning — the cove all grey (1)______ hoar-frost and the ripple lapping softly on the stones. The captain had (2)______ earlier than usual and set out down the beach. Mother was upstairs with father and I was (3)______ the breakfast table against the captain’s return when the parlour door opened and a man stepped in on whom I had never set my eyes before. He was a pale, tallowy creature, wanting two fingers of the left hand, and (4)______ he wore a cutlass, he did not look much like a fighter. I had always my eye open for seafaring (5)______ with one leg or two, and I remember this one puzzled me.
+Select the most appropriate option to fill in blank number 2.
+(1) written
+(2) waltzed
+(3) risen
+(4) danced
+= 3
+~ The captain got up earlier than usual: 'had risen' is the past perfect of 'rise' (get up). Written, waltzed and danced do not fit.
+
+Q 88 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+It was one January morning, very early — a pinching, frosty morning — the cove all grey (1)______ hoar-frost and the ripple lapping softly on the stones. The captain had (2)______ earlier than usual and set out down the beach. Mother was upstairs with father and I was (3)______ the breakfast table against the captain’s return when the parlour door opened and a man stepped in on whom I had never set my eyes before. He was a pale, tallowy creature, wanting two fingers of the left hand, and (4)______ he wore a cutlass, he did not look much like a fighter. I had always my eye open for seafaring (5)______ with one leg or two, and I remember this one puzzled me.
+Select the most appropriate option to fill in blank number 3.
+(1) throwing
+(2) laying
+(3) playing
+(4) lying
+= 2
+~ To 'lay the table' means to set it for a meal; 'laying' is the -ing form. 'Lying' comes from 'lie' (rest), which takes no object.
+
+Q 89 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+It was one January morning, very early — a pinching, frosty morning — the cove all grey (1)______ hoar-frost and the ripple lapping softly on the stones. The captain had (2)______ earlier than usual and set out down the beach. Mother was upstairs with father and I was (3)______ the breakfast table against the captain’s return when the parlour door opened and a man stepped in on whom I had never set my eyes before. He was a pale, tallowy creature, wanting two fingers of the left hand, and (4)______ he wore a cutlass, he did not look much like a fighter. I had always my eye open for seafaring (5)______ with one leg or two, and I remember this one puzzled me.
+Select the most appropriate option to fill in blank number 4.
+(1) throw
+(2) through
+(3) threw
+(4) though
+= 4
+~ 'Though' (although) shows contrast: though he wore a cutlass, he did not look much like a fighter. 'Through' and 'threw' are look-alike words.
+
+Q 90 | eng | Fill in the Blanks & Cloze Test
+In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.
+It was one January morning, very early — a pinching, frosty morning — the cove all grey (1)______ hoar-frost and the ripple lapping softly on the stones. The captain had (2)______ earlier than usual and set out down the beach. Mother was upstairs with father and I was (3)______ the breakfast table against the captain’s return when the parlour door opened and a man stepped in on whom I had never set my eyes before. He was a pale, tallowy creature, wanting two fingers of the left hand, and (4)______ he wore a cutlass, he did not look much like a fighter. I had always my eye open for seafaring (5)______ with one leg or two, and I remember this one puzzled me.
+Select the most appropriate option to fill in blank number 5.
+(1) birds
+(2) men
+(3) plants
+(4) flowers
+= 2
+~ The narrator watched out for seafaring men 'with one leg or two', so 'men' is the only word that fits.
