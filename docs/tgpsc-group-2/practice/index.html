@@ -1360,7 +1360,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     const no = id.split("-").pop();
     const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
     const mname = mm? mm.name : "Mock " + no;
-    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length};
+    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length, alabel:"Answer"};   // not "Official answer": most mock questions are Learn with Anil's own
     r.questions.forEach(q=>{ if(!q.p) q.p = id; QMAP[q.id] = q; });   // q.p: the mock, so a saved mistake keeps its mock name
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){

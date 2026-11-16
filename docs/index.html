@@ -913,7 +913,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
   <section class="wrap section hub-figs">
     <div class="figures figs6">
       <div class="figure"><div class="v">25,452</div><div class="k" data-i18n="f1">Previous-year questions</div></div>
-      <div class="figure"><div class="v">4,635</div><div class="k" data-i18n="f5">Mock test questions in our test series</div></div>
+      <div class="figure"><div class="v">4,755</div><div class="k" data-i18n="f5">Mock test questions in our test series</div></div>
       <div class="figure fig-goal"><div class="v" data-i18n="g1">1 lakh</div><div class="k" data-i18n="g2">Our goal: 1,00,000 PYQs under one roof</div>
         <div class="goalbar" role="img" aria-label="25,452 of 1,00,000 PYQs so far"><i style="width:25.5%"></i></div>
         <div class="k goal-k" data-i18n="g3">25,452 done so far · 25%</div></div>
@@ -1415,7 +1415,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     const no = id.split("-").pop();
     const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
     const mname = mm? mm.name : "Mock " + no;
-    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length};
+    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length, alabel:"Answer"};   // not "Official answer": most mock questions are Learn with Anil's own
     r.questions.forEach(q=>{ if(!q.p) q.p = id; QMAP[q.id] = q; });   // q.p: the mock, so a saved mistake keeps its mock name
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){
