@@ -1,0 +1,874 @@
+# Paper II Reasoning & Mental Ability (Q1-50) and Mathematics (Q51-100), OPSC Assistant Section Officer (Odisha Secretariat) written exam of 27 August 2022, Advt. No. 26 of 2021-22, Series A (OPSC's own booklet); answers: OPSC's answer key published with the result (9 January 2024)
+
+Q 1 | rea | Verbal Reasoning
+Select the correct option that indicates the arrangement of the given words in the order in which they appear in a telephone directory :
+(I) Krishanmurty
+(II) Krishnamurthy
+(III) Krishnmurthi
+(IV) Krishanmurthy
+(V) Krishnamurti
+(1) (IV), (I), (II), (V), (III)
+(2) (IV), (I), (II), (III), (V)
+(3) (IV), (V), (II), (III), (I)
+(4) (IV), (III), (V), (III), (II)
+= 1
+~ All begin 'Krish'. 'Krisha…' (I, IV) comes before 'Krishn…'; of these, Krishanmurt-h-y (IV) precedes Krishanmurt-y (I). Next, 'Krishna…' (II, V) precedes 'Krishnm…' (III), and Krishnamurt-h-y (II) precedes Krishnamurt-i (V). Order: IV, I, II, V, III.
+
+Q 2 | rea | Verbal Reasoning
+In a certain code language, ‘VIRTUE’ is coded as ‘201’ and ‘TRAGEDY’ is coded as ‘218’. How will ‘PROFANE’ be coded in that language ?
+(1) 570
+(2) 342
+(3) 432
+(4) 456
+= 2
+~ Code = (sum of reverse alphabet positions, A = 26 … Z = 1) × (number of vowels). VIRTUE: 5+18+9+7+6+22 = 67, × 3 vowels = 201. TRAGEDY: 7+9+26+20+22+23+2 = 109, × 2 = 218. PROFANE: 11+9+12+21+26+13+22 = 114, × 3 vowels (O, A, E) = 342.
+
+Q 3 | rea | Non-verbal Reasoning
+Directions (Q. Nos. 3 to 5) :
+One hundred and twenty five cubes of the same size are arranged in the form of a cube on a table. Then a column of five cubes is removed from each of the four corners. All the exposed faces of the rest of the solid (except the face touching the table) are coloured red. Now, answer these questions based on the above statement :
+How many small cubes are there in the solid after the removal of the columns ?
+(1) 120
+(2) 110
+(3) 105
+(4) 100
+= 3
+~ The 125 cubes form a 5 × 5 × 5 cube. Four corner columns of 5 cubes each are removed: 4 × 5 = 20. Cubes left = 125 − 20 = 105.
+
+Q 4 | rea | Non-verbal Reasoning
+Directions (Q. Nos. 3 to 5) :
+One hundred and twenty five cubes of the same size are arranged in the form of a cube on a table. Then a column of five cubes is removed from each of the four corners. All the exposed faces of the rest of the solid (except the face touching the table) are coloured red. Now, answer these questions based on the above statement :
+How many cubes do not have any coloured face ?
+(1) 12
+(2) 24
+(3) 36
+(4) 48
+= 3
+~ A cube is unpainted only if it is not on the top layer and not on any outer side. In each of the lower 4 layers the inner 3 × 3 block (9 cubes) stays hidden — removing the corner columns exposes only edge cubes. So 9 × 4 = 36.
+
+Q 5 | rea | Non-verbal Reasoning
+Directions (Q. Nos. 3 to 5) :
+One hundred and twenty five cubes of the same size are arranged in the form of a cube on a table. Then a column of five cubes is removed from each of the four corners. All the exposed faces of the rest of the solid (except the face touching the table) are coloured red. Now, answer these questions based on the above statement :
+How many cubes have only one red face ?
+(1) 40
+(2) 25
+(3) 20
+(4) 15
+= 2
+~ Top layer: the inner 3 × 3 cubes have only the top face red = 9. Lower 4 layers: only the middle cube of each side (4 per layer) has a single red side face — the others next to a removed corner have two = 4 × 4 = 16. Total = 9 + 16 = 25.
+
+Q 6 | rea | Verbal Reasoning
+David gets on the elevator at the 11th floor of a building and rides up at the rate of 57 floors per minute. At the same time, Albert gets on an elevator at the 51st floor of the same building and rides down at the rate of 63 floors per minute. If they continue travelling at these rates, then at which floor will their paths cross ?
+(1) 19
+(2) 28
+(3) 30
+(4) 37
+= 3
+~ Gap = 51 − 11 = 40 floors; they close it at 57 + 63 = 120 floors per minute, so they meet after 40/120 = 1/3 minute. David then has risen 57 × 1/3 = 19 floors: 11 + 19 = 30th floor (check: 51 − 63/3 = 30).
+
+Q 7 | rea | Verbal Reasoning
+An egg vendor calls on his first customer and sells half his eggs and half an egg. To the second customer, he sells half of what he has left with and half an egg, and to the third customer, he sells half of what he was then left with and half an egg. However, he did not break any egg. If in the end, the vendor was left with three eggs. How many eggs did he have initially ?
+(1) 26
+(2) 31
+(3) 39
+(4) None of these
+= 2
+~ Selling half plus half an egg leaves (x − 1)/2, so work backwards with x = 2 × (left) + 1: before the third sale 2 × 3 + 1 = 7, before the second 2 × 7 + 1 = 15, initially 2 × 15 + 1 = 31.
+
+Q 9 | rea | Non-verbal Reasoning
+Choose the box that is similar to the box formed from the given sheet of paper :
+(1) 1, 2 and 3
+(2) 1, 2 and 4
+(3) 2 and 3
+(4) 2, 3 and 4
+= 4
+~ The four end-tabs fold in to close one face as a 2 × 2 block: half-disc and circle on top, cross and half-disc below. The bottom-right half-disc is the tab of the square-marked flap, so with this face in front the square is on the right face — box 3. Box 2 is the same box given a quarter-turn (square face hidden); box 4 shows three plain faces. Box 1 shows the square on top: impossible.
+! img/s2-q9.png
+
+Q 10 | rea | Verbal Reasoning
+Select the option in which the numbers are related in the same way as are the numbers of the following set, (24, 10, 392) :
+(1) (29, 18, 242)
+(2) (27, 15, 480)
+(3) (26, 12, 369)
+(4) (21, 18, 234)
+= 1
+~ Third number = 2 × (first − second)^2: 2 × (24 − 10)^2 = 2 × 196 = 392. Likewise 2 × (29 − 18)^2 = 2 × 121 = 242. The others give 288, 392 and 18.
+
+Q 11 | rea | Verbal Reasoning
+There are deer and peacocks in a zoo. By counting heads they are 80. The number of their legs is 200. How many peacocks are there ?
+(1) 20
+(2) 30
+(3) 50
+(4) 60
+= 4
+~ If all 80 were peacocks there would be 160 legs. The extra 40 legs come from deer (2 extra legs each), so deer = 20 and peacocks = 80 − 20 = 60.
+
+Q 12 | rea | Verbal Reasoning
+What day of the week was 31st January, 2007 ?
+(1) Tuesday
+(2) Monday
+(3) Thursday
+(4) Wednesday
+= 4
+~ 1 January 2007 was a Monday. 31 January is 30 days later; 30 = 4 weeks + 2 odd days, so it falls 2 days after Monday, i.e. Wednesday.
+
+Q 13 | rea | Verbal Reasoning
+Arrange the following words in the order in which they appear in an English dictionary :
+(I) Meticulous
+(II) Metric
+(III) Method
+(IV) Mettle
+(V) Meter
+(1) (V), (III), (I), (IV), (II)
+(2) (V), (III), (I), (II), (IV)
+(3) (III), (IV), (V), (I), (II)
+(4) (V), (I), (III), (II), (IV)
+= 2
+~ All start with 'Met', so compare the fourth letter: Met-e-r, Met-h-od, Met-i-culous, Met-r-ic, Met-t-le (e < h < i < r < t). Order: Meter, Method, Meticulous, Metric, Mettle = (V), (III), (I), (II), (IV).
+
+Q 14 | rea | Verbal Reasoning
+Rasik walked 20m towards north. Then he turned right and walks 30m. Then he turns right and walks 35m. Then he turns left and walks 15m. Finally he turns left and walks 15m. In which direction and how many metres is he from the starting position ?
+(1) 15m West
+(2) 30m East
+(3) 30m West
+(4) 45m East
+= 4
+~ Moves: 20 m north, right → 30 m east, right → 35 m south, left → 15 m east, left → 15 m north. North–south: 20 − 35 + 15 = 0. East: 30 + 15 = 45 m. So he is 45 m East of the start.
+
+Q 15 | rea | Verbal Reasoning
+How is ‘sure’ written in a code language ?
+I. ‘he is sure’ written as ‘ja ha main in that code language
+II. ‘is she sure’ written as ‘Ka ja main in that code language
+(1) Ja
+(2) Ja or ma
+(3) Ma
+(4) Ha
+= 2
+~ The codes are ‘ja ha ma’ and ‘ka ja ma’ (the printed 'main' is 'ma' + 'in'). The common words 'is' and 'sure' share the common codes 'ja' and 'ma', so 'sure' can be either 'ja' or 'ma' — it cannot be fixed from these two statements.
+
+Q 16 | rea | Verbal Reasoning
+Pointing to a woman, Nirmal said, “She is the daughter of my wife’s grandmother’s only child”. How is the woman related to Nirmal if she is not the wife of Nirmal ?
+(1) Wife
+(2) Sister-in-law
+(3) Sister
+(4) None of these
+= 2
+~ The only child of the wife's grandmother is the wife's parent. That parent's daughter is either the wife herself or the wife's sister. Since she is not his wife, she is his wife's sister, i.e. Nirmal's sister-in-law.
+
+Q 17 | rea | Verbal Reasoning
+IF ZIP = 198 and ZAP = 246, then how will you code VIP ?
+(1) 174
+(2) 222
+(3) 888
+(4) 990
+= 1
+~ Code = 6 × (first + last − middle letter), using alphabet positions. ZIP: 6 × (26 + 16 − 9) = 198; ZAP: 6 × (26 + 16 − 1) = 246; VIP: 6 × (22 + 16 − 9) = 174. (The examples also fit 6 × (sum of reverse positions + 3), giving 222 — the answer in many books; OPSC's revised final key is 174.)
+
+Q 18 | rea | Verbal Reasoning
+Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
+Rani and Shreshtha are a married couple having two daughters, Medha and Deepti. Deepti is married to Anurag who is the son of Garima and Tarun. Nidhi is the daughter of Anurag. Komal, who is Anurag’s sister, is married to Harshit and has two sons, Aman and Prem. Prem is the grandson of Garima and Tarun.
+What is the relationship between Aman and Nidhi ?
+(1) Cousins
+(2) Husband-Wife
+(3) Father-Daughter
+(4) Uncle-Niece
+= 1
+~ Aman is the son of Komal, and Nidhi is the daughter of Anurag. Komal and Anurag are sister and brother, so their children Aman and Nidhi are cousins.
+
+Q 19 | rea | Verbal Reasoning
+Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
+Rani and Shreshtha are a married couple having two daughters, Medha and Deepti. Deepti is married to Anurag who is the son of Garima and Tarun. Nidhi is the daughter of Anurag. Komal, who is Anurag’s sister, is married to Harshit and has two sons, Aman and Prem. Prem is the grandson of Garima and Tarun.
+How is Komal related to Deepti ?
+(1) Aunt
+(2) Sister-in-law
+(3) Sister
+(4) None of these
+= 2
+~ Deepti is married to Anurag, and Komal is Anurag's sister. The husband's sister is one's sister-in-law.
+
+Q 20 | rea | Verbal Reasoning
+Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
+Rani and Shreshtha are a married couple having two daughters, Medha and Deepti. Deepti is married to Anurag who is the son of Garima and Tarun. Nidhi is the daughter of Anurag. Komal, who is Anurag’s sister, is married to Harshit and has two sons, Aman and Prem. Prem is the grandson of Garima and Tarun.
+Which of the following is true ?
+(1) Tarun is Deepti’s maternal uncle
+(2) Aman is the son of Medha
+(3) Garima is Harshit’s mother-in-law
+(4) Nidhi is cousin of Komal
+= 3
+~ Komal is the daughter of Garima and Tarun (she is Anurag's sister) and is married to Harshit, so Garima is Harshit's mother-in-law. Tarun is Deepti's father-in-law, Aman is Komal's son, and Nidhi is Komal's niece.
+
+Q 21 | rea | Verbal Reasoning
+In a cetain code, MOTHER is written as ONHURF. How will ANSWER be written in that code ?
+(1) NBXSSE
+(2) NBWRRF
+(3) MAVSPE
+(4) NBWTRF
+= 4
+~ Split the word into pairs, swap each pair and move the second letter of each swapped pair one step forward: MO-TH-ER → OM-HT-RE → ON-HU-RF. Likewise AN-SW-ER → NA-WS-RE → NB-WT-RF = NBWTRF.
+
+Q 22 | rea | Verbal Reasoning
+Find the odd one out :
+(1) Platform
+(2) Dock
+(3) Bus-stand
+(4) Park
+= 4
+~ A platform (trains), a dock (ships) and a bus-stand (buses) are places where vehicles stop to pick up and drop passengers or goods. A park is a recreation ground, so it is the odd one out.
+
+Q 23 | rea | Verbal Reasoning
+Find the odd one out :
+(1) Lion
+(2) Tiger
+(3) Fox
+(4) Deer
+= 4
+~ Lion, tiger and fox are flesh-eating predators (all belong to the order Carnivora), while the deer is a plant-eating herbivore. So Deer is the odd one out.
+
+Q 24 | rea | Verbal Reasoning
+A doctor said to his compounder “I go to see the patients at their residence after every 3 hours 30 minutes. I have already gone to the patient 1 hour 20 minutes ago and next time I shall go at 1 : 40 P.M.” At what time this information was given to the compounder by the doctor ?
+(1) 11 : 30 A. M.
+(2) 11 : 20 A. M.
+(3) 10 : 10 A. M.
+(4) None of these
+= 1
+~ Last visit = next visit − 3 h 30 min = 1:40 P.M. − 3:30 = 10:10 A.M. He spoke 1 h 20 min after that visit: 10:10 + 1:20 = 11:30 A.M.
+
+Q 25 | rea | Verbal Reasoning
+If in the word SEPTUAGENARIAN first three and then next three letters are written in reverse order and the rest of the letters are written as they appear in English alphabet, the positions of how many letters get changed in the new arrangement ?
+(1) Nil
+(2) 2
+(3) 10
+(4) 12
+= 4
+~ SEP → PES, TUA → AUT, and GENARIAN in alphabetical order → AAEGINNR. New word: PESAUTAAEGINNR against SEPTUAGENARIAN. Only E (2nd) and U (5th) stay in place, so 14 − 2 = 12 letters change position.
+
+Q 26 | rea | Non-verbal Reasoning
+How many rhombuses are in the figure ?
+(1) 16
+(2) 13
+(3) 14
+(4) 17
+= 3
+~ Treat the figure as a 4 × 4 grid with four 1 × 2 strips not divided. Smallest rhombuses: 8 (4 in the centre + 4 around it). Rhombuses made of 2 × 2 small ones: 5 (the central one and one in each corner whose sides are all drawn). 3 × 3: none, as each has a missing side. The whole figure: 1. Total = 8 + 5 + 1 = 14.
+! img/s2-q26.png
+
+Q 27 | rea | Non-verbal Reasoning
+What is the minimum number of different colours required to paint the given figure such that no two adjacent regions have the same colour ?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 1
+~ Colour the centre circle 1 and the plain ring around it 2. The next ring has 6 pieces (an even number), so they alternate colours 1 and 3; the next plain ring is again 2, and the 8 pieces of the outer ring alternate 1 and 3. Two neighbouring pieces and the ring touching both need three different colours, so the minimum is 3.
+! img/s2-q27.png
+
+Q 28 | rea | Verbal Reasoning
+Seven years from now, Anamika will be as old as Malini was 4 years ago. Srinidhi was born 2 years ago. The average age of Anamika, Malini and Srinidhi 10 years from now will be 33 years. What is the present age of Anamika ?
+(1) 30 years
+(2) 31 years
+(3) 29 years
+(4) 28 years
+= 4
+~ Let Anamika be A now. A + 7 = Malini − 4, so Malini = A + 11; Srinidhi = 2. In 10 years the total is 3 × 33 = 99, so present total = 99 − 30 = 69. A + (A + 11) + 2 = 69 → 2A = 56 → A = 28 years.
+
+Q 29 | rea | Verbal Reasoning
+Nurture : Neglect :: Denigrate : ?
+(1) Reveal
+(2) Extol
+(3) Recognise
+(4) CalumInate
+= 2
+~ Nurture (care for) and neglect are opposites. Denigrate means to criticise unfairly or belittle; its opposite is extol, to praise highly.
+
+Q 30 | rea | Verbal Reasoning
+Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
+1, 3, 12, 25, 48 :
+(1) 3
+(2) 12
+(3) 25
+(4) 48
+= 3
+~ The terms from 3 onwards are 3 × 1², 3 × 2², 3 × 3², 3 × 4² = 3, 12, 27, 48 (the gaps 9, 15, 21 grow by 6). The fourth term should be 27, so 25 is the wrong term.
+
+Q 31 | rea | Verbal Reasoning
+Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
+105, 85, 60, 30, 0, −45, −90 :
+(1) 105
+(2) 60
+(3) 0
+(4) −45
+= 3
+~ The differences should be −20, −25, −30, −35, −40, −45: 105, 85, 60, 30, −5, −45, −90. So 0 is wrong; it should be −5.
+
+Q 32 | rea | Verbal Reasoning
+Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
+325, 259, 204, 160, 127, 105, 96 :
+(1) 325
+(2) 127
+(3) 105
+(4) 96
+= 4
+~ The differences are −66, −55, −44, −33, −22, so the next should be −11: 105 − 11 = 94. Hence 96 is the wrong term.
+
+Q 33 | rea | Verbal Reasoning
+Latex is related to Rubber as Flax is to ______.
+(1) Linen
+(2) Wool
+(3) Jute
+(4) Cotton
+= 1
+~ Rubber is made from latex, the milky sap of the rubber tree. In the same way, linen is the cloth made from the fibres of the flax plant.
+
+Q 34 | rea | Verbal Reasoning
+In a certain code language, “GOAT” is written as “45” and “COAT” is written as “41”. How is “BOAT” written in that code language ?
+(1) 40
+(2) 41
+(3) 42
+(4) 43
+= 1
+~ Code = sum of alphabet positions + 2. GOAT: 7 + 15 + 1 + 20 = 43, + 2 = 45. COAT: 3 + 15 + 1 + 20 = 39, + 2 = 41. BOAT: 2 + 15 + 1 + 20 = 38, + 2 = 40.
+
+Q 35 | rea | Verbal Reasoning
+In a certain code language, TUTORIAL is written as DODNGLCF and DANCE is written as YCJMZ, how is EDUCATION written in that code ?
+(1) ZYMODCLNJ
+(2) ZYOMCDLNJ
+(3) ZYOMDCLNJ
+(4) ZYOTNLCMD
+= 2
+~ Each letter has a fixed substitute: T = D, U = O, O = N, R = G, I = L, A = C, L = F, D = Y, N = J, C = M, E = Z. So E-D-U-C-A-T-I-O-N → Z-Y-O-M-C-D-L-N-J = ZYOMCDLNJ.
+
+Q 36 | rea | Verbal Reasoning
+The door of Aditya’s house faces the East. From the back side of his house, he walks straight 50 meters, then turns to the right and walks 50 meters again. Finally, he turns towards left and stops after walking 25 meters. Now, Aditya is in which direction from the starting point ?
+(1) South-East
+(2) North-East
+(3) South-West
+(4) North-West
+= 4
+~ The back of an east-facing house is on the west, so he walks 50 m West. Turning right he goes 50 m North, then turning left 25 m West. He ends 75 m West and 50 m North of the start, i.e. North-West.
+
+Q 37 | rea | Verbal Reasoning
+A man is facing towards West and turns through 45° clock-wise, again 180° clock-wise and then turns through 270° anti clock-wise. In which direction is he facing now ?
+(1) West
+(2) North-West
+(3) North
+(4) South-West
+= 4
+~ Net turn = 45° + 180° clockwise − 270° anticlockwise = 45° anticlockwise. Turning 45° anticlockwise from West (towards South) gives South-West.
+
+Q 38 | rea | Verbal Reasoning
+In a row of thirty boys, R is 4th from right end and W is 10th from the left end. How many boys are there between R and W ?
+(1) 15
+(2) 16
+(3) 17
+(4) Cannot be determined
+= 2
+~ R is 4th from the right, so 30 − 4 + 1 = 27th from the left. W is 10th from the left. Boys between them = 27 − 10 − 1 = 16.
+
+Q 39 | rea | Non-verbal Reasoning
+How many cubes are there in the figure ?
+(1) 15
+(2) 9
+(3) 12
+(4) 8
+= 1
+~ Count layer by layer, including hidden supporting cubes. Bottom layer: 3 × 3 = 9. Middle layer: a plus-shaped group of 5 (a centre cube with one cube on each of its four sides; the corners are empty, so the bottom corner cubes show their tops). Top: 1 cube on the centre. Total = 9 + 5 + 1 = 15.
+! img/s2-q39.png
+
+Q 40 | rea | Non-verbal Reasoning
+Three positions of a dice are given. Find out which number is found opposite the number 2 in the given cube ?
+(1) 6
+(2) 5
+(3) 3
+(4) 1
+= 1
+~ From the first two positions, 6 is adjacent to 1, 4, 5 and 3. A face cannot be adjacent to its opposite, so the only number left, 2, is opposite 6.
+! img/s2-q40.png
+
+Q 41 | rea | Verbal Reasoning
+Directions (Q. Nos. 41 & 42) : These questions are based on five words given below :
+THE MOD CPU RAM SHE
+If the third alphabet in each of the word is changed to the next alphabet in English alphabetical order, how many words thus formed have more than two vowel ?
+(1) None
+(2) One
+(3) Two
+(4) Three
+= 2
+~ Changing the third letter gives THF, MOE, CPV, RAN and SHF. Only MOE has two vowels (O, E); none has more than two, so on the printed wording the answer would be 'None'. OPSC's key 'One' counts MOE, as if the question asked for 'more than one vowel'. (Official OPSC key; some sources differ.)
+
+Q 45 | rea | Verbal Reasoning
+Nandini is the only daughter of Madan’s sister Sangita’s brother. How is Nandini related to Madan ?
+(1) Daughter
+(2) Niece
+(3) Cousin
+(4) Niece or Daughter
+= 4
+~ Sangita's brother may be Madan himself or another brother of Madan. So Nandini is either Madan's daughter or his niece; the relation cannot be fixed to one, hence 'Niece or Daughter'.
+
+Q 46 | rea | Non-verbal Reasoning
+Choose the alternative which closely resembles the mirror image of the given combination :
+TARAIN1014A
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ A mirror reverses the order of the characters and flips each one left to right (A, T, I and 0 look the same): A, 4, 1, 0, 1, N, I, A, R, A, T, with 4, 1, N and R laterally inverted. Alternative (IV) shows exactly this; (I) has the T upside down, and (II) and (III) change the order.
+! img/s2-q46.png
+
+Q 47 | rea | Non-verbal Reasoning
+Choose the correct water image of the question figure, from the given answer figures (assume that water is along XY) :
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ A water image flips the figure upside down (top ↔ bottom) while left and right stay the same. The arrow pointing to the top-right corner now points to the bottom-right, and the shaded corners move from top-left/bottom-right to bottom-left/top-right — as in figure (1).
+! img/s2-q47.png
+
+Q 48 | rea | Non-verbal Reasoning
+Choose the correct mirror image from the answer figures (a), (b), (c) and (d) :
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ A mirror image swaps left and right but keeps top and bottom. The dot moves from the top-right to the top-left corner and the shaded part of the spade moves from its left lobe to its right lobe, with the spade still upright — figure (a). (b) and (c) are upside down; (d) keeps the dot on the right.
+! img/s2-q48.png
+
+Q 49 | rea | Non-verbal Reasoning
+How many rectangles are there in the given diagram ?
+(1) 20
+(2) 26
+(3) 21
+(4) 14
+= 1
+~ The figure is an upright square cut into four, plus a tilted cross: a central square with a rectangle on each of its sides. Upright part: 4 quarters + 4 halves + 1 whole = 9. Tilted part: 5 single pieces + 4 (centre + one arm) + 2 (arm + centre + arm, in each direction) = 11. Total = 9 + 11 = 20 (squares count as rectangles).
+! img/s2-q49.png
+
+Q 50 | rea | Verbal Reasoning
+A clock seen through a mirror show quarter past three. What is the correct time shown by the clock ?
+(1) 9 : 45
+(2) 9 : 15
+(3) 8 : 45
+(4) 3 : 15
+= 3
+~ For a mirror image of a clock, actual time = 11:60 − mirror time. Quarter past three is 3:15, so the actual time = 11:60 − 3:15 = 8:45.
+
+Q 51 | math | Arithmetic
+1/(1.3) + 1/(3.5) + 1/(5.7) + 1/(7.9) = ?
+(1) 5/11
+(2) 6/11
+(3) 9/4
+(4) 4/9
+= 4
+~ Here '1.3' means 1 × 3, etc. Each term splits as 1/(a × b) = (1/2)(1/a − 1/b), so the sum telescopes: (1/2)(1 − 1/3 + 1/3 − 1/5 + 1/5 − 1/7 + 1/7 − 1/9) = (1/2)(1 − 1/9) = (1/2)(8/9) = 4/9.
+
+Q 52 | math | Arithmetic
+Determine the smallest 3-digit number which is exactly divisible by 6 and 12 ?
+(1) 96
+(2) 84
+(3) 108
+(4) 120
+= 3
+~ A number divisible by both 6 and 12 must be a multiple of their LCM, 12. The smallest 3-digit multiple of 12 is 12 × 9 = 108 (12 × 8 = 96 has only two digits).
+
+Q 53 | math | Arithmetic
+What is the HCF of 1/5, 2/7 and 3/11 ?
+(1) 1/385
+(2) 6
+(3) 1/35
+(4) 5/77
+= 1
+~ HCF of fractions = HCF of numerators ÷ LCM of denominators = HCF(1, 2, 3)/LCM(5, 7, 11) = 1/385.
+
+Q 54 | math | Arithmetic
+0.03 × 0.0165 is equal to :
+(1) 4.95 × 10^-3
+(2) 4.95 × 10^-4
+(3) 4.95 × 10^-5
+(4) 4.95 × 10^-6
+= 2
+~ 3 × 165 = 495, and the factors have 2 + 4 = 6 decimal places, so 0.03 × 0.0165 = 0.000495 = 4.95 × 10^-4.
+
+Q 55 | math | Algebra & Geometry
+[(799 + 267)^2 − (799 − 267)^2] / (799 × 267) = ?
+(1) 532
+(2) 1066
+(3) 2
+(4) 4
+= 4
+~ Use (a + b)^2 − (a − b)^2 = 4ab. With a = 799 and b = 267 the numerator is 4 × 799 × 267, so the value is 4ab/ab = 4.
+
+Q 56 | math | Arithmetic
+0.68 (with 68 recurring) + 0.73 (with 73 recurring) = ?
+(1) 1.41 (with 41 recurring)
+(2) 1.42 (with 42 recurring)
+(3) 0.141 (with 141 recurring)
+(4) None of these
+= 2
+~ A pure recurring decimal with two repeating digits ab equals ab/99. So 0.6868... + 0.7373... = 68/99 + 73/99 = 141/99 = 1 + 42/99 = 1.4242..., i.e. 1.42 with 42 recurring.
+
+Q 57 | math | Arithmetic
+Two numbers are 20% and 40% more than the third number respectively. The ratio of first and second number is :
+(1) 7 : 6
+(2) 7 : 5
+(3) 6 : 7
+(4) 5 : 7
+= 3
+~ Let the third number be 100. Then the first is 120 and the second is 140, so the ratio is 120 : 140 = 6 : 7.
+
+Q 58 | math | Arithmetic
+A fruit seller had some oranges. He sells 30% oranges and still has 140 oranges. Originally he had :
+(1) 140 oranges
+(2) 420 oranges
+(3) 200 oranges
+(4) 60 oranges
+= 3
+~ After selling 30%, 70% of the oranges remain. 70% of x = 140, so x = 140 × 100/70 = 200 oranges.
+
+Q 59 | math | Arithmetic
+11 oranges are bought for Rs. 10 and 10 oranges for Rs. 11. What is the gain in percentage ?
+(1) 11%
+(2) 21%
+(3) 25%
+(4) 28%
+= 2
+~ Cost price per orange = Rs. 10/11 and selling price per orange = Rs. 11/10. SP/CP = (11/10) × (11/10) = 121/100, so the gain is 21%.
+
+Q 60 | math | Arithmetic
+The difference between Compound Interest and Simple Interest for 2 years at 5% per annum is Rs. 2.50. Find the sum :
+(1) 500
+(2) 1500
+(3) 1000
+(4) None of these
+= 3
+~ For 2 years, CI − SI = P(R/100)^2. So 2.50 = P × (5/100)^2 = P/400, giving P = 2.50 × 400 = Rs. 1,000.
+
+Q 62 | math | Arithmetic
+The ratio between the speeds of two trains is 7 : 8. If the second train runs 400 kms in 4 hours, then the speed of first train is :
+(1) 70 km / h
+(2) 75 km / h
+(3) 84 km / h
+(4) 87.5 km / h
+= 4
+~ Speed of the second train = 400/4 = 100 km/h. Since the speeds are in the ratio 7 : 8, the first train's speed = 100 × 7/8 = 87.5 km/h.
+
+Q 63 | math | Arithmetic
+√1.5625 = ?
+(1) 1.05
+(2) 1.25
+(3) 1.45
+(4) 1.55
+= 2
+~ 1.5625 = 15625/10000, and 125^2 = 15625 while 100^2 = 10000. So √1.5625 = 125/100 = 1.25 (check: 1.25 × 1.25 = 1.5625).
+
+Q 64 | math | Algebra & Geometry
+If α and β are the roots of quardatic equation such that α + β = 12 and α − β = 4, then the equation is :
+(1) x^2 − 12x + 32 = 0
+(2) x^2 − 12x − 32 = 0
+(3) x^2 + 12x + 32 = 0
+(4) x^2 + 12x − 32 = 0
+= 1
+~ Adding the two conditions: 2α = 16, so α = 8 and β = 4. Sum of roots = 12 and product = 32, so the equation is x^2 − (sum)x + product = 0, i.e. x^2 − 12x + 32 = 0.
+
+Q 65 | math | Algebra & Geometry
+If for p ≠ 1, p^(5x+3) = 1 then x = ?
+(1) −2/5
+(2) 3/5
+(3) −3/5
+(4) 2/5
+= 3
+~ 1 = p^0, and for a base p ≠ 1 equal powers mean equal exponents. So 5x + 3 = 0, giving x = −3/5.
+
+Q 66 | math | Algebra & Geometry
+If n is a natural number, then (6n^2 + 6n) is always divisible by :
+(1) 6 only
+(2) 6 and 12 only
+(3) 12 only
+(4) 18 only
+= 2
+~ 6n^2 + 6n = 6n(n + 1). n(n + 1) is a product of two consecutive numbers, so it is always even; hence the expression is always a multiple of 12, and so of 6 as well. It is not always divisible by 18 (n = 1 gives 12).
+
+Q 67 | math | Arithmetic
+If x/5 = y/9 then (x + 5) : (y + 9) = ?
+(1) 3 : 5
+(2) 13 : 8
+(3) 5 : 9
+(4) 9 : 5
+= 3
+~ Let x/5 = y/9 = k, so x = 5k and y = 9k. Then (x + 5) : (y + 9) = 5(k + 1) : 9(k + 1) = 5 : 9.
+
+Q 68 | math | Arithmetic
+The fourth proportional to 5, 8, 15 is :
+(1) 18
+(2) 21
+(3) 19
+(4) 24
+= 4
+~ If x is the fourth proportional, 5 : 8 = 15 : x, so 5x = 8 × 15 = 120 and x = 24.
+
+Q 70 | math | Algebra & Geometry
+If M = |−1, 0 ; 2, 3|, N = |0, −2 ; −2, 3|, then 2M + N is :
+(1) |−2, −2 ; 2, 6|
+(2) |−2, −2 ; −2, 9|
+(3) |−2, 2 ; 2, 9|
+(4) |−2, −2 ; 2, 9|
+= 4
+~ M and N are 2 × 2 matrices (rows separated by ';'). 2M = |−2, 0 ; 4, 6|. Adding N entry by entry: |−2 + 0, 0 − 2 ; 4 − 2, 6 + 3| = |−2, −2 ; 2, 9|.
+
+Q 71 | math | Algebra & Geometry
+For what value of α does the equations αx + y = 3, 2x − 3y = 5 has no solution ?
+(1) −2/3
+(2) 3/4
+(3) 1/5
+(4) 3/5
+= 1
+~ Two linear equations have no solution when a₁/a₂ = b₁/b₂ ≠ c₁/c₂. So α/2 = 1/(−3), giving α = −2/3; and 1/(−3) ≠ 3/5, so the lines are parallel and distinct.
+
+Q 72 | math | Algebra & Geometry
+The discriminant of the quadratic equation 3x^2 − 5x + 3 = 0 is :
+(1) −5
+(2) 3
+(3) −11
+(4) −1
+= 3
+~ Discriminant D = b^2 − 4ac = (−5)^2 − 4 × 3 × 3 = 25 − 36 = −11.
+
+Q 73 | math | Algebra & Geometry
+If a pair of linear equations is given by a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0 where a₁/a₂ = b₁/b₂ ≠ c₁/c₂ then :
+(1) The pair of linear equation is consistent
+(2) The pair of linear equation is inconsistent
+(3) The pair of linear equation is independent
+(4) The pair of linear equation is dependent
+= 2
+~ When a₁/a₂ = b₁/b₂ ≠ c₁/c₂ the two lines have the same slope but are not the same line, so they are parallel and never meet: there is no solution, i.e. the pair is inconsistent.
+
+Q 74 | math | Algebra & Geometry
+If the 7th and 13th terms of an A. P. be 34 and 64 respectively, then its 18th term is :
+(1) 87
+(2) 88
+(3) 89
+(4) 100
+= 3
+~ a + 6d = 34 and a + 12d = 64, so 6d = 30, d = 5 and a = 4. The 18th term = a + 17d = 4 + 85 = 89.
+
+Q 75 | math | Algebra & Geometry
+If the sum of n terms of an A. P. is 3n^2 + 5n then which of its terms is 164 ?
+(1) 26th
+(2) 27th
+(3) 30th
+(4) None of these
+= 2
+~ nth term = Sₙ − Sₙ₋₁ = [3n^2 + 5n] − [3(n − 1)^2 + 5(n − 1)] = 6n + 2. Setting 6n + 2 = 164 gives n = 27, so 164 is the 27th term.
+
+Q 76 | math | Algebra & Geometry
+If the sum of n terms of an A. P. be 3n^2 + n and the common difference is 6, then its 1st term is :
+(1) 2
+(2) 3
+(3) 1
+(4) 4
+= 4
+~ The first term equals the sum of the first one term: S₁ = 3(1)^2 + 1 = 4. (Check: S₂ = 14, so the second term is 10 and the common difference is 6.)
+
+Q 78 | math | Arithmetic
+In a group of 500 students, there are 475 students who can speak Hindi and 200 can speak English. What is the number of students who can speak Hindi only ?
+(1) 475
+(2) 300
+(3) 175
+(4) 500
+= 2
+~ Each student speaks at least one of the two languages, so those speaking both = 475 + 200 − 500 = 175. Hindi only = 475 − 175 = 300.
+
+Q 79 | math | Arithmetic
+In a cricket match, a batsman hits a boundary 15 times out of 60 balls he plays. Find the probability that he didn’t hit a boundary in next ball :
+(1) 0.75
+(2) 0.15
+(3) 0.60
+(4) 0.18
+= 1
+~ He did not hit a boundary on 60 − 15 = 45 of the 60 balls, so P(no boundary) = 45/60 = 3/4 = 0.75.
+
+Q 80 | math | Arithmetic
+Find the probability that a non-leap year has 53 Sundays :
+(1) 2/7
+(2) 5/7
+(3) 1/7
+(4) 6/7
+= 3
+~ A non-leap year has 365 days = 52 weeks + 1 extra day. There are 53 Sundays only if that extra day is a Sunday, which is 1 of 7 equally likely days: probability 1/7.
+
+Q 81 | math | Arithmetic
+If a number is selected from numbers 1 to 25, then find the probability that it is a prime number :
+(1) 3/5
+(2) 1/5
+(3) 7/25
+(4) 9/25
+= 4
+~ The primes from 1 to 25 are 2, 3, 5, 7, 11, 13, 17, 19 and 23, i.e. 9 of the 25 numbers. Probability = 9/25.
+
+Q 82 | math | Arithmetic
+How many natural numbers are there between 23 and 100 which are exactly divisible by 6 ?
+(1) 8
+(2) 11
+(3) 13
+(4) 12
+= 3
+~ The multiples of 6 in this range run from 24 (6 × 4) to 96 (6 × 16), so there are 16 − 4 + 1 = 13 such numbers.
+
+Q 83 | math | Algebra & Geometry
+If a set has 5 elements, then the power set of that set has ______ elements.
+(1) 25
+(2) 32
+(3) 10
+(4) None of these
+= 2
+~ A set with n elements has 2^n subsets, and the power set is the set of all subsets. For n = 5 it has 2^5 = 32 elements.
+
+Q 84 | math | Arithmetic
+A bag contains 3 green, 4 blue and 2 orange marbles. If a marble is picked at random then find the probability of not getting an orange marble :
+(1) 4/9
+(2) 7/9
+(3) 1/4
+(4) 1/3
+= 2
+~ There are 3 + 4 + 2 = 9 marbles, of which 7 are not orange. P(not orange) = 7/9 (or 1 − 2/9).
+
+Q 85 | math | Arithmetic
+If x is any number chosen from 1, 2, 3 and y is selected from the numbers 1, 4, 9, then P(xy < 9) = ?
+(1) 2/3
+(2) 5/9
+(3) 7/9
+(4) 1/3
+= 2
+~ There are 3 × 3 = 9 equally likely pairs. Products below 9: 1 × 1, 1 × 4, 2 × 1, 2 × 4 (= 8) and 3 × 1, i.e. 5 pairs (1 × 9 = 9, 2 × 9, 3 × 4 and 3 × 9 are not less than 9). P = 5/9.
+
+Q 86 | math | Algebra & Geometry
+If the angle of elevation of the top of tower from a point 20m away from the foot is 45°, then find height of the tower :
+(1) 40m
+(2) 20m
+(3) 30m
+(4) 25m
+= 2
+~ tan 45° = height/distance, and tan 45° = 1. So height = 20 × 1 = 20 m.
+
+Q 87 | math | Algebra & Geometry
+If a circle and a semi-circle have the same radius as 14 cm, then the ratio of their perimeters is ______.
+(1) 5 : 1
+(2) 6 : 7
+(3) 11 : 9
+(4) 12 : 9
+= 3
+~ Circle: 2πr = 2 × 22/7 × 14 = 88 cm. Semicircle: curved part πr plus diameter 2r = 44 + 28 = 72 cm. Ratio = 88 : 72 = 11 : 9.
+
+Q 89 | math | Arithmetic
+A single letter is drawn at random from the word “ASPIRATION” the probability that it is a vowel is :
+(1) 1/2
+(2) 1/3
+(3) 1/4
+(4) 0
+= 1
+~ ASPIRATION has 10 letters, of which 5 are vowels (A, I, A, I, O). Probability = 5/10 = 1/2.
+
+Q 90 | math | Arithmetic
+If 4 coins are tossed once then what is the probability of getting exactly 2 heads ?
+(1) 7/8
+(2) 5/8
+(3) 1/2
+(4) 3/8
+= 4
+~ 4 coins give 2^4 = 16 equally likely outcomes. Exactly 2 heads can occur in 4C2 = 6 ways, so the probability is 6/16 = 3/8.
+
+Q 91 | math | Arithmetic
+A and B are two independent events such that P(A ∪ B′) = 0.8, and P(A) = 0.3, then P(B) = ?
+(1) 2/7
+(2) 2/3
+(3) 3/8
+(4) 1/8
+= 1
+~ If A and B are independent, so are A and B′. P(A ∪ B′) = P(A) + P(B′) − P(A)P(B′) = 0.3 + 0.7 P(B′) = 0.8, so P(B′) = 0.5/0.7 = 5/7 and P(B) = 1 − 5/7 = 2/7.
+
+Q 92 | math | Arithmetic
+Find the probability of getting a number greater than 3 in rolling of a dice once :
+(1) 1/2
+(2) 1/3
+(3) 1/4
+(4) 1/5
+= 1
+~ A die has 6 equally likely faces; 4, 5 and 6 are greater than 3. Probability = 3/6 = 1/2.
+
+Q 93 | math | Arithmetic
+What is the sum of two consecutive even numbers, the difference of whose squares is 84 ?
+(1) 34
+(2) 38
+(3) 42
+(4) 46
+= 3
+~ For numbers n and n + 2: (n + 2)^2 − n^2 = 2(2n + 2) = 2 × (their sum). So the sum = 84/2 = 42 (the numbers are 20 and 22: 484 − 400 = 84).
+
+Q 94 | math | Arithmetic
+What is the geometric mean of 4 and 16 ?
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+= 4
+~ Geometric mean of two numbers a and b = √(ab) = √(4 × 16) = √64 = 8.
+
+Q 95 | math | Arithmetic
+The average of 30 numbers is 12. The average of the first 20 of them is 11 and that of the next 9 is 10. The last number is :
+(1) 60
+(2) 45
+(3) 50
+(4) 40
+= 3
+~ Total of all 30 = 30 × 12 = 360. First 20 total 20 × 11 = 220 and the next 9 total 9 × 10 = 90. Last number = 360 − 220 − 90 = 50.
+
+Q 96 | math | Arithmetic
+The average of two numbers A and B is 20, that of B and C is 19 and of C and A is 21. What is the value of A ?
+(1) 20
+(2) 24
+(3) 22
+(4) 18
+= 3
+~ A + B = 40, B + C = 38 and C + A = 42. Adding: 2(A + B + C) = 120, so A + B + C = 60. A = 60 − (B + C) = 60 − 38 = 22.
+
+Q 97 | math | Data Interpretation
+Find the sum of deviations of the variate values 3, 4, 6, 7, 8 and 14 from their mean ?
+(1) 0
+(2) 3
+(3) 4
+(4) 6
+= 1
+~ Mean = 42/6 = 7. Deviations: −4, −3, −1, 0, 1, 7, whose sum is 0. The sum of deviations of any data from their arithmetic mean is always zero.
+
+Q 98 | math | Arithmetic
+What is the mean of 1st 5 multiple of 7 ?
+(1) 28
+(2) 35
+(3) 14
+(4) 21
+= 4
+~ The first five multiples of 7 are 7, 14, 21, 28 and 35. Their sum is 105, so the mean = 105/5 = 21 (the middle term of this A.P.).
+
+Q 99 | math | Data Interpretation
+Find out the algebraic sum of deviation of a set of P values from their mean :
+(1) P − 1
+(2) 0
+(3) P
+(4) P + 1
+= 2
+~ Σ(xᵢ − mean) = Σxᵢ − P × mean = Σxᵢ − Σxᵢ = 0, because mean = Σxᵢ/P. So the algebraic sum of deviations from the arithmetic mean is always zero.
+
+Q 100 | math | Data Interpretation
+The median of the following data :
+Class interval | Frequency
+0 – 10 | 8
+10 – 20 | 16
+20 – 30 | 36
+30 – 40 | 34
+40 – 50 | 6
+(1) 27.22
+(2) 24
+(3) 50
+(4) 36
+= 1
+~ N = 100, so N/2 = 50. Cumulative frequencies: 8, 24, 60, 94, 100, so the median class is 20 – 30 (L = 20, cf = 24, f = 36, h = 10). Median = L + [(N/2 − cf)/f] × h = 20 + (26/36) × 10 = 20 + 7.22 = 27.22.

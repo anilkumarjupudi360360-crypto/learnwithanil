@@ -1315,6 +1315,52 @@ NEW['cg-vyapam-group-2-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: C
     ])
 ASOF_PAGE['cg-vyapam-group-2-notification-2026.html'] = '16 November 2026'
 
+NEW['opsc-aso-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Odisha OPSC ASO (apply till 30 November); facts from OPSC's Advt. No. 15 of 2026-27 (notice and long advertisement of 5 Nov 2026), read on 16 Nov 2026
+    exam='opsc-aso', board='OPSC', site='opsc.gov.in', crumb='OPSC ASO Notification 2026', faq_asof='16 November 2026',
+    title='OPSC ASO Notification 2026: 340 Posts, Apply by 30 November, Exam 17 January, Age, Fee, Pattern & Previous Papers | Learn with Anil',
+    desc='OPSC Assistant Section Officer (Group-B), Odisha Secretariat Service under the Home Department, Advt. No. 15 of 2026-27: 340 posts (114 for women). Apply on '
+         'opsc.gov.in from 9 to 30 November 2026; written exam on 17 January 2027. Age 21–42, fee, the three-paper pattern and OPSC ASO previous papers with answers.',
+    h1='OPSC ASO notification 2026: 340 posts, apply by 30 November',
+    lede='The Odisha Public Service Commission (OPSC) has advertised 340 posts of Assistant Section Officer (Group-B) in the Odisha Secretariat Service cadre under '
+         'the Home Department (Advt. No. 15 of 2026-27, 5 November 2026). Online applications are open on opsc.gov.in from 9 to 30 November 2026, and the written '
+         'exam is on 17 January 2027. Below: the key dates, the vacancies, who can apply, the exam pattern and the OPSC ASO previous papers to practise.',
+    pdf='https://www.opsc.gov.in', pdfname='OPSC Advt. No. 15 of 2026-27, opsc.gov.in > Advertisements',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'Advt. No. 15 of 2026-27, notice of 5 November 2026'),
+        ('Online applications and fee', '9 to 30 November 2026 (5 pm) on opsc.gov.in'),
+        ('Written exam', 'Sunday, 17 January 2027 (schedule and centres to be notified)'),
+        ('Computer skill test', 'For candidates shortlisted from the written exam; OPSC will announce the date'),
+      ]),
+      ('Vacancies (340, of which 114 for women)', 'table+', (['Category', 'Posts'], [
+        ('Unreserved', '144 (48 women)'), ('SEBC', '38 (13 women)'), ('SC', '81 (27 women)'), ('ST', '77 (26 women)'), ('Total', '340 (114 women)')])),
+      ('', 'note', 'Within these, 25 posts are for persons with disabilities (40% or more), 19 for ex-servicemen and 3 for sports persons. Pay: Rs. 35,400 a month, '
+                   'Level 9 of the ORSP Rules, 2017, with allowances.'),
+      ('Exam pattern', 'table+', (['Paper', 'Subjects', 'Questions (marks) · time'], [
+        ('Paper I', 'General Awareness', '100 · 1½ hours'),
+        ('Paper II', '(A) Reasoning & Mental Ability 50 · (B) Mathematics (Class 10 level) 50', '100 · 1½ hours'),
+        ('Paper III', '(A) English 100 · (B) Odia 100', '200 · 2 hours'),
+        ('Skill test', 'Computer application (practical), qualifying: 40% needed', '50'),
+      ])),
+      ('', 'note', 'All written questions are multiple choice, 1 mark each, with 0.25 cut for each wrong answer. A minimum in each paper is needed (35% for UR and SEBC, '
+                   '30% for SC and ST, 28% for persons with disabilities); about 1.5 times the vacancies go to the skill test, and the final merit is on the 400 written marks.'),
+      ('Who can apply', 'list', [
+        'A bachelor\'s degree in any discipline with adequate knowledge of computer application, and the ability to speak, read and write Odia (Odia at Middle '
+        'School or Class VII level, Odia-medium Matriculation, or the Middle English School standard Odia test).',
+        'Age: 21 to 42 years on 1 January 2026 (born between 2 January 1984 and 1 January 2005); 5 years more for SEBC, SC, ST, women and ex-servicemen, 10 more for '
+        'persons with disabilities (15 for those also SEBC, SC or ST).',
+        'Fee: Rs. 700 online; no fee for SC, ST and persons with disabilities. The fee is refunded to candidates who actually sit the written exam.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for OPSC ASO 2026?', '30 November 2026 (5 pm) on opsc.gov.in, for both the application and the fee.'),
+      ('When is the OPSC ASO written exam?', 'On Sunday, 17 January 2027.'),
+      ('How many posts are there in OPSC ASO 2026?', '340 Assistant Section Officer posts in the Odisha Secretariat: 144 UR, 38 SEBC, 81 SC and 77 ST, of which 114 are for women.'),
+      ('What is the OPSC ASO exam pattern?', 'Three objective papers for 400 marks — General Awareness 100, Reasoning & Mathematics 100, English 100 and Odia 100 — with 0.25 cut for each wrong answer, then a qualifying 50-mark computer skill test.'),
+      ('What is the age limit for OPSC ASO 2026?', '21 to 42 years on 1 January 2026, with 5 more years for SEBC, SC, ST, women and ex-servicemen and 10 more for persons with disabilities.'),
+      ('Where can I practise OPSC ASO previous papers?', 'On Learn with Anil: all three papers of the 2025 and 2022 ASO exams (OPSC\'s own booklets with its keys), the Odia section in Odia.'),
+    ])
+ASOF_PAGE['opsc-aso-notification-2026.html'] = '16 November 2026'
+
 
 def apply(NOTIFS):
     for rel, f in FAQS.items():

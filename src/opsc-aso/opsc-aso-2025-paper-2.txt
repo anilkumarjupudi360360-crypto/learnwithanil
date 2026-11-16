@@ -1,0 +1,925 @@
+# Paper II Reasoning & Mental Ability (Q1-50) and Mathematics (Q51-100), OPSC Assistant Section Officer (Office of the Advocate General, Odisha) written exam of 9 November 2025, Advt. No. 02 of 2025-26, Series A (OPSC's own booklet); answers: OPSC's final answer key of 17 January 2026
+
+Q 1 | rea | Verbal Reasoning
+Choose the most appropriate option to complete the following series.
+V, R, N, ______, F, B
+(1) K
+(2) H
+(3) J
+(4) P
+= 3
+~ Each letter is 4 places before the previous one: V(22) → R(18) → N(14) → J(10) → F(6) → B(2). So the missing letter is J.
+
+Q 2 | rea | Verbal Reasoning
+In a certain code language, STRAIGHT is written as TSARGITH. How will THURSDAY be written as in that language?
+(1) AYSDURTH
+(2) HTRUDSYA
+(3) UHTDRSYA
+(4) HTRUDSAY
+= 2
+~ The word is split into pairs and the letters of each pair are swapped: ST-RA-IG-HT → TS-AR-GI-TH. Likewise TH-UR-SD-AY → HT-RU-DS-YA, i.e. HTRUDSYA.
+
+Q 3 | rea | Verbal Reasoning
+A class of boys is standing in only one row. A boy is at thirty third position from both the ends in this sequence. How many boys are there in the class?
+(1) 64
+(2) 65
+(3) 69
+(4) 66
+= 2
+~ Total = (position from one end) + (position from the other end) − 1 = 33 + 33 − 1 = 65, because the boy himself is counted twice.
+
+Q 4 | rea | Verbal Reasoning
+Suraj drove his bicycle towards the north. Then he turned to the right and covered a distance of 2 km. Then, he turned to the right and covered a distance of 4 km. He found himself 2 km east of his starting point. How far did he go by bicycle in the north direction?
+(1) 2 km
+(2) 4 km
+(3) 6 km
+(4) 8 km
+= 2
+~ After going north x km, he turns right (east) for 2 km and right again (south) for 4 km. Ending exactly 2 km east of the start means his north–south displacement is zero: x − 4 = 0, so x = 4 km.
+
+Q 5 | rea | Verbal Reasoning
+At present, A is younger than B by 8 years. If 4 years ago, their ages were in the ratio 1 : 2, then what is the present age of B (in years)?
+(1) 12
+(2) 20
+(3) 11
+(4) 18
+= 2
+~ Let B = A + 8. Four years ago (A − 4) : (A + 4) = 1 : 2, so 2A − 8 = A + 4 and A = 12. Hence B = 12 + 8 = 20 years.
+
+Q 6 | rea | Non-verbal Reasoning
+Find the missing figure in the series from the given answer figures.
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ The shaded corner moves 45° clockwise at each step (top-right → right → bottom-right → bottom), while both dots move 45° anticlockwise (black: left → bottom-left → bottom → bottom-right; white: right → top-right → top → top-left). So next the shaded corner is at the bottom-left, the black dot on the right and the white dot on the left — answer figure (3).
+! img/a2-q6.png
+
+Q 8 | rea | Non-verbal Reasoning
+Select the mirror image of the following figure :
+(1) Figure A
+(2) Figure B
+(3) Figure C
+(4) Figure D
+= 1
+~ A vertical mirror (MN) swaps left and right but keeps top and bottom. From top to bottom, the zigzag in the given figure turns on the right, then the left, then the right again, so its mirror image must turn on the left, right, left. Only figure (A) shows this; (B) is tilted, and (C) and (D) are turned on their side.
+! img/a2-q8.png
+
+Q 9 | rea | Non-verbal Reasoning
+Two different positions of the same dice are shown. Which number will be at the top if 6 is at the bottom?
+(1) 4
+(2) 3
+(3) 5
+(4) 2
+= 4
+~ 1 is common to both views, so 5, 6, 3 and 2 all touch 1 and 4 is opposite 1. Reading each view clockwise from 1 gives 1-5-6 and 1-3-2, so the faces around 1 run 5, 6, 3, 2 in order; faces two apart are opposite: 5–3 and 6–2. With 6 at the bottom, 2 is on top.
+! img/a2-q9.png
+
+Q 10 | rea | Non-verbal Reasoning
+Group the given figures into three classes using each figure only once.
+(1) 7, 8, 9; 2, 4, 3; 1, 5, 6
+(2) 1, 3, 2; 4, 5, 7; 6, 8, 9
+(3) 1, 6, 8; 3, 4, 7; 2, 5, 9
+(4) 1, 6, 9; 3, 4, 7; 2, 5, 8
+= 4
+~ Classify by the number of sides: figures 1, 6 and 9 are triangles (3 sides), 3, 4 and 7 are quadrilaterals (4 sides), and 2, 5 and 8 are pentagons (5 sides).
+! img/a2-q10.png
+
+Q 11 | rea | Non-verbal Reasoning
+Group the given figures into three classes using each figure only once
+(1) 1, 2, 4; 3, 5, 6; 7, 8, 9
+(2) 1, 7, 8; 3, 5, 6; 2, 4, 9
+(3) 1, 3, 4; 2, 8, 9; 5, 6, 7
+(4) 1, 7, 8; 2, 3, 6; 4, 5, 9
+= 2
+~ Classify by the lines drawn inside each outline: 1, 7 and 8 have no line inside; 3, 5 and 6 have one line inside; 2, 4 and 9 have two crossing lines inside.
+! img/a2-q11.png
+
+Q 12 | rea | Non-verbal Reasoning
+Directions (Q.Nos. 12 to 13) :
+In each of the following questions, you are given a figure (X) followed by four alternative figures (1), (2), (3) and (4) such that figure (X) is embedded in one of them. Find out the alternative figure which contains figure (X) as its part
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ In figure (1), (X) is traced by the top edge, the diagonal of the top-left cell (left slant), the diagonal of the top-right cell running down to the left (right slant), the grid line below that cell, the lower part of the right edge and the bottom edge. (2) lacks the left slant, (3) has a slanted base, and in (4) the top-right cell's diagonal slopes the other way.
+! img/a2-q12.png
+
+Q 13 | rea | Non-verbal Reasoning
+Directions (Q.Nos. 12 to 13) :
+In each of the following questions, you are given a figure (X) followed by four alternative figures (1), (2), (3) and (4) such that figure (X) is embedded in one of them. Find out the alternative figure which contains figure (X) as its part
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ (X) has a narrow U-shaped tab: two close parallel vertical lines joined at the bottom. Only figure (4), a grid of horizontal and vertical lines with two closely spaced central verticals, has this: those verticals and the bottom edge form the tab, and the grid lines and right edge give the step above it. (1), (2) and (3) are made of diagonals and concentric squares.
+! img/a2-q13.png
+
+Q 14 | rea | Verbal Reasoning
+The calendar for the year 2007 will be the same for the year
+(1) 2014
+(2) 2016
+(3) 2017
+(4) 2018
+= 4
+~ 2007 is a non-leap year. Odd days from 2007 to 2017 = 8 ordinary years × 1 + 3 leap years (2008, 2012, 2016) × 2 = 14 = 0 (mod 7), so 1 January 2018 falls on the same day (Monday) and 2018 is also a non-leap year. Hence 2018 has the same calendar.
+
+Q 15 | rea | Verbal Reasoning
+Choose the appropriate number to complete the series :
+1, 4, 27, 16, ? , 36, 343
+(1) 125
+(2) 25
+(3) 87
+(4) 120
+= 1
+~ Odd positions are cubes and even positions are squares of 1, 2, 3, …: 1³, 2², 3³, 4², 5³, 6², 7³. The missing term is 5³ = 125.
+
+Q 16 | rea | Verbal Reasoning
+Arrange the following words in the order in which they appear in an English Dictionary :
+(I) Radical
+(II) Radiate
+(III) Racket
+(IV) Radius
+(V) Radar
+(1) (III), (V), (II), (I), (IV)
+(2) (III), (V), (II), (IV), (I)
+(3) (III), (V), (IV), (I), (II)
+(4) (III), (IV), (II), (I), (V)
+= 1
+~ Racket (rac-) comes before all the rad- words. Among rad- words: Radar (rada-) < Radiate (radia-) < Radical (radic-) < Radius (radiu-). Order: Racket, Radar, Radiate, Radical, Radius = (III), (V), (II), (I), (IV).
+
+Q 17 | rea | Verbal Reasoning
+Patro walks 10 km towards North. From there he walks 6 km towards South. Then, he walks 3 km towards East. How far and in which direction is he with reference to his starting point?
+(1) 5 km West
+(2) 7 km West
+(3) 7 km East
+(4) 5 km North-east
+= 4
+~ Net northward movement = 10 − 6 = 4 km, then 3 km east. Distance = √(4² + 3²) = √25 = 5 km, and since he is north and east of the start, the direction is North-east.
+
+Q 18 | rea | Verbal Reasoning
+In a certain code language, 'cool drinks available here' is written as 'bhu man juk lop', 'available lost objects here' is written as 'gan bhu nut juk', 'be cool search objects' is written as 'vax der man nut', and 'available drinks desert search' is written as 'but juk der lop'. How will 'lost drinks' be written in that language?
+(1) gan lop
+(2) nut gan
+(3) lop bhu
+(4) juk gan
+= 1
+~ Compare common words: 'available' (sentences 1, 2, 4) = juk; 'here' (1, 2) = bhu; 'objects' (2, 3) = nut; so in sentence 2 'lost' = gan. 'drinks' (1, 4) shares juk and lop; juk is 'available', so 'drinks' = lop. Hence 'lost drinks' = 'gan lop'.
+
+Q 19 | rea | Verbal Reasoning
+There are seven persons A, B, C, D, E, F, and G. Each of them has different heights. C is shorter than only G. The number of persons taller than B is equal to the number of persons shorter than D. Neither A nor E is shortest. Who among the following is shortest?
+(1) G
+(2) D
+(3) B
+(4) F
+= 4
+~ G is the tallest (C is shorter than only G). If D were shortest, nobody would be taller than B, i.e. B would be tallest — impossible. If B were shortest, 6 would be shorter than D, making D tallest — also impossible. A and E are not shortest, so F is the shortest.
+
+Q 20 | rea | Non-verbal Reasoning
+Find the missing figures in the series from the Answer figures given below :
+(1) 1
+(2) 4
+(3) 3
+(4) 2
+= 4
+~ The two clock hands open out symmetrically from the top: a narrow V at the top, then a right angle, then a straight line, then a wide angle with the hands pointing downwards. Next they close in near the bottom, forming a narrow inverted V (the first figure turned upside down) — answer figure (2).
+! img/a2-q20.png
+
+Q 21 | rea | Verbal Reasoning
+A cube of side 18 cm is painted yellow on all the faces and then cut into smaller cubes of sides 3 cm each. Find the number of smaller cubes that have only two faces painted.
+(1) 48
+(2) 20
+(3) 64
+(4) 36
+= 1
+~ Each edge is cut into 18 ÷ 3 = 6 small cubes. Cubes with exactly two painted faces lie along the edges, excluding the corners: 12 edges × (6 − 2) = 12 × 4 = 48.
+
+Q 22 | rea | Non-verbal Reasoning
+Group the given figures into three classes using each figure only once.
+(1) 1, 4; 2, 3; 5, 6
+(2) 1, 5; 2, 6; 4, 3
+(3) 1, 6; 2, 3; 4, 5
+(4) 1, 2; 3, 6; 4, 5
+= 1
+~ Figures 2 and 3 are identical triangles divided by a vertical line. Figures 1 and 4 are rectangles with a step cut into one top corner (mirror images of each other), and figures 5 and 6 are rectangles with a pointed bump on the top edge (also mirror images). So the classes are 1, 4; 2, 3; 5, 6.
+! img/a2-q22.png
+
+Q 23 | rea | Non-verbal Reasoning
+Group the given figures into three classes using each figure only once.
+(1) 1, 3, 9; 2, 5, 8; 4, 6, 7
+(2) 2, 5, 9; 1, 3, 8; 2, 6, 7
+(3) 1, 5, 8; 4, 6, 7; 2, 3, 9
+(4) 1, 8, 9; 4, 6, 7; 2, 3, 5
+= 3
+~ In 2, 3 and 9 a straight line cuts right through a closed figure (triangle, square, circle). In 4, 6 and 7 one side of a closed figure is extended as a line. Figures 1, 5 and 8 contain no closed figure at all (an arc, an arrow, an open bracket with a line). Hence 1, 5, 8; 4, 6, 7; 2, 3, 9.
+! img/a2-q23.png
+
+Q 24 | rea | Verbal Reasoning
+In the following question, select the related word pair from the given alternatives :
+Tuberculosis : Lungs : Typhoid : ?
+(1) Intestine
+(2) Liver
+(3) Lungs
+(4) Brain
+= 1
+~ Tuberculosis mainly affects the lungs. Typhoid, caused by the bacterium Salmonella Typhi taken in through contaminated food or water, infects the intestine. So the related organ is the intestine.
+
+Q 25 | rea | Verbal Reasoning
+Select the option in which the numbers are related in the same way as the numbers of the following set, (18, 6, 216):
+(1) (20, 4, 160)
+(2) (21, 7, 343)
+(3) (27, 3, 243)
+(4) (30, 5, 180)
+= 2
+~ In (18, 6, 216) the first number is 3 times the second (18 = 3 × 6) and the third is the cube of the second (6³ = 216). (21, 7, 343) follows both relations: 21 = 3 × 7 and 7³ = 343.
+
+Q 26 | rea | Verbal Reasoning
+Arrange the following words in the order in which they appear in an English Dictionary:
+(I) Unimportant
+(II) Understand
+(III) Unnecessary
+(IV) Uncertain
+(V) Unethical
+(1) (IV), (V), (II), (I), (III)
+(2) (IV), (II), (V), (I), (III)
+(3) (IV), (II), (V), (III), (I)
+(4) (IV), (III), (II), (I), (V)
+= 2
+~ All words begin with 'Un', so compare the third letter: c (Uncertain) < d (Understand) < e (Unethical) < i (Unimportant) < n (Unnecessary). Order: (IV), (II), (V), (I), (III).
+
+Q 27 | rea | Verbal Reasoning
+Directions (Q.Nos. 27 & 28) :
+These questions are based on five words given below :
+LAP BUT CAR SON HID
+If the second alphabet in each of the word is changed to the next alphabet in the English alphabetic order, how many words having no vowels will be formed?
+(1) Three
+(2) Five
+(3) Four
+(4) Two
+= 2
+~ Changing the second letter to the next one: LAP → LBP, BUT → BVT, CAR → CBR, SON → SPN, HID → HJD. Every vowel was in the middle position, so all five new words have no vowel.
+
+Q 28 | rea | Verbal Reasoning
+Directions (Q.Nos. 27 & 28) :
+These questions are based on five words given below :
+LAP BUT CAR SON HID
+If the given words are arranged in the order as they would appear in the English dictionary from left to right, which of the following will be the fourth from the right?
+(1) LAP
+(2) SON
+(3) BUT
+(4) CAR
+= 4
+~ Dictionary order from left to right: BUT, CAR, HID, LAP, SON. The fourth from the right is the second from the left, i.e. CAR.
+
+Q 29 | rea | Verbal Reasoning
+A man is facing towards west and turns through 45° clockwise, again 180° clockwise and then turns through 270° anti clockwise. Which direction is he facing now?
+(1) West
+(2) North-west
+(3) South
+(4) South-west
+= 4
+~ Net turn = 45° + 180° clockwise − 270° anticlockwise = 225° − 270° = 45° anticlockwise. Turning 45° anticlockwise from West brings him to South-west.
+
+Q 30 | rea | Verbal Reasoning
+In a certain code language, 'first of all' is written as 'kan dan san', who is first' is written as 'zan kan ven', and 'this is pale' is written as 'ven gen len'. How will 'who' be written in that language?
+(1) kan
+(2) gen
+(3) zan
+(4) ven
+= 3
+~ 'first' is common to the first two sentences → kan. 'is' is common to the second and third → ven. So in 'who is first' = 'zan kan ven', the remaining code zan stands for 'who'.
+
+Q 31 | rea | Verbal Reasoning
+In a row, Aman is at the 20th position from the left and Gita is at the 14th position from the right. If they interchange their positions, Aman becomes 30th from the left. Now, what is the position of Gita from the right?
+(1) 24th
+(2) 22nd
+(3) 25th
+(4) 20th
+= 1
+~ After the swap Aman takes Gita's place, so that place is 30th from the left and 14th from the right: total = 30 + 14 − 1 = 43. Gita now stands at Aman's old place, 20th from the left, i.e. 43 − 20 + 1 = 24th from the right.
+
+Q 32 | rea | Verbal Reasoning
+In a row of 26 persons facing North, Person A is 13th from the right side. After shifting him third to the left from the existing position, what is his position from the left side now?
+(1) 10
+(2) 14
+(3) 11
+(4) 12
+= 3
+~ From the left A is 26 − 13 + 1 = 14th. Moving three places to the left reduces his position from the left by 3: 14 − 3 = 11th.
+
+Q 33 | rea | Verbal Reasoning
+The average of the ages of three persons A, B and C is 45 years and the average age of A, C and D is 51 years. If the age of D is 56 years, what is the age of B?
+(1) 35 years
+(2) 38 years
+(3) 36 years
+(4) 36.5 years
+= 2
+~ A + B + C = 3 × 45 = 135 and A + C + D = 3 × 51 = 153. With D = 56, A + C = 97, so B = 135 − 97 = 38 years.
+
+Q 34 | rea | Non-verbal Reasoning
+Find the missing figure in the series from the Answer figures given below :
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ At each step the arrow turns 90° clockwise and each end gains one more arrowhead: top 1, bottom 0 → right 2, left 1 → bottom 3, top 2. So next the arrow is horizontal with 4 heads at the left end and 3 at the right end — answer figure (2).
+! img/a2-q34.png
+
+Q 35 | rea | Non-verbal Reasoning
+Find the missing figure in the series from the Answer figures given below :
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ The × and the dash move in turn. First the × drops from the top to the centre (dash unchanged); then the dash slides from the bottom-right to the bottom centre (× unchanged). Next it is the ×'s turn again: it drops from the centre to the bottom and lands on the dash at the bottom centre — answer figure (1).
+! img/a2-q35.png
+
+Q 36 | rea | Non-verbal Reasoning
+Choose the alternative which resembles with mirror image of given combination :
+EFFECTIVE
+(1) 2
+(2) 1
+(3) 3
+(4) 4
+= 2
+~ In a mirror image the order of the letters is reversed and every letter is laterally inverted. Only alternative (1) — option (B) — shows EVITCEFFE with every letter flipped. (2) reverses the order without flipping the letters, (3) flips the letters but keeps the original order, and (4) leaves one F unflipped.
+! img/a2-q36.png
+
+Q 37 | rea | Non-verbal Reasoning
+Two rotated positions of a dice are given below. Which number will be at the top if '3' is at the bottom?
+(1) 4
+(2) 1
+(3) 2
+(4) 6
+= 3
+~ 2 appears in both views and touches 1, 4, 5 and 6. So the only face that can be opposite 2 is 3. With 3 at the bottom, 2 is at the top.
+! img/a2-q37.png
+
+Q 38 | rea | Non-verbal Reasoning
+The minimum number of colours required to paint all the sides of a cube so that no two adjacent faces may have the same colours is:
+(1) 3
+(2) 6
+(3) 4
+(4) 2
+= 1
+~ A cube has three pairs of opposite faces, and opposite faces never touch. Giving each pair one colour needs 3 colours; with only 2 colours, three mutually adjacent faces meeting at a corner cannot all differ.
+
+Q 39 | rea | Non-verbal Reasoning
+Select the mirror image of the following figure :
+(1) Figure A
+(2) Figure B
+(3) Figure C
+(4) Figure D
+= 1
+~ The mirror is vertical, so left and right interchange. The hatched cap, which leans to the right with / hatching, must lean to the left with \ hatching in the image, while the body and crossed legs keep their shape — figure (A). (B) and (D) still lean to the right, and (C) has a wider body.
+! img/a2-q39.png
+
+Q 40 | rea | Verbal Reasoning
+Find the odd one out
+(1) Parrot
+(2) Bat
+(3) Crow
+(4) Sparrow
+= 2
+~ Parrot, crow and sparrow are birds. The bat, though it flies, is a mammal (it gives birth to young and suckles them), so it is the odd one out.
+
+Q 41 | rea | Verbal Reasoning
+Ram moved a distance of 75 metres towards the north. He then turned to the left and walking for about 25 metres, turned left again and walked 80 metres. Finally, she turned to the right at an angle of 45°. In which direction was she moving finally?
+(1) South-west
+(2) North-east
+(3) North-west
+(4) South-east
+= 1
+~ North → left turn = West → left turn again = South. Turning right from South points West, so a 45° turn to the right from South gives South-west.
+
+Q 42 | rea | Verbal Reasoning
+In a certain code language, 'MOST' is written as '134' and 'FUR' is written as '90'. How will 'SUCCESS' be written in that language?
+(1) 89
+(2) 175
+(3) 215
+(4) 178
+= 4
+~ Code = 2 × (sum of alphabet positions). MOST: 13 + 15 + 19 + 20 = 67 → 134; FUR: 6 + 21 + 18 = 45 → 90. SUCCESS: 19 + 21 + 3 + 3 + 5 + 19 + 19 = 89 → 2 × 89 = 178.
+
+Q 43 | rea | Verbal Reasoning
+If N = 28 and ORE = 76, then how will you code PALE?
+(1) 68
+(2) 72
+(3) 76
+(4) 19
+= 1
+~ Code = 2 × (sum of alphabet positions): N = 14 × 2 = 28; ORE = (15 + 18 + 5) × 2 = 76. PALE = (16 + 1 + 12 + 5) × 2 = 34 × 2 = 68.
+
+Q 44 | rea | Verbal Reasoning
+In a row of boys, Bhavuk is at 7th position from left end. Bhavan is at 16th position from right end. If there are 6 boys between them, how many boys are there in the row?
+(1) 26
+(2) 27
+(3) 29
+(4) 20
+= 3
+~ With Bhavuk to the left of Bhavan: total = 7 (up to Bhavuk) + 6 (between) + 16 (Bhavan to the right end) = 29 boys.
+
+Q 45 | rea | Verbal Reasoning
+A cube of side 125 cm is painted red on all the faces and then cut into smaller cubes of sides 25 cm each. Find the number of smaller cubes having atleast two faces painted.
+(1) 48
+(2) 36
+(3) 44
+(4) 52
+= 3
+~ Each edge has 125 ÷ 25 = 5 small cubes. Three faces painted = 8 corner cubes; exactly two faces painted = 12 × (5 − 2) = 36 edge cubes. At least two faces painted = 8 + 36 = 44.
+
+Q 46 | rea | Non-verbal Reasoning
+Group the given figures into three classes using each figure only once.
+(1) 2, 4, 7; 1, 8, 9; 3, 5, 6
+(2) 2, 6, 9; 1, 5, 7; 3, 4, 8
+(3) 2, 6, 7; 1, 5, 8; 3, 4, 9
+(4) 2, 8, 7; 1, 5, 9; 3, 4, 6
+= 2
+~ Classify by the outer figure: 2, 6 and 9 have a triangle as the outer figure; 1, 5 and 7 have a rectangle; 3, 4 and 8 have a circle. Hence 2, 6, 9; 1, 5, 7; 3, 4, 8.
+! img/a2-q46.png
+
+Q 47 | rea | Verbal Reasoning
+The ratio between the present ages of A and B is 3 : 5. If the ratio of their ages five years after becomes 13 : 20, then the present age of B is:
+(1) 40 years
+(2) 35 years
+(3) 30 years
+(4) 32 years
+= 2
+~ Let the ages be 3x and 5x. Then (3x + 5) : (5x + 5) = 13 : 20, so 60x + 100 = 65x + 65 and x = 7. Present age of B = 5 × 7 = 35 years.
+
+Q 48 | rea | Verbal Reasoning
+Directions (Q.Nos. 48 to 50) :
+In each of the following questions, one term in the number series is wrong. Find out the wrong term.
+125, 126, 124, 127, 123, 129
+(1) 126
+(2) 124
+(3) 123
+(4) 129
+= 4
+~ The differences are +1, −2, +3, −4, so the next should be +5: 123 + 5 = 128. Hence 129 is the wrong term.
+
+Q 50 | rea | Verbal Reasoning
+Directions (Q.Nos. 48 to 50) :
+In each of the following questions, one term in the number series is wrong. Find out the wrong term.
+2, 5, 10, 50, 500, 5000
+(1) 5
+(2) 10
+(3) 50
+(4) 5000
+= 4
+~ Each term is the product of the two terms before it: 2 × 5 = 10, 5 × 10 = 50, 10 × 50 = 500, so the next should be 50 × 500 = 25000. Hence 5000 is the wrong term.
+
+Q 51 | math | Arithmetic
+A boy read 3/8th of a book on one day and 4/5th of the remainder on another day. If there were 30 pages unread, how many pages did the book contain?
+(1) 240
+(2) 300
+(3) 600
+(4) 412
+= 1
+~ After day 1, 5/8 of the book remains. He reads 4/5 of it, so 1/5 of 5/8 = 1/8 of the book is left unread. 1/8 of the book = 30 pages, so the book has 30 × 8 = 240 pages.
+
+Q 52 | math | Arithmetic
+One year ago, Promila was four times as old as her daughter Sakshi. Six years hence, Promila's age will exceed her daughter's age by 9 years. The ratio of the present ages of Promila and her daughter is
+(1) 9 : 2
+(2) 11 : 3
+(3) 12 : 5
+(4) 13 : 4
+= 4
+~ The age gap never changes, so Promila = Sakshi + 9 now. One year ago: (S + 9 − 1) = 4(S − 1) → S + 8 = 4S − 4 → S = 4, so Promila = 13. Ratio = 13 : 4.
+
+Q 53 | math | Arithmetic
+A contract is to be completed in 46 days and 117 men were set to work, each working 8 hours a day. After 33 days, 4/7 of the work is completed. How many additional men may be employed so that the work may be completed in time, each man now working 9 hours a day?
+(1) 85
+(2) 90
+(3) 81
+(4) 80
+= 3
+~ 117 × 33 × 8 man-hours did 4/7 of the work. The remaining 3/7 needs 117 × 33 × 8 × (3/4) = 23,166 man-hours, to be done in 46 − 33 = 13 days at 9 hours a day: men = 23,166 ÷ (13 × 9) = 198. Additional men = 198 − 117 = 81.
+
+Q 54 | math | Arithmetic
+Robert is travelling on his cycle and has calculated to reach point A at 2 P.M. if he travels at 10 kmph; he will reach there at 12 noon if he travels at 15 kmph. At what speed must he travel to reach A at 1 P.M.?
+(1) 8 kmph
+(2) 11 kmph
+(3) 12 kmph
+(4) 14 kmph
+= 3
+~ The two arrival times differ by 2 hours: d/10 − d/15 = 2 → d/30 = 2 → d = 60 km. At 10 kmph he needs 6 hours, so he starts at 8 A.M. To arrive at 1 P.M. he has 5 hours: speed = 60/5 = 12 kmph.
+
+Q 55 | math | Arithmetic
+A clock is set right at 5 a.m. The clock loses 16 minutes in 24 hours. What will be the true time when the clock indicates 10 p.m. on 4th day?
+(1) 9 p.m.
+(2) 15 p.m.
+(3) 11 p.m.
+(4) 13 p.m.
+= 3
+~ From 5 a.m. on day 1 to 10 p.m. on day 4 the clock shows 89 hours. It shows 23 h 44 min (1424 min) for every 24 true hours (1440 min), so true time = 89 × 1440/1424 = 89 × 90/89 = 90 hours. 5 a.m. + 90 h = 11 p.m. on the 4th day.
+
+Q 56 | math | Arithmetic
+What least number must be subtracted from 1672 to obtain a number which is completely divisible by 17?
+(1) 6
+(2) 7
+(3) 8
+(4) 4
+= 1
+~ 1672 ÷ 17 = 98, remainder 6 (17 × 98 = 1666). Subtracting the remainder 6 gives 1666, which is exactly divisible by 17.
+
+Q 57 | math | Arithmetic
+If 15% of 40 is greater than 25% of a number by 2, then the number is
+(1) 12
+(2) 16
+(3) 24
+(4) 32
+= 2
+~ 15% of 40 = 6. So 6 − 0.25x = 2 → 0.25x = 4 → x = 16.
+
+Q 58 | math | Arithmetic
+The sum of two numbers is 2490. If 6.5% of one number is equal to 8.5% of the other, then the numbers are
+(1) 989, 1501
+(2) 1011, 1479
+(3) 1401, 1089
+(4) 1411, 1079
+= 4
+~ 6.5% of a = 8.5% of b → a : b = 8.5 : 6.5 = 17 : 13. Sum of 30 parts = 2490, so one part = 83: a = 17 × 83 = 1411, b = 13 × 83 = 1079.
+
+Q 59 | math | Arithmetic
+A train 100 metres long takes 6 seconds to cross a man walking at 5 kmph in a direction opposite to that of the train. Find the speed of the train.
+(1) 55 kmph
+(2) 60 kmph
+(3) 50 kmph
+(4) 65 kmph
+= 1
+~ Relative speed = 100/6 m/s = (100/6) × (18/5) = 60 kmph. Moving in opposite directions, speeds add: train + 5 = 60, so the train runs at 55 kmph.
+
+Q 60 | math | Arithmetic
+In a km race, A beats B by 28 metres in 7 seconds. Find A's time over the course.
+(1) 6 min 3 sec.
+(2) 4 min 3 sec.
+(3) 8 min 2 sec.
+(4) 5 min 6 sec.
+= 2
+~ B covers the last 28 m in 7 s, so B's speed = 4 m/s and B takes 1000/4 = 250 s for 1 km. A finishes 7 s earlier: 250 − 7 = 243 s = 4 min 3 sec.
+
+Q 61 | math | Arithmetic
+Four different electronic devices make a beep after every 30 minutes, 1 hour, 1 1/2 hour and 1 hour 45 minutes respectively. All the devices beeped together at 12 noon. They will again beep together at:
+(1) 12 mid night
+(2) 3 a.m.
+(3) 6 a.m.
+(4) 9 a.m.
+= 4
+~ Intervals in minutes: 30, 60, 90, 105. LCM = 2^2 × 3^2 × 5 × 7 = 1260 minutes = 21 hours. 12 noon + 21 hours = 9 a.m. the next day.
+
+Q 62 | math | Algebra & Geometry
+50 is divided into two parts such that the sum of their reciprocals is 1/12. Then the two parts, are:
+(1) 30, 35
+(2) 30, 20
+(3) 30, 25
+(4) 30, 28
+= 2
+~ Let the parts be x and y: x + y = 50 and 1/x + 1/y = (x + y)/xy = 50/xy = 1/12, so xy = 600. Two numbers with sum 50 and product 600 are 30 and 20 (check: 1/30 + 1/20 = 5/60 = 1/12).
+
+Q 63 | math | Arithmetic
+Four milkmen rented a pasture. A grazed 24 cows for 3 months; B 10 cows for 5 months; C 35 cows for 4 months and D 21 cows for 3 months. If A's share of rent is Rs. 720, find the total rent of the field.
+(1) 3245
+(2) 3260
+(3) 3360
+(4) 3250
+= 4
+~ Rent is shared in the ratio of cow-months: A 24 × 3 = 72, B 50, C 140, D 63; total 325. A's 72 parts = Rs. 720, so 1 part = Rs. 10 and total rent = 325 × 10 = Rs. 3250.
+
+Q 64 | math | Arithmetic
+A car covers a distance of 715 km at a constant speed. If the speed of the car would have been 10 km/hr more, then it would have taken 2 hours less to cover the same distance. What is the original speed of the car?
+(1) 45 km/hr
+(2) 50 km/hr
+(3) 55 km/hr
+(4) 65 km/hr
+= 3
+~ 715/v − 715/(v + 10) = 2 → 7150 = 2v(v + 10) → v^2 + 10v − 3575 = 0 → (v − 55)(v + 65) = 0, so v = 55 km/hr. Check: 715/55 = 13 h and 715/65 = 11 h, a difference of 2 hours.
+
+Q 65 | math | Arithmetic
+In a 100 m race, A runs at 8 km per hour. If A gives B a start of 4 m and still beats him by 15 seconds, what is the speed of B?
+(1) 5.76 km/hr
+(2) 6.25 km/hr
+(3) 4.25 km/hr
+(4) 7.28 km/hr
+= 1
+~ A's speed = 8 × 5/18 = 20/9 m/s, so A runs 100 m in 45 s. B runs only 96 m (4 m start) and takes 45 + 15 = 60 s. B's speed = 96/60 = 1.6 m/s = 1.6 × 18/5 = 5.76 km/hr.
+
+Q 66 | math | Arithmetic
+If each side of a square is increased by 25%, find the percentage change in its area.
+(1) 55.28%
+(2) 56.25%
+(3) 57.25%
+(4) 58.36%
+= 2
+~ Area varies as side^2: (1.25)^2 = 1.5625, so the area increases by 56.25%. (Shortcut: 25 + 25 + 25 × 25/100 = 56.25%.)
+
+Q 67 | math | Algebra & Geometry
+If x = y^a, y = z^b and z = x^c, then the value of abc, is
+(1) 2
+(2) 1
+(3) 3
+(4) 4
+= 2
+~ Substitute step by step: x = y^a = (z^b)^a = z^(ab) = (x^c)^(ab) = x^(abc). Since x = x^1, the exponents are equal, so abc = 1.
+
+Q 68 | math | Arithmetic
+The average weight of 16 boys in a class is 50.25 kgs and that of the remaining 8 boys is 45.15 kgs. Then the average weight of all the boys in the class:
+(1) 47.55 kgs
+(2) 48 kgs
+(3) 48.55 kgs
+(4) 49.25 kgs
+= 3
+~ Total weight = 16 × 50.25 + 8 × 45.15 = 804 + 361.2 = 1165.2 kg for 24 boys. Average = 1165.2 ÷ 24 = 48.55 kgs.
+
+Q 69 | math | Arithmetic
+A watch which gains uniformly is 2 minutes low at noon on Monday and is 4 min. 48 sec fast at 2 p.m. on the following Monday. When was it correct?
+(1) 2 p.m. on Tuesday
+(2) 2 p.m. on Wednesday
+(3) 3 p.m. on Thursday
+(4) 1 p.m. on Friday
+= 2
+~ From noon Monday to 2 p.m. next Monday = 170 hours, in which the watch gains 2 min + 4 min 48 s = 6.8 min. It is correct once it has gained 2 min: 170 × 2/6.8 = 50 hours after noon Monday, i.e. 2 p.m. on Wednesday.
+
+Q 70 | math | Arithmetic
+A number was divided successively in order by 4, 5 and 6. The remainders were respectively 2, 3 and 4. The number is
+(1) 214
+(2) 476
+(3) 954
+(4) 1908
+= 1
+~ Work backwards taking the last quotient as 1: 6 × 1 + 4 = 10; 5 × 10 + 3 = 53; 4 × 53 + 2 = 214. Check: 214 ÷ 4 = 53 r 2, 53 ÷ 5 = 10 r 3, 10 ÷ 6 = 1 r 4. The other options fail: 476 and 1908 leave remainder 0 on division by 4, and 954 gives remainders 2, 3, 5.
+
+Q 71 | math | Algebra & Geometry
+What is the sum of two consecutive even numbers, the difference of whose squares is 84?
+(1) 34
+(2) 38
+(3) 42
+(4) 46
+= 3
+~ a^2 − b^2 = (a + b)(a − b). Consecutive even numbers differ by 2, so (a + b) × 2 = 84 → a + b = 42 (the numbers are 22 and 20: 484 − 400 = 84).
+
+Q 72 | math | Arithmetic
+A man bought toffees at 3 for a rupee. How many for a rupee must he sell to gain 50%?
+(1) 4
+(2) 2
+(3) 5
+(4) 3
+= 2
+~ Cost of one toffee = Re 1/3. For 50% gain, selling price of one = 1.5 × 1/3 = Re 1/2, so he must sell 2 toffees for a rupee.
+
+Q 73 | math | Arithmetic
+If x men, working x hours per day, can do x units of work in x days, then y men, working y hours per day would be able to complete how many units of work in y days: -
+(1) x^2/y^3
+(2) x^3/y^2
+(3) y^2/x^3
+(4) y^3/x^2
+= 4
+~ Work ∝ men × hours × days. x × x × x = x^3 man-hours do x units, so one man-hour does x/x^3 = 1/x^2 unit. y men × y hours × y days = y^3 man-hours do y^3/x^2 units.
+
+Q 74 | math | Arithmetic
+An electric pump can fill a tank in 3 hours. Because of a leak in the tank, it took 3 1/2 hours to fill the tank. If the tank is full, how much time will the leak take to empty it?
+(1) 21 hours
+(2) 23 hours
+(3) 19 hours
+(4) 24 hours
+= 1
+~ Pump alone fills 1/3 per hour; with the leak the net rate is 1/(7/2) = 2/7 per hour. Leak empties 1/3 − 2/7 = 1/21 per hour, so it empties the full tank in 21 hours.
+
+Q 75 | math | Arithmetic
+In a caravan, in addition to 50 hens there are 45 goats and 8 camels with some keepers. If the total number of feet be 224 more than the number of heads, find the number of keepers.
+(1) 20
+(2) 16
+(3) 15
+(4) 18
+= 3
+~ Let k keepers. Heads = 50 + 45 + 8 + k = 103 + k. Feet = 50 × 2 + 45 × 4 + 8 × 4 + 2k = 312 + 2k. Feet − heads = 209 + k = 224, so k = 15.
+
+Q 76 | math | Algebra & Geometry
+If (1/5)^(3y) = 0.008, then the value of (0.25)^y is
+(1) 0.26
+(2) 0.24
+(3) 0.27
+(4) 0.25
+= 4
+~ 0.008 = 8/1000 = 1/125 = (1/5)^3. So (1/5)^(3y) = (1/5)^3 → 3y = 3 → y = 1, and (0.25)^1 = 0.25.
+
+Q 77 | math | Arithmetic
+If 15 men, working 9 hours a day, can reap a field in 16 days, in how many days will 18 men reap the field, working 8 hours a day?
+(1) 18
+(2) 15
+(3) 20
+(4) 16
+= 2
+~ Man-hours are constant for the same work: 15 × 9 × 16 = 18 × 8 × d → 2160 = 144d → d = 15 days.
+
+Q 78 | math | Arithmetic
+A sum of Rs. 800 amounts to Rs. 920 in 3 years at simple interest. If the interest rate is increased by 3%, it would amount to how much?
+(1) Rs. 995
+(2) Rs. 992
+(3) Rs. 980
+(4) Rs. 1050
+= 2
+~ SI = 920 − 800 = Rs. 120 in 3 years, so rate = 120 × 100/(800 × 3) = 5%. At 5 + 3 = 8%: SI = 800 × 8 × 3/100 = Rs. 192, so the amount = 800 + 192 = Rs. 992. (Quicker: extra 3% for 3 years on 800 = Rs. 72; 920 + 72 = 992.)
+
+Q 79 | math | Arithmetic
+Two numbers are in the ratio of 15 : 11. If their H.C.F. is 13, then the numbers are
+(1) 198, 143
+(2) 195,143
+(3) 195,141
+(4) 198,141
+= 2
+~ 15 and 11 are co-prime, so the numbers are 15 × 13 = 195 and 11 × 13 = 143, whose H.C.F. is 13.
+
+Q 80 | math | Algebra & Geometry
+If 2^x × 8^(1/5) = 2^(1/5), then x is equal to
+(1) 1/5
+(2) -1/5
+(3) 2/5
+(4) -2/5
+= 4
+~ 8^(1/5) = (2^3)^(1/5) = 2^(3/5). So 2^(x + 3/5) = 2^(1/5) → x + 3/5 = 1/5 → x = −2/5.
+
+Q 81 | math | Arithmetic
+A starts business with Rs. 3500 and after 5 months, B joins with A as his partner. After a year, the profit is divided in the ratio 2 : 3. What is B's contribution in the capital?
+(1) Rs. 7,500
+(2) Rs. 8,000
+(3) Rs. 8,500
+(4) Rs. 9,000
+= 4
+~ Profit is shared in the ratio of capital × time. A: 3500 × 12 = 42,000; B: x × 7 (joins after 5 months). 42,000 : 7x = 2 : 3 → 14x = 1,26,000 → x = Rs. 9,000.
+
+Q 82 | math | Arithmetic
+A train 220 m long is running with a speed of 59 kmph. In what time will it pass a man who is running at 7 kmph in the direction opposite to that in which the train is going?
+(1) 15 sec.
+(2) 12 sec.
+(3) 18 sec.
+(4) 14 sec.
+= 2
+~ Opposite directions, so relative speed = 59 + 7 = 66 kmph = 66 × 5/18 = 55/3 m/s. Time = 220 ÷ (55/3) = 12 seconds.
+
+Q 83 | math | Arithmetic
+If 3 men or 6 boys can do a piece of work in 10 days, working 7 hours a day; how many days will it take to complete a piece of work twice as large with 6 men and 2 boys working together for 8 hours a day
+(1) 6
+(2) 7 1/2
+(3) 8 1/2
+(4) 9
+= 2
+~ 3 men = 6 boys, so 1 man = 2 boys and 6 men + 2 boys = 14 boys. The work needs 6 × 10 × 7 = 420 boy-hours; twice the work needs 840. 14 boys at 8 hours a day give 112 boy-hours a day: 840 ÷ 112 = 7 1/2 days.
+
+Q 84 | math | Arithmetic
+Three different containers contain 496 litres, 403 litres and 713 litres of mixtures of milk and water respectively. What biggest measure can measure all the different quantities exactly?
+(1) 1 litre
+(2) 7 litres
+(3) 31 litres
+(4) 41 litres
+= 3
+~ The biggest common measure is the H.C.F.: 496 = 16 × 31, 403 = 13 × 31, 713 = 23 × 31, and 16, 13, 23 have no common factor. So H.C.F. = 31 litres.
+
+Q 85 | math | Arithmetic
+The sum of the ages of 5 children born at the intervals of 3 years each is 50 years. Then the age of the youngest child is
+(1) 4 years
+(2) 8 years
+(3) 10 years
+(4) None of these
+= 1
+~ Ages: x, x + 3, x + 6, x + 9, x + 12. Sum = 5x + 30 = 50 → x = 4 years.
+
+Q 86 | math | Algebra & Geometry
+If √(1 + 55/729) = 1 + x/27, then the value of x is
+(1) 1
+(2) 3
+(3) 5
+(4) 7
+= 1
+~ 1 + 55/729 = 784/729, and √(784/729) = 28/27 = 1 + 1/27. So x = 1.
+
+Q 87 | math | Arithmetic
+A crate of mangoes contains one bruised mango for every 30 mangoes in the crate. If 3 out of every 4 bruised mangoes are considered unsalable, and there are 12 unsalable mangoes in the crate, then how many mangoes are there in the crate?
+(1) 460
+(2) 430
+(3) 480
+(4) 450
+= 3
+~ Unsalable = 3/4 of bruised, so bruised = 12 × 4/3 = 16. One in every 30 mangoes is bruised, so the crate has 16 × 30 = 480 mangoes.
+
+Q 88 | math | Algebra & Geometry
+In how many ways can a cricket, eleven be chosen out of a batch of 15 players?
+(1) 1365
+(2) 1400
+(3) 1465
+(4) 1395
+= 1
+~ Choosing 11 of 15 = 15C11 = 15C4 = (15 × 14 × 13 × 12)/(4 × 3 × 2 × 1) = 1365.
+
+Q 89 | math | Arithmetic
+A man bought a horse and a carriage for Rs. 3000. He sold the horse at a gain of 20% and the carriage at a loss of 10%, thereby gaining 2% on the whole. Find the cost of the horse.
+(1) 1400
+(2) 1200
+(3) 1500
+(4) 1300
+= 2
+~ Let the horse cost h; the carriage costs 3000 − h. Net gain: 0.20h − 0.10(3000 − h) = 2% of 3000 = 60 → 0.30h − 300 = 60 → h = Rs. 1200.
+
+Q 90 | math | Arithmetic
+A sum was put at simple interest at a certain rate for 3 years. Had it been put at 2% higher rate, it would have fetched Rs. 360 more. Find the sum.
+(1) Rs. 7,500
+(2) Rs. 6,500
+(3) Rs. 8,200
+(4) Rs. 6,000
+= 4
+~ The extra 2% a year for 3 years is 6% of the sum, which equals Rs. 360. Sum = 360 × 100/6 = Rs. 6,000.
+
+Q 91 | math | Arithmetic
+Two pipes A and B can fill a tank in 36 hours and 45 hours respectively. If both the pipes are opened simultaneously, how much time will be taken to fill the tank?
+(1) 30 hours
+(2) 25 hours
+(3) 35 hours
+(4) 20 hours
+= 4
+~ Together they fill 1/36 + 1/45 = (5 + 4)/180 = 9/180 = 1/20 of the tank per hour, so the tank is full in 20 hours.
+
+Q 92 | math | Arithmetic
+The number of girls in a class is 5 times the number of boys. Which of the following cannot be the total number of children in the class?
+(1) 24
+(2) 30
+(3) 35
+(4) 42
+= 3
+~ If there are b boys, there are 5b girls, so the total is 6b — always a multiple of 6. 24, 30 and 42 are multiples of 6; 35 is not, so it cannot be the total.
+
+Q 93 | math | Algebra & Geometry
+If (5 + 2√3)/(7 + 4√3) = a + b√3, then
+(1) a = -11, b = -6
+(2) a = -11, b = 6
+(3) a = 11, b = -6
+(4) a = 6, b = 11
+= 3
+~ Rationalise: multiply numerator and denominator by (7 − 4√3). Denominator = 49 − 48 = 1. Numerator = (5 + 2√3)(7 − 4√3) = 35 − 20√3 + 14√3 − 24 = 11 − 6√3. So a = 11, b = −6.
+
+Q 94 | math | Arithmetic
+Due to a reduction of 6 1/4% in the price of sugar, a man is able to buy 1 kg more for Rs. 120. The original rate of sugar is:
+(1) 8
+(2) 9
+(3) 10
+(4) 12
+= 1
+~ 6 1/4% = 1/16. The saving = 120/16 = Rs. 7.50, which buys the extra 1 kg, so the reduced price is Rs. 7.50 per kg. Original price = 7.50 × 16/15 = Rs. 8 per kg.
+
+Q 95 | math | Arithmetic
+A fort had provision of food for 150 men for 45 days. After 10 days, 25 men left the fort. The number of days for which the remaining food will last, is:
+(1) 29 1/5
+(2) 37 1/4
+(3) 42
+(4) 54
+= 3
+~ After 10 days, food is left for 150 men for 35 days. Now 125 men remain: 150 × 35 = 125 × d → d = 5250/125 = 42 days.
+
+Q 96 | math | Arithmetic
+Two students appeared at an examination. One of them secured 9 marks more than the other and his marks was 56% of the sum of their marks. The marks obtained by them are:
+(1) 39, 30
+(2) 41, 32
+(3) 42, 33
+(4) 43, 34
+= 3
+~ If the higher scorer has 56% of the total, the other has 44%; the 12% difference equals 9 marks, so the total = 9 × 100/12 = 75. Marks: 56% of 75 = 42 and 44% of 75 = 33.
+
+Q 97 | math | Arithmetic
+Two pipes A and B can fill a tank in 24 min. and 32 min. respectively. If both the pipes are opened simultaneously, after how much time B should be closed so that the tank is full in 18 minutes?
+(1) 9 minutes
+(2) 12 minutes
+(3) 8 minutes
+(4) 15 minutes
+= 3
+~ A runs for all 18 minutes and fills 18/24 = 3/4 of the tank. B must fill the remaining 1/4: t/32 = 1/4 → t = 8 minutes, so B is closed after 8 minutes.
+
+Q 98 | math | Algebra & Geometry
+Find a number such that when 15 is subtracted from 7 times the number, the result is 10 more than twice the number:
+(1) 5
+(2) 7
+(3) 8
+(4) 6
+= 1
+~ 7x − 15 = 2x + 10 → 5x = 25 → x = 5. Check: 35 − 15 = 20 = 10 + 10.
+
+Q 99 | math | Arithmetic
+The smallest number, that must be added to 1780 to make it a perfect square is
+(1) 70
+(2) 68
+(3) 69
+(4) 65
+= 3
+~ 42^2 = 1764 < 1780 < 43^2 = 1849. The next perfect square is 1849, so the number to be added = 1849 − 1780 = 69.
+
+Q 100 | math | Arithmetic
+If the number 653 xy is divisible by 90, then (x + y) = ?
+(1) 2
+(2) 3
+(3) 4
+(4) 6
+= 3
+~ Divisible by 90 means divisible by 10 and 9. By 10: y = 0. By 9: digit sum 6 + 5 + 3 + x + 0 = 14 + x must be a multiple of 9, so x = 4. Hence x + y = 4 (number 65340).

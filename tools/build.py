@@ -1003,6 +1003,74 @@ def FAQ_CGV(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- OPSC Assistant Section Officer (Odisha) ----------
+# Anil, 15 Nov 2026: "Odisha OPSC ASO (30 Nov)". Advt. No. 15 of 2026-27 (5 Nov 2026): 340 ASO (Group-B) posts, Odisha Secretariat Service under the Home
+# Department; apply 9-30 Nov 2026; written exam 17 Jan 2027 (Paper I General Awareness 100, Paper II Reasoning 50 + Mathematics 50, Paper III English 100 +
+# Odia 100; 0.25 negative) and a qualifying computer skill test. Papers: OPSC's own scans of its Series A booklets of the ASO (Office of the Advocate General)
+# exam of 9 Nov 2025 (Advt. 02 of 2025-26) and the ASO (Secretariat) exam of 27 Aug 2022 (Advt. 26 of 2021-22), the same three papers, with OPSC's final keys.
+# Papers I-II and English are printed in English only; the Odia section in Odia only (Odia added as a site language). Work files: /home/claude/od.
+OAS_BLURB = ('OPSC ASO written exam: Paper I General Awareness (100 questions, 1½ hours), Paper II Reasoning & Mental Ability 50 + Mathematics 50 (1½ hours), '
+             'Paper III English 100 + Odia 100 (2 hours); 1 mark a question, 0.25 cut for each wrong answer.')
+def _oas(pid, year, no, subj, short_subj, held, notif, key, or_paper, mins):
+    return dict(id=pid, file=f'opsc-aso-{year}-paper-{no}.txt', year=year, stage='Written', short=f'{year} · Paper {"I" * no if no < 4 else no} {short_subj}',
+                title=f'OPSC ASO {year} Paper {"I" * no}: {subj} Question Paper', notif=notif, held=held, key=key, fmt='mcq',
+                slug=f'opsc-aso-{year}-paper-{no}-question-paper-with-answers', kwname=f'OPSC ASO {year} Paper {no} {short_subj}',
+                or_paper=or_paper, blurb=OAS_BLURB, mins=mins)
+_OA_NOT = 'ASO (Advocate General, Odisha) Advt. 02 of 2025-26 · Series A'
+_OS_NOT = 'ASO (Odisha Secretariat) Advt. 26 of 2021-22 · Series A'
+_OA_KEY = "OPSC's final answer key (17 January 2026)"
+_OS_KEY = "OPSC's answer key (published with the result, 9 January 2024)"
+OAS_PAPERS = [
+  _oas('a1', 2025, 1, 'General Awareness', 'General Awareness', '9 November 2025', _OA_NOT, _OA_KEY, 'ପ୍ରଥମ ପତ୍ର (ସାଧାରଣ ସଚେତନତା)', 90),
+  _oas('a2', 2025, 2, 'Reasoning & Mental Ability and Mathematics', 'Reasoning & Maths', '9 November 2025', _OA_NOT, _OA_KEY, 'ଦ୍ୱିତୀୟ ପତ୍ର (ତର୍କଶକ୍ତି ଓ ଗଣିତ)', 90),
+  _oas('a3', 2025, 3, 'English and Odia', 'English & Odia', '9 November 2025', _OA_NOT, _OA_KEY, 'ତୃତୀୟ ପତ୍ର (ଇଂରାଜୀ ଓ ଓଡ଼ିଆ)', 120),
+  _oas('s1', 2022, 1, 'General Awareness', 'General Awareness', '27 August 2022', _OS_NOT, _OS_KEY, 'ପ୍ରଥମ ପତ୍ର (ସାଧାରଣ ସଚେତନତା)', 90),
+  _oas('s2', 2022, 2, 'Reasoning & Mental Ability and Mathematics', 'Reasoning & Maths', '27 August 2022', _OS_NOT, _OS_KEY, 'ଦ୍ୱିତୀୟ ପତ୍ର (ତର୍କଶକ୍ତି ଓ ଗଣିତ)', 90),
+  _oas('s3', 2022, 3, 'English and Odia', 'English & Odia', '27 August 2022', _OS_NOT, _OS_KEY, 'ତୃତୀୟ ପତ୍ର (ଇଂରାଜୀ ଓ ଓଡ଼ିଆ)', 120),
+]
+OAS_SUBJECTS = [
+  ('his', 'History & National Movement', 'history', ['Ancient & Medieval India', 'Modern India & National Movement', 'Art & Culture']),
+  ('pol', 'Indian Polity', 'polity', ['Constitution & Polity']),
+  ('geo', 'Geography & Environment', 'geography', ['Indian & World Geography', 'Environment & Ecology']),
+  ('eco', 'Indian Economy', 'economy', ['Indian Economy']),
+  ('sci', 'General Science & Technology', 'general-science', ['General Science', 'Technology']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National & International', 'Sports, Awards & Misc.']),
+  ('odk', 'Odisha GK', 'odisha-gk', ['Geography & Economy of Odisha', 'Polity, Schemes & Current Affairs of Odisha']),
+  ('rea', 'Reasoning & Mental Ability', 'reasoning', ['Verbal Reasoning', 'Non-verbal Reasoning']),
+  ('math', 'Mathematics', 'mathematics', ['Arithmetic', 'Algebra & Geometry', 'Data Interpretation']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+  ('odi', 'Odia', 'odia', ['Grammar', 'Vocabulary & Usage', 'Literature & Comprehension']),
+]
+OAS_SUBJ_OR = {'odk': 'ଓଡ଼ିଶା ସାଧାରଣ ଜ୍ଞାନ', 'his': 'ଇତିହାସ ଓ ଜାତୀୟ ଆନ୍ଦୋଳନ', 'pol': 'ଭାରତୀୟ ରାଜନୀତି', 'geo': 'ଭୂଗୋଳ ଓ ପରିବେଶ', 'eco': 'ଭାରତୀୟ ଅର୍ଥନୀତି',
+               'sci': 'ସାଧାରଣ ବିଜ୍ଞାନ ଓ ପ୍ରଯୁକ୍ତିବିଦ୍ୟା', 'cur': 'ସାମ୍ପ୍ରତିକ ଘଟଣାବଳୀ', 'rea': 'ତର୍କଶକ୍ତି ଓ ମାନସିକ ଦକ୍ଷତା', 'math': 'ଗଣିତ', 'eng': 'ଇଂରାଜୀ', 'odi': 'ଓଡ଼ିଆ'}
+
+
+def FAQ_OAS(total, npapers):
+    return [
+      ('Where can I get OPSC ASO previous year question papers with answers?',
+       f'This page has {total} questions from {npapers} OPSC ASO papers: all three written papers of the ASO exam of 9 November 2025 (Office of the Advocate '
+       'General) and of 27 August 2022 (Odisha Secretariat) — General Awareness, Reasoning & Mathematics, and English & Odia — each with OPSC\'s answer key and '
+       'an explanation.'),
+      ('Are the answers official?',
+       'Yes. Every answer is from OPSC\'s answer key for that exam (the 2025 final key of 17 January 2026 and the 2022 key published with the result). '
+       'Questions OPSC did not value are left out. Where an answer looks doubtful, the explanation says so. The explanations are written by Learn with Anil.'),
+      ('What is the OPSC ASO 2026 exam pattern?',
+       'Three objective papers for 400 marks: Paper I General Awareness 100 (1½ hours), Paper II Reasoning & Mental Ability 50 and Mathematics (Class 10 level) '
+       '50 (1½ hours), Paper III English 100 and Odia 100 (2 hours), with 0.25 cut for each wrong answer and a minimum score in each paper; then a qualifying '
+       'computer skill test of 50 marks.'),
+      ('Is the OPSC ASO question paper in Odia?',
+       'Papers I and II and the English part of Paper III are in English. The Odia part of Paper III is in Odia: tap ଓଡ଼ିଆ at the top of the page to read '
+       'those questions with their explanations in Odia.'),
+      ('When is the OPSC ASO 2026 exam?',
+       'The written exam is on Sunday, 17 January 2027. Online applications on opsc.gov.in are open from 9 to 30 November 2026 (5 pm). Advt. No. 15 of 2026-27 has 340 posts.'),
+      ('Is there an OPSC ASO mock test?',
+       'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
+       'questions of one subject, such as Odisha GK or Odia. Answers and explanations open with the ₹45 All-in-One Pass, which covers every exam on the site.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹45 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- RRB Group D (Level-1 posts, CEN 08/2024): RRB's own question papers with the answer key (Anil, 15 Nov 2026: "RRB Group D...add pyqs and other
 # details like other exams"). Source: RRB's "question paper with answer key" for each shift (options in green with a tick = RRB's answer), in English and
 # Hindi, as hosted by AglaSem; the Hindi sheets are another candidate's copy, so the Hindi was matched question by question and put in English option order.
@@ -1412,6 +1480,8 @@ L2_KN = dict(code='kn', dir='kn', label='ಕನ್ನಡ', name='Kannada', font=
              gf='&family=Noto+Sans+Kannada:wght@400;500;600;700')   # KEA FDA/SDA (Anil, 15 Nov 2026: Karnataka exams)
 L2_MR = dict(code='mr', dir='mr', label='मराठी', name='Marathi', font='Noto Sans Devanagari', ans='उत्तर',
              gf='&family=Noto+Sans+Devanagari:wght@400;500;600;700')   # MPSC Group-C (Anil, 15 Nov 2026: Maharashtra exams)
+L2_OR = dict(code='or', dir='or', label='ଓଡ଼ିଆ', name='Odia', font='Noto Sans Oriya', ans='ଉତ୍ତର',
+             gf='&family=Noto+Sans+Oriya:wght@400;500;600;700')   # OPSC ASO (Anil, 15 Nov 2026: Odisha exams)
 L2_GU = dict(code='gu', dir='gu', label='ગુજરાતી', name='Gujarati', font='Noto Sans Gujarati', ans='જવાબ',
              gf='&family=Noto+Sans+Gujarati:wght@400;500;600;700')   # GSSSB CCE (Anil, 15 Nov 2026: Gujarat exams)
 
@@ -1566,7 +1636,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -2680,6 +2750,24 @@ def exam_confs():
            papers_note=("Each paper is Vyapam's own Set A booklet (published on cgssb.cgstate.gov.in), with every answer from Vyapam's final answer key. Questions "
                         "are in Hindi and English, except the Hindi section (Hindi only) and the English section (English only). Questions Vyapam deleted are "
                         "left out. These 2021 papers have the same six parts as the 2027 exam, with more questions (200, or 150 in the steno paper).")),
+      dict(id='opsc-aso', dir='opsc-aso', src='opsc-aso', key='od-aso', name='OPSC ASO', short='OPSC ASO', seo='OPSC ASO',
+           slugp='opsc-aso', papers=OAS_PAPERS, subjects=OAS_SUBJECTS, faq=FAQ_OAS, board='OPSC', l2=L2_OR, pb='/opsc-aso/',
+           keyname="OPSC's answer key", keyshort="OPSC's key",
+           or_name='ଓପିଏସସି ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO)', subj_te=OAS_SUBJ_OR,
+           title="OPSC ASO Previous Year Question Papers with Answers – 2025 & 2022, Papers I, II, III (English & Odia) | Learn with Anil",
+           h1='OPSC ASO previous year question papers <em>with answers.</em>',
+           aka=('Odisha Public Service Commission (OPSC) Assistant Section Officer (ASO) written examination: Paper I General Awareness, Paper II Reasoning & '
+                'Mathematics, Paper III English & Odia. OPSC\'s own booklets of 2025 and 2022 with its answer keys.'),
+           aka_short='OPSC Assistant Section Officer (ASO), Odisha Secretariat',
+           l2line='ଓଡ଼ିଶା ଲୋକ ସେବା ଆୟୋଗ ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO) ପରୀକ୍ଷାର ପୂର୍ବ ବର୍ଷର ପ୍ରଶ୍ନପତ୍ର (2025, 2022) ଆୟୋଗଙ୍କ ଉତ୍ତର ଚାବି ସହିତ — ସାଧାରଣ ସଚେତନତା, ତର୍କଶକ୍ତି ଓ ଗଣିତ, ଇଂରାଜୀ ଓ ଓଡ଼ିଆ; ଓଡ଼ିଆ ପ୍ରଶ୍ନର ବ୍ୟାଖ୍ୟା ଓଡ଼ିଆରେ; ସମସ୍ତ ପରୀକ୍ଷା ପାଇଁ ଗୋଟିଏ ₹45 ଅଲ୍-ଇନ୍-ୱାନ୍ ପାସ୍।',
+           desc=lambda t: (f"OPSC ASO previous year question papers with answers: Papers I, II and III of the 2025 and 2022 Assistant Section Officer exams (OPSC's own "
+                           f"booklets), {t:,} questions with OPSC's key and explanations, the Odia section in Odia; Odisha GK, Reasoning, Maths, English and Odia "
+                           f"practice and timed mock tests for OPSC ASO 2026 (Advt. 15 of 2026-27)."),
+           eyebrow='OPSC · Assistant Section Officer (Odisha Secretariat)',
+           papers_note=("Each paper is OPSC's own Series A booklet (OPSC's scan, published on opsc.gov.in), with every answer from OPSC's answer key. Papers I and II "
+                        "and the English part of Paper III are in English, as printed; the Odia part of Paper III is in Odia, with explanations in Odia and English. "
+                        "Questions OPSC did not value are left out. The 2025 papers are from the ASO exam for the Office of the Advocate General, which had the "
+                        "same three papers.")),
     ] + bank_confs()
 
 
@@ -2819,7 +2907,7 @@ def main():
         def fill(s, photo, title, seo, desc=''):
             return (s.replace('{{HERO_P}}', HERO_P).replace('{{FIG12}}', FIG12)   # (first: they contain other placeholders)
                      .replace('{{SEO_HEAD}}', seo).replace('{{TITLE}}', title).replace('{{DESC}}', esc(desc))
-                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden')
+                     .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden').replace('{{OR_HIDDEN}}', '' if l2['code'] == 'or' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
                      .replace('{{FOOTSRC}}', f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
@@ -3144,6 +3232,8 @@ def paper_kw_l2(conf, p):
         return f'{conf["kn_name"]} {p["year"]} {p.get("kn_paper", "")} ಪ್ರಶ್ನೆಪತ್ರಿಕೆ ಉತ್ತರಗಳೊಂದಿಗೆ'.replace('  ', ' ')
     if conf.get('mr_name'):
         return f'{conf["mr_name"]} {p.get("mr_paper", "")} {p["year"]} प्रश्नपत्रिका उत्तरांसह'.replace('  ', ' ')
+    if conf.get('or_name'):
+        return f'{conf["or_name"]} {p.get("or_paper", "")} {p["year"]} ପ୍ରଶ୍ନପତ୍ର ଉତ୍ତର ସହିତ'.replace('  ', ' ')
     if conf.get('gu_name'):
         return f'{conf["gu_name"]} {p.get("gu_paper", "")} {p["year"]} પ્રશ્નપત્ર જવાબો સાથે'.replace('  ', ' ')
     if conf['l2']['code'] == 'te':
@@ -3182,6 +3272,8 @@ def subject_l2_line(conf, s):
         return f'{conf["kn_name"]} {name} — ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಗಳು, ಉತ್ತರಗಳು ಮತ್ತು ವಿವರಣೆಗಳೊಂದಿಗೆ.'
     if conf['l2']['code'] == 'mr' and conf.get('mr_name'):
         return f'{conf["mr_name"]} {name} — मागील वर्षांचे प्रश्न, उत्तरे व स्पष्टीकरणांसह.'
+    if conf['l2']['code'] == 'or' and conf.get('or_name'):
+        return f'{conf["or_name"]} {name} — ପୂର୍ବ ବର୍ଷର ପ୍ରଶ୍ନ, ଉତ୍ତର ଓ ବ୍ୟାଖ୍ୟା ସହିତ।'
     if conf['l2']['code'] == 'gu' and conf.get('gu_name'):
         return f'{conf["gu_name"]} {name} — અગાઉના વર્ષોના પ્રશ્નો, જવાબો અને સમજૂતી સાથે.'
     if conf.get('te_name'):
@@ -3243,6 +3335,7 @@ def exam_terms(e, cat):
     words += EX_WORDS.get(e['id'], [])
     if e['id'] == 'ukpsc-lower-pcs': words += ['ukpsc', 'uttarakhand public service commission', 'uttarakhand', 'uk', 'lower pcs', 'lower subordinate', 'lower subordinate services', 'combined state civil', 'naib tehsildar', 'excise inspector', 'marketing inspector', 'supply inspector', 'labour enforcement officer', 'cane development inspector', 'uttarakhand gk', 'general aptitude', 'ro aro', 'ukpsc lower pcs previous year paper', 'uttarakhand lower pcs question paper', 'uksssc']
     if e['id'] == 'cg-vyapam-group-2': words += ['cg vyapam', 'vyapam', 'cgssb', 'chhattisgarh', 'cg', 'karmchari chayan mandal', 'chhattisgarh staff selection board', 'group 2', 'assistant grade 3', 'assistant grade-3', 'sahayak grade 3', 'data entry operator', 'deo', 'stenographer', 'steno typist', 'registration clerk', 'asi', 'cg gk', 'chhattisgarh gk', 'computer', 'vdag', 'agdo', 'cg vyapam previous year paper', 'cg vyapam assistant grade 3 question paper']
+    if e['id'] == 'opsc-aso': words += ['opsc', 'odisha public service commission', 'odisha', 'orissa', 'aso', 'assistant section officer', 'odisha secretariat', 'secretariat assistant', 'advocate general', 'odia', 'oriya', 'odisha gk', 'general awareness', 'reasoning', 'mathematics', 'english', 'opsc aso previous year paper', 'opsc aso question paper', 'osssc']
     if e['id'] == 'uppsc-ro-aro': words += ['uppsc', 'uttar pradesh public service commission', 'ro', 'aro', 'ro/aro', 'ro aro', 'review officer', 'assistant review officer', 'samiksha adhikari', 'sahayak samiksha adhikari', 'up', 'uttar pradesh', 'general hindi', 'up gk', 'prelims', 'uppsc ro aro mock test', 'यूपीपीएससी', 'समीक्षा अधिकारी', 'सहायक समीक्षा अधिकारी', 'आरओ', 'एआरओ', 'सामान्य हिंदी']
     if e['id'] == 'upsssc-inter-level': words += ['upsssc', 'uttar pradesh subordinate services selection commission', 'up', 'uttar pradesh', 'inter level', 'intermediate level', 'inter level mains', 'mains', 'pet', 'pet 2025', 'lekhpal', 'gram vikas adhikari', 'vdo', 'gram panchayat adhikari', 'gpa', 'vpo', 'amin', 'vanijya kar sangrah amin', 'bhumi arjan amin', 'samaj kalyan paryavekshak', 'lower subordinate', 'lower pcs', 'up gk', 'hindi', 'upsssc mock test', 'यूपीएसएसएससी', 'लेखपाल', 'ग्राम विकास अधिकारी', 'ग्राम पंचायत अधिकारी', 'इंटर स्तरीय', 'मुख्य परीक्षा']
     if e['id'] == 'gsssb-cce': words += ['gsssb', 'gujarat subordinate service selection board', 'gujarat gaun seva pasandgi mandal', 'cce', 'cce 2.0', 'combined competitive exam', 'class 3', 'class-3', 'class iii', 'group a', 'group b', 'gujarat', 'gujarati', 'junior clerk', 'senior clerk', 'head clerk', 'office assistant', 'social welfare inspector', 'sub registrar', 'gsssb clerk', 'ojas', 'gsssb mock test', 'જુનિયર ક્લાર્ક', 'સિનિયર ક્લાર્ક', 'ગૌણ સેવા', 'જીએસએસએસબી', 'સંયુક્ત સ્પર્ધાત્મક પરીક્ષા']
@@ -3342,6 +3435,7 @@ BOARD_PHOTO = {   # free-licence photos from Wikimedia Commons, cropped to 640x2
     'gj': ('Rani ki Vav, Patan', 'Bernard Gagnon', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Rani_ki_vav_01.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),   # Gujarat (16 Nov 2026)
     'uk': ('Kedarnath Temple', 'Shaq774', 'public domain', 'https://commons.wikimedia.org/wiki/File:Kedarnath_Temple.jpg', ''),   # Uttarakhand (16 Nov 2026)
     'cg': ('Chitrakote Falls, Bastar', 'Moulina kumar', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:The_ravishing_beauty_of_Chitrakote_falls.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Chhattisgarh (16 Nov 2026)
+    'od': ('Konark Sun Temple', 'Joydeep', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Konark_Sun_Temple_Puri_district,_Odisha,_India_1.jpg', 'https://creativecommons.org/licenses/by-sa/4.0/'),   # Odisha (16 Nov 2026)
     'br': ('Bihar Legislature, Patna', 'Innocentbunny', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Bihar_Legislature_Building.jpg', 'https://creativecommons.org/licenses/by-sa/3.0/'),
 }
 
@@ -3485,6 +3579,7 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'uppsc-pcs': ('Bara Imambara, Lucknow', 'Harsh13596', 'CC BY-SA 4.0', _CW + 'Imambara_of_Asaf-ud-daula_.jpg'),
     'bpsc-cce': ('Golghar, Patna', 'Deepak1408', 'CC BY-SA 4.0', _CW + 'Golghar_patna_Bihar_India.jpg'),
     'bpsc-tre': ('Sariputta Stupa, Nalanda Mahavihara', 'Sumitsurai', 'CC BY-SA 4.0', _CW + 'Temple_3_-_Sariputta_Stupa_-_Nalanda_Mahavihara_(10).jpg'),
+    'opsc-aso': ('Lingaraja Temple, Bhubaneswar', 'Bernard Gagnon', 'CC BY-SA 3.0', _CW + 'Lingaraja_Temple_01.jpg'),   # OPSC ASO (16 Nov 2026)
     'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
     'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
     # Karnataka exams added as upcoming (Anil, 16 Nov 2026: "add other exam names in the site and ....add pic.....questions we will add later")
@@ -3563,7 +3658,7 @@ def photo_credit(eid, prefix='Photo: '):
 # language switcher, the badge, the figures). A language goes live only when questions exist in it; the switcher then needs its own button.
 SITE_LANGS = [('en', 'English', 'अंग्रेज़ी', 'ఇంగ్లీష్', True), ('te', 'తెలుగు', 'तेलुगु', 'తెలుగు', True), ('hi', 'हिंदी', 'हिंदी', 'హిందీ', True),
               ('ta', 'தமிழ்', 'तमिल', 'తమిళం', True), ('kn', 'ಕನ್ನಡ', 'कन्नड़', 'కన్నడ', True), ('ml', 'മലയാളം', 'मलयालम', 'మలయాళం', False),
-              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True), ('gu', 'ગુજરાતી', 'गुजराती', 'గుజరాతీ', True)]
+              ('mr', 'मराठी', 'मराठी', 'మరాఠీ', True), ('gu', 'ગુજરાતી', 'गुजराती', 'గుజరాతీ', True), ('or', 'ଓଡ଼ିଆ', 'ओड़िया', 'ఒడియా', True)]
 
 
 def lang_fills():
@@ -3579,7 +3674,7 @@ def lang_fills():
 NAV_FUND = ('      <a class="nav-fund" href="/funders.html" title="Fund this project" data-hubonly><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">'
             '<path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.5 3 5 6.4 5c2 0 3.4 1.1 4.1 2.3h3C14.2 6.1 15.6 5 17.6 5 21 5 23.1 8.5 21.6 11.8 19.5 16.4 12 21 12 21Z"/></svg>'
             '<span>Fund<span class="nf-x"> this project</span></span></a>\n')   # Anil, 2 Nov 2026: "add fund the project...here" (start page top bar)
-BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
+BOARD_ORDER = ['upsc', 'ap', 'tg', 'ssc', 'rail', 'bank', 'tn', 'ka', 'kl', 'mh', 'gj', 'up', 'uk', 'cg', 'od', 'br']   # Anil, 1 Nov 2026: boards first (UPSC, APPSC, TGPSC, SSC, Railways, Banking …)
 
 
 def hub_html(catalog, counts, grand):
@@ -4249,6 +4344,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 [lang="kn"]{font-family:"Noto Sans Kannada",sans-serif;line-height:1.8}
 [lang="mr"]{font-family:"Noto Sans Devanagari",sans-serif;line-height:1.75}
 [lang="gu"]{font-family:"Noto Sans Gujarati",sans-serif;line-height:1.75}
+[lang="or"]{font-family:"Noto Sans Oriya",sans-serif;line-height:1.75}
 .q .te{border-left:3px solid var(--line);padding-left:12px;margin:8px 0 4px}
 :root{--bg:#F3F6FB;--surface:#fff;--ink:#0D1830;--muted:#55627C;--line:#D6DFEC;--accent:#1846C7;--accent-soft:#E2EAFC;--accent-text:#1440B8;--band:#0C2266;--band-ink:#EEF3FF;--good:#12804A;--good-soft:#DDF3E7}
 @media (prefers-color-scheme:dark){:root{--bg:#0A1020;--surface:#111A2E;--ink:#E5ECF8;--muted:#9AA8C3;--line:#26334F;--accent:#6F95FF;--accent-soft:#1A2A52;--accent-text:#9DB7FF;--band:#0F1F4E;--band-ink:#EEF3FF;--good:#41C080;--good-soft:#123426;color-scheme:dark}}
@@ -4351,7 +4447,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -5350,6 +5446,20 @@ LANDINGS = {
             '<p class="note">CG Vyapam (CGSSB) Group 2: <a href="/cg-vyapam-group-2-notification-2026.html">1,703 posts, apply by 27 November 2026, exam on 10 January 2027</a>. '
             'Full papers with the timer: <a href="/cg-vyapam-group-2/mock-test.html">CG Vyapam mock test</a>.</p>',
       te={'CG Vyapam': 'छत्तीसगढ़ व्यापम प्रश्न पत्र'},
+      order=lambda c: 0),
+  'opsc-pyqs.html': dict(   # Anil, 15 Nov 2026: Odisha OPSC ASO
+      board='OPSC', ename='OPSC', crumb='OPSC PYQs', lang='or',
+      title='OPSC Previous Year Question Papers with Answers – ASO 2025 & 2022 (General Awareness, Reasoning, Maths, English, Odia) | Learn with Anil',
+      desc='OPSC (Odisha Public Service Commission) previous year question papers in one place: Assistant Section Officer 2025 and 2022, Papers I, II and III, '
+           '{n} questions with OPSC\'s answer keys and explanations, the Odia section in Odia. Practise them online with one ₹45 All-in-One Pass for every exam.',
+      h1='OPSC previous question papers with answers',
+      lede="Every OPSC question paper on Learn with Anil, {n} questions in all, each with OPSC's answer key and a short explanation.",
+      intro='<p>Looking for the OPSC ASO question paper with the answer key, Odisha GK and Odia grammar previous questions, or an OPSC ASO mock test? '
+            'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="or">ଓଡ଼ିଶା ଲୋକ ସେବା ଆୟୋଗ ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO) ପରୀକ୍ଷାର 2025 ଓ 2022 ପ୍ରଶ୍ନପତ୍ର ଆୟୋଗଙ୍କ ଉତ୍ତର ଚାବି ସହିତ — ସାଧାରଣ ସଚେତନତା, ତର୍କଶକ୍ତି, ଗଣିତ, ଇଂରାଜୀ ଓ ଓଡ଼ିଆ।</p>'
+            '<p class="note">OPSC ASO 2026: <a href="/opsc-aso-notification-2026.html">340 posts (Advt. 15 of 2026-27), apply by 30 November 2026, exam on 17 January 2027</a>. '
+            'Full papers with the real timer: <a href="/opsc-aso/mock-test.html">OPSC ASO mock test</a>.</p>',
+      te={'OPSC ASO': 'ଓପିଏସସି ASO ପ୍ରଶ୍ନପତ୍ର'},
       order=lambda c: 0),
 }
 
@@ -6434,6 +6544,7 @@ def notif_page(loaded, rel):
     elif N.get('kn'): body.append(f'<p lang="kn" style="margin:0 0 6px">{esc(N["kn"])}</p>')
     elif N.get('mr'): body.append(f'<p lang="mr" style="margin:0 0 6px">{esc(N["mr"])}</p>')
     elif N.get('gu'): body.append(f'<p lang="gu" style="margin:0 0 6px">{esc(N["gu"])}</p>')
+    elif N.get('or'): body.append(f'<p lang="or" style="margin:0 0 6px">{esc(N["or"])}</p>')
     if conf: body.append(f'<a class="cta" href="{conf["pb"]}mock-test.html">{esc(conf["seo"])} mock tests</a><a class="cta alt" href="{conf["pb"]}papers/">All {esc(conf["seo"])} previous papers</a>')
     for head, kind, data in (N['sections_fn'](conf, papers, questions) if N.get('sections_fn') else N['sections']):
         if head: body.append(f'<h2>{esc(head)}</h2>')
@@ -6469,7 +6580,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO')]
 
 
 def news_hub_page(loaded, rels):
@@ -6771,6 +6882,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
   'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
+  'opsc-aso': ('OPSC Assistant Section Officer written exam (Advt. 15 of 2026-27)', '2027-01-17', 'OPSC Advt. No. 15 of 2026-27 (5 November 2026): written exam on 17 January 2027.'),
   'cg-vyapam-group-2': ('CG Vyapam (CGSSB) Group 2 written exam (G20227)', '2027-01-10', 'CGSSB press note of 5 November 2026: exam on 10 January 2027, 10:00 am to 12:15 pm.'),
   'uppsc-ro-aro': ('UPPSC RO/ARO Prelims 2026 (Advt. A-4/E-1/2026)', None, 'UPPSC Advt. A-4/E-1/2026: applications 26 October to 26 November 2026; UPPSC has not announced the prelims date yet.'),
   'upsssc-inter-level': ('UPSSSC Intermediate Level Mains (Advt. 26-Exam/2026)', None, 'UPSSSC Advt. No. 26-Exam/2026: applications 10 November to 1 December 2026; UPSSSC has not announced the Mains date yet.'),
@@ -7621,7 +7733,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/"], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -7638,7 +7750,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li></ul>
 </main></body></html>
 """
 

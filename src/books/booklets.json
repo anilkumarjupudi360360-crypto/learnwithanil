@@ -463,6 +463,56 @@
    "pages": 42
   }
  },
+ "opsc-aso": {
+  "a1": {
+   "bytes": 3475715,
+   "file": "opsc-aso-a1-816e72bb0d.bin",
+   "key": "bk-opsc-aso-a1",
+   "name": "LearnWithAnil-OPSC-ASO-2025-Paper-1-General-Awareness-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 20
+  },
+  "a2": {
+   "bytes": 3654768,
+   "file": "opsc-aso-a2-428dbb1f2a.bin",
+   "key": "bk-opsc-aso-a2",
+   "name": "LearnWithAnil-OPSC-ASO-2025-Paper-2-Reasoning-Maths-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 24
+  },
+  "a3": {
+   "bytes": 5467661,
+   "file": "opsc-aso-a3-37d41928d1.bin",
+   "key": "bk-opsc-aso-a3",
+   "name": "LearnWithAnil-OPSC-ASO-2025-Paper-3-English-Odia-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 38
+  },
+  "s1": {
+   "bytes": 5520554,
+   "file": "opsc-aso-s1-286e62f637.bin",
+   "key": "bk-opsc-aso-s1",
+   "name": "LearnWithAnil-OPSC-ASO-2022-Paper-1-General-Awareness-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 28
+  },
+  "s2": {
+   "bytes": 5830401,
+   "file": "opsc-aso-s2-0b09cfa66d.bin",
+   "key": "bk-opsc-aso-s2",
+   "name": "LearnWithAnil-OPSC-ASO-2022-Paper-2-Reasoning-Maths-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 28
+  },
+  "s3": {
+   "bytes": 7322334,
+   "file": "opsc-aso-s3-e2fb0f845c.bin",
+   "key": "bk-opsc-aso-s3",
+   "name": "LearnWithAnil-OPSC-ASO-2022-Paper-3-English-Odia-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 39
+  }
+ },
  "rpf-constable": {
   "k25s1": {
    "bytes": 751736,

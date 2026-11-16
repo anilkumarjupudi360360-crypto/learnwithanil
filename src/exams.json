@@ -73,6 +73,11 @@
    "desc": "CG Vyapam Group 2, Patwari, ADEO and SI, CGPSC State Service, CG Police and CG TET"
   },
   {
+   "id": "od",
+   "name": "OPSC, OSSC & Odisha",
+   "desc": "OPSC Assistant Section Officer and other Odisha exams"
+  },
+  {
    "id": "br",
    "name": "BPSC & Bihar",
    "desc": "BPSC CCE and TRE, BSSC Inter and Graduate level, Bihar Police and STET"
@@ -1288,6 +1293,14 @@
    "b": "CG Vyapam",
    "t": "CG TET",
    "n": "Teacher Eligibility Test"
+  },
+  {
+   "id": "opsc-aso",
+   "cat": "od",
+   "b": "OPSC",
+   "t": "ASO",
+   "n": "Assistant Section Officer, Odisha Secretariat",
+   "live": "opsc-aso/"
   },
   {
    "id": "bpsc-cce",
