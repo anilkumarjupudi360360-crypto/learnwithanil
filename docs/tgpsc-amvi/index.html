@@ -2641,7 +2641,8 @@ function vNotes(){
     return `<div class="wrap view">${head("Study material", `Books for ${x}`, "Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.")}
     <div class="card">${urgentNote(`the Learn with Anil books for ${DATA.examSeo||DATA.examShort||DATA.exam||"my exam"}`)}<div class="row"><a class="btn btn-secondary" href="/tgpsc-amvi/">← Back to ${x}</a></div></div></div>`; }
   const price = PAYC ? PAYC.pyq.price : 149, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
-  const F = [["all","All books",()=>true],["g1","Group-I",b=>noteTags(b).includes("g1")],["g2","Group-II",b=>noteTags(b).includes("g2")],["eo","EO Grade-III",b=>noteTags(b).includes("eo")],["te","తెలుగు",b=>b.lang==="te"]]
+  // each exam shows only its own books (Anil, 16 Nov 2026), so the chips filter by language only, not by exam
+  const F = [["all","All books",()=>true],["te","తెలుగు",b=>b.lang==="te"]]
     .map(([k,l,f])=>[k,l,N.filter(f).length]).filter(([k,,n])=>n && (k==="all" || n<N.length));
   const f = F.some(x=>x[0]===UI.nFilter) ? UI.nFilter : "all";
   const shown = f==="all" ? N : N.filter(b=>noteTags(b).includes(f));

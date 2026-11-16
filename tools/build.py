@@ -2860,7 +2860,7 @@ def exam_confs():
            desc=lambda t: (f"APPSC Endowment Officer (Executive Officer Grade-III, AP Endowments) previous question papers: Paper II Hindu Philosophy & Temple System and Paper I General Studies & Mental Ability "
                            f"of 2026 and the 2023 Mains, and the 2022 Screening Test, with answers from APPSC's final keys. {t:,} questions in English and Telugu with explanations; practice quizzes, timed mock tests and study notes with the ₹149 All-in-One Pass."),
            eyebrow='APPSC · Executive Officer Grade-III · Endowments Department · 2022–2026',
-           notes_title='Study material for APPSC EO Grade-III and other APPSC exams',   # all books since 8 Nov 2026, EO books first
+           notes_title='Study material for APPSC EO Grade-III',   # only the EO books (Anil, 16 Nov 2026: "only relevant books")
            notes_seo=('Hindu Philosophy & Temple System Notes – APPSC EO Grade 3 (Endowment Officer) Paper II Study Material | Learn with Anil',
                       'APPSC Endowment Officer (EO Grade-III) Paper II study material by Jupudi Anil Kumar: Hindu Philosophy & Temple System notes from Ramayanam to the Endowments Act, with meme breaks and 291 previous questions with official answers. Free sample chapter.'),
            notes_lede='Exam notes by Jupudi Anil Kumar for Paper II of the APPSC Executive Officer Grade-III exam: every syllabus topic from Ramayanam to the Endowments Act, written from what APPSC actually asks, with key-fact tables, quick-revision boxes and APPSC\'s own previous questions with the official answers.',
@@ -3333,12 +3333,10 @@ def main():
         subj = {s[0]: s for s in conf['subjects']}
         def upath(x): return x if (is_root or re.match(r'(https?:|data:|/)', x)) else up + x
         # a book with an 'exams' list shows only on those exams' pages; the others (APPSC Mains books) on NOTES_EXAMS
-        # the start page's Study Material shows every book (Anil, 2 Nov 2026: "in study material only this 3 books are showing")
-        # Anil, 8 Nov 2026: "in study material section keep all the books that are available with us": every page that has a
-        # Study Material section (start page, Group-I, Group-II, EO) shows every book, this exam's own books first
+        # Anil, 16 Nov 2026: "only relevant books in relevant exam boxs": each exam's Study Material shows only its own books
+        # (replaces 8 Nov "keep all the books that are available with us"; the Group-II page, shared with the start page, too)
         mine = lambda b: conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS
-        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])])
-                  for b in (sorted(notes, key=lambda b: not mine(b)) if is_root or any(mine(b) for b in notes) else [])]
+        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes if mine(b)]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -3352,7 +3350,7 @@ def main():
                     exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP, booksSoon=not enotes and not is_root,
                     mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
                     ranks=_ranks_for(conf['short']),
-                    notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
+                    notesTitle=conf.get('notes_title', ''), notesLede=conf.get('notes_lede', ''),
                     key=conf['key'], exam=conf['name'], mockonly=bool(conf.get('mockonly')), bahubali=bb_url if conf['board'] == 'APPSC' else '', examShort=conf['short'], papersNote=conf['papers_note'], hub=is_root,
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool([x for x in loaded if not x[0].get('ncert')], 120) if is_root else [],
@@ -3406,7 +3404,7 @@ def main():
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
-                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', home_notes([b for b in enotes if not b.get('exams') or conf['id'] in b['exams']], bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
+                     .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', home_notes(enotes, bb_url if conf['board'] == 'APPSC' else '', conf.get('notes_line', ''))).replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
                      .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
@@ -7266,11 +7264,6 @@ def _ranks_for(short):
     return dict(asof=r['asof'], site=r['site'], exam=r['exams'].get(short), tests={t: h for t, h in r['tests'].items() if t.startswith(short + ' · ')})
 
 
-ROOT_NOTES = ('Study material: every book on the site',   # the start page's Study Material lists every book, for every exam
-              'Exam-focused books by Jupudi Anil Kumar for APPSC Group-I, Group-II and the EO Grade-III exam: History and Culture of Andhra Pradesh, '
-              'Mental Ability, Public Administration and Governance, Ethics and Laws, the Group-II Micro-Syllabus, Crisp Notes on AP Economy, '
-              'Science and Technology, and Hindu Philosophy & Temple System. '
-              'Every book has the exam\'s own previous questions inside.')
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
 
 # APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every

@@ -32,7 +32,7 @@ _NOTES = json.load(open(os.path.join(ROOT, 'src', 'notes.json'), encoding='utf-8
 def _g2book(k):   # no 'exams' list (the APPSC Mains books) or a Group-II book (the Micro-Syllabus, 29 Oct 2026)
     ex = next((b.get('exams') for b in _NOTES if b['id'] == k), None)
     return not ex or 'appsc-group-2' in ex
-G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES)}   # the start page's Study Material (shared with the Group-2 page) lists every book (Anil, 2 Nov 2026)
+G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES) and _g2book(k)}   # the Group-2 Study Material lists only Group-2 books (Anil, 16 Nov 2026: "only relevant books in relevant exam boxs")
 EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer', 'appsc-analyst': 'appsc-analyst-grade-2', 'appsc-fro': 'appsc-forest-range-officer', 'appsc-env-engineer': 'appsc-assistant-environmental-engineer', 'appsc-aso': 'appsc-assistant-statistical-officer', 'ap-dsc': 'ap-dsc'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the All-in-One Pass opens mocks, books and Bahubali)
@@ -553,10 +553,15 @@ async def main():
                 for eid in bk['exams']:
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
-                # every Study Material section lists every book, the exam's own first (Anil, 8 Nov 2026: "keep all the books that are available with us")
-                g1d = _g.glob(os.path.join(SITE, 'appsc-group-1', 'data', '*.js'))
-                if not any(f'"{bk["id"]}"' in open(f, encoding='utf-8').read() for f in g1d): errors.append(f'book {bk["id"]} missing from the Group 1 study material')
+                # ... and in no other exam's study material (Anil, 16 Nov 2026: "only relevant books in relevant exam boxs")
+                for eid in sorted(({e for x in _NOTES for e in x.get('exams', [])} | {'appsc-group-1', 'appsc-group-2'}) - set(bk['exams'])):
+                    dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
+                    if dfs and f'"{bk["id"]}"' in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} is on the {eid} study material, but it is not for that exam')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
+            for bk in [x for x in _NOTES if not x.get('exams')]:   # the APPSC Mains books: Group-I and Group-II only
+                for eid in sorted({e for x in _NOTES for e in x.get('exams', [])} - {'appsc-group-1', 'appsc-group-2'}):
+                    dfs = _g.glob(os.path.join(SITE, EXAM_DIR.get(eid, eid), 'data', '*.js'))
+                    if dfs and f'"{bk["id"]}"' in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} is on the {eid} study material, but it is not for that exam')
             # study books: part of the All-in-One Pass, locked without it, a decrypted PDF download with it
             for passes, paid in [({}, False), (PAID, True)]:
                 bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
