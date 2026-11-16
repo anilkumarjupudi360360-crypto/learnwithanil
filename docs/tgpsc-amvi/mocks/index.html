@@ -942,7 +942,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/tg-amvi-df699f3ce2.js"></script>
+<script src="data/tg-amvi-b679fba0f2.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1827,7 +1827,7 @@ const HUBT = {
   f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
   g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
   g2:{en:'Our goal: 1,00,000 PYQs under one roof', hi:'हमारा लक्ष्य: 1,00,000 PYQs एक ही जगह', te:'మా లక్ష్యం: 1,00,000 PYQs ఒకే చోట'},
-  g3:{en:'22,209 done so far · 22%', hi:'अब तक 22,209 पूरे · 22%', te:'ఇప్పటివరకు 22,209 పూర్తి · 22%'},
+  g3:{en:'22,409 done so far · 22%', hi:'अब तक 22,409 पूरे · 22%', te:'ఇప్పటివరకు 22,409 పూర్తి · 22%'},
   choose:{en:'Choose your exam', hi:'अपनी परीक्षा चुनें', te:'మీ పరీక్షను ఎంచుకోండి'},
   all:{en:'All exams', hi:'सभी परीक्षाएँ', te:'అన్ని పరీక్షలు'},
   popT:{en:'Popular exams', hi:'लोकप्रिय परीक्षाएँ', te:'ప్రముఖ పరీక్షలు'},
@@ -1981,7 +1981,7 @@ function dailyRow(card){
     ? `<div class="card daily"><div><p class="eyebrow">Daily 10 · done today ✓</p><h2>You scored ${S.daily.c}/${S.daily.n} today ${sk.n?`· 🔥 ${sk.n}-day streak`:""}</h2><p>New questions tomorrow. Share your score and challenge a friend.</p></div><button class="btn btn-good" type="button" data-act="dshare">Share on WhatsApp</button></div>`
     : `<div class="me-row"><span>✓ <b>Daily 10 done:</b> ${S.daily.c}/${S.daily.n} ${fire}</span><button class="btn btn-ghost btn-sm" type="button" data-act="dshare">Share on WhatsApp</button></div>`;
   return card
-    ? `<div class="card daily"><div><p class="eyebrow">Free · new every day</p><h2>Today's 10 questions</h2><p>10 real previous questions from ${esc(DATA.examShort||DATA.exam||"this exam")}, about 10 minutes, free. Come back every day and build your streak 🔥</p></div><button class="btn btn-primary" type="button" data-act="daily">▶ Start today's 10</button></div>`
+    ? `<div class="card daily"><div><p class="eyebrow">Free · new every day</p><h2>Today's 10 questions</h2><p>10 ${DATA.ncert ? "chapter-wise MCQs" : "real previous questions"} from ${esc(DATA.examShort||DATA.exam||"this exam")}, about 10 minutes, free. Come back every day and build your streak 🔥</p></div><button class="btn btn-primary" type="button" data-act="daily">▶ Start today's 10</button></div>`
     : `<div class="me-row"><span>☀️ <b>Today's 10 questions</b> ${fire || '<span class="muted">· start a daily streak</span>'}</span><button class="btn btn-primary btn-sm" type="button" data-act="daily">Start today's 10</button></div>`;
 }
 function paperProgress(){ return PAPERS.map(p=>{ const ids = QS.filter(q=>q.p===p.id).map(q=>q.id); return {p, ids, seen: ids.filter(id=>S.qs[id]).length}; }); }
@@ -2019,12 +2019,12 @@ function renderMe(){
   const mis = mistakeIds().length, mocks = DATA.mockHtml ? "mocks" : "practice";
   box.innerHTML = `<div class="card me">
     <div class="me-top"><div class="me-ring" style="--p:${p}" role="img" aria-label="${p} percent of the questions done"><div><b>${p}%</b><span>done</span></div></div>
-      <div class="me-txt"><h2>Welcome back${ST.name ? ", " + esc(ST.name.split(" ")[0]) : ""} 👋</h2><p>${done.toLocaleString("en-IN")} of ${tot.toLocaleString("en-IN")} questions done${o.acc!==null ? ` · ${o.acc}% correct` : ""} · ${fin} of ${PAPERS.length} paper${PAPERS.length===1?"":"s"} finished</p></div></div>
+      <div class="me-txt"><h2>Welcome back${ST.name ? ", " + esc(ST.name.split(" ")[0]) : ""} 👋</h2><p>${done.toLocaleString("en-IN")} of ${tot.toLocaleString("en-IN")} questions done${o.acc!==null ? ` · ${o.acc}% correct` : ""} · ${fin} of ${PAPERS.length} ${DATA.ncert?"chapter":"paper"}${PAPERS.length===1?"":"s"} finished</p></div></div>
     <div class="me-acts">${cont}${weak}</div>
     ${dailyRow(false)}
     ${planRow(pp)}
     ${installRow()}
-    <div class="me-3"><a href="/tgpsc-amvi/papers/"><span>📄</span>Previous Papers</a><a href="#${mocks}"><span>⏱️</span>${mocks==="mocks" ? "Mock Tests" : "Practice"}</a><a href="/tgpsc-amvi/mistakes/"><span>❌</span>My Mistakes${mis ? ` <b class="n">${mis}</b>` : ""}</a></div>
+    <div class="me-3"><a href="/tgpsc-amvi/papers/"><span>📄</span>${DATA.ncert?"Chapters":"Previous Papers"}</a><a href="#${mocks}"><span>⏱️</span>${mocks==="mocks" ? "Mock Tests" : "Practice"}</a><a href="/tgpsc-amvi/mistakes/"><span>❌</span>My Mistakes${mis ? ` <b class="n">${mis}</b>` : ""}</a></div>
   </div>`;
 }
 /* ---------- My Mistakes on every device (Anil, 8 Nov 2026, idea 4): a student logged in with Google keeps this exam's mistakes,
@@ -2100,7 +2100,30 @@ function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?se
 }
 
 /* ---------- papers ---------- */
+/* NCERT Class 11 / 12 (Anil, 16 Nov 2026): the "papers" are chapters, listed subject by subject and book by book */
+function vChapters(){
+  const card = p=>{
+    const done = QS.filter(q=>q.p===p.id && S.qs[q.id]).length;
+    return `<article class="card paper">
+      <span class="yr">${esc(p.held)} · ${esc(p.stage)}</span>
+      <h3>${esc(String(p.short||"").replace(/^Ch \d+\. /,""))}</h3>
+      <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill good">Answers &amp; explanations</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
+      <div class="acts">
+        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":"🔒 "}Practise this chapter</button>
+        ${pyqOpen() ? "" : `<button class="btn btn-secondary btn-sm" type="button" data-act="trypaper" data-paper="${p.id}">Try 10 questions free</button>`}
+        <a class="btn btn-ghost btn-sm" href="papers/${p.slug}.html">Read with answers</a>
+      </div>
+    </article>`;
+  };
+  const subs = SUBJECTS.filter(s=>PAPERS.some(p=>p.nsub===s.id));
+  return `<div class="wrap view">
+    ${head("Chapters", esc(DATA.exam||"")+" chapter-wise MCQs", esc(DATA.papersNote||""))}
+    ${subs.map(s=>`<section class="section"><div class="section-title"><h2>${esc(s.name)}</h2></div>${s.topics.filter(b=>PAPERS.some(p=>p.nsub===s.id && p.stage===b)).map(b=>`<h3 style="margin:4px 0 10px">${esc(b)}</h3><div class="papers">${PAPERS.filter(p=>p.nsub===s.id && p.stage===b).map(card).join("")}</div>`).join("")}</section>`).join("")}
+    <p class="muted">More chapters are added every week. <a href="/tgpsc-amvi/">See every subject and chapter →</a></p>
+  </div>`;
+}
 function vPapers(){
+  if(DATA.ncert) return vChapters();
   const years = [...new Set(PAPERS.map(p=>p.year))].sort((a,b)=>b-a);
   const card = p=>{
     const done = QS.filter(q=>q.p===p.id && S.qs[q.id]).length;
@@ -2144,12 +2167,12 @@ function vPractice(){
   };
   const hasRecallSel = PAPERS.some(p=>ps.has(p.id) && p.fmt==="recall");
   return `<div class="wrap view">
-    ${head("Practice","Build your own quiz","Choose papers and topics. Questions are drawn at random from what you select.")}
+    ${head("Practice","Build your own quiz",DATA.ncert?"Choose chapters, subjects and books. Questions are drawn at random from what you select.":"Choose papers and topics. Questions are drawn at random from what you select.")}
     <div class="builder">
       <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
         <section class="card step">
-          <div class="step-h"><h2>Papers</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="allpapers">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="nopapers">Clear</button></div></div>
-          <div class="row">${PAPERS.map(p=>`<button type="button" class="chip" data-act="paper" data-paper="${p.id}" aria-pressed="${ps.has(p.id)}">${esc(p.short)} <span class="n">${p.count}</span></button>`).join("")}</div>
+          <div class="step-h"><h2>${DATA.ncert?"Chapters":"Papers"}</h2><div class="row"><button class="btn btn-ghost btn-sm" type="button" data-act="allpapers">Select all</button><button class="btn btn-ghost btn-sm" type="button" data-act="nopapers">Clear</button></div></div>
+          <div class="row">${PAPERS.map((p,i)=>(DATA.ncert && (!i || PAPERS[i-1].stage!==p.stage) ? `<span style="flex-basis:100%;font-weight:700;font-size:13.5px;color:var(--muted);margin-top:${i?6:0}px">${esc(p.stage)}</span>` : "")+`<button type="button" class="chip" data-act="paper" data-paper="${p.id}" aria-pressed="${ps.has(p.id)}">${esc(p.short)} <span class="n">${p.count}</span></button>`).join("")}</div>
           ${hasRecallSel?`<label class="row" style="gap:8px;font-size:14.5px;cursor:pointer"><input type="checkbox" id="recallToggle" data-act="recalltoggle" ${P.recall?"checked":""} style="width:18px;height:18px;accent-color:var(--accent)"> Include quick-recall questions from the answer-only keys</label>`:""}
         </section>
         <section class="card step">
@@ -2694,7 +2717,7 @@ function vAbout(){
         <div class="bio">
           <p>I am a civil-services educator with 2.5 years of teaching and mentorship for UPSC, APPSC and TGPSC aspirants. I teach Indian Polity, Governance and Ethics, build test series and study material, and have evaluated more than 2,000 Mains answer copies.</p>
           <p>As Course Coordinator, faculty and mentor, I plan the Group-1 and Group-2 programmes and their test series, coordinate the UPSC mock interview programme in Delhi, and mentor Group-1, Group-2 and UPSC aspirants. I have headed several Prelims and Mains test series.</p>
-          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 22,209 questions from 40 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
+          <p>I built Learn with Anil so that every aspirant can practise the real previous questions of their exam, topic by topic, as practice quizzes or timed tests in English and their own language, and see clearly where they are losing marks. Today it has 22,409 questions from 41 exams (APPSC, TGPSC, TS Police, UPSC and SSC), and one ₹${PAYC ? PAYC.pyq.price : 45} All-in-One Pass opens all of them for 12 months: less than the price of one guide book.</p>
           <p>Our goal is 1 lakh previous questions of government exams under one roof, with a mock test series for every exam, all in the same ₹${PAYC ? PAYC.pyq.price : 45} pass. I am building it alone, one exam at a time. If you would like to help, see <a href="/funders.html">Fund this project</a>.</p>
         </div>
         <dl>
@@ -3097,7 +3120,7 @@ document.addEventListener("click", e=>{
     case "weakgo": { const sid=b.dataset.s; const all=QS.filter(q=>q.s===sid); const pri=all.filter(q=>!S.qs[q.id] || S.qs[q.id].last!=="c"); startQuiz(shuffle((pri.length>=10? pri : all).map(q=>q.id)).slice(0,10), SUBJ[sid].name + " · 10 questions", "practice", "topic"); break; }
     case "daily": startQuiz(dailyIds(), "Daily 10 · " + new Date(dayIST()+"T12:00:00+05:30").toLocaleDateString("en-IN", {day:"numeric", month:"short", year:"numeric"}), "practice", "daily", 10); track("daily_start", {exam: DATA.examShort||""}); break;
     case "dshare": { const sk=streak(), d=S.daily||{}, url=location.origin + (PB || "/");
-      const t = `${sk.n ? "🔥 Day " + sk.n + " on " : "On "}Learn with Anil: I scored ${d.c}/${d.n} in today's ${DATA.examShort||""} Daily 10 (real previous questions). Try today's 10 free: ${url}`;
+      const t = `${sk.n ? "🔥 Day " + sk.n + " on " : "On "}Learn with Anil: I scored ${d.c}/${d.n} in today's ${DATA.examShort||""} Daily 10 (${DATA.ncert ? "NCERT chapter MCQs" : "real previous questions"}). Try today's 10 free: ${url}`;
       window.open("https://wa.me/?text=" + encodeURIComponent(t), "_blank", "noopener"); track("daily_share", {exam: DATA.examShort||""}); break; }
     case "trypaper": { const p=PMAP[b.dataset.paper]; UI.tryPaper = p.id; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).slice(0,10).map(q=>q.id), (p.short||p.title) + " · free try (first 10)", "practice", "try", 10); track("try_free", {exam: DATA.examShort||"", paper: p.id}); break; }
     case "install": if(INSTALL){ INSTALL.prompt(); INSTALL.userChoice.then(c=>{ track("app_install", {outcome: c.outcome}); INSTALL = null; render(); }).catch(()=>{}); } break;
