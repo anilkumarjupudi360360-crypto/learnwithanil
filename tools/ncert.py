@@ -268,6 +268,12 @@ document.addEventListener("click", function(e){
 </script>"""
 
 
+def _build():
+    """tools/build.py as loaded (run as __main__, or imported as build by the other tools)."""
+    import sys
+    return sys.modules['build'] if 'build' in sys.modules else sys.modules['__main__']
+
+
 def browser(conf, papers, abs_links=False):
     """The class page's subject -> book -> chapter list. Live chapters link to their page and open in the app as a practice quiz
     (?practice=) or a timed test (?test=); the others say 'Coming soon'."""
@@ -301,7 +307,9 @@ def browser(conf, papers, abs_links=False):
                 else:
                     items.append(f'<li class="ncb-off"><span class="ncb-n">{i}</span><span class="ncb-t"><b>{esc(ch)}</b></span><span class="ncb-soon">Coming soon</span></li>')
             blocks.append(f'<div class="ncb-book"><h3>{esc(book)} <span>{len(chs)} chapters' + (f' · {bl} live' if bl else '') + '</span></h3>'
-                          f'<ol class="ncb-ch">{"".join(items)}</ol></div>')
+                          f'<ol class="ncb-ch">{"".join(items)}</ol>'
+                          # Anil, 16 Nov 2026: chapters not uploaded yet -> urgent WhatsApp note, inside the opened subject only
+                          + (_build().urgent_note(f'the NCERT Class {cls} {book} chapter-wise MCQs') if bl < len(chs) else '') + '</div>')
         op = ' open' if (nq and first_open) else ''
         if nq: first_open = False
         secs.append(f'<details class="ncb-s" id="ncs-{k}"{op}><summary>{esc(name)}<small>{len(books)} book{"s" if len(books) > 1 else ""} · {nch} chapters'

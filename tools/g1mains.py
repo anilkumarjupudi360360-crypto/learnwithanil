@@ -260,7 +260,8 @@ def pages(B, conf):
                         f'🔒 This model answer (key words, numbered points, diagrams and the AP angle) opens with the ₹{price} All-in-One Pass. '
                         f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{pb}?buy=pyq">Get the All-in-One Pass · ₹{price}</a></div></div></div>')
             else:
-                abox = '<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">Coming soon.</div></div>'
+                abox = ('<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">Coming soon.'
+                        + B.urgent_note(f'the model answer to APPSC Group 1 Mains {y} Paper {p} Q{q["qno"]}', 'div') + '</div></div>')
             nav = D.answer_nav((f'Q{L[i - 1]["qno"]}', apage(L[i - 1]), short(L[i - 1]['text'], 70)) if i else None,
                                (f'All {len(L)} questions', ppage(q)),
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)

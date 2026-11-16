@@ -243,7 +243,7 @@ def course_pages(B, code):
                         f'If you have the pass, it opens here by itself on the phone you registered.<br><a class="cta" href="{buyurl}">Get the All-in-One Pass · ₹{price}</a></div></div></div>')
             else:
                 abox = ('<div class="ma"><div class="ah"><span>Model answer</span></div><div class="mlock">The model answers for this paper are being written and checked; '
-                        'they are added year by year, newest first.</div></div>')
+                        'they are added year by year, newest first.' + B.urgent_note(f'the model answer to {C["seo"]} {y} {pl_} Q{q["qno"]}', 'div') + '</div></div>')
             nav = D.answer_nav((f'Q{L[i - 1]["qno"]}', apage(L[i - 1]), short(L[i - 1]['text'], 70)) if i else None,
                                (f'All {len(L)} questions', ppage(q)),
                                (f'Q{L[i + 1]["qno"]}', apage(L[i + 1]), short(L[i + 1]['text'], 70)) if i + 1 < len(L) else None)

@@ -327,8 +327,13 @@ async def main():
         # study material (APPSC Mains books) only on the APPSC Group 1 / Group 2 pages
         for sub, want in (('appsc-group-2', True), ('appsc-group-1', True), ('upsc-epfo', False), ('ts-police-si', False), ('upsc-capf', False)):
             raw = open(os.path.join(SITE, sub, 'index.html'), encoding='utf-8').read()
-            has = 'class="card notes-promo"' in raw or 'data-v="notes"' in raw
+            has = 'class="card notes-promo"' in raw or 'data-v="notes">Study Material' in raw
             if has != want: errors.append(f'{sub}: study material {"missing" if want else "shown"}')
+            # exams without books: the Books tile opens /<exam>/notes/, the "not uploaded yet" view with the urgent WhatsApp note (16 Nov 2026)
+            dd = os.path.join(SITE, sub, 'data')
+            dj = ''.join(open(os.path.join(dd, f), encoding='utf-8').read() for f in os.listdir(dd) if f.endswith('.js')) if not want and os.path.isdir(dd) else ''
+            if not want and not (os.path.exists(os.path.join(SITE, sub, 'notes', 'index.html')) and '"booksSoon":true' in dj):
+                errors.append(f'{sub}: no "books not uploaded yet" page behind the Books tile')
         # help & grievance page: exists, in the sitemap, linked from footers, form posts a grievance and shows the ticket
         if '/help.html</loc>' not in open(os.path.join(SITE, 'sitemap.xml')).read(): errors.append('help.html not in sitemap')
         if 'href="/help.html"' not in open(os.path.join(SITE, 'appsc-group-1', 'index.html'), encoding='utf-8').read(): errors.append('app footer has no Help & grievances link')

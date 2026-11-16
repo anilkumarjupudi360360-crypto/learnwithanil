@@ -13,6 +13,23 @@ DIST = os.path.join(ROOT, 'dist')
 SITE_URL = os.environ.get('SITE_URL', 'https://learnwithanil.in').rstrip('/')
 INSTAGRAM = 'learn_with_anil06'
 WHATSAPP = '919494792739'
+# Anil, 16 Nov 2026: "if anybody came into website and see any mock test, or books, that is absent or not uploaded, they can msg me
+# so that it gets uploaded within a week ... only msg if they urgently needed it ... that msg must be present only once they open the
+# tile they require". So the note sits inside what a student opened (an upcoming exam, a book, the mock tests, sectional mocks,
+# NCERT chapters, a model answer), never on the lists or the tiles themselves. Same wording in tools/app.html (urgentNote).
+URGENT_STYLE = ('background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.35);border-left:4px solid #25D366;border-radius:10px;'
+                'padding:12px 14px;margin:16px 0;font-size:15px;line-height:1.55')
+
+
+def urgent_note(item, tag='p'):
+    """'Not uploaded yet. If you need it urgently, message Anil on WhatsApp and it will be uploaded within a week.'"""
+    import urllib.parse
+    wa = f'https://wa.me/{WHATSAPP}?text=' + urllib.parse.quote(f'Hi Anil sir, I urgently need {item} on Learn with Anil. Please upload within a week.')
+    return (f'<{tag} class="urgent-note" style="{URGENT_STYLE}"><b>Not uploaded yet.</b> If you need it urgently, '
+            f'<a href="{wa.replace("&", "&amp;")}" target="_blank" rel="noopener" style="font-weight:700">message Anil on WhatsApp</a> '
+            f'and it will be uploaded within a week.</{tag}>')
+
+
 PHONE = '+91 94947 92739'
 EMAIL = 'learnwithanil0608@gmail.com'
 # Google Analytics 4 measurement id (G-XXXXXXXXXX) from Anil's Analytics property; empty = no tracking tag on the site.
@@ -3181,7 +3198,7 @@ def main():
         if stale: print(f'  NOTE {conf["id"]}: {stale} paid explanations are not sealed yet and stay in the public app data; run tools/ex_seal.py {conf["id"]}')
         data = dict(mockHtml='' if conf.get('ncert') else inapp_mocks(conf, papers), secHtml='' if conf.get('ncert') else inapp_sectionals(conf, papers, questions), ncert=bool(conf.get('ncert')),
                     pdfs={k: dict(key=v['key'], name=v['name'], pages=v['pages']) for k, v in bks.items()}, papers=papers, subjects=subjects, questions=pub_qs, instagram=INSTAGRAM,
-                    exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP,
+                    exb=dict(key=exb['key'], file=exb['file']) if exb else None, site=SITE_URL, notes=enotes, wa=WHATSAPP, booksSoon=not enotes and not is_root,
                     mains=emains, mainsP5=MAINS_P5 if emains else None, mainsLink=('/appsc-group-1/mains/' if enotes else ''),
                     ranks=_ranks_for(conf['short']),
                     notesTitle=ROOT_NOTES[0] if is_root else conf.get('notes_title', ''), notesLede=ROOT_NOTES[1] if is_root else conf.get('notes_lede', ''),
@@ -3350,6 +3367,8 @@ def main():
             return site_links(doc.replace('href="{{HUBHREF}}"', 'href="/"').replace(f'href="{hubhref}"', 'href="/"'), pb)
 
         if not enotes: views.pop('notes', None)   # no study-material page outside APPSC Group 1 / Group 2
+        if not enotes and not is_root:   # Anil, 16 Nov 2026: the Books tile opens /<exam>/notes/, which says the books are not uploaded yet
+            views['notes'] = (f'Books for {seo_name} | Learn with Anil', f'Learn with Anil books for {seo_name} are being written; they will come with the All-in-One Pass.', pb + 'notes/', False)
         if emains:
             views['mains'] = ('APPSC Group 1 Mains Answer Writing Tool Kit – Previous Questions of Papers I to IV by Syllabus | Learn with Anil',
                               'APPSC Group 1 Mains previous questions of 2020, 2023 and 2025 for Paper I (Essay), II (History & Geography), III (Polity & Ethics) '
@@ -7514,10 +7533,10 @@ def extra_tiles(conf):
                      + f'<b>Study material for {exam}</b><span class="etile-p">{len(subs)} Learn with Anil book{"s" if len(subs) > 1 else ""}: {esc(", ".join(subs))}, with the latest data and previous questions inside.</span>'
                      f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}</span><span class="etile-btn">See the books →</span></a>')
     else:
-        wa = f'https://wa.me/{WHATSAPP}?text=' + urllib.parse.quote(f'Hi Anil sir, please add books for {conf.get("seo") or conf["name"]} on Learn with Anil.')
-        cards.append(f'<a class="etile fx" href="{wa}" target="_blank" rel="noopener">' + hd(6, bic, 'Books')
+        # Anil, 16 Nov 2026: the tile opens the Study Material view, which says the books are not uploaded yet (urgent WhatsApp note)
+        cards.append(f'<a class="etile fx" href="#notes" data-v="notes">' + hd(6, bic, 'Books')
                      + f'<b>Books for {exam}</b><span class="etile-p">Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.</span>'
-                     '<span class="etile-price">Coming soon</span><span class="etile-btn">Ask Anil for them →</span></a>')
+                     '<span class="etile-price">Coming soon</span><span class="etile-btn">Open →</span></a>')
     return ''.join(cards)
 
 
@@ -7831,9 +7850,11 @@ def sectional_page(conf, papers, questions):
     mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). {INCL}.</p>'
+                 + (urgent_note(f'the next {mk["name"]} sectional mocks for {seo}') if 'Coming soon' in secrows else '')
                  if mk else (f'<h2>Sectional mocks</h2><p>Sectional mocks will come with the {esc(UPCOMING_PACKS[conf["id"]]["name"])} '
                              f'(coming soon, {INCL.lower()}).</p>' if conf['id'] in UPCOMING_PACKS else
-                             f'<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack, coming soon and {INCL.lower()}.</p>'))
+                             f'<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack, coming soon and {INCL.lower()}.</p>')
+                 + urgent_note(f'sectional mock tests for {seo}'))
     if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so the sectional tests are the mocks' sections (with the real 20-minute limit)
         live = [m for m in mk['mocks'] if m['live']]
         soon = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live']))
@@ -7844,7 +7865,8 @@ def sectional_page(conf, papers, questions):
         title = f'{seo} Sectional Tests – Section-wise Mock Tests with the Real Time Limit | Learn with Anil'
         desc = f'{seo} sectional tests: each section of the {mk["name"]} mocks as its own timed test, in English and Hindi, with explanations. {INCL}.'
         body = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol>'
-                f'<p>Every section of each mock opens as a separate test with the real 20-minute limit, in exam mode or practice mode. {INCL}.</p>'
+                + (urgent_note(f'the next {mk["name"]} sectional mocks for {seo}') if soon else '')
+                + f'<p>Every section of each mock opens as a separate test with the real 20-minute limit, in exam mode or practice mode. {INCL}.</p>'
                 + buy_box(conf, 'pyq') + '<h2>Plans</h2>' + plans_html(conf))
         lede = esc(f'Practise {seo} one section at a time with the real time limit: the sections of every {mk["name"]} mock.')
         return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} sectional tests', lede, body,
@@ -7976,6 +7998,7 @@ def mock_parts(conf, papers, app=False):
         sched += soon_rows(list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live'])))
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if any(not m['live'] for m in mk['mocks']) else '')
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
                 + (f'<p class="note"><b>Bahubali Mains:</b> writing the Mains too? The same pass opens 24 full-length Group-II Mains tests '
                    f'(12 for Paper I, 12 for Paper II). <a href="{BB_URL}#mains">Open Bahubali Mains →</a></p>' if BB_URL and conf['id'] == 'appsc-group-2' else '')
@@ -7989,7 +8012,8 @@ def mock_parts(conf, papers, app=False):
         sched += soon_rows([f'Mock {i + 1}' for i in range(mk['live'], mk['n'])])
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
                 + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
-                '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
+                + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if mk['live'] < mk['n'] else '')
+                + '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
                 '<li>Each mock\'s sections can also be taken on their own as sectional tests.</li></ul>'
 )
@@ -8002,9 +8026,11 @@ def mock_parts(conf, papers, app=False):
                 f'<div class="buy"><div><b>{esc(up["name"])}</b><p>{esc(up["summary"])} <b>{INCL}</b>: nothing extra to pay. '
                 f'Each mock opens for All-in-One Pass holders as soon as it is ready.</p><p class="muted">Coming soon · {INCL.lower()}</p></div>'
                 f'<span class="cta alt" aria-disabled="true">Coming soon</span></div>'
-                '<p>Until then, take the real previous papers below as timed mocks (with the All-in-One Pass).</p>')
+                + urgent_note(f'the {up["name"]} mock tests for {seo}')
+                + '<p>Until then, take the real previous papers below as timed mocks (with the All-in-One Pass).</p>')
     else:
-        pack = f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
+        pack = (f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
+                + urgent_note(f'full-length mock tests for {seo}'))
     return pack, rows, info
 
 
