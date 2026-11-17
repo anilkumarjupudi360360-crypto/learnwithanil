@@ -2637,14 +2637,14 @@ def exam_confs():
                            f"practice quizzes and timed mock tests with the ₹149 All-in-One Pass."),
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
-           # Group-II Micro-Syllabus book added 29 Oct 2026 (Anil); the AP Economy and S&T books stay on this page too
+           # Group-II Micro-Syllabus book (added 29 Oct 2026) removed from the site 17 Nov 2026 (Anil: "remove micro syllabus of group-2 from website")
            notes_title='Study material for APPSC Group-II',
-           notes_seo=('APPSC Group 2 Micro Syllabus 2026 (Notification 37/2026) – Topic-wise Syllabus with PYQs, Free PDF Sample | Learn with Anil',
-                      'APPSC Group-II micro-syllabus by Jupudi Anil Kumar for Notification 37/2026: all 9 Screening and Mains subjects in 267 sub-topics, '
-                      'each tagged with the papers that asked it, 1,004 previous questions mapped and 112 current affairs of 2025–26. Free sample PDF; '
-                      'plus History and Culture of Andhra Pradesh (all 207 APPSC AP history questions), the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), AP Economy Crisp Notes and the Science & Technology book.'),
-           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new History and Culture of Andhra Pradesh book for Mains Paper I (17 chapters, all 207 AP history questions APPSC has asked with the official answers), the Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), the Micro-Syllabus, which breaks every Screening and Mains subject into sub-topics and shows which papers asked each one, Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
-           notes_line='The new AP History book for Mains Paper I (all 207 APPSC AP history questions with official answers), the Mental Ability book for the Screening Test (212 APPSC questions solved, 500 practice questions), the Group-II Micro-Syllabus (Notification 37/2026), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
+           notes_seo=('APPSC Group 2 Study Material 2026 (Notification 37/2026) – Books with Previous Questions | Learn with Anil',
+                      'Books by Jupudi Anil Kumar for APPSC Group-II (Notification 37/2026): History and Culture of Andhra Pradesh (all 207 APPSC AP history questions), '
+                      'the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), Public Administration and Governance, Ethics and Laws, '
+                      'AP Economy Crisp Notes and the Science & Technology book.'),
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new History and Culture of Andhra Pradesh book for Mains Paper I (17 chapters, all 207 AP history questions APPSC has asked with the official answers), the Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
+           notes_line='The new AP History book for Mains Paper I (all 207 APPSC AP history questions with official answers), the Mental Ability book for the Screening Test (212 APPSC questions solved, 500 practice questions), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the All-in-One Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            # Mental Ability book added 8 Nov 2026 (Anil): it is for Prelims Paper II, so the card text no longer says 'for APPSC Mains' only
@@ -6299,7 +6299,7 @@ NOTIFS = {
               ('https://www.thehansindia.com/news/cities/amaravati/appsc-releases-group-2-notification-for-720-vacancies-1140993', 'The Hans India, 11 November 2026: 720 posts, apply by 11 December 11:59 pm, screening test 21 February 2027 (OMR), Mains online'),
               ('https://education.sakshi.com/en/group-2/education-news/appsc-group-2-screening-test-2026-date-released-check-exam-pattern-syllabus-202374', 'Sakshi Education, 11 November 2026: screening test 21 February 2027, pattern'),
               ('https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_112023_28012026.pdf', 'APPSC final selection notification for Group-II (No. 11/2023), 28 January 2026')],
-    related=['appsc-group-2-syllabus-2026.html', 'appsc-group-1-notification-2026.html', 'appsc-group-1-syllabus-2026.html'],
+    related=['appsc-group-1-notification-2026.html', 'appsc-group-1-syllabus-2026.html'],
     sections=[
       ('Important dates', 'table', [
         ('Brief notification (No. 37/2026)', '13 October 2026 (686 posts)'),
@@ -7052,60 +7052,6 @@ MSY_STYLE = ('<style>.msy h3{font-size:16.5px;margin:16px 0 6px}.msy ol{margin:0
              '.msy .hy{color:#B7791F;font-weight:700}.msy .nw,.msy .sub{font-size:13px;color:var(--muted)}.msy .sm{color:var(--muted);font-size:14.5px;margin:-4px 0 6px}</style>')
 
 
-# APPSC Group 2 syllabus page (Anil, 30 Oct 2026: "add micro listing of group-2 syllabus"): the topic-wise outline of his
-# Group-II Micro-Syllabus book (src/appsc-group-2-micro-syllabus.json: 9 subjects, units, 267 sub-topic names; star = asked
-# 4+ times in the 2019-2025 Group-II papers, new = not asked yet). Which papers asked each sub-topic, the notes and the
-# 2025-26 current affairs stay in the book (book g2micro-en, All-in-One Pass); this page links to its free sample.
-def g2_syllabus_notif():
-    path = os.path.join(SRC, 'appsc-group-2-micro-syllabus.json')
-    if not os.path.exists(path): return None
-    subs = json.load(open(path, encoding='utf-8'))
-    ntop = sum(len(u['topics']) for s in subs for u in s['units'])
-    nstar = sum(t['star'] for s in subs for u in s['units'] for t in u['topics'])
-    sample = '/LearnWithAnil-APPSC-Group-2-Micro-Syllabus-Free-Sample.pdf'
-    style = MSY_STYLE
-    book = (f'<div class="note"><b>Get the full Micro-Syllabus (47-page PDF).</b> For every sub-topic below it shows which Group-II papers (2019–2025) asked it '
-            f'and how many times, with short exam notes, 1,004 previous questions mapped and 112 current-affairs points of 2025–26 attached to their subjects. '
-            f'<a href="{sample}">Download the free sample (PDF)</a>: cover, exam pattern, contents and the whole Indian History unit. '
-            f'The full book is included in the ₹{PAY["pyq_price"]} All-in-One Pass: <a href="/appsc-group-2/notes/">Group-II study material</a>.</div>')
-    secs = [('Exam pattern', 'table+', (['Stage', 'Subjects', 'Marks'], [
-                ('Screening Test (objective)', 'Indian History · Geography · Indian Society · Current Affairs · Mental Ability, 30 marks each', '150'),
-                ('Mains Paper I (objective)', 'Social and Cultural History of Andhra Pradesh (75) · General Overview of the Indian Constitution (75)', '150'),
-                ('Mains Paper II (objective)', 'Indian and Andhra Pradesh Economy (75) · Science and Technology (75)', '150')])),
-            ('', 'note', 'Negative marking: one-third of a mark for each wrong answer. The Screening Test only shortlists candidates for the Mains; selection is on the Mains marks. '
-                         'Notification 37/2026 follows the same pattern and syllabus as Notification 11/2023.'),
-            ('', 'html', style + book)]
-    for s in subs:
-        hy = sum(t['star'] for u in s['units'] for t in u['topics'])
-        n = sum(len(u['topics']) for u in s['units'])
-        h = [f'<div class="msy"><h2>{s["no"]:02d}. {esc(s["name"])}</h2>',
-             f'<p class="sm">{esc(s["stage"])} · {s["marks"]} marks · {n} sub-topics, {hy} high-yield ★</p>']
-        for u in s['units']:
-            items = ''.join(f'<li><span class="no">{esc(t["no"])}</span>{esc(t["title"])}'
-                            + (' <span class="hy" title="Asked 4 or more times">★</span>' if t['star'] else '')
-                            + (' <span class="nw">(not asked yet)</span>' if t['new'] else '') + '</li>' for t in u['topics'])
-            h.append(f'<h3>{u["no"]}. {esc(u["title"])}</h3><ol>{items}</ol>')
-        secs.append(('', 'html', ''.join(h) + '</div>'))
-    secs.append(('How to use this syllabus', 'list', [
-        'Start with the ★ sub-topics: APPSC has asked each of them four or more times in the Group-II papers of 2019–2025.',
-        'Then cover the rest of each unit; sub-topics marked "not asked yet" are still in the official syllabus.',
-        'After each unit, practise the previous questions of that subject and attach the 2025–26 current affairs to it.']))
-    return dict(
-        exam='appsc-group-2', crumb='Group 2 Syllabus 2026',
-        title='APPSC Group 2 Syllabus 2026 – Topic-wise Micro Syllabus for Screening Test & Mains (Notification 37/2026) | Learn with Anil',
-        desc=(f'APPSC Group 2 syllabus 2026, topic by topic: all 9 subjects of the Screening Test and Mains Paper I and II broken into {ntop} sub-topics, '
-              f'with the {nstar} high-yield topics APPSC has asked 4 or more times marked. Exam pattern and a free micro-syllabus PDF sample.'),
-        h1='APPSC Group 2 syllabus 2026: topic-wise micro syllabus',
-        lede=(f'The APPSC Group-II syllabus (Notification 37/2026, same as 11/2023), broken into {ntop} sub-topics across all 9 subjects of the Screening Test and the Mains. '
-              f'★ marks the {nstar} sub-topics APPSC has asked four or more times in the 2019–2025 Group-II papers: start there. '
-              f'Built from APPSC\'s own papers by Jupudi Anil Kumar.'),
-        te=f'APPSC గ్రూప్ 2 సిలబస్ 2026 — స్క్రీనింగ్ టెస్ట్, మెయిన్స్ పేపర్ I, II లోని 9 సబ్జెక్టులు {ntop} ఉప-అంశాలుగా; నాలుగు లేదా అంతకంటే ఎక్కువసార్లు అడిగిన అంశాలకు ★ గుర్తు.',
-        pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_II_372026.pdf',
-        pdfname='APPSC brief notification No. 37/2026 (pattern and syllabus as in Notification 11/2023); topic breakdown: Learn with Anil, APPSC Group-II Micro-Syllabus',
-        sections=secs)
-
-
-
 # APPSC EO Grade-III syllabus page (Anil, 30 Oct 2026: "also add Endowment officer too", after the Group 2 micro syllabus page):
 # Paper II in the chapters and sections of his Hindu Philosophy & Temple System book (src/appsc-eo-micro-syllabus.json: 10
 # chapters, 81 sections and their sub-headings), Paper I by the site's subject topics; every part shows how many questions
@@ -7217,7 +7163,7 @@ def g1_syllabus_notif():
              'shows how many questions APPSC actually asked from it in the 2019, 2023 and 2024 papers, so you know where the marks are. The screening test is tentatively on 24 January 2027.',
         te='ఏపీపీఎస్సీ గ్రూప్ 1 సిలబస్ 2026: ప్రిలిమ్స్ పేపర్ 1, 2 టాపిక్‌ల వారీగా — ప్రతి భాగం నుంచి గత పరీక్షల్లో ఎన్ని ప్రశ్నలు వచ్చాయో, మెయిన్స్ పేపర్లు.',
         pdf='https://psc.ap.gov.in/Documents/NotificationDocuments/Group_I_07_2026.pdf', pdfname='APPSC Notification No. 07/2026 (Group-I Services), scheme and syllabus',
-        related=['appsc-group-1-notification-2026.html', 'appsc-group-2-syllabus-2026.html'],
+        related=['appsc-group-1-notification-2026.html', 'appsc-group-2-notification-2026.html'],
         sections=[], sections_fn=sections)
 
 
@@ -7460,8 +7406,7 @@ PAY = dict(
     prog=True,  # My Mistakes saved with the Google login: payments script actions 'progget'/'progput' (deployed as v14, 8 Nov 2026)
 )
 PYQ_VALID = 'valid for 12 months from the day you pay, on every exam'
-_g2s = g2_syllabus_notif()   # the APPSC Group 2 syllabus page (needs PAY, so it is added here)
-if _g2s: NOTIFS['appsc-group-2-syllabus-2026.html'] = _g2s
+# The APPSC Group 2 micro-syllabus page (appsc-group-2-syllabus-2026.html, 30 Oct 2026) was removed on 17 Nov 2026 (Anil: "remove micro syllabus of group-2 from website").
 NOTIFS['appsc-group-1-syllabus-2026.html'] = g1_syllabus_notif()   # the APPSC Group 1 syllabus page (3 Nov 2026)
 import notif_news   # Quick answers on every notification page + notification pages for the other live exams (Anil, 4 Nov 2026)
 notif_news.apply(NOTIFS)

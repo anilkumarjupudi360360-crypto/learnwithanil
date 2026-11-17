@@ -18,7 +18,6 @@ SLUGS = {
     'ma-en': 'mental-ability-appsc-group-1-group-2-book',
     'g1pa-en': 'public-administration-governance-appsc-group-1-mains-book',
     'g1eth-en': 'ethics-public-service-laws-appsc-group-1-mains-book',
-    'g2micro-en': 'appsc-group-2-micro-syllabus-2026-book',
     'apeco-en': 'andhra-pradesh-economy-crisp-notes-english',
     'apeco-te': 'andhra-pradesh-economy-crisp-notes-telugu',
     'stfull-en': 'science-technology-appsc-group-1-group-2-mains-book',
