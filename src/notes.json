@@ -581,5 +581,54 @@
    "upsc-epfo"
   ],
   "free": "/LearnWithAnil-EPFO-Current-Affairs-2026-UPSC-APFC-Free-Sample.pdf"
+ },
+ {
+  "id": "hcse-en",
+  "lang": "en",
+  "vol": null,
+  "series": "TGPSC HMWSSB Manager (Engineering) · Paper II CSE & IT",
+  "subject": "Computer Science & IT",
+  "title": "Computer Science & IT for TGPSC HMWSSB Manager (Engineering) Paper II",
+  "title_en": "Computer Science & IT for TGPSC HMWSSB Manager (Engineering) Paper II",
+  "subtitle": "Degree-level notes on all 16 units of TGPSC's 2026 Paper II syllabus for CSE and IT graduates, from discrete maths and digital logic to operating systems, databases, computer networks and data mining, with every question of TSPSC's 2015 CS & IT paper solved inside the chapters (official key), worked numericals, traced code and 192 practice MCQs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Computer Science & Information Technology for TGPSC HMWSSB Manager (Engineering) Paper II, 2026-27 (English Medium)",
+  "pages": 274,
+  "chapters": [
+   "Probability, statistics and engineering mathematics",
+   "Sets, relations, algebraic structures and linear algebra",
+   "Combinatorics, graph theory and mathematical logic",
+   "Digital logic and number representation",
+   "Computer organisation and architecture",
+   "Programming in C and data structures",
+   "Algorithms",
+   "Theory of computation",
+   "Compiler design",
+   "Operating systems",
+   "Databases",
+   "Information systems and software engineering",
+   "Computer networks and network security",
+   "Web technologies",
+   "OOP concepts, C++ and Java",
+   "Data mining"
+  ],
+  "pyqs": 147,
+  "price": 45,
+  "syllabus": "TGPSC HMWSSB Manager (Engineering) · Paper II Computer Science Engineering & Information Technology (Notification 04/OG/HM/2026), 150 questions, 300 marks",
+  "badge": "HMWSSB Manager",
+  "subject_label": "Computer Science & IT (Paper II)",
+  "chapters_label": "16 chapters, one per syllabus unit · all 147 TSPSC 2015 CS & IT questions with official answers · worked numericals and traced C, C++ and Java code · 192 practice MCQs",
+  "product_en": "Computer Science & Information Technology for TGPSC HMWSSB Manager (Engineering) Paper II, 2026-27 (English Medium)",
+  "cover": "notes-hcse-en-cover.jpg",
+  "samples": [
+   "notes-hcse-en-p1.jpg",
+   "notes-hcse-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "tgpsc-hmwssb-manager"
+  ],
+  "free": "/LearnWithAnil-CSE-IT-TGPSC-HMWSSB-Manager-Free-Sample.pdf"
  }
 ]

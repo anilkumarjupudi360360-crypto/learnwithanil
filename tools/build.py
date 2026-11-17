@@ -2992,6 +2992,17 @@ def exam_confs():
       dict(id='tgpsc-hmwssb-manager', dir='tgpsc-hmwssb-manager', src='tgpsc-hmwssb-manager', key='tg-hmws', name='TGPSC HMWSSB Manager (Engineering)',
            short='HMWSSB Manager', seo='TGPSC HMWSSB Manager', slugp='tgpsc-hmwssb-manager', papers=HM_PAPERS, subjects=HM_SUBJECTS, faq=FAQ_HM,
            board='TGPSC', l2=L2_TE, pb='/tgpsc-hmwssb-manager/', keyname="TSPSC's final key", keyshort="TSPSC's final key", bits=True,
+           notes_title='Study material for TGPSC HMWSSB Manager (Engineering)',   # Anil, 17 Nov 2026: "prepare TGPSC HMWSSB manager material CSE" (book hcse-en)
+           notes_seo=('TGPSC HMWSSB Manager CSE & IT Book – Paper II Computer Science Study Material with TSPSC 2015 Questions Solved (Free Sample PDF) | Learn with Anil',
+                      "Computer Science & IT for TGPSC HMWSSB Manager (Engineering) Paper II by Jupudi Anil Kumar: degree-level notes on all 16 units of the 2026 syllabus, "
+                      "with all 147 questions of TSPSC's 2015 CS & IT paper solved from the official key, worked numericals, traced code and 192 practice MCQs. Free sample chapter."),
+           notes_lede=("Paper II carries 300 of the 450 marks, so for CSE and IT graduates it decides the merit list. This book by Jupudi Anil Kumar covers every unit of "
+                       "TGPSC's 2026 syllabus at degree level: probability and engineering maths, discrete maths, digital logic, computer organisation, C and data structures, "
+                       "algorithms, theory of computation, compilers, operating systems, databases, software engineering, computer networks, web technologies, C++ and Java, "
+                       "and data mining. All 147 questions of TSPSC's 2015 CS & IT paper are solved inside the chapters with the official answer (and a clear note wherever "
+                       "the key is doubtful), with worked numericals, traced code and 12 practice MCQs per chapter."),
+           notes_line="Computer Science & IT (Paper II) book: all 16 syllabus units, TSPSC's 2015 CS & IT paper solved inside the chapters, 192 practice MCQs.",
+           notes_tile="1 Learn with Anil book: Computer Science & IT for Paper II, with all 147 TSPSC 2015 CS & IT questions solved and 192 practice MCQs.",
            te_name='టీజీపీఎస్సీ జలమండలి (HMWSSB) మేనేజర్ (ఇంజనీరింగ్)', te_paper='రాత పరీక్ష', subj_te=HM_SUBJ_TE,
            title='TGPSC HMWSSB Manager (Engineering) Previous Question Papers with Answers – GS, Civil, ECE & CSE, English & Telugu | Learn with Anil',
            h1='TGPSC HMWSSB Manager (Engineering) previous question papers <em>with answers.</em>',
