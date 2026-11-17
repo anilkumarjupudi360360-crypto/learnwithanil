@@ -449,7 +449,7 @@ async def main():
         dsh = open(os.path.join(SITE, 'ap-dsc', 'index.html'), encoding='utf-8').read()   # one tile per AP DSC post (Anil, 17 Nov 2026)
         if dsh.count('.pgrid{') != 1: errors.append('ap-dsc: a second .pgrid rule in the app CSS (it breaks the test question palette)')
         _npt = len(_re.findall(r'class="ptile has-ph(?: soon)?"', dsh))
-        if _npt != 16: errors.append(f'ap-dsc: {_npt} post tiles, expected 16')
+        if _npt: errors.append(f'ap-dsc: {_npt} post tiles on the exam home; they belong only inside the Mock tests tile (Anil, 17 Nov 2026)')
         for _s, _need in (('sgt', ['bk-dscmk-sgt-1', '?practice=sgt25a']), ('sa-social-studies', ['bk-dscmk-sass-1', '?practice=sass25', '?practice=sass25b', '?practice=sass25c', 'part=socm']),
                           ('sa-hindi', ['?practice=sahin25']), ('principal', ['coming soon'])):
             _f = os.path.join(SITE, 'ap-dsc', _s + '.html')

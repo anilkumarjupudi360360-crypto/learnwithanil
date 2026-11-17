@@ -8152,7 +8152,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
                     + note + '</section>')
     return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>'
-            + (dsc_post_tiles(conf, papers) if conf['id'] == 'ap-dsc' else '') + exam_clock_html(conf)
+            + exam_clock_html(conf)   # AP DSC post tiles live only inside the Mock tests tile (Anil, 17 Nov 2026: "pls remove those jobs tiles here")
             + note + '</section>')   # no Mentorship / link / promo strips under the tiles (Anil, 16 Nov 2026)
 
 
@@ -8572,30 +8572,6 @@ def mock_parts(conf, papers, app=False):
         pack = (f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
                 + urgent_note(f'full-length mock tests for {seo}'))
     return pack, rows, info
-
-
-def dsc_post_avail(post, papers):
-    """'3 previous papers · Mock test' / 'Coming soon' for an AP DSC post tile."""
-    have = {p['id'] for p in papers}
-    n = sum(1 for x in post['papers'] if x in have)
-    mk = MOCK_PACKS.get('ap-dsc', {})
-    live = any(m['live'] and m.get('track') == post.get('track') for m in mk.get('mocks', [])) if post.get('track') else False
-    bits = ([f'{n} previous paper{"s" if n > 1 else ""}'] if n else []) + (['Mock test'] if live else [])
-    return ' · '.join(bits) if bits else 'Coming soon'
-
-
-def dsc_post_tiles(conf, papers):
-    """'Choose your post': one tile per AP DSC post, grouped like the notification's posts table."""
-    pb = conf['pb']
-    out = ('<div class="section-title" style="margin:26px 0 12px"><h2>Choose your post</h2>'
-           '<span class="muted" style="font-size:14px">Previous papers, mock tests and the exam pattern for each AP DSC 2026 post</span></div>')
-    for gname, posts in DSC_POST_GROUPS:
-        out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="ptiles">'
-        for post in posts:
-            av = dsc_post_avail(post, papers)
-            out += f'<a class="ptile has-ph{" soon" if av == "Coming soon" else ""}" href="{pb}{post["slug"]}.html">{dsc_tile_inner(post, av)}</a>'
-        out += '</div>'
-    return out + dsc_photo_credits()
 
 
 def dsc_post_tests(post, papers):
