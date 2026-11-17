@@ -2102,26 +2102,9 @@ function renderMe(){
   const box = $("#me-card"), dc = $("#daily-card"); if(!box || !dc) return;
   const o = overall(), returning = o.att > 0 || S.history.length > 0 || !!QZ;
   dc.hidden = returning; dc.innerHTML = returning ? "" : dailyRow(true) + (installRow() ? `<div class="card pad" style="margin-top:12px">${installRow().replace('class="me-row"','class="me-row" style="border:0;padding:0"')}</div>` : "");
-  box.hidden = !returning; if(!returning){ box.innerHTML = ""; return; }
-  const tot = QS.length, done = Math.min(o.att, tot), p = tot ? Math.round(100*done/tot) : 0, pp = paperProgress();
-  const fin = pp.filter(x=>x.ids.length && x.seen >= x.ids.length*0.9).length;
-  let cont;
-  if(QZ) cont = `<button class="btn btn-primary" type="button" data-act="mecontinue">▶ Continue: ${esc(QZ.title)} · Q${QZ.i+1} of ${QZ.ids.length}</button>`;
-  else { const nx = pp.find(x=>x.ids.length && x.seen < x.ids.length*0.9);
-    cont = nx ? `<button class="btn btn-primary" type="button" data-act="pnext" data-paper="${nx.p.id}">▶ ${nx.seen ? "Continue" : "Start"}: ${esc(nx.p.short||nx.p.title)}${nx.seen ? ` · ${nx.seen}/${nx.ids.length} done` : ""}</button>`
-              : `<a class="btn btn-primary" href="/cg-vyapam-group-2/mistakes/">▶ Practise your mistakes</a>`; }
-  const wk = weakest();
-  const weak = wk ? `<button class="btn btn-secondary" type="button" data-act="weakgo" data-s="${wk.s}">Weakest: ${esc(SUBJ[wk.s].name)} (${wk.a}%) · practise 10</button>` : "";
-  const mis = mistakeIds().length, mocks = DATA.mockHtml ? "mocks" : "practice";
-  box.innerHTML = `<div class="card me">
-    <div class="me-top"><div class="me-ring" style="--p:${p}" role="img" aria-label="${p} percent of the questions done"><div><b>${p}%</b><span>done</span></div></div>
-      <div class="me-txt"><h2>Welcome back${ST.name ? ", " + esc(ST.name.split(" ")[0]) : ""} 👋</h2><p>${done.toLocaleString("en-IN")} of ${tot.toLocaleString("en-IN")} questions done${o.acc!==null ? ` · ${o.acc}% correct` : ""} · ${fin} of ${PAPERS.length} ${DATA.ncert?"chapter":"paper"}${PAPERS.length===1?"":"s"} finished</p></div></div>
-    <div class="me-acts">${cont}${weak}</div>
-    ${dailyRow(false)}
-    ${planRow(pp)}
-    ${installRow()}
-    <div class="me-3"><a href="/cg-vyapam-group-2/papers/"><span>📄</span>${DATA.ncert?"Chapters":"Previous Papers"}</a><a href="#${mocks}"><span>⏱️</span>${mocks==="mocks" ? "Mock Tests" : "Practice"}</a><a href="/cg-vyapam-group-2/mistakes/"><span>❌</span>My Mistakes${mis ? ` <b class="n">${mis}</b>` : ""}</a></div>
-  </div>`;
+  // Anil, 18 Nov 2026 (screenshot of this card): "remove this thing" — the "Welcome back" card (progress ring, Continue, Weakest,
+  // Today's 10, exam date, Install app, three shortcuts) is no longer shown on the exam home. Tests keep their own Resume and marks.
+  box.hidden = true; box.innerHTML = ""; return;
 }
 /* ---------- My Mistakes on every device (Anil, 8 Nov 2026, idea 4): a student logged in with Google keeps this exam's mistakes,
    Daily 10 and exam date with the login (payments script actions progget / progput), so they follow the student to any phone.
