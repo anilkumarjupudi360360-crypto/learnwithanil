@@ -542,5 +542,44 @@
    "opsc-aso"
   ],
   "free": "/LearnWithAnil-Computer-Skill-Test-OPSC-ASO-Free-Sample.pdf"
+ },
+ {
+  "id": "epfoca-en",
+  "lang": "en",
+  "vol": null,
+  "series": "UPSC EPFO · APFC Recruitment Test 2026",
+  "subject": "Current Affairs",
+  "title": "EPFO Current Affairs 2026 for the UPSC EPFO APFC Exam",
+  "title_en": "EPFO Current Affairs 2026 for the UPSC EPFO APFC Exam",
+  "subtitle": "Current events and developmental issues from November 2025 to November 2026 for the APFC exam on 20 December 2026: government schemes, the Labour Codes and the latest EPFO, ESIC and ILO news, the economy and Budget 2026-27, international events, reports and indices, awards, sports, science and environment, with UPSC's past EPFO questions and 150 practice MCQs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "EPFO Current Affairs 2026 for the UPSC EPFO APFC Recruitment Test (English Medium)",
+  "pages": 105,
+  "chapters": [
+   "Government schemes and developmental issues",
+   "Labour, employment and social security news",
+   "Economy: Budget, RBI, taxes, trade and data",
+   "International relations, organisations and summits",
+   "Reports, indices and rankings",
+   "Awards, persons, sports and appointments",
+   "Science, technology, defence and environment news"
+  ],
+  "price": 45,
+  "syllabus": "UPSC EPFO APFC · Current events and developmental issues, with labour and social-security news · also EO/AO and PA",
+  "badge": "UPSC EPFO",
+  "subject_label": "EPFO Current Affairs 2026",
+  "chapters_label": "7 chapters · November 2025 to November 2026 · Labour Codes, EPFO and ESIC news · UPSC's past EPFO questions · 150 practice MCQs (also as 3 timed tests)",
+  "product_en": "EPFO Current Affairs 2026 for the UPSC EPFO APFC Recruitment Test (English Medium)",
+  "cover": "notes-epfoca-en-cover.jpg",
+  "samples": [
+   "notes-epfoca-en-p1.jpg",
+   "notes-epfoca-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "upsc-epfo"
+  ],
+  "free": "/LearnWithAnil-EPFO-Current-Affairs-2026-UPSC-APFC-Free-Sample.pdf"
  }
 ]

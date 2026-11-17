@@ -4623,7 +4623,8 @@ def FAQ_EPFO(total, npapers):
         'Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
        + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question. '
        'For new questions, Sankalpa EPFO is our series of 10 full-length APFC mock tests in UPSC\'s pattern (120 questions, 2 hours, English and Hindi); '
-       'Mock 1 is out and it is included in the same All-in-One Pass.'),
+       'Mock 1 is out, with three Current Affairs tests (50 questions each, November 2025 to November 2026) from our EPFO Current Affairs 2026 book, '
+       'and all of it is included in the same All-in-One Pass.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
@@ -7731,6 +7732,9 @@ MOCK_PACKS = {
   # 120 questions, 2 hours, 2.5 marks each, 1/3 negative, Hindi + English (General English in English only). Private source
   # /home/claude/epmk; ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Sealed files: src/upsc-epfo-mocks/.
   'upsc-epfo': dict(id='bk-epfomk', name='Sankalpa EPFO', price=149, src='upsc-epfo-mocks', dir='upsc-epfo', langs='English &amp; Hindi',
+                    # Anil, 17 Nov 2026 ("needed current affairs for EPFO exam"): the 150 MCQs of the EPFO Current Affairs 2026 book (epfoca-en)
+                    # as three 50-question tests in their own box (extra=True: not counted as full-length mocks). Source /home/claude/epca/tools/tests.py.
+                    tracks=[('full', 'Full-length mocks · 120 questions · 2 hours'), ('current-affairs', 'Current Affairs tests · 50 questions · 40 minutes')],
                     title='Sankalpa EPFO – UPSC EPFO APFC Mock Test Series 2026',
                     summary='10 full-length UPSC EPFO APFC mock tests in the real Recruitment Test pattern, 120 questions in 2 hours, in English and Hindi, '
                             'with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
@@ -7743,13 +7747,19 @@ MOCK_PACKS = {
                            'events cover November 2025 to November 2026.',
                            'Every question is in English and Hindi (General English in English only, as UPSC prints it), with an explanation in both. '
                            'Your score, accuracy and topic-wise analysis come after each mock. In the real test each question carries 2.5 marks and a '
-                           'wrong answer loses one-third of that, so practise skipping what you cannot narrow down.'],
-                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', qn=120, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                           'wrong answer loses one-third of that, so practise skipping what you cannot narrow down.',
+                           'Current Affairs tests: the 150 practice questions of our EPFO Current Affairs 2026 book (November 2025 to November 2026: '
+                           'schemes, labour and social security, economy, international, reports, awards and sports, science and environment) as three '
+                           'timed tests of 50 questions, in English, each chapter also as a short sectional.'],
+                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', track='full', qn=120, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
                                 parts=[('eng', 'General English', ['eng']), ('ih', 'History & Freedom Struggle', ['ih']),
                                        ('cur', 'Current Events', ['cur']), ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']),
                                        ('acc', 'Accounting Principles', ['acc']), ('lab', 'Industrial Relations & Labour Laws', ['lab']),
                                        ('ss', 'Social Security', ['ss']), ('sci', 'General Science & Computers', ['sci']),
-                                       ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 11)]),
+                                       ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 11)]
+                         + [dict(id=f'bk-epfoca-{i}', name=f'Current Affairs Test {i}', group=f'Current Affairs Test {i}', track='current-affairs', extra=True,
+                                 qn=50, mins=40, live=True,   # 17 Nov 2026
+                                 parts=[('ca1', 'Schemes', ['cur'], ['Schemes & Development']), ('ca2', 'Labour & Social Security', ['cur'], ['Labour & Social Security News']), ('ca3', 'Economy', ['cur'], ['Economy News']), ('ca4', 'International', ['cur'], ['International']), ('ca5', 'Reports & Indices', ['cur'], ['Reports & Indices']), ('ca6', 'Awards, Sports & Persons', ['cur'], ['Awards, Sports & Persons']), ('ca7', 'Science, Defence & Environment', ['cur'], ['Science, Defence & Environment'])]) for i in range(1, 4)]),
   # Anil, 17 Nov 2026: "pls start a test series for AP DSC and upload 2 tests"; chose the posts SGT and SA Social Studies (one Mock 1 each),
   # all new questions (writer + checker helper agents) and the name "Akshara DSC". AP DSC 2026 (APTRT-2026) CBT pattern: 160 questions,
   # 150 minutes. SGT: GK 16, Perspectives 8, Psychology 16, Telugu/English/Maths/Science/Social 24 each (16 content + 8 methodology).
@@ -7838,7 +7848,7 @@ COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mis
                   '(10 mocks, 200 questions each), in English and Telugu, with explanations and sectional tests. Each pack is valid till its exam.')
 for _mk in MOCK_PACKS.values():   # n / live / qn / sections for packs described by a 'mocks' list
     if 'mocks' in _mk:
-        _mk.update(n=len(_mk['mocks']), live=sum(m['live'] for m in _mk['mocks']), qn=_mk['mocks'][0]['qn'],
+        _mk.update(n=sum(not m.get('extra') for m in _mk['mocks']), live=sum(m['live'] and not m.get('extra') for m in _mk['mocks']), qn=_mk['mocks'][0]['qn'],
                    sections=list(dict.fromkeys(x[1] for m in _mk['mocks'] for x in m['parts'])))
 
 def mock_questions():
@@ -7945,14 +7955,14 @@ def exam_clock_html(conf):
 def full_mocks(mk):
     """Number of full mocks in a pack: a mock with two papers (EO, Vijaya FDA-SDA) or four post versions (IBPS SO) counts once."""
     if 'mocks' not in mk: return mk['n']
-    return len(dict.fromkeys(m.get('group') or m['name'].split(' · ')[0] for m in mk['mocks']))
+    return len(dict.fromkeys(m.get('group') or m['name'].split(' · ')[0] for m in mk['mocks'] if not m.get('extra')))
 
 
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
-        on = list(dict.fromkeys(m.get('group', m['name']) + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live']))   # 'group': IBPS SO's four post versions of one mock count once
-        allg = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks']))
+        on = list(dict.fromkeys(m.get('group', m['name']) + (' (free)' if m.get('free') else '') for m in mk['mocks'] if m['live'] and not m.get('extra')))   # 'group': IBPS SO's four post versions of one mock count once
+        allg = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m.get('extra')))
         if len(on) == len(allg): return mk.get('live_note') or f'All {len(on)} mocks are available now'
         names = on[0] if len(on) == 1 else ', '.join(on[:-1]) + ' and ' + on[-1]
         return f'{names} {"is" if len(on) == 1 else "are"} available now; the other {len(allg) - len(on)} mocks are coming soon (included in the price)'

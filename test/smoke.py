@@ -430,6 +430,9 @@ async def main():
             f = os.path.join(SITE, h)
             if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
+        if 'Current Affairs Test 3' not in epm or 'bk-epfoca-1' not in epm: errors.append('upsc-epfo/mock-test.html: the three Current Affairs tests are missing')   # 17 Nov 2026
+        for _m in ('bk-epfoca-1', 'bk-epfoca-2', 'bk-epfoca-3'):
+            if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'upsc-epfo', 'mk'))): errors.append(f'upsc-epfo/mk: sealed {_m} missing')
         if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
         dsm = open(os.path.join(SITE, 'ap-dsc', 'mock-test.html'), encoding='utf-8').read()   # Akshara DSC (AP DSC test series), live since 17 Nov 2026
         if 'Akshara DSC' not in dsm or '?buy=mock' in dsm: errors.append('ap-dsc/mock-test.html: should show the Akshara DSC series in the All-in-One Pass')
