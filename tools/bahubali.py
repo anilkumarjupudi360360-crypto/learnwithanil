@@ -341,13 +341,13 @@ def page(dist_site):
                 t = tests[k]
                 conf_tests.append(dict(id=k, paper=p['id'], paper_name=p['name'], n=n, label=label(n), q=t['q'], min=150, data=t['data'], pdf_q=t['pdf_q'], pdf_a=t['pdf_a'],
                                        sections_desc=' and '.join(f'{s[1]}: {s[2]} (Q{s[4]}–{s[5]})' for s in p['sections'])))
-                cards.append(f'<article class="card test" data-test="{k}"><div class="top"><span class="no">{label(n)}</span><span class="badge live">Live</span></div>'
+                cards.append(f'<article class="card test" data-test="{k}"><div class="top">{B.tcover("mock", "Bahubali Mains", n, p["name"], B.tc_hue("bahubali-mains"))}<span class="no">{label(n)}</span><span class="badge live">Live</span></div>'
                              f'<p class="meta">{p["name"]} · {t["q"]} questions · 150 minutes · 150 marks</p>'
                              f'<div class="secs">' + ''.join(f'<span><b>{s[0]}</b> · {esc(s[2])} · 75</span>' for s in p['sections']) + '</div>'
                              f'<p class="score-line" hidden></p><div class="acts"><button class="btn btn-secondary" type="button" data-act="needcode">🔒 Unlock to start</button></div>'
                              f'<div class="pdfs" hidden></div></article>')
             else:
-                cards.append(f'<article class="card test soon"><div class="top"><span class="no">{label(n)}</span><span class="badge soon">Upcoming</span></div>'
+                cards.append(f'<article class="card test soon"><div class="top">{B.tcover("mock", "Bahubali Mains", n, p["name"], B.tc_hue("bahubali-mains"), soon=True)}<span class="no">{label(n)}</span><span class="badge soon">Upcoming</span></div>'
                              f'<p class="meta">{p["name"]} · 150 questions · 150 minutes</p></article>')
         papers_html.append(f'<div class="paper-head"><div><h3>{p["name"]}</h3><p>' + ' + '.join(f'{s[1]}: {esc(s[2])} (75)' for s in p['sections']) +
                            f'</p></div><p class="mono">{len(live)} of {TESTS_PER_PAPER} live</p></div><div class="tests">{"".join(cards)}</div>')
@@ -361,19 +361,22 @@ def page(dist_site):
     for i, m in enumerate(pm, 1):
         if m['live']:
             secs = ''.join(f'<a href="/appsc-group-2/?mock={m["id"]}&amp;part={k}">{esc(v)} · 30</a>' for k, v, _ in m['parts'])
-            pre_cards.append(f'<article class="card test"><div class="top"><span class="no">Mock {i:02d}</span>'
+            pre_cards.append(f'<article class="card test" data-tk="mock:{m["id"]}"><div class="top">{B.tcover("mock", pk.get("name", "Bahubali Prelims"), i, "", B.tc_hue(pk.get("id", "")))}<span class="no">Mock {i:02d}</span>'
                              f'<span class="badge {"free" if m.get("free") else "live"}">{"Free" if m.get("free") else "Live"}</span></div>'
                              f'<p class="meta">Screening Test · {m["qn"]} questions · {m["mins"]} minutes · 150 marks</p>'
                              f'<div class="secs">{secs}</div>'
-                             f'<div class="acts"><a class="btn btn-primary go-start" href="/appsc-group-2/?mock={m["id"]}">▶ Start Mock {i}{" free" if m.get("free") else ""}</a></div></article>')
+                             f'<div class="tmk"><span class="tml">Your marks</span><b class="tmv">—</b><small class="tms">Not attempted yet</small></div>'
+                             f'<div class="acts"><a class="btn btn-secondary tres" href="/appsc-group-2/?mock={m["id"]}&amp;resume=1" hidden>⟳ Resume</a>'
+                             f'<a class="btn btn-primary go-start" href="/appsc-group-2/?mock={m["id"]}">▶ Attempt Mock {i}{" free" if m.get("free") else ""}</a></div></article>')
         else:
-            pre_cards.append(f'<article class="card test soon"><div class="top"><span class="no">Mock {i:02d}</span><span class="badge soon">Upcoming</span></div>'
+            pre_cards.append(f'<article class="card test soon"><div class="top">{B.tcover("mock", pk.get("name", "Bahubali Prelims"), i, "", B.tc_hue(pk.get("id", "")), soon=True)}<span class="no">Mock {i:02d}</span><span class="badge soon">Upcoming</span></div>'
                              f'<p class="meta">Screening Test · 150 questions · 150 minutes</p></article>')
     prelims_html = (f'<section class="blk" id="prelims"><div class="wrap"><h2>Bahubali Prelims · Screening Test</h2>'
                     f'<p class="lead">{esc(pk.get("summary", ""))} Mock 1 is free for registered students; the others open with the All-in-One Pass. '
                     f'Tap a section name to take that section alone as a sectional test.</p>'
                     f'<div class="paper-head"><div><h3>Screening Test mocks</h3><p>Indian History · Geography · Indian Society · Current Affairs · Mental Ability (30 each)</p></div>'
-                    f'<p class="mono">{len(pre_on)} of {len(pm)} live</p></div><div class="tests">{"".join(pre_cards)}</div></div></section>') if pm else ''
+                    f'<p class="mono">{len(pre_on)} of {len(pm)} live</p></div><div class="tests">{"".join(pre_cards)}</div></div></section>'
+                    + B.test_rows_js({'key': 'appsc-g2'})) if pm else ''   # marks + Resume from the Group-II app's saved results (DATA.key appsc-g2)
     series_tiles = ((f'<section class="blk" id="series"><div class="wrap"><h2>Choose your series</h2><div class="series">'
                      f'<a class="card stile" href="#prelims"><span class="shd pre"><span class="k">01 · Prelims (Screening)</span><span class="st">{len(pre_on)} of {len(pm)} live</span></span>'
                      f'<h3>Bahubali Prelims</h3><p>{len(pm)} full-length Screening Test mocks: 150 questions in 150 minutes, five sections of 30, English and Telugu. '
@@ -420,7 +423,7 @@ def page(dist_site):
                            f'{2 * TESTS_PER_PAPER} full-length mock tests for APPSC Group-II Mains — {TESTS_PER_PAPER} for Paper I and {TESTS_PER_PAPER} for Paper II — with 150 questions in every test.',
            '{{PRICE}}': str(PRICE), '{{TOTAL_TESTS}}': str(2 * TESTS_PER_PAPER + len(pm)), '{{NLIVE}}': f'{nlive + len(pre_on)} test{"" if nlive + len(pre_on) == 1 else "s"}',
            '{{LIVE_DESC}}': esc((f'Prelims Mock{"s" if len(pre_on) > 1 else ""} {_ranges([pm.index(m) + 1 for m in pre_on])}, Mains ' if pre_on else '') + live_desc),
-           '{{SERIES_TILES}}': series_tiles, '{{PRELIMS_HTML}}': prelims_html,
+           '{{SERIES_TILES}}': series_tiles, '{{PRELIMS_HTML}}': prelims_html, '{{TCOV_CSS}}': B.STATIC_CSS[B.STATIC_CSS.index('.tcov{'):B.STATIC_CSS.index('.tbtns{')],
            '{{BUY_BUTTON}}': buy_btn, '{{PAPERS_HTML}}': ''.join(papers_html), '{{SAMPLE_HTML}}': sample_html, '{{FAQ_HTML}}': faq_html,
            '{{WA}}': B.WHATSAPP, '{{PHONE}}': B.PHONE, '{{EMAIL}}': B.EMAIL,
            '{{CONF}}': json.dumps(conf, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')}

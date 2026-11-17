@@ -749,6 +749,20 @@ async def main():
         # an EXAM_PHOTO entry in tools/build.py (with credit) and src/static/ex-<id>-t.webp (480x180) + ex-<id>-h.webp (1000x334).
         # Free licence (Wikimedia Commons), no uniformed people, emblems or logos. See claude/start-page-boards.md in the project.
         hub_ = open(os.path.join(SITE, 'index.html'), encoding='utf-8').read()
+        # Test rows with covers, Attempt / Resume and marks on every exam (Anil, 17 Nov 2026: "this process for all exams, mocks...and also for future exams")
+        import glob as _glob
+        for _f in _glob.glob(os.path.join(SITE, '*', 'mock-test.html')):
+            _t = open(_f, encoding='utf-8').read(); _n = os.path.relpath(_f, SITE)
+            if 'class="facts mtab"' in _t: errors.append(f'{_n}: old mock table; use mock_rows / pyq_rows (covers, Attempt, Resume, marks)')
+            if 'Real previous papers as mock tests' in _t and 'tcov tc-pyq' not in _t: errors.append(f'{_n}: previous papers without PYQ covers')
+            if 'data-tk="' in _t and 'lwa-' not in _t.split('data-tk="', 1)[1]: errors.append(f'{_n}: test rows without the marks/Resume script')
+        _g2 = open(os.path.join(SITE, 'appsc-group-2', 'mock-test.html'), encoding='utf-8').read()
+        if _g2.count('tcov tc-mock') != 10 or 'data-tk="mock:bk-g2mk-1"' not in _g2 or '&amp;resume=1' not in _g2:
+            errors.append('appsc-group-2/mock-test.html: expected 10 mock covers (live and coming soon) with Attempt/Resume rows')
+        _app = open(os.path.join(SITE, 'appsc-group-2', 'index.html'), encoding='utf-8').read()
+        if 'function decorateTests' not in _app or 'function runRestore' not in _app: errors.append('app: marks/Resume code (decorateTests, runRestore) missing')
+        _bb = os.path.join(SITE, 'appsc-group-2', 'bahubali-test-series', 'index.html')
+        if os.path.exists(_bb) and 'tcov tc-mock' not in open(_bb, encoding='utf-8').read(): errors.append('bahubali-test-series: test cards without covers')
         nophoto = sorted({i for i in re.findall(r'<a class="card exam [^"]*\blive\b[^"]*"[^>]*data-id="([^"]+)"', hub_) if f'/ex-{i}-t.webp' not in hub_})
         if nophoto: print('REMINDER - live exams without a tile photo (Anil wants one for every new exam):', ', '.join(nophoto))
         print('ERRORS:', errors if errors else 'none')

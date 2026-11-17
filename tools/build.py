@@ -8541,14 +8541,6 @@ def dur_text(p):
     return f'{p["mins"]} minutes' if p.get('mins') else f'about {round(p["count"] / 60 * 4) / 4:g} hours'
 
 
-def mock_btns(start_href, start_label, practice_href, pdf):
-    """Start / Practice / PDF as buttons in the mock tables (Anil, 2 Nov 2026: text links were hard to tap)."""
-    b = f'<a class="mbtn go" href="{start_href}">▶ {start_label}</a>'
-    if practice_href: b += f'<a class="mbtn" href="{practice_href}">Practice mode</a>'
-    if pdf: b += pdf.replace(' · <a ', '<a class="mbtn mpdf" ', 1)
-    return f'<span class="mbtns">{b}</span>'
-
-
 def chips(html):
     return '<span class="mchips">' + html.replace(' · ', '').replace('<a ', '<a class="mchip" ') + '</span>'
 
@@ -8692,7 +8684,7 @@ def test_rows_js(conf):
 function run(k){try{var v=JSON.parse(localStorage.getItem('lwa-'+E+'-run-'+k)||'null');if(v&&v.QZ&&Date.now()-v.at<12096e5&&(Object.keys(v.QZ.ans||{}).length||v.QZ.i>0))return v}catch(e){}return null}
 function d(t){var x=new Date(t);return x.toLocaleDateString(undefined,{day:'numeric',month:'short'})}
 document.querySelectorAll('[data-tk]').forEach(function(el){var ks=el.getAttribute('data-tk').split(' '),r=null,rn=null;ks.forEach(function(k){var x=(S.tres||{})[k];if(x&&(!r||x.last.at>r.last.at))r=x;rn=rn||run(k)});
-var rb=el.querySelector('.tres'),g=el.querySelector('.mbtn.go'),mk=el.querySelector('.tmk');if(rb)rb.hidden=!rn;if(g&&rn)g.innerHTML='↻ Start again';if(!mk)return;
+var rb=el.querySelector('.tres'),g=el.querySelector('.mbtn.go,.go-start'),mk=el.querySelector('.tmk');if(rb)rb.hidden=!rn;if(g&&rn)g.innerHTML='↻ Start again';if(!mk)return;
 var v=mk.querySelector('.tmv'),s=mk.querySelector('.tms');
 if(r){var L=r.last;mk.classList.add('done');v.textContent=L.c+' / '+L.n;s.textContent=Math.round(100*L.c/(L.n||1))+'% · '+(L.mode==='test'?'timed test':'practice')+' · '+d(L.at)+(r.tries>1?' · best '+r.best.c+'/'+r.best.n:'')+(rn?' · new attempt in progress':'')}
 else if(rn){mk.classList.add('run');v.textContent='In progress';s.textContent=Object.keys(rn.QZ.ans||{}).length+' of '+rn.QZ.ids.length+' answered · '+d(rn.at)}})})();</script>""")
