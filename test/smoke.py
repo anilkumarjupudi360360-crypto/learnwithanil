@@ -325,7 +325,7 @@ async def main():
                     await pg.click('[data-act="timertoggle"]'); await pg.wait_for_timeout(2200)
                     if await pg.inner_text('#timer') == t1: errors.append(f'{path}: timer did not restart after switching it on')
         # study material (APPSC Mains books) only on the APPSC Group 1 / Group 2 pages
-        for sub, want in (('appsc-group-2', True), ('appsc-group-1', True), ('upsc-epfo', False), ('ts-police-si', False), ('upsc-capf', False)):
+        for sub, want in (('appsc-group-2', True), ('appsc-group-1', True), ('upsc-epfo', True), ('ts-police-si', False), ('upsc-capf', False)):   # upsc-epfo: EPFO Current Affairs 2026 book since 17 Nov 2026
             raw = open(os.path.join(SITE, sub, 'index.html'), encoding='utf-8').read()
             has = 'class="card notes-promo"' in raw or 'data-v="notes">Study Material' in raw
             if has != want: errors.append(f'{sub}: study material {"missing" if want else "shown"}')
