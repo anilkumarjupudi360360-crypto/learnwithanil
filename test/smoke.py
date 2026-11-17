@@ -290,9 +290,9 @@ async def main():
                 if '<h2>Plans</h2>' not in body or 'All-in-One Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
                 free_ = rel.startswith(('ts-police-si/', 'ts-police-constable/'))   # TS Police papers are free to attempt (Anil, 28 Oct 2026)
-                if ('?sec=' in body or '?practice=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
+                if ('?sec=' in body or '?practice=' in body or '?test=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
                 if free_ and rel.endswith('pyqs.html') and 'Free: attempt every' not in body: errors.append(f'{rel}: free TS Police papers not announced')
-                if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'min timer</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
+                if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'Attempt this paper</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
                 for h in _re.findall(r'href="(/[^"#:?]*)', open(os.path.join(SITE, rel), encoding='utf-8').read()):
                     f = os.path.join(SITE, h.lstrip('/'))
                     if not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'{rel}: broken link {h}')
@@ -760,6 +760,9 @@ async def main():
             if 'class="facts mtab"' in _t: errors.append(f'{_n}: old mock table; use mock_rows / pyq_rows (covers, Attempt, Resume, marks)')
             if 'Real previous papers as mock tests' in _t and 'tcov tc-pyq' not in _t: errors.append(f'{_n}: previous papers without PYQ covers')
             if 'data-tk="' in _t and 'lwa-' not in _t.split('data-tk="', 1)[1]: errors.append(f'{_n}: test rows without the marks/Resume script')
+        for _f in _glob.glob(os.path.join(SITE, '*', 'pyqs.html')):   # the PYQs page's paper list too (Anil, 18 Nov 2026)
+            _t = open(_f, encoding='utf-8').read()
+            if 'papers in this course' in _t and 'tcov tc-pyq' not in _t: errors.append(f'{os.path.relpath(_f, SITE)}: paper list without PYQ covers / Attempt / Resume')
         _g2 = open(os.path.join(SITE, 'appsc-group-2', 'mock-test.html'), encoding='utf-8').read()
         if _g2.count('tcov tc-mock') != 10 or 'data-tk="mock:bk-g2mk-1"' not in _g2 or '&amp;resume=1' not in _g2:
             errors.append('appsc-group-2/mock-test.html: expected 10 mock covers (live and coming soon) with Attempt/Resume rows')

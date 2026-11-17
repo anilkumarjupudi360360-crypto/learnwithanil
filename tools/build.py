@@ -5321,8 +5321,8 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
     else:
         foot = (f'Questions are from {board}\'s official question paper and answers from {conf["keyshort"]}. Explanations are by '
                 f'Jupudi Anil Kumar, Learn with Anil (Instagram: @{INSTAGRAM}). Not affiliated with {board}.')
-    if PAY.get('on'):   # PYQ buttons carry a lock; the small script at the end removes it once this device has a paid All-in-One Pass
-        body_html = re.sub(r'(<a class="cta[^"]*" href="[^"]*\?(?:' + ('pdf' if conf and conf['id'] in FREE_PYQ else 'sec|practice|test|pdf') + r')=[^"]*">)',
+    if PAY.get('on'):   # PYQ buttons (old .cta and the test rows' Attempt / PDF buttons) carry a lock; the small script at the end removes it once this device has a paid All-in-One Pass
+        body_html = re.sub(r'(<a class="(?:cta|mbtn go|mbtn mpdf)[^"]*" href="[^"]*\?(?:' + ('pdf' if conf and conf['id'] in FREE_PYQ else 'sec|practice|test|pdf') + r')=[^"]*">)',
                            r'\1<span class="lk" aria-hidden="true">🔒 </span>', body_html)
     ld = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": canonical,
           "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": SITE_URL + '/'},
@@ -8431,15 +8431,16 @@ def pyq_page(conf, papers, questions):
             f'with the correct answers in English and {l2["name"]}. Explanations and Mission Khaki mock tests with the ₹{PAY["pyq_price"]} All-in-One Pass.' if free else
             f'{seo} previous year questions (PYQs): {len(questions):,} questions from {len(papers)} official papers with answers and explanations in English and {l2["name"]}, '
             f'as practice quizzes and timed tests, with one ₹{PAY["pyq_price"]} All-in-One Pass for every exam on the site.')
-    def row(p):
+    def row(p):   # one row per paper: PYQ cover, Attempt / Resume, marks (Anil, 18 Nov 2026: "this is not changed right ?")
         recall = p['fmt'] != 'mcq'
         note = (" · answers from APPSC's key; APPSC printed no options, so the other three options are by Learn with Anil" if p.get('own')
                 else " · official key gives the answer only: quick-recall cards" if recall else "")
-        return (f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions{note}</div>'
-                f'<b>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</b>'
-                f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a>'
-                + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}"{pdf_attrs(conf, p["id"])}>⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>' if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
-                + '</div></li>')
+        pdf = (f'<a class="mbtn mpdf" href="{pb}?pdf={p["id"]}"{pdf_attrs(conf, p["id"])}>⬇ PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>'
+               if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
+        return trow(tcover('pyq', conf['short'], p['year'], pyq_label(p), tc_hue(conf['key'] + 'pyq')),
+                    paper_kw(conf, p) + (f' ({paper_alt(conf, p)})' if paper_alt(conf, p) else ''),
+                    f'{esc(p["held"])} · {p["count"]} questions · {p.get("mins") or p["count"]}-minute timer{esc(note)}', tk=f'paper:{p["id"]} test:{p["id"]}', start=f'{pb}?practice={p["id"]}',
+                    start_label='Attempt this paper', alt=pdf)
     allp = ps + sorted(extra, key=lambda p: (-p['year'], p['id']))
     others = [(x, h) for x, h in PAY.get('exam_links', []) if x != seo and h.strip('/') not in MOCKONLY]   # SBI PO / IBPS SO have no PYQs page
     sample = free_sample(conf, papers, questions)
@@ -8457,7 +8458,7 @@ def pyq_page(conf, papers, questions):
                     f'exam-booklet style, English &amp; {esc(l2["name"])}, with the official answer key and explanations.')
                  + ' Tap <b>⬇ Download PDF</b> under any paper below (with the All-in-One Pass).</p>'
                  if BOOKLETS.get(conf['id']) else '') +
-              f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><ol class="clist">' + ''.join(row(p) for p in allp) + '</ol>'
+              f'<h3>{esc(seo)} papers in this course ({len(allp)} papers, {len(questions):,} questions)</h3><div class="tlist">' + ''.join(row(p) for p in allp) + '</div>'
               + (f'<h3>Also in the same ₹{PAY["pyq_price"]} pass</h3><p>Every paper of these exams, and of every exam added to the site later:</p>'
                  '<nav class="toc">' + ''.join(f'<a href="{h}pyqs.html">{esc(x)}</a>' for x, h in others) + '</nav>' if others else '')
               + '</section>')
@@ -8712,8 +8713,8 @@ def test_rows_js(conf):
     return ("""<script>(function(){var E=""" + json.dumps(conf['key']) + """,S={};try{S=JSON.parse(localStorage.getItem('lwa-'+E+'-v1')||'{}')||{}}catch(e){}
 function run(k){try{var v=JSON.parse(localStorage.getItem('lwa-'+E+'-run-'+k)||'null');if(v&&v.QZ&&Date.now()-v.at<12096e5&&(Object.keys(v.QZ.ans||{}).length||v.QZ.i>0))return v}catch(e){}return null}
 function d(t){var x=new Date(t);return x.toLocaleDateString(undefined,{day:'numeric',month:'short'})}
-document.querySelectorAll('[data-tk]').forEach(function(el){var ks=el.getAttribute('data-tk').split(' '),r=null,rn=null;ks.forEach(function(k){var x=(S.tres||{})[k];if(x&&(!r||x.last.at>r.last.at))r=x;rn=rn||run(k)});
-var rb=el.querySelector('.tres'),g=el.querySelector('.mbtn.go,.go-start'),mk=el.querySelector('.tmk');if(rb)rb.hidden=!rn;if(g&&rn)g.innerHTML='↻ Start again';if(!mk)return;
+document.querySelectorAll('[data-tk]').forEach(function(el){var ks=el.getAttribute('data-tk').split(' '),r=null,rn=null;var rk='';ks.forEach(function(k){var x=(S.tres||{})[k];if(x&&(!r||x.last.at>r.last.at))r=x;if(!rn){rn=run(k);if(rn)rk=k}});
+var rb=el.querySelector('.tres'),g=el.querySelector('.mbtn.go,.go-start'),mk=el.querySelector('.tmk');if(rb)rb.hidden=!rn;if(rb&&rn&&/^(test|paper):/.test(rk)){rb.href=rb.getAttribute('href').replace(/\?(practice|test)=/,'?'+(rk.indexOf('test:')===0?'test':'practice')+'=')}if(g&&rn)g.innerHTML='↻ Start again';if(!mk)return;
 var v=mk.querySelector('.tmv'),s=mk.querySelector('.tms');
 if(r){var L=r.last;mk.classList.add('done');v.textContent=L.c+' / '+L.n;s.textContent=Math.round(100*L.c/(L.n||1))+'% · '+(L.mode==='test'?'timed test':'practice')+' · '+d(L.at)+(r.tries>1?' · best '+r.best.c+'/'+r.best.n:'')+(rn?' · new attempt in progress':'')}
 else if(rn){mk.classList.add('run');v.textContent='In progress';s.textContent=Object.keys(rn.QZ.ans||{}).length+' of '+rn.QZ.ids.length+' answered · '+d(rn.at)}})})();</script>""")
