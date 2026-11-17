@@ -29,10 +29,8 @@ BOOKS = json.load(open(os.path.join(ROOT, 'src', 'books', 'books.json'))) if os.
 BOOKLETS = json.load(open(os.path.join(ROOT, 'src', 'books', 'booklets.json'))) if os.path.exists(os.path.join(ROOT, 'src', 'books', 'booklets.json')) else {}
 # books shown on the APPSC Group-II study-material page (a book with an 'exams' list shows only on those exams' pages)
 _NOTES = json.load(open(os.path.join(ROOT, 'src', 'notes.json'), encoding='utf-8')) if os.path.exists(os.path.join(ROOT, 'src', 'notes.json')) else []
-def _g2book(k):   # no 'exams' list (the APPSC Mains books) or a Group-II book (the Micro-Syllabus, 29 Oct 2026)
-    ex = next((b.get('exams') for b in _NOTES if b['id'] == k), None)
-    return not ex or 'appsc-group-2' in ex
-G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES) and _g2book(k)}   # the Group-2 Study Material lists only Group-2 books (Anil, 16 Nov 2026: "only relevant books in relevant exam boxs")
+ALL_BOOKS = {'appsc-group-2'}   # Anil, 17 Nov 2026: the start page (APPSC Group-II) Study Material lists EVERY book, now and in future
+G2_BOOKS = {k: v for k, v in BOOKS.items() if any(b['id'] == k for b in _NOTES)}   # so every book with a PDF is on it (was: only Group-2 books, 16 Nov)
 EXAM_DIR = {'appsc-eo': 'appsc-endowment-officer', 'appsc-analyst': 'appsc-analyst-grade-2', 'appsc-fro': 'appsc-forest-range-officer', 'appsc-env-engineer': 'appsc-assistant-environmental-engineer', 'appsc-aso': 'appsc-assistant-statistical-officer', 'ap-dsc': 'ap-dsc'}   # exam id -> folder, where they differ
 BOOKLET_FILES = {v['key']: v['file'] for ex in BOOKLETS.values() for v in ex.values()}
 def fake_pay(passes):   # the payments script: a student with the given passes (the All-in-One Pass opens mocks, books and Bahubali)
@@ -586,7 +584,7 @@ async def main():
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if not dfs or f'"{bk["id"]}"' not in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} missing from {eid} data')
                 # ... and in no other exam's study material (Anil, 16 Nov 2026: "only relevant books in relevant exam boxs")
-                for eid in sorted(({e for x in _NOTES for e in x.get('exams', [])} | {'appsc-group-1', 'appsc-group-2'}) - set(bk['exams'])):
+                for eid in sorted(({e for x in _NOTES for e in x.get('exams', [])} | {'appsc-group-1', 'appsc-group-2'}) - set(bk['exams']) - ALL_BOOKS):
                     dfs = _g.glob(os.path.join(SITE, {'appsc-group-2': ''}.get(eid, EXAM_DIR.get(eid, eid)), 'data', '*.js'))
                     if dfs and f'"{bk["id"]}"' in open(dfs[0], encoding='utf-8').read(): errors.append(f'book {bk["id"]} is on the {eid} study material, but it is not for that exam')
                 if bk.get('free') and not os.path.isfile(os.path.join(SITE, bk['free'].lstrip('/'))): errors.append(f'free sample {bk["free"]} not published')
@@ -601,6 +599,10 @@ async def main():
                 h = open(fp, encoding='utf-8').read()
                 if '"@type": "Book"' not in h or '"@type": "FAQPage"' not in h: errors.append(f'{rel}: no Book/FAQ structured data')
                 if f'/{rel}</loc>' not in _sm or f'/{rel})' not in _ll: errors.append(f'{rel}: not in the sitemap or llms.txt')
+            _g2d = _g.glob(os.path.join(SITE, 'data', '*.js'))   # ... and every book is on the start page's all-books Study Material (17 Nov 2026)
+            _g2t = open(_g2d[0], encoding='utf-8').read() if _g2d else ''
+            for bk in _NOTES:
+                if f'"{bk["id"]}"' not in _g2t: errors.append(f'book {bk["id"]} missing from the start page (all books) study material')
             for bk in [x for x in _NOTES if not x.get('exams')]:   # the APPSC Mains books: Group-I and Group-II only
                 for eid in sorted({e for x in _NOTES for e in x.get('exams', [])} - {'appsc-group-1', 'appsc-group-2'}):
                     dfs = _g.glob(os.path.join(SITE, EXAM_DIR.get(eid, eid), 'data', '*.js'))
