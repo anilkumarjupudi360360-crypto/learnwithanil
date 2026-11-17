@@ -5196,6 +5196,34 @@ STATIC_CSS = """.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
 .mchip:hover{text-decoration:underline}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
+/* test rows: cover image, Attempt / Resume, marks column (Anil, 17 Nov 2026) */
+.tlist{display:flex;flex-direction:column;gap:10px;margin:10px 0 18px}
+.trow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px 14px;border:1px solid var(--line,#D6DFEC);border-radius:14px;background:var(--surface,#fff)}
+.trow.tsoon{background:var(--surface-2,#F1F5FA)}
+.tcov{position:relative;width:70px;height:92px;border-radius:6px 9px 9px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;overflow:hidden;flex:none;background:linear-gradient(155deg,hsl(var(--h) 72% 52%),hsl(calc(var(--h) + 28) 70% 31%));box-shadow:inset 5px 0 0 rgba(0,0,0,.2),0 3px 8px rgba(15,23,42,.2)}
+.tcov i{position:absolute;top:5px;left:9px;right:3px;font:700 7px/1.12 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;opacity:.95;font-style:normal;text-align:left;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tcov b{font:800 10.5px/1 system-ui,sans-serif;letter-spacing:.16em;margin-top:14px}
+.tcov em{font:900 30px/1.05 system-ui,sans-serif;font-style:normal}
+.tcov.tc-pyq em{font-size:21px;margin-top:3px}
+.tcov s{text-decoration:none;font:700 8.5px/1.15 system-ui,sans-serif;margin-top:2px;padding:0 5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tcov u{position:absolute;bottom:5px;left:0;right:0;text-decoration:none;font:600 6.5px/1 system-ui,sans-serif;opacity:.85}
+.tcov.tsoon{filter:grayscale(1);opacity:.55}
+.tcov.tsoon::after{content:"SOON";position:absolute;top:68%;left:-20px;right:-20px;transform:rotate(-24deg);background:rgba(0,0,0,.6);font:800 8px/1.7 system-ui,sans-serif;letter-spacing:.14em}
+.tname{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.tname b{font-size:16px;color:var(--ink,#0D1830)}
+.tbadge{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--accent-soft,#E2EAFC);color:var(--accent-text,#1440B8)}
+.tbadge.free{background:#E5F6EC;color:#0E7A43}
+.tmeta{color:var(--muted,#55627C);font-size:14px;margin-top:2px}
+.tblurb{font-size:13.5px;color:var(--muted,#55627C);margin-top:4px}
+.tsec{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:8px}.tsec>span:first-child{font-size:12.5px;font-weight:700;color:var(--muted,#55627C);margin-right:2px}
+.tside{display:flex;flex-direction:column;gap:8px;width:220px;padding-left:14px;border-left:1px dashed var(--line,#D6DFEC)}
+.tmk{display:flex;flex-direction:column;line-height:1.25}
+.tml{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted,#55627C)}
+.tmv{font-size:22px;font-weight:800;color:var(--ink,#0D1830)}
+.tmk.done .tmv{color:#0E7A43}.tmk.run .tmv{color:#9A3412;font-size:17px}
+.tms{font-size:12.5px;color:var(--muted,#55627C)}
+.tbtns{display:flex;flex-wrap:wrap;gap:6px}
+.mbtn.tres{background:#FFF1E6;border-color:#C2410C;color:#9A3412}.tres[hidden],.trow [hidden]{display:none!important}
+@media (max-width:720px){.trow{grid-template-columns:auto minmax(0,1fr);gap:12px}.tside{grid-column:1/-1;width:auto;border-left:0;padding-left:0;border-top:1px dashed var(--line,#D6DFEC);padding-top:10px;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between}}
 .mtrack{border:1px solid var(--line,#D6DFEC);border-left:4px solid var(--accent,#1846C7);border-radius:12px;padding:6px 14px 10px;margin:14px 0}.mtrack h3{margin:8px 0 6px}
 .ptiles-h{font-size:15px;margin:18px 0 10px;color:#55627C;font-weight:700}
 .ptile{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#fff;border:1px solid #D6DFEC;border-left:4px solid #1846C7;border-radius:12px;color:inherit;text-decoration:none}
@@ -5272,6 +5300,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 
 def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, conf=None, ename=None, at_root=False, foot_text=None, head_all=False):
     ename = ename or (conf['name'] if conf else 'APPSC Group-II')
+    if conf and 'data-tk="' in body_html: body_html += test_rows_js(conf)   # marks + Resume on the test rows (Anil, 17 Nov 2026)
     rootup = '' if at_root else '../' * (rel_depth + (1 if conf and conf.get('dir') else 0))
     up = '../' * rel_depth
     pb = conf['pb'] if conf else '/appsc-group-2/'
@@ -8488,7 +8517,7 @@ def inapp_mocks(conf, papers):
                 '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
                 f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months).</li></ul>')
     return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if rows and not conf.get('mockonly') else '')
+            + ('<h2>Real previous papers as mock tests</h2>' + rows if rows and not conf.get('mockonly') else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
@@ -8574,14 +8603,103 @@ try{if(window.gtag)gtag('event','paper_pdf_download',{paper:a.getAttribute('data
 say(a,'✓ Your PDF is downloading (saved in Downloads). For your personal study only.')})}).catch(function(err){say(a,(err&&err.message)||'Could not get the PDF. Please check your connection and try again.',true)}).then(function(){a.innerHTML=html;a.removeAttribute('aria-busy')})});})();</script>""")
 
 
-def mock_table(conf, ms, app=False):
-    """The table of one mock pack's mocks (or of one post's mocks): Start / Practice / PDF and the sectional chips; coming-soon mocks folded."""
+
+# ---------- test rows with a cover image, Attempt / Resume and the marks column (Anil, 17 Nov 2026) ----------
+# "for the exams....keep small image as mock-1, mock-2, etc....if it for pyqs ...give image like 2026 pyqs paper-1 like that....
+#  add attempt button , resume button....marking got(in side coloumn)......and if there are 10 mocks in a test series ...keep image for all"
+# The cover is drawn in CSS (no image files). Marks and Resume come from this browser's saved results (S.tres) and saved runs
+# (lwa-<key>-run-<test key>), filled in by the app (decorateTests) and, on static pages, by TEST_ROWS_JS.
+TC_HUES = (222, 262, 158, 18, 338, 196, 32, 288, 120, 4)
+
+
+def tc_hue(seed):
+    return TC_HUES[sum(map(ord, str(seed))) % len(TC_HUES)]
+
+
+def tcover(kind, top, big, small, hue, soon=False):
+    """A small booklet cover: kind 'mock' (MOCK + number) or 'pyq' (year + paper)."""
+    lab = 'MOCK' if kind == 'mock' else 'PYQ'
+    return (f'<span class="tcov tc-{kind}{" tsoon" if soon else ""}" style="--h:{hue}" aria-hidden="true"><i>{esc(top)}</i><b>{lab}</b>'
+            f'<em>{esc(str(big))}</em>' + (f'<s>{esc(small)}</s>' if small else '') + '<u>Learn with Anil</u></span>')
+
+
+def trow(cover, name, meta, tk='', start='', start_label='Attempt', practice='', pdf='', extra='', badge='', soon=False, alt=''):
+    """One test: cover · name, details and sectional chips · marks and the buttons. tk: the key the app saves results and runs under."""
+    if soon:
+        side = '<div class="tside"><div class="tmk"><span class="tml">Opens soon</span><small class="tms">Coming soon, one by one</small></div></div>'
+    else:
+        b = (f'<a class="mbtn tres" href="{start}&amp;resume=1" hidden>⟳ Resume</a>' if start and tk else '') + (f'<a class="mbtn go" href="{start}">▶ {start_label}</a>' if start else '')
+        if practice: b += f'<a class="mbtn" href="{practice}">Practice mode</a>'
+        if alt: b += alt
+        if pdf: b += pdf.replace(' · <a ', '<a class="mbtn mpdf" ', 1)
+        side = ('<div class="tside">' + ('<div class="tmk"><span class="tml">Your marks</span><b class="tmv">—</b><small class="tms">Not attempted yet</small></div>' if tk else '')
+                + f'<div class="tbtns">{b}</div></div>')
+    return (f'<div class="trow{" tsoon" if soon else ""}"' + (f' data-tk="{esc(tk)}"' if tk and not soon else '') + f'>{cover}<div class="tmain"><div class="tname"><b>{esc(name)}</b>{badge}</div>'
+            f'<div class="tmeta">{meta}</div>{extra}</div>{side}</div>')
+
+
+def mock_num(m):
+    g = re.findall(r'\d+', m.get('group') or m['name']) or re.findall(r'\d+', m['id'])
+    return g[-1] if g else ''
+
+
+def mock_rows(conf, ms, app=False, series=''):
+    """Every mock of a pack as a row with its own cover (coming-soon ones too, greyed)."""
     pb = conf['pb']
-    sched = ''.join(f'<tr><td><b>{esc(m["name"])}</b></td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min'
-                    f'{mock_btns(f"{pb}?mock={m[chr(105) + chr(100)]}", "Start free" if m.get("free") else "Start", f"{pb}?mock={m[chr(105) + chr(100)]}&amp;mode=practice" if app else "", mock_pdf_link(conf, m["id"]))}</td>'
-                    f'<td>{chips(part_links(pb, m))}</td></tr>' for m in ms if m['live'])
-    sched += soon_rows(list(dict.fromkeys(m.get('group', m['name']) for m in ms if not m['live'])))
-    return f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+    mk = MOCK_PACKS.get(conf['id'], {})
+    series = series or mk.get('name', 'Mock test')
+    hue = tc_hue(mk.get('id', conf['id']))
+    out = ''
+    for m in ms:
+        n = mock_num(m)
+        kind_lbl = re.sub(r'\s*Mock\s*\d+\s*$', '', m['name']).strip() if m.get('group') else ''
+        cov = tcover('mock', series, n, kind_lbl, hue, soon=not m['live'])
+        if not m['live']:
+            out += trow(cov, m['name'], f'{m["qn"]} questions · {m["mins"]} min', soon=True); continue
+        sh = f'{pb}?mock={m["id"]}'
+        parts = part_links(pb, m) if m.get('parts') else ''
+        out += trow(cov, m['name'], f'{m["qn"]} questions · {m["mins"]} min', tk='mock:' + m['id'], start=sh,
+                    start_label='Attempt free' if m.get('free') else 'Attempt', practice=f'{sh}&amp;mode=practice' if app else '',
+                    pdf=mock_pdf_link(conf, m['id']), extra=(f'<div class="tsec"><span>Sectional tests</span>{chips(parts)}</div>' if parts else ''),
+                    badge=' <span class="tbadge free">Free</span>' if m.get('free') else ' <span class="tbadge">Available now</span>')
+    return f'<div class="tlist">{out}</div>'
+
+
+def pyq_label(p):
+    """'Paper 1' / 'SI Prelims' for a PYQ cover: the paper's short name without the year."""
+    t = re.sub(r'\b(19|20)\d\d\b', '', p.get('short') or p.get('stage') or '').replace('  ', ' ').strip(' ·-–,')
+    return t[:16] or 'Paper'
+
+
+def pyq_rows(conf, ps, app=False):
+    """The real previous papers as timed tests, one row each with a 'PYQ · year · paper' cover."""
+    pb = conf['pb']
+    base = '/' + (conf['dir'] + '/' if conf['dir'] else '')
+    out = ''
+    for p in ps:
+        cov = tcover('pyq', conf['short'], p['year'], pyq_label(p), tc_hue(conf['key'] + 'pyq'))   # same colour as the app's papers view (tcHue(DATA.key+'pyq'))
+        alt = '' if app else f'<a class="mbtn" href="{base}papers/{p["slug"]}.html">See the questions</a>'
+        out += trow(cov, paper_kw(conf, p) + (f' ({paper_alt(conf, p)})' if paper_alt(conf, p) else ''),
+                    f'{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}', tk='test:' + p['id'], start=f'{pb}?test={p["id"]}',
+                    practice=f'{pb}?practice={p["id"]}' if app else '', alt=alt,
+                    extra=f'<div class="tblurb">{esc(p["blurb"])}</div>')
+    return f'<div class="tlist">{out}</div>'
+
+
+def test_rows_js(conf):
+    """Static pages: fill the marks column and show Resume on the test rows from this browser's saved results and runs (same keys as the app)."""
+    return ("""<script>(function(){var E=""" + json.dumps(conf['key']) + """,S={};try{S=JSON.parse(localStorage.getItem('lwa-'+E+'-v1')||'{}')||{}}catch(e){}
+function run(k){try{var v=JSON.parse(localStorage.getItem('lwa-'+E+'-run-'+k)||'null');if(v&&v.QZ&&Date.now()-v.at<12096e5&&(Object.keys(v.QZ.ans||{}).length||v.QZ.i>0))return v}catch(e){}return null}
+function d(t){var x=new Date(t);return x.toLocaleDateString(undefined,{day:'numeric',month:'short'})}
+document.querySelectorAll('[data-tk]').forEach(function(el){var ks=el.getAttribute('data-tk').split(' '),r=null,rn=null;ks.forEach(function(k){var x=(S.tres||{})[k];if(x&&(!r||x.last.at>r.last.at))r=x;rn=rn||run(k)});
+var rb=el.querySelector('.tres'),g=el.querySelector('.mbtn.go'),mk=el.querySelector('.tmk');if(rb)rb.hidden=!rn;if(g&&rn)g.innerHTML='↻ Start again';if(!mk)return;
+var v=mk.querySelector('.tmv'),s=mk.querySelector('.tms');
+if(r){var L=r.last;mk.classList.add('done');v.textContent=L.c+' / '+L.n;s.textContent=Math.round(100*L.c/(L.n||1))+'% · '+(L.mode==='test'?'timed test':'practice')+' · '+d(L.at)+(r.tries>1?' · best '+r.best.c+'/'+r.best.n:'')+(rn?' · new attempt in progress':'')}
+else if(rn){mk.classList.add('run');v.textContent='In progress';s.textContent=Object.keys(rn.QZ.ans||{}).length+' of '+rn.QZ.ids.length+' answered · '+d(rn.at)}})})();</script>""")
+
+def mock_table(conf, ms, app=False):
+    """One mock pack's mocks (or one post's mocks): a row per mock with its cover, Attempt / Resume, marks and the sectional chips."""
+    return mock_rows(conf, ms, app)
 
 
 def mock_parts(conf, papers, app=False):
@@ -8590,12 +8708,7 @@ def mock_parts(conf, papers, app=False):
     pb, seo = conf['pb'], conf['seo']
     mcq = [p for p in sorted(papers, key=lambda p: (-p['year'], p['id'])) if p['fmt'] == 'mcq' and not p.get('own')]
     mk = MOCK_PACKS.get(conf['id'])
-    rows = ''.join(
-        f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div>'
-        f'<p>{esc(paper_kw(conf, p))}{f" ({esc(paper_alt(conf, p))})" if paper_alt(conf, p) else ""}</p>'
-        f'<p style="font-weight:400">{esc(p["blurb"])}</p>'
-        f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a>' + (f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise with answers</a></li>' if app else f'<a class="cta alt" href="/{conf["dir"] + "/" if conf["dir"] else ""}papers/{p["slug"]}.html">See the questions</a></li>')
-        for p in mcq)
+    rows = pyq_rows(conf, mcq, app) if mcq else ''
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
         if conf['id'] == 'ap-dsc' and mk.get('tracks'):   # Anil, 17 Nov 2026: "if i open mock test...then these job tiles must be seen....in that the respective tests must be there"
@@ -8614,13 +8727,11 @@ def mock_parts(conf, papers, app=False):
 )
     elif mk:
         mid = lambda i: f'{mk["id"]}-{i + 1}'
-        sched = ''.join(f'<tr><td><b>Mock {i + 1}</b></td><td>{"<b>Free</b> · register and start" if mk.get("free1") and i == 0 else "Available now"}</td><td>{mk["qn"]} questions'
-                        f'{mock_btns(f"{pb}?mock={mid(i)}", "Start free" if mk.get("free1") and i == 0 else "Start", f"{pb}?mock={mid(i)}&amp;mode=practice" if app else "", mock_pdf_link(conf, mid(i)))}</td>'
-                        f'<td>{chips(f"<a href={chr(34)}{pb}?mock={mid(i)}&amp;part=ari{chr(34)}>Arithmetic</a> · <a href={chr(34)}{pb}?mock={mid(i)}&amp;part=rea{chr(34)}>Reasoning</a> · <a href={chr(34)}{pb}?mock={mid(i)}&amp;part=gs{chr(34)}>General Studies</a>")}</td></tr>'
-                        for i in range(mk['live']))
-        sched += soon_rows([f'Mock {i + 1}' for i in range(mk['live'], mk['n'])])
+        _parts = [('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')]
+        sched = mock_rows(conf, [dict(id=mid(i), name=f'Mock {i + 1}', live=i < mk['live'], free=bool(mk.get('free1') and i == 0), qn=mk['qn'],
+                                      mins=mk.get('mins', 180), parts=_parts) for i in range(mk['n'])], app, series=mk.get('name', 'Mock test'))
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+                + sched
                 + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if mk['live'] < mk['n'] else '')
                 + '<ul><li>Fresh questions written for this series in the TS SI Prelims pattern, not copied from coaching material: Arithmetic &amp; Reasoning (100) and General Studies (100), in English and Telugu.</li>'
                 '<li>Every question has an explanation in English and Telugu. Your score, accuracy and topic-wise analysis come after each mock.</li>'
@@ -8814,7 +8925,7 @@ def mock_page(conf, papers, questions):
         return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
                                 [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if rows else '')
+            + ('<h2>Real previous papers as mock tests</h2>' + rows if rows else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>') +
