@@ -461,6 +461,10 @@ async def main():
         anm = open(os.path.join(SITE, 'appsc-analyst-grade-2', 'mock-test.html'), encoding='utf-8').read()   # Pariksha Lab (APPSC Analyst Grade-II Paper II), live since 17 Nov 2026
         if 'Pariksha Lab' not in anm or '?buy=mock' in anm: errors.append('appsc-analyst-grade-2/mock-test.html: should show the Pariksha Lab series in the All-in-One Pass')
         if not any(f.startswith('bk-anmk-1-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-analyst-grade-2', 'mk'))): errors.append('appsc-analyst-grade-2/mk: sealed bk-anmk-1 missing')
+        aee = open(os.path.join(SITE, 'appsc-assistant-environmental-engineer', 'mock-test.html'), encoding='utf-8').read()   # Harita AEE (APPSC AEE Paper II), live since 18 Nov 2026
+        if 'Harita AEE' not in aee or '?buy=mock' in aee: errors.append('appsc-assistant-environmental-engineer/mock-test.html: should show the Harita AEE series in the All-in-One Pass')
+        for _n in range(1, 4):
+            if not any(f.startswith(f'bk-aeemk-{_n}-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-assistant-environmental-engineer', 'mk'))): errors.append(f'appsc-assistant-environmental-engineer/mk: sealed bk-aeemk-{_n} missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:

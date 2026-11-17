@@ -5052,6 +5052,11 @@ def FAQ_AEE(total, npapers):
         'Paper II (Common Subject) is set in English only, so it is here in English. Paper I (General Studies & Mental Ability), coming next, will be in English and Telugu as APPSC printed it.')),
       ('Which questions are left out?',
        'Questions that APPSC ignored for all candidates are left out (' + ('two in Paper II and three in Paper I' if aee_p1() else 'Q30 and Q97 of Paper II') + '). Where APPSC accepted more than one option, each accepted option is shown as correct.'),
+      ('Is there an APPSC Assistant Environmental Engineer mock test series?',   # Harita AEE, 18 Nov 2026
+       'Yes: <a href="/appsc-assistant-environmental-engineer/mock-test.html">Harita AEE</a>, Learn with Anil\'s test series for Paper II (Common Subject): '
+       'full-length mocks of 150 new questions in 150 minutes across the whole syllabus, in English with an explanation for every answer, and each part '
+       '(ecology and resources; materials, fluids and thermodynamics; pollution control and waste; laws, conventions and EIA) also as a sectional test. '
+       'It is included in the same ₹149 All-in-One Pass.'),
     ]
 
 def FAQ_ASO(total, npapers):
@@ -7938,6 +7943,30 @@ MOCK_PACKS = {
                         mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
                                     parts=[('chm', 'Chemistry', ['chm']), ('bch', 'Biochemistry', ['bch']),
                                            ('bio', 'Biology', ['bio']), ('evs', 'Environmental Science', ['evs'])]) for i in range(1, 6)]),
+  # Anil, 17 Nov 2026 (23:33 IST): "prepare mock test series for environmental engineer appsc ...and add 3 mocks". He chose all three on
+  # Paper II (Common Subject) and the name "Harita AEE" (harita = green). New questions (15 writer + 15 independent blind-checker helper
+  # agents), 6 mocks announced. Mock layout: ecs 1-13, nrr 14-25, bdv 26-39, emt 40-52, flu 53-68, ptd 69-83, apc 84-103, swm 104-118,
+  # gel 119-134, eia 135-150. Private source /home/claude/hrt; ids start with "bk-" (any paid All-in-One Pass holder; no payments-script
+  # change). Sealed files: src/appsc-aee-mocks/.
+  'appsc-env-engineer': dict(id='bk-aeemk', name='Harita AEE', price=149, src='appsc-aee-mocks', dir='appsc-assistant-environmental-engineer', langs='English',
+                             title='Harita AEE – APPSC Assistant Environmental Engineer Paper II (Common Subject) Mock Test Series',
+                             summary='6 full-length mock tests for APPSC Assistant Environmental Engineer Paper II (Common Subject), 150 questions in 150 minutes, '
+                                     'with an explanation for every answer. Each part of the syllabus can also be taken on its own as a sectional test.',
+                             about=['New questions written by Learn with Anil for this series, not copied from coaching material or previous papers. '
+                                    'Each mock follows the Notification 08/2026 Paper II (Common Subject) syllabus and is in English, as APPSC sets this paper: '
+                                    'ecosystems 13, natural resources 12, biodiversity 14, engineering materials 13, fluid mechanics and hydraulics 16, '
+                                    'process calculations and thermodynamics 15, air, water, soil and noise pollution and their control 20, solid and industrial '
+                                    'waste 15, global environment, policies and laws 16, and EIA and sustainable development 16: 150 questions in 150 minutes.',
+                                    'Concept, statement, match-the-list and assertion–reason questions, with numericals in fluid mechanics, process calculations, '
+                                    'thermodynamics, materials and treatment-unit design, at degree level. Laws, rules and standards are as of November 2026. '
+                                    'Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs one-third of a mark, '
+                                    'so practise skipping blind guesses.',
+                                    'APPSC\'s 2025 Paper I and Paper II are on the previous-papers page, in the same pass.'],
+                             mocks=[dict(id=f'bk-aeemk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3),   # Mocks 1-3 on 18 Nov 2026
+                                         parts=[('eco', 'Ecology, Resources & Biodiversity', ['ecs', 'nrr', 'bdv']),
+                                                ('eng', 'Materials, Fluids & Thermodynamics', ['emt', 'flu', 'ptd']),
+                                                ('pol', 'Pollution Control & Waste', ['apc', 'swm']),
+                                                ('law', 'Laws, Conventions & EIA', ['gel', 'eia'])]) for i in range(1, 7)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
