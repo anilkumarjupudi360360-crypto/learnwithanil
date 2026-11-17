@@ -7829,11 +7829,11 @@ MOCK_PACKS = {
                           'only, as KEA prints them. Every answer has an explanation in English and Kannada. Your score, accuracy and topic-wise analysis '
                           'come after each paper.'],
                    mocks=[m for i in range(1, 11) for m in (
-                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 2),   # Mock 1 on 16 Nov 2026, Mock 2 on 18 Nov 2026
                             parts=[('his', 'History & Culture', ['his']), ('geo', 'Geography & Environment', ['geo']), ('pol', 'Constitution & Polity', ['pol']),
                                    ('eco', 'Economy & Rural Development', ['eco']), ('sci', 'General Science & Technology', ['sci']),
                                    ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
-                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i == 1),
+                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 2),
                             parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
   # Anil, 16 Nov 2026: "start a test series ...add one test" (MPSC Group C). Name "Sahyadri Group-C". Each mock = 100 questions, 1 hour,
   # as in MPSC's Group-C prelims (History 11, Geography 8, Polity 15, Economy 16, Science 15, Current Affairs 15, Intelligence & Arithmetic 20).
