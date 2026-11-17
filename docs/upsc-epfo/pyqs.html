@@ -18,6 +18,34 @@
 .mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
 .mchip:hover{text-decoration:underline}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
+/* test rows: cover image, Attempt / Resume, marks column (Anil, 17 Nov 2026) */
+.tlist{display:flex;flex-direction:column;gap:10px;margin:10px 0 18px}
+.trow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px 14px;border:1px solid var(--line,#D6DFEC);border-radius:14px;background:var(--surface,#fff)}
+.trow.tsoon{background:var(--surface-2,#F1F5FA)}
+.tcov{position:relative;width:70px;height:92px;border-radius:6px 9px 9px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;overflow:hidden;flex:none;background:linear-gradient(155deg,hsl(var(--h) 72% 52%),hsl(calc(var(--h) + 28) 70% 31%));box-shadow:inset 5px 0 0 rgba(0,0,0,.2),0 3px 8px rgba(15,23,42,.2)}
+.tcov i{position:absolute;top:5px;left:9px;right:3px;font:700 7px/1.12 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;opacity:.95;font-style:normal;text-align:left;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tcov b{font:800 10.5px/1 system-ui,sans-serif;letter-spacing:.16em;margin-top:14px}
+.tcov em{font:900 30px/1.05 system-ui,sans-serif;font-style:normal}
+.tcov.tc-pyq em{font-size:21px;margin-top:3px}
+.tcov s{text-decoration:none;font:700 8.5px/1.15 system-ui,sans-serif;margin-top:2px;padding:0 5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tcov u{position:absolute;bottom:5px;left:0;right:0;text-decoration:none;font:600 6.5px/1 system-ui,sans-serif;opacity:.85}
+.tcov.tsoon{filter:grayscale(1);opacity:.55}
+.tcov.tsoon::after{content:"SOON";position:absolute;top:68%;left:-20px;right:-20px;transform:rotate(-24deg);background:rgba(0,0,0,.6);font:800 8px/1.7 system-ui,sans-serif;letter-spacing:.14em}
+.tname{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.tname b{font-size:16px;color:var(--ink,#0D1830)}
+.tbadge{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--accent-soft,#E2EAFC);color:var(--accent-text,#1440B8)}
+.tbadge.free{background:#E5F6EC;color:#0E7A43}
+.tmeta{color:var(--muted,#55627C);font-size:14px;margin-top:2px}
+.tblurb{font-size:13.5px;color:var(--muted,#55627C);margin-top:4px}
+.tsec{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:8px}.tsec>span:first-child{font-size:12.5px;font-weight:700;color:var(--muted,#55627C);margin-right:2px}
+.tside{display:flex;flex-direction:column;gap:8px;width:220px;padding-left:14px;border-left:1px dashed var(--line,#D6DFEC)}
+.tmk{display:flex;flex-direction:column;line-height:1.25}
+.tml{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted,#55627C)}
+.tmv{font-size:22px;font-weight:800;color:var(--ink,#0D1830)}
+.tmk.done .tmv{color:#0E7A43}.tmk.run .tmv{color:#9A3412;font-size:17px}
+.tms{font-size:12.5px;color:var(--muted,#55627C)}
+.tbtns{display:flex;flex-wrap:wrap;gap:6px}
+.mbtn.tres{background:#FFF1E6;border-color:#C2410C;color:#9A3412}.tres[hidden],.trow [hidden]{display:none!important}
+@media (max-width:720px){.trow{grid-template-columns:auto minmax(0,1fr);gap:12px}.tside{grid-column:1/-1;width:auto;border-left:0;padding-left:0;border-top:1px dashed var(--line,#D6DFEC);padding-top:10px;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between}}
 .mtrack{border:1px solid var(--line,#D6DFEC);border-left:4px solid var(--accent,#1846C7);border-radius:12px;padding:6px 14px 10px;margin:14px 0}.mtrack h3{margin:8px 0 6px}
 .ptiles-h{font-size:15px;margin:18px 0 10px;color:#55627C;font-weight:700}
 .ptile{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#fff;border:1px solid #D6DFEC;border-left:4px solid #1846C7;border-radius:12px;color:inherit;text-decoration:none}
@@ -99,7 +127,7 @@ ol.clist li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;ba
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-PN0QCDCJBL");</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "UPSC EPFO PYQs with Answers – Previous Papers as Quizzes & Timed Tests | Learn with Anil", "description": "UPSC EPFO previous year questions (PYQs): 719 questions from 6 official papers with answers and explanations in English and Hindi, as practice quizzes and timed tests, with one ₹149 All-in-One Pass for every exam on the site.", "url": "https://learnwithanil.in/upsc-epfo/pyqs.html", "isPartOf": {"@type": "WebSite", "name": "Learn with Anil", "url": "https://learnwithanil.in/"}, "author": {"@type": "Person", "name": "Jupudi Anil Kumar"}, "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learnwithanil.in/"}, {"@type": "ListItem", "position": 2, "name": "UPSC EPFO (APFC, EO/AO, PA)", "item": "https://learnwithanil.in/upsc-epfo/"}, {"@type": "ListItem", "position": 3, "name": "PYQs", "item": "https://learnwithanil.in/upsc-epfo/pyqs.html"}]}}</script>
-<link rel="prefetch" href="/upsc-epfo/data/upsc-epfo-d41b7ba323.js" as="script">
+<link rel="prefetch" href="/upsc-epfo/data/upsc-epfo-24d6ade2de.js" as="script">
 </head>
 <body>
 <header><div class="wrap"><a href="/upsc-epfo/">Learn with Anil · UPSC EPFO (APFC, EO/AO, PA) PYQs</a><span class="hr"><a href="/upsc-epfo/practice/">Practise online →</a><a class="hsub" id="hsub" href="/upsc-epfo/?buy=pyq" title="One ₹149 payment opens every PYQ, mock test and book on the site for 12 months">Subscribe ₹149</a></span></div></header>

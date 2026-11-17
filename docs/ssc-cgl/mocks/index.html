@@ -692,6 +692,36 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .mchips{display:flex;flex-wrap:wrap;gap:6px}
 .mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
+/* test rows: cover image, Attempt / Resume, marks column (Anil, 17 Nov 2026) */
+.tlist{display:flex;flex-direction:column;gap:10px;margin:10px 0 18px}
+.trow{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:12px 14px;border:1px solid var(--line,#D6DFEC);border-radius:14px;background:var(--surface,#fff)}
+.trow.tsoon{background:var(--surface-2,#F1F5FA)}
+.tcov{position:relative;width:70px;height:92px;border-radius:6px 9px 9px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;overflow:hidden;flex:none;background:linear-gradient(155deg,hsl(var(--h) 72% 52%),hsl(calc(var(--h) + 28) 70% 31%));box-shadow:inset 5px 0 0 rgba(0,0,0,.2),0 3px 8px rgba(15,23,42,.2)}
+.tcov i{position:absolute;top:5px;left:9px;right:3px;font:700 7px/1.12 system-ui,sans-serif;letter-spacing:.04em;text-transform:uppercase;opacity:.95;font-style:normal;text-align:left;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tcov b{font:800 10.5px/1 system-ui,sans-serif;letter-spacing:.16em;margin-top:14px}
+.tcov em{font:900 30px/1.05 system-ui,sans-serif;font-style:normal}
+.tcov.tc-pyq em{font-size:21px;margin-top:3px}
+.tcov s{text-decoration:none;font:700 8.5px/1.15 system-ui,sans-serif;margin-top:2px;padding:0 5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tcov u{position:absolute;bottom:5px;left:0;right:0;text-decoration:none;font:600 6.5px/1 system-ui,sans-serif;opacity:.85}
+.tcov.tsoon{filter:grayscale(1);opacity:.55}
+.tcov.tsoon::after{content:"SOON";position:absolute;top:68%;left:-20px;right:-20px;transform:rotate(-24deg);background:rgba(0,0,0,.6);font:800 8px/1.7 system-ui,sans-serif;letter-spacing:.14em}
+.tname{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.tname b{font-size:16px;color:var(--ink,#0D1830)}
+.tbadge{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--accent-soft,#E2EAFC);color:var(--accent-text,#1440B8)}
+.tbadge.free{background:#E5F6EC;color:#0E7A43}
+.tmeta{color:var(--muted,#55627C);font-size:14px;margin-top:2px}
+.tblurb{font-size:13.5px;color:var(--muted,#55627C);margin-top:4px}
+.tsec{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:8px}.tsec>span:first-child{font-size:12.5px;font-weight:700;color:var(--muted,#55627C);margin-right:2px}
+.tside{display:flex;flex-direction:column;gap:8px;width:220px;padding-left:14px;border-left:1px dashed var(--line,#D6DFEC)}
+.tmk{display:flex;flex-direction:column;line-height:1.25}
+.tml{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted,#55627C)}
+.tmv{font-size:22px;font-weight:800;color:var(--ink,#0D1830)}
+.tmk.done .tmv{color:#0E7A43}.tmk.run .tmv{color:#9A3412;font-size:17px}
+.tms{font-size:12.5px;color:var(--muted,#55627C)}
+.tbtns{display:flex;flex-wrap:wrap;gap:6px}
+.mbtn.tres{background:#FFF1E6;border-color:#C2410C;color:#9A3412}.tres[hidden],.trow [hidden]{display:none!important}
+.pc-top{display:flex;gap:12px;align-items:center}.pc-h{min-width:0}.pcard .tmk{margin:8px 0 2px;padding:8px 10px;border-radius:10px;background:var(--surface-2)}
+.btn.tres{background:#FFF1E6;border:1.5px solid #C2410C;color:#9A3412}
+@media (max-width:720px){.trow{grid-template-columns:auto minmax(0,1fr);gap:12px}.tside{grid-column:1/-1;width:auto;border-left:0;padding-left:0;border-top:1px dashed var(--line,#D6DFEC);padding-top:10px;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between}}
 .mtrack{border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--r);padding:6px 14px 10px;margin:14px 0;background:var(--surface)}.mtrack h3{margin:8px 0 6px}
 /* AP DSC: one tile per post (Anil, 17 Nov 2026) */
 .ptiles-h{font-size:15px;margin:18px 0 10px;color:var(--muted);font-weight:700}
@@ -961,7 +991,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ssc-cgl-cc3221e798.js"></script>
+<script src="data/ssc-cgl-53071fed49.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1019,8 +1049,49 @@ let P = readLS(PKEY, {papers:null, topics:null, count:10, mode:"practice", recal
 try{ const gl = localStorage.getItem("lwa-lang"); if(gl && ["en","hi","te","ta","kn","mr","gu","or","bn"].includes(gl)) P.lang = gl; }catch(_){}
 const save = ()=>writeLS(KEY, S), savePrefs = ()=>writeLS(PKEY, P);
 const QKEY = "lwa-"+EKEY+"-quiz-v1";   // the quiz or test in progress, so a reload (or a phone closing the tab in the background) does not lose it
-function saveQZ(){ try{ if(QZ && QZ.source!=="mock") localStorage.setItem(QKEY, JSON.stringify({QZ, at:Date.now()})); else localStorage.removeItem(QKEY); }catch(_){} }
+function saveQZ(){ runSave(); try{ if(QZ && QZ.source!=="mock") localStorage.setItem(QKEY, JSON.stringify({QZ, at:Date.now()})); else localStorage.removeItem(QKEY); }catch(_){} }
 function loadQZ(){ try{ const v = JSON.parse(localStorage.getItem(QKEY)||"null"); if(v && v.QZ && Date.now()-v.at < 24*3600e3 && v.QZ.ids.every(id=>QMAP[id])) return v.QZ; }catch(_){} return null; }
+// Anil, 17 Nov 2026: every mock and previous paper gets "Attempt", "Resume" and the marks got. A test started from a row carries its key
+// (QZ.tk: "mock:<id>", "mock:<id>:<part>", "test:<paper>", "paper:<paper>"); its run is saved under lwa-<exam>-run-<key> (14 days) so it can be
+// resumed later, and its result goes to S.tres[key] = {last, best, tries}. Mocks too: on Resume the mock is loaded again and the run restored.
+const RUNP = "lwa-"+EKEY+"-run-";
+function runSave(){ if(!QZ || !QZ.tk) return; try{ const q = Object.assign({}, QZ, {used: qzSecs()}); localStorage.setItem(RUNP+QZ.tk, JSON.stringify({QZ:q, at:Date.now()})); }catch(_){} }
+function runGet(tk){ try{ const v = JSON.parse(localStorage.getItem(RUNP+tk)||"null"); if(v && v.QZ && Date.now()-v.at < 14*864e5) return v; }catch(_){} return null; }
+function runDel(tk){ try{ localStorage.removeItem(RUNP+tk); }catch(_){} }
+const runLive = v => !!(v && v.QZ && (Object.keys(v.QZ.ans||{}).length || v.QZ.i>0));
+function runRestore(tk){
+  const v = runGet(tk); if(!runLive(v) || !v.QZ.ids.every(id=>QMAP[id])) return false;
+  const q = v.QZ, used = +q.used || 0, off = !!(q.timerOff && !q.away);
+  QZ = Object.assign(q, {t0: Date.now() - used*1000, pausedMs:0, timerOff:off, offAt: off ? Date.now() : 0, away:false}); delete QZ.used;
+  UI.confirmSubmit = false; go("quiz"); setTimeout(()=>toast("Welcome back: your test is just where you left it."), 300); return true;
+}
+function tresSave(tk, res){
+  S.tres = S.tres || {}; const o = S.tres[tk] || {}, r = {c:res.c, w:res.w, k:res.k, n:res.total, at:res.at, secs:res.secs, mode:res.mode};
+  S.tres[tk] = {last:r, best:(!o.best || r.c > o.best.c) ? r : o.best, tries:(o.tries||0)+1};
+}
+function decorateTests(root){   // fill the marks column and show Resume on every test row ([data-tk]) in this view
+  (root||document).querySelectorAll("[data-tk]").forEach(el=>{
+    if(el.classList.contains("tres")) return;
+    const tks = el.dataset.tk.split(" "), rs = tks.map(k=>(S.tres||{})[k]).filter(Boolean).sort((a,b)=>b.last.at-a.last.at), r = rs[0];
+    const runK = tks.find(k=>runLive(runGet(k))), run = runK && runGet(runK);
+    const rb = el.querySelector(".tres"), go = el.querySelector(".mbtn.go, .btn.go"), mk = el.querySelector(".tmk");
+    if(rb){ rb.hidden = !run; if(runK && rb.dataset.tk!==undefined) rb.dataset.tk = runK; }
+    if(go){ if(run && !go.dataset.l0){ go.dataset.l0 = go.innerHTML; go.innerHTML = "↻ Start again"; } else if(!run && go.dataset.l0){ go.innerHTML = go.dataset.l0; delete go.dataset.l0; } }
+    if(!mk) return;
+    const v = mk.querySelector(".tmv"), sm = mk.querySelector(".tms");
+    mk.classList.toggle("done", !!r); mk.classList.toggle("run", !r && !!run);
+    if(r){ const L = r.last, B = r.best; v.textContent = L.c+" / "+L.n; sm.textContent = (pct(L.c,L.n)||0)+"% · "+(L.mode==="test"?"timed test":"practice")+" · "+shortDate(L.at)+(r.tries>1 ? " · best "+B.c+"/"+B.n : "")+(run ? " · new attempt in progress" : ""); }
+    else if(run){ v.textContent = "In progress"; sm.textContent = Object.keys(run.QZ.ans||{}).length+" of "+run.QZ.ids.length+" answered · "+shortDate(run.at); }
+    else { v.textContent = "—"; sm.textContent = "Not attempted yet"; }
+  });
+}
+const shortDate = t=>new Date(t).toLocaleDateString(undefined,{day:"numeric",month:"short"});
+function tcovJS(kind, top, big, small, hue){
+  return `<span class="tcov tc-${kind}" style="--h:${hue}" aria-hidden="true"><i>${esc(top)}</i><b>${kind==="mock"?"MOCK":"PYQ"}</b><em>${esc(String(big))}</em>${small?`<s>${esc(small)}</s>`:""}<u>Learn with Anil</u></span>`;
+}
+const TC_HUES = [222, 262, 158, 18, 338, 196, 32, 288, 120, 4];
+const tcHue = seed=>TC_HUES[[...String(seed)].reduce((a,c)=>a+c.charCodeAt(0),0) % TC_HUES.length];
+const pyqLabel = p=>((p.short||p.stage||"").replace(/\b(19|20)\d\d\b/g,"").replace(/\s{2,}/g," ").trim().replace(/^[\s·\-–,]+|[\s·\-–,]+$/g,"").slice(0,16)) || "Paper";
 
 /* ---------- visit statistics (Google Analytics, only when the site is built with an id) ---------- */
 function track(name, params){ try{ if(typeof gtag==="function") gtag("event", name, params||{}); }catch(_){} }
@@ -1296,7 +1367,7 @@ async function payResume(){   // back from Instamojo by the back button (no paym
 }
 async function payCheck(){
   await refreshPasses(true); closePay();
-  if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source, p.mins); else render(); }
+  if(passOK("pyq")){ toast("Unlocked. All the best!"); const p = UI.payPending; UI.payPending = null; if(p) startQuiz(p.ids, p.title, p.mode, p.source, p.mins, p.tk); else render(); }
   else if(passOK("mock")){ toast("Your mock-test pass is active. All the best!"); render(); }   // old mock-only passes
   else toast("No payment found for " + (ST.phone||"this phone") + " yet. If you just paid, wait a minute and check again.");
 }
@@ -1361,9 +1432,9 @@ async function paperPdf(pid, btn){
 
 /* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹149 All-in-One Pass since 26 Oct 2026) */
 const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
-async function startMock(id, part, mode){   // mode "practice": check each answer as you go (like the previous papers); else the exam-style test
+async function startMock(id, part, mode, resume){   // mode "practice": check each answer as you go (like the previous papers); else the exam-style test
   if(!PAYC || !PAYC.mock) return;
-  if(!ST.name){ UI.pendingMock = {id, part, mode}; go("join"); return; }
+  if(!ST.name){ UI.pendingMock = {id, part, mode, resume}; go("join"); return; }
   if(!PAYC.on || !PAYC.api){ openPay("pyq"); return; }
   toast("Loading the mock…");
   try{
@@ -1387,8 +1458,9 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
       mins = (part && mm.pmins && mm.pmins[part]) || Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part: its real section limit (bank exams: 20 min) or its share of the full time
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
-    const practice = mode==="practice";
-    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · " + mname + (pname? " · " + pname + " sectional" : "") + (practice ? " · Practice" : ""), practice ? "practice" : "test", "mock", mins);
+    const practice = mode==="practice", tk = "mock:" + id + (part ? ":" + part : "") + (practice ? ":p" : "");
+    if(resume && runRestore(tk)) return;
+    startQuiz(qs.map(q=>q.id), PAYC.mock.name + " · " + mname + (pname? " · " + pname + " sectional" : "") + (practice ? " · Practice" : ""), practice ? "practice" : "test", "mock", mins, tk);
   }catch(_){ toast("No connection. Please try again."); }
 }
 
@@ -1704,6 +1776,7 @@ function render(){
     if(keepY!==null && Math.abs(window.scrollY - keepY) > 1) window.scrollTo(0, keepY);
   }
   if(v==="quiz") startTimer();
+  if(v!=="quiz" && v!=="exams" && v!=="home") decorateTests(host);
   markLocks();
   saveQZ();
   if(changed) window.scrollTo(0,0);
@@ -2112,10 +2185,10 @@ function vSectionals(){
 function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?sec / ?practice / ?test: do it here (same as on page load)
   const bk = sp.get("buy"); if(bk==="pyq" || bk==="mock" || bk==="combo"){ openPay(bk); return true; }
   const pd = sp.get("pdf"); if(pd && (DATA.pdfs||{})[pd]){ paperPdf(pd); return true; }
-  const mk = sp.get("mock"); if(mk && /^[a-z0-9-]+$/.test(mk)){ startMock(mk, sp.get("part")||"", sp.get("mode")||""); return true; }
+  const mk = sp.get("mock"); if(mk && /^[a-z0-9-]+$/.test(mk)){ startMock(mk, sp.get("part")||"", sp.get("mode")||"", !!sp.get("resume")); return true; }
   const sec = sp.get("sec"); if(sec && SUBJ[sec]){ startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return true; }
-  const pp = sp.get("practice"); if(pp && PMAP[pp]){ startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins); return true; }
-  const tp = sp.get("test"); if(tp && PMAP[tp]){ startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins); return true; }
+  const pp = sp.get("practice"); if(pp && PMAP[pp]){ if(sp.get("resume") && runRestore("paper:"+pp)) return true; startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins, "paper:"+pp); return true; }
+  const tp = sp.get("test"); if(tp && PMAP[tp]){ if(sp.get("resume") && runRestore("test:"+tp)) return true; startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins, "test:"+tp); return true; }
   return false;
 }
 
@@ -2147,13 +2220,16 @@ function vPapers(){
   const years = [...new Set(PAPERS.map(p=>p.year))].sort((a,b)=>b-a);
   const card = p=>{
     const done = QS.filter(q=>q.p===p.id && S.qs[q.id]).length;
-    return `<article class="card paper">
+    return `<article class="card paper pcard" data-tk="paper:${p.id} test:${p.id}">
+      <div class="pc-top">${tcovJS("pyq", DATA.examShort||"", p.year, pyqLabel(p), tcHue((DATA.key||"")+"pyq"))}<div class="pc-h">
       <span class="yr">${esc(p.held)} · ${esc(p.notif)}</span>
-      <h3>${p.kw ? esc(p.kw) : esc(p.title).replace(/Group-(I{1,3}|IV)\b/g,'<span class="nw">Group-$1</span>')}</h3>
+      <h3>${p.kw ? esc(p.kw) : esc(p.title).replace(/Group-(I{1,3}|IV)\b/g,'<span class="nw">Group-$1</span>')}</h3></div></div>
       <p>${esc(p.blurb)}</p>
       <div class="meta"><span class="pill blue">${p.count} questions</span><span class="pill ${p.fmt==="mcq"?"good":"warn"}">${p.own?"Options by Learn with Anil":p.fmt==="mcq"?"All 4 options":"Answer-only key"}</span>${done?`<span class="pill">${done} attempted</span>`:""}</div>
+      <div class="tmk"><span class="tml">Your marks</span><b class="tmv">—</b><small class="tms">Not attempted yet</small></div>
       <div class="acts">
-        <button class="btn btn-primary btn-sm" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":FREEPYQ?"Free · ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
+        <button class="btn btn-sm tres" type="button" data-act="resumetest" data-tk="paper:${p.id}" hidden>⟳ Resume</button>
+        <button class="btn btn-primary btn-sm go" type="button" data-act="paperpractice" data-paper="${p.id}">${passOK("pyq")?"✓ ":FREEPYQ?"Free · ":"🔒 "}Attempt this paper · ${p.mins||p.count} min timer</button>
         ${pyqOpen() ? "" : `<button class="btn btn-secondary btn-sm" type="button" data-act="trypaper" data-paper="${p.id}">Try 10 questions free</button>`}
         ${p.bk ? `<button class="btn btn-good btn-sm" type="button" data-act="paperpdf" data-paper="${p.id}">${passOK("pyq")?"⬇ ":"🔒 "}Download PDF · ${p.bk.pages} pages</button>` : ""}
       </div>
@@ -2232,15 +2308,16 @@ function quizTitle(){
   if(subs.length===1){ const tt = tops.filter(k=>k.startsWith(subs[0]+"|")); return base+" · "+(tt.length===1? tt[0].split("|")[1] : SUBJ[subs[0]].name); }
   return base+" · "+subs.length+" subjects";
 }
-function startQuiz(ids, title, mode, source, mins){   // mins: the real time limit of a whole paper or mock (else 1 minute per question)
+function startQuiz(ids, title, mode, source, mins, tk){   // mins: the real time limit of a whole paper or mock (else 1 minute per question)
   if(!ids.length) return;
   const free = source==="daily" || source==="try";   // Daily 10 and "Try 10 free" (Anil, 8 Nov 2026): no registration, no pass
-  if(!ST.name && !free){ UI.pending = {ids, title, mode, source, mins}; go("join"); return; }   // one-time registration before the first quiz or test
+  if(!ST.name && !free){ UI.pending = {ids, title, mode, source, mins, tk}; go("join"); return; }   // one-time registration before the first quiz or test
   if(source!=="mock" && !free && !pyqOpen()){   // PYQs need the paid All-in-One Pass (TS Police papers are free)
-    if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source, mins)); return; }   // paid on another device? ask the payments script once
-    UI.payPending = {ids, title, mode, source, mins}; openPay("pyq"); return; }
+    if(ST.phone && PAYC && PAYC.on && !UI.passChecked){ UI.passChecked = true; refreshPasses().then(()=>startQuiz(ids, title, mode, source, mins, tk)); return; }   // paid on another device? ask the payments script once
+    UI.payPending = {ids, title, mode, source, mins, tk}; openPay("pyq"); return; }
   track("quiz_start", {mode, exam: DATA.examShort||"", questions: ids.length});
-  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: (mins? mins*60 : ids.length*60), tryPaper: UI.tryPaper||""}; UI.tryPaper = "";   // every quiz and paper has a timer: 1 minute per question, or the paper's real time limit (the student can switch it off)
+  QZ = {title, mode, source, ids, i:0, ans:{}, chk:{}, rev:{}, mark:{}, t0:Date.now(), limit: (mins? mins*60 : ids.length*60), tryPaper: UI.tryPaper||"", tk: tk||""}; UI.tryPaper = "";
+  if(tk) runDel(tk);   // a fresh attempt replaces an unfinished one   // every quiz and paper has a timer: 1 minute per question, or the paper's real time limit (the student can switch it off)
   UI.confirmSubmit = false;
   go("quiz");
   try{ if(source!=="mock" && !localStorage.getItem("lwa-tm-hint")){ localStorage.setItem("lwa-tm-hint","1"); setTimeout(()=>toast("Tip: the green TIMER switch at the top turns the timer off, and on again."), 900); } }catch(_){}   // shown once per device
@@ -2369,7 +2446,7 @@ function finishQuiz(){
   stopTimer();
   // Practice: every question you answered counts, whether or not you pressed "Check answer" (Anil, 25 Oct 2026). Timed test: every question counts, as in the exam.
   const done = QZ.mode==="test" ? QZ.ids.slice() : QZ.ids.filter(id=>QZ.chk[id] || QZ.ans[id]!==undefined || QZ.rev[id]);
-  if(!done.length){ QZ = null; toast("Quiz ended. No question was answered, so nothing was saved."); go("papers"); return; }   // back to the papers list, not the quiz builder
+  if(!done.length){ if(QZ.tk) runDel(QZ.tk); QZ = null; toast("Quiz ended. No question was answered, so nothing was saved."); go("papers"); return; }   // back to the papers list, not the quiz builder
   const res = {title:QZ.title, mode:QZ.mode, source:QZ.source, ids:done, total:QZ.ids.length, ans:Object.assign({},QZ.ans), secs:Math.round(qzSecs()), c:0,w:0,k:0, added:0, mastered:0, at:Date.now()};
   done.forEach(id=>{
     const q = QMAP[id], a = QZ.ans[id];
@@ -2386,6 +2463,7 @@ function finishQuiz(){
   });
   if(QZ.source==="daily"){ S.daily = {d: dayIST(), c: res.c, n: res.ids.length}; res.streak = bumpStreak().n; track("daily_done", {exam: DATA.examShort||"", correct: res.c}); }
   if(QZ.source==="try") res.tryPaper = QZ.tryPaper;
+  if(QZ.tk){ tresSave(QZ.tk, res); runDel(QZ.tk); }
   S.history.unshift({at:res.at,title:res.title,n:res.ids.length,c:res.c,w:res.w,k:res.k,secs:res.secs});
   S.history = S.history.slice(0,12);
   save(); progSave(); LAST = res; QZ = null; UI.rFilter="all";
@@ -3129,8 +3207,9 @@ document.addEventListener("click", e=>{
     case "paybuy": { payBuy(b.dataset.kind); break; }
     case "paycheck": { payCheck(); break; }
     case "payclose": { closePay(); break; }
-    case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper", p.mins); break; }
-    case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper", p.mins); break; }
+    case "paperpractice": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id).map(q=>q.id), p.title, "practice", "paper", p.mins, "paper:"+p.id); break; }
+    case "papertest": { const p=PMAP[b.dataset.paper]; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).map(q=>q.id), p.title+" · Timed test", "test", "paper", p.mins, "test:"+p.id); break; }
+    case "resumetest": { if(!runRestore(b.dataset.tk)) toast("That test could not be resumed. Please start it again."); break; }
     case "pick": { const id=QZ.ids[QZ.i]; const j=+b.dataset.i; delete QZ.chk[id]; if(QZ.ans[id]===j) delete QZ.ans[id]; else QZ.ans[id]=j; render(); break; }   // practice and test alike: answers are marked only after submit
     case "check": { const id=QZ.ids[QZ.i]; if(QZ.ans[id]===undefined) return; QZ.chk[id]=true; render(); break; }
     case "reveal": { QZ.rev[QZ.ids[QZ.i]]=true; render(); break; }
@@ -3214,9 +3293,9 @@ async function finishJoin(d, method){
     UI.pendingBook = null; UI.pendingPay = false;
     if(isNew){ UI.justJoined = Date.now(); }   // no "please share" pop-up after registering any more: it waits for a good score (Anil, 12 Nov 2026)
     const first = name.split(" ")[0];
-    if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins); }
+    if(p){ leaveJoin(); toast("Thanks, "+first+"." + (trialMsg || " All the best!")); startQuiz(p.ids, p.title, p.mode, p.source, p.mins, p.tk); }
     else if(UI.pendingBuy){ UI.pendingBuy = null; leaveJoin(); openPay("pyq"); payBuy("pyq"); }   // they had already tapped Pay: straight on to Instamojo
-    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part, m.mode); }
+    else if(UI.pendingMock){ const m = UI.pendingMock; UI.pendingMock = null; leaveJoin(); startMock(m.id, m.part, m.mode, m.resume); }
     else if(book){ leaveJoin(); bookDownload(book); }
     else if(UI.pendingPdf){ const pid = UI.pendingPdf; UI.pendingPdf = null; leaveJoin(); paperPdf(pid); }
     else if(pay && (isNew || wantPay) && !passOK("pyq")){ leaveJoin(); toast("Thanks, "+first+". Your details are saved."); openPay("pyq"); }
@@ -3324,17 +3403,17 @@ function start(data){
     const pd = sp.get("pdf");   // ?pdf=<paper id>: that paper's booklet PDF (All-in-One Pass), from the PYQs page
     if(pd && (DATA.pdfs||{})[pd]){ history.replaceState(null, "", location.pathname); syncLang(); if(PAPERS.some(p=>p.id===pd)) go("papers"); else render(); setTimeout(()=>paperPdf(pd), 300); return; }
     const mk = sp.get("mock");  // ?mock=<mock id>[&part=ari|rea|gs]: a Mission Khaki mock or one of its sections
-    if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||"", sp.get("mode")||""); return; }
+    if(mk && /^[a-z0-9-]+$/.test(mk)){ history.replaceState(null, "", location.pathname); syncLang(); render(); startMock(mk, sp.get("part")||"", sp.get("mode")||"", !!sp.get("resume")); return; }
     const sec = sp.get("sec");  // ?sec=<subject id>: a PYQ sectional test (every previous question from one subject)
     if(sec && SUBJ[sec]){ history.replaceState(null, "", location.pathname); syncLang(); render();
       startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return; }
     const sj = sp.get("subj");   // ?subj=<subject id>: the quiz builder with that subject picked (from the PYQs page)
     if(sj && SUBJ[sj]){ history.replaceState(null, "", location.pathname); const s=SUBJ[sj]; P.papers=null; P.topics=s.topics.map(t=>s.id+"|"+t); P.recall=true; savePrefs(); syncLang(); go("practice"); return; }
     const pp = sp.get("practice");   // ?practice=<paper id>: that paper as a practice quiz, one question at a time with the answer
-    if(pp && PMAP[pp]){ history.replaceState(null, "", location.pathname); syncLang(); render(); startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins); return; }
+    if(pp && PMAP[pp]){ history.replaceState(null, "", location.pathname); syncLang(); render(); if(sp.get("resume") && runRestore("paper:"+pp)) return; startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins, "paper:"+pp); return; }
     const tp = sp.get("test");   // ?test=<paper id>: start that paper as a full timed mock test
     if(tp && PMAP[tp]){ history.replaceState(null, "", location.pathname); syncLang(); render();
-      startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins); return; }
+      if(sp.get("resume") && runRestore("test:"+tp)) return; startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins, "test:"+tp); return; }
     const h = location.hash.slice(1); if(h && isRoute(h)) history.replaceState(null, "", pathOf(h));
   }
   syncLang(); render();
