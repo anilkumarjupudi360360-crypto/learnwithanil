@@ -215,6 +215,7 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .hero-new{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:5px 14px 5px 5px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
 .hero-new span{background:linear-gradient(135deg,#fbbf24,#f97316);color:#1f1300;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 9px;flex-shrink:0}
 .hero-new:hover{background:rgba(255,255,255,.16)}
+.hero-new em{font-style:normal;line-height:1.35;transition:opacity .3s}.hero-new span{transition:opacity .3s}.hero-new.fade em,.hero-new.fade span{opacity:0}
 .hero-stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:4px;color:var(--band-muted);font-size:14.5px}
 .hero-stats span{display:flex;align-items:baseline;gap:6px}
 .hero-stats b{font-family:var(--f-display);font-size:24px;font-weight:800;color:#fff}
@@ -914,7 +915,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
   
   <section class="hero hub-hero"><div class="wrap">
     <div class="hero-copy">
-      <a class="hero-new" href="/rrb-group-d/"><span>New</span> Railways: RRB Group D, NTPC &amp; RPF previous papers, English &amp; Hindi <b aria-hidden="true">→</b></a>
+      <a class="hero-new" id="heroNews" href="/exam-notifications.html#latest" data-news="[[&quot;Notice&quot;, &quot;APPSC: only one OTPR ID per candidate; multiple IDs strictly prohibited&quot;], [&quot;Call letter&quot;, &quot;APPSC Thanedar (Forest): walking test call letters out&quot;], [&quot;Exam date&quot;, &quot;SSC CPO 2026 Paper-I on 23-28 Nov; exam city status is live&quot;], [&quot;Correction window&quot;, &quot;APPSC: edit option opened for 2026 applications (Group-I, Forest posts, EO and more)&quot;], [&quot;Admit card&quot;, &quot;SSC GD Constable 2026: PET/PST admit cards out&quot;], [&quot;Notification&quot;, &quot;APPSC Group-II 2026: detailed notification out, apply online now&quot;]]" aria-live="polite"><span>Notice</span> <em>APPSC: only one OTPR ID per candidate; multiple IDs strictly prohibited</em> <b aria-hidden="true">→</b></a><script>(function(){var a=document.getElementById("heroNews");if(!a)return;var n;try{n=JSON.parse(a.getAttribute("data-news"))}catch(e){return}if(!n||n.length<2)return;var i=0,s=a.querySelector("span"),m=a.querySelector("em"),h=0;a.addEventListener("mouseenter",function(){h=1});a.addEventListener("mouseleave",function(){h=0});setInterval(function(){if(h||document.hidden)return;a.classList.add("fade");setTimeout(function(){i=(i+1)%n.length;s.textContent=n[i][0];m.textContent=n[i][1];a.classList.remove("fade")},300)},5000)})();</script>
       <h1 data-i18n="h1">Previous year question papers for <em>every government exam.</em></h1>
       <p data-i18n="lede">Real question papers with official answers and short explanations, in English, తెలుగు, हिंदी, தமிழ், ಕನ್ನಡ, मराठी, ગુજરાતી, ଓଡ଼ିଆ and বাংলা. One ₹149 All-in-One Pass for every exam.</p>
       <div class="row"><button class="btn btn-primary" type="button" data-act="hubscroll" data-i18n="find">Find your exam</button><button class="btn btn-secondary" type="button" data-act="qotdscroll" data-i18n="today">Today's question</button></div>
