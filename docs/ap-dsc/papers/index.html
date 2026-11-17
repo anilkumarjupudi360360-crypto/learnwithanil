@@ -548,6 +548,7 @@ footer.foot .wrap{padding-block:22px;display:flex;flex-wrap:wrap;gap:12px 24px;j
 .notes-bar p b{color:var(--ink)}
 .notes-bar .good{color:var(--accent-text);font-weight:700}
 .notes-filter{margin-top:14px}
+.notes-sec{font-size:19px;margin:26px 0 0}.notes-sec .n{font-size:13px;font-weight:600;color:var(--muted,#64748b);margin-left:4px}
 @media (max-width:560px){.notes-bar{padding:10px 12px;margin-top:12px}.notes-bar p{font-size:13.5px}.chips.notes-filter{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:12px -16px 0;padding:0 16px 2px}.chips.notes-filter::-webkit-scrollbar{display:none}.chips.notes-filter .chip{flex:none}}
 .notes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px;margin-top:16px;align-items:start}
 @media (max-width:560px){.notes-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
@@ -2657,13 +2658,17 @@ function vNotes(){
     return `<div class="wrap view">${head("Study material", `Books for ${x}`, "Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.")}
     <div class="card">${urgentNote(`the Learn with Anil books for ${DATA.examSeo||DATA.examShort||DATA.exam||"my exam"}`)}<div class="row"><a class="btn btn-secondary" href="/ap-dsc/">← Back to ${x}</a></div></div></div>`; }
   const price = PAYC ? PAYC.pyq.price : 149, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
-  // each exam shows only its own books (Anil, 16 Nov 2026), so the chips filter by language only, not by exam
-  const F = [["all","All books",()=>true],["te","తెలుగు",b=>b.lang==="te"]]
-    .map(([k,l,f])=>[k,l,N.filter(f).length]).filter(([k,,n])=>n && (k==="all" || n<N.length));
+  // each exam shows only its own books (Anil, 16 Nov 2026), so the chips filter by language only; but the start page (APPSC Group-II)
+  // lists every book (Anil, 17 Nov 2026), its own first, each tagged "For <exam>" (b.forx), with a chip per exam
+  const ALLB = N.some(b=>b.forx), exs = ALLB ? [...new Set(N.flatMap(b=>b.forx||[]))] : [];
+  const F = [["all","All books",()=>true], ...exs.map(x=>["x:"+x, x, b=>(b.forx||[]).includes(x)]), ["te","తెలుగు",b=>b.lang==="te"]]
+    .map(([k,l,f])=>[k,l,N.filter(f).length,f]).filter(([k,,n])=>n && (k==="all" || n<N.length));
   const f = F.some(x=>x[0]===UI.nFilter) ? UI.nFilter : "all";
-  const shown = f==="all" ? N : N.filter(b=>noteTags(b).includes(f));
+  const shown = f==="all" ? N : N.filter(F.find(x=>x[0]===f)[3]);
+  const own = shown.filter(b=>b.own!==false), more = shown.filter(b=>b.own===false);
   const langs = [...new Set(N.map(b=>b.lang==="te"?"Telugu":"English"))].join(" and ");
-  const lede = `${N.length} book${N.length===1?"":"s"} by Jupudi Anil Kumar, in ${langs}. Tap a cover to see sample pages.`;
+  const lede = ALLB ? `All ${N.length} books by Jupudi Anil Kumar, in ${langs}: ${N.filter(b=>b.own!==false).length} for ${esc(DATA.examShort||DATA.exam||"this exam")} first, then the books for other exams. New books are added here as they are ready. Tap a cover to see sample pages.`
+                    : `${N.length} book${N.length===1?"":"s"} by Jupudi Anil Kumar, in ${langs}. Tap a cover to see sample pages.`;
   const bar = allDl
     ? (ok ? `<div class="card notes-bar"><p><span class="good">✓ Your All-in-One Pass is active.</span> Download any book as a PDF and read it on your phone or print it, for your personal study.</p></div>`
           : `<div class="card notes-bar"><p><b>Every book is in the ₹${price} All-in-One Pass</b>, with every previous paper and mock test series. Pay once, download all.</p><button class="btn btn-primary btn-sm" type="button" data-act="unlockpyq">🔒 Unlock all · ₹${price} once</button></div>`)
@@ -2672,7 +2677,10 @@ function vNotes(){
   return `<div class="wrap view">
     ${head("Study material · 2026-27", DATA.notesTitle || "Study material", lede)}
     ${bar}${chips}
-    <div class="notes-grid">${shown.map(noteCard).join("")}</div>
+    ${ALLB && own.length && more.length
+      ? `<h2 class="notes-sec">For ${esc(DATA.exam||"this exam")} <span class="n">${own.length}</span></h2><div class="notes-grid">${own.map(noteCard).join("")}</div>
+         <h2 class="notes-sec">More books by Learn with Anil, for other exams <span class="n">${more.length}</span></h2><div class="notes-grid">${more.map(noteCard).join("")}</div>`
+      : `<div class="notes-grid">${shown.map(noteCard).join("")}</div>`}
     ${DATA.notesLede ? `<p class="notes-about">${esc(DATA.notesLede)}</p>` : ""}
     <div class="card notes-foot"><b>One ₹${price} All-in-One Pass for everything:</b> every previous paper, every mock test series and these books, for 12 months. For your personal study only; please don't share the PDFs. Questions about the books? Call or WhatsApp <a href="tel:+919494792739">+91 94947 92739</a> or email <a href="mailto:learnwithanil0608@gmail.com">learnwithanil0608@<wbr>gmail.com</a>.</div>
   </div>`;
