@@ -1173,7 +1173,9 @@ def FAQ_OAS(total, npapers):
        'The written exam is on Sunday, 17 January 2027. Online applications on opsc.gov.in are open from 9 to 30 November 2026 (5 pm). Advt. No. 15 of 2026-27 has 340 posts.'),
       ('Is there an OPSC ASO mock test?',
        'Yes. Every paper here can be taken as a full mock test with the real time limit and negative marking, and the sectional tests take all the previous '
-       'questions of one subject, such as Odisha GK or Odia. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
+       'questions of one subject, such as Odisha GK or Odia. For new questions, Konark ASO is our series of 12 OPSC ASO mock tests in the real pattern '
+       '(Paper I General Awareness, Paper II Reasoning & Mathematics and Paper III English & Odia, with explanations). Answers, explanations and the '
+       'Konark ASO tests open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
@@ -3757,7 +3759,7 @@ def main():
         if os.path.isdir(mkdir_):
             os.makedirs(os.path.join(DIST, 'site', exam_dir, 'mk'), exist_ok=True)
             for f in os.listdir(mkdir_):
-                if f.endswith('.bin'): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', exam_dir, 'mk', f))
+                if f.endswith(('.bin', '.png')): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', exam_dir, 'mk', f))   # .png: figures of Konark ASO Paper II tests
     open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
     print(f'  grand total {grand} questions, {len(all_pages)} static pages')
 
@@ -7667,6 +7669,30 @@ MOCK_PACKS = {
                                  ('psy', 'Educational Psychology', ['psy']),
                                  ('soc', 'Social Studies Content (Class 6 to Inter)', ['soc'], ['History', 'Geography', 'Polity', 'Economics']),
                                  ('socm', 'Social Studies Methodology', ['soc'], ['Methodology'])]))]),
+  # Anil, 17 Nov 2026: "pls start test sereis for odisha exam...and 2 tests live". Chose Test 1 = Paper I, Test 2 = Paper II (English, as OPSC
+  # prints them) and the name "Konark ASO". OPSC ASO written exam 17 Jan 2027 (Advt. 15 of 2026-27): P-I GA 100 (1½ h), P-II Reasoning 50 +
+  # Maths 50 (1½ h), P-III English 100 + Odia 100 (2 h); 0.25 cut per wrong answer. Writer + checker agents, private source /home/claude/oasm;
+  # ids "bk-" (All-in-One Pass, no payments-script change). Figures for Paper II tests are public PNGs next to the sealed files (src/opsc-aso-mocks/).
+  'opsc-aso': dict(id='bk-oasmk', name='Konark ASO', price=149, src='opsc-aso-mocks', dir='opsc-aso', langs='English (Paper III: English &amp; Odia)',
+                   title='Konark ASO – OPSC ASO Mock Test Series 2027 (Papers I, II and III)',
+                   summary='12 full-length OPSC Assistant Section Officer mock tests in the real pattern: Paper I General Awareness (100 questions, 1½ hours), '
+                           'Paper II Reasoning & Mental Ability and Mathematics (100 questions, 1½ hours) and Paper III English and Odia (200 questions, 2 hours), '
+                           'with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
+                   about=['New questions written by Learn with Anil for this series in OPSC\'s ASO pattern (direct, statement, pair-matching and "which is NOT" '
+                          'questions as OPSC sets them), not copied from coaching material or previous papers. Practise OPSC\'s real ASO papers on the '
+                          'previous-papers page.',
+                          'Paper I tests: History 14, Indian Polity 20, Geography & Environment 17, Economy 8, Science & Technology 7, Current Affairs 24 '
+                          '(November 2025 onwards) and Odisha GK 10. Paper II tests: Reasoning & Mental Ability 50 (with figure questions) and Mathematics 50.',
+                          'Papers I and II are in English, as OPSC prints them; Paper III has English and Odia sections. In the real exam a wrong answer costs '
+                          '0.25 mark, so practise skipping blind guesses. Your score and subject-wise analysis come after each test.'],
+                   mocks=[dict(id=f'bk-oasmk-{i}', name=f'Test {i} · Paper {"I" * (((i - 1) % 3) + 1)}',
+                               qn=(100, 100, 200)[(i - 1) % 3], mins=(90, 90, 120)[(i - 1) % 3], live=(i <= 2),   # Tests 1-2 on 17 Nov 2026
+                               parts=([('his', 'History', ['his']), ('pol', 'Indian Polity', ['pol']), ('geo', 'Geography & Environment', ['geo']),
+                                       ('eco', 'Indian Economy', ['eco']), ('sci', 'Science & Technology', ['sci']), ('cur', 'Current Affairs', ['cur']),
+                                       ('odk', 'Odisha GK', ['odk'])],
+                                      [('rea', 'Reasoning & Mental Ability', ['rea']), ('math', 'Mathematics', ['math'])],
+                                      [('eng', 'English', ['eng']), ('odi', 'Odia', ['odi'])])[(i - 1) % 3])
+                          for i in range(1, 13)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
