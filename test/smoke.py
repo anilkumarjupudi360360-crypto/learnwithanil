@@ -447,6 +447,9 @@ async def main():
             if _s != 'sa-social-studies' and 'bk-dscmk-sass-1' in _t: errors.append(f'ap-dsc/{_s}.html shows the SA Social mock')
         for _m in ('bk-dscmk-sgt-1', 'bk-dscmk-sass-1'):
             if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'ap-dsc', 'mk'))): errors.append(f'ap-dsc/mk: sealed {_m} missing')
+        anm = open(os.path.join(SITE, 'appsc-analyst-grade-2', 'mock-test.html'), encoding='utf-8').read()   # Pariksha Lab (APPSC Analyst Grade-II Paper II), live since 17 Nov 2026
+        if 'Pariksha Lab' not in anm or '?buy=mock' in anm: errors.append('appsc-analyst-grade-2/mock-test.html: should show the Pariksha Lab series in the All-in-One Pass')
+        if not any(f.startswith('bk-anmk-1-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-analyst-grade-2', 'mk'))): errors.append('appsc-analyst-grade-2/mk: sealed bk-anmk-1 missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:

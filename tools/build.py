@@ -4840,6 +4840,10 @@ def FAQ_ANALYST(total, npapers):
        'Paper I (General Studies & Mental Ability) is here in English and Telugu, as APPSC printed it. The Paper II papers are printed in English only, so they are here in English.'),
       ('Which questions are left out?',
        'Questions that APPSC ignored for all candidates are left out. Where APPSC accepted two options, both are shown as correct.'),
+      ('Is there an APPSC Analyst Grade-II mock test series?',   # Pariksha Lab, 17 Nov 2026
+       'Yes: <a href="/appsc-analyst-grade-2/mock-test.html">Pariksha Lab</a>, Learn with Anil\'s test series for the new Paper II Common Paper: full-length mocks of '
+       '150 new questions in 150 minutes (Chemistry 38, Biochemistry 37, Biology 37, Environmental Science 38), in English with an explanation for every answer, '
+       'each subject also as a sectional test. It is included in the same ₹149 All-in-One Pass.'),
     ]
 
 
@@ -7738,6 +7742,29 @@ MOCK_PACKS = {
                                       [('rea', 'Reasoning & Mental Ability', ['rea']), ('math', 'Mathematics', ['math'])],
                                       [('eng', 'English', ['eng']), ('odi', 'Odia', ['odi'])])[(i - 1) % 3])
                           for i in range(1, 13)]),
+  # Anil, 17 Nov 2026: "start a test series for it...and upload a test" (APPSC Analyst Grade-II); chose Paper II Common Paper first,
+  # all new questions (writer + independent blind-checker helper agents), the name "Pariksha Lab" and 5 mocks. Paper II Common Paper
+  # (Notification 21/2026): 150 questions, 150 minutes, degree standard, 1/3 negative, English only; Chemistry 38, Biochemistry 37,
+  # Biology 37, Environmental Science 38 per mock. Private source /home/claude/anmk; ids start with "bk-" (any paid All-in-One Pass
+  # holder; no payments-script change). Sealed files: src/appsc-analyst-mocks/.
+  'appsc-analyst': dict(id='bk-anmk', name='Pariksha Lab', price=149, src='appsc-analyst-mocks', dir='appsc-analyst-grade-2', langs='English',
+                        title='Pariksha Lab – APPSC Analyst Grade-II Paper II (Common Paper) Mock Test Series',
+                        summary='5 full-length mock tests for the new APPSC Analyst Grade-II Paper II Common Paper, 150 questions in 150 minutes, '
+                                'with an explanation for every answer. Each subject can also be taken on its own as a sectional test.',
+                        about=['New questions written by Learn with Anil for this series, not copied from coaching material or previous papers. '
+                               'From 2026 every candidate writes one Common Paper II of Chemistry, Biochemistry, Biology and Environmental Science, '
+                               'so each mock covers all four. APPSC\'s 2025 Paper II papers (one per subject) are on the previous-papers page, in the same pass.',
+                               'Each mock follows the Notification 21/2026 syllabus: Chemistry 38 (non-transition elements, boranes, photochemistry and '
+                               'spectroscopy, chromatography, terpenoids, amino acids, green chemistry, furan and pyrrole), Biochemistry 37 (enzymes, '
+                               'immunology, body systems, hormones, nutrition, clinical biochemistry), Biology 37 (bacteria and viruses, cell biology, '
+                               'genetics and evolution, molecular biology) and Environmental Science 38 (ecology, resources, pollution and waste, climate, '
+                               'environmental assessment and planning): 150 questions in 150 minutes.',
+                               'Statement, match-the-list, assertion–reason and short numerical questions at degree level, in English as APPSC sets Paper II. '
+                               'Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs one-third of a mark, '
+                               'so practise skipping blind guesses.'],
+                        mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
+                                    parts=[('chm', 'Chemistry', ['chm']), ('bch', 'Biochemistry', ['bch']),
+                                           ('bio', 'Biology', ['bio']), ('evs', 'Environmental Science', ['evs'])]) for i in range(1, 6)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
