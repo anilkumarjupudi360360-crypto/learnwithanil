@@ -498,5 +498,49 @@
    "karnataka-fda-sda"
   ],
   "free": "/LearnWithAnil-Karnataka-History-Culture-Geography-KEA-FDA-SDA-Free-Sample.pdf"
+ },
+ {
+  "id": "cst-en",
+  "lang": "en",
+  "vol": null,
+  "series": "OPSC ASO · Paper IV Skill Test in Computer Application",
+  "subject": "Computer Skill Test",
+  "title": "Computer Skill Test (Practical) for OPSC ASO & Odisha Exams",
+  "title_en": "Computer Skill Test (Practical) for OPSC ASO & Odisha Exams",
+  "subtitle": "A step-by-step practical guide to Windows, Word, Excel, PowerPoint, Access and the Internet for the 50-mark qualifying skill test, built from OPSC's own 2022 and 2025 skill-test papers: every task solved, mock-ups of each finished answer, 60 ready 30-word theory answers and six full practice tests with answers",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Computer Skill Test (Practical) for OPSC ASO and Odisha Exams, 2026-27 (English Medium)",
+  "pages": 80,
+  "chapters": [
+   "The skill test: pattern, rules and a one-hour plan",
+   "Windows: files, folders and saving the right way",
+   "MS Word I: typing and formatting a passage",
+   "MS Word II: equations, captions, tables and pictures",
+   "MS Excel I: formulas and functions",
+   "MS Excel II: sorting, charts and conditional formatting",
+   "MS PowerPoint: slides, charts, shapes and the Slide Master",
+   "MS Access I: databases, tables and relationships",
+   "MS Access II: queries, SQL view, forms and reports",
+   "Computer basics and the Internet: short answers in 30 words",
+   "Six full practice tests with answers",
+   "Keyboard shortcuts and the last-day checklist"
+  ],
+  "price": 45,
+  "syllabus": "OPSC ASO · Paper IV Skill Test in Computer Application (Practical): Windows, MS Office, MS Access, Internet · also OSSC/OSSSC computer skill tests",
+  "badge": "OPSC ASO",
+  "subject_label": "Computer Skill Test (Practical)",
+  "chapters_label": "12 chapters · OPSC's 2022 and 2025 skill-test papers solved task by task · mock-ups of every answer · 6 full practice tests with answers",
+  "product_en": "Computer Skill Test (Practical) for OPSC ASO and Odisha Exams, 2026-27 (English Medium)",
+  "cover": "notes-cst-en-cover.jpg",
+  "samples": [
+   "notes-cst-en-p1.jpg",
+   "notes-cst-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "opsc-aso"
+  ],
+  "free": "/LearnWithAnil-Computer-Skill-Test-OPSC-ASO-Free-Sample.pdf"
  }
 ]

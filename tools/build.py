@@ -3302,6 +3302,16 @@ def exam_confs():
       dict(id='opsc-aso', dir='opsc-aso', src='opsc-aso', key='od-aso', name='OPSC ASO', short='OPSC ASO', seo='OPSC ASO',
            slugp='opsc-aso', papers=OAS_PAPERS, subjects=OAS_SUBJECTS, faq=FAQ_OAS, board='OPSC', l2=L2_OR, pb='/opsc-aso/',
            keyname="OPSC's answer key", keyshort="OPSC's key",
+           notes_title='Study material for OPSC ASO',   # Anil, 17 Nov 2026: "Computer skill test ...pls proceed with it" (book cst-en)
+           notes_seo=('OPSC ASO Computer Skill Test Book – Paper IV Practical: Word, Excel, PowerPoint, Access, with OPSC 2022 & 2025 Skill Test Papers Solved (Free Sample PDF) | Learn with Anil',
+                      "Computer Skill Test (Practical) for OPSC ASO by Jupudi Anil Kumar: the 50-mark qualifying Paper IV explained step by step for Windows, MS Word, Excel, PowerPoint, Access and the Internet, with every task of OPSC's 2022 and 2025 skill-test papers solved, 60 short theory answers and six full practice tests. Free sample chapter."),
+           notes_lede=("The Computer Skill Test (Paper IV) is qualifying: clear the written test and you must still reach the cut-off on a computer. This book by Jupudi Anil Kumar "
+                       "teaches every task OPSC sets, step by step: formatting a passage, equations and captions in Word; formulas, sorting, charts and conditional formatting "
+                       "in Excel; slides, charts, shapes and the Slide Master in PowerPoint; tables, relationships, queries, SQL view, forms and reports in Access. Both of "
+                       "OPSC's published skill-test papers (2022 and 2025) are solved task by task, with mock-ups of each finished answer, 60 ready 30-word theory answers "
+                       "and six full one-hour practice tests with answers."),
+           notes_line="Computer Skill Test (Practical) book: OPSC's 2022 and 2025 skill-test papers solved task by task, and six full practice tests.",
+           notes_tile="1 Learn with Anil book: Computer Skill Test (Practical), with OPSC's 2022 and 2025 skill-test papers solved task by task and six full practice tests.",
            or_name='ଓପିଏସସି ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO)', subj_te=OAS_SUBJ_OR,
            title="OPSC ASO Previous Year Question Papers with Answers – 2025 & 2022, Papers I, II, III (English & Odia) | Learn with Anil",
            h1='OPSC ASO previous year question papers <em>with answers.</em>',
@@ -7981,7 +7991,7 @@ def extra_tiles(conf):
     if own:
         subs = list(dict.fromkeys(b.get('subject_label', b['subject']) for b in own))
         cards.append(f'<a class="etile fx" href="{pb}notes/">' + hd(6, bic, 'Books')
-                     + f'<b>Study material for {exam}</b><span class="etile-p">{len(subs)} Learn with Anil book{"s" if len(subs) > 1 else ""}: {esc(", ".join(subs))}, with the latest data and previous questions inside.</span>'
+                     + f'<b>Study material for {exam}</b><span class="etile-p">' + (conf.get('notes_tile') or f'{len(subs)} Learn with Anil book{"s" if len(subs) > 1 else ""}: {esc(", ".join(subs))}, with the latest data and previous questions inside.') + '</span>'
                      f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 {INCL}</span><span class="etile-btn">See the books →</span></a>')
     else:
         # Anil, 16 Nov 2026: the tile opens the Study Material view, which says the books are not uploaded yet (urgent WhatsApp note)
