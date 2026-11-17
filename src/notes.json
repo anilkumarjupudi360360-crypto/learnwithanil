@@ -630,5 +630,49 @@
    "tgpsc-hmwssb-manager"
   ],
   "free": "/LearnWithAnil-CSE-IT-TGPSC-HMWSSB-Manager-Free-Sample.pdf"
+ },
+ {
+  "id": "aee2-en",
+  "lang": "en",
+  "vol": null,
+  "series": "APPSC Assistant Environmental Engineer · Paper II Common Subject",
+  "subject": "Environmental Science & Engineering",
+  "title": "Environmental Science & Engineering for APPSC Assistant Environmental Engineer (AEE) Paper II",
+  "title_en": "Environmental Science & Engineering for APPSC Assistant Environmental Engineer (AEE) Paper II",
+  "subtitle": "The complete Paper II (Common Subject) syllabus in 10 units, from ecosystems, biodiversity, engineering materials, fluid mechanics and process calculations to pollution control, waste management, environmental laws and EIA, with every one of APPSC's 148 valid 2025 questions solved inside the chapters (final key), worked numericals, the standards APPSC asks and 132 practice MCQs",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "Environmental Science & Engineering for APPSC Assistant Environmental Engineer Paper II (Common Subject), 2026-27 (English Medium)",
+  "pages": 143,
+  "chapters": [
+   "Ecosystems",
+   "Natural resources",
+   "Biodiversity and biotic resources",
+   "Engineering materials",
+   "Fluid mechanics and hydraulics",
+   "Process calculations and thermodynamics",
+   "Air, water, soil and noise pollution and their control",
+   "Solid and industrial waste management",
+   "Global environmental problems, policies and laws",
+   "Environmental impact assessment and sustainable development",
+   "Standards and numbers at a glance"
+  ],
+  "pyqs": 148,
+  "price": 45,
+  "syllabus": "APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) · Paper II Common Subject, 150 questions, 150 marks, English only",
+  "badge": "APPSC AEE",
+  "subject_label": "Environmental Science & Engineering (Paper II)",
+  "chapters_label": "11 chapters, one per syllabus unit plus a standards chapter · all 148 valid APPSC 2025 Paper II questions with the final key · worked numericals · 132 practice MCQs",
+  "product_en": "Environmental Science & Engineering for APPSC Assistant Environmental Engineer Paper II (Common Subject), 2026-27 (English Medium)",
+  "cover": "notes-aee2-en-cover.jpg",
+  "samples": [
+   "notes-aee2-en-p1.jpg",
+   "notes-aee2-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "appsc-env-engineer"
+  ],
+  "free": "/LearnWithAnil-Environmental-Science-APPSC-AEE-Paper-2-Free-Sample.pdf"
  }
 ]

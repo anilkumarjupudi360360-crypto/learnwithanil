@@ -3073,6 +3073,17 @@ def exam_confs():
       dict(id='appsc-env-engineer', dir='appsc-assistant-environmental-engineer', src='appsc-env-engineer', key='ap-enveng', name='APPSC Assistant Environmental Engineer (A.P. Pollution Control Board)',
            short='APPSC Asst. Environmental Engineer', seo='APPSC Assistant Environmental Engineer', slugp='appsc-assistant-environmental-engineer', papers=AEE_PAPERS, subjects=AEE_SUBJECTS, faq=FAQ_AEE,
            board='APPSC', l2=L2_TE, pb='/appsc-assistant-environmental-engineer/', keyname="APPSC's final key", keyshort="APPSC's final keys", bits=True,
+           notes_title='Study material for APPSC Assistant Environmental Engineer',   # Anil, 18 Nov 2026: "ok go with paper-2" ... "now upload the book of AEE" (book aee2-en)
+           notes_seo=('APPSC AEE Paper II Book – Environmental Science & Engineering Study Material with APPSC 2025 Questions Solved (Free Sample PDF) | Learn with Anil',
+                      "Environmental Science & Engineering for APPSC Assistant Environmental Engineer (A.P. Pollution Control Board) Paper II by Jupudi Anil Kumar: all 10 units of the "
+                      "Common Subject syllabus, every one of APPSC's 148 valid 2025 questions solved from the final key, worked numericals, the standards APPSC asks and 132 practice MCQs. Free sample chapter."),
+           notes_lede=("Paper II (Common Subject) is where civil, mechanical and chemical graduates all meet on the same 150 questions, and it decides the merit list. This book by "
+                       "Jupudi Anil Kumar covers every unit of APPSC's syllabus: ecosystems, natural resources, biodiversity, engineering materials, fluid mechanics, process "
+                       "calculations and thermodynamics, air, water, soil and noise pollution control, solid and hazardous waste, global problems and environmental laws, and EIA and "
+                       "sustainable development, plus a chapter of all the standards and numbers in one place. All 148 valid questions of APPSC's 2025 Paper II are solved inside "
+                       "the chapters with the final-key answer, with worked numericals, the 2025-26 rule changes and 12 practice MCQs per chapter."),
+           notes_line="Environmental Science & Engineering (Paper II) book: all 10 syllabus units, APPSC's 2025 Paper II solved inside the chapters, 132 practice MCQs.",
+           notes_tile="1 Learn with Anil book: Environmental Science & Engineering for Paper II, with all 148 APPSC 2025 questions solved and 132 practice MCQs.",
            te_name='ఏపీపీఎస్సీ అసిస్టెంట్ ఎన్విరాన్‌మెంటల్ ఇంజనీర్ (ఏపీ కాలుష్య నియంత్రణ మండలి)', te_paper='రాత పరీక్ష', subj_te=AEE_SUBJ_TE,
            title=('APPSC Assistant Environmental Engineer Previous Question Papers with Answers – AP Pollution Control Board AEE 2025, ' + ('GS & Common Subject' if aee_p1() else 'Paper 2 Common Subject') + ' | Learn with Anil'),
            h1='APPSC Assistant Environmental Engineer previous question papers <em>with answers.</em>',
@@ -5068,6 +5079,11 @@ def FAQ_AEE(total, npapers):
        'full-length mocks of 150 new questions in 150 minutes across the whole syllabus, in English with an explanation for every answer, and each part '
        '(ecology and resources; materials, fluids and thermodynamics; pollution control and waste; laws, conventions and EIA) also as a sectional test. '
        'It is included in the same ₹149 All-in-One Pass.'),
+      ('Is there a book for APPSC Assistant Environmental Engineer Paper II?',   # book aee2-en, 18 Nov 2026
+       'Yes: <a href="/study-material/environmental-science-engineering-appsc-aee-paper-2-book.html">Environmental Science &amp; Engineering</a> by Jupudi Anil Kumar '
+       '(143 pages, English): one chapter for each of the 10 units of the Paper II syllabus plus a chapter of all the standards and numbers, with every one of APPSC\'s 148 valid '
+       '2025 Paper II questions solved inside the chapters from the final key, worked numericals and 132 practice MCQs. A free sample chapter (EIA and sustainable development) '
+       'is on the Study Material tab, and the full book is included in the ₹149 All-in-One Pass.'),
     ]
 
 def FAQ_ASO(total, npapers):
