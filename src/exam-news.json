@@ -1,0 +1,63 @@
+{
+  "about": "Daily exam news for the start-page pill and the 'Latest exam news' list on /exam-notifications.html. Not site updates. Refreshed every morning (scheduled task, Anil 17 Nov 2026). Newest first is not required; the build sorts by date. Fields: date (YYYY-MM-DD the news came out), tag (Notification, Admit card, Exam date, Result, Answer key, Last date, Correction window, Notice), short (pill text, under about 80 characters), text (one or two sentences for the list), url (the board's own website), via (news source used, if not the board's site), exam (site exam id, optional, for a Practise link).",
+  "updated": "2026-11-17",
+  "items": [
+    {
+      "date": "2026-11-17",
+      "tag": "Notice",
+      "short": "APPSC: only one OTPR ID per candidate; multiple IDs strictly prohibited",
+      "text": "APPSC has issued an important notice that a candidate must not hold more than one One Time Profile Registration (OTPR) ID.",
+      "url": "https://portal-psc.ap.gov.in/Default.aspx"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Call letter",
+      "short": "APPSC Thanedar (Forest): walking test call letters out",
+      "text": "APPSC has released the call letter (memo), the physical fitness certificate and a web note for the walking test for Thanedar in the A.P. Forest Subordinate Service (Notification No. 13/2025).",
+      "url": "https://portal-psc.ap.gov.in/Default.aspx"
+    },
+    {
+      "date": "2026-11-15",
+      "tag": "Exam date",
+      "short": "SSC CPO 2026 Paper-I on 23-28 Nov; exam city status is live",
+      "text": "SSC CPO (SI in Delhi Police and CAPFs) 2026 Paper-I runs from 23 to 28 November. The exam city and admit card status is live on ssc.gov.in; candidates flagged for Class 10 detail mismatches must upload their Class 10 marksheet by 20 November. Admit cards come 2-3 days before each shift.",
+      "url": "https://ssc.gov.in/",
+      "via": "CareerIndia"
+    },
+    {
+      "date": "2026-11-13",
+      "tag": "Correction window",
+      "short": "APPSC: edit option opened for 2026 applications (Group-I, Forest posts, EO and more)",
+      "text": "APPSC has opened application correction for its 2026 notifications, including Group-I (No. 07/2026), Forest Range Officer, Forest Section Officer and Forest Beat Officer, Executive Officer Grade-III, Industrial Promotion Officer, Analyst Grade-II and others. It also published a corrigendum for FRO, FSO, FBO and Group-II.",
+      "url": "https://portal-psc.ap.gov.in/Default.aspx",
+      "exam": "appsc-group-1"
+    },
+    {
+      "date": "2026-11-12",
+      "tag": "Admit card",
+      "short": "SSC GD Constable 2026: PET/PST admit cards out",
+      "text": "SSC has released the physical test (PET/PST) admit cards for candidates who qualified in the GD Constable written exam (Constable GD in CAPFs and SSF, Rifleman GD in Assam Rifles). Check your physical test date on the admit card.",
+      "url": "https://ssc.gov.in/",
+      "via": "CareerIndia",
+      "exam": "ssc-gd"
+    },
+    {
+      "date": "2026-11-10",
+      "tag": "Notification",
+      "short": "APPSC Group-II 2026: detailed notification out, apply online now",
+      "text": "APPSC has published the detailed notification for Group-II Services (Notification No. 37/2026) and opened online applications. Reports put the screening test on 21 February 2027; check the notification for the posts and the last date.",
+      "url": "https://portal-psc.ap.gov.in/Default.aspx",
+      "via": "Deccan Chronicle",
+      "exam": "appsc-group-2"
+    },
+    {
+      "date": "2026-11-09",
+      "tag": "Admit card",
+      "short": "IBPS RRB PO (Officer Scale-I) prelims call letters out; exam 21-22 Nov",
+      "text": "IBPS has released the call letters for the RRB Officer Scale-I (PO) preliminary exam, to be held on 21 and 22 November 2026, on ibps.in.",
+      "url": "https://www.ibps.in/",
+      "via": "Careers360",
+      "exam": "ibps-rrb"
+    }
+  ]
+}

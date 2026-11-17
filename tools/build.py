@@ -5,7 +5,7 @@ src/*.txt  (question transcriptions)  ->  dist/  (artifact page + hostable websi
 """
 import urllib.parse
 import json, re, os, sys, html, base64, shutil, io, hashlib
-from datetime import date
+from datetime import date, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'src')
@@ -3597,7 +3597,7 @@ def main():
                      .replace('{{HUB_NOTES}}', '').replace('{{HOME_NOTES}}', '')   # Anil, 16 Nov 2026: "remove these strips or any other strips also in all exam boxs" (books: tile 06; Bahubali: G2 tile 02)
                      .replace('{{HUB}}', hub)
                      .replace('{{NEXAMS}}', str(len(catalog['exams']))).replace('{{TOTALC}}', f'{grand:,}').replace('{{NLIVE}}', str(len(loaded)))
-                     .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', HERO_NEW)
+                     .replace('{{NLIVEX}}', str(sum(1 for e in catalog['exams'] if e.get('live')))).replace('{{HERO_NEW}}', hero_new())
                      .replace('{{MOCKQ}}', f'{mock_questions():,}')
                      .replace('{{GOALPCT}}', f'{grand * 100 / 100000:.0f}').replace('{{GOALW}}', f'{max(1.5, min(100, grand * 100 / 100000)):.1f}')
                      .replace('{{LIVE_SUMMARY}}', esc(live_summary))
@@ -4099,6 +4099,59 @@ def live_href(e):
 
 
 HERO_NEW = ('<a class="hero-new" href="/rrb-group-d/"><span>New</span> Railways: RRB Group D, NTPC &amp; RPF previous papers, English &amp; Hindi <b aria-hidden="true">→</b></a>')   # was Banking: SBI PO & IBPS SO (8–15 Nov 2026), UPSC Prelims 2026 & 2025 · Anthropology (to 8 Nov 2026)   # start-page announcement pill; change with each big release
+
+
+NEWS_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'src', 'exam-news.json')
+
+
+def exam_news(days=21):
+    """Daily exam news (notifications, admit cards, exam dates, results, keys) for the start-page pill and the top of
+    /exam-notifications.html. Anil, 17 Nov 2026: "give update about new notifications, etc ... not about site update ...
+    it should be updated daily". src/exam-news.json is refreshed every morning by a scheduled task; items older than
+    `days` drop off. Returns (items newest first, 'updated' date)."""
+    if not os.path.exists(NEWS_FILE): return [], None
+    d = json.load(open(NEWS_FILE, encoding='utf-8'))
+    cut = (date.today() - timedelta(days=days)).isoformat()
+    items = [x for x in d.get('items', []) if x.get('date', '') >= cut and x.get('short') and x.get('url')]
+    items.sort(key=lambda x: x['date'], reverse=True)
+    return items, d.get('updated')
+
+
+def hero_new():
+    """The start-page pill: today's exam news, rotating through the latest few items (falls back to HERO_NEW)."""
+    items, _ = exam_news()
+    if not items: return HERO_NEW
+    top = items[:6]
+    data = json.dumps([[x['tag'], x['short']] for x in top], ensure_ascii=False)
+    return (f'<a class="hero-new" id="heroNews" href="/{NEWS_HUB}#latest" data-news="{esc(data)}" aria-live="polite">'
+            f'<span>{esc(top[0]["tag"])}</span> <em>{esc(top[0]["short"])}</em> <b aria-hidden="true">→</b></a>'
+            '<script>(function(){var a=document.getElementById("heroNews");if(!a)return;var n;try{n=JSON.parse(a.getAttribute("data-news"))}catch(e){return}'
+            'if(!n||n.length<2)return;var i=0,s=a.querySelector("span"),m=a.querySelector("em"),h=0;'
+            'a.addEventListener("mouseenter",function(){h=1});a.addEventListener("mouseleave",function(){h=0});'
+            'setInterval(function(){if(h||document.hidden)return;a.classList.add("fade");setTimeout(function(){i=(i+1)%n.length;s.textContent=n[i][0];m.textContent=n[i][1];'
+            'a.classList.remove("fade")},300)},5000)})();</script>')
+
+
+def news_latest_html(loaded):
+    """'Latest exam news' list at the top of /exam-notifications.html (from src/exam-news.json)."""
+    items, upd = exam_news()
+    if not items: return ''
+    pbs = {c['id']: c['pb'] for c, _, _ in loaded}
+    rows = []
+    for x in items:
+        d = date.fromisoformat(x['date'])
+        host = re.sub(r'^https?://(www\.)?', '', x['url']).split('/')[0]
+        via = f' · reported by {esc(x["via"])}' if x.get('via') else ''
+        prac = f' · <a href="{pbs[x["exam"]]}">Practise previous papers</a>' if x.get('exam') in pbs else ''
+        rows.append(f'<li><span class="nw-d">{d.strftime("%d %b")}</span><span class="nw-t">{esc(x["tag"])}</span> <b>{esc(x["short"])}</b>'
+                    f'<p>{esc(x.get("text") or x["short"])}</p><p class="nw-s">Official website: <a href="{esc(x["url"])}" rel="nofollow noopener" target="_blank">{esc(host)}</a>{via}{prac}</p></li>')
+    when = date.fromisoformat(upd).strftime('%d %B %Y') if upd else ''
+    return ('<style>.nw-d{display:inline-block;min-width:54px;font-weight:800;color:var(--accent-text)}.nw-t{display:inline-block;font-size:12px;font-weight:800;'
+            'text-transform:uppercase;letter-spacing:.04em;border-radius:999px;padding:2px 9px;margin-right:6px;background:var(--accent-soft);color:var(--accent-text)}'
+            '.nh .nw-s{font-size:13.5px}</style>'
+            f'<h2 id="latest">Latest exam news</h2><p class="sm">Updated every morning{(" · last update " + when) if when else ""}. New notifications, last dates, '
+            'exam dates, admit cards, answer keys and results, collected from the boards\' websites and news reports. Always confirm on the official website.</p>'
+            '<ul class="nh">' + ''.join(rows) + '</ul>')
 
 
 BOARD_ART = {   # line drawings for the board tiles (own artwork; no photos, no maps, no emblems)
@@ -7424,7 +7477,7 @@ def news_hub_page(loaded, rels):
     body = ['<style>.nh{list-style:none;padding:0;margin:0}.nh li{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:8px 0;background:var(--surface)}'
             '.nh a{font-weight:700}.nh p{margin:6px 0 0;font-size:15px;color:var(--muted)}</style>',
             '<p>The latest official news for every exam on Learn with Anil: notifications, last dates and extensions, exam dates, hall tickets, answer keys and syllabus, '
-            'each with quick answers to the questions students ask and links to the previous papers. Pages show the date their facts were checked.</p>']
+            'each with quick answers to the questions students ask and links to the previous papers. Pages show the date their facts were checked.</p>', news_latest_html(loaded)]
     order = [b for b, _ in NEWS_BOARDS] + sorted(set(groups) - {b for b, _ in NEWS_BOARDS})
     for b in order:
         if b not in groups: continue
