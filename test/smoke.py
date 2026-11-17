@@ -433,10 +433,19 @@ async def main():
         if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
         dsm = open(os.path.join(SITE, 'ap-dsc', 'mock-test.html'), encoding='utf-8').read()   # Akshara DSC (AP DSC test series), live since 17 Nov 2026
         if 'Akshara DSC' not in dsm or '?buy=mock' in dsm: errors.append('ap-dsc/mock-test.html: should show the Akshara DSC series in the All-in-One Pass')
-        if dsm.count('class="pdet"') != 16 or dsm.count('bk-dscmk-sass-1') < 1 or 'id="mock-sa-social-studies"' not in dsm:   # post tiles on the mock page (Anil, 17 Nov 2026)
-            errors.append('ap-dsc/mock-test.html: should show the 16 post tiles, each opening its own tests')
+        if dsm.count('class="ptile has-ph pmock') != 16 or dsm.count('-mock-test.html"') < 16 or 'id="mock-sa-social-studies"' not in dsm or dsm.count('src="/dsc-post-') != 16:   # post tiles with photos (Anil, 17 Nov 2026)
+            errors.append('ap-dsc/mock-test.html: should show the 16 post tiles with photos, each opening its own test-series page')
+        for _s, _need in (('sa-social-studies', ['bk-dscmk-sass-1', 'part=socm', '?test=sass25', '?test=sass25c']), ('sgt', ['bk-dscmk-sgt-1', '?test=sgt25a']),
+                          ('sa-hindi', ['?test=sahin25', 'coming soon']), ('principal', ['coming soon'])):   # one test-series page per post (Anil, 17 Nov 2026)
+            _f = os.path.join(SITE, 'ap-dsc', _s + '-mock-test.html')
+            if not os.path.exists(_f): errors.append(f'ap-dsc/{_s}-mock-test.html missing'); continue
+            _t = open(_f, encoding='utf-8').read()
+            for _x in _need:
+                if _x not in _t: errors.append(f'ap-dsc/{_s}-mock-test.html: {_x!r} missing')
+            if _s != 'sa-social-studies' and 'bk-dscmk-sass-1' in _t: errors.append(f'ap-dsc/{_s}-mock-test.html shows the SA Social mock')
         dsh = open(os.path.join(SITE, 'ap-dsc', 'index.html'), encoding='utf-8').read()   # one tile per AP DSC post (Anil, 17 Nov 2026)
-        _npt = len(_re.findall(r'class="ptile(?: soon)?"', dsh))
+        if dsh.count('.pgrid{') != 1: errors.append('ap-dsc: a second .pgrid rule in the app CSS (it breaks the test question palette)')
+        _npt = len(_re.findall(r'class="ptile has-ph(?: soon)?"', dsh))
         if _npt != 16: errors.append(f'ap-dsc: {_npt} post tiles, expected 16')
         for _s, _need in (('sgt', ['bk-dscmk-sgt-1', '?practice=sgt25a']), ('sa-social-studies', ['bk-dscmk-sass-1', '?practice=sass25', '?practice=sass25b', '?practice=sass25c', 'part=socm']),
                           ('sa-hindi', ['?practice=sahin25']), ('principal', ['coming soon'])):

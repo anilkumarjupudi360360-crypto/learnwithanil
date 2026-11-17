@@ -684,15 +684,14 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .ptile b{font-size:15.5px;line-height:1.3}.ptile .pt-te{font-size:13px;color:var(--muted)}.ptile .pt-m{font-size:13px;font-weight:700;color:var(--accent-text);margin-top:auto}
 .ptile.soon{border-left-color:var(--line)}.ptile.soon .pt-m{color:var(--muted);font-weight:600}
 @media (max-width:860px){.ptiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:420px){.ptiles{grid-template-columns:1fr}}
-/* AP DSC Mock tests by post: a tile opens in place (Anil, 17 Nov 2026) */
-.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
-.pdet>summary{list-style:none;cursor:pointer}.pdet>summary::-webkit-details-marker{display:none}
-.pdet>summary .pt-m::after{content:" ▾"}.pdet[open]>summary .pt-m::after{content:" ▴"}
-.pdet[open]{grid-column:1/-1}.pdet[open]>summary{border-color:var(--accent);background:var(--accent-soft)}
-.ppanel{padding:8px 2px 4px}.ppanel h4{margin:14px 0 8px;font-size:15px}
-@media (max-width:860px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:420px){.pgrid{grid-template-columns:1fr}}
+@media (max-width:420px){.ptiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ptile .pt-body{padding:9px 10px 11px}.ptile b{font-size:14px}.ptile .pt-te,.ptile .pt-m{font-size:12px}}
+/* AP DSC post tiles with photos; on the Mock tests view each opens that post's test-series page (Anil, 17 Nov 2026). The old .pgrid tile rules clashed with the test palette (.pgrid) and are gone. */
+.ptile.has-ph{padding:0;gap:0;overflow:hidden}
+.ptile .pt-img{display:block;aspect-ratio:8/3;background:var(--accent-soft);overflow:hidden}
+.ptile .pt-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ptile .pt-body{display:flex;flex-direction:column;gap:4px;padding:12px 14px 14px;flex:1}
+.ptile.soon .pt-img img{filter:saturate(.6);opacity:.85}
+.ptile.pmock .pt-m::after{content:" →"}
 .ex-body{display:flex;flex-direction:column;gap:3px;padding:12px 14px 14px;flex:1}
 .card.exam:not(.live) .ex-art{filter:saturate(.35);opacity:.8}
 .card.exam:not(.live) .ex-art.has-ph{filter:saturate(.85);opacity:1}   /* upcoming exams' photos stay nearly full colour (Anil, 16 Nov 2026) */

@@ -2508,6 +2508,49 @@ DSC_POST_GROUPS = [
 ]
 DSC_POSTS = [x for _g, L in DSC_POST_GROUPS for x in L]
 
+# Photos for the post tiles (Anil, 17 Nov 2026: "add pics to the tiles also"): Wikimedia Commons, free licences, no logos, uniforms or
+# recognisable children; cover-cropped to 480x180 WebP in src/static/dsc-post-<slug>.webp. slug -> (what it shows, author, licence, Commons page).
+DSC_POST_PHOTO = {
+    'sgt': ('Classroom of a government primary school, Kerala', 'Ramjchandran', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:A_Classroom_in_a_Government_Primary_school_in_Kerala.jpg'),
+    'sa-telugu': ('Telugu aksharamala', 'K.Venkataramana', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Telugu_Aksharamala.jpg'),
+    'sa-hindi': ('Devanagari lettering', 'Herman Blondeel', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Devanagari_01.jpg'),
+    'sa-english': ('Wooden letter blocks', 'Wokandapix', 'CC0', 'https://commons.wikimedia.org/wiki/File:Wooden_Block_Letters_Vision.jpg'),
+    'sa-maths': ('Formulae on a blackboard', 'Wallpoper', 'public domain', 'https://commons.wikimedia.org/wiki/File:Pure-mathematics-formul%C3%A6-blackboard.jpg'),
+    'sa-physical-science': ('School physics laboratory, Hyderabad', 'Kchava', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Physics_Lab_Silver_Oaks_Intl_School_Hyderabad.jpg'),
+    'sa-biological-science': ('Compound microscope', 'Ajay Kumar Chaurasiya', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Compound_Microscope_Image.jpg'),
+    'sa-social-studies': ('School hemisphere globe', 'Norman B. Leventhal Map Center', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:Holbrook_school_hemisphere_globe.jpg'),
+    'sa-physical-education': ('Athletics track start lines', 'Santeri Viinamäki', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Athletics_track_start_line_numbers_1,_2,_3.jpg'),
+    'sa-special-education': ('Reading a Braille book', 'fotoblaset (Flickr)', 'CC BY 2.0', 'https://commons.wikimedia.org/wiki/File:A_person_reading_a_braille_book.jpg'),
+    'sgt-special-education': ('Braille slate and stylus', 'Jeepday', 'public domain', 'https://commons.wikimedia.org/wiki/File:Slate_and_Stylus_3.jpg'),
+    'principal': ('Government High School, Adoor, Kerala', 'Ramjchandran', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Government_High_School_Adoor,_Kerala,_India_old_building.jpg'),
+    'pgt': ('Junior college, Penumaka', 'Meka Chandu', 'CC BY 4.0', 'https://commons.wikimedia.org/wiki/File:Junior_Inter_college_Penumaka.jpg'),
+    'tgt': ('High school classroom', 'Sumita Roy Dutta', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Baidya_Para_Girls_High_School_20201207_093212_04.jpg'),
+    'physical-director': ('Volleyball court', 'Prabhupuducherry', 'CC BY-SA 3.0', 'https://commons.wikimedia.org/wiki/File:Volleyball_Court_at_MEC.jpg'),
+    'pet': ('School playground', 'Kingarthur581', 'CC BY-SA 4.0', 'https://commons.wikimedia.org/wiki/File:Garbalia_Rakhal_Chandra_Manna_Institution%27s_Playground_with_the_school_in_background.jpg'),
+}
+
+
+def dsc_photo(slug):
+    return f'/dsc-post-{slug}.webp' if slug in DSC_POST_PHOTO and os.path.exists(os.path.join(SRC, 'static', f'dsc-post-{slug}.webp')) else ''
+
+
+def dsc_photo_credits(slugs=None, lead='Photos (cropped) via Wikimedia Commons: '):
+    bits = []
+    for sl in (slugs or [x['slug'] for x in DSC_POSTS]):
+        if not dsc_photo(sl): continue
+        t, a, lic, url = DSC_POST_PHOTO[sl]
+        lk = f'<a href="{CCL[lic]}" target="_blank" rel="noopener license">{lic}</a>' if lic in CCL else lic
+        bits.append(f'<a href="{url}" target="_blank" rel="noopener">{esc(t)}</a>, {esc(a)}, {lk}')
+    return f'<p class="ph-credit">{lead}{" · ".join(bits)}.</p>' if bits else ''
+
+
+def dsc_tile_inner(post, av):
+    """A post tile's photo and text (AP DSC page and its Mock tests page)."""
+    ph = dsc_photo(post['slug'])
+    img = f'<span class="pt-img"><img src="{ph}" alt="" loading="lazy" width="480" height="180"></span>' if ph else ''
+    return (img + f'<span class="pt-body"><b>{esc(post["name"])}</b><span class="pt-te" lang="te">{esc(post["te"])}</span>'
+            f'<span class="pt-m">{esc(av)}</span></span>')
+
 # ---------- Banking: SBI PO and IBPS SO (mock tests only) ----------
 # Anil, 8 Nov 2026: "pls add SBI PO and IBPS SO ... pyqs also". SBI and IBPS never publish their question papers; the
 # "memory-based" papers online are coaching companies' own write-ups, so they cannot be copied. Anil chose original
@@ -3739,6 +3782,9 @@ def main():
                 rel, html_ = dsc_post_page(c, ps, qs, post)
                 open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
                 mocks[rel] = None
+                rel, html_, has_tests = dsc_mock_post_page(c, ps, post)   # its own test-series page (Anil, 17 Nov 2026)
+                open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
+                if has_tests: mocks[rel] = None   # coming-soon posts stay out of the sitemap
     if bb_live: mocks[bahubali.page(os.path.join(DIST, 'site'))] = None
     all_pages = {**notifs, **mocks, **all_pages}
 
@@ -5091,13 +5137,14 @@ STATIC_CSS = """.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 .mtrack{border:1px solid var(--line,#D6DFEC);border-left:4px solid var(--accent,#1846C7);border-radius:12px;padding:6px 14px 10px;margin:14px 0}.mtrack h3{margin:8px 0 6px}
 .ptiles-h{font-size:15px;margin:18px 0 10px;color:#55627C;font-weight:700}
-.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
 .ptile{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#fff;border:1px solid #D6DFEC;border-left:4px solid #1846C7;border-radius:12px;color:inherit;text-decoration:none}
 .ptile b{font-size:15.5px;line-height:1.3}.ptile .pt-te{font-size:13px;color:#55627C}.ptile .pt-m{font-size:13px;font-weight:700;color:#1440B8;margin-top:auto}
 .ptile.soon{border-left-color:#D6DFEC}.ptile.soon .pt-m{color:#55627C;font-weight:600}
-.pdet>summary{list-style:none;cursor:pointer}.pdet>summary::-webkit-details-marker{display:none}.pdet>summary .pt-m::after{content:" ▾"}.pdet[open]>summary .pt-m::after{content:" ▴"}
-.pdet[open]{grid-column:1/-1}.pdet[open]>summary{border-color:#1846C7;background:#E2EAFC}.ppanel{padding:8px 2px 4px}.ppanel h4{margin:14px 0 8px;font-size:15px}
-@media (max-width:860px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:420px){.pgrid{grid-template-columns:1fr}}
+.ptiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ptile.has-ph{padding:0;gap:0;overflow:hidden}.ptile .pt-img{display:block;aspect-ratio:8/3;background:#E2EAFC;overflow:hidden}
+.ptile .pt-img img{width:100%;height:100%;object-fit:cover;display:block}.ptile .pt-body{display:flex;flex-direction:column;gap:4px;padding:12px 14px 14px;flex:1}
+.ptile.soon .pt-img img{filter:saturate(.6);opacity:.85}.ptile.pmock .pt-m::after{content:" →"}.ptile:hover{border-color:#1846C7}
+@media (max-width:860px){.ptiles{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:420px){.ptiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.ptile .pt-body{padding:9px 10px 11px}.ptile b{font-size:14px}.ptile .pt-te,.ptile .pt-m{font-size:12px}}
 
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
@@ -8536,45 +8583,92 @@ def dsc_post_tiles(conf, papers):
         out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="ptiles">'
         for post in posts:
             av = dsc_post_avail(post, papers)
-            out += (f'<a class="ptile{" soon" if av == "Coming soon" else ""}" href="{pb}{post["slug"]}.html"><b>{esc(post["name"])}</b>'
-                    f'<span class="pt-te" lang="te">{esc(post["te"])}</span><span class="pt-m">{esc(av)}</span></a>')
+            out += f'<a class="ptile has-ph{" soon" if av == "Coming soon" else ""}" href="{pb}{post["slug"]}.html">{dsc_tile_inner(post, av)}</a>'
         out += '</div>'
-    return out
+    return out + dsc_photo_credits()
+
+
+def dsc_post_tests(post, papers):
+    """(that post's Akshara DSC mocks, the live ones, its Mega DSC 2025 papers on the site)."""
+    mk = MOCK_PACKS.get('ap-dsc', {})
+    byid = {p['id']: p for p in papers}
+    ms = [m for m in mk.get('mocks', []) if post.get('track') and m.get('track') == post['track']]
+    return ms, [m for m in ms if m['live']], [byid[x] for x in post['papers'] if x in byid]
+
+
+def dsc_mock_avail(post, papers):
+    _ms, live, ps = dsc_post_tests(post, papers)
+    bits = ([f'{len(live)} mock test{"s" if len(live) > 1 else ""}'] if live else []) + ([f'{len(ps)} paper{"s" if len(ps) > 1 else ""}'] if ps else [])
+    return ' · '.join(bits) or 'Coming soon'
 
 
 def dsc_mock_tiles(conf, papers, app=False):
-    """AP DSC Mock tests by post (Anil, 17 Nov 2026: "if i open mock test...then these job tiles must be seen....in that the respective tests
-    must be there"): the 16 post tiles; a tile opens in place (details/summary, no script) with that post's Akshara DSC mocks and its
-    Mega DSC 2025 papers as timed tests, or "coming soon"."""
-    pb, base = conf['pb'], '/' + conf['dir'] + '/'
-    mk = MOCK_PACKS['ap-dsc']
-    byid = {p['id']: p for p in papers}
+    """AP DSC Mock tests by post: the 16 post tiles with photos. Anil, 17 Nov 2026: "if i open mock test...then these job tiles must be
+    seen....in that the respective tests must be there", then "if they click on it...new page should come ...and in that the test series
+    should be there": each tile opens /ap-dsc/<slug>-mock-test.html (dsc_mock_post_page) with that post's tests."""
+    base = '/' + conf['dir'] + '/'
     out = ('<div class="section-title" style="margin:18px 0 6px"><h2>Choose your post</h2>'
-           '<span class="muted" style="font-size:14px">Tap your post to see its mock tests</span></div>')
+           '<span class="muted" style="font-size:14px">Tap your post to open its test series</span></div>')
     for gname, posts in DSC_POST_GROUPS:
-        out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="pgrid">'
+        out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="ptiles">'
         for post in posts:
-            ms = [m for m in mk['mocks'] if post.get('track') and m.get('track') == post['track']]
-            live = [m for m in ms if m['live']]
-            ps = [byid[x] for x in post['papers'] if x in byid]
-            bits = ([f'{len(live)} mock test{"s" if len(live) > 1 else ""}'] if live else []) + ([f'{len(ps)} paper{"s" if len(ps) > 1 else ""}'] if ps else [])
-            av = ' · '.join(bits) or 'Coming soon'
-            if live:
-                panel = '<h4>Akshara DSC mock tests</h4>' + mock_table(conf, ms, app)
-            else:
-                panel = (f'<p>Akshara DSC mock tests for {esc(post["name"])} are coming soon, in the same All-in-One Pass.</p>'
-                         + urgent_note(f'mock tests for AP DSC {post["short"]}'))
-            if ps:
-                panel += ('<h4>Mega DSC 2025 papers as timed mock tests</h4><ol class="qs">' + ''.join(
-                    f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div><p>{esc(paper_kw(conf, p))}</p>'
-                    f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a>'
-                    + (f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise with answers</a>' if app else f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read the paper</a>')
-                    + '</li>' for p in ps) + '</ol>')
-            panel += f'<p><a href="{pb}{post["slug"]}.html">Everything for {esc(post["short"])}: pattern, papers and subjects →</a></p>'
-            out += (f'<details class="pdet" id="mock-{post["slug"]}"><summary class="ptile{" soon" if av == "Coming soon" else ""}"><b>{esc(post["name"])}</b>'
-                    f'<span class="pt-te" lang="te">{esc(post["te"])}</span><span class="pt-m">{esc(av)}</span></summary><div class="ppanel">{panel}</div></details>')
+            av = dsc_mock_avail(post, papers)
+            out += (f'<a class="ptile has-ph pmock{" soon" if av == "Coming soon" else ""}" id="mock-{post["slug"]}" href="{base}{post["slug"]}-mock-test.html">'
+                    f'{dsc_tile_inner(post, av)}</a>')
         out += '</div>'
-    return out
+    return out + dsc_photo_credits()
+
+
+def dsc_mock_post_page(conf, papers, post):
+    """/ap-dsc/<slug>-mock-test.html: one AP DSC post's test series — its Akshara DSC mocks (full and sectional), its Mega DSC 2025 papers
+    as timed mock tests and its subject-wise sectionals (Anil, 17 Nov 2026: "if they click on it...new page should come")."""
+    pb, base = conf['pb'], '/' + conf['dir'] + '/'
+    rel = conf['dir'] + '/' + post['slug'] + '-mock-test.html'
+    can = SITE_URL + '/' + rel
+    mk = MOCK_PACKS.get('ap-dsc', {})
+    mname = mk.get('name', 'Akshara DSC')
+    ms, live, ps = dsc_post_tests(post, papers)
+    name, short = post['name'], post['short']
+    title = (f'AP DSC {short} Mock Test 2026 – {mname} Test Series' + (' & 2025 Papers as Mock Tests' if ps else '') + ' (English & Telugu) | Learn with Anil')
+    desc = (f'AP DSC 2026 {name} mock tests: ' + (f'{mname} full mocks and sectional tests in the 2026 pattern' if live else f'{mname} mock tests coming soon')
+            + (f', and the Mega DSC 2025 {short} paper{"s" if len(ps) > 1 else ""} as timed tests' if ps else '')
+            + f', in English and Telugu with explanations. One ₹{PAY["pyq_price"]} All-in-One Pass for every test.')
+    ph = dsc_photo(post['slug'])
+    body = ('<div style="display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin:0 0 16px;padding:10px;border:1px solid #D6DFEC;border-radius:14px;background:#fff">'
+            + (f'<img src="{ph}" alt="" width="240" height="90" style="width:240px;max-width:100%;height:auto;aspect-ratio:8/3;object-fit:cover;border-radius:10px">' if ph else '')
+            + f'<div><b lang="te" style="font-size:17px">{esc(post["te"])}</b><br><span class="muted">{esc(dsc_mock_avail(post, papers))}</span></div></div>')
+    body += buy_box(conf, 'mock')
+    body += f'<h2>{esc(mname)} mock tests for {esc(short)}</h2>'
+    if live:
+        body += (f'<p>New questions by Learn with Anil in the AP DSC 2026 pattern, in English and Telugu, with an explanation for every answer. '
+                 f'Take the full mock, or any part of it on its own as a sectional test.</p>'
+                 + mock_table(conf, ms) + urgent_note(f'the next {mname} mock tests for AP DSC {short}'))
+    else:
+        body += (f'<p>{esc(mname)} mock tests for {esc(name)} are coming soon, in the same All-in-One Pass. '
+                 + (f'Until then, take the real Mega DSC 2025 paper{"s" if len(ps) > 1 else ""} below as a timed test.' if ps else '') + '</p>'
+                 + urgent_note(f'mock tests for AP DSC {short}'))
+    if ps:
+        body += (f'<h2>Mega DSC 2025 {esc(short)} paper{"s" if len(ps) > 1 else ""} as timed mock tests</h2><ol class="clist">' + ''.join(
+            f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div><b>{esc(paper_kw(conf, p))}</b>'
+            f'<div class="cacts"><a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a>'
+            f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise with answers</a>'
+            f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read the paper</a></div></li>' for p in ps) + '</ol>')
+        if post['subj']:
+            names = {k: n for k, n, *_ in conf['subjects']}
+            body += ('<h2>Subject-wise sectional tests</h2><p>Every AP DSC previous question of a subject as one timed test:</p><p>'
+                     + ''.join(f'<a class="mchip" href="{pb}?sec={k}">{esc(names.get(k, k))}</a> ' for k in post['subj'] if k in names) + '</p>')
+    body += ('<h2>How the tests work</h2><ul><li>Questions in English and Telugu; switch the language at the top of the test.</li>'
+             '<li><b>Start</b> is the exam-style test with a timer: answer, mark for review, and see your score, accuracy and every answer with its explanation when you submit.</li>'
+             f'<li>Every test opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months). Register once with your phone number.</li></ul>')
+    body += (f'<p style="margin-top:14px"><a href="{base}{post["slug"]}.html">Everything for {esc(short)}: exam pattern, posts, papers and PDFs →</a></p>'
+             f'<h2>Test series for other AP DSC posts</h2><nav class="toc">'
+             + ''.join(f'<a href="{base}{x["slug"]}-mock-test.html">{esc(x["short"])}</a>' for x in DSC_POSTS if x is not post)
+             + f'<a href="{base}mock-test.html">All AP DSC mock tests</a></nav>'
+             + dsc_photo_credits([post['slug']], 'Photo (cropped) via Wikimedia Commons: '))
+    lede = esc(f'The AP DSC 2026 test series for {name}: ' + ', '.join((['the ' + mname + ' mock tests'] if live else [mname + ' mock tests (coming soon)'])
+                                                                      + (['the Mega DSC 2025 papers as timed tests'] if ps else [])) + '.')
+    return rel, static_page(0, title, desc, can, f'AP DSC {short} mock tests', lede, body,
+                            [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock tests', SITE_URL + base + 'mock-test.html'), (short, can)], conf), bool(live or ps)
 
 
 def dsc_post_page(conf, papers, questions, post):
@@ -8593,7 +8687,10 @@ def dsc_post_page(conf, papers, questions, post):
              + ' (English & Telugu) | Learn with Anil')
     desc = (f'AP DSC 2026 {name}: ' + (f'{len(ps)} Mega DSC 2025 question paper{"s" if len(ps) > 1 else ""} ({nq:,} questions) with the final key and explanations in English and Telugu' if ps else 'exam pattern and posts')
             + (f', and {mk["name"]} mock tests in the 2026 pattern' if live else '') + f'; {post["posts"]} posts in DSC-2026, exam from 20 December 2026. One ₹{PAY["pyq_price"]} All-in-One Pass for everything.')
-    body = f'<p lang="te" style="font-size:17px;margin:0 0 14px"><b>{esc(post["te"])}</b></p>'
+    ph = dsc_photo(post['slug'])
+    body = ('<div style="display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;margin:0 0 14px">'
+            + (f'<img src="{ph}" alt="" width="240" height="90" style="width:240px;max-width:100%;height:auto;aspect-ratio:8/3;object-fit:cover;border-radius:10px">' if ph else '')
+            + f'<div><b lang="te" style="font-size:17px">{esc(post["te"])}</b><br><a class="cta" style="margin-top:8px" href="{base}{post["slug"]}-mock-test.html">Open the {esc(short)} test series →</a></div></div>')
     body += (f'<h2>AP DSC 2026 exam pattern</h2><p>{esc(post["pat"])}</p>'
              f'<p>Posts in DSC-2026: <b>{esc(post["posts"])}</b>. Dates, eligibility, fee and district-wise vacancies: '
              f'<a href="/ap-dsc-2026-notification.html">AP DSC 2026 notification</a>.</p>')
@@ -8625,6 +8722,7 @@ def dsc_post_page(conf, papers, questions, post):
     body += (f'<p style="margin-top:18px"><a class="cta" href="{pb}?buy=pyq">Get everything for ₹{PAY["pyq_price"]}</a> <span class="muted">One All-in-One Pass: every AP DSC paper, '
              f'every mock and every other exam on the site, 12 months.</span></p>')
     body += ('<h2>Other AP DSC posts</h2><nav class="toc">' + ''.join(f'<a href="{pb}{x["slug"]}.html">{esc(x["short"])}</a>' for x in DSC_POSTS if x is not post) + '</nav>'
+             + dsc_photo_credits([post['slug']], 'Photo (cropped) via Wikimedia Commons: ')
              + (pdf_inline_js(conf) if any(p['id'] in BOOKLETS.get(conf['id'], {}) for p in ps) else ''))
     lede = esc(f'Everything for AP DSC {name} in one place: ' + ', '.join((['the Mega DSC 2025 previous papers'] if ps else []) + (['the Akshara DSC mock tests'] if live else []) + ['the 2026 exam pattern']) + '.')
     return rel, static_page(0, title, desc, can, f'AP DSC {name}', lede, body,
