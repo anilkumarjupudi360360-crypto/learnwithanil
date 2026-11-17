@@ -4932,6 +4932,10 @@ def FAQ_DSC(total, npapers):
       ('When is the AP DSC 2026 exam?',
        'The detailed notification (No.01/DSC-TRC-1/2026, 5 November 2026) gives online applications from 11 to 30 November 2026, hall tickets on 14 December and the computer-based test '
        'from 20 December 2026 to 13 January 2027 (tentative). See the <a href="/ap-dsc-2026-notification.html">AP DSC 2026 notification page</a> for posts, district-wise vacancies, fee and age.'),
+      ('Is there an AP DSC 2026 mock test series?',   # Akshara DSC, 17 Nov 2026
+       'Yes: <a href="/ap-dsc/mock-test.html">Akshara DSC</a>, Learn with Anil\'s AP DSC 2026 test series with new questions in the latest pattern: full-length SGT and '
+       'School Assistant Social Studies mocks of 160 questions in 150 minutes, in English and Telugu with explanations, each subject also as a sectional test. '
+       'It is included in the same ₹149 All-in-One Pass.'),
       ('Are the AP DSC questions in Telugu?',
        'Yes. The Mega DSC 2025 papers printed every general question in English and Telugu, and both are shown here. The Telugu sections (and the SA Telugu paper) are in Telugu, '
        'the English sections in English and the SA Hindi paper in Hindi, exactly as asked.'),
@@ -7686,6 +7690,38 @@ MOCK_PACKS = {
                                        ('acc', 'Accounting Principles', ['acc']), ('lab', 'Industrial Relations & Labour Laws', ['lab']),
                                        ('ss', 'Social Security', ['ss']), ('sci', 'General Science & Computers', ['sci']),
                                        ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 11)]),
+  # Anil, 17 Nov 2026: "pls start a test series for AP DSC and upload 2 tests"; chose the posts SGT and SA Social Studies (one Mock 1 each),
+  # all new questions (writer + checker helper agents) and the name "Akshara DSC". AP DSC 2026 (APTRT-2026) CBT pattern: 160 questions,
+  # 150 minutes. SGT: GK 16, Perspectives 8, Psychology 16, Telugu/English/Maths/Science/Social 24 each (16 content + 8 methodology).
+  # SA Social Studies: GK 20, Perspectives 10, Psychology 10, Social Studies content 80 + methodology 40. English + Telugu (the Telugu
+  # section in Telugu only, the English section in English only). Private source /home/claude/dscmk; ids start with "bk-" (any paid
+  # All-in-One Pass holder; no payments-script change). Sealed files: src/ap-dsc-mocks/.
+  'ap-dsc': dict(id='bk-dscmk', name='Akshara DSC', price=149, src='ap-dsc-mocks', dir='ap-dsc', langs='English &amp; Telugu',
+                 title='Akshara DSC – AP DSC 2026 Mock Test Series (SGT & School Assistant Social Studies)',
+                 summary='Full-length AP DSC 2026 mock tests in the latest CBT pattern, 160 questions in 150 minutes, for SGT and School Assistant '
+                         'Social Studies, in English and Telugu, with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
+                 about=['New questions written by Learn with Anil for this series in the AP DSC 2026 pattern (statement, match-the-following, '
+                        'assertion–reason and classroom-situation questions as the DSC sets them), not copied from coaching material or previous papers. '
+                        'The real AP DSC 2025 papers are on the previous-papers page, in the same pass.',
+                        'SGT mocks: General Knowledge & Current Affairs 16, Perspectives in Education 8, Educational Psychology 16, then Telugu, English, '
+                        'Mathematics, Science and Social Studies, 16 content + 8 methodology questions each (content of Classes III–VIII). '
+                        'SA Social Studies mocks: General Knowledge & Current Affairs 20, Perspectives 10, Educational Psychology 10, Social Studies content 80 '
+                        '(Class VI to Intermediate) and methodology 40.',
+                        'Every question is in English and Telugu (the Telugu section in Telugu only and the English section in English only, as in the real '
+                        'exam), with an explanation in both. Current affairs cover November 2025 to November 2026, with Andhra Pradesh news. Your score, '
+                        'accuracy and topic-wise analysis come after each mock.'],
+                 mocks=[m for i in range(1, 11) for m in (
+                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', qn=160, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
+                          parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
+                                 ('psy', 'Educational Psychology', ['psy']), ('tel', 'Telugu (Language-I)', ['tel']), ('eng', 'English', ['eng']),
+                                 ('mat', 'Mathematics', ['mat']), ('sci', 'Science', ['sci']), ('soc', 'Social Studies', ['soc'])]),
+                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', qn=160, mins=150, live=(i == 1),
+                          # a student's request (via Anil, 17 Nov 2026): the five SA Social parts as separate tests, so Social content and
+                          # methodology are separate parts (4th element = topics: the part takes only those topics of its subjects)
+                          parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
+                                 ('psy', 'Educational Psychology', ['psy']),
+                                 ('soc', 'Social Studies Content (Class 6 to Inter)', ['soc'], ['History', 'Geography', 'Polity', 'Economics']),
+                                 ('socm', 'Social Studies Methodology', ['soc'], ['Methodology'])]))]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -8212,7 +8248,7 @@ def sectional_page(conf, papers, questions):
     rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · all in one test · one minute per question</div><p>{esc(s[1])}</p>'
                    f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
     secrows = (''.join((f'<li class="q"><div class="meta">{"Free now" if m.get("free") else "Available now"} · {m["name"]}</div><p>{esc(m["name"])} sections</p>'
-                        + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts']) + '</li>')
+                        + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, *_ in m['parts']) + '</li>')
                        if m['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>{esc(m["name"])} sections</p></li>'
                        for m in mk['mocks']) if mk and 'mocks' in mk else
                ''.join((f'<li class="q"><div class="meta">{"Free now" if mk.get("free1") and i == 0 else "Available now"}</div><p>Mock {i + 1} sections</p>'
@@ -8232,7 +8268,7 @@ def sectional_page(conf, papers, questions):
         soon = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live']))
         secrows = (''.join(f'<li class="q"><div class="meta">Available now · {m["qn"]} questions</div><p>{esc(m["name"])}</p>'
                            + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}{" · " + str(m["pmins"][k]) + " min" if m.get("pmins", {}).get(k) else ""}</a>'
-                                     for k, v, _ in m['parts']) + '</li>' for m in live)
+                                     for k, v, *_ in m['parts']) + '</li>' for m in live)
                    + (f'<li class="q"><div class="meta">Coming soon, one by one</div><p>{esc(soon[0])}{"–" + esc(soon[-1].replace("Mock ", "")) if len(soon) > 1 else ""} sections</p></li>' if soon else ''))
         title = f'{seo} Sectional Tests – Section-wise Mock Tests with the Real Time Limit | Learn with Anil'
         desc = f'{seo} sectional tests: each section of the {mk["name"]} mocks as its own timed test, in English and Hindi, with explanations. {INCL}.'
@@ -8309,7 +8345,7 @@ def soon_rows(names, total_cols=4):
 
 def part_links(pb, m):
     """'Reasoning · General Awareness · …' links that open one part of a released mock as a sectional test."""
-    return ' · '.join(f'<a href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, _ in m['parts'])
+    return ' · '.join(f'<a href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, *_ in m['parts'])
 
 
 MOCK_INFO = {}   # exam dates removed at Anil's request (23 Oct 2026): no exam dates on the site

@@ -431,6 +431,10 @@ async def main():
             if h and not (os.path.isfile(f) or os.path.isfile(os.path.join(f, 'index.html'))): errors.append(f'llms.txt: broken link /{h}')
         epm = open(os.path.join(SITE, 'upsc-epfo', 'mock-test.html'), encoding='utf-8').read()
         if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
+        dsm = open(os.path.join(SITE, 'ap-dsc', 'mock-test.html'), encoding='utf-8').read()   # Akshara DSC (AP DSC test series), live since 17 Nov 2026
+        if 'Akshara DSC' not in dsm or '?buy=mock' in dsm: errors.append('ap-dsc/mock-test.html: should show the Akshara DSC series in the All-in-One Pass')
+        for _m in ('bk-dscmk-sgt-1', 'bk-dscmk-sass-1'):
+            if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'ap-dsc', 'mk'))): errors.append(f'ap-dsc/mk: sealed {_m} missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:
