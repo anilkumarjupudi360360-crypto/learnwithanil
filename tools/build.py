@@ -2443,6 +2443,10 @@ DSC_PAPERS = [
        DSC_SA.format(s='Biological Science') + ', in English and Telugu'),
   _dsc('sass25', 'ap-dsc-2025-sa-social-studies-16-june-shift-1.txt', 'SA Social Studies', 'స్కూల్ అసిస్టెంట్ సాంఘిక శాస్త్రం', '16 June', 1, 'sa-social-studies',
        DSC_SA.format(s='Social Studies') + ', in English and Telugu'),
+  _dsc('sass25b', 'ap-dsc-2025-sa-social-studies-16-june-shift-2.txt', 'SA Social Studies', 'స్కూల్ అసిస్టెంట్ సాంఘిక శాస్త్రం', '16 June', 2, 'sa-social-studies',
+       DSC_SA.format(s='Social Studies') + ', in English and Telugu'),   # Anil, 17 Nov 2026: a student asked for the other SA Social shifts
+  _dsc('sass25c', 'ap-dsc-2025-sa-social-studies-17-june-shift-2.txt', 'SA Social Studies', 'స్కూల్ అసిస్టెంట్ సాంఘిక శాస్త్రం', '17 June', 2, 'sa-social-studies',
+       DSC_SA.format(s='Social Studies') + ', in English and Telugu'),
   _dsc('sape25', 'ap-dsc-2025-sa-physical-education-9-june-shift-1.txt', 'SA Physical Education', 'స్కూల్ అసిస్టెంట్ వ్యాయామ విద్య', '9 June', 1, 'sa-physical-education',
        DSC_PE, mins=180, stage='Teacher Recruitment Test (Physical Education)'),
   _dsc('pet25', 'ap-dsc-2025-pet-22-june-shift-2.txt', 'PET', 'పీఈటీ', '22 June', 2, 'pet',
@@ -2450,10 +2454,11 @@ DSC_PAPERS = [
 ]
 for _p, _alt in zip(DSC_PAPERS, ['Secondary Grade Teacher', 'School Assistant Telugu', 'School Assistant Hindi', 'School Assistant English', 'School Assistant Mathematics',
                                  'School Assistant Physical Science', 'School Assistant Biological Science', 'School Assistant Social Studies',
+                                 'School Assistant Social Studies', 'School Assistant Social Studies',
                                  'School Assistant Physical Education', 'Physical Education Teacher']):
     _p['alt'] = _alt
 DSC_LEFT = dict(sgt25a=[7], satel25=[82], sahin25=[9], saeng25=[49, 69, 94, 115, 136, 137], samat25=[155], saps25=[62, 116], sabs25=[28, 107, 110],
-                sass25=[], sape25=[27, 66, 86, 173, 193], pet25=[1, 21, 60])   # all four options ticked in the final key (marks to everyone): left out
+                sass25=[], sass25b=[53, 145], sass25c=[113, 155], sape25=[27, 66, 86, 173, 193], pet25=[1, 21, 60])   # all four options ticked in the final key (marks to everyone): left out
 def dsc_have():
     return have_src('ap-dsc', DSC_PAPERS)
 def dsc_posts():
