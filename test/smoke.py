@@ -433,6 +433,18 @@ async def main():
         if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
         dsm = open(os.path.join(SITE, 'ap-dsc', 'mock-test.html'), encoding='utf-8').read()   # Akshara DSC (AP DSC test series), live since 17 Nov 2026
         if 'Akshara DSC' not in dsm or '?buy=mock' in dsm: errors.append('ap-dsc/mock-test.html: should show the Akshara DSC series in the All-in-One Pass')
+        if dsm.count('class="mtrack"') != 2: errors.append('ap-dsc/mock-test.html: should show one box per post (SGT, SA Social Studies)')
+        dsh = open(os.path.join(SITE, 'ap-dsc', 'index.html'), encoding='utf-8').read()   # one tile per AP DSC post (Anil, 17 Nov 2026)
+        _npt = len(_re.findall(r'class="ptile(?: soon)?"', dsh))
+        if _npt != 16: errors.append(f'ap-dsc: {_npt} post tiles, expected 16')
+        for _s, _need in (('sgt', ['bk-dscmk-sgt-1', '?practice=sgt25a']), ('sa-social-studies', ['bk-dscmk-sass-1', '?practice=sass25', '?practice=sass25b', '?practice=sass25c', 'part=socm']),
+                          ('sa-hindi', ['?practice=sahin25']), ('principal', ['coming soon'])):
+            _f = os.path.join(SITE, 'ap-dsc', _s + '.html')
+            if not os.path.exists(_f): errors.append(f'ap-dsc/{_s}.html missing'); continue
+            _t = open(_f, encoding='utf-8').read()
+            for _x in _need:
+                if _x not in _t: errors.append(f'ap-dsc/{_s}.html: {_x!r} missing')
+            if _s != 'sa-social-studies' and 'bk-dscmk-sass-1' in _t: errors.append(f'ap-dsc/{_s}.html shows the SA Social mock')
         for _m in ('bk-dscmk-sgt-1', 'bk-dscmk-sass-1'):
             if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'ap-dsc', 'mk'))): errors.append(f'ap-dsc/mk: sealed {_m} missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately

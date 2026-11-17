@@ -2470,6 +2470,44 @@ def dsc_posts():
     out = [x for x in ('SGT',) if 'sgt25a' in have] + ([f'School Assistant ({", ".join(sa)})'] if sa else []) + [x for x in ('PET',) if 'pet25' in have]
     return ', '.join(out[:-1]) + ' and ' + out[-1] if len(out) > 1 else (out[0] if out else 'SGT and School Assistant')
 
+# Anil, 17 Nov 2026: "make seperate tiles for it" / "add seperate tiles for all" (screenshot of the AP DSC 2026 posts table): one tile per post on
+# the AP DSC page, each opening its own page (/ap-dsc/<slug>.html) with only that post's previous papers, Akshara DSC mocks, pattern and subjects.
+# School Assistant is split by subject (a student, via Anil: "SA social ki ... Hindi English Biology anni vasthunae"). No vacancy numbers on the
+# tiles (Anil's rule); the post pages give the 2026 posts from the notification (No.01/DSC-TRC-1/2026 and the society / special-education ones).
+_DSC_PAT = dict(
+    sa=lambda s: f'160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 20, perspectives in education 10, classroom implications of educational psychology 10, {s} content 80 and {s} methodology 40. Final marks: 80% DSC test + 20% TET weightage.',
+    sgt='160 questions, 80 marks, 2 hours 30 minutes: GK & current affairs 16, perspectives in education 8, educational psychology 16, then 16 content + 8 methodology questions each for Language-I (Telugu), English, Mathematics, Science and Social Studies (content of Classes III to VIII). Final marks: 80% DSC test + 20% TET weightage.',
+    pe='200 questions, 100 marks, 3 hours: GK & current affairs 10, perspectives in education 10, physical education pedagogy 40 and physical education content 140. No TET weightage: test marks only.',
+    se='160 questions, 80 marks, 2 hours 30 minutes, on the special-education syllabus of DSC-2026. Final marks: 80% DSC test + 20% TET weightage.',
+    pr='An English proficiency test (100 questions, qualifying) and Paper II: 200 questions, 100 marks, 3 hours. No TET weightage.',
+    pgt='An English proficiency test (qualifying, for non-language posts) and Paper II: 200 questions, 100 marks, 3 hours (GK 20, perspectives 20, psychology 20, content 100, methodology 40). No TET weightage.',
+    tgt='An English proficiency test (qualifying, for non-language posts) and Paper II: 160 questions, 80 marks, 2 hours 30 minutes. 20% TET weightage.',
+    pd='200 questions, 100 marks, 3 hours. No TET weightage.')
+DSC_POST_GROUPS = [
+  ('School Education: government, ZP, MPP and municipal schools', [
+    dict(slug='sgt', name='SGT (Secondary Grade Teacher)', short='SGT', te='సెకండరీ గ్రేడ్ టీచర్ (ఎస్జీటీ)', papers=['sgt25a'], track='sgt', posts='1,205', pat=_DSC_PAT['sgt'],
+         subj=['gk', 'pie', 'psy', 'tel', 'eng', 'mat', 'sci', 'soc']),
+    dict(slug='sa-telugu', name='School Assistant Telugu (Language-I)', short='SA Telugu', te='స్కూల్ అసిస్టెంట్ తెలుగు', papers=['satel25'], posts='110 (Language-I, all languages)', pat=_DSC_PAT['sa']('Telugu'), subj=['gk', 'pie', 'psy', 'tel']),
+    dict(slug='sa-hindi', name='School Assistant Hindi', short='SA Hindi', te='స్కూల్ అసిస్టెంట్ హిందీ', papers=['sahin25'], posts='202', pat=_DSC_PAT['sa']('Hindi'), subj=['gk', 'pie', 'psy', 'hin']),
+    dict(slug='sa-english', name='School Assistant English', short='SA English', te='స్కూల్ అసిస్టెంట్ ఇంగ్లీష్', papers=['saeng25'], posts='87', pat=_DSC_PAT['sa']('English'), subj=['gk', 'pie', 'psy', 'eng']),
+    dict(slug='sa-maths', name='School Assistant Mathematics', short='SA Maths', te='స్కూల్ అసిస్టెంట్ గణితం', papers=['samat25'], posts='41', pat=_DSC_PAT['sa']('Mathematics'), subj=['gk', 'pie', 'psy', 'mat']),
+    dict(slug='sa-physical-science', name='School Assistant Physical Science', short='SA Physical Science', te='స్కూల్ అసిస్టెంట్ భౌతిక శాస్త్రం', papers=['saps25'], posts='45', pat=_DSC_PAT['sa']('Physical Science'), subj=['gk', 'pie', 'psy', 'phs']),
+    dict(slug='sa-biological-science', name='School Assistant Biological Science', short='SA Biology', te='స్కూల్ అసిస్టెంట్ జీవ శాస్త్రం', papers=['sabs25'], posts='151', pat=_DSC_PAT['sa']('Biological Science'), subj=['gk', 'pie', 'psy', 'bio']),
+    dict(slug='sa-social-studies', name='School Assistant Social Studies', short='SA Social Studies', te='స్కూల్ అసిస్టెంట్ సాంఘిక శాస్త్రం', papers=['sass25', 'sass25b', 'sass25c'], track='sa-social-studies', posts='160',
+         pat=_DSC_PAT['sa']('Social Studies') + ' Social Studies content: Class VI to Intermediate.', subj=['gk', 'pie', 'psy', 'soc']),
+    dict(slug='sa-physical-education', name='School Assistant Physical Education', short='SA Physical Education', te='స్కూల్ అసిస్టెంట్ వ్యాయామ విద్య', papers=['sape25'], posts='110', pat=_DSC_PAT['pe'], subj=['gk', 'pie', 'ped'])]),
+  ('Special Education: government, ZP, MPP and municipal schools', [
+    dict(slug='sa-special-education', name='School Assistant (Special Education)', short='SA Special Education', te='స్కూల్ అసిస్టెంట్ (ప్రత్యేక విద్య)', papers=[], posts='150', pat=_DSC_PAT['se'], subj=[]),
+    dict(slug='sgt-special-education', name='SGT (Special Education)', short='SGT Special Education', te='ఎస్జీటీ (ప్రత్యేక విద్య)', papers=[], posts='200', pat=_DSC_PAT['se'], subj=[])]),
+  ('Residential societies and model schools', [
+    dict(slug='principal', name='Principal', short='Principal', te='ప్రిన్సిపాల్', papers=[], posts='30', pat=_DSC_PAT['pr'], subj=[]),
+    dict(slug='pgt', name='PGT (Post Graduate Teacher)', short='PGT', te='పోస్ట్ గ్రాడ్యుయేట్ టీచర్ (పీజీటీ)', papers=[], posts='81', pat=_DSC_PAT['pgt'], subj=[]),
+    dict(slug='tgt', name='TGT (Trained Graduate Teacher)', short='TGT', te='ట్రెయిన్డ్ గ్రాడ్యుయేట్ టీచర్ (టీజీటీ)', papers=[], posts='113', pat=_DSC_PAT['tgt'], subj=[]),
+    dict(slug='physical-director', name='Physical Director', short='Physical Director', te='ఫిజికల్ డైరెక్టర్', papers=[], posts='2', pat=_DSC_PAT['pd'], subj=[]),
+    dict(slug='pet', name='PET (Physical Education Teacher)', short='PET', te='ఫిజికల్ ఎడ్యుకేషన్ టీచర్ (పీఈటీ)', papers=['pet25'], posts='34', pat=_DSC_PAT['pd'], subj=['gk', 'pie', 'ped'])]),
+]
+DSC_POSTS = [x for _g, L in DSC_POST_GROUPS for x in L]
+
 # ---------- Banking: SBI PO and IBPS SO (mock tests only) ----------
 # Anil, 8 Nov 2026: "pls add SBI PO and IBPS SO ... pyqs also". SBI and IBPS never publish their question papers; the
 # "memory-based" papers online are coaching companies' own write-ups, so they cannot be copied. Anil chose original
@@ -3686,6 +3724,11 @@ def main():
             rel, html_ = fn(c, ps, qs)
             open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
             mocks[rel] = None
+        if c['id'] == 'ap-dsc':   # one page per AP DSC post (Anil, 17 Nov 2026)
+            for post in DSC_POSTS:
+                rel, html_ = dsc_post_page(c, ps, qs, post)
+                open(os.path.join(DIST, 'site', rel), 'w', encoding='utf-8').write(html_)
+                mocks[rel] = None
     if bb_live: mocks[bahubali.page(os.path.join(DIST, 'site'))] = None
     all_pages = {**notifs, **mocks, **all_pages}
 
@@ -5032,6 +5075,7 @@ STATIC_CSS = """.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .mchip{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent-text);font-weight:600;font-size:13.5px;text-decoration:none}
 .mchip:hover{text-decoration:underline}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
+.mtrack{border:1px solid var(--line,#D6DFEC);border-left:4px solid var(--accent,#1846C7);border-radius:12px;padding:6px 14px 10px;margin:14px 0}.mtrack h3{margin:8px 0 6px}
 
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
@@ -7644,6 +7688,7 @@ MOCK_PACKS = {
   # section in Telugu only, the English section in English only). Private source /home/claude/dscmk; ids start with "bk-" (any paid
   # All-in-One Pass holder; no payments-script change). Sealed files: src/ap-dsc-mocks/.
   'ap-dsc': dict(id='bk-dscmk', name='Akshara DSC', price=149, src='ap-dsc-mocks', dir='ap-dsc', langs='English &amp; Telugu',
+                 tracks=[('sgt', 'SGT (Secondary Grade Teacher)'), ('sa-social-studies', 'School Assistant Social Studies')],   # one box per post (Anil, 17 Nov 2026: "make seperate tiles for it")
                  title='Akshara DSC – AP DSC 2026 Mock Test Series (SGT & School Assistant Social Studies)',
                  summary='Full-length AP DSC 2026 mock tests in the latest CBT pattern, 160 questions in 150 minutes, for SGT and School Assistant '
                          'Social Studies, in English and Telugu, with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
@@ -7658,11 +7703,11 @@ MOCK_PACKS = {
                         'exam), with an explanation in both. Current affairs cover November 2025 to November 2026, with Andhra Pradesh news. Your score, '
                         'accuracy and topic-wise analysis come after each mock.'],
                  mocks=[m for i in range(1, 11) for m in (
-                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', qn=160, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
+                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', track='sgt', qn=160, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
                                  ('psy', 'Educational Psychology', ['psy']), ('tel', 'Telugu (Language-I)', ['tel']), ('eng', 'English', ['eng']),
                                  ('mat', 'Mathematics', ['mat']), ('sci', 'Science', ['sci']), ('soc', 'Social Studies', ['soc'])]),
-                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', qn=160, mins=150, live=(i == 1),
+                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', track='sa-social-studies', qn=160, mins=150, live=(i == 1),
                           # a student's request (via Anil, 17 Nov 2026): the five SA Social parts as separate tests, so Social content and
                           # methodology are separate parts (4th element = topics: the part takes only those topics of its subjects)
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
@@ -8004,7 +8049,8 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
                     + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
                     + note + '</section>')
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + exam_clock_html(conf)
+    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>'
+            + (dsc_post_tiles(conf, papers) if conf['id'] == 'ap-dsc' else '') + exam_clock_html(conf)
             + note + '</section>')   # no Mentorship / link / promo strips under the tiles (Anil, 16 Nov 2026)
 
 
@@ -8357,6 +8403,16 @@ try{if(window.gtag)gtag('event','paper_pdf_download',{paper:a.getAttribute('data
 say(a,'✓ Your PDF is downloading (saved in Downloads). For your personal study only.')})}).catch(function(err){say(a,(err&&err.message)||'Could not get the PDF. Please check your connection and try again.',true)}).then(function(){a.innerHTML=html;a.removeAttribute('aria-busy')})});})();</script>""")
 
 
+def mock_table(conf, ms, app=False):
+    """The table of one mock pack's mocks (or of one post's mocks): Start / Practice / PDF and the sectional chips; coming-soon mocks folded."""
+    pb = conf['pb']
+    sched = ''.join(f'<tr><td><b>{esc(m["name"])}</b></td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min'
+                    f'{mock_btns(f"{pb}?mock={m[chr(105) + chr(100)]}", "Start free" if m.get("free") else "Start", f"{pb}?mock={m[chr(105) + chr(100)]}&amp;mode=practice" if app else "", mock_pdf_link(conf, m["id"]))}</td>'
+                    f'<td>{chips(part_links(pb, m))}</td></tr>' for m in ms if m['live'])
+    sched += soon_rows(list(dict.fromkeys(m.get('group', m['name']) for m in ms if not m['live'])))
+    return f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+
+
 def mock_parts(conf, papers, app=False):
     """The mock-pack box and the previous papers as timed tests: shared by the static mock-test page and, with app=True,
     the app's own Mock tests view (Anil, 29 Oct 2026: the exam tile must open the test series in place, not another page)."""
@@ -8371,12 +8427,12 @@ def mock_parts(conf, papers, app=False):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        sched = ''.join(f'<tr><td><b>{esc(m["name"])}</b></td><td>{"<b>Free</b> · register and start" if m.get("free") else "Available now"}</td><td>{m["qn"]} questions · {m["mins"]} min'
-                        f'{mock_btns(f"{pb}?mock={m[chr(105) + chr(100)]}", "Start free" if m.get("free") else "Start", f"{pb}?mock={m[chr(105) + chr(100)]}&amp;mode=practice" if app else "", mock_pdf_link(conf, m["id"]))}</td>'
-                        f'<td>{chips(part_links(pb, m))}</td></tr>' for m in mk['mocks'] if m['live'])
-        sched += soon_rows(list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live'])))
-        pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock')
-                + f'<table class="facts mtab"><tr><th>Mock</th><th>Status</th><th>Full mock</th><th>Sectional tests</th></tr>{sched}</table>'
+        if mk.get('tracks'):   # a box per post (Akshara DSC: SGT, SA Social Studies)
+            tabs = ''.join(f'<div class="mtrack" id="{t}"><h3>{esc(tname)}</h3>' + mock_table(conf, [m for m in mk['mocks'] if m.get('track') == t], app) + '</div>'
+                           for t, tname in mk['tracks'])
+        else:
+            tabs = mock_table(conf, mk['mocks'], app)
+        pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock') + tabs
                 + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if any(not m['live'] for m in mk['mocks']) else '')
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
                 + (f'<p class="note"><b>Bahubali Mains:</b> writing the Mains too? The same pass opens 24 full-length Group-II Mains tests '
@@ -8411,6 +8467,85 @@ def mock_parts(conf, papers, app=False):
         pack = (f'<h2>Mock test pack</h2><p>Full-length mock tests for this exam are being prepared; they will be {INCL.lower()}. Until then, take the real previous papers below as timed mocks.</p>'
                 + urgent_note(f'full-length mock tests for {seo}'))
     return pack, rows, info
+
+
+def dsc_post_avail(post, papers):
+    """'3 previous papers · Mock test' / 'Coming soon' for an AP DSC post tile."""
+    have = {p['id'] for p in papers}
+    n = sum(1 for x in post['papers'] if x in have)
+    mk = MOCK_PACKS.get('ap-dsc', {})
+    live = any(m['live'] and m.get('track') == post.get('track') for m in mk.get('mocks', [])) if post.get('track') else False
+    bits = ([f'{n} previous paper{"s" if n > 1 else ""}'] if n else []) + (['Mock test'] if live else [])
+    return ' · '.join(bits) if bits else 'Coming soon'
+
+
+def dsc_post_tiles(conf, papers):
+    """'Choose your post': one tile per AP DSC post, grouped like the notification's posts table."""
+    pb = conf['pb']
+    out = ('<div class="section-title" style="margin:26px 0 12px"><h2>Choose your post</h2>'
+           '<span class="muted" style="font-size:14px">Previous papers, mock tests and the exam pattern for each AP DSC 2026 post</span></div>')
+    for gname, posts in DSC_POST_GROUPS:
+        out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="ptiles">'
+        for post in posts:
+            av = dsc_post_avail(post, papers)
+            out += (f'<a class="ptile{" soon" if av == "Coming soon" else ""}" href="{pb}{post["slug"]}.html"><b>{esc(post["name"])}</b>'
+                    f'<span class="pt-te" lang="te">{esc(post["te"])}</span><span class="pt-m">{esc(av)}</span></a>')
+        out += '</div>'
+    return out
+
+
+def dsc_post_page(conf, papers, questions, post):
+    """/ap-dsc/<slug>.html: one AP DSC post — its 2026 pattern, its Akshara DSC mocks, its Mega DSC 2025 papers and its subjects."""
+    pb, base = conf['pb'], '/' + conf['dir'] + '/'
+    rel = conf['dir'] + '/' + post['slug'] + '.html'
+    can = SITE_URL + '/' + rel
+    byid = {p['id']: p for p in papers}
+    ps = [byid[x] for x in post['papers'] if x in byid]
+    nq = sum(p['count'] for p in ps)
+    mk = MOCK_PACKS.get('ap-dsc', {})
+    ms = [m for m in mk.get('mocks', []) if post.get('track') and m.get('track') == post['track']]
+    live = [m for m in ms if m['live']]
+    name, short = post['name'], post['short']
+    title = (f'AP DSC {short} 2026 – ' + ' & '.join((['Previous Papers with Answers'] if ps else []) + (['Mock Tests'] if live else []) + ['Exam Pattern'])
+             + ' (English & Telugu) | Learn with Anil')
+    desc = (f'AP DSC 2026 {name}: ' + (f'{len(ps)} Mega DSC 2025 question paper{"s" if len(ps) > 1 else ""} ({nq:,} questions) with the final key and explanations in English and Telugu' if ps else 'exam pattern and posts')
+            + (f', and {mk["name"]} mock tests in the 2026 pattern' if live else '') + f'; {post["posts"]} posts in DSC-2026, exam from 20 December 2026. One ₹{PAY["pyq_price"]} All-in-One Pass for everything.')
+    body = f'<p lang="te" style="font-size:17px;margin:0 0 14px"><b>{esc(post["te"])}</b></p>'
+    body += (f'<h2>AP DSC 2026 exam pattern</h2><p>{esc(post["pat"])}</p>'
+             f'<p>Posts in DSC-2026: <b>{esc(post["posts"])}</b>. Dates, eligibility, fee and district-wise vacancies: '
+             f'<a href="/ap-dsc-2026-notification.html">AP DSC 2026 notification</a>.</p>')
+    body += f'<h2>Mock tests: {esc(mk.get("name", "Akshara DSC"))}</h2>'
+    if live:
+        body += (f'<p>New questions by Learn with Anil in the 2026 pattern, in English and Telugu with explanations. Take the full mock, or any part on its own as a sectional test.</p>'
+                 + mock_table(conf, ms) + urgent_note(f'the next {mk["name"]} mock tests for AP DSC {short}'))
+    else:
+        body += (f'<p>{esc(mk.get("name", "Akshara DSC"))} mock tests for {esc(name)} are coming soon, in the same All-in-One Pass. '
+                 + (f'Until then, take the real 2025 paper{"s" if len(ps) > 1 else ""} below as a timed test.' if ps else '') + '</p>'
+                 + urgent_note(f'mock tests for AP DSC {short}'))
+    body += '<h2>Previous papers (Mega DSC 2025)</h2>'
+    if ps:
+        body += ('<ol class="clist">' + ''.join(
+            f'<li><div class="cmeta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div><b>{esc(paper_kw(conf, p))}</b>'
+            f'<div class="cacts"><a class="cta" href="{pb}?practice={p["id"]}">Attempt this paper · {p.get("mins") or p["count"]} min timer</a>'
+            f'<a class="cta alt" href="{pb}?test={p["id"]}">Take it as a mock test</a>'
+            + (f'<a class="cta" style="background:#0E7A43;border-color:#0E7A43;color:#fff" href="{pb}?pdf={p["id"]}"{pdf_attrs(conf, p["id"])}>⬇ Download PDF · {BOOKLETS[conf["id"]][p["id"]]["pages"]} pages</a>'
+               if p['id'] in BOOKLETS.get(conf['id'], {}) else '')
+            + f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read the paper</a></div></li>' for p in ps) + '</ol>'
+            + f'<p class="muted">Every answer is from the final key of the School Education Department, Andhra Pradesh, with an explanation in English and Telugu.</p>')
+    else:
+        body += ('<p>The Mega DSC 2025 papers on the site are for SGT, School Assistant and PET. Previous papers for this post will be added when available.</p>'
+                 + urgent_note(f'previous papers for AP DSC {short}'))
+    if post['subj'] and ps:
+        names = {k: n for k, n, *_ in conf['subjects']}
+        body += ('<h2>Practise subject by subject</h2><p>Every AP DSC previous question of a subject as one timed sectional test:</p><p>'
+                 + ''.join(f'<a class="mchip" href="{pb}?sec={k}">{esc(names.get(k, k))}</a> ' for k in post['subj'] if k in names) + '</p>')
+    body += (f'<p style="margin-top:18px"><a class="cta" href="{pb}?buy=pyq">Get everything for ₹{PAY["pyq_price"]}</a> <span class="muted">One All-in-One Pass: every AP DSC paper, '
+             f'every mock and every other exam on the site, 12 months.</span></p>')
+    body += ('<h2>Other AP DSC posts</h2><nav class="toc">' + ''.join(f'<a href="{pb}{x["slug"]}.html">{esc(x["short"])}</a>' for x in DSC_POSTS if x is not post) + '</nav>'
+             + (pdf_inline_js(conf) if any(p['id'] in BOOKLETS.get(conf['id'], {}) for p in ps) else ''))
+    lede = esc(f'Everything for AP DSC {name} in one place: ' + ', '.join((['the Mega DSC 2025 previous papers'] if ps else []) + (['the Akshara DSC mock tests'] if live else []) + ['the 2026 exam pattern']) + '.')
+    return rel, static_page(0, title, desc, can, f'AP DSC {name}', lede, body,
+                            [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), (short, can)], conf)
 
 
 def mock_page(conf, papers, questions):
