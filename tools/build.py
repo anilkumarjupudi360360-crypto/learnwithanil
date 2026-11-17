@@ -5090,6 +5090,14 @@ STATIC_CSS = """.mbtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .mchip:hover{text-decoration:underline}
 table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 .mtrack{border:1px solid var(--line,#D6DFEC);border-left:4px solid var(--accent,#1846C7);border-radius:12px;padding:6px 14px 10px;margin:14px 0}.mtrack h3{margin:8px 0 6px}
+.ptiles-h{font-size:15px;margin:18px 0 10px;color:#55627C;font-weight:700}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:start}
+.ptile{display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#fff;border:1px solid #D6DFEC;border-left:4px solid #1846C7;border-radius:12px;color:inherit;text-decoration:none}
+.ptile b{font-size:15.5px;line-height:1.3}.ptile .pt-te{font-size:13px;color:#55627C}.ptile .pt-m{font-size:13px;font-weight:700;color:#1440B8;margin-top:auto}
+.ptile.soon{border-left-color:#D6DFEC}.ptile.soon .pt-m{color:#55627C;font-weight:600}
+.pdet>summary{list-style:none;cursor:pointer}.pdet>summary::-webkit-details-marker{display:none}.pdet>summary .pt-m::after{content:" ▾"}.pdet[open]>summary .pt-m::after{content:" ▴"}
+.pdet[open]{grid-column:1/-1}.pdet[open]>summary{border-color:#1846C7;background:#E2EAFC}.ppanel{padding:8px 2px 4px}.ppanel h4{margin:14px 0 8px;font-size:15px}
+@media (max-width:860px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:420px){.pgrid{grid-template-columns:1fr}}
 
 .nw{white-space:nowrap}
 [lang="te"]{font-family:"Noto Sans Telugu",sans-serif;line-height:1.8}
@@ -8354,7 +8362,7 @@ def inapp_mocks(conf, papers):
                 '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
                 f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months).</li></ul>')
     return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if not conf.get('mockonly') else '')
+            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if rows and not conf.get('mockonly') else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
@@ -8464,13 +8472,16 @@ def mock_parts(conf, papers, app=False):
         for p in mcq)
     info = MOCK_INFO.get(conf['id'], '')
     if mk and 'mocks' in mk:
-        if mk.get('tracks'):   # a box per post (Akshara DSC: SGT, SA Social Studies)
+        if conf['id'] == 'ap-dsc' and mk.get('tracks'):   # Anil, 17 Nov 2026: "if i open mock test...then these job tiles must be seen....in that the respective tests must be there"
+            tabs = dsc_mock_tiles(conf, papers, app)
+            rows = ''   # each post's 2025 papers are inside its tile
+        elif mk.get('tracks'):   # a box per post
             tabs = ''.join(f'<div class="mtrack" id="{t}"><h3>{esc(tname)}</h3>' + mock_table(conf, [m for m in mk['mocks'] if m.get('track') == t], app) + '</div>'
                            for t, tname in mk['tracks'])
         else:
             tabs = mock_table(conf, mk['mocks'], app)
         pack = (f'<h2>{esc(mk["title"])}</h2>' + buy_box(conf, 'mock') + tabs
-                + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if any(not m['live'] for m in mk['mocks']) else '')
+                + (urgent_note(f'the next {mk["name"]} mock tests for {seo}') if any(not m['live'] for m in mk['mocks']) and conf['id'] != 'ap-dsc' else '')
                 + '<ul>' + ''.join(f'<li>{esc(x)}</li>' for x in mk['about']) + '</ul>'
                 + (f'<p class="note"><b>Bahubali Mains:</b> writing the Mains too? The same pass opens 24 full-length Group-II Mains tests '
                    f'(12 for Paper I, 12 for Paper II). <a href="{BB_URL}#mains">Open Bahubali Mains →</a></p>' if BB_URL and conf['id'] == 'appsc-group-2' else '')
@@ -8527,6 +8538,41 @@ def dsc_post_tiles(conf, papers):
             av = dsc_post_avail(post, papers)
             out += (f'<a class="ptile{" soon" if av == "Coming soon" else ""}" href="{pb}{post["slug"]}.html"><b>{esc(post["name"])}</b>'
                     f'<span class="pt-te" lang="te">{esc(post["te"])}</span><span class="pt-m">{esc(av)}</span></a>')
+        out += '</div>'
+    return out
+
+
+def dsc_mock_tiles(conf, papers, app=False):
+    """AP DSC Mock tests by post (Anil, 17 Nov 2026: "if i open mock test...then these job tiles must be seen....in that the respective tests
+    must be there"): the 16 post tiles; a tile opens in place (details/summary, no script) with that post's Akshara DSC mocks and its
+    Mega DSC 2025 papers as timed tests, or "coming soon"."""
+    pb, base = conf['pb'], '/' + conf['dir'] + '/'
+    mk = MOCK_PACKS['ap-dsc']
+    byid = {p['id']: p for p in papers}
+    out = ('<div class="section-title" style="margin:18px 0 6px"><h2>Choose your post</h2>'
+           '<span class="muted" style="font-size:14px">Tap your post to see its mock tests</span></div>')
+    for gname, posts in DSC_POST_GROUPS:
+        out += f'<h3 class="ptiles-h">{esc(gname)}</h3><div class="pgrid">'
+        for post in posts:
+            ms = [m for m in mk['mocks'] if post.get('track') and m.get('track') == post['track']]
+            live = [m for m in ms if m['live']]
+            ps = [byid[x] for x in post['papers'] if x in byid]
+            bits = ([f'{len(live)} mock test{"s" if len(live) > 1 else ""}'] if live else []) + ([f'{len(ps)} paper{"s" if len(ps) > 1 else ""}'] if ps else [])
+            av = ' · '.join(bits) or 'Coming soon'
+            if live:
+                panel = '<h4>Akshara DSC mock tests</h4>' + mock_table(conf, ms, app)
+            else:
+                panel = (f'<p>Akshara DSC mock tests for {esc(post["name"])} are coming soon, in the same All-in-One Pass.</p>'
+                         + urgent_note(f'mock tests for AP DSC {post["short"]}'))
+            if ps:
+                panel += ('<h4>Mega DSC 2025 papers as timed mock tests</h4><ol class="qs">' + ''.join(
+                    f'<li class="q"><div class="meta">{esc(p["held"])} · {p["count"]} questions · {dur_text(p)}</div><p>{esc(paper_kw(conf, p))}</p>'
+                    f'<a class="cta" href="{pb}?test={p["id"]}">Start the mock test</a>'
+                    + (f'<a class="cta alt" href="{pb}?practice={p["id"]}">Practise with answers</a>' if app else f'<a class="cta alt" href="{base}papers/{p["slug"]}.html">Read the paper</a>')
+                    + '</li>' for p in ps) + '</ol>')
+            panel += f'<p><a href="{pb}{post["slug"]}.html">Everything for {esc(post["short"])}: pattern, papers and subjects →</a></p>'
+            out += (f'<details class="pdet" id="mock-{post["slug"]}"><summary class="ptile{" soon" if av == "Coming soon" else ""}"><b>{esc(post["name"])}</b>'
+                    f'<span class="pt-te" lang="te">{esc(post["te"])}</span><span class="pt-m">{esc(av)}</span></summary><div class="ppanel">{panel}</div></details>')
         out += '</div>'
     return out
 
@@ -8615,7 +8661,7 @@ def mock_page(conf, papers, questions):
         return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
                                 [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + '<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>'
+            + ('<h2>Real previous papers as mock tests</h2><ol class="qs">' + rows + '</ol>' if rows else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>') +

@@ -433,7 +433,8 @@ async def main():
         if 'Sankalpa EPFO' not in epm or '?buy=mock' in epm or '₹199' in epm: errors.append('upsc-epfo/mock-test.html: should sell Sankalpa EPFO through the All-in-One Pass, with no separate price')   # Sankalpa EPFO live since 16 Nov 2026 (was "coming soon")
         dsm = open(os.path.join(SITE, 'ap-dsc', 'mock-test.html'), encoding='utf-8').read()   # Akshara DSC (AP DSC test series), live since 17 Nov 2026
         if 'Akshara DSC' not in dsm or '?buy=mock' in dsm: errors.append('ap-dsc/mock-test.html: should show the Akshara DSC series in the All-in-One Pass')
-        if dsm.count('class="mtrack"') != 2: errors.append('ap-dsc/mock-test.html: should show one box per post (SGT, SA Social Studies)')
+        if dsm.count('class="pdet"') != 16 or dsm.count('bk-dscmk-sass-1') < 1 or 'id="mock-sa-social-studies"' not in dsm:   # post tiles on the mock page (Anil, 17 Nov 2026)
+            errors.append('ap-dsc/mock-test.html: should show the 16 post tiles, each opening its own tests')
         dsh = open(os.path.join(SITE, 'ap-dsc', 'index.html'), encoding='utf-8').read()   # one tile per AP DSC post (Anil, 17 Nov 2026)
         _npt = len(_re.findall(r'class="ptile(?: soon)?"', dsh))
         if _npt != 16: errors.append(f'ap-dsc: {_npt} post tiles, expected 16')
