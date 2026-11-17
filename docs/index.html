@@ -913,7 +913,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
   <section class="wrap section hub-figs">
     <div class="figures figs6">
       <div class="figure"><div class="v">26,508</div><div class="k" data-i18n="f1">Previous-year questions</div></div>
-      <div class="figure"><div class="v">4,755</div><div class="k" data-i18n="f5">Mock test questions in our test series</div></div>
+      <div class="figure"><div class="v">5,075</div><div class="k" data-i18n="f5">Mock test questions in our test series</div></div>
       <div class="figure fig-goal"><div class="v" data-i18n="g1">1 lakh</div><div class="k" data-i18n="g2">Our goal: 1,00,000 PYQs under one roof</div>
         <div class="goalbar" role="img" aria-label="26,508 of 1,00,000 PYQs so far"><i style="width:26.5%"></i></div>
         <div class="k goal-k" data-i18n="g3">26,508 done so far · 27%</div></div>
@@ -1420,7 +1420,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
-      if(pt){ qs = qs.filter(q=>pt[2].includes(q.s)); pname = pt[1]; }
+      if(pt){ qs = qs.filter(q=>pt[2].includes(q.s) && (!pt[3] || pt[3].includes(q.t))); pname = pt[1]; }   // pt[3]: only these topics (Akshara DSC SA Social: content vs methodology)
       mins = (part && mm.pmins && mm.pmins[part]) || Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part: its real section limit (bank exams: 20 min) or its share of the full time
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");

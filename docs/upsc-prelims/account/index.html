@@ -1364,7 +1364,7 @@ async function startMock(id, part, mode){   // mode "practice": check each answe
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
-      if(pt){ qs = qs.filter(q=>pt[2].includes(q.s)); pname = pt[1]; }
+      if(pt){ qs = qs.filter(q=>pt[2].includes(q.s) && (!pt[3] || pt[3].includes(q.t))); pname = pt[1]; }   // pt[3]: only these topics (Akshara DSC SA Social: content vs methodology)
       mins = (part && mm.pmins && mm.pmins[part]) || Math.max(1, Math.round(mm.mins * qs.length / r.questions.length));   // a part: its real section limit (bank exams: 20 min) or its share of the full time
     }
     else if(part==="ari" || part==="rea") qs = qs.filter(q=>q.s===part); else if(part==="gs") qs = qs.filter(q=>q.s!=="ari" && q.s!=="rea");
