@@ -2721,7 +2721,7 @@ def exam_confs():
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            eyebrow='APPSC Group-II · Prelims (Screening) &amp; Mains · 2019–2025',
            # Group-II Micro-Syllabus book (added 29 Oct 2026) removed from the site 17 Nov 2026 (Anil: "remove micro syllabus of group-2 from website")
-           notes_title='Study material for APPSC Group-II',
+           notes_title='Study material: all Learn with Anil books',   # Anil, 17 Nov 2026: every book here (ALL_BOOKS_EXAMS), Group-II books first
            notes_seo=('APPSC Group 2 Study Material 2026 (Notification 37/2026) – Books with Previous Questions | Learn with Anil',
                       'Books by Jupudi Anil Kumar for APPSC Group-II (Notification 37/2026): History and Culture of Andhra Pradesh (all 207 APPSC AP history questions), '
                       'the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), Public Administration and Governance, Ethics and Laws, '
@@ -3513,6 +3513,7 @@ def main():
     os.makedirs(os.path.join(DIST, 'site')); os.makedirs(os.path.join(DIST, 'artifact'))
     open(os.path.join(DIST, 'site', 'anil.jpg'), 'wb').write(photo_bytes)
     all_pages = {}
+    EXAM_LABEL.update({c['id']: next(x for x in (c['name'], c.get('seo') or '', c['short']) if x and len(x) <= 24) if len(c['short']) <= 24 else c['short'] for c, _, _ in loaded})
 
     for conf, papers, questions in loaded:
         is_root = conf['dir'] == ''
@@ -3526,7 +3527,13 @@ def main():
         # Anil, 16 Nov 2026: "only relevant books in relevant exam boxs": each exam's Study Material shows only its own books
         # (replaces 8 Nov "keep all the books that are available with us"; the Group-II page, shared with the start page, too)
         mine = lambda b: conf['id'] in b['exams'] if b.get('exams') else conf['id'] in NOTES_EXAMS
-        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])]) for b in notes if mine(b)]
+        # Anil, 17 Nov 2026: "in this study material column add all books that were developed ... in future also": the start page
+        # (APPSC Group-II) lists EVERY book in src/notes.json, its own books first, the others tagged with the exam they are for.
+        # A new book added to notes.json shows up here automatically; the other exams' pages still show only their own books.
+        allb = conf['id'] in ALL_BOOKS_EXAMS
+        ordered = [b for b in notes if mine(b)] + ([b for b in notes if not mine(b)] if allb else [])
+        enotes = [dict(b, cover=upath(b['cover']), samples=[upath(x) for x in b.get('samples', [])],
+                       **({'own': mine(b), 'forx': book_for(b)} if allb else {})) for b in ordered]
         emains = mains_kit(conf)
         for q in questions:
             if q['id'] in videos and is_root: q['v'] = videos[q['id']]
@@ -7514,6 +7521,15 @@ def _ranks_for(short):
 
 
 NOTES_EXAMS = {'appsc-group-2', 'appsc-group-1'}   # Anil, 24 Oct 2026: the APPSC Mains books are shown only on the APPSC Group 1 and Group 2 pages
+ALL_BOOKS_EXAMS = {'appsc-group-2'}   # Anil, 17 Nov 2026: this page (also the start page) shows every Learn with Anil book, now and in future
+EXAM_LABEL = {}   # exam id -> short display name for "For <exam>" on book cards; filled in build() from the loaded exams
+
+
+def book_for(b):
+    """The exams a book is for, as short display names (cards and filter chips on the all-books Study Material page)."""
+    ids = b.get('exams') or sorted(NOTES_EXAMS)
+    if set(ids) == {'appsc-group-1', 'appsc-group-2'}: return ['APPSC Group-I & II']
+    return list(dict.fromkeys(EXAM_LABEL.get(i, i) for i in ids))
 
 # APPSC Group-I Mains · Answer Writing Tool Kit (Anil, 26 Oct 2026): one PDF book per Mains paper (Papers I-IV) with every
 # previous question of 2020, 2023 and 2025 sorted by syllabus part, and practice questions on each part. Part of the ₹149
