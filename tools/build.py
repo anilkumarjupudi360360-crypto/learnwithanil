@@ -4146,19 +4146,20 @@ def exam_news(days=21):
     return items, d.get('updated')
 
 
-def hero_new():
-    """The start-page pill: today's exam news, rotating through the latest few items (falls back to HERO_NEW)."""
+def news_id(x):
+    """Stable anchor for one news item on /exam-notifications.html (start-page box rows link straight to it)."""
+    return 'n-' + hashlib.md5((x['date'] + x['short']).encode('utf-8')).hexdigest()[:8]
+
+
+def hero_new(n=4):
+    """Start-page news box: the latest n exam-news items, one line each (Anil, 18 Nov 2026: "make it 3-4 lines").
+    Falls back to the old HERO_NEW site link when src/exam-news.json has nothing recent."""
     items, _ = exam_news()
     if not items: return HERO_NEW
-    top = items[:6]
-    data = json.dumps([[x['tag'], x['short']] for x in top], ensure_ascii=False)
-    return (f'<a class="hero-new" id="heroNews" href="/{NEWS_HUB}#latest" data-news="{esc(data)}" aria-live="polite">'
-            f'<span>{esc(top[0]["tag"])}</span> <em>{esc(top[0]["short"])}</em> <b aria-hidden="true">→</b></a>'
-            '<script>(function(){var a=document.getElementById("heroNews");if(!a)return;var n;try{n=JSON.parse(a.getAttribute("data-news"))}catch(e){return}'
-            'if(!n||n.length<2)return;var i=0,s=a.querySelector("span"),m=a.querySelector("em"),h=0;'
-            'a.addEventListener("mouseenter",function(){h=1});a.addEventListener("mouseleave",function(){h=0});'
-            'setInterval(function(){if(h||document.hidden)return;a.classList.add("fade");setTimeout(function(){i=(i+1)%n.length;s.textContent=n[i][0];m.textContent=n[i][1];'
-            'a.classList.remove("fade")},300)},5000)})();</script>')
+    rows = ''.join(f'<li><a href="/{NEWS_HUB}#{news_id(x)}"><span>{esc(x["tag"])}</span><em>{esc(x["short"])}</em></a></li>'
+                   for x in items[:n])
+    return (f'<div class="hero-news-box" role="region" aria-label="Latest exam news"><div class="hnb-h"><b>Latest exam news</b>'
+            f'<a href="/{NEWS_HUB}#latest">All news <span aria-hidden="true">→</span></a></div><ul>{rows}</ul></div>')
 
 
 def news_latest_html(loaded):
@@ -4172,12 +4173,12 @@ def news_latest_html(loaded):
         host = re.sub(r'^https?://(www\.)?', '', x['url']).split('/')[0]
         via = f' · reported by {esc(x["via"])}' if x.get('via') else ''
         prac = f' · <a href="{pbs[x["exam"]]}">Practise previous papers</a>' if x.get('exam') in pbs else ''
-        rows.append(f'<li><span class="nw-d">{d.strftime("%d %b")}</span><span class="nw-t">{esc(x["tag"])}</span> <b>{esc(x["short"])}</b>'
+        rows.append(f'<li id="{news_id(x)}"><span class="nw-d">{d.strftime("%d %b")}</span><span class="nw-t">{esc(x["tag"])}</span> <b>{esc(x["short"])}</b>'
                     f'<p>{esc(x.get("text") or x["short"])}</p><p class="nw-s">Official website: <a href="{esc(x["url"])}" rel="nofollow noopener" target="_blank">{esc(host)}</a>{via}{prac}</p></li>')
     when = date.fromisoformat(upd).strftime('%d %B %Y') if upd else ''
     return ('<style>.nw-d{display:inline-block;min-width:54px;font-weight:800;color:var(--accent-text)}.nw-t{display:inline-block;font-size:12px;font-weight:800;'
             'text-transform:uppercase;letter-spacing:.04em;border-radius:999px;padding:2px 9px;margin-right:6px;background:var(--accent-soft);color:var(--accent-text)}'
-            '.nh .nw-s{font-size:13.5px}</style>'
+            '.nh .nw-s{font-size:13.5px}.nh li[id]{scroll-margin-top:90px}.nh li:target{outline:2px solid var(--accent);outline-offset:2px}</style>'
             f'<h2 id="latest">Latest exam news</h2><p class="sm">Updated every morning{(" · last update " + when) if when else ""}. New notifications, last dates, '
             'exam dates, admit cards, answer keys and results, collected from the boards\' websites and news reports. Always confirm on the official website.</p>'
             '<ul class="nh">' + ''.join(rows) + '</ul>')
