@@ -1,7 +1,14 @@
 {
   "about": "Daily exam news for the start-page pill and the 'Latest exam news' list on /exam-notifications.html. Not site updates. Refreshed every morning (scheduled task, Anil 17 Nov 2026). Newest first is not required; the build sorts by date. Fields: date (YYYY-MM-DD the news came out), tag (Notification, Admit card, Exam date, Result, Answer key, Last date, Correction window, Notice), short (pill text, under about 80 characters), text (one or two sentences for the list), url (the board's own website), via (news source used, if not the board's site), exam (site exam id, optional, for a Practise link).",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "items": [
+    {
+      "date": "2026-11-17",
+      "tag": "Exam date",
+      "short": "TGPSC AEE (Electrical), R&B Department: CBT on 13 December 2026",
+      "text": "TGPSC has scheduled the computer-based test for Assistant Executive Engineer (Electrical) in the Transport, Roads and Buildings Department (Notification No. 02/G/RB/2026) on 13 December 2026, with forenoon and afternoon sessions. The web note with the schedule is on the TGPSC website.",
+      "url": "https://websitenew.tgpsc.gov.in/"
+    },
     {
       "date": "2026-11-17",
       "tag": "Notice",
@@ -15,6 +22,20 @@
       "short": "APPSC Thanedar (Forest): walking test call letters out",
       "text": "APPSC has released the call letter (memo), the physical fitness certificate and a web note for the walking test for Thanedar in the A.P. Forest Subordinate Service (Notification No. 13/2025).",
       "url": "https://portal-psc.ap.gov.in/Default.aspx"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Result",
+      "short": "TGPSC Assistant Scientist (TGPCB): provisional selection for 1 HH vacancy out",
+      "text": "TGPSC has released the provisional selection notification and the selected candidate's marks for the one hearing-impaired (HH) vacancy of Assistant Scientist (Analyst Grade-II) in the Telangana Pollution Control Board (Notification No. 01/OG/PC/2026).",
+      "url": "https://websitenew.tgpsc.gov.in/"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Notice",
+      "short": "TGPSC Assistant Environmental Engineer (TGPCB): medical board on 18 and 19 Nov",
+      "text": "For Assistant Environmental Engineer posts in the Telangana Pollution Control Board (Notification No. 02/OG/PC/2026), TGPSC has called visually impaired (VH) candidates to the medical board on 18 November and hearing-impaired (HH) candidates on 19 November. Details are in the web note on the TGPSC website.",
+      "url": "https://websitenew.tgpsc.gov.in/"
     },
     {
       "date": "2026-11-15",
