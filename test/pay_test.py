@@ -102,8 +102,7 @@ async def main():
         # 0. TS Police papers are free (Anil, 28 Oct 2026): a test opens without a pass, the bank shows answers, the study tools stay locked
         await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(1200)
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/') or await pg.locator('#payDlg[open]').count(): errors.append('free TS Police paper did not open without a pass')
-        await pg.goto(url + 'ts-police-constable/bank/'); await pg.wait_for_timeout(900)
-        if not await pg.locator('details.ans').count(): errors.append('free TS Police question bank hides the answers')
+        # (the question bank, Smart revision, heatmap and bookmarks pages were removed on 16 Nov 2026: those routes now go to Papers / My Mistakes)
         await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
         if not await pg.locator('[data-act="openpay"]').count(): errors.append('TS Police mistakes notebook open without a pass')
         # 1. a PYQ test without a pass opens the All-in-One Pass checkout, which says it covers every exam
@@ -111,11 +110,8 @@ async def main():
         txt = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
         if not txt: errors.append('no checkout when attempting a PYQ test without a pass')
         elif 'whole website' not in txt or '12 months' not in txt or 'all exams' not in txt: errors.append(f'All-in-One Pass checkout does not say it covers every exam: {txt[:200]!r}')
-        # 1b. the question bank hides answers
-        await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(800)
-        if await pg.locator('details.ans').count() or not await pg.locator('[data-act="openpay"],[data-act="unlockpyq"]').count(): errors.append('question bank shows answers without a pass')
         # 1c. no plan: the study tools and the quiz builder are locked, with a way to buy
-        for view in ('mistakes', 'smart', 'heatmap', 'bookmarks', 'practice'):
+        for view in ('mistakes', 'practice'):
             await pg.goto(url + f'appsc-group-2/{view}/'); await pg.wait_for_timeout(700)
             if not await pg.locator('[data-act="openpay"]').count(): errors.append(f'{view} is open without any plan')
         # 2. a mock without a pass opens the ₹149 All-in-One Pass checkout, which includes Mission Khaki (no mock-only pack any more)
@@ -240,7 +236,7 @@ async def main():
             await q.check('#joinForm [name="ok"]'); await q.click('#joinForm [type="submit"]'); await q.wait_for_timeout(1500)
         state.update(mock=False, pyq=False, trial='expired', calls=[], kind='')
         pg = await fresh_page()
-        await pg.goto(url + 'appsc-group-2/bank/'); await pg.wait_for_timeout(900)
+        await pg.goto(url + 'appsc-group-2/practice/'); await pg.wait_for_timeout(900)   # bank/ page removed 16 Nov 2026; practice/ has the same gate
         await pg.click('[data-act="unlockpyq"]'); await pg.wait_for_timeout(500)
         if not await pg.locator('#joinForm').count(): errors.append('"Register to get the All-in-One Pass" did not open the registration form')
         else:
@@ -248,7 +244,7 @@ async def main():
             await register(pg)
             path = await pg.evaluate('location.pathname')
             t = await pg.inner_text('#payDlg') if await pg.locator('#payDlg[open]').count() else ''
-            if not path.endswith('/bank/'): errors.append(f'after registering from the question bank the student landed on {path}')
+            if not path.endswith('/practice/'): errors.append(f'after registering from the topic-wise quiz page the student landed on {path}')
             if 'You are registered' not in t or not await pg.locator('#payDlg[open] [data-act="paybuy"]').count(): errors.append(f'no checkout with a Pay button after registering from the question bank: {t[:120]!r}')
             await pg.go_back(); await pg.wait_for_timeout(500)
             if await pg.locator('#joinForm').count(): errors.append('Back after registering reopened the registration form')
