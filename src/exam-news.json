@@ -3,6 +3,15 @@
   "updated": "2026-11-18",
   "items": [
     {
+      "date": "2026-11-18",
+      "tag": "Last date",
+      "short": "KEA FDA/SDA 2026 (5,431 posts): apply online by 25 Nov",
+      "text": "The Karnataka Examinations Authority's online applications for FDA, SDA and other posts (5,431 vacancies across the RPC and Kalyana Karnataka cadres) close on 25 November; the fee can be paid till 26 November. The written exams are scheduled for 8, 9, 10, 16 and 17 January 2027.",
+      "url": "https://cetonline.karnataka.gov.in/kea/",
+      "via": "Careers360",
+      "exam": "karnataka-fda-sda"
+    },
+    {
       "date": "2026-11-17",
       "tag": "Exam date",
       "short": "TGPSC AEE (Electrical), R&B Department: CBT on 13 December 2026",
@@ -54,6 +63,15 @@
       "exam": "appsc-group-1"
     },
     {
+      "date": "2026-11-13",
+      "tag": "Notification",
+      "short": "MPSC Group-C 2026: posts raised to 16,717; apply till 27 Nov, prelims 24 Jan 2027",
+      "text": "MPSC has added new cadres to the Group-C Services Combined Preliminary Examination 2026, taking the vacancies to 16,717. The online window has reopened for new applicants and for cadre preferences until 27 November, and the prelims has moved from 3 January to 24 January 2027.",
+      "url": "https://mpsc.gov.in/",
+      "via": "CareerIndia",
+      "exam": "mpsc-group-c"
+    },
+    {
       "date": "2026-11-12",
       "tag": "Admit card",
       "short": "SSC GD Constable 2026: PET/PST admit cards out",
@@ -61,6 +79,15 @@
       "url": "https://ssc.gov.in/",
       "via": "CareerIndia",
       "exam": "ssc-gd"
+    },
+    {
+      "date": "2026-11-11",
+      "tag": "Last date",
+      "short": "UPSC CSE 2026 Mains qualifiers: fill the DAF-II by 25 Nov (6 PM)",
+      "text": "Candidates who cleared the Civil Services (Main) Examination 2026 must complete the Detailed Application Form-II on the UPSC online portal; the window runs from 11 November to 25 November, 6 PM. It must be submitted even if no details have changed.",
+      "url": "https://upsc.gov.in/",
+      "via": "Business Today",
+      "exam": "upsc-cse"
     },
     {
       "date": "2026-11-10",
@@ -79,6 +106,33 @@
       "url": "https://www.ibps.in/",
       "via": "Careers360",
       "exam": "ibps-rrb"
+    },
+    {
+      "date": "2026-11-09",
+      "tag": "Correction window",
+      "short": "TNPSC Group 4 2026: edit window 9–11 Nov; written exam on 10 Jan 2027",
+      "text": "TNPSC opened the correction window for Group 4 (Combined Civil Services Examination-IV) applications from 9 to 11 November. The written exam is scheduled for 10 January 2027, 9:30 am to 12:30 pm, and hall tickets are due about 10–14 days before it.",
+      "url": "https://www.tnpsc.gov.in/",
+      "via": "Careers360",
+      "exam": "tnpsc-group-4"
+    },
+    {
+      "date": "2026-11-04",
+      "tag": "Answer key",
+      "short": "SSC CGL 2026 Tier-I: tentative answer key and response sheets out",
+      "text": "SSC published the tentative answer key and candidates' response sheets for the CGL 2026 Tier-I computer-based exam held from 30 September, with a short window to challenge answers. The Tier-I result is awaited.",
+      "url": "https://ssc.gov.in/",
+      "via": "Careers360",
+      "exam": "ssc-cgl"
+    },
+    {
+      "date": "2026-11-02",
+      "tag": "Exam date",
+      "short": "RRB NTPC (UG) typing skill test on 27 Nov for typist posts",
+      "text": "The RRBs have scheduled the computer-based typing skill test for candidates shortlisted for Accounts Clerk cum Typist and Junior Clerk cum Typist (CEN 07/2025) on 27 November (tentative). The exam city slip comes about 10 days earlier and the e-call letter about 4 days before the test.",
+      "url": "https://www.rrbcdg.gov.in/",
+      "via": "Physics Wallah",
+      "exam": "rrb-ntpc"
     }
   ]
 }

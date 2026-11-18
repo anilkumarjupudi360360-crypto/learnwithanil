@@ -4156,8 +4156,18 @@ def hero_new(n=4):
     Falls back to the old HERO_NEW site link when src/exam-news.json has nothing recent."""
     items, _ = exam_news()
     if not items: return HERO_NEW
+    # Anil, 18 Nov 2026: "not only for ap and tg exams...do it for all exams in webiste". The box takes the newest item of each
+    # board (board = the official site's host), so its lines come from different boards; it fills up with the next newest only
+    # when fewer boards have news.
+    def board(x): return re.sub(r'^https?://(www\.)?', '', x['url']).split('/')[0].lower()
+    pick, seen = [], set()
+    for x in items:
+        if board(x) not in seen: pick.append(x); seen.add(board(x))
+        if len(pick) == n: break
+    pick += [x for x in items if x not in pick][:n - len(pick)]
+    pick.sort(key=lambda x: x['date'], reverse=True)
     rows = ''.join(f'<li><a href="/{NEWS_HUB}#{news_id(x)}"><span>{esc(x["tag"])}</span><em>{esc(x["short"])}</em></a></li>'
-                   for x in items[:n])
+                   for x in pick)
     return (f'<div class="hero-news-box" role="region" aria-label="Latest exam news"><div class="hnb-h"><b>Latest exam news</b>'
             f'<a href="/{NEWS_HUB}#latest">All news <span aria-hidden="true">→</span></a></div><ul>{rows}</ul></div>')
 

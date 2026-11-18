@@ -763,6 +763,20 @@ async def main():
         for _f in _glob.glob(os.path.join(SITE, '*', 'pyqs.html')):   # the PYQs page's paper list too (Anil, 18 Nov 2026)
             _t = open(_f, encoding='utf-8').read()
             if 'papers in this course' in _t and 'tcov tc-pyq' not in _t: errors.append(f'{os.path.relpath(_f, SITE)}: paper list without PYQ covers / Attempt / Resume')
+        # start-page exam news box: lines from different boards, not only AP/TG (Anil, 18 Nov 2026: "do it for all exams in webiste")
+        _nf = os.path.join(ROOT, 'src', 'exam-news.json')
+        if os.path.exists(_nf):
+            import json as _json, datetime as _dt, html as _h
+            _cut = (_dt.date.today() - _dt.timedelta(days=21)).isoformat()
+            _its = [x for x in _json.load(open(_nf, encoding='utf-8')).get('items', []) if x.get('date', '') >= _cut]
+            _host = lambda u: re.sub(r'^https?://(www\.)?', '', u).split('/')[0].lower()
+            _want = min(4, len({_host(x['url']) for x in _its}))
+            _box = re.search(r'<div class="hero-news-box".*?</ul></div>', open(os.path.join(SITE, 'index.html'), encoding='utf-8').read(), re.S)
+            if _its and not _box: errors.append('start page: exam news box missing')
+            elif _box:
+                _by = {_h.unescape(x['short']): _host(x['url']) for x in _its}
+                _got = {_by.get(_h.unescape(e)) for e in re.findall(r'<em>([^<]*)</em>', _box.group(0))}
+                if len(_got - {None}) < _want: errors.append(f'start page: exam news box shows {len(_got)} boards, want {_want} different boards')
         _g2 = open(os.path.join(SITE, 'appsc-group-2', 'mock-test.html'), encoding='utf-8').read()
         if _g2.count('tcov tc-mock') != 10 or 'data-tk="mock:bk-g2mk-1"' not in _g2 or '&amp;resume=1' not in _g2:
             errors.append('appsc-group-2/mock-test.html: expected 10 mock covers (live and coming soon) with Attempt/Resume rows')
