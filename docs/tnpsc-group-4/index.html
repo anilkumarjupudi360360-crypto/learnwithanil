@@ -215,7 +215,15 @@ main{padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 .hero-new{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:5px 14px 5px 5px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;font-size:14px;font-weight:600;backdrop-filter:blur(6px)}
 .hero-new span{background:linear-gradient(135deg,#fbbf24,#f97316);color:#1f1300;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 9px;flex-shrink:0}
 .hero-new:hover{background:rgba(255,255,255,.16)}
-.hero-new em{font-style:normal;line-height:1.35;transition:opacity .3s}.hero-new span{transition:opacity .3s}.hero-new.fade em,.hero-new.fade span{opacity:0}
+.hero-news-box{align-self:stretch;max-width:640px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);padding:10px 12px 8px;color:#fff}
+.hnb-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 4px 6px;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+.hnb-h b{font-weight:800;color:#fde68a}.hnb-h a{color:#fff;text-decoration:none;font-weight:700;text-transform:none;letter-spacing:0;font-size:13.5px;opacity:.9}.hnb-h a:hover{opacity:1;text-decoration:underline}
+.hero-news-box ul{list-style:none;margin:0;padding:0}
+.hero-news-box li a{display:flex;align-items:center;gap:10px;padding:6px 4px;border-top:1px solid rgba(255,255,255,.12);color:#fff;text-decoration:none;font-size:14px;font-weight:600;line-height:1.35}
+.hero-news-box li a:hover em{text-decoration:underline}
+.hero-news-box li span{flex:0 0 auto;background:linear-gradient(135deg,#fbbf24,#f97316);color:#1f1300;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:2px 8px}
+.hero-news-box li em{font-style:normal;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:640px){.hero-news-box li a{align-items:flex-start}.hero-news-box li span{margin-top:1px}.hero-news-box li em{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}}
 .hero-stats{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:4px;color:var(--band-muted);font-size:14.5px}
 .hero-stats span{display:flex;align-items:baseline;gap:6px}
 .hero-stats b{font-family:var(--f-display);font-size:24px;font-weight:800;color:#fff}
