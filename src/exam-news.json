@@ -1,7 +1,22 @@
 {
   "about": "Daily exam news for the start-page pill and the 'Latest exam news' list on /exam-notifications.html. Not site updates. Refreshed every morning (scheduled task, Anil 17 Nov 2026). Newest first is not required; the build sorts by date. Fields: date (YYYY-MM-DD the news came out), tag (Notification, Admit card, Exam date, Result, Answer key, Last date, Correction window, Notice), short (pill text, under about 80 characters), text (one or two sentences for the list), url (the board's own website), via (news source used, if not the board's site), exam (site exam id, optional, for a Practise link).",
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "items": [
+    {
+      "date": "2026-11-18",
+      "tag": "Result",
+      "short": "SBI Clerk 2026: prelims result declared; mains call letters out",
+      "text": "State Bank of India has declared the result of the Junior Associate (Customer Support & Sales) preliminary exam. Shortlisted candidates can check their status and download the mains admit card from the SBI careers page; the admit card shows the mains date and centre.",
+      "url": "https://sbi.co.in/web/careers/",
+      "via": "Careers360"
+    },
+    {
+      "date": "2026-11-18",
+      "tag": "Answer key",
+      "short": "TGPSC DEO & Gazetted HM Grade-I: key out; objections till 21 Nov",
+      "text": "TGPSC has posted the preliminary key for the Deputy Educational Officer / Gazetted Headmaster Grade-I exams held on 12 and 13 November (Notification 03/G/SE/2026). Objections to the key can be raised online from 18 to 21 November.",
+      "url": "https://websitenew.tgpsc.gov.in/"
+    },
     {
       "date": "2026-11-18",
       "tag": "Last date",
@@ -10,6 +25,32 @@
       "url": "https://cetonline.karnataka.gov.in/kea/",
       "via": "Careers360",
       "exam": "karnataka-fda-sda"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Exam date",
+      "short": "UPSC CSE 2026 interviews from 7 Dec to 12 Feb; schedule out for 2,526",
+      "text": "UPSC has published the personality test schedule for the 2,526 candidates who cleared the Civil Services (Main) Examination 2026. Interviews run from 7 December 2026 to 12 February 2027 at Dholpur House, New Delhi, and the DAF-II must still be filled by 25 November.",
+      "url": "https://upsc.gov.in/",
+      "via": "CareerIndia",
+      "exam": "upsc-cse"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Answer key",
+      "short": "SSC CHSL 2025 Tier-II: final answer keys and marks released",
+      "text": "SSC has put up the final answer keys, response sheets and marks for the CHSL 2025 Tier-II exam. Candidates can see them by logging in on ssc.gov.in for a limited period.",
+      "url": "https://ssc.gov.in/",
+      "via": "CareerIndia",
+      "exam": "ssc-chsl"
+    },
+    {
+      "date": "2026-11-17",
+      "tag": "Admit card",
+      "short": "KEA KREIS teachers: hall tickets out; RPC exams on 22–30 Nov",
+      "text": "KEA has released hall tickets for the RPC-cadre teacher recruitment exams of the Karnataka Residential Educational Institutions Society (KREIS). The papers are held on 22, 27, 29 and 30 November.",
+      "url": "https://cetonline.karnataka.gov.in/kea/",
+      "via": "Adda247"
     },
     {
       "date": "2026-11-17",
@@ -45,6 +86,13 @@
       "short": "TGPSC Assistant Environmental Engineer (TGPCB): medical board on 18 and 19 Nov",
       "text": "For Assistant Environmental Engineer posts in the Telangana Pollution Control Board (Notification No. 02/OG/PC/2026), TGPSC has called visually impaired (VH) candidates to the medical board on 18 November and hearing-impaired (HH) candidates on 19 November. Details are in the web note on the TGPSC website.",
       "url": "https://websitenew.tgpsc.gov.in/"
+    },
+    {
+      "date": "2026-11-16",
+      "tag": "Admit card",
+      "short": "OPSC: admit cards out for Asst Public Prosecutor and Veterinary Surgeon exams",
+      "text": "OPSC has opened the download of admission certificates for the written exams for Assistant Public Prosecutor (Advt. 09 of 2026-27) and Veterinary Assistant Surgeon (Advt. 04 of 2026-27). It has also published the preliminary exam programme for Assistant Executive Engineer (Civil), Advt. 07 of 2026-27.",
+      "url": "https://www.opsc.gov.in/"
     },
     {
       "date": "2026-11-15",
