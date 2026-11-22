@@ -742,6 +742,126 @@ def FAQ_GPS(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- Karnataka State Police (KSP): PSI (Civil) and Police Constable (Civil, CAR/DAR) ----------
+# Anil, 22 Nov 2026: "Add pyqs for karnataka police SI & constable". KEA (Karnataka Examinations Authority) conducts the KSP written exams and publishes
+# the question booklets with its key answers (cetonline.karnataka.gov.in/kea, "previous year question papers with key answers", QP2023/QP2024/QP2026).
+# All six papers are KEA's own scanned booklets, version A1, printed in Kannada and English (both shown):
+#   PSI (Civil) 545 posts re-examination, Paper-2, 23 Jan 2024 (DE2023GA; options (A)-(D)), KEA final key (1 Mar 2024): Q94 grace (left out), Q42 A or C.
+#   PSI (Civil) 402 posts, Paper-2, 3 Oct 2024 (PD2209P224), KEA final key (6 Nov 2024): Q6, Q27, Q28 grace; Q12 (3/4), Q75 (1/2/4), Q81 (2/3), Q85 (2/3).
+#   Civil Police Constable 2026, RPC (CPCAM2826) and KK (CPCBA2826), 2 Aug 2026: KEA key of 3 Aug as revised on 7 Aug 2026
+#     (RPC Q1, Q39, Q66 grace; Q23 -> 3, Q88 -> 2. KK Q19 1/4, Q45 3/4; Q62 -> 3, Q63 -> 2).
+#   Armed Police Constable (CAR/DAR) 2026, RPC (CDPAM6926) and KK (CDPBA6926), 6 Sep 2026: KEA final key of 17 Sep 2026 (KK Q64 3/4).
+# Work files (container): /home/claude/kp (SPEC.md, keys/*.json, work/*.json, tools/merge.py). Paper-1 of the PSI exam is descriptive and is not here.
+KP_BLURB_PC = ('General Knowledge: 100 questions, 100 marks, 90 minutes, in Kannada and English; a quarter mark is deducted for each wrong answer.')
+KP_BLURB_PSI24 = ('Paper-2 General Studies: 100 objective questions, 150 marks (1.5 marks each), 90 minutes, in Kannada and English. '
+                  '(Paper-1, the descriptive paper, is not part of this set.)')
+KP_BLURB_PSI23 = ('Paper-2 General Studies: 100 objective questions, 90 minutes, in Kannada and English. (Paper-1, the descriptive paper, is not part of this set.)')
+def _kp(pid, year, stage, short, title, notif, held, key, file_, slug, kwname, kn_paper, blurb):
+    return dict(id=pid, file=file_, year=year, stage=stage, short=short, title=title, notif=notif, held=held, key=key, fmt='mcq', slug=slug,
+                kwname=kwname, kn_paper=kn_paper, blurb=blurb, mins=90)
+KPSI_PAPERS = [
+  _kp('kpo24', 2024, 'PSI (Civil) 402 posts · Paper-2', 'PSI Oct 2024 · P2', 'Karnataka PSI 2024 (402 posts) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil) recruitment, 402 posts, written exam conducted by KEA · version A1, subject code PD2209P224',
+      '3 October 2024', "KEA's final key (6 November 2024)", 'karnataka-psi-2024-paper-2.txt',
+      'karnataka-psi-2024-paper-2-general-studies-question-paper-with-answers', 'Karnataka PSI 2024 Paper 2 General Studies', 'ಪತ್ರಿಕೆ-2 ಸಾಮಾನ್ಯ ಅಧ್ಯಯನ', KP_BLURB_PSI24),
+  _kp('kpj24', 2024, 'PSI (Civil) 545 posts re-exam · Paper-2', 'PSI Jan 2024 · P2', 'Karnataka PSI Re-exam 2024 (545 posts) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil) recruitment, 545 posts, re-examination conducted by KEA · version A1, paper code DE2023GA',
+      '23 January 2024', "KEA's final key answers (1 March 2024)", 'karnataka-psi-re-exam-2024-paper-2.txt',
+      'karnataka-psi-re-exam-2024-545-posts-paper-2-question-paper-with-answers', 'Karnataka PSI re-exam 2024 (545 posts) Paper 2', 'ಮರು ಪರೀಕ್ಷೆ ಪತ್ರಿಕೆ-2', KP_BLURB_PSI23),
+]
+KPC_PAPERS = [
+  _kp('kcr26', 2026, 'Civil PC 2026 · RPC', 'Civil PC 2026 · RPC', 'KSP Civil Police Constable 2026 (RPC): General Knowledge',
+      'KSP Civil Police Constable recruitment 2026, rest of Karnataka (RPC, 3,395 posts), written exam conducted by KEA · version A1, subject code CPCAM2826',
+      '2 August 2026', "KEA's key as revised on 7 August 2026", 'ksp-civil-pc-2026-rpc.txt',
+      'ksp-civil-police-constable-2026-rpc-question-paper-with-answers', 'KSP Civil Police Constable 2026 RPC', 'ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ 2026 (ಉಳಿಕೆ ಮೂಲ ವೃಂದ)', KP_BLURB_PC),
+  _kp('kck26', 2026, 'Civil PC 2026 · KK', 'Civil PC 2026 · KK', 'KSP Civil Police Constable 2026 (Kalyana Karnataka): General Knowledge',
+      'KSP Civil Police Constable recruitment 2026, Kalyana Karnataka (KK, 596 posts), written exam conducted by KEA · version A1, subject code CPCBA2826',
+      '2 August 2026', "KEA's key as revised on 7 August 2026", 'ksp-civil-pc-2026-kk.txt',
+      'ksp-civil-police-constable-2026-kalyana-karnataka-question-paper-with-answers', 'KSP Civil Police Constable 2026 Kalyana Karnataka', 'ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ 2026 (ಕಲ್ಯಾಣ ಕರ್ನಾಟಕ)', KP_BLURB_PC),
+  _kp('kar26', 2026, 'CAR/DAR PC 2026 · RPC', 'CAR/DAR 2026 · RPC', 'KSP Armed Police Constable (CAR/DAR) 2026 (RPC): General Knowledge',
+      'KSP Armed Police Constable (CAR/DAR) recruitment 2026, rest of Karnataka (RPC), written exam conducted by KEA · version A1, subject code CDPAM6926',
+      '6 September 2026', "KEA's final key (17 September 2026)", 'ksp-car-dar-pc-2026-rpc.txt',
+      'ksp-armed-police-constable-car-dar-2026-rpc-question-paper-with-answers', 'KSP Armed Police Constable CAR DAR 2026 RPC', 'ಸಶಸ್ತ್ರ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ (ಸಿಎಆರ್/ಡಿಎಆರ್) 2026 (ಉಳಿಕೆ ಮೂಲ ವೃಂದ)', KP_BLURB_PC),
+  _kp('kak26', 2026, 'CAR/DAR PC 2026 · KK', 'CAR/DAR 2026 · KK', 'KSP Armed Police Constable (CAR/DAR) 2026 (Kalyana Karnataka): General Knowledge',
+      'KSP Armed Police Constable (CAR/DAR) recruitment 2026, Kalyana Karnataka (KK), written exam conducted by KEA · version A1, subject code CDPBA6926',
+      '6 September 2026', "KEA's final key (17 September 2026)", 'ksp-car-dar-pc-2026-kk.txt',
+      'ksp-armed-police-constable-car-dar-2026-kalyana-karnataka-question-paper-with-answers', 'KSP Armed Police Constable CAR DAR 2026 Kalyana Karnataka', 'ಸಶಸ್ತ್ರ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ (ಸಿಎಆರ್/ಡಿಎಆರ್) 2026 (ಕಲ್ಯಾಣ ಕರ್ನಾಟಕ)', KP_BLURB_PC),
+]
+KP_SUBJECTS = [
+  ('his', 'History & Culture', 'history-culture', ['Ancient India', 'Medieval India', 'Modern India & Freedom Struggle', 'Karnataka History', 'Art & Culture']),
+  ('geo', 'Geography & Environment', 'geography-environment', ['Indian Geography', 'Karnataka Geography', 'World Geography', 'Environment & Ecology']),
+  ('pol', 'Indian Constitution & Polity', 'indian-constitution-polity', ['Constitution & Rights', 'Union & State Government', 'Judiciary & Constitutional Bodies',
+                                                                        'Panchayat Raj & Local Bodies', 'Laws, Police & Society']),
+  ('eco', 'Economy', 'economy', ['Indian Economy', 'Karnataka Economy', 'Money, Banking & Budget', 'Schemes & Development']),
+  ('sci', 'General Science & Technology', 'general-science', ['Physics', 'Chemistry', 'Biology', 'Science & Technology']),
+  ('cur', 'Current Affairs', 'current-affairs', ['National', 'Karnataka', 'International & Sports', 'Awards, Books & Persons']),
+  ('apt', 'Mental Ability & Arithmetic', 'mental-ability-arithmetic', ['Arithmetic', 'Reasoning', 'Series & Puzzles', 'Data Interpretation']),
+  ('comp', 'Computer Knowledge', 'computer-knowledge', ['Computer Fundamentals', 'Internet, Networking & Security']),
+]
+KP_SUBJ_KN = {'his': 'ಇತಿಹಾಸ ಮತ್ತು ಸಂಸ್ಕೃತಿ', 'geo': 'ಭೂಗೋಳ ಮತ್ತು ಪರಿಸರ', 'pol': 'ಭಾರತದ ಸಂವಿಧಾನ ಮತ್ತು ರಾಜ್ಯಶಾಸ್ತ್ರ', 'eco': 'ಅರ್ಥಶಾಸ್ತ್ರ',
+              'sci': 'ಸಾಮಾನ್ಯ ವಿಜ್ಞಾನ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ', 'cur': 'ಪ್ರಚಲಿತ ವಿದ್ಯಮಾನಗಳು', 'apt': 'ಮಾನಸಿಕ ಸಾಮರ್ಥ್ಯ ಮತ್ತು ಅಂಕಗಣಿತ', 'comp': 'ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ'}
+
+
+def FAQ_KP(kind):
+    psi = kind == 'SI'
+    def f(total, npapers):
+        if psi:
+            return [
+              ('Where can I get Karnataka PSI previous year question papers with answers?',
+               f'This page has {total} questions from {npapers} papers of the Karnataka State Police (KSP) Police Sub-Inspector (Civil) recruitment: Paper-2 '
+               'General Studies of the 402-post exam held on 3 October 2024 and of the 545-post re-examination held on 23 January 2024. Both are KEA\'s own '
+               'question booklets (version A1), with the answer from KEA\'s final key and an explanation in Kannada and English.'),
+              ('Are the answers official?',
+               'Yes. Every answer is from the final key answers published by the Karnataka Examinations Authority (KEA), which conducted both written exams for '
+               'KSP. Questions KEA deleted (grace marks) are left out; where KEA accepted more than one option, all of them are marked correct. The explanations '
+               'are written by Learn with Anil.'),
+              ('What is the Karnataka PSI written exam pattern?',
+               'The written exam has two papers. Paper-1 is descriptive (essay, précis and translation) and is not on this site. Paper-2 General Studies has '
+               '100 objective questions on general knowledge, current affairs and mental ability; in the 2024 exam it carried 150 marks (1.5 marks a question) '
+               'with 90 minutes to answer, printed in Kannada and English.'),
+              ('Is the Karnataka PSI question paper available in Kannada?',
+               'Yes. Tap ಕನ್ನಡ at the top of the page. Every question is shown in Kannada and English exactly as KEA printed them, and the explanations are '
+               'in both languages too.'),
+              ('Is there a Karnataka PSI mock test?',
+               'Yes. Each paper can be taken as a full 100-question mock test with a 90-minute timer, and the sectional tests take all the previous questions '
+               'of one subject, such as History or Mental Ability. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
+              ('Is there a Karnataka PSI notification in 2026?',
+               'Not yet (as of 22 November 2026): no new KSP Police Sub-Inspector notification had been issued. When it comes, the written exam is expected to '
+               'be conducted by KEA again, as in 2024.'),
+              ('Do I need to register?',
+               'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
+               'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+            ]
+        return [
+          ('Where can I get Karnataka Police Constable previous year question papers with answers?',
+           f'This page has {total} questions from {npapers} papers of the 2026 Karnataka State Police (KSP) constable recruitment: the Civil Police '
+           'Constable papers of 2 August 2026 (rest of Karnataka and Kalyana Karnataka) and the Armed Police Constable (CAR/DAR) papers of 6 September '
+           '2026 (rest of Karnataka and Kalyana Karnataka). All four are KEA\'s own question booklets (version A1), with the answer from KEA\'s key and an '
+           'explanation in Kannada and English.'),
+          ('Are the answers official?',
+           'Yes. The Civil Police Constable answers are from KEA\'s key of 3 August 2026 as revised on 7 August 2026 after candidates\' objections, and the '
+           'CAR/DAR answers are from KEA\'s final key of 17 September 2026. Questions KEA deleted (grace marks) are left out; where KEA accepted two options, '
+           'both are marked correct. The explanations are written by Learn with Anil.'),
+          ('What is the KSP constable written exam pattern?',
+           'One General Knowledge paper on an OMR sheet: 100 questions, 100 marks, 90 minutes, printed in Kannada and English, with a quarter mark deducted '
+           'for each wrong answer. In 2026 candidates were shortlisted from the written exam for the physical tests (PST and endurance test).'),
+          ('Is the KSP constable question paper available in Kannada?',
+           'Yes. Tap ಕನ್ನಡ at the top of the page. Every question is shown in Kannada and English exactly as KEA printed them, and the explanations are '
+           'in both languages too.'),
+          ('Is there a Karnataka Police Constable mock test?',
+           'Yes. Each paper can be taken as a full 100-question mock test with the real 90-minute limit, and the sectional tests take all the previous '
+           'questions of one subject, such as Current Affairs or Mental Ability. Answers and explanations open with the ₹149 All-in-One Pass, which covers '
+           'every exam on the site.'),
+          ('Which constable recruitments are these papers from?',
+           'KSP\'s 2026 Civil Police Constable recruitment (3,991 posts: 3,395 rest of Karnataka and 596 Kalyana Karnataka) and the 2026 Armed Police '
+           'Constable (CAR/DAR) recruitment. KEA conducted both written exams; the KSRP, IRB and KSISF constable exam is separate and is not on this page yet.'),
+          ('Do I need to register?',
+           'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
+           'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+        ]
+    return f
+
+
 # ---------- MPSC Group-C (Maharashtra Group-C Services Combined Preliminary Examination) ----------
 # Anil, 15 Nov 2026: "Maharashtra: MPSC Group C (apply till 27 November; prelims 24 January 2027) ... add these exams pyqs also and other details also ...
 # one exam at a time". Advt. No. 017/2026 of 25 June 2026; MPSC's corrigendum of 6 November 2026 raised the posts to 16,717 (27 cadres), reopened applications
@@ -3261,6 +3381,41 @@ def exam_confs():
            papers_note=("The paper is the Kannada-medium question booklet of GPSTR 2022 Paper-1 (version 1A), with the answer from the School Education Department's key "
                         "answers of 3 June 2022. General Kannada is in Kannada only and General English in English only, as printed; for the other sections the "
                         "Kannada is as printed and the English is our translation.")),
+      dict(id='karnataka-police-si', dir='karnataka-police-si', src='karnataka-police-si', key='ka-psi', name='Karnataka Police SI', short='Karnataka Police SI', seo='Karnataka PSI',
+           slugp='karnataka-psi', papers=KPSI_PAPERS, subjects=KP_SUBJECTS, faq=FAQ_KP('SI'), board='KEA', l2=L2_KN, pb='/karnataka-police-si/',
+           keyname="KEA's final key", keyshort="KEA's final keys", bits=True,
+           kn_name='ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ', subj_te=KP_SUBJ_KN,
+           title="Karnataka PSI Previous Year Question Papers with Answers – KSP PSI 2024 Paper-2 (402 & 545 posts), Kannada & English | Learn with Anil",
+           h1='Karnataka PSI previous year question papers <em>with answers.</em>',
+           aka=('Also known as the KSP PSI (Civil) exam: Police Sub-Inspector recruitment of the Karnataka State Police, with the written exam conducted by the '
+                'Karnataka Examinations Authority (KEA). Paper-2 General Studies of the 402-post exam (3 October 2024) and the 545-post re-exam (23 January 2024).'),
+           aka_short='Karnataka State Police Sub-Inspector (KSP PSI Civil)',
+           l2line='ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ (ಸಿವಿಲ್) ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು — 402 ಹುದ್ದೆಗಳ ಪರೀಕ್ಷೆ (3 ಅಕ್ಟೋಬರ್ 2024) ಮತ್ತು 545 ಹುದ್ದೆಗಳ ಮರು ಪರೀಕ್ಷೆ (23 ಜನವರಿ 2024) ಪತ್ರಿಕೆ-2, ಕೆಇಎ ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           desc=lambda t: (f"Karnataka PSI (KSP Police Sub-Inspector, Civil) previous year question papers with answers from KEA's final keys: Paper-2 General Studies of the "
+                           f"402-post exam of 3 October 2024 and the 545-post re-exam of 23 January 2024. {t:,} questions in Kannada and English with explanations; "
+                           f"subject-wise practice and 90-minute timed mock tests with the ₹149 All-in-One Pass."),
+           eyebrow='KSP · Police Sub-Inspector (Civil) · Paper-2 · 2024',
+           papers_note=("Both papers are KEA's own question booklets (version A1), with the answer from KEA's final key. Every question is printed in Kannada and "
+                        "English, and both are shown here. Questions KEA deleted (grace marks) are left out; where KEA accepted more than one option, all of them "
+                        "are marked correct. Paper-1 (descriptive) is not included.")),
+      dict(id='karnataka-police-constable', dir='karnataka-police-constable', src='karnataka-police-constable', key='ka-pc', name='Karnataka Police Constable',
+           short='Karnataka Police Constable', seo='KSP Constable',
+           slugp='ksp-constable', papers=KPC_PAPERS, subjects=KP_SUBJECTS, faq=FAQ_KP('PC'), board='KEA', l2=L2_KN, pb='/karnataka-police-constable/',
+           keyname="KEA's key", keyshort="KEA's revised and final keys", bits=True,
+           kn_name='ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್', subj_te=KP_SUBJ_KN,
+           title="Karnataka Police Constable Previous Year Question Papers with Answers – KSP Civil & CAR/DAR PC 2026, Kannada & English | Learn with Anil",
+           h1='Karnataka Police Constable previous year question papers <em>with answers.</em>',
+           aka=('Also known as the KSP PC exam: Civil Police Constable (CPC) and Armed Police Constable (CAR/DAR) recruitment of the Karnataka State Police, with '
+                'the written exam conducted by the Karnataka Examinations Authority (KEA), separately for the rest of Karnataka (RPC) and Kalyana Karnataka (KK).'),
+           aka_short='Karnataka State Police Constable: Civil (CPC) and Armed (CAR/DAR)',
+           l2line='ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು — ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ (2 ಆಗಸ್ಟ್ 2026) ಮತ್ತು ಸಶಸ್ತ್ರ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ಸಿಎಆರ್/ಡಿಎಆರ್ (6 ಸೆಪ್ಟೆಂಬರ್ 2026), ಉಳಿಕೆ ಮೂಲ ವೃಂದ ಮತ್ತು ಕಲ್ಯಾಣ ಕರ್ನಾಟಕ, ಕೆಇಎ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           desc=lambda t: (f"Karnataka Police Constable (KSP) previous year question papers with answers from KEA's keys: Civil Police Constable 2026 (2 August, RPC and "
+                           f"Kalyana Karnataka) and Armed Police Constable CAR/DAR 2026 (6 September, RPC and Kalyana Karnataka). {t:,} questions in Kannada and "
+                           f"English with explanations; subject-wise practice and 90-minute timed mock tests with the ₹149 All-in-One Pass."),
+           eyebrow='KSP · Civil &amp; Armed (CAR/DAR) Police Constable · 2026',
+           papers_note=("All four papers are KEA's own question booklets (version A1). Civil Police Constable answers are from KEA's key of 3 August 2026 as revised "
+                        "on 7 August 2026; CAR/DAR answers are from KEA's final key of 17 September 2026. Every question is printed in Kannada and English, and both "
+                        "are shown here. Questions KEA deleted (grace marks) are left out; where KEA accepted two options, both are marked correct.")),
       dict(id='mpsc-group-c', dir='mpsc-group-c', src='mpsc-group-c', key='mh-gc', name='MPSC Group C', short='MPSC Group C', seo='MPSC Group C',
            slugp='mpsc-group-c', papers=MGC_PAPERS, subjects=MGC_SUBJECTS, faq=FAQ_MGC, board='MPSC', l2=L2_MR, pb='/mpsc-group-c/',
            keyname="MPSC's final answer key", keyshort="MPSC's final answer keys",
@@ -4046,8 +4201,8 @@ def exam_terms(e, cat):
                 'kpsc-audit': ['audit officer', 'assistant controller', 'state accounts', 'kpsc audit'],
                 'kea-ao-aao': ['ao', 'aao', 'agriculture officer', 'assistant agriculture officer', 'agriculture department'],
                 'kea-land-surveyor': ['land surveyor', 'surveyor', 'survey settlement', 'land records', 'bhoomapaka', 'ಭೂಮಾಪಕ'],
-                'ksp-constable': ['ksp', 'karnataka police', 'police constable', 'civil police constable', 'cpc', 'apc', 'car', 'dar', 'armed police', 'ksrp', 'ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್'],
-                'ksp-psi': ['ksp', 'karnataka police', 'psi', 'si', 'sub inspector', 'police sub inspector', 'ಪಿಎಸ್‌ಐ'],
+                'karnataka-police-constable': ['ksp', 'karnataka police', 'police constable', 'civil police constable', 'cpc', 'apc', 'car', 'dar', 'car/dar', 'armed police', 'armed police constable', 'ksrp', 'kea', 'karnataka constable', 'ksp pc', 'ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್', 'ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್', 'ಸಶಸ್ತ್ರ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್'],
+                'karnataka-police-si': ['ksp', 'karnataka police', 'psi', 'si', 'sub inspector', 'police sub inspector', 'karnataka psi', 'ksp psi', 'psi civil', 'kea', 'ಪಿಎಸ್‌ಐ', 'ಪೊಲೀಸ್ ಸಬ್ ಇನ್ಸ್‌ಪೆಕ್ಟರ್'],
                 'karnataka-gpstr': ['gpstr', 'gpt', 'graduate primary teacher', 'teacher recruitment', 'karnataka teacher', 'hstr', 'school education', 'teacher cet', 'karnataka teacher cet', 'pst', 'primary school teacher', 'assistant master', 'teacher', 'teachers', 'educational psychology', 'ಶಿಕ್ಷಕರ ನೇಮಕಾತಿ', 'ಪದವೀಧರ ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಕ', 'ಜಿಪಿಎಸ್‌ಟಿಆರ್'],
                 'kartet': ['kartet', 'tet', 'karnataka tet', 'teacher eligibility test', 'paper 1', 'paper 2']}
     if e['id'] in KA_WORDS: words += KA_WORDS[e['id']] + ['karnataka', 'kannada']
@@ -4410,8 +4565,8 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'kpsc-audit': ('Sir Puttanna Chetty Town Hall, Bengaluru', 'Harvinder Chandigarh', 'CC BY 4.0', _CW + 'Sir_Puttanna_Chetty_Town_Hall_,_Bangalore,_India.jpg'),
     'kea-ao-aao': ('Robusta coffee drying, Coorg', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Beans_Drying_Coffee_Robusta_Balamuri_Coorg_Feb24_A7C_09491.jpg'),
     'kea-land-surveyor': ('Granite landscape of Matanga Hill, Hampi', 'Vyacheslav Argenberg', 'CC BY 4.0', _CW + 'Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg'),
-    'ksp-constable': ('Police Central Division office, Bengaluru', 'Gpkp', 'CC BY-SA 4.0', _CW + 'Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg'),
-    'ksp-psi': ('Bangalore Palace', 'Anupam Chatterjee', 'CC BY 4.0', _CW + 'Bangalore_Palace_facade_on_a_cloudy_day.jpg'),
+    'karnataka-police-constable': ('Police Central Division office, Bengaluru', 'Gpkp', 'CC BY-SA 4.0', _CW + 'Deputy_Commissioner_of_Police,_Central_Division,_Bangalore_City_(2025).jpg'),
+    'karnataka-police-si': ('Bangalore Palace', 'Anupam Chatterjee', 'CC BY 4.0', _CW + 'Bangalore_Palace_facade_on_a_cloudy_day.jpg'),
     'karnataka-gpstr': ('Government School, Neralur', 'Umeshred', 'CC BY-SA 4.0', _CW + 'Government_School_Neralur.png'),
     'kartet': ('Government school, Doddegowdana Koppalu', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Govt_School_Front_Doddegowdana_Koppalu_Aug24_A7CR_02281.jpg'),
     # other state boards: police, revenue, panchayat, technical and teacher exams (Anil, 16 Nov 2026: "pls do the same for other state exams also")
@@ -5390,7 +5545,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-chsl/">SSC CHSL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-chsl/">SSC CHSL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/karnataka-police-si/">Karnataka Police SI (KSP PSI)</a> · <a href="/karnataka-police-constable/">Karnataka Police Constable</a> · <a href="/karnataka-police-pyqs.html">All Karnataka Police previous question papers</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -6192,7 +6347,7 @@ def funders_page(loaded):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></span>
+    <span><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam. Not affiliated with APPSC, TGPSC, UPSC, SSC or any recruiting body. Visits are counted with Google Analytics. <a href="/exam-notifications.html">Exam notifications</a> · <a href="/appsc-pyqs.html">APPSC PYQs</a> · <a href="/ts-police-pyqs.html">TS Police PYQs</a> · <a href="/ap-police-pyqs.html">AP Police PYQs</a> · <a href="/karnataka-police-pyqs.html">Karnataka Police PYQs</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></span>
   </div>
 </footer>
 <script>(function(){{var T={tj};
@@ -6303,8 +6458,25 @@ LANDINGS = {
             '<p lang="kn">ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು (2026) ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಸಾಮಾನ್ಯ ಜ್ಞಾನ, ಸಾಮಾನ್ಯ ಕನ್ನಡ, ಇಂಗ್ಲಿಷ್, ಕಂಪ್ಯೂಟರ್ ಜ್ಞಾನ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
             '<p class="note">KEA FDA &amp; SDA 2026: <a href="/kea-fda-sda-notification-2026.html">four notifications, 5,431 posts, exams 8–17 January 2027</a>. '
             'Full papers with a 2-hour timer: <a href="/karnataka-fda-sda/mock-test.html">KEA FDA SDA mock test</a>.</p>',
-      te={'KEA FDA & SDA': 'ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು'},
-      order=lambda c: 0),
+      te={'KEA FDA & SDA': 'ಕೆಇಎ ಎಫ್‌ಡಿಎ, ಎಸ್‌ಡಿಎ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು', 'Karnataka Police SI': 'ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು',
+          'Karnataka Police Constable': 'ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು'},   # KEA also conducts the KSP written exams (22 Nov 2026)
+      order=lambda c: {'karnataka-fda-sda': 0, 'karnataka-police-si': 1}.get(c['id'], 2)),
+  'karnataka-police-pyqs.html': dict(   # Anil, 22 Nov 2026: KSP PSI + Constable (KEA conducts the written exams)
+      board='KEA', ename='Karnataka Police', crumb='Karnataka Police PYQs', lang='kn',
+      title='Karnataka Police Previous Question Papers with Answers – KSP PSI & Constable (Civil, CAR/DAR) PYQs, Kannada & English | Learn with Anil',
+      desc='Karnataka State Police (KSP) PSI and Constable previous question papers in one place: PSI Paper-2 of 2024 (402 posts and the 545-post re-exam) and the '
+           '2026 Civil and Armed (CAR/DAR) Police Constable papers, {n} questions with KEA\'s keys and explanations in Kannada and English. '
+           'Practise them online with one ₹149 All-in-One Pass for every exam.',
+      h1='Karnataka Police PSI & Constable previous question papers with answers',
+      lede="Every Karnataka State Police PSI and Constable question paper on Learn with Anil, {n} questions in all. Each is KEA's own question booklet "
+           "with the answer from KEA's key, and every question has an explanation in Kannada and English.",
+      intro='<p>Looking for the Karnataka PSI question paper 2024 with the key answer, the KSP civil police constable question paper 2026, the CAR/DAR constable paper, '
+            'or a Karnataka police mock test in Kannada? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
+            '<p lang="kn">ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಪಿಎಸ್‌ಐ ಮತ್ತು ಕಾನ್ಸ್‌ಟೇಬಲ್ (ಸಿವಿಲ್, ಸಿಎಆರ್/ಡಿಎಆರ್) ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಕೆಇಎ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
+            '<p class="note">Full papers with a 90-minute timer: <a href="/karnataka-police-si/mock-test.html">Karnataka PSI mock test</a> · '
+            '<a href="/karnataka-police-constable/mock-test.html">Karnataka Police Constable mock test</a>.</p>',
+      te={'Karnataka Police SI': 'ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು', 'Karnataka Police Constable': 'ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು'},
+      order=lambda c: 0 if c['id'] == 'karnataka-police-si' else 1),
   'mpsc-pyqs.html': dict(   # Anil, 15 Nov 2026: Maharashtra exams, starting with MPSC Group C
       board='MPSC', ename='MPSC', crumb='MPSC PYQs', lang='mr',
       title='MPSC Previous Year Question Papers with Answers – Group C Prelims PYQs (2025, 2024, 2023), Marathi & English | Learn with Anil',
@@ -8043,6 +8215,8 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'upsc-capf': ('UPSC CAPF (Assistant Commandants) 2027', '2027-07-04', 'UPSC Calendar 2027.'),
   'upsc-prelims': ('UPSC Civil Services (Preliminary) Examination 2027', '2027-05-23', 'UPSC Calendar 2027.'),
   'tnpsc-group-4': ('TNPSC Group 4 (CCSE-IV) written exam', '2027-01-10', 'TNPSC Notification No. 11/2026 of 6 October 2026 (exam dashboard on tnpsc.gov.in).'),
+  'karnataka-police-si': ('Next Karnataka PSI (Civil) written exam', None, 'No new KSP Police Sub-Inspector notification as of 22 November 2026; the last written exams were held by KEA on 23 January and 3 October 2024.'),
+  'karnataka-police-constable': ('Next KSP Police Constable written exam', None, 'The 2026 Civil (2 August) and CAR/DAR (6 September) written exams are over; no new constable notification as of 22 November 2026.'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
   'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
   'jkssb-je-civil': ('JKSSB Junior Engineer (Civil) written exam (Advt. 11 of 2026)', None, 'JKSSB Advertisement Notification No. 11 of 2026 (27 October 2026): online applications 30 November to 29 December 2026; JKSSB will notify the exam date separately.'),
@@ -9160,7 +9334,7 @@ def not_found_page(old_pdfs=None):
 (function(){
   var pdfs = """ + json.dumps(old_pdfs or {}, separators=(',', ':')) + """;
   if (pdfs[location.pathname]) { location.replace(pdfs[location.pathname]); return; }
-  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-chsl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", """ + ', '.join(f'"/ncert-class-{c}/"' for c in _ncert().CLASSES) + """], base = "/";
+  var p = location.pathname, bases = ["/appsc-group-2/", "/appsc-group-1/", "/upsc-capf/", "/upsc-epfo/", "/upsc-prelims/", "/ssc-cgl/", "/ssc-mts/", "/ssc-chsl/", "/ssc-gd-constable/", "/tnpsc-group-4/", "/karnataka-fda-sda/", "/karnataka-gpstr/", "/karnataka-police-si/", "/karnataka-police-constable/", "/mpsc-group-c/", "/gsssb-cce/", "/upsssc-inter-level/", "/uppsc-ro-aro/", "/ukpsc-lower-pcs/", "/cg-vyapam-group-2/", "/opsc-aso/", "/wbpsc-ido/", "/dsssb/", "/jkssb-je-civil/", "/meghalaya-psc/", "/rrb-ntpc/", "/rrb-group-d/", "/ts-police-si/", "/ts-police-constable/", "/tgpsc-hmwssb-manager/", "/appsc-amvi/", "/tgpsc-amvi/", "/tgpsc-group-1/", "/tgpsc-group-2/", "/appsc-endowment-officer/", "/appsc-analyst-grade-2/", "/appsc-assistant-environmental-engineer/", "/appsc-assistant-statistical-officer/", "/appsc-forest-range-officer/", "/ap-police-si/", "/ap-police-constable/", "/rpf-si/", "/rpf-constable/", "/sbi-po/", "/ibps-so/", """ + ', '.join(f'"/ncert-class-{c}/"' for c in _ncert().CLASSES) + """], base = "/";
   for (var i = 0; i < bases.length; i++) if (p.indexOf(bases[i]) === 0) base = bases[i];
   var rest = p.slice(base.length);
   var ok = base === "/" ? /^exam\\/[\\w-]+\\/?$/.test(rest) : /^(q\\/[\\w-]+|quiz|result|join|mistakes|bank|smart|bookmarks|heatmap)\\/?$/.test(rest);
@@ -9177,7 +9351,7 @@ main{max-width:640px;margin:0 auto;padding:48px 16px}h1{font-size:28px;margin:0 
 <li><a href="/appsc-group-1/">APPSC Group-I PYQs</a></li><li><a href="/upsc-prelims/">UPSC Prelims PYQs</a></li><li><a href="/upsc-cse/">UPSC Mains PYQs</a></li><li><a href="/upsc-capf/">UPSC CAPF (AC) PYQs</a></li><li><a href="/upsc-epfo/">UPSC EPFO APFC PYQs</a></li><li><a href="/ssc-cgl/">SSC CGL PYQs</a></li><li><a href="/ssc-mts/">SSC MTS PYQs</a></li><li><a href="/ssc-chsl/">SSC CHSL PYQs</a></li><li><a href="/ssc-gd-constable/">SSC GD Constable PYQs</a></li><li><a href="/rrb-ntpc/">RRB NTPC PYQs</a></li><li><a href="/rrb-group-d/">RRB Group D PYQs</a></li>
 <li><a href="/ts-police-si/">TS Police SI PYQs</a></li><li><a href="/ts-police-constable/">TS Police Constable PYQs</a></li><li><a href="/appsc-pyqs.html">All APPSC previous question papers</a></li>
 <li><a href="/ts-police-pyqs.html">All TS Police previous question papers</a></li><li><a href="/ap-police-si/">AP Police SI PYQs</a></li><li><a href="/ap-police-constable/">AP Police Constable PYQs</a></li>
-<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li><li><a href="/jkssb-je-civil/">JKSSB JE Civil PYQs</a></li><li><a href="/meghalaya-psc/">Meghalaya PSC PYQs</a></li></ul>
+<li><a href="/rpf-si/">RPF SI PYQs</a></li><li><a href="/rpf-constable/">RPF Constable PYQs</a></li><li><a href="/tnpsc-group-4/">TNPSC Group 4 PYQs</a></li><li><a href="/karnataka-fda-sda/">KEA FDA &amp; SDA PYQs</a></li><li><a href="/karnataka-gpstr/">GPSTR (Karnataka Teacher) PYQs</a></li><li><a href="/karnataka-police-si/">Karnataka Police SI PYQs</a></li><li><a href="/karnataka-police-constable/">Karnataka Police Constable PYQs</a></li><li><a href="/mpsc-group-c/">MPSC Group C PYQs</a></li><li><a href="/gsssb-cce/">GSSSB CCE PYQs</a></li><li><a href="/upsssc-inter-level/">UPSSSC Inter Level Mains PYQs</a></li><li><a href="/uppsc-ro-aro/">UPPSC RO/ARO PYQs</a></li><li><a href="/ukpsc-lower-pcs/">UKPSC Lower PCS PYQs</a></li><li><a href="/cg-vyapam-group-2/">CG Vyapam Group 2 PYQs</a></li><li><a href="/opsc-aso/">OPSC ASO PYQs</a></li><li><a href="/wbpsc-ido/">WBPSC IDO PYQs</a></li><li><a href="/dsssb/">DSSSB MTS &amp; JE PYQs</a></li><li><a href="/jkssb-je-civil/">JKSSB JE Civil PYQs</a></li><li><a href="/meghalaya-psc/">Meghalaya PSC PYQs</a></li></ul>
 </main></body></html>
 """
 

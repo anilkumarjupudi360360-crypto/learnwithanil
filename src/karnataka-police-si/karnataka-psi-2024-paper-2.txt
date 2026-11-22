@@ -1,0 +1,1221 @@
+# KSP PSI (Civil) 402 posts, Paper-2 General Studies, held 3 October 2024, KEA booklet version A1 (PD2209P224); answers: KEA final key of 6 November 2024
+
+Q 1 | apt | Reasoning
+Which of the given interchanges in signs would make the given equation 10 – 2 + 9 × 2 ÷ 4 = 19 correct?
+(1) – and ÷
+(2) – and +
+(3) ÷ and ×
+(4) × and ÷
+= 1
+~ Interchange the signs – and ÷ in the equation: 10 – 2 + 9 × 2 ÷ 4 becomes 10 ÷ 2 + 9 × 2 – 4. Apply BODMAS: division and multiplication first, so 10 ÷ 2 = 5 and 9 × 2 = 18; then 5 + 18 – 4 = 19, which equals the right-hand side. So option (1) is correct. Check the others: interchanging – and + gives 10 + 2 – 9 × 2 ÷ 4 = 12 – 4.5 = 7.5, not 19. Interchanging ÷ and × (options 3 and 4 describe the same swap) gives 10 – 2 + 9 ÷ 2 × 4 = 8 + 18 = 26, again not 19. Exam tip: in sign-interchange questions, never simplify the original expression first; rewrite it after each swap and apply BODMAS strictly (division and multiplication left to right, then addition and subtraction left to right). Testing the options one by one is usually the fastest method, and this question type appears regularly in the mental ability part of KSP PSI and constable papers.
+
+Q 2 | apt | Series & Puzzles
+In the following series, one number is incorrect. Find out the incorrect number.
+25, 32, 64, 71, 74, 291, 1746
+(1) 291
+(2) 1746
+(3) 74
+(4) 32
+= 3
+~ The series uses two alternating steps: add 7, then multiply by an increasing even number (2, 4, 6). 25 + 7 = 32; 32 × 2 = 64; 64 + 7 = 71; 71 × 4 = 284; 284 + 7 = 291; 291 × 6 = 1746. So the fifth term should be 284, not 74, which makes 74 the incorrect number, option (3). The other options fit the rule perfectly: 32 comes from 25 + 7, 291 comes from 284 + 7, and 1746 is exactly 291 × 6, so none of them can be the wrong term. A quick check that helps here: 1746 ÷ 291 = 6 exactly and 291 – 7 = 284, which points straight at the faulty middle term. Tip for wrong-number series: large jumps usually reveal multiplication and small, equal gaps reveal addition; test the pattern from both ends of the series, and the term that breaks the rule from both sides is the answer.
+
+Q 3 | apt | Arithmetic
+Out of total 150 students, 45 passed in Management, 50 in Accounts, 30 in Costing, 30 in both Management and Accounts, 32 in both Accounts and Costing, 35 in both Management and Costing and 25 students passed in all the three subjects. Find the number of students who passed at least in any one of the subjects.
+(1) 53
+(2) 63
+(3) 43
+(4) 73
+= 1
+~ Use the inclusion–exclusion formula for three sets: n(M ∪ A ∪ C) = n(M) + n(A) + n(C) – n(M∩A) – n(A∩C) – n(M∩C) + n(M∩A∩C). Substituting the values: 45 + 50 + 30 – 30 – 32 – 35 + 25 = 125 – 97 + 25 = 53. So 53 students passed in at least one subject, option (1). The total of 150 is not needed for this part; it would only be used to find the students who failed in all three subjects (150 – 53 = 97). The other values, 63, 43 and 73, do not match the formula result. Note that the figures given are not fully consistent (the 'Costing only' region works out to a negative number), so the question can only be solved mechanically with the formula, which is what KEA's key follows. Memory tip for three-set problems: add the singles, subtract the pairs, add back the triple. If the question asks for 'none', subtract this union from the total.
+
+Q 4 | apt | Arithmetic
+A person walks on an escalator at the rate of 4 steps per second and reaches the other end in 15 seconds, while coming back walking at the same speed he reaches the starting point in 45 seconds. What is the number of steps on the escalator?
+(1) 60
+(2) 90
+(3) 72
+(4) 45
+= 2
+~ Let the escalator have N steps and move at e steps per second. Going in the direction of the escalator, the man's effective speed is (4 + e), so N = (4 + e) × 15. Coming back against the escalator, his effective speed is (4 – e), so N = (4 – e) × 45. Equating: 60 + 15e = 180 – 45e, so 60e = 120 and e = 2 steps per second. Then N = (4 + 2) × 15 = 90; check: (4 – 2) × 45 = 90. Hence the escalator has 90 steps, option (2). Option 60 is only the number of steps the man himself takes in 15 seconds (4 × 15), ignoring the escalator's movement; 72 and 45 do not satisfy both equations. Tip: escalator problems are upstream–downstream (boat and stream) problems in disguise: moving with the escalator, the speeds add; moving against it, they subtract, while the number of steps on the escalator stays the same in both directions.
+
+Q 5 | apt | Arithmetic
+If the price of a ticket for a show is increased by 14%, then the number of audience are reduced by 22%. What is the effect on revenue?
+(1) Decrease by 10.18%
+(2) Increase by 10.18%
+(3) Decrease by 11.08%
+(4) Increase by 11.08%
+= 3
+~ Revenue = ticket price × number of viewers. Take the original price and audience as 100 each, so the original revenue is 100 × 100 = 10,000. New price = 114 and new audience = 78, so the new revenue = 114 × 78 = 8,892. Change = 8,892 – 10,000 = –1,108, i.e. a fall of 1,108 on 10,000, which is 11.08%. Using the successive-percentage formula: x + y + xy/100 = 14 + (–22) + (14 × –22)/100 = –8 – 3.08 = –11.08%. The negative sign means a decrease, so option (3) is correct. Option (4) has the right figure but the wrong direction, and 10.18% in options (1) and (2) is a digit-swap trap. Tip: whenever price and quantity change together (ticket sales, bus fares, fuel consumption), either multiply the factors (1.14 × 0.78 = 0.8892) or use x + y + xy/100, remembering to put a minus sign before every decrease.
+
+Q 7 | apt | Arithmetic
+The average of 10 numbers is 40. Later it was found that by mistake the numbers 18 and 21 were misread as 81 and 12. Find the correct average of 10 numbers.
+(1) 63.6
+(2) 34.6
+(3) 43.6
+(4) 24.6
+= 2
+~ Wrong total = 10 × 40 = 400. This total wrongly contains 81 and 12 (sum 93) in place of the true numbers 18 and 21 (sum 39). Correct total = 400 – 93 + 39 = 346. Correct average = 346 ÷ 10 = 34.6, option (2). Shortcut: the total was too high by 93 – 39 = 54, so the average was inflated by 54 ÷ 10 = 5.4; correct average = 40 – 5.4 = 34.6. The other options do not match this calculation: 43.6 would need the total to rise rather than fall, and 63.6 and 24.6 are far from 40, which is impossible when only two of ten numbers change by a combined 54. Tip: in 'misread' average questions, find the net difference between the wrongly read values and the correct values, divide it by the number of items, and adjust the old average up or down. This method takes a few seconds and avoids recomputing the whole total.
+
+Q 8 | apt | Arithmetic
+Out of 15 applicants for a job, there are 5 women and 10 men. It is desired to select 2 persons for the job. The probability that at least one of the selected persons will be a woman is _____
+(1) 4/7
+(2) 3/7
+(3) 1/5
+(4) 4/5
+= 1
+~ Total ways of choosing 2 people from 15 = 15C2 = (15 × 14)/2 = 105. 'At least one woman' is the complement of 'no woman', that is, both selected persons are men. Ways of choosing 2 men from 10 = 10C2 = (10 × 9)/2 = 45. So P(no woman) = 45/105 = 3/7, and P(at least one woman) = 1 – 3/7 = 4/7, option (1). Direct check: exactly one woman = 5 × 10 = 50 ways and two women = 5C2 = 10 ways; (50 + 10)/105 = 60/105 = 4/7. Option 3/7 is the probability of the opposite event (both men), a common trap for students who stop halfway. The values 1/5 and 4/5 do not come from any correct counting of the cases. Tip: whenever a probability question says 'at least one', calculate 1 – P(none); it is quicker and reduces mistakes, especially under the time pressure of the PSI exam.
+
+Q 9 | apt | Arithmetic
+An examination paper contains 9 questions of which 5 have 3 possible answers each, 3 have 2 possible answers each and the remaining one question has 5 possible answers. The total number of possible answers to all the questions is _____
+(1) 9820
+(2) 9610
+(3) 9720
+(4) 8140
+= 3
+~ By the fundamental (multiplication) principle of counting, when independent choices are made one after another, the numbers of choices are multiplied. Each of the 5 three-choice questions can be answered in 3 ways, giving 3^5 = 243. Each of the 3 two-choice questions can be answered in 2 ways, giving 2^3 = 8. The last question can be answered in 5 ways. Total = 243 × 8 × 5 = 243 × 40 = 9,720, option (3). The figures 9,820, 9,610 and 8,140 do not equal this product. A candidate who adds instead of multiplying would get only 5 × 3 + 3 × 2 + 5 = 26, which shows why the multiplication rule matters. The count assumes that every question is answered with exactly one of its given choices (leaving a question unanswered is not counted as a possibility). Memory tip: 'and' (doing one task after another) means multiply, while 'or' (choosing one of several alternatives) means add. This one rule solves most counting questions in police recruitment papers.
+
+Q 10 | apt | Arithmetic
+If cube root of 300763 is 67, then the value of ∛300.763 + ∛0.300763 + ∛0.000300763 is
+(1) 67.007
+(2) 6.347
+(3) 71.437
+(4) 7.437
+= 4
+~ Given ∛300763 = 67 (indeed 67 × 67 × 67 = 300,763). For a cube root, every 3 decimal places in the number become 1 decimal place in the root. 300.763 has 3 decimal places, so ∛300.763 = 6.7. 0.300763 has 6 decimal places, so ∛0.300763 = 0.67. 0.000300763 has 9 decimal places, so ∛0.000300763 = 0.067. Sum = 6.7 + 0.67 + 0.067 = 7.437, option (4). Option 6.347 has similar digits but is not the sum; 67.007 and 71.437 come from misplacing the decimal point, for example taking ∛300.763 as 67 instead of 6.7. Memory tip: square roots group decimal places in pairs, cube roots group them in threes; count the decimal places, divide by 3, and place the decimal point in the root accordingly. Knowing the cubes of 1 to 20 by heart also speeds up such simplification questions in KSP PSI and constable papers.
+
+Q 11 | apt | Arithmetic
+An error 2% in excess is made while measuring the side of a square. The percentage of error in the calculated area of the square is
+(1) 2%
+(2) 2.02%
+(3) 4.04%
+(4) 4%
+= 3
+~ Let the true side be 100 units, so the true area is 100 × 100 = 10,000 square units. With a 2% excess error the measured side is 102, so the calculated area is 102 × 102 = 10,404. Error = 404 on 10,000 = 4.04%, option (3). Formula method: for a square both dimensions carry the same error, so use x + y + xy/100 with x = y = 2: 2 + 2 + (2 × 2)/100 = 4.04%. Option (4), 4%, is only the approximate answer obtained by doubling the side error; it ignores the small 0.04% term, whereas the question needs the exact value. Option (1), 2%, forgets that area depends on the square of the side, and 2.02% has no basis in the calculation. Tip: for a square, area error = 2x + x²/100; for a cube, volume error = 3x + 3x²/100 + x³/10,000. Learn these two formulas; mensuration error questions appear often in KSP mental ability sections.
+
+Q 12 | apt | Reasoning
+Find out which one of the following figures does not belong to the group.
+a)
+N | H | Z
+C | F | D
+A | E | Q
+b)
+Z | C | H
+F | A | N
+Q | D | E
+c)
+H | D | N
+F | D | Z
+C | E | A
+d)
+A | C | G
+Z | D | E
+N | F | H
+(1) a
+(2) b
+(3) c
+(4) d
+= 3,4
+~ Figures (a) and (b) contain exactly the same nine letters, A, C, D, E, F, H, N, Q and Z, only arranged differently, so they define the group. Figure (c) has the letter D twice and no Q (H, D, N, F, D, Z, C, E, A). Figure (d) has G in place of Q (A, C, G, Z, D, E, N, F, H). Thus both (c) and (d) break the common pattern, and neither can be singled out as the only odd one. Because two figures do not belong to the group, KEA's final key accepts both option (3) c and option (4) d; a candidate marking either one gets the mark. Options (1) and (2) are wrong because a and b are the two figures that agree with each other. Tip: in letter-grid odd-one-out questions, first write the letters of each box in alphabetical order and compare the sets; a repeated or missing letter shows up at once. Look for positional patterns (rows, diagonals, centre letter) only if the letter sets are identical.
+
+Q 13 | apt | Reasoning
+If 23rd October 2024 is Wednesday, then what was the day of the week on 10th March 2021?
+(1) Monday
+(2) Tuesday
+(3) Wednesday
+(4) Thursday
+= 3
+~ Count the days from 10 March 2021 to 23 October 2024. From 10 March 2021 to 10 March 2024 there are 365 + 365 + 366 = 1,096 days (the third year includes 29 February 2024). From 10 March 2024 to 23 October 2024: March 21 + April 30 + May 31 + June 30 + July 31 + August 31 + September 30 + October 23 = 227 days. Total = 1,096 + 227 = 1,323 days = 189 weeks exactly, so there are 0 odd days. Hence 10 March 2021 fell on the same weekday as 23 October 2024, that is Wednesday, option (3). Using odd days: 1,096 days give 1 + 1 + 2 = 4 odd days and 227 days give 3 odd days; 4 + 3 = 7, which is 0 odd days. Tuesday, Monday or Thursday would need 1, 2 or 6 odd days respectively. Tip: an ordinary year has 1 odd day and a leap year has 2; when counting backwards from a known date, subtract the odd days from the known weekday.
+
+Q 14 | apt | Reasoning
+Study the figure given below carefully and answer the question based on the diagram.
+Which part shows Literate males who are doctors?
+(1) G
+(2) E
+(3) D
+(4) F
+= 2
+~ In the diagram the circle stands for Literates, the triangle for Doctors and the rectangle for Males. 'Literate males who are doctors' must lie inside all three figures at the same time. The only region common to the circle, the triangle and the rectangle is E, so option (2) is correct. G lies inside the circle and the triangle but outside the rectangle, so it shows literate doctors who are not males. D lies inside the triangle and the rectangle but outside the circle: male doctors who are not literate. F lies inside the circle and the rectangle but outside the triangle: literate males who are not doctors. A, B and C are the 'only literates', 'only doctors' and 'only males' regions respectively. Tip: for Venn-diagram questions, note for each region which figures it lies inside and which it lies outside, then match the conditions in the question word by word, paying special attention to any 'not' or 'only'.
+! img/kpo24-q14.png
+
+Q 15 | apt | Series & Puzzles
+The English alphabet letter to be placed in the place of '?' (Question mark) in the figure given is
+(1) M
+(2) N
+(3) Q
+(4) R
+= 1
+~ Each corner box has three numbers and one letter, and the letter's position in the English alphabet equals the sum of the three numbers. Top-left box: 3 + 4 + 5 = 12, and the 12th letter is L. Top-right box: 9 + 6 + 4 = 19, and the 19th letter is S. Bottom-left box: 7 + 1 + 8 = 16, and the 16th letter is P. So for the bottom-right box: 2 + 8 + 3 = 13, and the 13th letter is M, option (1). N would need a sum of 14, Q a sum of 17 and R a sum of 18, none of which matches the numbers 2, 8 and 3. Tip: memorise alphabet positions with the EJOTY trick: E = 5, J = 10, O = 15, T = 20, Y = 25. From these anchors you can reach any letter in a second, for example M = O – 2 = 13. Letter-number figure puzzles of this kind are common in the reasoning section of KSP PSI papers.
+! img/kpo24-q15.png
+
+Q 16 | apt | Reasoning
+Eight persons A, B, C, D, E, F, G and H are sitting around a circle as given in the figure. They are facing the direction opposite to centre. If they move up to five places anticlockwise, then
+(1) A will face Southeast
+(2) C will face West
+(3) E will face Northeast
+(4) G will face North
+= 1
+~ From the figure, A sits at North, B at North-east, C at East, D at South-east, E at South, F at South-west, G at West and H at North-west. Moving anticlockwise means going N → NW → W → SW → S → SE → E → NE. A moves five places: NW, W, SW, S, SE, so A reaches the South-east seat. Since everyone faces away from the centre, a person in the South-east seat faces South-east; so 'A will face Southeast' is correct, option (1). Check the others: C (East) moves through NE, N, NW, W to SW and faces South-west, not West; E (South) ends at North-west and faces North-west, not North-east; G (West) ends at North-east and faces North-east, not North. Note: the Kannada version says they face the centre, but KEA's key follows the English wording (facing outward); with the Kannada wording A would face North-west and none of the four options would be correct. Tip: when people face outward, each person's facing direction is simply the direction of his seat from the centre; when they face inward, it is the opposite direction.
+! img/kpo24-q16.png
+
+Q 17 | apt | Reasoning
+In a certain code language, 'PEN – TAN' is written as '0' (Zero). How is 'DEN – COB' written in that code language?
+(1) 8
+(2) 3
+(3) 9
+(4) 7
+= 2
+~ Replace each letter by its position in the English alphabet and add the positions within each word. PEN = 16 + 5 + 14 = 35 and TAN = 20 + 1 + 14 = 35, so PEN – TAN = 35 – 35 = 0, which matches the given code. Applying the same rule to the second pair: DEN = 4 + 5 + 14 = 23 and COB = 3 + 15 + 2 = 20. Therefore DEN – COB = 23 – 20 = 3, option (2). The other values do not fit: 8, 9 or 7 would require the two word totals to differ by those amounts, which does not happen under this rule. The minus sign in the question is a real subtraction of the two word totals, not a separator. Tip: keep the EJOTY anchor positions in mind (E = 5, J = 10, O = 15, T = 20, Y = 25) so that letter values can be found instantly; coding by letter sums and differences is a favourite in KSP PSI reasoning sections.
+
+Q 18 | his | Art & Culture
+Consider the following statements with reference to Moidams – the mound burial system in Assam.
+A) Moidams means home for spirit
+B) Part of Tai-Ahom culture
+C) These mounds were initially built with wood, later with stone and burnt bricks
+D) Tai-Ahom people established Charaideo as their first city and site for royal Necropolis
+Choose the correct answer from the options given below:
+(1) A & B are correct
+(2) A, B & C are correct
+(3) A, B & D are correct
+(4) A, B, C and D are correct
+= 4
+~ All four statements are correct, so option (4). (A) Official descriptions of the site explain 'moidam' as a 'home for the spirit' of the departed. (B) Moidams are the mound burials of Tai-Ahom kings, queens and nobles and are an integral part of Tai-Ahom culture; the Tai-Ahoms came into the Brahmaputra valley in the 13th century under Chao-lung Siu-ka-pha. (C) Official accounts note that the burial vaults were initially built of wood and later of stone and burnt bricks, then covered with earth to form the mound. (D) The Tai-Ahoms established Charaideo as their first capital and made it their royal necropolis, which holds the main group of royal moidams. Since C and D are both true, options (1), (2) and (3), which leave out one or both of them, are incomplete. Exam fact: 'Moidams – the Mound-Burial System of the Ahom Dynasty' was inscribed on the UNESCO World Heritage List on 26 July 2024 at the 46th session held in New Delhi, becoming India's 43rd World Heritage Site and the first cultural site from the North-East.
+
+Q 19 | his | Art & Culture
+With reference to Indian Martial Art forms, which one of the following is NOT matched correctly?
+(1) Gatka – Punjab
+(2) Thoda – Madhya Pradesh
+(3) Inbuan wrestling – Mizoram
+(4) Silambam – Tamil Nadu
+= 2
+~ Thoda is a traditional martial art and sport of archery from Himachal Pradesh, not Madhya Pradesh, so pair (2) is wrongly matched and is the answer. It is played with wooden bows and arrows in the hill districts of Himachal, especially around the Baisakhi festival in April, and combines skill in archery with folk dance and music. The other pairs are correct. Gatka is the stick-and-sword fighting art associated with the Sikhs of Punjab, often displayed during religious processions and fairs. Inbuan is the traditional wrestling of the Mizos of Mizoram, fought inside a circle where kicking, stepping out or bending the knees is not allowed. Silambam is the ancient staff (long bamboo stick) fighting art of Tamil Nadu. Karnataka link: the traditional kusti wrestling of the garadi mane gymnasiums of Mysuru, showcased during the Dasara wrestling bouts, is Karnataka's own martial heritage. Memory tip: Thoda goes with the Himalayas, Gatka with the Gurdwara.
+
+Q 20 | his | Art & Culture
+Match the following folk song with the respective state:
+Folk Song / State
+a) Sohar – i. Kerala
+b) Villupattu – ii. Himachal Pradesh
+c) Bhuta Song – iii. Tamil Nadu
+d) Jhoori – iv. Bihar
+Choose the correct answer from the options given below:
+(1) a – ii, b – i, c – iii, d – iv
+(2) a – iii, b – iv, c – ii, d – i
+(3) a – ii, b – iv, c – iii, d – i
+(4) a – iv, b – iii, c – i, d – ii
+= 4
+~ The correct matching is Sohar – Bihar, Villupattu – Tamil Nadu, Bhuta songs – Kerala and Jhoori – Himachal Pradesh, i.e. a – iv, b – iii, c – i, d – ii, option (4). Sohar songs are sung in Bihar and the neighbouring Bhojpuri-speaking belt of north India to celebrate the birth of a child, especially a son. Villupattu ('bow song') is a Tamil Nadu ballad tradition in which the lead singer strikes a large bow fitted with bells while narrating stories, often of local deities and heroes. Bhuta songs are ritual songs sung by some communities of Kerala to drive away evil spirits. Jhoori is a folk song form of Himachal Pradesh, generally on themes of love. Options (1), (2) and (3) do not get a single pair right. Karnataka link: the spirit-worship tradition of Bhuta Kola in coastal Karnataka (Tulu Nadu) is related in spirit, but in standard folk-music lists 'Bhuta songs' are placed under Kerala, so answer accordingly.
+
+Q 21 | cur | Awards, Books & Persons
+With regard to Jnanpith Award, out of 23 eligible languages which of the following languages got the above award till now?
+A) Kashmiri
+B) Konkani
+C) Manipuri
+D) Santhali
+E) English
+Choose the correct answer from the options given below:
+(1) A, B and D are correct
+(2) B, C and D are correct
+(3) A, B and E are correct
+(4) A, B, C, D and E are correct
+= 3
+~ The Jnanpith Award, India's highest literary honour given by the Bharatiya Jnanpith, is open to writers in the 22 languages of the Eighth Schedule plus English, that is 23 languages. Of the listed languages, Kashmiri (Rahman Rahi, 2004), Konkani (Ravindra Kelekar, 2006, and later Damodar Mauzo) and English (Amitav Ghosh, 2018, the first English-language winner) have received it. Manipuri and Santhali had not won the award as of the exam date (October 2024), so C and D are wrong. Hence 'A, B and E are correct', option (3). Options (1), (2) and (4) all include Manipuri or Santhali and are therefore wrong. Karnataka pride: Kannada has won 8 Jnanpith awards, second only to Hindi: Kuvempu (1967, the first for Kannada), D. R. Bendre, Shivaram Karanth, Masti Venkatesha Iyengar, V. K. Gokak, U. R. Ananthamurthy, Girish Karnad and Chandrashekhara Kambar (2010). This list is asked again and again in Karnataka exams.
+
+Q 22 | cur | International & Sports
+Which of the following statement/statements is/are correct with regard to 2024 ICC Men's T20 World Cup?
+a) It was the 9th edition of the ICC Men's T20 World Cup
+b) India was the host country
+c) India clinched its 2nd T20 World Cup title by defeating Pakistan
+d) Jasprit Bumrah received the Player of the Tournament Award
+(1) b only
+(2) b and c only
+(3) a and d only
+(4) a, b, c and d
+= 3
+~ Statements a and d are correct, option (3). (a) The 2024 tournament was the 9th edition of the ICC Men's T20 World Cup (earlier editions: 2007, 2009, 2010, 2012, 2014, 2016, 2021 and 2022). (d) Jasprit Bumrah was named Player of the Tournament for taking 15 wickets at an economy rate of just over 4 runs an over. Statement (b) is wrong: the tournament was co-hosted by the West Indies and the United States of America in June 2024, the first time matches of a men's ICC World Cup were played in the USA. Statement (c) is wrong: India did win its second T20 World Cup title (after 2007), but it beat South Africa by 7 runs in the final at Kensington Oval, Bridgetown, Barbados, on 29 June 2024, not Pakistan. Virat Kohli was Player of the Match in the final. Options (1), (2) and (4) include b or c and are therefore wrong. Exam fact: soon after the title, Rohit Sharma, Virat Kohli and Ravindra Jadeja retired from T20 internationals.
+
+Q 23 | cur | International & Sports
+Match the Indian sports personalities with the sports they are associated.
+I - Sports Personalities / II - Sports
+a) Manika Batra – i. Hockey
+b) Harmanpreet Singh – ii. Table Tennis
+c) Chirag Shetty – iii. Rowing
+d) Balraj Panwar – iv. Badminton
+v. Boxing
+(1) a – v, b – i, c – iii, d – ii
+(2) a – ii, b – i, c – iv, d – iii
+(3) a – ii, b – v, c – iv, d – iii
+(4) a – i, b – iv, c – iii, d – ii
+= 2
+~ The correct matching is Manika Batra – Table Tennis, Harmanpreet Singh – Hockey, Chirag Shetty – Badminton and Balraj Panwar – Rowing, i.e. a – ii, b – i, c – iv, d – iii, option (2); Boxing (v) is the extra item. Manika Batra created history at Paris 2024 as the first Indian table tennis player to reach the round of 16 in Olympic singles. Harmanpreet Singh, a drag-flick specialist, captained India's men's hockey team to bronze at Paris 2024 and was the team's top scorer. Chirag Shetty, with partner Satwiksairaj Rankireddy, forms India's leading men's doubles badminton pair, winners of the Asian Games gold at Hangzhou (held in 2023). Balraj Panwar was India's only rower at Paris 2024, competing in the men's single sculls. Option (1) wrongly gives Manika boxing and Chirag rowing; option (3) makes Harmanpreet a boxer; option (4) mixes up all four. Tip: names from the Paris 2024 Olympic contingent are favourite current-affairs questions in KSP exams held after the Games.
+
+Q 24 | pol | Union & State Government
+Which of the following statements is correct in respect of nomination of Anglo-Indians to the Lok Sabha?
+(1) 101st Constitutional Amendment Act provided the Provision
+(2) 104th Constitutional Amendment Act removed the Provision
+(3) 102nd Constitutional Amendment Act removed the Provision
+(4) 99th Constitutional Amendment Act removed the Provision
+= 2
+~ Article 331 allowed the President to nominate not more than two members of the Anglo-Indian community to the Lok Sabha if the community was not adequately represented, and Article 333 allowed Governors to nominate one Anglo-Indian to the State Legislative Assembly. Under Article 334 this was a time-bound provision, renewed every ten years. The Constitution (104th Amendment) Act, 2019 extended the reservation of seats for SCs and STs in the Lok Sabha and Assemblies for another ten years (till January 2030) but did not extend Anglo-Indian nomination, which therefore ended from 25 January 2020. So option (2) is correct. The 101st Amendment (2016) introduced GST, the 102nd (2018) gave constitutional status to the National Commission for Backward Classes (Article 338B), and the 99th (2014) created the National Judicial Appointments Commission, struck down by the Supreme Court in 2015; none of them dealt with Anglo-Indian nomination. Karnataka note: the Karnataka Legislative Assembly also lost its nominated Anglo-Indian member through the same amendment.
+
+Q 25 | eco | Money, Banking & Budget
+Consider the following statements:
+a) Statement – 1: The Railway Budget was separated from the General Budget in 1924 on the recommendations of the Acworth Committee Report (1921).
+b) Statement – 2: The objectives of this separation was to introduce flexibility in Railway Finance.
+Which one of the following is correct in respect of the above statements?
+(1) Both Statement – 1 and Statement – 2 are correct
+(2) Statement – 1 is correct, Statement – 2 is incorrect
+(3) Both Statements 1 and 2 do not reflect the objectives of the subject
+(4) Statement – 1 is incorrect and Statement – 2 is incorrect
+= 1
+~ Both statements are correct, option (1). The East India Railway Committee of 1920–21, chaired by Sir William Acworth (the Acworth Committee), recommended that railway finances be separated from the general finances of the country. Acting on its 1921 report, the Separation Convention of 1924 was adopted, and a separate Railway Budget was presented from 1924–25 onwards. The aim was to bring flexibility into railway finance: the railways could plan their own investment on commercial lines, keep their funds insulated from the general revenue needs of the government, and in return pay a fixed annual contribution to general revenues. Options (2), (3) and (4) are wrong because they deny one or both of these facts. Update and exam fact: this 92-year-old practice ended when the Railway Budget was merged with the Union Budget from 2017–18 (presented on 1 February 2017 by Finance Minister Arun Jaitley), following recommendations of NITI Aayog member Bibek Debroy. Remember: Acworth separated it (1924), Debroy's advice merged it (2017).
+
+Q 26 | geo | Indian Geography
+Consider the following pairs regarding Koppen's climatic classification in India
+Region – Koppen Classification Symbol
+a) Coromandel – As
+b) Western Coast – Amw
+c) Hot desert of Rajasthan – BShw
+Which of the above pair/s is/are correctly matched?
+(1) a only
+(2) a and b only
+(3) b only
+(4) a, b and c
+= 2
+~ Pairs (a) and (b) are correct, so the answer is option 2. In Koppen's scheme as applied to India (NCERT), the Coromandel coast of Tamil Nadu is 'As' – a tropical monsoon climate with a dry summer, because this coast gets most of its rain from the retreating (north-east) monsoon in October–December rather than in summer. The west coast south of Goa is 'Amw' – a monsoon climate with only a short dry season and very heavy south-west monsoon rain; coastal Karnataka towns such as Karwar, Udupi and Mangaluru fall in this type. Pair (c) is wrong: the hot desert of extreme western Rajasthan is 'BWhw' (W stands for desert). 'BShw' is the semi-arid steppe climate of north-western Gujarat and parts of western Rajasthan and Punjab. Hence option 1 (a only), option 3 (b only) and option 4 (all three) are incorrect. Memory tip for Koppen letters: A = tropical humid, B = dry, S = steppe (semi-arid), W = desert, h = hot, m = monsoon, w = dry winter, s = dry summer.
+
+Q 29 | geo | Karnataka Geography
+Consider the following solar power plants:
+a) Elesandra
+b) Itnal
+c) NP Kunta
+d) Yapaladinni
+e) Galiveedu
+Which of the above are located in Karnataka?
+(1) a, c and e
+(2) a, b and d
+(3) b, c and d
+(4) b, c and e
+= 2
+~ Option 2 (a, b and d) is correct. Elesandra (Yelesandra) in Bangarapet taluk of Kolar district, Itnal in Chikkodi taluk of Belagavi district and Yapaladinni in Raichur district are sites of small grid-connected solar photovoltaic plants (about 3 MW each) set up by Karnataka Power Corporation Limited (KPCL); they were among the state's earliest megawatt-scale solar plants. NP Kunta (Nambulapulakunta) in the Anantapur region and Galiveedu in the Kadapa region are in Rayalaseema, Andhra Pradesh – NP Kunta hosts an ultra mega solar park and Galiveedu also has a solar park. Any option containing c or e is therefore wrong, which rules out options 1, 3 and 4. Exam tip: Karnataka's flagship solar project is the Pavagada Solar Park (Shakti Sthala) in Tumakuru district, about 2,050 MW, one of the largest in the world. KPCL, the state power utility, also runs Karnataka's major hydel and thermal stations such as Raichur and Ballari.
+
+Q 30 | geo | Karnataka Geography
+From source to mouth which among the following is the correct sequence of hydropower houses located along the Kali River Valley?
+(1) Nagazhari – Supa – Kodasalli – Kadra
+(2) Supa – Nagazhari – Kodasalli – Kadra
+(3) Supa – Nagazhari – Kadra – Kodasalli
+(4) Nagazhari – Kodasalli – Supa – Kadra
+= 2
+~ Option 2 is correct: Supa – Nagjhari (Nagazhari) – Kodasalli – Kadra. The Kali river rises near Diggi in Joida taluk of Uttara Kannada and flows west to the Arabian Sea at Karwar. Under KPCL's Kali (Kalinadi) hydro-electric project, the Supa dam near Ganeshgudi forms the main storage reservoir high up in the valley and has its own powerhouse (about 100 MW). The same water is then used again downstream: from the Bommanahalli pick-up dam it is taken to the Nagjhari powerhouse, the largest station of the project (over 800 MW). Further down, the river is dammed at Kodasalli (about 120 MW) and finally at Kadra (about 150 MW), close to the coast near Karwar. Options 1 and 4 begin with Nagjhari, which lies downstream of Supa, and option 3 places Kadra before Kodasalli, so they are wrong. Memory line: 'Supa Never Kills Kids' – Supa, Nagjhari, Kodasalli, Kadra. The Kali valley also contains the Kali Tiger Reserve (Dandeli–Anshi), and the Kaiga atomic power station stands on the banks of the same river.
+
+Q 31 | geo | Environment & Ecology
+Match List – I with List – II and select the correct answer using the codes that follow:
+List – I (Institute)
+a) Centre for Arid Zone Research Institute
+b) Institute of Wood Science Technology
+c) Centre for Forest Productivity
+d) Centre for Social Forestry and Environment
+List – II (City)
+i. Bengaluru
+ii. Allahabad
+iii. Jodhpur
+iv. Ranchi
+(1) a – iii, b – i, c – ii, d – iv
+(2) a – iii, b – i, c – iv, d – ii
+(3) a – iii, b – iv, c – ii, d – i
+(4) a – iii, b – iv, c – i, d – ii
+= 2
+~ Option 2 is correct: a–iii, b–i, c–iv, d–ii. (a) Arid-zone research is based at Jodhpur in the Thar desert: the ICAR's Central Arid Zone Research Institute (CAZRI) works there, and ICFRE's Arid Forest Research Institute (AFRI) is also in Jodhpur. (b) The Institute of Wood Science and Technology (IWST) is in Bengaluru; it is ICFRE's institute in Karnataka and is well known for its research on sandalwood and wood products. (c) The Institute of Forest Productivity (IFP) of ICFRE is in Ranchi, Jharkhand. (d) The Centre for Social Forestry and Eco-Rehabilitation (CSFER) is at Allahabad (now Prayagraj), Uttar Pradesh. Option 1 wrongly sends forest productivity to Allahabad and social forestry to Ranchi, while options 3 and 4 wrongly place wood science in Ranchi. Apart from CAZRI (under ICAR), these bodies come under the Indian Council of Forestry Research and Education (ICFRE), Dehradun. Memory tip: 'Wood – Bengaluru (land of sandalwood), Desert – Jodhpur'.
+
+Q 32 | his | Art & Culture
+Which one of the following tribes is not correctly matched?
+(1) Birhor – Chhattisgarh
+(2) Apatani – Arunachal Pradesh
+(3) Kadar – Tamil Nadu
+(4) Jaunsari – Maharashtra
+= 4
+~ Option 4 is the wrongly matched pair, so it is the answer. The Jaunsaris live in the Jaunsar-Bawar hill tract of Dehradun district in Uttarakhand, not in Maharashtra; they are known for their distinct hill culture and the historical practice of fraternal polyandry. The other three pairs are correct. (1) The Birhor, a small forest tribe of the Chota Nagpur region traditionally known for rope-making and hunting, are listed as a Particularly Vulnerable Tribal Group (PVTG) in Chhattisgarh as well as in Jharkhand. (2) The Apatanis inhabit the Ziro valley of Arunachal Pradesh and are famous for their wet-rice cultivation combined with fish rearing in the paddy fields. (3) The Kadar are a PVTG of the Anamalai hills, found in Tamil Nadu and Kerala, traditionally living by collecting forest produce. Karnataka angle: the state's two PVTGs are the Jenu Kuruba and the Koraga, and Karnataka's tribal communities also include the Soliga of B.R. Hills and the Siddi of Uttara Kannada.
+
+Q 33 | geo | Karnataka Geography
+Consider the following statements about National Parks of Karnataka and choose the correct options given below:
+a) The Moyar river passes through the southern part of Bandipur National Park.
+b) Bannerghatta National Park is a part of wildlife corridor for elephants which connects the B.R. Hills and Sathyamangalam forests.
+c) The Kudremukh National Park is spread over Dakshina Kannada, Udupi and Chikkamagaluru districts of Karnataka.
+d) The unique feature of Nagarahole National Park is that it is the only habitat in Asia where 'Black Panther' is found.
+(1) a, b and c are correct
+(2) b, c and d are correct
+(3) a, b and d are correct
+(4) only a and b are correct
+= 1
+~ Option 1 (a, b and c) is correct. (a) The Moyar river flows along the southern side of Bandipur National Park and forms its boundary with Mudumalai in Tamil Nadu, while the Kabini lies to the north, separating Bandipur from Nagarahole; so (a) is correct. (b) Bannerghatta National Park near Bengaluru is part of the elephant corridor that links the B.R. Hills (Biligiri Rangaswamy Temple Tiger Reserve) with the Sathyamangalam forests of Tamil Nadu; correct. (c) Kudremukh National Park is spread over Dakshina Kannada, Udupi and Chikkamagaluru districts, and the Tunga, Bhadra and Netravati rivers rise in this region; correct. (d) is wrong: black panthers (melanistic leopards) are seen in Nagarahole and the Kabini backwaters, but also in the Kali (Dandeli–Anshi) Tiger Reserve and in other forests of India and South-East Asia, so Nagarahole is not the 'only habitat in Asia'. Options 2 and 3 include (d), and option 4 leaves out the correct statement (c). Tip: Karnataka has five national parks – Bandipur, Nagarahole, Bannerghatta, Kudremukh and Anshi.
+
+Q 34 | geo | World Geography
+Read the following and match correctly.
+a) Inner Core
+b) Outer Core
+c) Mantle
+d) Crust
+i. 5 – 40 kms
+ii. 2895 kms
+iii. 1255 kms
+iv. 2245 kms
+(1) a – iii, b – i, c – iv, d – ii
+(2) a – ii, b – iii, c – iv, d – i
+(3) a – iv, b – iii, c – ii, d – i
+(4) a – iii, b – iv, c – ii, d – i
+= 4
+~ Option 4 is correct: a–iii, b–iv, c–ii, d–i. Match each layer of the Earth with its approximate thickness. The crust, the thin outermost solid layer, is only about 5 km thick under the oceans and about 30–40 km under the continents, hence 5–40 km (d–i); the Mohorovicic (Moho) discontinuity separates it from the mantle. The mantle extends down to a depth of roughly 2,900 km, giving a thickness of about 2,895 km (c–ii). Below the Gutenberg discontinuity lies the outer core, which is liquid and made mostly of iron and nickel; it is about 2,245 km thick (b–iv). The innermost layer, the solid inner core, has a radius of about 1,255 km (a–iii). Options 1, 2 and 3 mix up these values. Quick check: adding the four values gives about 6,400 km, close to the Earth's mean radius of about 6,371 km. Tip: S-waves cannot travel through the liquid outer core, producing the S-wave shadow zone; this is how scientists know the outer core is liquid.
+
+Q 35 | sci | Physics
+Here are three statements related to the reflection of light by plane mirrors.
+i) Reflection of light from a plane mirror is an example for irregular reflection.
+ii) A plane mirror forms only a single image of an object.
+iii) By varying the angle between two plane mirrors, different number of images of an object can be obtained.
+Choose the correct option related to the above statements.
+(1) Statement (i) is correct but (ii) and (iii) are wrong
+(2) Statement (i) is wrong but (ii) and (iii) are correct
+(3) Statements (i) and (ii) are correct but (iii) is wrong
+(4) Statements (i) and (iii) are correct but (ii) is wrong
+= 2
+~ Option 2 is correct: statement (i) is wrong, while (ii) and (iii) are correct. A plane mirror has a smooth, polished surface, so a parallel beam of light falling on it is reflected as a parallel beam; this is regular (specular) reflection. Irregular or diffused reflection occurs at rough surfaces such as paper, walls or a wooden table, which is why such objects can be seen from all directions. Hence (i) is wrong. A single plane mirror forms just one image of an object – virtual, erect, of the same size, laterally inverted and as far behind the mirror as the object is in front – so (ii) is correct. When two plane mirrors are inclined at an angle θ, the number of images is n = (360/θ) − 1 when 360/θ is even: 90° gives 3 images, 60° gives 5, and parallel mirrors give infinitely many; so (iii) is correct. Options 1, 3 and 4 treat (i) as correct, so they are wrong. Application: a kaleidoscope uses inclined plane mirrors, while a periscope uses two parallel plane mirrors.
+
+Q 36 | eco | Money, Banking & Budget
+Consider the following statements:
+Statement I: Government should increase tax rates during deflationary trends in the economy.
+Statement II: Tax is an important fiscal policy instrument.
+Which of the following is correct in respect of the above statements?
+(1) Statement I is correct but Statement II is incorrect
+(2) Statement I is incorrect but Statement II is correct
+(3) Both the Statements are correct and Statement II explains Statement I
+(4) Both the Statements are correct and Statement II does not explain Statement I
+= 2
+~ Option 2 is correct: Statement I is incorrect, but Statement II is correct. Deflation is a sustained fall in the general price level, usually accompanied by falling demand, low investment and rising unemployment. To fight it, the government should follow an expansionary fiscal policy – reduce tax rates and increase public expenditure – so that households and firms have more disposable income to spend, which raises aggregate demand. Increasing tax rates would cut demand further and deepen the deflation; higher taxes are a tool for controlling inflation, not deflation. So Statement I is wrong. Statement II is correct: taxation, along with public expenditure and public borrowing, is a main instrument of fiscal policy, which in India is framed by the Union Finance Ministry through the annual budget (Article 112). Since Statement I is false, options 1, 3 and 4 are ruled out. Memory tip: Inflation – raise taxes, cut spending (contractionary); Deflation – cut taxes, raise spending (expansionary). Monetary policy, by contrast, is managed by the RBI through the repo rate and other tools.
+
+Q 37 | sci | Physics
+An object is lifted from point A to point B against gravity along four different paths as shown in the figures.
+Pick the correct option among the following.
+(1) Work done to lift the object in all the four cases is equal
+(2) Work done to lift the object is maximum for b and c
+(3) Work done is minimum for a
+(4) Work done is maximum for d
+= 1
+~ Option 1 is correct: the work done is the same in all four cases. Work done against gravity equals the gain in potential energy, W = mgh, where m is the mass, g the acceleration due to gravity and h the vertical height between A and B. Gravity is a conservative force, so the work done against it depends only on the initial and final positions, not on the path followed. In all four figures the object starts at A and ends at B, so h, and therefore the work done, is identical. The straight path (a), the stepped path (b), the curved path (c) and the looping path (d) differ only in length; any extra rise and fall cancels out, because going up and coming down through the same height adds and then subtracts the same mgh. Hence options 2, 3 and 4 are wrong. Example: lifting a 2 kg bag through 3 m needs 2 × 9.8 × 3 = 58.8 J whichever staircase is used. (In real life friction adds extra work, but the question deals only with work done against gravity.)
+! img/kpo24-q37.png
+
+Q 38 | sci | Physics
+The ice point and boiling point of water in different temperature scales are as shown below:
+Temperature Scale | Ice Point | Boiling Point
+a) Celsius scale | 0°C | 100°C
+b) Fahrenheit Scale | 32°F | 222°F
+c) Kelvin Scale | 273 K | 373 K
+Temperature scales with correct ice point and boiling point are
+(1) a, b and c
+(2) a and b
+(3) b and c
+(4) a and c
+= 4
+~ Option 4 (a and c) is correct. On the Celsius scale, pure water freezes (ice point) at 0°C and boils at 100°C at standard atmospheric pressure, so (a) is correct. On the Kelvin (absolute) scale, the ice point is 273 K (more precisely 273.15 K) and the boiling point is 373 K, because K = °C + 273; so (c) is correct. On the Fahrenheit scale the ice point is 32°F, but the boiling point is 212°F, not 222°F as given, so (b) is wrong. Check with the formula F = (9/5)C + 32: for C = 100, F = 180 + 32 = 212. Hence options 1, 2 and 3, which include (b), are incorrect. Useful facts: the Celsius and Fahrenheit scales give the same reading at −40°; normal human body temperature is about 37°C or 98.6°F; and absolute zero, 0 K = −273.15°C, is the lowest possible temperature. The kelvin is the SI unit of temperature, and kelvin readings are written without the degree sign.
+
+Q 39 | sci | Chemistry
+Soft drinks beverages are usually stored in PET bottles. Expand PET.
+(1) Poly ethylene terephthalate
+(2) Poly ethyl toluene
+(3) Propyl ethyl terephthalate
+(4) Phenyl ethanyl terephthalate
+= 1
+~ Option 1 is correct: PET stands for polyethylene terephthalate. It is a polyester made by condensation polymerisation of ethylene glycol and terephthalic acid, which is why its name combines 'ethylene' and 'terephthalate'. PET is strong, light, transparent and shatter-resistant, and it is a good barrier to carbon dioxide, so it keeps soft drinks fizzy. It is therefore used for soft-drink and mineral-water bottles, food jars and polyester fibre (terylene/Dacron) for clothing. The other options are made-up names: 'poly ethyl toluene', 'propyl ethyl terephthalate' and 'phenyl ethanyl terephthalate' are not the plastics used for such bottles. PET carries resin identification code 1 (the number inside the recycling triangle on the bottle) and is widely recycled, often into polyester fibre for clothes, carpets and pillow stuffing. Exam tip: do not confuse PET with PETN (pentaerythritol tetranitrate, an explosive) or with the medical PET scan (positron emission tomography).
+
+Q 40 | geo | Environment & Ecology
+Read the following statements:
+a) CO₂ is a major greenhouse gas
+b) CFCs can cause ozone degradation
+c) In Three Mile Island, accidental radioactive leakage occurred
+d) Greenhouse effect is due to the release of agrochemicals into water
+Of these, the correct statements are
+(1) a, b, c only
+(2) b, c, d only
+(3) a, c, d only
+(4) a, b, d only
+= 1
+~ Option 1 (a, b, c only) is correct. (a) Carbon dioxide is the most important greenhouse gas released by human activity, mainly from burning coal, oil and natural gas and from deforestation; along with methane, nitrous oxide and water vapour it traps outgoing heat. (b) Chlorofluorocarbons (CFCs), once widely used in refrigerators, air-conditioners and aerosol sprays, release chlorine in the stratosphere that destroys ozone; the Montreal Protocol (1987) was signed to phase them out. (c) The Three Mile Island nuclear power plant in Pennsylvania, USA, suffered a partial reactor meltdown in March 1979, with a small release of radioactivity – the most serious accident in the history of US commercial nuclear power. (d) is wrong: the greenhouse effect is caused by heat-trapping gases in the atmosphere, not by agrochemicals; run-off of fertilisers into lakes and rivers causes eutrophication (algal blooms). Hence options 2, 3 and 4, which include (d), are wrong. Tip: World Ozone Day is observed on 16 September, the date on which the Montreal Protocol was signed.
+
+Q 41 | sci | Chemistry
+Consider the following statements:
+Statement-I: Acid rain has a pH less than 5.6.
+Statement-II: Acid rain consists of acids like nitric acid and sulphuric acid in it.
+Which one of the following is correct with respect to the above statements?
+(1) Both Statement-I and Statement-II are correct and Statement-II explains Statement-I
+(2) Both Statements-I and II are correct but Statement-II does not explain Statement-I
+(3) Statement-I is correct but Statement-II is incorrect
+(4) Statement-I is incorrect but Statement-II is correct
+= 1
+~ Option 1 is correct: both statements are correct and Statement II explains Statement I. Normal, unpolluted rain is already slightly acidic, with a pH of about 5.6, because atmospheric carbon dioxide dissolves in it to form weak carbonic acid. Rain is called acid rain when its pH falls below 5.6, so Statement I is correct. This happens because sulphur dioxide (mainly from burning coal in thermal power plants and industries) and oxides of nitrogen (from vehicles and high-temperature combustion) react with water vapour and oxygen in the air to form sulphuric acid and nitric acid, which come down with rain, snow or fog. Statement II is therefore correct, and it is precisely the presence of these strong acids that pushes the pH below 5.6, so II explains I. Options 2, 3 and 4 do not fit. Effects to remember: acid rain corrodes marble and limestone (the 'marble cancer' of the Taj Mahal, linked partly to emissions from the Mathura refinery), harms aquatic life in lakes, leaches nutrients from soil and damages forests.
+
+Q 42 | sci | Physics
+Consider the following statements:
+Statement-I: The resistivity of a material does not depend on the nature of the substance and temperature.
+Statement-II: The resistivity of a substance is a characteristic property of the material of the substance.
+Which one of the following is correct with respect to the above statements?
+(1) Both Statement-I and Statement-II are true and Statement-II is the correct explanation of Statement-I
+(2) Both Statement-I and Statement-II are true and Statement-II is not the correct explanation of Statement-I
+(3) Statement-I is true and Statement-II is false
+(4) Statement-I is false and Statement-II is true
+= 4
+~ Option 4 is correct: Statement I is false and Statement II is true. The resistance of a conductor is R = ρL/A, where L is its length, A its area of cross-section and ρ (rho) its resistivity. Resistivity is a characteristic property of the material: it does not depend on the length or thickness of the wire, but it does depend on the nature of the substance and on temperature. For example, copper and silver have very low resistivity while nichrome has a high resistivity, and the resistivity of metals increases as temperature rises. Therefore Statement I, which says resistivity does not depend on the nature of the substance and temperature, is false, and Statement II is true. Options 1 and 2 treat Statement I as true, and option 3 calls Statement II false, so they are wrong. The SI unit of resistivity is the ohm-metre (Ω m). Application: alloys such as nichrome are used in the heating elements of electric irons and toasters because they have high resistivity and do not oxidise easily at high temperatures, while tungsten is used for bulb filaments.
+
+Q 43 | sci | Biology
+A person exhibits the symptoms such as increased alertness, Pupillary dilation, piloerection, sweating etc. These are due to the emergency situation and hormones responsible for this are
+(1) Oxytocin and Vasopressin
+(2) Insulin and Glucagon
+(3) Estrogen and Progesterone
+(4) Adrenaline and Noradrenaline
+= 4
+~ Option 4 is correct. Increased alertness, pupillary dilation, piloerection (raising of hair), sweating, a faster heartbeat and faster breathing are the typical responses of the body to stress or danger. They are produced by adrenaline (epinephrine) and noradrenaline (norepinephrine), secreted by the adrenal medulla, which is why these are called 'emergency hormones' or 'fight-or-flight hormones'. They also break down glycogen to raise blood glucose, giving quick energy. The other pairs have different roles: oxytocin causes contraction of the uterus during childbirth and milk ejection, while vasopressin (ADH) increases water reabsorption in the kidneys; insulin and glucagon from the islets of Langerhans of the pancreas lower and raise blood sugar respectively; estrogen and progesterone are female sex hormones from the ovaries that regulate the menstrual cycle and maintain pregnancy. Memory tip: the adrenal glands sit on top of the kidneys; the outer cortex secretes corticoids such as cortisol and aldosterone, while the inner medulla secretes adrenaline and noradrenaline – the hormones of the '3F' (fight, flight, fright) response.
+
+Q 44 | sci | Biology
+Match the following:
+List – I (Disease)
+a) Goitre
+b) Acromegaly
+c) Diabetes insipidus
+d) Diabetes mellitus
+List – II (Deficiency)
+i. Vasopressin
+ii. Insulin
+iii. Growth hormone
+iv. Iodine
+(1) a – iv, b – iii, c – i, d – ii
+(2) a – i, b – ii, c – iii, d – iv
+(3) a – iii, b – ii, c – i, d – iv
+(4) a – ii, b – iii, c – iv, d – i
+= 1
+~ Option 1 is correct: a–iv, b–iii, c–i, d–ii. (a) Goitre, the swelling of the thyroid gland in the neck, is caused by a lack of iodine in the diet, since iodine is needed to make thyroxine; iodised salt prevents it. (b) Acromegaly is linked to growth hormone (somatotropin) from the anterior pituitary; strictly, it is caused by excess growth hormone in adults, which enlarges the bones of the face, hands and feet, while excess in children causes gigantism and deficiency causes dwarfism. (c) Diabetes insipidus is caused by deficiency of vasopressin (antidiuretic hormone, ADH); without it the kidneys cannot reabsorb water, leading to large volumes of dilute urine and intense thirst. (d) Diabetes mellitus results from deficiency of insulin (or the body's resistance to it), causing high blood glucose and sugar in the urine. Options 2, 3 and 4 mismatch these pairs. Exam tip: 'insipidus' means tasteless (dilute urine) and 'mellitus' means honey-sweet (sugar in urine) – a quick way to tell the two types of diabetes apart.
+
+Q 45 | geo | Environment & Ecology
+To remove particulate matter from the exhaust in a thermal power plant in order to reduce pollution, which of the following can be used?
+(1) Muffler
+(2) Incinerator
+(3) Electrostatic precipitator
+(4) Catalytic convertor
+= 3
+~ Option 3 is correct. An electrostatic precipitator (ESP) is the standard device used in thermal power plants to remove particulate matter such as fly ash from flue gases. Electrode wires kept at a very high voltage release electrons that attach to dust particles and give them a negative charge; the charged particles are then attracted to and collected on earthed plates. An ESP can remove over 99 percent of the particulate matter in the exhaust. The other options are wrong: a muffler (silencer) reduces the noise of vehicle exhaust; an incinerator is a furnace that burns waste such as hospital waste at high temperature and is itself a source of emissions; a catalytic converter, fitted in vehicles, uses platinum, palladium and rhodium catalysts to convert carbon monoxide, unburnt hydrocarbons and nitrogen oxides into less harmful gases, but it does not remove fly ash. Tip: gaseous pollutants such as sulphur dioxide are removed by scrubbers, while coal-based stations such as those at Raichur and Ballari in Karnataka rely on ESPs to control fly ash.
+
+Q 46 | geo | Indian Geography
+Match the following major rivers and its tributaries from List – I with List – II and choose the correct answer from the given codes.
+List – I (Rivers)
+a) Cauvery
+b) Godavari
+c) Narmada
+d) Krishna
+List – II (Tributaries)
+i. Manjra – Wardha – Indravati
+ii. Hiran – Barna – Shakkar
+iii. Koyna – Ghataprabha – Bhima
+iv. Harangi – Hemavati – Kabini
+(1) a – iii, b – i, c – ii, d – iv
+(2) a – iv, b – i, c – ii, d – iii
+(3) a – i, b – iii, c – ii, d – iv
+(4) a – iv, b – ii, c – iii, d – i
+= 2
+~ Option 2 is correct: a–iv, b–i, c–ii, d–iii. (a) The Cauvery, rising at Talakaveri in Kodagu, is joined in Karnataka by the Harangi, Hemavati and Kabini (along with the Shimsha, Arkavathi and Lakshmana Tirtha). (b) The Godavari, the longest peninsular river, receives the Manjra (Manjira), which flows through Bidar district of Karnataka, the Wardha (which joins the Wainganga to form the Pranhita) and the Indravati. (c) The Narmada, a west-flowing river that runs through a rift valley, has the Hiran, Barna and Shakkar among its tributaries, besides the Tawa, its largest tributary. (d) The Krishna, which enters Karnataka in Belagavi district, is fed by the Koyna, Ghataprabha and Bhima, as well as the Malaprabha and Tungabhadra. Options 1, 3 and 4 wrongly link these sets. Tip: the Krishna and the Cauvery are the two most important river systems of Karnataka; the Almatti and Narayanpur dams are on the Krishna, while the KRS (Krishnaraja Sagar) dam in Mandya district is on the Cauvery.
+
+Q 47 | geo | World Geography
+Identify the correct names of the Temperate grasslands from the following groups:
+a) Savannah, Campos, Llanos
+b) Pampas, Prairie, Down
+c) Savannah, Prairie, Veld
+d) Veld, Savannah, Campos
+(1) Only d is correct
+(2) a and b are correct
+(3) Only b is correct
+(4) c and d are correct
+= 3
+~ Option 3 (only b) is correct. Grasslands are classified by latitude. Temperate grasslands lie in the interiors of continents in the mid-latitudes: the Prairies of North America, the Pampas of Argentina, the Downs of Australia, the Veld of South Africa, the Steppes of Eurasia and the Canterbury grasslands of New Zealand. Group (b) – Pampas, Prairie, Downs – is entirely temperate, so it is correct. Tropical grasslands, which lie between the equatorial forests and the hot deserts, include the Savanna of Africa, the Llanos of the Orinoco basin in Venezuela and Colombia, and the Campos of the Brazilian highlands. Group (a) is entirely tropical, while groups (c) and (d) mix the temperate Veld (and Prairie) with the tropical Savannah and Campos, so they are wrong. Hence options 1, 2 and 4 are incorrect. Memory tip: temperate – Prairie, Pampas, Downs, Veld, Steppes; tropical – 'Sa-La-Ca' (Savanna, Llanos, Campos). In Karnataka, the shola grasslands of the Western Ghats, such as those around Kudremukh, are montane grasslands, a different category.
+
+Q 48 | sci | Biology
+With respect to disease-resistant hybrid plant varieties A is a resistant wheat variety, B is a resistant cowpea variety and C is a hybrid-resistant chilli variety. Identify A, B and C.
+(1) A – Pusa komal, B – Himgiri, C – Pusa Sadabahar
+(2) A – Pusa Sadabahar, B – Pusa komal, C – Himgiri
+(3) A – Pusa Sadabahar, B – Himgiri, C – Pusa komal
+(4) A – Himgiri, B – Pusa komal, C – Pusa Sadabahar
+= 4
+~ Option 4 is correct: A – Himgiri, B – Pusa Komal, C – Pusa Sadabahar. These disease-resistant varieties, developed in India through conventional plant breeding, are the standard examples given in NCERT Class 12 Biology under plant breeding for disease resistance. Himgiri is a wheat variety resistant to leaf and stripe rust and hill bunt. Pusa Komal is a cowpea variety resistant to bacterial blight. Pusa Sadabahar is a chilli variety resistant to chilli mosaic virus, tobacco mosaic virus and leaf curl. Options 1, 2 and 3 swap these names, so they are wrong. Other varieties from the same table worth remembering: Brassica (mustard) – Pusa Swarnim (Karan rai), resistant to white rust; cauliflower – Pusa Shubhra and Pusa Snowball K-1, resistant to black rot and curl blight black rot. 'Pusa' refers to the Indian Agricultural Research Institute (IARI), New Delhi, which began in 1905 at Pusa in Bihar. Tip: link 'Himgiri' (snowy mountain) with wheat, a cool-season crop, and 'Sadabahar' (evergreen) with chilli.
+
+Q 49 | sci | Physics
+Consider the following statements:
+Statement I: It is always easier to roll a body than to slide it over another.
+Statement II: The rolling friction is smaller than the sliding friction.
+Choose the correct option with respect to the above statements.
+(1) Both the statements are wrong
+(2) Statement I is correct but Statement II is wrong
+(3) Statement I is wrong but Statement II is correct
+(4) Both the statements are correct
+= 4
+~ Option 4 is correct: both statements are correct. When a body rolls over a surface, the area of contact and the interlocking of surface irregularities are much smaller than when it slides, so the opposing force – rolling friction – is much smaller than sliding friction. Statement II is therefore correct, and it is the reason why it is always easier to roll a body than to slide it over another, as Statement I says (this sentence comes from the NCERT Class 8 chapter on friction). That is why heavy suitcases are fitted with wheels, and why ball bearings are used between the hubs and axles of bicycle and motorcycle wheels and in machines. Options 1, 2 and 3 treat one or both statements as wrong, so they are incorrect. Remember the order of friction: static friction is greater than sliding friction, which is greater than rolling friction. Friction can also be reduced by lubricants such as oil and grease, by polishing surfaces, and by giving streamlined shapes to vehicles, aircraft and boats that move through fluids.
+
+Q 50 | sci | Chemistry
+Prevention of corrosion is of prime importance. It not only saves money but also helps in preventing accidents such as a bridge collapse or failure of a key component due to corrosion. Which one of the following is not the correct method to prevent corrosion of metal?
+(1) By covering metal surface by paint
+(2) By covering metal surface by other metals such as Sn, Zn
+(3) By Galvanisation
+(4) By keeping metal in acidified water
+= 4
+~ Option 4 is the answer, because keeping a metal in acidified water does not prevent corrosion; it speeds it up. Rusting of iron needs both water and oxygen, and dissolved acids and salts make water a better electrolyte, so corrosion becomes faster – which is why iron rusts quickly near the sea and in polluted, acidic surroundings. The other three are genuine methods of prevention. (1) Painting forms a barrier that keeps moisture and air away from the surface. (2) Coating with another metal, such as tin (tinning, used for food cans) or zinc, protects the metal underneath. (3) Galvanisation is the coating of iron or steel with a layer of zinc; even if the coating is scratched, zinc corrodes in preference to iron and so protects it. Other methods include oiling, greasing, chrome plating, anodising and alloying – stainless steel contains chromium and nickel. Tip: rust is hydrated iron(III) oxide, Fe₂O₃·xH₂O. The Iron Pillar near the Qutub Minar in Delhi, about 1,600 years old, is famous for resisting rust.
+
+Q 51 | his | Modern India & Freedom Struggle
+Consider the following statements regarding the underground activities during the Quit India Movement:
+a) Socialists and Forward Bloc Members were heavily involved in underground activities
+b) Usha Mehta started an underground radio in Poona
+c) The underground movement aimed to maintain public morale and provide guidance.
+Which of the above statements are correct?
+(1) a and b only
+(2) b and c only
+(3) a and c only
+(4) a, b and c
+= 3
+~ Statements a and c are correct, so option 3 is the answer. After the top Congress leaders were arrested on 9 August 1942, the Quit India Movement went underground. Socialists such as Jayaprakash Narayan, Ram Manohar Lohia, Aruna Asaf Ali and Achyut Patwardhan, along with Forward Bloc members, ran this secret network of strikes, sabotage, pamphlets and propaganda, so statement a is correct. With the open leadership in jail, the underground leaders tried to keep up public morale, spread news and give guidance to the people, so statement c is also correct. Statement b is wrong: Usha Mehta's secret Congress Radio broadcast from Bombay, not Poona, in 1942 until the police traced it and she was jailed. Because b is wrong, options 1, 2 and 4 are ruled out. Karnataka angle: during Quit India in 1942, Isur village in Shikaripura taluk of Shivamogga district declared itself independent; its slogan 'Esuru kottaru Isuru kodevu' is a favourite exam fact.
+
+Q 52 | his | Modern India & Freedom Struggle
+With reference to Shyamji Krishna Varma, consider the following:
+a) Founded Ghadar Party
+b) Started 'Indian Sociologist' journal
+c) Established the Indian Home Rule Society
+How many of the above statement/s is/are correct?
+(1) One only
+(2) Two only
+(3) All the three
+(4) None
+= 2
+~ Two statements, b and c, are correct, so option 2 is the answer. Shyamji Krishna Varma, a Sanskrit scholar from Kutch in Gujarat, founded the Indian Home Rule Society in London in February 1905 and had started the monthly journal 'The Indian Sociologist' in January 1905. The same year he opened India House in London, a students' hostel that became a centre for revolutionaries such as V.D. Savarkar and Madan Lal Dhingra. Statement a is wrong: the Ghadar Party was founded in 1913 at San Francisco in the USA by Lala Har Dayal, Sohan Singh Bhakna and others, and it published the 'Ghadar' newspaper. So 'one only', 'all the three' and 'none' are incorrect. Memory tip: remember Shyamji's three London 'I's of 1905 – Indian Sociologist, Indian Home Rule Society and India House. He later shifted to Paris and died in Geneva in 1930; his ashes were brought back to India in 2003.
+
+Q 53 | his | Karnataka History
+Consider the following:
+a) Kollegal
+b) Ballary
+c) Dakshina Kannada
+d) Amindivi
+How many of the above regions were merged with Unified Karnataka in 1956 from Madras Presidency?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) All the four
+= 2
+~ Only two regions, Kollegal and Dakshina Kannada, so option 2 is the answer. Under the States Reorganisation Act, 1956, the enlarged Mysore State (renamed Karnataka in 1973) received from Madras State, the former Madras Presidency, the South Kanara district (today's Dakshina Kannada and Udupi, minus Kasaragod taluk, which went to Kerala) and the Kollegal taluk of Coimbatore district (now in Chamarajanagar district). Bellary is not counted for 1956: under the Andhra State Act, 1953, most of Bellary district, except the Adoni, Alur and Rayadurg taluks, had already been added to Mysore State on 1 October 1953, when Andhra State was formed. Amindivi islands, though earlier attached to South Kanara, were separated in 1956 to form the Union Territory of Laccadive, Minicoy and Amindivi Islands, renamed Lakshadweep in 1973. Exam fact: unification took effect on 1 November 1956, celebrated as Kannada Rajyotsava, joining parts of Bombay, Hyderabad and Madras states and Coorg with old Mysore.
+
+Q 54 | his | Karnataka History
+With reference to the organizations of freedom movement in Karnataka, consider the following:
+a) Mazzini Club: Gangadhar Rao Deshpande
+b) Charka Sanga: Hanumantharaya Deshpande
+c) Hindustani Sevadal: Hardekar Manjappa
+How many of the above pair / pairs is/are correctly matched?
+(1) Only one
+(2) Only two
+(3) All the three
+(4) None
+= 4
+~ None of the three pairs is correctly matched, so option 4 is the answer as per KEA's key. The pairs appear to be deliberately shuffled. Pair a is wrong: the Mazzini Club, a revolutionary youth group named after the Italian patriot Giuseppe Mazzini, is not credited to Gangadhar Rao Deshpande; Karnataka history guides link it with Hanumantharaya Deshpande. Pair b is wrong for the same reason, because the two Deshpandes have been swapped: charaka (spinning-wheel) and khadi work in north Karnataka is associated with Gangadhar Rao Deshpande, the 'Karnataka Simha' of Belagavi, who promoted khadi from Hudli in Belagavi district. Pair c is wrong: the Hindustani Seva Dal (first called the Hindustani Seva Mandal, 1923), the volunteer wing of the Congress, was founded by Dr N.S. Hardikar of Hubballi, not by Hardekar Manjappa, the Gandhian reformer known as 'Karnataka Gandhi'. Since all three pairs fail, 'only one', 'only two' and 'all the three' are ruled out. Tip: do not confuse Hardikar (Seva Dal) with Hardekar Manjappa; the similar names are a common trap.
+
+Q 55 | his | Medieval India
+Consider the following:
+a) Domingo Paes
+b) Afanasy Nikitin
+c) Fernao Nuniz
+d) Niccolo de' Conti
+How many of the above Portuguese travellers visited the Vijayanagara Empire?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) All the four
+= 2
+~ Only two, Domingo Paes and Fernao Nuniz, so option 2 is the answer. Domingo Paes, a Portuguese traveller, visited Vijayanagara around 1520–22 during Krishnadevaraya's reign and described the capital, the Mahanavami festival and the king's army in detail. Fernao Nuniz, a Portuguese horse-trader, stayed around 1535–37 under Achyutaraya and wrote a chronicle of the empire's history. Afanasy Nikitin was a Russian merchant from Tver who visited the Bahmani kingdom (1469–72), not Vijayanagara, and wrote 'A Journey Beyond Three Seas'. Niccolo de' Conti was an Italian from Venice who did visit Vijayanagara around 1420 under Devaraya I, but he was not Portuguese. So the 'Portuguese' filter leaves only two names, which rules out options 1, 3 and 4. Other visitors worth remembering: Abdur Razzaq (Persian envoy, under Devaraya II) and Duarte Barbosa (Portuguese, under Krishnadevaraya). The ruins of the capital at Hampi, in today's Vijayanagara district, are a UNESCO World Heritage Site since 1986.
+
+Q 56 | his | Karnataka History
+With reference to the Hoysala temples, consider the following:
+a) Ekakuta: Channakesava Temple, Belur
+b) Dwikuta: Hoysaleswara Temple, Halebeedu
+c) Trikuta: Lakshmi Temple, Doddagaddavalli
+d) Chatushkuta: Veeranarayana Temple, Belavadi
+How many of the above temples are correctly matched?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) All the four
+= 2
+~ Only two pairs, a and b, are correct, so option 2 is the answer. A kuta is a shrine with its own tower; ekakuta means one shrine, dwikuta two, trikuta three and chatushkuta four. The Chennakeshava temple at Belur, built by Vishnuvardhana in 1117 to mark his victory over the Cholas at Talakad, is an ekakuta, so a is correct. The Hoysaleshwara temple at Halebidu has twin shrines, Hoysaleshwara and Shantaleshwara, making it a dwikuta, so b is correct. The Lakshmi Devi temple at Doddagaddavalli in Hassan district (about 1113) has four shrines, so it is a chatushkuta, not a trikuta; c is wrong. The Veeranarayana temple at Belavadi in Chikkamagaluru district has three shrines, so it is a trikuta, not a chatushkuta; d is wrong. In short, c and d have been swapped. Karnataka fact: Belur, Halebidu and the trikuta Keshava temple at Somanathapura were inscribed together as the UNESCO World Heritage Site 'Sacred Ensembles of the Hoysalas' in September 2023.
+
+Q 57 | his | Ancient India
+Consider the following statements:
+a) Aryabhata's 'Aryabhatiya' is a mathematical work of Gupta period.
+b) 'Romaka Siddhanta' a work on astronomy belongs to Gupta period.
+c) With the great progress established by metallurgy, many bronze Buddha statues were cast.
+Which of the above statements are correct regarding the science and technology of the Gupta period?
+(1) a and b
+(2) a and c
+(3) b and c
+(4) a, b and c
+= 4
+~ All three statements are correct, so option 4 is the answer (the booklet prints it as 'a, b, c and d', but there is no statement d, so it simply means all the statements). Aryabhata wrote the Aryabhatiya in 499 CE at Kusumapura (Pataliputra) in the Gupta age; it covers arithmetic, algebra, trigonometry and astronomy, gives pi as about 3.1416 and states that the earth rotates on its axis, so a is correct. The Romaka Siddhanta, an astronomical text showing Greco-Roman influence, is one of the five siddhantas summarised by Varahamihira in his Pancha Siddhantika in the 6th century, the late Gupta age, so b is correct. Gupta metallurgy was highly advanced: the rust-free Iron Pillar at Mehrauli in Delhi and the over two-metre-tall metal Sultanganj Buddha are famous examples, so c is correct. Options 1, 2 and 3 each leave out one true statement. Tip: India's first satellite, launched in 1975, was named Aryabhata after this Gupta-age scientist.
+
+Q 58 | his | Modern India & Freedom Struggle
+Consider the following related to Tribal Rebellions:
+a) The Kol Rebellion
+b) Rampa Rebellion
+c) Santhal Rebellion
+d) Munda Rebellion
+Which of the above rebellions took place in Chotanagpur region?
+(1) a and b only
+(2) a, c and d only
+(3) b, c and d only
+(4) a, b, c and d
+= 2
+~ The Kol, Santhal and Munda rebellions belong to the Chotanagpur region, so option 2 (a, c and d only) is the answer. The Kol uprising of 1831–32 broke out in Ranchi, Singhbhum and nearby areas against outsider moneylenders and landlords (dikus) who were grabbing tribal land. The Santhal Hul of 1855–56, led by the brothers Sidhu and Kanhu, arose in the Rajmahal hills (Damin-i-Koh) on the north-eastern edge of the Chotanagpur plateau, the present Santhal Pargana of Jharkhand. The Munda Ulgulan of 1899–1900, led by Birsa Munda, took place in the area south of Ranchi. The Rampa Rebellion is the odd one out: it occurred in the Rampa hill tracts of the Godavari agency in present-day Andhra Pradesh, first in 1879 and again in 1922–24 under Alluri Sitarama Raju. So every option containing b is wrong. Exam fact: Birsa Munda's birth anniversary, 15 November, is observed as Janjatiya Gaurav Divas since 2021, and Jharkhand state was formed on that date in 2000.
+
+Q 59 | his | Ancient India
+With reference to the Buddhist councils and their patronage of the dynasties, consider the following pairs:
+a) First Buddhist Council: Shishunaga
+b) Second Buddhist Council: Haryanka
+c) Third Buddhist Council: Maurya
+d) Fourth Buddhist Council: Kushana
+Which of the above pairs are correctly matched?
+(1) a, b and c
+(2) b and d
+(3) c and d
+(4) b, c and d
+= 3
+~ Only pairs c and d are correct, so option 3 is the answer. The First Buddhist Council met at Rajagriha (Saptaparni cave) soon after the Buddha's death, around 483 BCE, under the Haryanka king Ajatashatru, presided over by Mahakassapa; the Sutta and Vinaya Pitakas were compiled. The Second Council met at Vaishali around 383 BCE under the Shishunaga king Kalashoka, and the Sangha split into Sthaviravadins and Mahasanghikas. So pairs a and b have their dynasties swapped. The Third Council was held at Pataliputra around 250 BCE under the Mauryan emperor Ashoka, presided over by Moggaliputta Tissa, and the Abhidhamma Pitaka was added, so c is correct. The Fourth Council met at Kundalvana in Kashmir in the 1st century CE under the Kushana king Kanishka, presided over by Vasumitra with Ashvaghosha as deputy, and Buddhism divided into Hinayana and Mahayana, so d is correct. Memory tip: the dynasties in order – Haryanka, Shishunaga, Maurya, Kushana – match councils one to four.
+
+Q 60 | his | Ancient India
+With reference to Rajatarangini, consider the following:
+a) Rajatarangini was written in Prakrit language
+b) This book is referred as 'River of Kings'
+c) This book deals with the history of Harshavardhana
+How many of the above statement / statements is/are correct?
+(1) Only one
+(2) Only two
+(3) All the three
+(4) None
+= 1
+~ Only one statement, b, is correct, so option 1 is the answer. Rajatarangini was written by the Kashmiri poet-historian Kalhana in 1148–49 CE in Sanskrit verse, arranged in eight books called tarangas; it was not written in Prakrit, so a is wrong. The title literally means 'River of Kings' (raja = king, tarangini = river), so b is correct. The work narrates the history of the kings of Kashmir from legendary times to Kalhana's own day, including the Karkota, Utpala and Lohara dynasties; it mentions an 11th-century Kashmiri king named Harsha, but it is not a history of Harshavardhana of Thanesar and Kannauj, so c is wrong. Harshavardhana's life is told in Banabhatta's Harshacharita and in the travel account of the Chinese pilgrim Hiuen Tsang. Rajatarangini is valued as one of the earliest Indian works with a real sense of chronological history. Karnataka link: another Kashmiri poet, Bilhana, served the Kalyani Chalukya king Vikramaditya VI and wrote the Vikramankadevacharita.
+
+Q 61 | sci | Biology
+WHO declares Monkeypox (Mpox) outbreak a public health emergency of international concern. In this regard which of the following statements are correct?
+a) Monkeypox virus belongs to the same family of viruses as smallpox virus
+b) This disease spreads through direct skin-to-skin contact
+c) It is a zoonotic disease also
+d) Monkeypox variants are called as clades
+Choose the correct answer from the options given below:
+(1) Only a and c are correct
+(2) Only a, b and c are correct
+(3) Only a, c and d are correct
+(4) a, b, c and d are correct
+= 4
+~ All four statements are correct, so option 4 is the answer. WHO declared the mpox upsurge, driven by the new clade Ib spreading from the Democratic Republic of the Congo to neighbouring African countries, a Public Health Emergency of International Concern (PHEIC) on 14 August 2024; it was WHO's second mpox PHEIC after the one declared in July 2022. Statement a is true: the mpox virus is an orthopoxvirus of the family Poxviridae, the same family and genus as the variola virus that caused smallpox. Statement b is true: it spreads mainly through close, direct skin-to-skin contact with the rash or sores, besides close face-to-face contact and contaminated materials. Statement c is true: it is zoonotic, passing from animals such as rodents and monkeys to humans; the virus was first identified in laboratory monkeys in 1958. Statement d is true: its genetic variants are called clades, clade I (Ia, Ib) and clade II (IIa, IIb). Options 1, 2 and 3 leave out true statements. Update: WHO ended this emergency on 5 September 2025.
+
+Q 62 | sci | Science & Technology
+Which of the following statements is correct with reference to LK-99, which was in news recently?
+(1) It is a lead-based compound supposed to possess superconducting properties as claimed by Korean scientist
+(2) It is a recent variant of Covid virus identified in EU lab
+(3) It is an additive added to petroleum fuels to make it more efficient to work with BS-6 engines
+(4) It is the name of the island which was discovered near the South Pole
+= 1
+~ Option 1 is correct. LK-99 is a copper-doped lead apatite, a lead-based compound containing lead, copper, phosphorus and oxygen, which South Korean researchers led by Lee Sukbae and Kim Ji-Hoon of the Quantum Energy Research Centre claimed in July 2023 to be the world's first superconductor working at room temperature and normal pressure. A superconductor carries electric current with zero resistance and expels magnetic fields (the Meissner effect). The claim went viral, but replication attempts by laboratories in several countries, including India, did not confirm superconductivity; the sharp drop in resistance was traced to copper sulphide impurities, and pure LK-99 behaves as an insulator. The other options are invented: LK-99 is not a Covid variant (variants get Greek-letter or Pango names such as Omicron or JN.1), not a fuel additive for BS-6 engines, and not an island near the South Pole. Exam tip: today's practical superconductors work only at very low temperatures and are used in MRI scanners, maglev trains and particle accelerators.
+
+Q 63 | cur | International & Sports
+Match the following correctly:
+Regions in news recently / Countries related
+a) Kursk – i. Myanmar
+b) Tigray – ii. Russia
+c) St Martin Island – iii. Azerbaijan
+d) Kachin – iv. Ethiopia
+e) Nagorno-Karabakh – v. Bangladesh
+Choose the correct answer from the options given below:
+(1) a – ii, b – i, c – iii, d – iv, e – v
+(2) a – iii, b – ii, c – v, d – i, e – iv
+(3) a – ii, b – iv, c – v, d – i, e – iii
+(4) a – v, b – iv, c – i, d – ii, e – iii
+= 3
+~ Option 3 is correct: Kursk – Russia, Tigray – Ethiopia, St Martin's Island – Bangladesh, Kachin – Myanmar, Nagorno-Karabakh – Azerbaijan. Kursk is a Russian region bordering Ukraine; in August 2024 Ukrainian forces launched a surprise cross-border incursion into it, the first large foreign occupation of Russian territory since the Second World War. Tigray is the northern region of Ethiopia that suffered a civil war from 2020 until the Pretoria peace agreement of November 2022. St Martin's Island is Bangladesh's only coral island, in the north-eastern Bay of Bengal near the Myanmar border; it was in news in 2024 amid spill-over of fighting from Myanmar's Rakhine State and political claims about foreign interest in it. Kachin is Myanmar's northernmost state, where the Kachin Independence Army made big gains against the military junta in 2024. Nagorno-Karabakh lies inside Azerbaijan; after Azerbaijan's offensive of September 2023, most ethnic Armenians left and the self-declared republic was dissolved on 1 January 2024. Quick check: only option 3 has both a – ii and b – iv.
+
+Q 64 | eco | Money, Banking & Budget
+With reference to Government of India budget 2024-2025:
+a) Purvodaya scheme targets the development of Bihar, Jharkhand, Madhya Pradesh, Chhattisgarh, Andhra Pradesh and West Bengal
+b) Plan to develop Amritsar-Kolkata industrial corridor with node at Patna, Bihar
+c) Additional fund allocation for Hyderabad-Bangalore industrial corridor
+d) Additional fund allocation to Kosi-Mechi river link
+Choose the correct answer from the options given below:
+(1) a and c are correct
+(2) a and b are correct
+(3) c and d are correct
+(4) a, b, c and d are correct
+= 3
+~ Statements c and d are correct, so option 3 is the answer. In the Union Budget 2024–25, presented by Finance Minister Nirmala Sitharaman on 23 July 2024, the Purvodaya plan was announced for the all-round development of the eastern region covering Bihar, Jharkhand, West Bengal, Odisha and Andhra Pradesh. Madhya Pradesh and Chhattisgarh are not part of it and Odisha is missing from the statement, so a is wrong. The budget supported the Amritsar–Kolkata Industrial Corridor with development of an industrial node at Gaya in Bihar, not Patna, so b is wrong. For Andhra Pradesh, funds were promised for essential infrastructure such as water, power, railways and roads in the Orvakal node on the Hyderabad–Bengaluru Industrial Corridor and the Kopparthy node on the Visakhapatnam–Chennai Industrial Corridor, so c is correct. Under flood mitigation for Bihar, financial support of about ₹11,500 crore was announced for projects such as the Kosi–Mechi intra-state link, so d is correct. Memory tip: 'Purvodaya = five eastern states' and 'Gaya node, not Patna'.
+
+Q 65 | eco | Schemes & Development
+Consider the following statements with reference to Pradhan Mantri JI-VAN yojana:
+a) Aims to promote Second Generation (2G) Biofuels (2G ethanol), which is produced from non-food crops, agricultural residues or waste
+b) Ethanol produced from this scheme will be mandatorily supplied to Oil Marketing Companies (OMCs) for blending purpose
+c) In 2G biofuel technology micro algae were used to produce ethanol
+d) India's first 2G ethanol biorefinery project for producing ethanol was started in Bhatinda, Punjab
+Choose the correct answer from the options given below:
+(1) a and b are correct
+(2) a, b and c are correct
+(3) a, b and d are correct
+(4) a, b, c and d are correct
+= 1
+~ Statements a and b are correct, so option 1 is the answer. Pradhan Mantri JI-VAN (Jaiv Indhan – Vatavaran Anukool fasal awashesh Nivaran) Yojana, approved in 2019, gives viability-gap funding to commercial and demonstration projects for second-generation (2G) ethanol made from lignocellulosic biomass such as crop residues, non-food crops and other wastes, so a is correct. Ethanol produced by the supported projects must be supplied to oil marketing companies to raise blending under the Ethanol Blended Petrol programme, so b is correct. Statement c is wrong: biofuel from micro-algae is classed as third-generation (3G); 2G technology uses non-food plant biomass such as rice straw and cotton stalks. Statement d is wrong: India's first 2G ethanol bio-refinery is Indian Oil's plant at Panipat, Haryana, dedicated to the nation on World Biofuel Day, 10 August 2022; HPCL's Bathinda project in Punjab is a separate plant. In August 2024 the Cabinet extended the scheme to 2028–29 and widened its feedstocks. Memory tip: 1G = food crops, 2G = residues and waste, 3G = algae.
+
+Q 66 | cur | International & Sports
+Gobekli Tepe which was in the news recently is a place related to:
+(1) Archaeological site in Turkey
+(2) Conflict zone in Ukraine
+(3) Dark oxygen was discovered in Pacific Ocean
+(4) Missile testing site in Iran
+= 1
+~ Option 1 is correct. Gobekli Tepe ('potbelly hill' in Turkish) is a Neolithic archaeological site near Sanliurfa in south-eastern Turkey (Turkiye). Its huge T-shaped stone pillars, carved with foxes, boars, snakes, vultures and other animals, were raised around 9500 BCE – about 11,000 years ago and some 6,000 years before Stonehenge – by hunter-gatherers, before farming and pottery spread. It is often described as the world's oldest known megalithic sanctuary and was declared a UNESCO World Heritage Site in 2018. It was in news in 2024 after researchers argued that carvings on one pillar, the 'Vulture Stone', may record a solar calendar and a comet strike at the end of the last Ice Age. The other options are distractors: 'dark oxygen', oxygen apparently produced in total darkness on the deep seabed by metallic nodules, was reported in 2024 from the Clarion-Clipperton Zone of the Pacific; Gobekli Tepe has nothing to do with the Ukraine war or Iran's missile tests. Tip: Karnataka's UNESCO sites include Hampi, Pattadakal and the Hoysala temples.
+
+Q 67 | cur | Karnataka
+Which of the following statements are correct with reference to 10th Karnataka Bird festival held in 2024?
+a) Karnataka Forest Department and Jungle Lodges and Resorts along with the Karnataka Ecotourism Development Board hosted this event
+b) It was organised along the Krishna River in Bagalkot
+c) Indian roller, Karnataka state bird, was the mascot of this event
+d) It was decided to create a separate cell for conducting research on birds
+Choose the correct answer from the options given below:
+(1) a and b only
+(2) b and c only
+(3) c and d only
+(4) a and d only
+= 1
+~ Statements a and b are correct, so option 1 is the answer as per KEA's key. The Karnataka Bird Festival (Hakki Habba) is a state-level birding event that the Karnataka Forest Department organises together with Jungle Lodges and Resorts and the Karnataka Eco-Tourism Development Board to promote bird watching, conservation awareness and eco-tourism. The 10th edition, in 2024, was held in Bagalkot district along the Krishna river, whose backwaters and wetlands attract many resident and migratory water birds. Statement c is not accepted: the Indian roller (Neelakanta) is indeed Karnataka's state bird, but the key does not treat it as this festival's mascot. Statement d, about creating a separate bird-research cell, is also not part of the key's answer. Hence options 2, 3 and 4, which contain c or d, are wrong. Useful state symbols: Karnataka's state animal is the elephant, state tree is sandalwood and state flower is the lotus; Ranganathittu in Mandya district is the state's best-known bird sanctuary and a Ramsar site.
+
+Q 68 | cur | National
+What is the objective of the Amitabh Kant committee constituted in 2023?
+(1) To examine the stalled real estate projects and revive them back
+(2) To suggest measures for reducing trade deficit and measures to promote export
+(3) To provide a clear roadmap for the revival of the telecom operator BSNL
+(4) To suggest measures to reduce the subsidies on chemical fertilizer
+= 1
+~ Option 1 is correct. In 2023 the Union Ministry of Housing and Urban Affairs set up a committee chaired by Amitabh Kant, former CEO of NITI Aayog and India's G20 Sherpa, to examine 'legacy stalled real estate projects' and recommend ways to complete them, so that home buyers who had paid but were stuck for years could get possession. Its report, submitted later in 2023, suggested measures such as a 'zero period' giving relief from interest and penalties for the Covid years, bringing in co-developers, allowing partial surrender of land, and settlement schemes by state development authorities; it noted that more than four lakh housing units were stuck across the country. The other options do not fit: trade-deficit and export measures come under the Foreign Trade Policy 2023; BSNL's revival was through revival packages approved by the Union Cabinet, not this committee; and fertiliser subsidies are handled by the Department of Fertilizers. Exam tip: in committee questions, link the chairperson to the subject; Amitabh Kant is also remembered for the 'Incredible India' and Kerala's 'God's Own Country' campaigns.
+
+Q 69 | cur | International & Sports
+Which of the following countries are members of both QUAD as well as Middle East QUAD (I2U2)?
+a) India
+b) Australia
+c) USA
+d) UAE
+Choose the correct answer from the options given below:
+(1) a and d
+(2) a and c
+(3) c and d
+(4) b and c
+= 2
+~ Option 2, India and the USA, is correct. The Quadrilateral Security Dialogue (QUAD) has four members: India, the USA, Japan and Australia. First proposed in 2007 and revived in 2017, it now holds leaders' summits on a free and open Indo-Pacific, maritime security, vaccines and critical technologies. I2U2, often called the 'Middle East QUAD' or 'West Asian QUAD', has India, Israel, the USA and the UAE as members: 'I2' stands for India and Israel and 'U2' for the USA and the UAE. It began at a foreign ministers' meeting in October 2021 and held its first leaders' summit, a virtual one, in July 2022, focusing on joint investments in water, energy, transport, space, health and food security. So the countries common to both groups are only India and the USA. Australia is only in QUAD and the UAE is only in I2U2, which rules out options 1, 3 and 4. Memory tip: India and the USA form the 'common pair'; Japan and Australia belong only to QUAD, while Israel and the UAE belong only to I2U2.
+
+Q 70 | eco | Schemes & Development
+With reference to National Critical Minerals Mission recently announced by the government:
+a) It aims towards self-reliance in the raw materials essential for the nation's economic growth
+b) It aims to reinforcing India's Critical Mineral value chain across all stages – from exploration and mining to beneficiation, processing and recovery from end-of-life products
+c) Production-linked incentives for Critical Minerals recycling
+d) The mission's goal is to ensure self-sufficiency in fulfilling the industrial demands for critical minerals
+Choose the correct answer from the options given below:
+(1) a, b and d are correct
+(2) a, b and c are correct
+(3) b, c and d are correct
+(4) a, b, c and d are correct
+= 4
+~ All four statements are correct as per KEA's key, so option 4 is the answer. The Union Budget 2024–25 (July 2024) announced a Critical Mineral Mission for domestic production, recycling of critical minerals and overseas acquisition of critical mineral assets. Critical minerals such as lithium, cobalt, nickel, graphite and rare earth elements are vital for electric-vehicle batteries, solar panels, electronics and defence, and India depends heavily on imports for them. The mission therefore aims at self-reliance in these raw materials for economic growth (a) and self-sufficiency in meeting industrial demand (d). It covers the whole value chain – exploration, mining, beneficiation, processing and recovery from end-of-life products such as used batteries and e-waste (b) – and includes incentives to promote recycling of critical minerals (c). Since every statement is true, options 1, 2 and 3 are incomplete. Update: the Union Cabinet formally approved the National Critical Mineral Mission in January 2025 with an outlay of about ₹16,300 crore. Karnataka angle: small lithium resources were reported at Marlagalla in Mandya district in 2021, and the Ministry of Mines listed 30 critical minerals in 2023.
+
+Q 71 | his | Karnataka History
+Consider the following institutions establishment:
+a) Mysore University
+b) The Bank of Mysore Ltd (State Bank of Mysore)
+c) Karnataka Sahitya Parishad
+d) Mythic Society
+Select the correct chronological order:
+(1) a, b, c, d
+(2) d, b, a, c
+(3) d, b, c, a
+(4) b, d, c, a
+= 3
+~ The correct chronological order is d, b, c, a, so option 3 is the answer. The Mythic Society was founded in Bengaluru in 1909 to promote research in history, archaeology and culture; it publishes a quarterly journal and is housed in the Daly Memorial Hall. The Bank of Mysore Ltd was started on 2 October 1913 under the patronage of Krishnaraja Wadiyar IV at the initiative of Diwan Sir M. Visvesvaraya; it later became the State Bank of Mysore, an associate of SBI, and merged with the State Bank of India in 2017. The Karnataka Sahitya Parishat was founded in Bengaluru on 5 May 1915 with H.V. Nanjundaiah as its first president; it was later renamed the Kannada Sahitya Parishat. The University of Mysore was established on 27 July 1916, the first university in a princely state of India, with H.V. Nanjundaiah as its first Vice-Chancellor. Since 1909 comes first and 1916 last, options 1, 2 and 4 are wrong. Memory tip: '09-13-15-16' – Society, Bank, Parishat, University – all from the Visvesvaraya era of modern Mysore.
+
+Q 72 | his | Medieval India
+Match the following with reference to the several categories of land, mentioned in Chola inscriptions:
+A / B
+a) Brahmadeya – i. Land donated to the Jain institutions
+b) Devadana – ii. Land for the maintenance of a school
+c) Pallichchandam – iii. Land gifted to Brahmanas
+d) Shalabhoga – iv. Land gifted to temples
+(1) a – i, b – ii, c – iii, d – iv
+(2) a – iv, b – iii, c – ii, d – i
+(3) a – ii, b – iv, c – i, d – iii
+(4) a – iii, b – iv, c – i, d – ii
+= 4
+~ Option 4 is correct: Brahmadeya – land gifted to Brahmanas, Devadana – land gifted to temples, Pallichchandam – land donated to Jaina institutions, Shalabhoga – land for the maintenance of a school. Chola inscriptions of the 9th to 13th centuries classify land according to who held it. Brahmadeya was tax-free land granted to Brahmanas, often a whole village run by an assembly called the sabha. Devadana, also called tirunamattukkani, was land given to temples. Pallichchandam was land donated to Jaina institutions, since 'palli' meant a Jaina or Buddhist establishment. Shalabhoga was land set apart for maintaining a school (shala). Another category was vellanvagai, the land of non-Brahmana peasant proprietors. Option 1 just lists both columns in order, and options 2 and 3 mismatch most pairs. A related fact: the Uttaramerur inscriptions of Parantaka I describe how members of the sabha of a brahmadeya village were chosen by lot (the kudavolai system). Karnataka angle: the Cholas held Talakad and Gangavadi until the Hoysala king Vishnuvardhana drove them out around 1116.
+
+Q 73 | his | Medieval India
+Assertion (A): Mahmad Ghazni made 17 raids on India
+Reason (R): He wanted to establish a Muslim empire in India
+Which one of the following options is correct with respect to the above statements?
+(1) Both statements 'A' and 'R' are correct and 'R' explains 'A'
+(2) Both statements 'A' and 'R' are correct but 'R' does not explain 'A'
+(3) Statement 'A' is correct but statement 'R' is incorrect
+(4) Statement 'A' is incorrect but statement 'R' is correct
+= 3
+~ Option 3 is correct: the Assertion is true but the Reason is false. Mahmud of Ghazni, the Turkish ruler of Ghazni in present-day Afghanistan (998–1030 CE), is traditionally said to have led 17 raids into India between about 1000 and 1027 CE, so A is correct. His main aim, however, was to plunder the wealth of rich Indian towns and temples such as Nagarkot, Thanesar, Mathura, Kannauj and, most famously, Somnath in 1025, in order to finance his wars in Central Asia and beautify his capital, and to win prestige as a champion of Islam. He did not try to build a permanent empire in India; apart from annexing Punjab, he left no lasting rule, so R is incorrect. Options 1 and 2 fail because R is false, and option 4 fails because A is true. The real foundation of Turkish rule in India was laid later by Muhammad of Ghur, who defeated Prithviraj Chauhan in the Second Battle of Tarain in 1192. Useful fact: the scholar Al-Biruni accompanied Mahmud and wrote Kitab-ul-Hind on Indian society and science.
+
+Q 74 | his | Modern India & Freedom Struggle
+Which of the following pairs are correctly matched?
+a) Ramnarayan – Deputy Diwan of Bengal
+b) Shah Alam – Nawab of Bengal
+c) Shuja-ud-daula – Nawab of Arcot
+d) Mir Jafar – Nawab of Bengal
+(1) a and b are correct
+(2) b and c are correct
+(3) a and d are correct
+(4) c and d are correct
+= 3
+~ KEA's key gives option 3, pairs a and d. Pair d is clearly correct: Mir Jafar was made Nawab of Bengal by the English East India Company after Robert Clive's victory at Plassey in 1757 and ruled in 1757–60 and again in 1763–65. For pair a, Raja Ramnarayan was a senior official of the Bengal Nawabs who served as deputy governor (naib) of Bihar, then part of the Bengal subah, under Siraj-ud-daula and Mir Jafar, and the key accepts him as the deputy in Bengal's administration; strictly, the formal post of Deputy Diwan of Bengal created after the Diwani grant of 1765 went to Muhammad Reza Khan, with Shitab Rai as Deputy Diwan of Bihar. Pair b is wrong: Shah Alam II was the Mughal emperor, who granted the Diwani of Bengal, Bihar and Orissa to the Company by the Treaty of Allahabad (1765). Pair c is wrong: Shuja-ud-daula was the Nawab of Awadh, not Arcot; the Nawab of Arcot in that period was Muhammad Ali Wallajah. Hence options 1, 2 and 4 are ruled out. Exam tip: remember the Buxar (1764) trio – Mir Qasim, Shuja-ud-daula and Shah Alam II. (Official key; some sources differ.)
+
+Q 75 | his | Modern India & Freedom Struggle
+Which of following are correctly matched?
+Incidents / Persons associated with
+a) Assassination of Curzon Wyllie – Madan Lal Dhingra
+b) Murder of St. Stephen – Shanti and Suniti Chaudhary
+c) Throwing of a bomb in the central legislative assembly – Bhagat Singh
+d) Seizure of the Chittagong armoury – Rajguru
+(1) a and b only
+(2) a and c only
+(3) a and d only
+(4) b and c only
+= 1,2,4
+~ KEA's key accepts options 1, 2 and 4, because three of the four pairs are correct and no single option lists all three. Pair a is correct: Madan Lal Dhingra shot Sir William Curzon Wyllie, political aide-de-camp at the India Office, in London on 1 July 1909 and was hanged the same year. Pair b is correct in substance: on 14 December 1931 two schoolgirls of Comilla (now in Bangladesh), Shanti Ghosh and Suniti Choudhury, shot dead the District Magistrate Charles Geoffrey Buckland Stevens; the booklet's 'St. Stephen' refers to him. Pair c is correct: Bhagat Singh and Batukeshwar Dutt threw low-intensity bombs in the Central Legislative Assembly, Delhi, on 8 April 1929, shouting 'Inquilab Zindabad', to protest against the Public Safety Bill and Trade Disputes Bill. Pair d is wrong: the Chittagong armoury raid of 18 April 1930 was led by Surya Sen ('Masterda'); Rajguru was hanged with Bhagat Singh and Sukhdev on 23 March 1931 in the Saunders murder case. So options 1 (a, b), 2 (a, c) and 4 (b, c) each contain only correct pairs, while option 3 includes the wrong pair d.
+
+Q 76 | comp | Computer Fundamentals
+Match the following:
+a) System software
+b) Public domain software
+c) Application software
+d) Open Source Software (OSS)
+i. A software which is free to download, view, modify and distribute modified source code
+ii. Software which controls the operational and processing capabilities of computer system
+iii. Shareware / Freeware
+iv. A software written to solve a specific problem
+(1) a – ii, b – iv, c – iii, d – i
+(2) a – iv, b – iii, c – ii, d – i
+(3) a – iii, b – iv, c – i, d – ii
+(4) a – ii, b – iii, c – iv, d – i
+= 4
+~ The correct matching is a–ii, b–iii, c–iv, d–i, which is option 4. System software (operating system, device drivers, utilities) manages and controls the operation and processing capability of the computer itself, so a–ii. Public domain software carries no copyright restriction and anyone may use it free; in this question it is grouped with shareware/freeware, programs distributed free or on a try-before-you-buy basis, so b–iii. Application software is written to solve a specific user problem or task, such as MS Word, Tally or a railway reservation program, so c–iv. Open Source Software lets users freely download, view, modify and redistribute the modified source code, so d–i (examples: Linux, LibreOffice, Firefox). Option 1 wrongly pairs public domain software with a problem-specific program, option 2 calls system software problem-specific, and option 3 pairs system software with shareware. Memory tip: system software controls the machine, application software does the user's job, and open source means the source code itself is open. A frequent exam trap: freeware costs nothing but its source code is usually closed, whereas open-source software shares the code.
+
+Q 77 | cur | National
+Smt. Droupadi Murmu, Honourable President of India, has renamed two halls in Rashtrapati Bhavan. Identify the correctly matched pairs:
+Old name – New name
+a) Durbar Hall – Ganatantra Mandap
+b) Ashok Hall – Ashok Mandap
+c) Banquet Hall – Annapurna Mandap
+d) Durbar Hall – Swatantrya Mandap
+(1) a and c only
+(2) c and d only
+(3) b and d only
+(4) a and b only
+= 4
+~ On 25 July 2024 President Droupadi Murmu renamed two important halls of Rashtrapati Bhavan: 'Durbar Hall' became 'Ganatantra Mandap' and 'Ashok Hall' became 'Ashok Mandap'. So pairs a and b are correct, option 4. Pair c is wrong because the Banquet Hall was not renamed 'Annapurna Mandap' in this decision, and pair d is wrong because Durbar Hall was renamed Ganatantra Mandap, not 'Swatantrya Mandap'. Options 1, 2 and 3 each include c or d and are therefore wrong. Rashtrapati Bhavan's press release explained that 'Durbar' referred to the courts and assemblies of Indian rulers and the British, and lost relevance once India became a Republic, or 'Ganatantra'; the hall hosts ceremonies such as the presentation of national awards. Ashok Hall, originally a ballroom, became 'Ashok Mandap' to bring uniformity in language and remove anglicisation while keeping the meaning of 'Ashok', one free from sorrow, linked to Emperor Ashoka and the Ashoka tree. Exam tip: remember the pattern 'Hall' to 'Mandap' and the date, July 2024, since renaming questions are common in KSP papers.
+
+Q 78 | pol | Laws, Police & Society
+Why impartiality is necessary for a civil servant?
+a) Fulfilling all the interests equitably.
+b) Upholding professional ethics.
+c) Working in favour of Majoritarianism.
+d) Promotion of the interest of weaker section.
+e) Acting according to the mandate of the Constitution.
+In the above statements which is/are wrong?
+(1) a, b and e
+(2) d only
+(3) c only
+(4) All are correct
+= 3
+~ The question asks which statement is a wrong reason for impartiality. Impartiality means a civil servant treats every citizen and every political group equally, without bias of caste, religion, region, gender or political affiliation. Statement c, 'working in favour of majoritarianism', is wrong: favouring the majority community or the ruling majority is itself partiality and goes against the equality guaranteed by Articles 14 and 15. Statements a, b, d and e are valid reasons: serving all interests equitably, upholding professional ethics, promoting the interests of weaker sections (a constitutional directive under Article 46, which is fairness, not bias) and acting according to the mandate of the Constitution. Hence option 3, 'c only'. Option 1 wrongly calls core values wrong, option 2 wrongly treats protection of weaker sections as bias, and option 4 ignores the majoritarian statement. For a police officer this is practical: a complaint must be registered and investigated the same way whoever the complainant or the accused is. Remember the foundational values listed in the UPSC ethics syllabus: integrity, impartiality and non-partisanship, objectivity, dedication to public service, and compassion towards the weaker sections.
+
+Q 79 | cur | Karnataka
+Saumitra Kumar Haldar is the chairman of CWMA. Expand CWMA.
+(1) Canal Water Management Authority
+(2) Cauvery Water Management Authority
+(3) Central Water Management Authority
+(4) Cauvery Water Maintenance Authority
+= 2
+~ CWMA stands for Cauvery Water Management Authority, option 2. The Union Government constituted it in June 2018 under the Inter-State River Water Disputes Act, 1956, to implement the Supreme Court's final verdict of 16 February 2018 on the Cauvery dispute among Karnataka, Tamil Nadu, Kerala and Puducherry. It is assisted by the Cauvery Water Regulation Committee (CWRC), which monitors releases and reservoir levels. Saumitra Kumar Haldar, a former chairman of the Central Water Commission (CWC), was its full-time chairman at the time of this exam; in the early years the CWC chairman had held the post as an additional charge. Options 1 'Canal', 3 'Central' and 4 'Maintenance' are distractors built on the same initials. Karnataka angle: the 2018 verdict raised Karnataka's share by 14.75 tmcft to 284.75 tmcft and fixed 177.25 tmcft to be delivered to Tamil Nadu at Biligundlu in a normal water year; in deficit years the CWMA directs the releases, which is why its orders make headlines in Karnataka every monsoon. The Authority functions under the Union Ministry of Jal Shakti.
+
+Q 80 | comp | Internet, Networking & Security
+Expand OWASP in reference to Cyber Security.
+(1) Open World Advanced Security Project
+(2) Open Web Application Security Project
+(3) Open World Alternate Security Project
+(4) Open Web Application Service Plan
+= 2
+~ OWASP was founded in 2001 as the Open Web Application Security Project, so option 2 is the answer KEA expects. It is a non-profit, community-driven foundation that publishes free tools, guides and standards to improve the security of software, especially web applications. Its best-known output is the 'OWASP Top 10', a periodically updated list of the most critical web-application security risks such as broken access control, injection (for example SQL injection) and security misconfiguration; developers and auditors worldwide use it as a checklist. Options 1 and 3 ('Open World Advanced/Alternate Security Project') and option 4 ('Open Web Application Service Plan') are invented expansions. Update: in February 2023 the OWASP board changed 'Web' to 'Worldwide', so the official name today is Open Worldwide Application Security Project; the acronym stays the same and, among the choices given, only option 2 is a genuine expansion. For police aspirants this matters because many cyber-crime cases, such as data leaks, defaced websites and online fraud, begin with exactly the web-application weaknesses that OWASP describes.
+
+Q 81 | comp | Internet, Networking & Security
+Match the following in terms of Network Security:
+a) Denial of Service
+b) Virus
+c) Ransomware
+d) Malware
+i. Clop attack
+ii. Yo-Yo attack
+iii. Brain
+iv. Melissa
+(1) a – ii, b – i, c – iii, d – iv
+(2) a – ii, b – iv, c – i, d – iii
+(3) a – ii, b – iii, c – i, d – iv
+(4) a – iii, b – ii, c – i, d – iv
+= 2,3
+~ KEA's final key accepts both option 2 and option 3, because two of the examples fit two categories. Common to both options: Denial of Service matches the Yo-Yo attack (a–ii), a DoS variant against cloud services in which the attacker sends bursts of traffic so that the victim's auto-scaling repeatedly scales up and down, wasting money and degrading service; and Ransomware matches Clop (c–i), the Cl0p ransomware group that steals or encrypts data and demands ransom, notorious for the 2023 MOVEit file-transfer attacks. The remaining two, Brain and Melissa, are both computer viruses, and every virus is also malware. Brain (1986), written by two brothers in Lahore, is regarded as the first virus for IBM PCs and infected the boot sector of floppy disks. Melissa (1999) was a macro virus that spread through infected Word documents sent by email. So b–iv, d–iii (option 2) and b–iii, d–iv (option 3) are both defensible. Option 1 wrongly calls Clop a virus and Brain ransomware, and option 4 pairs Denial of Service with Brain. Remember: every virus is malware, but not all malware is a virus.
+
+Q 82 | eco | Schemes & Development
+Match the following initiatives related to transportation infrastructure with their aims:
+a) Gati Shakti Plan
+b) Bharatmala Pariyojana
+c) Parvatmala Pariyojana
+d) Bhoomi Rashi
+i. Efficient logistics network
+ii. Development of ropeways
+iii. Online processing of land acquisition to accelerate highway infrastructure
+iv. Connect, improve and decongest highways and road network in India
+(1) a – ii, b – iv, c – iii, d – i
+(2) a – i, b – iv, c – ii, d – iii
+(3) a – iii, b – ii, c – i, d – iv
+(4) a – i, b – iii, c – ii, d – iv
+= 2
+~ The correct matching is a–i, b–iv, c–ii, d–iii, option 2. PM Gati Shakti National Master Plan, launched in October 2021, is a GIS-based digital platform that brings ministries such as railways, roads, ports and telecom together to plan multimodal infrastructure, aiming at an efficient logistics network and lower logistics costs, so a–i. Bharatmala Pariyojana, approved in 2017, is the umbrella highway programme to connect, improve and decongest national highways and the road network through economic corridors, expressways and border roads, so b–iv; the Bengaluru–Chennai Expressway is a Karnataka-linked example. Parvatmala Pariyojana, the National Ropeways Development Programme announced in the Union Budget 2022-23, develops ropeways for hilly, remote and congested areas, so c–ii. Bhoomi Rashi is the Ministry of Road Transport and Highways portal that processes land-acquisition notifications online to speed up highway projects, so d–iii. Options 1, 3 and 4 swap these aims. Memory tip: the 'mala' schemes are networks, Bharatmala for roads, Sagarmala for ports and Parvatmala for mountains through ropeways, while Bhoomi Rashi deals with bhoomi, that is land.
+
+Q 83 | eco | Indian Economy
+Regarding the term 'Hindu Rate of Growth' consider the following statements:
+a) The term was coined by Indian economist Prof. Raj Krishna in 1978.
+b) The term described low Indian economic growth from 1950s to 1980s.
+c) Hindu rate of growth was averaged around 4%.
+Which of the above statements are correct? Select the correct answer using the codes given below:
+(1) a and b only
+(2) a only
+(3) b and c only
+(4) a, b and c
+= 4
+~ KEA's key treats all three statements as correct, option 4. Statement a: the phrase 'Hindu rate of growth' was coined in 1978 by the Indian economist Prof. Raj Krishna of the Delhi School of Economics, who also served as a member of the Planning Commission. Statement b: it described India's persistently low GDP growth from the 1950s to the late 1970s and early 1980s, under a closed, licence-based, public-sector-led economy, when growth stayed low despite planning while population grew rapidly, so per-capita income rose only about 1 to 1.5 per cent a year. Statement c: the average growth in that period was roughly 3.5 per cent a year, which the key accepts as 'around 4%'. Options 1, 2 and 3 leave out one or more statements the key considers correct. The term was not a comment on religion; it suggested a fatalistic acceptance of a low, stable rate. Growth rose in the 1980s and especially after the 1991 LPG reforms. Exam tip: 'Hindu rate' = Raj Krishna = 1978 = about 3.5 per cent. (Official key; some sources differ.)
+
+Q 84 | geo | Indian Geography
+Consider the following statements regarding TISCO:
+a) It was established in 1907
+b) It was started at Sakchi
+c) It got raw materials from Odisha and Chhattisgarh
+d) The Kharkai and Subarnarekha rivers ensured sufficient water supply to TISCO
+Which of the statements given above is/are correct?
+(1) a and b only
+(2) b only
+(3) a only
+(4) a, b, c and d
+= 4
+~ All four statements are correct, option 4. a) The Tata Iron and Steel Company (TISCO, now Tata Steel) was set up in 1907, realising Jamsetji Tata's dream, and began producing steel in 1912. b) It was started at the village of Sakchi, near the confluence of the Subarnarekha and Kharkai rivers in present-day Jharkhand; in 1919 Sakchi was renamed Jamshedpur in honour of Jamsetji Tata. Statements c and d are taken almost word for word from the NCERT Class 8 geography textbook's case study of Jamshedpur: TISCO gets coal from the Jharia coalfields and iron ore, limestone, dolomite and manganese from Odisha and Chhattisgarh, and the Kharkai and Subarnarekha rivers ensured sufficient water supply. Good rail links and nearness to Kolkata, a large market and port, were further advantages of the site. Options 1, 2 and 3 leave out correct statements, so they are wrong. Karnataka link: the state's own pioneer steel unit, the Mysore Iron Works at Bhadravati, was started in 1923 under Sir M. Visvesvaraya and is today the Visvesvaraya Iron and Steel Plant (VISL). Exam tip: for location questions on old industrial centres, remember the three classic factors of raw materials, water and transport.
+
+Q 85 | eco | Schemes & Development
+Consider the following statements about "Raitha Sanjeevini":
+a) KSAMB provides compensation of Rs. 50,000 in case of a farmer's death during agricultural operation.
+b) Farmers do not pay any premium under this scheme.
+c) All APMCs should compulsorily contribute to this scheme.
+d) Under this scheme compensation paid to the farmers ranges from Rs. 1500 to Rs. 15,000
+Which of the statement / statements given above is / are Incorrect?
+(1) a and b
+(2) a and d
+(3) c only
+(4) b only
+= 2,3
+~ KEA's final key accepts both option 2 and option 3, because the published details of this Karnataka scheme have changed over time and sources differ. Raitha Sanjeevini is an accident-relief scheme run by the Karnataka State Agricultural Marketing Board (KSAMB) with contributions from APMCs: when a farmer dies or is disabled in an accident during agricultural operations, compensation is paid, and the farmer pays no premium. So statement b is correct in every version, and options 1 and 4, which call b incorrect, are wrong. Option 3 (c only): the money comes from APMCs through the KSAMB, but the KSAMB describes it as a contribution from financially viable APMCs, not a compulsory levy on every APMC, so c is incorrect. Option 2 (a and d): the amounts in a and d (Rs 50,000 for death; Rs 1,500 to Rs 15,000 for injuries) are figures reported for earlier years, and the compensation has since been revised upwards, so on current figures a and d are incorrect. Because the two readings conflict, KEA gave marks for both. Tip: unlike the central PM Fasal Bima Yojana, where farmers pay a small share of the crop-insurance premium, Raitha Sanjeevini costs the farmer nothing.
+
+Q 86 | eco | Schemes & Development
+Consider the following statements with reference to PM-PRANAM:
+a) This scheme was announced in the Union Budget 2024-25
+b) It aims to reduce the dependency on chemical fertilizer and promote organic and biofertilizer
+c) Rs. 50,000 crores is earmarked for the implementation of the scheme
+d) This scheme encourages sustainable agricultural practices
+Choose the correct answer from the options given below:
+(1) a, b and d are correct
+(2) a, b and c are correct
+(3) b and d are correct
+(4) a, b, c and d are correct
+= 3
+~ Statements b and d are correct, option 3. PM-PRANAM (PM Programme for Restoration, Awareness Generation, Nourishment and Amelioration of Mother-Earth) aims to reduce the use of chemical fertilisers and promote balanced use of fertilisers along with organic and bio-fertilisers, thereby encouraging sustainable agriculture and better soil health. Statement a is wrong: the scheme was announced in the Union Budget 2023-24 (February 2023), not 2024-25, and was approved by the Union Cabinet in June 2023. Statement c is wrong: there is no separate allocation of Rs 50,000 crore; the scheme is financed from savings in the existing fertiliser subsidy. If a state reduces its chemical fertiliser use compared with the average of the previous three years, 50 per cent of the subsidy saved is passed on to that state as a grant, about 70 per cent of which can be used for assets such as alternate-fertiliser units and 30 per cent for rewarding farmers, panchayats, FPOs and self-help groups. Options 1, 2 and 4 include a or c. Karnataka angle: the state adopted an organic farming policy as early as 2004, so cutting chemical fertiliser use can now also earn it central grants.
+
+Q 87 | pol | Laws, Police & Society
+Justice Amitava Roy Committee was in news recently. In this regard consider the following:
+a) This committee was constituted by Ministry of Law and Justice, Government of India
+b) It was constituted to look into the reforms of prisons
+c) It was a one-member committee
+d) Telemedicine introduction in prisons is one of the suggestions given by this committee
+Choose the correct answer from the options given below:
+(1) a, b and d are correct
+(2) a, b and c are correct
+(3) b and d are correct
+(4) a, b, c and d are correct
+= 3
+~ Statements b and d are correct, option 3. The Justice Amitava Roy Committee was constituted by the Supreme Court of India on 25 September 2018, while hearing the case on inhuman conditions in 1,382 prisons, and not by the Union Ministry of Law and Justice; so statement a is wrong. It was a three-member committee headed by former Supreme Court judge Justice Amitava Roy, with senior police and prison officials as the other members, so statement c ('one-member committee') is wrong. Its mandate was prison reform: overcrowding, the large share of under-trial prisoners, women prisoners, staff shortages, health care and unnatural deaths in jails, so b is correct. Statement d, the introduction of telemedicine facilities for prisoners, is accepted by the key as one of its suggestions; the committee also stressed video-conferencing for trials, more legal-aid lawyers and speedy disposal of petty cases to cut under-trial numbers. Options 1, 2 and 4 include a or c and are wrong. Tip for police aspirants: 'prisons' is a State List subject (Entry 4, List II), and the Union Home Ministry's Model Prisons Act, 2023 now guides states such as Karnataka in modernising their jails.
+
+Q 88 | his | Art & Culture
+Consider the following pairs related to GI tag:
+a) Kani shawl – Jammu and Kashmir
+b) Kotpad handloom fabric – Jharkhand
+c) Tangaliya shawl – Assam
+d) Bhavani Jamakkalam – Tamil Nadu
+Which of the above pairs are correctly matched?
+(1) a and c only
+(2) a and d only
+(3) b and d only
+(4) b and c only
+= 2
+~ Pairs a and d are correct, option 2. Kani shawl is a GI-tagged handwoven pashmina shawl of Jammu and Kashmir, woven with small wooden spools called 'kanis', which give it its name. Bhavani Jamakkalam is the GI-tagged cotton carpet or bedspread woven in Bhavani town of Erode district, Tamil Nadu. Pair b is wrong: Kotpad handloom fabric belongs to Odisha, not Jharkhand; it is woven by tribal weavers of Kotpad in Koraput district using natural dye from the roots of the aal tree. Pair c is wrong: Tangaliya shawl belongs to Gujarat, not Assam; it is woven by the Dangasia community of Surendranagar district with a distinctive dotted pattern. Options 1, 3 and 4 include b or c. GI tags are registered under the Geographical Indications of Goods (Registration and Protection) Act, 1999, in force since 2003, by the GI Registry in Chennai; Darjeeling Tea was India's first GI product. Karnataka also has many textile GIs, such as Mysore Silk, Ilkal sarees, Molakalmuru sarees and Udupi sarees, so keep a state-wise list for the exam.
+
+Q 89 | eco | Indian Economy
+Consider the following statements:
+Statement – I: Carbon tax is levied on the carbon emission that arises while producing goods and services
+Statement – II: Carbon taxes are imposed to make hidden social costs visible
+Which of the following is correct with respect to above statements?
+(1) Statement I is correct but Statement II is not correct
+(2) Statement I is incorrect, but Statement II is correct
+(3) Both Statements I and II are correct and Statement II explains Statement I
+(4) Statements I and II are correct, but Statement II does not explain Statement I
+= 3
+~ Both statements are correct and Statement II explains Statement I, option 3. A carbon tax is a charge on the carbon dioxide and other greenhouse gases released when fossil fuels are burnt to produce goods and services; it is usually levied per tonne of CO2 or on the carbon content of fuels, so Statement I is correct. Emissions cause climate change, air pollution and health damage whose costs are borne by society rather than by the polluter. Economists call this a negative externality, a hidden social cost. A carbon tax, a type of Pigouvian tax, adds this cost to the market price so that it becomes visible to producers and consumers, who then shift to cleaner fuels and technologies. Statement II therefore gives the reason for Statement I, which rules out option 4, while options 1 and 2 wrongly call one statement incorrect. Exam tip: a carbon tax fixes the price and lets the quantity of emissions adjust, whereas cap-and-trade or carbon credits fix the quantity and let the price adjust. India has no explicit carbon tax, but its earlier coal cess, raised to Rs 400 per tonne before GST, worked as an implicit one.
+
+Q 90 | cur | International & Sports
+Against whom did Carlos Alcaraz win 2024 Men's singles Wimbledon Tennis Title and belongs to which country?
+(1) Novak Djokovic – Spain
+(2) Rafael Nadal – Spain
+(3) Roger Federer – Switzerland
+(4) Novak Djokovic – Serbia
+= 4
+~ Option 4 is the keyed answer. Carlos Alcaraz won the 2024 Wimbledon men's singles title by beating Novak Djokovic in the final on 14 July 2024, 6–2, 6–2, 7–6. The question asks against whom he won and which country that opponent belongs to; Djokovic represents Serbia, so 'Novak Djokovic – Serbia' is correct. Option 1 names the right opponent but gives Spain, which is Alcaraz's own country, not Djokovic's. Option 2 is wrong because Rafael Nadal, though Spanish, was not the finalist, and option 3 is wrong because Roger Federer of Switzerland had retired in 2022. This was Alcaraz's second consecutive Wimbledon title, since he had also beaten Djokovic in the 2023 final, and his fourth Grand Slam title overall. The 2024 women's singles title went to Barbora Krejčíková of the Czech Republic. Memory tip: Wimbledon, the oldest Grand Slam, first held in 1877, is the only major still played on grass, at the All England Club in London. Update: in 2025 Alcaraz lost the Wimbledon final to Jannik Sinner of Italy.
+
+Q 91 | geo | Environment & Ecology
+Consider the following areas regarding the guidelines on 'Green Credit Programme' (GCP) of Government of India:
+a) Afforestation
+b) Water conservation
+c) Stemming water pollution
+d) Waste management
+e) Mangrove conservation
+Which of the above areas are eligible to receive 'green credits'?
+(1) a, b, c and d
+(2) b, c and e
+(3) a, b, d and e
+(4) b, c, d and e
+= 3
+~ Option 3 (a, b, d and e) is the keyed answer. The Green Credit Programme was notified by the Union Environment Ministry in October 2023 under the Environment (Protection) Act, 1986, with the Indian Council of Forestry Research and Education (ICFRE) as its administrator. It is a voluntary, market-based scheme that rewards individuals, companies, local bodies and others with tradable 'green credits' for positive environmental action. The Green Credit Rules, 2023 list eight types of activity: tree plantation, water management, sustainable agriculture, waste management, air pollution reduction, mangrove conservation and restoration, ecomark label development, and sustainable building and infrastructure. So afforestation, water conservation, waste management and mangrove conservation are eligible, while 'stemming water pollution' is not named as a separate category; that is why options 1, 2 and 4, which include c, are wrong. In the first phase the focus is on tree plantation on degraded land and on water conservation. Do not confuse the two ideas: a green credit rewards a wider environmental outcome, while a carbon credit represents one tonne of carbon dioxide reduced or removed.
+
+Q 92 | geo | Environment & Ecology
+Consider the following statements regarding plastic mitigation:
+a) The Global Plastics Treaty involving at least 175 UN member nations convened in 2024
+b) The goal is to finalise a legal document by the end of 2028
+c) India in 2022 brought into effect the Plastic Waste Management Amendment Rules
+d) These rules banned 29 categories of 'single-use' plastic
+Which of the above statements is/are correct?
+(1) a and b only
+(2) a and c only
+(3) b and c only
+(4) b and d only
+= 2
+~ Statements a and c are correct, option 2. In March 2022 the UN Environment Assembly in Nairobi adopted a resolution, backed by 175 nations, to negotiate a legally binding global treaty to end plastic pollution across the full life cycle of plastic. The Intergovernmental Negotiating Committee held its sessions through 2024, at Ottawa in April and Busan in November–December, so statement a is correct. Statement b is wrong because the goal was to finalise the treaty text by the end of 2024, not 2028. Statement c is correct: India amended its Plastic Waste Management Rules, 2016 through amendment rules notified in 2021 and 2022, and from 1 July 2022 enforced a ban on identified single-use plastic items, together with guidelines on extended producer responsibility. Statement d is wrong because the ban covers 19 categories of single-use plastic items, such as earbuds with plastic sticks, plastic flags, candy and ice-cream sticks, cutlery, straws and thin wrapping films, not 29. Hence options 1, 3 and 4 are wrong. Karnataka was an early mover, banning plastic carry bags, flex banners and disposable plastic items in 2016. Update: the Busan session ended without agreement, and talks continued in 2025.
+
+Q 93 | pol | Union & State Government
+Which of the following statements are correct about the Adjournment Motion?
+a) It must be supported by not less than 100 members for introduction
+b) It should raise a matter which is definite, urgent and of public importance
+c) It should not cover more than one matter
+d) It should not deal with any matter that is under adjudication by court
+(1) a, b, c and d
+(2) a, b and c
+(3) a, c and d
+(4) b, c and d
+= 4
+~ Statements b, c and d are correct, option 4. An adjournment motion is moved in the Lok Sabha to draw the attention of the House to a definite matter of urgent public importance. If admitted, it sets aside the normal business of the House, and because it carries an element of censure against the government, the Rajya Sabha does not use this device. Statement a is wrong: the motion needs the support of not less than 50 members, not 100. Under the Lok Sabha's rules the matter must be definite, factual, urgent and of public importance (b); it should not cover more than one matter (c); and it should not raise a question of privilege, revive a discussion already held in the same session, or deal with any matter under adjudication by a court (d). The discussion on it must last at least two hours and thirty minutes. Options 1, 2 and 3 include the wrong figure of 100 members. Memory tip: 50 members are also needed to admit a no-confidence motion, so remember 'adjournment and no-confidence: 50'. State legislatures, including Karnataka's, have a similar device in their own rules of procedure.
+
+Q 94 | pol | Constitution & Rights
+Match the List – I with the List – II and select the correct answer using the codes given below:
+List – I
+a) Republic
+b) Secular
+c) Democratic
+d) Sovereign
+List – II
+i. Head of the state is not a hereditary monarch
+ii. State does not recognise any religion as a state religion
+iii. Government gets its authority from the will of the people
+iv. State is internally supreme and externally independent
+(1) a – i, b – ii, c – iii, d – iv
+(2) a – i, b – iii, c – ii, d – iv
+(3) a – ii, b – iii, c – i, d – iv
+(4) a – iii, b – ii, c – i, d – iv
+= 1
+~ The correct matching is a–i, b–ii, c–iii, d–iv, option 1. These words describe the Indian State in the Preamble. Republic (a–i) means the head of the state is elected, directly or indirectly, for a fixed term and is not a hereditary monarch; India's President is elected indirectly by an electoral college. Secular (b–ii) means the State has no official religion and treats all religions equally; the word was added to the Preamble by the 42nd Amendment Act, 1976, along with 'Socialist' and 'Integrity'. Democratic (c–iii) means the government derives its authority from the will of the people, expressed through periodic elections based on universal adult franchise. Sovereign (d–iv) means India is internally supreme and externally independent, free from the control of any other state. Options 2, 3 and 4 interchange republic, secular and democratic, so they are wrong. Exam tip: the order in the Preamble is Sovereign, Socialist, Secular, Democratic, Republic, and the Supreme Court held the Preamble to be a part of the Constitution in the Kesavananda Bharati case (1973). For police officers, secularism has a practical meaning: law enforcement must treat every faith and festival alike.
+
+Q 95 | pol | Union & State Government
+Which of the following are the duties of the Prime Minister under the Article 78?
+a) To communicate to the President all decisions of the Council of Ministers
+b) To take prior Presidential sanction for the Bill with regard to the reorganisation of the state before introducing it in the Parliament
+c) To furnish such information relating to the proposals for legislation as the President may call for
+d) If the President so requires, to submit for consideration of the Council of Ministers any matter on which a decision has been taken by a Minister but which has not been considered by the Council of Ministers before hand
+Choose the correct answer from the codes given below
+(1) a and b
+(2) a, c and d
+(3) b and d
+(4) a and c
+= 2
+~ Statements a, c and d are correct, option 2. Article 78 lays down three duties of the Prime Minister towards the President: first, to communicate to the President all decisions of the Council of Ministers relating to the administration of the affairs of the Union and proposals for legislation; second, to furnish such information relating to the administration of the Union and proposals for legislation as the President may call for; and third, if the President so requires, to submit for the consideration of the Council of Ministers any matter on which a Minister has taken a decision but which the Council has not considered. These correspond to statements a, c and d. Statement b is wrong: the rule that a bill for forming new states or altering state boundaries can be introduced in Parliament only on the President's recommendation comes from Article 3, and it is not one of the Prime Minister's duties under Article 78. Options 1, 3 and 4 are therefore incorrect. Its state counterpart, Article 167, lays down the same duties for the Chief Minister towards the Governor, as in Karnataka.
+
+Q 96 | pol | Constitution & Rights
+Who said "Indian Union is a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features"?
+(1) Dr. B.R. Ambedkar
+(2) Morris Jones
+(3) K.C. Wheare
+(4) Ivor Jennings
+= 3
+~ K.C. Wheare, option 3, described the Indian Constitution as 'quasi-federal' and said that the Indian Union is 'a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features'. He had in mind the strong unitary elements in the Constitution: a powerful Centre, a single Constitution, single citizenship, an integrated judiciary, All-India Services, Governors appointed by the Centre, emergency provisions and Parliament's power under Article 3 to alter state boundaries. The other scholars are linked with different descriptions. Dr B.R. Ambedkar said the Constitution could be both unitary and federal according to the requirements of time and circumstances, and preferred the expression 'Union of States' in Article 1. W.H. Morris-Jones called Indian federalism 'bargaining federalism'. Ivor Jennings called India 'a federation with a strong centralising tendency'. Granville Austin's phrase was 'cooperative federalism', and Paul Appleby called the system 'extremely federal'. Memory tip: Wheare means quasi-federal, Jennings means centralising tendency, Morris-Jones means bargaining and Austin means cooperative. Centre–state disputes over tax devolution and funds, often raised by Karnataka, show this debate is still alive.
+
+Q 97 | pol | Union & State Government
+The total number of ministers, including the Prime Minister, in the Council of Ministers shall not exceed 15% of the total number of members of the House of the people.
+Choose the correct answer with respect to the above statement:
+(1) It was inserted to the Constitution of India by the 91st Constitutional Amendment Act
+(2) It was inserted to the Constitution of India by the 42nd Constitutional Amendment Act
+(3) It was inserted to the Constitution of India by the 44th Constitutional Amendment Act
+(4) It was inserted to the Constitution of India by the 92nd Constitutional Amendment Act
+= 1
+~ The 91st Constitutional Amendment Act, 2003, option 1, inserted clause (1A) in Article 75, which says that the total number of ministers, including the Prime Minister, in the Union Council of Ministers shall not exceed 15 per cent of the total strength of the Lok Sabha. With 543 members, the ceiling works out to 81 ministers. The same amendment inserted Article 164(1A) for the states: a state Council of Ministers headed by the Chief Minister cannot exceed 15 per cent of the strength of the Legislative Assembly, but must have at least 12 members. In Karnataka's 224-member Assembly, 15 per cent is 33.6, and the full cabinet is taken as 34 including the Chief Minister. The 91st Amendment also tightened the anti-defection law by deleting the 'split' exception and barring disqualified defectors from holding remunerative political posts. Option 2, the 42nd Amendment (1976), is the 'mini-Constitution' that added Socialist, Secular and Integrity to the Preamble; option 3, the 44th Amendment (1978), removed the right to property from Fundamental Rights; and option 4, the 92nd Amendment (2003), added Bodo, Dogri, Maithili and Santhali to the Eighth Schedule.
+
+Q 98 | pol | Union & State Government
+Under which of the following circumstances anti-defection law does not apply to a Member of Parliament?
+(1) If a nominated member of a House joins a political party after six months
+(2) If he/she abstains from voting in the House contrary to the directions of the political party
+(3) If an independent member joins a political party after election
+(4) If he/she goes out of his/her party as a result of the merger of that party with another party
+= 4
+~ Option 4 is correct. Under Paragraph 4 of the Tenth Schedule, the anti-defection law, a member is not disqualified when his or her original political party merges with another party and at least two-thirds of the members of the legislature party agree to the merger; members who join the merged party and members who reject the merger and choose to function as a separate group are both protected. So leaving the party as a result of a merger is an exception. The other situations lead to disqualification: a nominated member who joins a political party after six months from taking his or her seat (option 1); a member who votes or abstains contrary to the party's direction without prior permission, unless the party condones it within 15 days (option 2); and an independent member who joins a political party after the election (option 3). The Tenth Schedule was added by the 52nd Amendment Act, 1985, and the 91st Amendment, 2003, removed the old one-third 'split' exception. The Speaker or Chairman decides, subject to judicial review (Kihoto Hollohan, 1992). Karnataka angle: in 2019 the Assembly Speaker disqualified 17 MLAs; the Supreme Court upheld the disqualification but allowed them to contest by-elections.
+
+Q 99 | pol | Union & State Government
+Consider the following statements with regard to the Chief Minister of State:
+a) He is the Ex-officio chairperson of the State Disaster Management Authority
+b) He is the de jure Executive
+c) He is the ex-officio chairman of State Planning Board
+d) He must be the member of Legislative Council
+Which of the following is/are incorrect?
+(1) a, b and d
+(2) a, b and c
+(3) b and d only
+(4) d only
+= 3
+~ Statements b and d are incorrect, option 3. Statement a is correct: under Section 14 of the Disaster Management Act, 2005, the Chief Minister is the ex-officio chairperson of the State Disaster Management Authority, just as the Prime Minister heads the NDMA. Statement c is also correct: in the states the Chief Minister is the ex-officio chairman of the State Planning Board. Statement b is wrong because the Chief Minister is the real or de facto executive; the Governor is the de jure or nominal executive head of the state, in whom executive power is vested by Article 154. Statement d is wrong because the Chief Minister may be a member of either House of the state legislature, the Legislative Assembly or, where it exists, the Legislative Council; a non-member can even be appointed Chief Minister for up to six months, within which he or she must get elected. So options 1, 2 and 4 are wrong. Karnataka is one of only six states with a Legislative Council, along with Andhra Pradesh, Telangana, Maharashtra, Bihar and Uttar Pradesh, so here a Chief Minister may come from the Council, but it is not a requirement.
+
+Q 100 | pol | Constitution & Rights
+Consider the following provisions:
+a) To secure a living wage for all workers
+b) To promote the welfare of the people
+c) Freedom to manage religious affairs
+d) To uphold and protect the sovereignty, unity and integrity of India
+Which of the above provisions are non-justiciable?
+(1) a and b only
+(2) a, b and c only
+(3) a, b, c and d
+(4) a, b and d only
+= 4
+~ Provisions a, b and d are non-justiciable, option 4. A non-justiciable provision is one that cannot be enforced through a court. Securing a living wage for all workers (a) is a Directive Principle under Article 43, and promoting the welfare of the people by securing a social order based on justice (b) is a Directive Principle under Article 38; Article 37 expressly says Directive Principles shall not be enforceable by any court, though they are fundamental in the governance of the country. Upholding and protecting the sovereignty, unity and integrity of India (d) is a Fundamental Duty under Article 51A(c), and the Fundamental Duties, added by the 42nd Amendment, 1976, are also not directly enforceable. Freedom to manage religious affairs (c) is a Fundamental Right under Article 26, enforceable through the Supreme Court under Article 32 and the High Courts under Article 226, so it is justiciable; options 2 and 3, which include c, are wrong, and option 1 leaves out d. Memory tip: Part III rights are justiciable, while Part IV (DPSP) and Part IV-A (Fundamental Duties) are not. Duties such as safeguarding public property, under Article 51A, are especially relevant to police work.

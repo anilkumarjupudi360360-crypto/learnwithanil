@@ -708,6 +708,58 @@
    "pages": 26
   }
  },
+ "karnataka-police-constable": {
+  "kak26": {
+   "bytes": 12837201,
+   "file": "karnataka-police-constable-kak26-97ddb3b9c5.bin",
+   "key": "bk-karnataka-police-constable-kak26",
+   "name": "LearnWithAnil-KSP-Armed-Police-Constable-CAR-DAR-2026-Kalyana-Karnataka-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 34
+  },
+  "kar26": {
+   "bytes": 12556544,
+   "file": "karnataka-police-constable-kar26-daa99e7692.bin",
+   "key": "bk-karnataka-police-constable-kar26",
+   "name": "LearnWithAnil-KSP-Armed-Police-Constable-CAR-DAR-2026-RPC-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 34
+  },
+  "kck26": {
+   "bytes": 11512036,
+   "file": "karnataka-police-constable-kck26-0d2efbd563.bin",
+   "key": "bk-karnataka-police-constable-kck26",
+   "name": "LearnWithAnil-KSP-Civil-Police-Constable-2026-Kalyana-Karnataka-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 66
+  },
+  "kcr26": {
+   "bytes": 11747159,
+   "file": "karnataka-police-constable-kcr26-25ad76244f.bin",
+   "key": "bk-karnataka-police-constable-kcr26",
+   "name": "LearnWithAnil-KSP-Civil-Police-Constable-2026-RPC-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 66
+  }
+ },
+ "karnataka-police-si": {
+  "kpj24": {
+   "bytes": 6870808,
+   "file": "karnataka-police-si-kpj24-9f8f0d8316.bin",
+   "key": "bk-karnataka-police-si-kpj24",
+   "name": "LearnWithAnil-Karnataka-PSI-re-exam-2024-545-posts-Paper-2-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 34
+  },
+  "kpo24": {
+   "bytes": 4605869,
+   "file": "karnataka-police-si-kpo24-19717adad9.bin",
+   "key": "bk-karnataka-police-si-kpo24",
+   "name": "LearnWithAnil-Karnataka-PSI-2024-Paper-2-General-Studies-Question-Paper.pdf",
+   "orig": 1,
+   "pages": 65
+  }
+ },
  "meghalaya-psc": {
   "c1": {
    "bytes": 8896739,

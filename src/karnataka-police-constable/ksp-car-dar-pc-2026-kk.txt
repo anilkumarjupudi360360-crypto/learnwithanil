@@ -1,0 +1,1041 @@
+# KSP Armed Police Constable (CAR/DAR) 2026, Kalyana Karnataka, General Knowledge, held 6 September 2026, KEA booklet version A1 (CDPBA6926); answers: KEA final key of 17 September 2026
+
+Q 1 | apt | Series & Puzzles
+Find the missing number :
+Triangle 1: sides 18, 15 | base 5 | inside 54
+Triangle 2: sides 12, 10 | base 4 | inside 30
+Triangle 3: sides 8, 9 | base 6 | inside ?
+(1) 12
+(2) 32
+(3) 26
+(4) 18
+= 1
+~ In each triangle, multiply the two numbers written on the slanting sides and divide the product by the number written below the base; the result is the number inside. First triangle: 18 × 15 = 270, and 270 ÷ 5 = 54. Second triangle: 12 × 10 = 120, and 120 ÷ 4 = 30. Both complete figures fit, so the rule is confirmed. Third triangle: 8 × 9 = 72, and 72 ÷ 6 = 12. Hence the missing number is 12, option 1. The other options, 32, 26 and 18, cannot be produced from 8, 9 and 6 by a rule that also gives 54 and 30 in the first two triangles; for example, plain addition gives 18 + 15 + 5 = 38, not 54, so it fails at the very first figure. Exam tip: in number-figure questions, always test a rule on the first two complete figures before applying it to the one with the question mark. The usual rules are (a × b) ÷ c, a × b − c, (a + b) × c and sums of squares, so try these first when time is short.
+! img/kak26-q1.png
+
+Q 2 | apt | Reasoning
+June 29, 2026 is Monday. Then, which day is June 29, 2030 ?
+(1) Sunday
+(2) Saturday
+(3) Thursday
+(4) Monday
+= 2
+~ Count the odd days (days left over after complete weeks) between 29 June 2026 and 29 June 2030. A one-year gap of 365 days gives 1 odd day; a gap that contains 29 February gives 2 odd days. 2026 to 2027: 1 odd day. 2027 to 2028: this period contains 29 February 2028, so 2 odd days. 2028 to 2029: 1. 2029 to 2030: 1. Total = 1 + 2 + 1 + 1 = 5 odd days. Monday + 5 days = Saturday (Tuesday 1, Wednesday 2, Thursday 3, Friday 4, Saturday 5). So 29 June 2030 is a Saturday, option 2. Sunday would need 6 odd days and Thursday 3, while Monday would need 0 or 7, so options 1, 3 and 4 are wrong. A common slip is to forget the leap day and get 4 odd days (Friday). Tip: when the date falls after February, check whether 29 February of a leap year lies inside the period; for June dates, the extra day of 2028 is counted in the 2027–2028 step, not in the 2028–2029 step.
+
+Q 3 | apt | Arithmetic
+In a cricket match, the run rate was 4.5 in first 10 overs. To reach the target 325, what should be the run rate in remaining 40 overs ?
+(1) 6
+(2) 4.5
+(3) 8
+(4) 7
+= 4
+~ Runs scored in the first 10 overs = run rate × overs = 4.5 × 10 = 45. Runs still needed for the target = 325 − 45 = 280. Overs remaining = 40. Required run rate = 280 ÷ 40 = 7 runs per over, option 4. Check: 45 + 7 × 40 = 45 + 280 = 325. Option 2 (4.5) simply repeats the earlier run rate and would give only 45 + 180 = 225 runs. Option 1 (6) gives 45 + 240 = 285, which is 40 runs short. Option 3 (8) gives 45 + 320 = 365, more than needed. Dividing 325 by all 50 overs (6.5) is also wrong, because it ignores the runs already scored and the overs already used. Memory tip: run rate = runs ÷ overs, so runs = run rate × overs, and the required run rate is always (target − runs scored) ÷ overs left. The same 'remaining amount ÷ remaining time' idea solves average-speed and average-marks problems that often appear in police recruitment papers.
+
+Q 4 | apt | Arithmetic
+If √10 = 3.162, then the value of 1/√10 is
+(1) 3.162
+(2) 0.03162
+(3) 0.3162
+(4) 31.62
+= 3
+~ Simplify 1/√10 by rationalising the denominator, that is, multiply the numerator and the denominator by √10. 1/√10 = √10/(√10 × √10) = √10/10. Since √10 = 3.162, √10/10 = 3.162 ÷ 10 = 0.3162. So option 3 is correct. Option 1 (3.162) is √10 itself, not its reciprocal. Option 2 (0.03162) equals √10/100, one decimal place too small. Option 4 (31.62) equals 10√10 = √1000, which is far too large; the reciprocal of any number greater than 1 must be less than 1, so it can be rejected at a glance. Quick check: 3.162 × 0.3162 ≈ 1.000, which confirms that 0.3162 is the reciprocal of 3.162. Tip: dividing by 10 moves the decimal point one place to the left, and rationalising the denominator is the standard trick for every 1/√n question. Useful values to remember: 1/√2 = √2/2 ≈ 0.707 and 1/√3 = √3/3 ≈ 0.577.
+
+Q 5 | apt | Arithmetic
+The rate of sugar is increased by 25%. If a family wants to keep its expenditure the same as before, then by what percent sugar consumption has to be decreased ?
+(1) 20%
+(2) 75%
+(3) 80%
+(4) 25%
+= 1
+~ Expenditure = price × consumption. If the price rises by 25%, the new price is 125% of the old, that is 1.25 times. To keep expenditure unchanged, consumption must become 1/1.25 = 0.8 of the old, that is 80%. So consumption must fall by 100% − 80% = 20%, option 1. Formula: required reduction = r/(100 + r) × 100 = 25/125 × 100 = 20%. Example: if sugar cost ₹40 per kg and the family bought 10 kg (₹400), the new price is ₹50 per kg, and ₹400 now buys only 8 kg, a cut of 2 kg out of 10, i.e. 20%. Option 4 (25%) is the common trap: cutting consumption by the same percentage as the price rise lowers expenditure, because 1.25 × 0.75 = 0.9375, a 6.25% fall. Option 3 (80%) is the new consumption level, not the reduction, and 75% has no basis. Tip: when a price falls by r%, consumption can rise by r/(100 − r) × 100 percent to keep expenditure the same.
+
+Q 6 | apt | Series & Puzzles
+In the following question, a letter series is given. Some of the letters of the series are missing. Select the correct answer from the given options.
+abc __ abc __ da __ cd __ d
+(1) ddbd
+(2) dddb
+(3) bdbd
+(4) bbdd
+= 1
+~ Fill the blanks with d, d, b, d and the series becomes abc d abc d d a b cd d d, which reads abcd | abcdd | abcddd. Every block starts with a, b, c and then carries one more d than the block before it: one d, two d's, three d's. So option 1 completes the series logically. Check the others: with dddb the string becomes abcd abcd dad cdb d, which breaks the a-b-c order; with bdbd it becomes abcb abcd dab cdd d, where the first block has no d at all; with bbdd it becomes abcb abcb dad cdd d, again breaking the pattern. Only ddbd makes every block begin with abc and grow by one d. Method: count the given letters plus the blanks (here 15 in all) and try to split them into repeating or growing groups such as 4 + 5 + 6. Tip: write each option into the blanks one by one instead of guessing; the correct answer makes the whole string fall into neat blocks, while a wrong one leaves an odd letter somewhere.
+
+Q 7 | apt | Arithmetic
+4 + 0.44 + 4.4 + 0.04 + 44 = ?
+(1) 52.88
+(2) 52.08
+(3) 48.08
+(4) 44.88
+= 1
+~ Add the whole numbers and the decimals separately. Whole numbers: 4 + 44 = 48. Decimals: 0.44 + 4.4 + 0.04 = 4.88; write them one below the other with the decimal points in a column (0.44, 4.40, 0.04): hundredths 4 + 0 + 4 = 8, tenths 4 + 4 + 0 = 8, units 0 + 4 + 0 = 4. Total = 48 + 4.88 = 52.88, option 1. Option 2 (52.08) is 0.8 short, the typical result of a slip in the tenths column. Option 3 (48.08) is 4.8 short of the correct sum, and option 4 (44.88) is exactly 8 short, as if the 4 and the whole-number part of 4.4 were forgotten. Tip: in decimal addition, pad every number with zeros to the same number of decimal places (4.00, 0.44, 4.40, 0.04, 44.00) and line up the decimal points before adding. This simple habit prevents most careless slips in the arithmetic section, where each wrong answer costs a quarter mark in KSP constable papers.
+
+Q 8 | apt | Reasoning
+Four different positions of the same dice are shown below. Find the number on the face opposite the face showing 4.
+(1) 5
+(2) 1
+(3) 2
+(4) 6
+= 2
+~ List the faces seen next to each number. Face 3 appears with 4 and 2 in (i), with 4 and 5 in (ii), with 5 and 1 in (iii) and with 2 and 1 in (iv). So 3 touches 1, 2, 4 and 5, and the only number left, 6, must be opposite 3. Now look at 4: it is seen beside 3 and 2 in (i) and beside 3 and 5 in (ii). Every face touches all faces except its own opposite; since 6 is opposite 3, 6 is also a neighbour of 4. So the neighbours of 4 are 2, 3, 5 and 6, and the remaining number, 1, is opposite 4: option 2. Options 1 (5) and 3 (2) are wrong because they appear next to 4 in positions (ii) and (i), and option 4 (6) is wrong because 6 is opposite 3. Complete pairs: 3–6, 4–1 and 2–5; no drawing shows an opposite pair together. Tip: start with the number that appears most often (here 3, in all four positions). Do not assume opposite faces add up to 7 unless the question says it is a standard dice; here 4 and 1 are opposite.
+! img/kak26-q8.png
+
+Q 9 | sci | Biology
+Select the incorrect statement from the following :
+(1) Female produce only one type of ovum with X-chromosome.
+(2) Out of 23 pairs of chromosomes present in human, 22 pairs are exactly same in both male and female.
+(3) The egg of the mother determines the sex of the child.
+(4) 50% of total sperm produced carry X-chromosome and rest 50% have Y-chromosomes.
+= 3
+~ Statement 3 is incorrect, so option 3 is the answer: the sex of a child is decided by the father's sperm, not by the mother's egg. A woman has two X chromosomes (XX), so every ovum she produces carries an X; statement 1 is correct, and females are called homogametic. A man has XY, so half of his sperms carry X and half carry Y; statement 4 is correct, and males are heterogametic. If an X-bearing sperm fertilises the ovum, the zygote is XX and develops into a girl; if a Y-bearing sperm fertilises it, the zygote is XY and develops into a boy. Statement 2 is also correct: of the 23 pairs of human chromosomes, 22 pairs are autosomes, alike in males and females, while the 23rd pair is the sex chromosomes (XX in females, XY in males). Exam fact: this is why blaming a mother for the birth of a girl child is scientifically wrong, a message central to Beti Bachao Beti Padhao and to the PCPNDT Act (1994), which bans sex determination of the foetus.
+
+Q 10 | apt | Reasoning
+In certain coding language :
+‘123’ means ‘Radha bright girl’
+‘145’ means ‘Dark big girl’
+‘637’ means ‘Ravi bright boy’
+Then, ‘bright girl’ is coded as
+(1) 31
+(2) 14
+(3) 23
+(4) 13
+= 1
+~ Compare the coded sentences to find common words. 'Radha bright girl' (123) and 'Dark big girl' (145) share only the word 'girl' and only the digit 1, so girl = 1. 'Radha bright girl' (123) and 'Ravi bright boy' (637) share only 'bright' and only the digit 3, so bright = 3. Hence 'bright girl' is made of the digits 3 and 1; writing them in the order of the words, bright (3) then girl (1), gives 31, option 1, which is KEA's answer. Option 2 (14) is wrong because 4 stands for 'Dark' or 'big', and option 3 (23) is wrong because 2 stands for 'Radha'. The digits in these codes do not follow word order (in 123, 'girl' is the last word but its code 1 comes first), so option 4 (13), made of the same two digits, can also be argued; KEA's key accepts only 31, which follows the order of the words asked. Tip: decode by the common word – common digit method, and when two options contain the same digits, prefer the one in word order. (Official key; some sources differ.)
+
+Q 11 | apt | Reasoning
+In 12 hours format, if the time is 7:00 now, what time will it be in next 54 hours ?
+(1) 3:00
+(2) 6:00
+(3) 5:00
+(4) 1:00
+= 4
+~ A clock face repeats every 12 hours, so only the remainder after removing complete 12-hour cycles matters. 54 hours = 4 × 12 + 6, that is 48 hours (two full days, which bring the clock back to 7:00) plus 6 hours. 7:00 + 6 hours = 13:00 on the 24-hour clock, which is shown as 1:00 in the 12-hour format. So the answer is 1:00, option 4. If it is 7:00 a.m. now, it will be 1:00 p.m. two days later; if it is 7:00 p.m., it will be 1:00 a.m. three days later, but either way the clock reads 1:00. Option 2 (6:00) is just the leftover 6 hours, not the time; option 1 (3:00) and option 3 (5:00) come from wrong remainders (8 or 10 hours added). Shortcut: divide the hours by 12, keep the remainder, add it to the present time and subtract 12 if the total passes 12. The same remainder idea is used for days of the week (divide by 7) in calendar questions.
+
+Q 12 | apt | Reasoning
+If BY = 50, then GO + OD and GO – OD are given by
+(1) 45 and 165 respectively
+(2) 60 and 105 respectively
+(3) 105 and 60 respectively
+(4) 165 and 45 respectively
+= 4
+~ Find the rule from BY = 50. In the alphabet B is the 2nd letter and Y the 25th; 2 × 25 = 50, so a two-letter word is coded as the product of the position numbers of its letters (the sum 2 + 25 = 27 does not fit). Now G = 7, O = 15 and D = 4. GO = 7 × 15 = 105 and OD = 15 × 4 = 60. Therefore GO + OD = 105 + 60 = 165 and GO − OD = 105 − 60 = 45, so the answer is '165 and 45 respectively', option 4. Option 1 gives the same two numbers in the reverse order, so it fails the word 'respectively'. Option 3 (105 and 60) gives the values of GO and OD themselves, not their sum and difference, and option 2 reverses those as well. Memory tip for letter positions: EJOTY = 5, 10, 15, 20, 25, so O = 15 and Y = 25 come instantly; count forward or backward from the nearest of these. Always test whether the rule is sum, product or difference using the example before applying it.
+
+Q 13 | apt | Data Interpretation
+Directions : Consider the following Venn diagram and answer the questions 13 and 14.
+In a class, students have opted different subjects as given in the Venn diagram :
+The number of students who opted Geography but not Economics is
+(1) 5
+(2) 12
+(3) 7
+(4) 8
+= 4
+~ Read the seven regions of the Venn diagram: Economics only 6, Economics and History only 4, History only 4, Economics and Geography only 2, all three subjects 5, History and Geography only 3, and Geography only 5. 'Geography but not Economics' means every part of the Geography circle that lies outside the Economics circle. Those parts are Geography only (5) and Geography with History but without Economics (3). So the number of students = 5 + 3 = 8, option 4. Option 1 (5) counts only the students who took Geography alone and misses the 3 who also took History. Option 3 (7) is 2 + 5, the students who took Geography together with Economics, exactly the group to be excluded. Option 2 (12) wrongly mixes regions lying inside the Economics circle (5 + 2 + 5). Check: the whole Geography circle is 2 + 5 + 3 + 5 = 15, and removing the 7 who also took Economics leaves 15 − 7 = 8. Tip: for 'A but not B', shade circle A and erase everything that overlaps B, then add what remains.
+! img/kak26-q13.png
+
+Q 14 | apt | Data Interpretation
+Directions : Consider the following Venn diagram and answer the questions 13 and 14.
+In a class, students have opted different subjects as given in the Venn diagram :
+How many of the students opted Economics and Geography but not History ?
+(1) 7
+(2) 3
+(3) 2
+(4) 5
+= 3
+~ We need the students who are inside both the Economics circle and the Geography circle but outside the History circle. In the Venn diagram, the Economics and Geography circles overlap in two parts: the small region shared by Economics and Geography alone, marked 2, and the central region shared by all three subjects, marked 5. The central 5 students also took History, so they must be left out. Hence the answer is 2, option 3. Option 1 (7 = 2 + 5) counts everyone who took both Economics and Geography, including those who also took History. Option 4 (5) is the centre region, students of all three subjects, exactly the group to be excluded. Option 2 (3) is the region of History and Geography without Economics, a different pair altogether. Useful structure: in a three-circle Venn diagram there are 3 'only one' regions, 3 'exactly two' regions and 1 'all three' region. 'X and Y but not Z' always means one of the three 'exactly two' regions, so read just that single number from the figure.
+! img/kak26-q14.png
+
+Q 15 | sci | Science & Technology
+Which one of the following is not a constellation ?
+(1) Callisto
+(2) Leo major
+(3) Orion
+(4) Great bear
+= 1
+~ Callisto is not a constellation; it is a natural satellite (moon) of Jupiter, so option 1 is correct. It is one of the four Galilean moons discovered by Galileo Galilei in 1610 (Io, Europa, Ganymede and Callisto) and is the second-largest moon of Jupiter after Ganymede, with a heavily cratered surface. A constellation is a group of stars that forms a recognisable pattern in the night sky; the International Astronomical Union recognises 88 of them. Leo (the Lion, here printed as 'Leo major' to set it apart from the small Leo Minor) is a zodiac constellation whose brightest star is Regulus. Orion, the Hunter, is easy to spot in winter by the three stars of Orion's Belt, with the red supergiant Betelgeuse and the blue-white Rigel. The Great Bear (Ursa Major) contains the seven stars called Saptarishi in India (the Big Dipper), whose two pointer stars lead to the Pole Star (Dhruva Nakshatra). Memory tip: Io, Europa, Ganymede and Callisto are Jupiter's family of moons, not star patterns.
+
+Q 16 | sci | Physics
+Match the following things under List – I with those of List – II :
+List – I / List – II
+(a) Electromagnets – (i) Cobalt
+(b) Fuse – (ii) Tungsten
+(c) Electric bulb – (iii) Lead
+(d) Permanent magnet – (iv) Soft iron
+(1) (a) – (ii), (b) – (i), (c) – (iii), (d) – (iv)
+(2) (a) – (iii), (b) – (ii), (c) – (iv), (d) – (i)
+(3) (a) – (iii), (b) – (ii), (c) – (i), (d) – (iv)
+(4) (a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)
+= 4
+~ Electromagnets use soft iron (iv) as the core, because soft iron becomes strongly magnetised when current flows and loses almost all its magnetism when the current stops. A fuse wire is made of lead (iii), usually a tin–lead alloy, because its low melting point lets it melt and break the circuit when excess current flows. The filament of an electric bulb is made of tungsten (ii), which has the highest melting point of all metals (about 3,422 °C), so it glows white-hot without melting. Permanent magnets need materials that keep their magnetism for a long time, such as steel, cobalt (i) and Alnico (an alloy of aluminium, nickel and cobalt). So the matching is (a)–(iv), (b)–(iii), (c)–(ii), (d)–(i), option 4. Option 1 gives tungsten to electromagnets and cobalt to the fuse; option 2 gives soft iron to the bulb; option 3 gives cobalt to the bulb, so all are wrong. Memory tip: soft for temporary, hard for permanent; soft iron goes into electromagnets, transformer cores and electric bells, while steel and cobalt alloys make permanent magnets.
+
+Q 17 | sci | Science & Technology
+First telephone and television satellite launched by NASA is
+(1) Syncom 3
+(2) Sputnik 1
+(3) TIROS 1
+(4) Telstar 1
+= 4
+~ Telstar 1 was the first satellite to relay telephone calls and live television pictures across the Atlantic. It was built by Bell Telephone Laboratories of AT&T and launched by NASA from Cape Canaveral on 10 July 1962, so option 4 is correct. It was an active satellite: it received signals, amplified them and sent them back, unlike the earlier balloon satellite Echo 1, which only reflected signals passively. Syncom 3 (1964) was the first geostationary communication satellite and carried television of the 1964 Tokyo Olympics to the United States, but it came after Telstar. Sputnik 1 (4 October 1957) was the world's first artificial satellite, launched by the Soviet Union, not by NASA. TIROS 1 (1 April 1960) was NASA's first successful weather satellite, which sent back pictures of clouds. India link: India's first satellite television experiment, SITE (1975–76), used NASA's ATS-6 satellite to beam educational programmes to villages, and India's own first experimental communication satellite was APPLE (1981). Memory tip: TELstar for TELephone and TELevision.
+
+Q 18 | sci | Physics
+Expand ‘LED’
+(1) Light Emitting Display
+(2) Light Emitting Detector
+(3) Light Emitting Diode
+(4) Low Energy Display
+= 3
+~ LED stands for Light Emitting Diode, option 3. It is a semiconductor p–n junction diode that gives out light when it is forward biased: electrons and holes recombine at the junction and release energy as photons, a process called electroluminescence. The colour of the light depends on the semiconductor material used, such as gallium arsenide, gallium phosphide or gallium nitride. The other expansions are wrong. An LED display is only one application of LEDs, not the meaning of the letters (option 1). Devices that detect light are photodiodes or photodetectors, not LEDs (option 2). 'Low Energy Display' (option 4) is an invented expansion, even though LEDs do use little energy. LEDs consume far less power than filament bulbs and last much longer, which is why the Government of India's UJALA scheme (launched in 2015) distributes LED bulbs at low prices. Exam fact: the 2014 Nobel Prize in Physics went to Isamu Akasaki, Hiroshi Amano and Shuji Nakamura for inventing efficient blue LEDs, which made bright white LED lighting possible.
+
+Q 19 | sci | Physics
+Which of the following option given is correct regarding the frictional forces between two objects in the decreasing order of their magnitude ?
+(1) Sliding, static, rolling
+(2) Rolling, sliding, static
+(3) Static, sliding, rolling
+(4) Rolling, static, sliding
+= 3
+~ Friction between two surfaces is greatest just before motion starts and least when one body rolls over the other, so the decreasing order is static > sliding > rolling, option 3. Static friction acts when a force is applied but the object has not yet moved; its maximum value, called limiting friction, is high because the tiny irregularities of the two surfaces lock firmly into each other. Once the object starts sliding, the irregularities get less time to interlock, so sliding (kinetic) friction is smaller than limiting static friction; this is why it is harder to start pushing a heavy box than to keep it moving. Rolling friction is the smallest, because a rolling body touches the surface over a very small area; that is why wheels, ball bearings and rollers are used to move heavy loads. Options 1, 2 and 4 all place sliding or rolling friction above static friction, which reverses the true order. NCERT memory line: rolling friction is less than sliding friction, and sliding friction is less than static friction.
+
+Q 20 | sci | Physics
+Hydraulic lift is based on
+(1) Pascal’s law
+(2) Stokes’ law
+(3) Bernoulli’s principle
+(4) Newton’s law
+= 1
+~ A hydraulic lift works on Pascal's law, option 1. Pascal's law states that pressure applied to an enclosed fluid is transmitted equally and undiminished to every part of the fluid and to the walls of its container. In a hydraulic lift, a small force F1 on a narrow piston of area A1 creates a pressure P = F1/A1; the same pressure acts on a wide piston of area A2 and produces a much larger force F2 = P × A2 = F1 × (A2/A1). That is how a small push lifts a car at a service station. The same principle works in hydraulic jacks, hydraulic presses and the hydraulic brakes of vehicles. Stokes' law (option 2) gives the viscous drag on a small sphere moving through a fluid, F = 6πηrv, and explains the terminal velocity of raindrops. Bernoulli's principle (option 3) says that pressure falls where a fluid flows faster, which explains the lift on aeroplane wings and the working of atomisers. Newton's laws (option 4) describe motion in general and are not the specific basis of the lift. Memory tip: hydraulic means Pascal.
+
+Q 21 | geo | Environment & Ecology
+What causes Minamata disease ?
+(1) Mercury poison
+(2) Arsenic poison
+(3) Lead poison
+(4) Cadmium poison
+= 1
+~ Minamata disease is caused by mercury poisoning, option 1. It was first identified in 1956 in the town of Minamata in Kumamoto Prefecture, Japan. The Chisso Corporation's chemical factory released wastewater containing methylmercury into Minamata Bay; the mercury built up in fish and shellfish (bioaccumulation, then biomagnification along the food chain), and people who ate them suffered damage to the nervous system: numbness, loss of muscle coordination, impaired speech and vision and, in severe cases, death; babies were born with defects. The other options cause different problems. Arsenic in groundwater causes arsenicosis (skin lesions, black foot disease), as seen in West Bengal and Bangladesh. Lead poisoning (plumbism) harms the brain and blood, especially in children. Cadmium poisoning caused Itai-itai ('ouch-ouch') disease along the Jinzu river in Toyama, Japan. Memory pairs: Minamata–Mercury (both start with M) and Itai-itai–Cadmium. The Minamata Convention on Mercury (2013), to which India is a party, aims to cut mercury use and emissions worldwide.
+
+Q 22 | geo | Environment & Ecology
+Expand – NEERI
+(1) National Engineering Ecological Resource Institute
+(2) National Endangered & Endemic Research Institute
+(3) Natural Environmental Ecosystem Research Institute
+(4) National Environmental Engineering Research Institute
+= 4
+~ NEERI stands for National Environmental Engineering Research Institute, option 4. It is a laboratory of the Council of Scientific and Industrial Research (CSIR), headquartered at Nagpur in Maharashtra, and was set up in 1958 (originally as the Central Public Health Engineering Research Institute). It works in environmental science and engineering: monitoring air and water quality, treating water and wastewater, managing solid waste and assessing environmental impact, and courts and governments often ask it to study pollution problems. In recent years CSIR-NEERI developed 'green crackers' that release fewer pollutants than ordinary firecrackers. The other expansions are made up by changing words: 'Ecological Resource' (option 1), 'Endangered & Endemic' (option 2) and 'Natural ... Ecosystem' (option 3) are not part of the name. Tip: in acronym questions, match every letter: N-E-E-R-I = National, Environmental, Engineering, Research, Institute. Do not confuse NEERI with other CSIR laboratories such as NAL (National Aerospace Laboratories, Bengaluru) or NIO (National Institute of Oceanography, Goa).
+
+Q 23 | pol | Laws, Police & Society
+Name the domain of ethics which establishes the moral standards and guidelines that dictate how people ought to behave :
+(1) Normative Ethics
+(2) Positive Ethics
+(3) Applied Ethics
+(4) Meta Ethics
+= 1
+~ Normative ethics, option 1, is the branch of ethics that sets moral standards and guidelines telling people how they ought to behave, that is, what makes an action right or wrong, good or bad. Its main theories are deontology (duty-based ethics, as in Kant), consequentialism or utilitarianism (judging actions by their results, 'the greatest good of the greatest number') and virtue ethics (building good character, as in Aristotle). Meta-ethics (option 4) does not prescribe conduct; it studies the nature and meaning of moral terms, such as what 'good' means and whether moral truths are objective. Applied ethics (option 3) uses normative principles on specific practical issues such as euthanasia, capital punishment, business ethics or the police use of force. 'Positive ethics' (option 2) is not a standard domain; the word positive comes from economics, where positive statements describe what is, while normative statements say what ought to be. Memory tip: normative = norms = 'ought'; meta = 'about' ethics; applied = real cases. A police code of conduct is a practical example built on normative principles.
+
+Q 24 | pol | Laws, Police & Society
+Which of the following is/are not the key principles of code of conduct ?
+(a) Integrity and honesty
+(b) Political neutrality
+(c) Courtesy and good behaviour
+(d) Non-responsive to the public
+(1) (b) and (d)
+(2) Only (b)
+(3) Only (d)
+(4) (a) and (d)
+= 3
+~ Only item (d) is not a principle of a code of conduct, so option 3 is correct. A code of conduct lays down how public servants, including police personnel, should behave. Integrity and honesty (a) are its core: an officer must never misuse the office for personal gain. Political neutrality (b) means serving every government and every citizen impartially, without taking the side of any party. Courtesy and good behaviour (c) with the public are expected in every interaction, from the police station counter to a traffic check. 'Non-responsive to the public' (d) is the opposite of a principle; codes demand responsiveness, especially towards the weaker sections. For example, the All India Services (Conduct) Rules, as amended in 2014, list integrity and honesty, political neutrality, responsiveness to the public, and courtesy and good behaviour among the values expected of officers. Options 1 and 2 wrongly treat political neutrality as not a principle, and option 4 wrongly includes integrity and honesty. Tip: in 'which is not' questions on ethics, pick the item that describes bad conduct.
+
+Q 25 | sci | Physics
+Consider the following statements and choose the correct answer from the given options :
+Statement I : When an object is under free fall there is no upward force.
+Statement II : A person inside the satellite feels weightlessness.
+(1) Statement II is correct but Statement I is incorrect.
+(2) Both the statements are correct and Statement I is not the explanation of II.
+(3) Both the statements are correct and Statement I is the explanation of II.
+(4) Statement I is correct but Statement II is incorrect.
+= 3
+~ Both statements are correct and Statement I explains Statement II, option 3. Statement I: in free fall an object moves under gravity alone; ignoring air resistance, no upward force such as a normal reaction or a tension acts on it. Statement II: a satellite and everything inside it are continuously falling towards the Earth under gravity, while moving sideways fast enough to keep missing it, so an astronaut inside is in free fall along with the spacecraft. The weight we feel is really the upward normal reaction from the floor or seat. Because the floor is falling at the same rate as the person, it pushes up with zero force, and the person feels weightless even though gravity is still acting. Thus Statement I is the correct explanation of Statement II. Option 2 is wrong because the link is direct, and options 1 and 4 are wrong because both statements are true. Exam fact: on the International Space Station, about 400 km above the Earth, gravity is still roughly 90% of its value at the surface; astronauts float only because they are in free fall.
+
+Q 26 | pol | Laws, Police & Society
+Consider the following statements :
+Statement I : Emotional intelligence is the ability to understand and manage your own emotions and those of the people around you.
+Statement II : Emotional intelligence does not help civil servants to handle stress and foster a positive work environment.
+Choose the correct answer from the options given below :
+(1) Both Statement I and Statement II are incorrect.
+(2) Statement I is incorrect but Statement II is correct.
+(3) Statement I is correct but Statement II is incorrect.
+(4) Both Statement I and Statement II are correct.
+= 3
+~ Statement I is the standard definition: emotional intelligence (EI) is the ability to recognise, understand and manage one's own emotions and also to understand and handle the emotions of others. The idea was put forward by psychologists Peter Salovey and John Mayer (1990) and made popular by Daniel Goleman's 1995 book 'Emotional Intelligence'. Statement II is incorrect because EI actually helps civil servants and police officers handle stress, stay calm in a crisis, control anger, show empathy to victims and build a positive, cooperative work environment in the team. So the answer is option (3): Statement I is correct but Statement II is incorrect. Options (1) and (2) wrongly reject Statement I, and option (4) wrongly accepts Statement II, whose words 'does not help' make it false. Goleman lists five components of EI: self-awareness, self-regulation, motivation, empathy and social skills. Exam tip: a constable shows EI when handling an angry crowd, a grieving family or an aggressive suspect without losing self-control; ethics papers often stress that EI is a skill that can be learnt and improved through training.
+
+Q 27 | pol | Laws, Police & Society
+Fill in the blanks :
+___(i)___ and ___(ii)___ are the first places where individuals learn about moral values.
+(1) (i) College and (ii) Friends
+(2) (i) Family and (ii) University
+(3) (i) School and (ii) Teachers
+(4) (i) Family and (ii) Society
+= 4
+~ Moral values are first learnt through socialisation, and sociologists call the family the primary agency of socialisation. A child learns honesty, respect for elders, sharing, discipline and the difference between right and wrong first from parents and family members, and then from the wider society: neighbours, the community, customs, festivals and religious and cultural practices. Hence the blanks are (i) Family and (ii) Society, option (4). Option (1) College and Friends and option (2) University come much later in life, when the basic value system is already formed; they are agencies of secondary socialisation. Option (3) School and Teachers matter a lot, but the school usually comes after the family, and teachers are part of the school itself, so the pair does not describe the 'first places'. Ethics textbooks list family, society, educational institutions, peer groups and the media as the main sources of values, roughly in that order. Useful point: under Article 51A(k), a Fundamental Duty added in 2002, parents or guardians must provide opportunities for education to their children aged 6 to 14.
+
+Q 28 | cur | National
+On June 1, 2026 the 'Khet Bachao' Abhiyan was formally launched in the ________ district of ________ state.
+(1) Raisen, Madhya Pradesh
+(2) Theni, Tamil Nadu
+(3) Guntur, Andhra Pradesh
+(4) Yavatmal, Maharashtra
+= 1
+~ As per the official key, the 'Khet Bachao' Abhiyan was formally launched on 1 June 2026 in Raisen district of Madhya Pradesh, so option (1) is correct. 'Khet Bachao' literally means 'save the field/farm'. Raisen lies in central Madhya Pradesh, next to the state capital Bhopal, and is a mainly agricultural district. The other options are well-known farm districts but not the launch place: Theni in Tamil Nadu is known for cardamom and the Cumbum valley grapes, Guntur in Andhra Pradesh is famous for its chillies and tobacco, and Yavatmal in the Vidarbha region of Maharashtra is a cotton district often in the news for farm distress. Memory tip for Raisen: it is the home district of two UNESCO World Heritage Sites, the Buddhist Stupa of Sanchi and the prehistoric rock shelters of Bhimbetka, which makes the name easy to remember in GK papers. Madhya Pradesh is also often called the 'Soya State' of India for its soybean output.
+
+Q 29 | cur | Awards, Books & Persons
+Name the autobiography of Smt. Indira Lankesh, wife of veteran Kannada writer and journalist P. Lankesh.
+(1) Aashadabhutitana
+(2) Huli Maavu Mattu Naanu
+(3) Huli Maavina Mara
+(4) Ondu Jeevana Saladu
+= 2
+~ Indira Lankesh, wife of the noted Kannada writer, film-maker and journalist P. Lankesh, wrote her autobiography 'Huli Maavu Mattu Naanu' ('The Sour Mango and I'), option (2). In it she recalls her life with Lankesh and their family. The title echoes her husband's autobiography, 'Huli Maavina Mara' ('The Sour Mango Tree'), so option (3) is P. Lankesh's own book, not hers; it is the trap in this question. Options (1) 'Aashadabhutitana' and (4) 'Ondu Jeevana Saladu' are not her autobiography. P. Lankesh (died 2000) started the Kannada tabloid 'Lankesh Patrike' in 1980; it became famous for fearless reporting and for running without advertisements. Their daughter Gauri Lankesh, also a journalist, later ran 'Gauri Lankesh Patrike', while Kavitha Lankesh and Indrajit Lankesh became film directors. Memory tip: the husband wrote about the 'tree' (Huli Maavina Mara); the wife wrote about 'the mango and me' (Huli Maavu Mattu Naanu).
+
+Q 30 | cur | International & Sports
+Arrange the following countries in the correct order from the highest to the lowest with respect to number of FIFA Men's World Cup titles won :
+(1) Brazil, Argentina, Germany, Italy, France
+(2) Brazil, Italy, Germany, Argentina, France
+(3) Germany, Brazil, Italy, Argentina, France
+(4) Brazil, Germany, Argentina, France, Italy
+= 2
+~ Count the FIFA Men's World Cup titles (up to the 2022 edition): Brazil 5 (1958, 1962, 1970, 1994, 2002), Italy 4 (1934, 1938, 1982, 2006), Germany 4 (1954, 1974, 1990, 2014; the first three as West Germany), Argentina 3 (1978, 1986, 2022) and France 2 (1998, 2018). So the order from highest to lowest is Brazil, Italy, Germany, Argentina, France, option (2). Italy and Germany are tied on four titles; option (2) is the only one that keeps both of them above Argentina, with France last. Option (1) puts Argentina (3) above Germany and Italy (4 each). Option (3) puts Germany above Brazil, which has the most titles. Option (4) puts Italy last, below Argentina and France. Other champions: Uruguay 2 (1930, 1950), England 1 (1966) and Spain 1 (2010). Argentina, led by Lionel Messi, beat France on penalties in the 2022 final in Qatar. The 2026 edition, the first with 48 teams, was co-hosted by the USA, Canada and Mexico before this exam, and KEA's key keeps the order above. Memory tip: B-I-G-A-F, Brazil, Italy, Germany, Argentina, France.
+
+Q 31 | pol | Laws, Police & Society
+During a co-curricular committee allotment meeting in a college, the Principal suggests skipping a highly qualified female faculty for "Internal Quality Assurance Cell" coordinator post as it demands more than official duty hours' work.
+As a member of the committee, what should you do ?
+(1) Suggest the Principal to give her co-coordinator post instead of coordinator.
+(2) Agree with the Principal to maintain a harmonious relationship with the Principal.
+(3) Remain silent, as it is not directly related to you.
+(4) Strongly object, highlighting her merit and pointing out that gender discrimination violates constitutional rights.
+= 4
+~ Option (4) is the ethical and constitutional choice. Leaving out a highly qualified woman from the IQAC coordinator post on the assumption that she cannot work beyond duty hours is gender stereotyping, and it denies her a fair chance on the basis of sex. The Constitution guarantees equality before law (Article 14), prohibits discrimination on grounds of sex (Article 15) and promises equality of opportunity in public employment (Article 16). As a committee member you should object firmly but politely, highlight her merit, and leave it to her to decide whether she can take on the extra work. Option (1) is a half-measure: offering her the lower co-coordinator post is still discrimination. Option (2) sacrifices fairness for a smooth relationship with the boss, a failure of integrity and moral courage. Option (3), staying silent, is apathy; keeping quiet in the face of injustice makes one a party to it. Useful fact: colleges set up an Internal Quality Assurance Cell (IQAC) as per NAAC guidelines to plan and monitor academic quality. Case-study tip: choose the response that is fair, lawful and firm, but not aggressive.
+
+Q 32 | cur | Awards, Books & Persons
+Consider the following pairs containing the names of Padma Awardees-2026 and the posts which they held earlier :
+(a) Jagadeesh Kumar : Former Chairman of UGC
+(b) Shashishekar Vempati – Former Chairman of ICAR
+(c) Budha Krishna Mani – Former Chairman of Prasar Bharati
+Which of the pairs given above is/are incorrectly matched ?
+(1) (b) and (c) only
+(2) (a) and (c) only
+(3) (a) and (b) only
+(4) (a) only
+= 1
+~ The official key says pairs (b) and (c) are incorrectly matched, option (1). Pair (a) is correct: Professor M. Jagadesh Kumar, a former Vice-Chancellor of JNU, became Chairman of the University Grants Commission (UGC) in 2022. Pair (b) is wrong: Shashi Shekhar Vempati is a media and technology professional who was Chief Executive Officer of Prasar Bharati, India's public broadcaster (Doordarshan and Akashvani), from 2017 to 2022; he was never connected with the Indian Council of Agricultural Research (ICAR), which is headed by a Director General and has the Union Agriculture Minister as its President. Pair (c) is also treated as wrong: the person named is not known to have been a chairman of Prasar Bharati, and the Prasar Bharati link in this list really belongs to Vempati. Since (a) is correct, options (2), (3) and (4), which all list (a) as incorrect, are ruled out. Exam tip: the Padma awards (Padma Vibhushan, Padma Bhushan, Padma Shri) are announced every year on the eve of Republic Day and presented by the President at Rashtrapati Bhavan. The UGC was set up in 1953 and became a statutory body in 1956.
+
+Q 33 | cur | International & Sports
+Match the following List – I (Countries) and List – II (Prime Ministers) :
+List – I (Countries) / List – II (Prime Ministers)
+(a) Japan – (i) Anthony Albanese
+(b) United Kingdom – (ii) Christopher Luxon
+(c) Australia – (iii) Sanae Takaichi
+(d) New Zealand – (iv) Andy Burnham
+(1) (a) – (iv), (b) – (ii), (c) – (iii), (d) – (i)
+(2) (a) – (iii), (b) – (iv), (c) – (i), (d) – (ii)
+(3) (a) – (ii), (b) – (i), (c) – (iv), (d) – (iii)
+(4) (a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)
+= 2
+~ Match each country with its Prime Minister as on the exam date: Japan – Sanae Takaichi (iii), who became Japan's first woman Prime Minister in October 2025; United Kingdom – Andy Burnham (iv); Australia – Anthony Albanese (i), the Labor leader who has been Prime Minister since May 2022 and was re-elected in 2025; New Zealand – Christopher Luxon (ii), National Party leader and Prime Minister since November 2023. This gives (a)–(iii), (b)–(iv), (c)–(i), (d)–(ii), option (2). Even without the UK name, elimination works: only option (2) pairs Japan with Takaichi, Australia with Albanese and New Zealand with Luxon. Options (1) and (4) put Burnham in Japan and option (3) puts Luxon in Japan, so they are wrong. Andy Burnham is a Labour politician best known as Mayor of Greater Manchester from 2017; the question treats him as the UK Prime Minister at the time of the exam (September 2026). Tip: in parliamentary systems such as the UK, Japan, Australia and New Zealand, the Prime Minister is the leader of the majority in the lower house, as in India, which took this model from Britain.
+
+Q 34 | comp | Computer Fundamentals
+Which computer's 75th anniversary was recently celebrated, remembering Grace Hopper's role in creating the foundation of COBOL ?
+(1) UNIVAC I
+(2) Colossus
+(3) EDVAC
+(4) ENIAC
+= 1
+~ UNIVAC I (Universal Automatic Computer I), built by J. Presper Eckert and John Mauchly, was the first commercially produced computer in the United States; the first unit was accepted by the US Census Bureau in 1951, so its 75th anniversary fell in 2026. Grace Hopper worked on UNIVAC I, where she wrote the A-0 system (1952), one of the first compilers, and later FLOW-MATIC, an English-like business language that became the main foundation of COBOL (Common Business-Oriented Language, 1959). Hence option (1). Colossus (1943-44) was a British code-breaking machine used at Bletchley Park during the Second World War; EDVAC was the stored-program design described by John von Neumann in 1945; and ENIAC (completed 1945, unveiled 1946) was the first general-purpose electronic digital computer, famous for its roughly 18,000 vacuum tubes. None of these is linked to Hopper's COBOL work. Memory tips: Grace Hopper popularised the word 'bug' after her team found a moth in the Harvard Mark II, and UNIVAC I famously predicted Eisenhower's win in the 1952 US presidential election on CBS television.
+
+Q 35 | cur | National
+Match the following List – I (Chief Minister) and List – II (States/UTs) :
+List – I (Chief Minister) / List – II (States/UTs)
+(a) V.D. Satheesan – (i) Tamil Nadu
+(b) C. Joseph Vijay – (ii) New Delhi
+(c) Suvendu Adhikari – (iii) Kerala
+(d) Rekha Gupta – (iv) West Bengal
+(1) (a) – (ii), (b) – (i), (c) – (iii), (d) – (iv)
+(2) (a) – (iii), (b) – (iv), (c) – (i), (d) – (ii)
+(3) (a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)
+(4) (a) – (iii), (b) – (i), (c) – (iv), (d) – (ii)
+= 4
+~ As per the official key, the Chief Ministers after the 2026 Assembly elections match as follows: V.D. Satheesan – Kerala (iii), the Congress leader who had been Leader of the Opposition in the Kerala Assembly; C. Joseph Vijay – Tamil Nadu (i), the film actor popularly called 'Thalapathy' Vijay, who founded the Tamilaga Vettri Kazhagam (TVK) in 2024; Suvendu Adhikari – West Bengal (iv), the BJP leader who had been Leader of the Opposition in the West Bengal Assembly; and Rekha Gupta – Delhi (ii), who became Chief Minister in February 2025 after the BJP won the Delhi Assembly election. So (a)–(iii), (b)–(i), (c)–(iv), (d)–(ii), option (4). Option (1) puts Satheesan in Delhi, option (2) puts Vijay in West Bengal, and option (3) puts Adhikari in Delhi and Rekha Gupta in West Bengal, so all are wrong. Rekha Gupta is Delhi's fourth woman Chief Minister after Sushma Swaraj, Sheila Dikshit and Atishi. Delhi is a Union Territory with its own legislature under Article 239AA, which is why the list says 'States/UTs'. Assembly elections in Kerala, Tamil Nadu, West Bengal, Assam and Puducherry were due together in 2026.
+
+Q 36 | his | Karnataka History
+Which of the following statement/s is/are correct with respect to Shivanasamudra hydroelectric project ?
+(a) Before independence it was the largest hydro-electricity project in India.
+(b) The electricity produced here was first given to Kolar gold mines.
+(c) Additional electricity was supplied to Bengaluru.
+(d) During that period Nalwadi Krishna Raja Wodeyar was the King.
+(1) (b), (c) and (d)
+(2) (a), (b), (c) and (d)
+(3) (a), (b) and (c)
+(4) Only (a)
+= 2
+~ All four statements are correct, option (2). The Shivanasamudra hydro-electric station on the Cauvery began generating power in 1902 in the princely state of Mysore; it is regarded as Asia's first major hydro-electric station and, before independence, it was among the largest hydel projects in India, which is why KEA accepts statement (a). The project was planned under Diwan K. Seshadri Iyer, with engineer Captain A.J. de Lotbiniere, mainly to supply power to the Kolar Gold Fields about 147 km away, statement (b). Surplus power was later supplied to Bengaluru, which in 1905 became the first city in Asia to light its streets with hydro-electricity, statement (c). The ruler at that time was Nalwadi Krishnaraja Wodeyar (Krishnaraja Wodeyar IV, reigned 1894-1940, with full powers from 1902), statement (d). Options (1), (3) and (4) leave out one or more of these correct statements. Exam tip: the Shivanasamudra falls have two branches, Gaganachukki and Bharachukki, and the KRS dam (1932) on the same river was built under Sir M. Visvesvaraya's guidance during the same king's reign.
+
+Q 37 | his | Modern India & Freedom Struggle
+Which of the following freedom fighter is known as "Mother of Handloom" ?
+(1) Kasturba Gandhi
+(2) Aruna Asaf Ali
+(3) Kamaladevi Chattopadhyay
+(4) Sarojini Naidu
+= 3
+~ Kamaladevi Chattopadhyay (1903-1988), born in Mangaluru, is known as the 'Mother of Handloom', option (3). After independence she led the revival of India's handlooms and handicrafts: she became the first chairperson of the All India Handicrafts Board in 1952 and helped found institutions such as the Crafts Council of India, the National School of Drama and the Sangeet Natak Akademi. A freedom fighter, she took part in the 1930 Salt Satyagraha, and in 1926 she contested the Madras Provincial Legislative Council election, becoming the first woman in India to contest a legislative seat. She received the Padma Bhushan (1955), the Ramon Magsaysay Award (1966) and the Padma Vibhushan (1987). The other options are wrong: Kasturba Gandhi, wife of Mahatma Gandhi, is remembered as 'Ba'; Aruna Asaf Ali, who hoisted the Congress flag at Gowalia Tank Maidan on 9 August 1942, is called the 'Grand Old Lady of the Independence Movement'; Sarojini Naidu is the 'Nightingale of India', first Indian woman President of the Congress (1925) and first woman Governor of a state. Karnataka angle: Kamaladevi came from Mangaluru in Dakshina Kannada.
+
+Q 38 | geo | World Geography
+Match List – I with List – II and choose the correct answers :
+List – I (Tribal People) / List – II (Living Area)
+(a) Pygmies – (i) Arabian Desert
+(b) Bedouins – (ii) Congo Basin
+(c) Bushmen – (iii) Central Asia
+(d) Khirghiz – (iv) Kalahari Desert
+Codes :
+(1) (a) – (ii), (b) – (iv), (c) – (iii), (d) – (i)
+(2) (a) – (iv), (b) – (iii), (c) – (i), (d) – (ii)
+(3) (a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)
+(4) (a) – (ii), (b) – (i), (c) – (iv), (d) – (iii)
+= 4
+~ Pygmies are short-statured hunter-gatherers of the dense equatorial rainforests of the Congo Basin in Central Africa, (a)–(ii). Bedouins are nomadic Arab herders of camels, sheep and goats in the Arabian Desert and other deserts of West Asia and North Africa, (b)–(i). Bushmen (the San people) are hunter-gatherers of the Kalahari Desert in southern Africa (Botswana, Namibia), (c)–(iv). The Kirghiz (Kyrgyz) are pastoral nomads of the grasslands and mountains of Central Asia who traditionally live in yurts, (d)–(iii). So the answer is (a)–(ii), (b)–(i), (c)–(iv), (d)–(iii), option (4). Option (1) sends the Bedouins to the Kalahari and the Bushmen to Central Asia; option (2) places the Pygmies in the Kalahari; option (3) places the Pygmies in Central Asia and the Bushmen in the Congo Basin, so all three are wrong. Other tribes often asked: Eskimos (Inuit) of the Arctic tundra, Masai of the Kenya-Tanzania grasslands and Semang of Malaysia. Karnataka angle: the Soligas of B.R. Hills, the Jenu Kurubas of the Nagarahole forests and the Siddis of Uttara Kannada are tribes often asked in state exams.
+
+Q 39 | geo | World Geography
+Which of the following pair is wrongly matched ?
+(1) Isotherm – Equal atmospheric temperature
+(2) Isobaths – Equal water depth
+(3) Isohytes – Equal amount of precipitation
+(4) Isobar – Equal water salinity
+= 4
+~ An isobar is a line joining places with equal atmospheric pressure (Greek 'baros', weight), not equal water salinity, so pair (4) is wrongly matched. A line joining places where sea water has equal salinity is called an isohaline. The other pairs are correct: an isotherm joins places with the same temperature (pair 1); an isobath joins points of equal water depth on a sea or lake bed (pair 2); an isohyet (printed 'Isohytes') joins places that receive an equal amount of rainfall or precipitation (pair 3). Memory tip: 'iso' means equal; 'therm' is heat, 'bath' is depth, 'hyet' is rain, 'haline' is salt and 'bar' is pressure. Other useful isolines: isoneph (equal cloudiness), isohel (equal sunshine), isoseismal (equal earthquake intensity) and contour (equal height above sea level). Weather maps of the India Meteorological Department (IMD) show isobars; when they are closely spaced, the pressure gradient is steep and winds are strong, as seen around cyclones that hit India's west and east coasts.
+
+Q 40 | geo | Karnataka Geography
+Identify the incorrect pair/s among the following :
+a. Anashi – Kodagu
+b. Kudremukh – Dakshina Kannada
+c. Mookambika – Udupi
+d. Pushpagiri – Kodagu
+(1) a and b only
+(2) c and d only
+(3) a, b and c
+(4) a only
+= 4
+~ Pair (a) is incorrect: Anshi National Park is not in Kodagu but in Joida taluk of Uttara Kannada district; it now forms the Kali Tiger Reserve together with Dandeli Wildlife Sanctuary. The other pairs are accepted as correct: Kudremukh National Park lies on the Western Ghats across Chikkamagaluru, Udupi and Dakshina Kannada districts, so (b) is acceptable even though the Kudremukh peak itself is in Chikkamagaluru; Mookambika Wildlife Sanctuary surrounds Kollur in Udupi district, (c); and Pushpagiri Wildlife Sanctuary, on the slopes of Kumara Parvatha, is in Kodagu district, (d). Hence 'a only', option (4). Options (1) and (3) wrongly include (b), and option (3) also wrongly includes (c); option (2) wrongly marks the correct pairs (c) and (d). Karnataka has five national parks: Bandipur, Nagarahole (Rajiv Gandhi), Bannerghatta, Kudremukh and Anshi. Kodagu's protected areas include part of Nagarahole and the Pushpagiri, Brahmagiri and Talakaveri wildlife sanctuaries. Memory tip: the Kali river gives its name to the Kali Tiger Reserve (Anshi-Dandeli), the tiger reserve of Uttara Kannada.
+
+Q 41 | geo | World Geography
+Rift valley is formed due to
+(1) Folds
+(2) Compression
+(3) Faults
+(4) Joints
+= 3
+~ A rift valley is a long, narrow, steep-sided trough formed when a block of the earth's crust sinks between two roughly parallel faults, so it is a product of faulting, mainly by tensional forces that pull the crust apart, option (3). The sunken block is called a graben, and the raised blocks between faults are horsts or block mountains. Folds (option 1) form when compressional forces bend rock layers into up-folds (anticlines) and down-folds (synclines), producing fold mountains such as the Himalayas and the Alps. Compression (option 2) is the force behind folding and thrust faults, whereas a rift valley results mainly from tension. Joints (option 4) are cracks in rocks along which no displacement has taken place, so they cannot create such a valley. Examples: the East African Rift Valley and the Jordan valley with the Dead Sea; in India, the Narmada and Tapi flow westwards through rift valleys and form estuaries instead of deltas. Memory tip: 'Rift = Fault'; the Narmada flows west between the Vindhya and Satpura ranges in a rift valley.
+
+Q 42 | cur | Awards, Books & Persons
+Who among the following has NOT been awarded the Nobel Peace Prize ?
+(1) Nihon Hidankyo
+(2) Donald Trump
+(3) Narges Mohammadi
+(4) Maria Corina Machado
+= 2
+~ Donald Trump, President of the United States, had NOT been awarded the Nobel Peace Prize as of the exam (September 2026), though he has been nominated several times and has openly sought it, so option (2) is the answer. The other three are recent laureates: Nihon Hidankyo, the Japanese organisation of atomic-bomb survivors (hibakusha) of Hiroshima and Nagasaki, won the 2024 prize for its efforts for a world free of nuclear weapons; Narges Mohammadi, an Iranian human-rights activist who was in prison when the prize was announced, won in 2023 for fighting the oppression of women in Iran; and Maria Corina Machado, the Venezuelan opposition leader, won in 2025 for her struggle for democracy in Venezuela. The Peace Prize is awarded by the Norwegian Nobel Committee in Oslo, while the other Nobel prizes are presented in Stockholm, Sweden. Four US Presidents have received it: Theodore Roosevelt (1906), Woodrow Wilson (1919), Jimmy Carter (2002) and Barack Obama (2009). Indian link: Mother Teresa (1979) and Kailash Satyarthi (2014, shared with Malala Yousafzai) are Nobel Peace laureates associated with India.
+
+Q 43 | sci | Science & Technology
+'Freeze Separation' is a technique used
+(1) To classify ocean microbes
+(2) To desalinize ocean water
+(3) To classify ocean deposits
+(4) To clean the garbages from oceans
+= 2
+~ 'Freeze separation' (freeze desalination) is a technique used to desalinate sea water, option (2). When salt water is cooled to its freezing point, the ice crystals that form are almost pure water, because salt does not fit into the ice crystal lattice and is pushed out into the remaining concentrated brine. The ice is then separated, washed and melted to give fresh water. Since the latent heat of freezing is far smaller than the latent heat of vaporisation, the method can need less energy than distillation, and the low temperature reduces corrosion and scaling. Option (1) is wrong because ocean microbes are classified by microscopy and DNA sequencing; option (3) is wrong because ocean deposits are classified by origin, such as terrigenous (land-derived) deposits and biogenous oozes; option (4) is wrong because ocean garbage is removed with floating booms, nets and skimmers. Other desalination methods are reverse osmosis (the most widely used), multi-stage flash distillation and electrodialysis. In India, Chennai relies on large RO plants at Minjur and Nemmeli, and the National Institute of Ocean Technology runs low-temperature thermal desalination plants in Lakshadweep.
+
+Q 44 | geo | Karnataka Geography
+Consider the following statements regarding the percentage of urban population of Karnataka as per 2011 census :
+(a) It is less than India's average.
+(b) It is more than Tamil Nadu, less than Andhra Pradesh.
+(c) Less than Kerala, but more than Andhra Pradesh.
+(d) More than India's average, but less than Tamil Nadu.
+Choose the correct statements :
+(1) (a), (b) and (d) are correct.
+(2) (b), (c) and (d) are correct.
+(3) (c) and (d) are correct.
+(4) (a), (b) and (c) are correct.
+= 3
+~ As per Census 2011, Karnataka's urban population was about 38.7%, against the all-India average of about 31.2%. Tamil Nadu was about 48.4%, Kerala about 47.7% and undivided Andhra Pradesh about 33.4%. Now test each statement. (a) 'Less than India's average' is false, because 38.7 is more than 31.2. (b) 'More than Tamil Nadu, less than Andhra Pradesh' is false on both counts. (c) 'Less than Kerala, but more than Andhra Pradesh' is true, since 47.7 > 38.7 > 33.4. (d) 'More than India's average, but less than Tamil Nadu' is true, since 31.2 < 38.7 < 48.4. So only (c) and (d) are correct, option (3); options (1), (2) and (4) each include a false statement. Useful facts: among states, Goa (about 62%) is the most urbanised and Himachal Pradesh (about 10%) the least. Within Karnataka, Bengaluru Urban district is the most urbanised (about 91%), while Kodagu is among the least urbanised districts. Karnataka's urban share rose from about 34% in 2001 to about 38.7% in 2011, and Bengaluru alone holds roughly a third of the state's urban population.
+
+Q 45 | geo | Indian Geography
+Identify the correctly matched pairs with respect to iron and steel industries established in India.
+(a) Bhilai – Soviet Union collaboration
+(b) Rourkela – German collaboration
+(c) Bokaro – Soviet Union collaboration
+(d) TISCO – British collaboration
+(1) (a), (b) and (c) are correct.
+(2) (a), (b) and (d) are correct.
+(3) (b), (c) and (d) are correct.
+(4) (a), (b), (c) and (d) are correct.
+= 1
+~ Bhilai steel plant in Chhattisgarh was set up with Soviet Union (USSR) collaboration, so (a) is correct. Rourkela steel plant in Odisha was built with West German collaboration (Krupp-Demag), so (b) is correct. Bokaro steel plant in Jharkhand was also built with Soviet help, so (c) is correct. Pair (d) is wrong: TISCO (Tata Iron and Steel Company, now Tata Steel) at Jamshedpur was founded in 1907 as a private Indian enterprise, realising Jamsetji Tata's vision; it was not a British collaboration. The British-aided plant was Durgapur in West Bengal. Hence (a), (b) and (c) are correct, option (1); options (2), (3) and (4) all include the wrong pair (d). Bhilai, Rourkela and Durgapur were the three public sector integrated steel plants of the Second Five-Year Plan (1956-61) and are now run by the Steel Authority of India Limited (SAIL). Karnataka angle: the Visvesvaraya Iron and Steel Plant at Bhadravathi (Shivamogga) began in 1923 as the Mysore Iron Works under Sir M. Visvesvaraya, and JSW's Vijayanagar works at Toranagallu in Ballari is one of India's largest steel plants.
+
+Q 46 | geo | Karnataka Geography
+Identify the areas marked in the following Karnataka map :
+(1) (a) Coffee growing area (b) Sharavathi Basin (c) Virginia tobacco growing area (d) Hard core drought region
+(2) (a) Hard core drought region (b) Virginia tobacco growing area (c) Sharavathi Basin (d) Coffee growing area
+(3) (a) Hard core drought region (b) Sharavathi Basin (c) Virginia tobacco growing area (d) Coffee growing area
+(4) (a) Coffee growing area (b) Virginia tobacco growing area (c) Sharavathi Basin (d) Hard core drought region
+= 3
+~ Reading the map: (a), on the eastern border in the middle of the state, marks the low-rainfall rain-shadow interior east of the Western Ghats, the state's hard-core drought region; (b), on the western side near the coast, marks the Sharavathi basin, where the Sharavathi rises at Ambutirtha near Thirthahalli, plunges at Jog Falls and meets the sea at Honnavar; (c), in the southern Maidan around Mysuru district, marks the Virginia (flue-cured) tobacco area of Hunsur, Periyapatna and H.D. Kote; and (d), the hatched area on the south-western hills, marks the coffee-growing area of Kodagu. So the order is (a) drought region, (b) Sharavathi basin, (c) Virginia tobacco, (d) coffee, option (3). Options (1) and (4) wrongly put coffee in the dry eastern interior, and option (2) swaps the Sharavathi basin and the tobacco area. Useful facts: Karnataka produces about 70% of India's coffee, mainly in Kodagu, Chikkamagaluru and Hassan, and coffee was first grown at Bababudangiri by Baba Budan. Jog Falls is about 253 m high, and the Linganamakki dam is built across the Sharavathi.
+! img/kak26-q46.png
+
+Q 47 | cur | International & Sports
+Which of the following country is NOT a member of the G7 ?
+(1) Germany
+(2) Italy
+(3) India
+(4) France
+= 3
+~ The G7 (Group of Seven) consists of the United States, the United Kingdom, France, Germany, Italy, Japan and Canada, with the European Union also taking part in its meetings. India is not a member, so option (3) is the answer; Germany, Italy and France (options 1, 2 and 4) are founding members. India is, however, regularly invited to G7 summits as an outreach or guest country; for example, Prime Minister Narendra Modi attended the 2025 summit at Kananaskis in Canada. The group began in 1975 as the G6 at Rambouillet in France, and Canada joined in 1976 to make it the G7. Russia joined in 1997 to form the G8, but it was suspended in 2014 after it annexed Crimea. The presidency rotates every year among the members, and the host sets the agenda. Do not confuse it with the G20: India is a member of the G20, held its presidency in 2023 and hosted the New Delhi summit, where the African Union became a permanent member. Memory tip: G7 = 4 European (UK, France, Germany, Italy) + 2 North American (USA, Canada) + 1 Asian (Japan).
+
+Q 48 | geo | Indian Geography
+Match List – I with List – II and choose the correct answer :
+List – I (Linguistic Family) / List – II (Languages)
+(a) The Indo-Aryan languages – (i) Tamil
+(b) The Dravidian family – (ii) Ladakhi
+(c) The Austric family – (iii) Khasi
+(d) The Sino-Tibetan family – (iv) Hindi
+(1) (a) – (iv), (b) – (i), (c) – (iii), (d) – (ii)
+(2) (a) – (ii), (b) – (i), (c) – (iv), (d) – (iii)
+(3) (a) – (iv), (b) – (i), (c) – (ii), (d) – (iii)
+(4) (a) – (iii), (b) – (iv), (c) – (i), (d) – (ii)
+= 1
+~ Indian languages belong mainly to four families. Hindi belongs to the Indo-Aryan branch of the Indo-European family, (a)–(iv); Tamil is a Dravidian language, (b)–(i); Khasi, spoken in Meghalaya, belongs to the Austric (Austro-Asiatic, Mon-Khmer) family, (c)–(iii); and Ladakhi belongs to the Sino-Tibetan (Tibeto-Burman) family, (d)–(ii). So the answer is (a)–(iv), (b)–(i), (c)–(iii), (d)–(ii), option (1). Option (2) puts Ladakhi under Indo-Aryan and Hindi under Austric; option (3) puts Ladakhi under Austric and Khasi under Sino-Tibetan; option (4) puts Khasi under Indo-Aryan and Hindi under Dravidian, so all three are wrong. In India the Indo-Aryan family has the largest number of speakers, followed by the Dravidian family; Santhali, Mundari and Ho are Austric languages, while Manipuri (Meitei) and Bodo are Sino-Tibetan. Karnataka angle: Kannada, Tulu, Kodava and Telugu are Dravidian languages, and Kannada was declared a classical language in 2008; Konkani, spoken along coastal Karnataka, is an Indo-Aryan language.
+
+Q 49 | geo | Indian Geography
+Which of the characteristics of the Great plain of India is not correctly matched ?
+(1) Terai – Marshy area
+(2) Khadar – New alluvium
+(3) Bhangar – Old alluvium
+(4) Bhabar – Sandy soil mixed with gravel
+= 4
+~ The official key marks option (4) as the pair that is not correctly matched. Bhabar is the narrow belt, about 8-16 km wide, along the foot of the Shiwaliks where rivers coming down from the hills drop heavy pebbles, boulders and coarse rock debris; it is so porous that streams disappear underground here. Because it is a belt of pebbles and boulders rather than a 'sandy soil', the key treats 'sandy soil mixed with gravel' as an inaccurate description. The other pairs are standard: the Terai, south of the Bhabar, is a wet, marshy, forested belt where the underground streams re-emerge (1); Khadar is the newer alluvium of the flood plains, renewed almost every year (2); and Bhangar is the older alluvium lying above flood level, containing calcareous kankar nodules (3). Order from the hills to the plains: Bhabar, Terai, Bhangar, Khadar. Some books loosely describe the Bhabar as 'gravel and sand', which makes the question debatable, but for this exam remember the Bhabar as the belt of pebbles and boulders. (Official key; some sources differ.)
+
+Q 50 | pol | Union & State Government
+Which Article of the Indian Constitution defines the levy, collection and distribution of Goods and Services Tax (GST) on supplies during inter-state trade ?
+(1) Article 268A
+(2) Article 270A
+(3) Article 269A
+(4) Article 267A
+= 3
+~ Article 269A of the Constitution deals with the levy and collection of Goods and Services Tax (GST) on supplies in the course of inter-State trade or commerce. This tax (IGST) is levied and collected by the Government of India and apportioned between the Union and the States in the manner Parliament provides by law on the recommendations of the GST Council. The Article was inserted by the 101st Constitutional Amendment Act, 2016, and GST came into force on 1 July 2017. Hence option (3). The other options do not fit: Article 268A dealt with service tax (added in 2003) and was omitted by the same 101st Amendment, and there is no Article 267A or 270A in the Constitution (Article 267 deals with the Contingency Fund and Article 270 with taxes levied and distributed between the Union and the States). Related GST provisions: Article 246A (special power of Parliament and State Legislatures to make GST laws), Article 279A (the GST Council, chaired by the Union Finance Minister) and Article 366(12A) (definition of GST). Karnataka angle: Karnataka's GST collections are usually second only to Maharashtra's.
+
+Q 51 | pol | Union & State Government
+Match List – I with List – II and choose the correct answer :
+List – I (Assembly Name) / List – II (Nations)
+(a) Parliament – (i) Japan
+(b) Congress – (ii) India
+(c) Diet – (iii) Russia
+(d) Federal Assembly – (iv) U.S.A.
+(1) a-ii, b-i, c-iv, d-iii
+(2) a-ii, b-iv, c-i, d-iii
+(3) a-ii, b-iii, c-i, d-iv
+(4) a-iv, b-i, c-iii, d-ii
+= 2
+~ Every country gives its national legislature its own name. India’s Union legislature is called Parliament (the President, Lok Sabha and Rajya Sabha, Article 79); the legislature of the U.S.A. is the Congress (Senate and House of Representatives); Japan’s is the Diet (House of Representatives and House of Councillors); and Russia’s is the Federal Assembly (State Duma and Federation Council). So the correct match is a-ii, b-iv, c-i, d-iii, which is option (2). Option (1) wrongly pairs Congress with Japan and Diet with the U.S.A.; option (3) pairs Congress with Russia and the Federal Assembly with the U.S.A.; option (4) gives Parliament to the U.S.A. and Diet to Russia, so all three are wrong. Other legislature names that are often asked: Majlis (Iran), Knesset (Israel), Bundestag (Germany), National People’s Congress (China), Storting (Norway), Riksdag (Sweden) and Jatiya Sangsad (Bangladesh). Karnataka link: the state legislature is also bicameral, with the Vidhana Sabha (224 members) and the Vidhana Parishad (75 members), and it meets at the Vidhana Soudha in Bengaluru and the Suvarna Vidhana Soudha in Belagavi.
+
+Q 52 | geo | Indian Geography
+Consider the following statements regarding coal reserves in India :
+Statement (I) : India’s 75% coal reserves are found in Damodara, Ib and Suvarnarekha river valleys.
+Statement (II) : Geological Survey of India (GSI) is managing the Quality and Mining Analysis in India.
+Choose the correct answer.
+(1) Both statements (I) and (II) are correct.
+(2) Both statements (I) and (II) are incorrect.
+(3) Statement (I) is incorrect but (II) is correct.
+(4) Statement (I) is correct but (II) is incorrect.
+= 1
+~ KEA’s key treats both statements as correct, option (1). Statement (I): almost all of India’s coal is Gondwana coal, found in the river-valley basins of peninsular India, above all the Damodar valley (Jharia, Bokaro, Raniganj in Jharkhand–West Bengal) and the valley of the Ib, a tributary of the Mahanadi (the Ib Valley coalfield of Odisha), with the Subarnarekha basin nearby; the eastern belt of Jharkhand, Odisha, Chhattisgarh and West Bengal holds roughly three-fourths of the country’s coal resources. Statement (II): the Geological Survey of India (founded 1851, under the Ministry of Mines) carries out regional exploration, estimates coal and mineral resources, maintains the national coal inventory and analyses samples in its laboratories, which the key accepts as managing quality and mining analysis. Because the key accepts both, options (2), (3) and (4) are rejected. Exam tip: Jharia is India’s main coking-coal field, Raniganj was the first coalfield mined (1774), and Neyveli in Tamil Nadu has lignite. Kalyana Karnataka link: Karnataka has no workable coal, so the Raichur and Yeramarus thermal power stations run on coal brought from other states. (Official key; some sources differ.)
+
+Q 53 | pol | Union & State Government
+Which of the following statement/statements is/are incorrect ?
+(a) Governor can give his assent to the bill.
+(b) Governor can withhold his assent to the money bill.
+(c) Governor may reserve the bill for the reconsideration of the President.
+(d) Governor may withhold his assent to the bill.
+(1) (a) and (b) only
+(2) (b) and (d) only
+(3) (c) and (d) only
+(4) (b) only
+= 4
+~ Under Article 200, when a bill passed by the State Legislature is presented to the Governor, he may give his assent, withhold his assent, return the bill (if it is not a money bill) for reconsideration, or reserve it for the consideration of the President. So statements (a), (c) and (d) describe genuine powers and are correct. KEA keys statement (b) as the only incorrect one, option (4): a money bill can be introduced in the Legislative Assembly only on the Governor’s recommendation (Article 207), so it comes with his prior approval and in practice the Governor does not withhold assent to it; he also cannot return it for reconsideration. Options (1), (2) and (3) wrongly include (a), (c) or (d). Remember: if a bill is reserved, the President acts under Article 201 and may assent, withhold assent or, for a non-money bill, direct the Governor to return it to the legislature; a bill that would weaken the powers of the High Court must be reserved. Note that standard textbooks say the Governor may technically withhold assent even to a money bill; only returning it is barred. (Official key; some sources differ.)
+
+Q 54 | pol | Constitution & Rights
+Which one of the following schedules of the Constitution of India, contains provisions regarding “anti-defection law” ?
+(1) Seventh Schedule
+(2) Eighth Schedule
+(3) Tenth Schedule
+(4) Ninth Schedule
+= 3
+~ The anti-defection law is contained in the Tenth Schedule, added by the 52nd Constitutional Amendment Act, 1985, during Rajiv Gandhi’s government. So option (3) is correct. It disqualifies an MP or MLA who voluntarily gives up membership of his party, or votes or abstains against the party whip without permission; an independent member who joins a party and a nominated member who joins a party after six months are also disqualified. The 91st Amendment (2003) removed the ‘split’ exception of one-third members, so only a merger backed by two-thirds of the legislature party is protected; it also capped the size of ministries at 15% of the strength of the lower house. The Speaker or Chairman decides disqualification, and in Kihoto Hollohan (1992) the Supreme Court made that decision open to judicial review. The other options are wrong: the Seventh Schedule has the Union, State and Concurrent Lists, the Eighth lists the 22 official languages, and the Ninth protects certain laws (added by the First Amendment, 1951). Karnataka link: in 2019 Speaker K.R. Ramesh Kumar disqualified 17 MLAs under this Schedule; the Supreme Court upheld the disqualification but allowed them to contest by-elections.
+
+Q 55 | pol | Union & State Government
+Consider the following statements regarding Advocate General of the State :
+(a) He/she is appointed by the Governor.
+(b) He/she is appointed for a period of 5 years.
+(c) He/she is the Chief Law Officer of the government in the State.
+(d) He/she has the right to speak and to take part in the proceedings of both the Houses of the State Legislature.
+Which of the above statements is/are incorrect ?
+(1) (b) only
+(2) (d) only
+(3) (c) and (d)
+(4) (a) and (b)
+= 1
+~ Only statement (b) is incorrect, so option (1) is the answer. Under Article 165 the Advocate General is appointed by the Governor (a is correct) from among persons qualified to be judges of a High Court. The Constitution fixes no term of office: the Advocate General holds office during the pleasure of the Governor and receives the remuneration the Governor determines, so the claim of a fixed 5-year term in (b) is wrong. By convention the Advocate General resigns when the government (council of ministers) changes, because he is appointed on its advice. He is the highest (chief) law officer of the State government, advising it on legal matters (c is correct), and under Article 177 he has the right to speak and take part in the proceedings of both Houses of the State Legislature and its committees, but without the right to vote (d is correct). Options (2), (3) and (4) wrongly call correct statements incorrect. Quick comparison: the Attorney General of India (Article 76) is the Union counterpart, appointed by the President, and likewise has no fixed term. Karnataka has both a Legislative Assembly and a Legislative Council, so its Advocate General may address either House.
+
+Q 56 | pol | Judiciary & Constitutional Bodies
+District judges are appointed by the Governor in consultation with,
+(1) State Public Service Commission
+(2) Advocate General
+(3) Chief Minister
+(4) The High Court
+= 4
+~ Article 233 of the Constitution says that the appointment, posting and promotion of district judges in a State are made by the Governor in consultation with the High Court exercising jurisdiction over that State. So option (4) is correct. A person not already in the service of the Union or the State can be appointed a district judge only if he has practised as an advocate or pleader for at least seven years and is recommended by the High Court. The State Public Service Commission comes in under Article 234, which covers recruitment of judicial officers other than district judges (such as civil judges), made by the Governor after consulting both the SPSC and the High Court. The Advocate General is only the State’s chief law officer, and the Chief Minister has no constitutional role in this appointment, so options (1), (2) and (3) are wrong. Article 235 gives the High Court control over the subordinate courts. Remember: Articles 233 to 237 deal with subordinate courts. Karnataka link: the High Court of Karnataka sits in Bengaluru with permanent benches at Dharwad and Kalaburagi; the Kalaburagi bench serves the Kalyana Karnataka districts.
+
+Q 57 | pol | Constitution & Rights
+According to Article-1 of the Constitution, the territory of India comprises of
+(1) Only Union Territories.
+(2) Territories of the State, Union Territories, Territories that may be acquired by the Government of India at any time.
+(3) Only Territories that may be acquired by the Government of India at any time.
+(4) Only Territories of the States.
+= 2
+~ Article 1(1) declares that “India, that is Bharat, shall be a Union of States”, and Article 1(3) says that the territory of India shall comprise (a) the territories of the States, (b) the Union territories specified in the First Schedule, and (c) such other territories as may be acquired. So option (2), which lists all three, is correct. Options (1), (3) and (4) each mention only one of the three parts and are therefore incomplete and wrong. A favourite exam point: the ‘Union of India’ includes only the States, whereas the ‘Territory of India’ is wider, covering States, Union territories and acquired territories. Examples of territories acquired after 1950 are Dadra and Nagar Haveli, Goa, Daman and Diu, Puducherry and Sikkim; Parliament can admit or establish new States under Article 2 and form new States or alter boundaries under Article 3. The First Schedule lists the names and territories of the States and Union territories, now 28 States and 8 Union territories. Karnataka link: the State was formed on 1 November 1956 as Mysore State under the States Reorganisation Act and renamed Karnataka on 1 November 1973.
+
+Q 58 | pol | Union & State Government
+The office of ‘Whip’ in parliament is mentioned in
+(1) Rules of the House
+(2) Party Manifestos
+(3) Based on conventions
+(4) Constitution
+= 3
+~ The office of ‘Whip’ is mentioned neither in the Constitution of India, nor in the Rules of the House, nor in any parliamentary statute; it rests on the conventions of parliamentary government. So option (3) is correct. By contrast, the Leader of the House is mentioned in the Rules of the House and the Leader of the Opposition got statutory recognition through a 1977 Act, which is why option (1) is a common trap. Party manifestos are election promises, not the source of any parliamentary office, and the Constitution does not use the word ‘whip’, so options (2) and (4) are wrong. Every political party, ruling or opposition, appoints its own whip to ensure attendance and make members vote as the party wants; the chief whip of the ruling party is usually the Minister of Parliamentary Affairs. A ‘three-line whip’ is the strictest direction. The term comes from British fox-hunting, where the ‘whipper-in’ kept the hounds together. Exam link: defying the party’s direction (whip) in a vote can lead to disqualification under the Tenth Schedule, which applies in the Karnataka Legislature too.
+
+Q 59 | pol | Union & State Government
+Which of the following Article of Indian Constitution explains the Ministers are individual responsibility to the President ?
+(1) Article 75(1)
+(2) Article 75(2)
+(3) Article 74(2)
+(4) Article 74(1)
+= 2
+~ Article 75(2) states that “the Ministers shall hold office during the pleasure of the President”. This is the basis of individual ministerial responsibility: a minister holds office at the President’s pleasure, so the President, acting on the Prime Minister’s advice, can remove an individual minister even when the council of ministers as a whole enjoys the confidence of the Lok Sabha. So option (2) is correct. The other clauses deal with different things. Article 75(1) provides that the Prime Minister is appointed by the President and the other ministers are appointed by the President on the Prime Minister’s advice. Article 74(1) creates a Council of Ministers headed by the Prime Minister to aid and advise the President, who must act on that advice but may send it back once for reconsideration. Article 74(2) bars courts from inquiring whether, and what, advice was tendered. Hence options (1), (3) and (4) are wrong. Remember the pair: individual responsibility is in Article 75(2), collective responsibility to the Lok Sabha in Article 75(3). For Karnataka and other States, the matching provisions are Article 164(1) (ministers hold office at the Governor’s pleasure) and Article 164(2) (collective responsibility to the Legislative Assembly).
+
+Q 60 | his | Modern India & Freedom Struggle
+Bicameralism was introduced for the first time in pre-independent India by the –
+(1) Indian Councils Act, 1909
+(2) Government of India Act, 1935
+(3) Government of India Act, 1919
+(4) Indian Councils Act, 1861
+= 3
+~ The Government of India Act, 1919, based on the Montagu–Chelmsford Reforms, introduced bicameralism for the first time by replacing the Imperial Legislative Council with a bicameral Indian Legislature: an upper house, the Council of State, and a lower house, the Legislative Assembly, with a majority of members in both elected directly. So option (3) is correct. The same Act introduced dyarchy in the provinces, divided subjects into central and provincial lists, and extended separate electorates to Sikhs, Indian Christians, Anglo-Indians and Europeans. The Indian Councils Act, 1861 began associating Indians with law-making and gave the Viceroy power to issue ordinances; the Indian Councils Act, 1909 (Morley–Minto Reforms) introduced separate electorates for Muslims; both kept single-chamber councils, so options (1) and (4) are wrong. The Government of India Act, 1935 came later and extended bicameralism to six of the eleven provinces, besides providing provincial autonomy and a Federal Court, so option (2) is not the first. Karnataka link: the princely State of Mysore was ahead of British India, with a Representative Assembly from 1881 and a Legislative Council from 1907.
+
+Q 61 | pol | Constitution & Rights
+Which of the following is/are correctly matched regarding various parts drawn into the Indian Constitution ?
+(a) Parliamentary System – United Kingdom
+(b) Emergencies – Germany
+(c) Amendment Procedure – South Africa
+(d) Fundamental Rights – Ireland
+(1) (a) and (c)
+(2) Only (a)
+(3) (a) and (b)
+(4) (a), (b) and (c)
+= 4
+~ Pairs (a), (b) and (c) are correct, so option (4) is the answer. From the United Kingdom India borrowed the parliamentary form of government, along with the cabinet system, rule of law, single citizenship, the legislative procedure and the prerogative writs. From the Weimar Constitution of Germany came the provision for suspending Fundamental Rights during an Emergency. From South Africa came the procedure for amending the Constitution and the election of members of the Rajya Sabha. Pair (d) is wrong: Fundamental Rights were drawn from the U.S.A. (along with judicial review, independence of the judiciary, impeachment of the President and the office of Vice-President), whereas Ireland gave the Directive Principles of State Policy, the nomination of members to the Rajya Sabha and the method of electing the President. Since (d) is wrong and (b) and (c) are right, options (1), (2) and (3) are incomplete. Memory tip: ‘USA for Rights, Ireland for Directives, Britain for Parliament, Canada for a federation with a strong Centre, Australia for the Concurrent List and joint sitting.’ Dr. B.R. Ambedkar called the Constitution a document made after ransacking the known constitutions of the world.
+
+Q 62 | pol | Constitution & Rights
+Identify the incorrect statement regarding Overseas Citizen of India (OCI) cardholders :
+(1) OCI card can be cancelled if obtained by spouse of Indian Citizen and if their marriage is dissolved by court.
+(2) They are entitled to visa free entry into India for 15 years.
+(3) Citizens of Bangladesh and Pakistan are ineligible to apply for Overseas Citizenship of India.
+(4) They are provided lifelong visa.
+= 2
+~ Statement (2) is the incorrect one, so it is the answer. An OCI cardholder gets a multiple-entry, multi-purpose lifelong visa for visiting India, not visa-free entry limited to 15 years; that is why statement (4) is correct. The 15-year period belonged to the old Person of Indian Origin (PIO) card, which was merged into the OCI scheme in 2015. Statement (1) is correct: under Section 7D of the Citizenship Act, 1955, the OCI registration of a foreign spouse of an Indian citizen can be cancelled if the marriage is dissolved by a competent court. Statement (3) is also correct: under Section 7A, a person who is, or whose parents or grandparents were, a citizen of Pakistan or Bangladesh is not eligible for OCI. Key facts: the OCI scheme began in 2005 through an amendment to the Citizenship Act, following the L.M. Singhvi committee on the Indian diaspora. OCI is not dual citizenship: cardholders cannot vote, contest elections, hold constitutional posts such as President or judge, or buy agricultural land. Pravasi Bharatiya Divas is observed on 9 January, the day Gandhiji returned from South Africa in 1915.
+
+Q 63 | pol | Constitution & Rights
+Gandhian ideals are reflected in which of the following parts of the Indian Constitution ?
+(1) Part II
+(2) Part IV
+(3) Part III
+(4) Part I
+= 2
+~ Gandhian ideals are reflected mainly in Part IV, the Directive Principles of State Policy (Articles 36–51), so option (2) is correct. The Gandhian principles are: Article 40, organise village panchayats as units of self-government; Article 43, promote cottage industries on an individual or co-operative basis in rural areas; Article 43B, promote voluntary formation and professional management of co-operative societies (added by the 97th Amendment, 2011); Article 46, promote the educational and economic interests of Scheduled Castes, Scheduled Tribes and other weaker sections; Article 47, prohibit intoxicating drinks and drugs injurious to health; and Article 48, prohibit the slaughter of cows, calves and other milch and draught cattle. The other parts deal with different matters: Part I with the Union and its territory, Part II with citizenship and Part III with Fundamental Rights, so options (1), (3) and (4) are wrong (though Article 17, abolishing untouchability, also echoes Gandhiji). The Directive Principles are classified as socialistic, Gandhian and liberal-intellectual. Karnataka link: Article 40 inspired Karnataka’s pioneering 1983 Panchayat Raj law under minister Abdul Nazir Sab, before the 73rd Amendment (1992) made panchayats constitutional.
+
+Q 64 | eco | Schemes & Development
+Name of the mobile app used under Housing schemes in Karnataka :
+(1) Spandana Vigil
+(2) Gruha Vigil
+(3) Ashraya Vigil
+(4) Vasati Vigil
+= 3,4
+~ KEA’s final key accepts both option (3) Ashraya Vigil and option (4) Vasati Vigil. Karnataka’s housing schemes for the poor are implemented through the Rajiv Gandhi Rural Housing Corporation Limited (RGRHCL) under the Housing Department. To stop bogus bills and ‘ghost’ houses, the construction of each beneficiary’s house is checked stage by stage (for example at foundation, lintel and roof level) through geo-tagged photographs uploaded with a ‘Vigil’ mobile app, and the instalment for that stage is then credited to the beneficiary’s bank account. Both names point to the same thing, a ‘Vigil’ app for the State’s housing (Ashraya/Vasati) schemes. ‘Spandana Vigil’ and ‘Gruha Vigil’ are not names used for this app, so options (1) and (2) are wrong. Useful facts: State housing schemes include Basava Vasati Yojane (rural), Dr. B.R. Ambedkar Nivas Yojane (for SC/ST families), Devaraj Urs Vasati Yojane and the Vajpayee Urban Housing scheme, alongside the Central Pradhan Mantri Awas Yojana. Geo-tagging and direct benefit transfer are now standard tools to make welfare spending transparent.
+
+Q 65 | eco | Schemes & Development
+Under which scheme ‘KOOSINA MANE’ childcare centres were established ?
+(1) SBMG
+(2) MGNREGA
+(3) PMGSY
+(4) MMGRAY
+= 2
+~ ‘Koosina Mane’ (literally ‘the child’s home’) crèches were set up in gram panchayats by Karnataka’s Rural Development and Panchayat Raj (RDPR) Department under the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), so option (2) is correct. They look after the young children of women who work at MGNREGA sites, so that mothers can take up wage work without worry; trained local women, often from self-help groups, serve as caretakers, and the centres also provide nutrition and early learning in convergence with other departments. The idea builds on the MGNREGA Act itself, which requires crèche facilities at worksites where several young children accompany women workers. The other options are unrelated: SBM-G is the Swachh Bharat Mission (Grameen) for sanitation, PMGSY is the Pradhan Mantri Gram Sadak Yojana for all-weather rural roads, and MMGRAY is not the scheme under which these crèches were created. Exam facts: MGNREGA was enacted in 2005 to guarantee 100 days of unskilled wage employment a year to every rural household, with at least one-third of beneficiaries to be women. Language tip: in Kannada ‘koosu’ means a small baby, so ‘Koosina Mane’ is simply a home for babies.
+
+Q 66 | his | Karnataka History
+Which of the following literary work from the Vijayanagara period was composed in Kannada language ?
+(1) Prabhulinga Leele
+(2) Amuktamalyada
+(3) Madhura Vijayam
+(4) Kalapurnodayam
+= 1
+~ Prabhulinga Leele was written in Kannada by the Virashaiva poet Chamarasa, who lived in the court of Praudha Devaraya (Devaraya II) of Vijayanagara. Composed in the shatpadi (six-line) metre, it narrates the life and spiritual greatness of the twelfth-century mystic Allama Prabhu, and the king is said to have had it rendered into Telugu and Tamil. So option (1) is correct. The other works were not in Kannada: Amuktamalyada is a Telugu poem by Emperor Krishnadevaraya himself on the story of Andal (Goda Devi); Madhura Vijayam is a Sanskrit poem by Gangadevi, wife of prince Kumara Kampana, describing his conquest of the Madurai Sultanate; and Kalapurnodayam is a Telugu prabandha by Pingali Suranna. So options (2), (3) and (4) are wrong. Other Kannada classics of the Vijayanagara age worth remembering are Kumaravyasa’s Karnata Bharata Kathamanjari (Gadugina Bharata), Kanakadasa’s Mohanatarangini and Ramadhanya Charite, and the devotional songs of Purandaradasa, called the father of Carnatic music. Chamarasa and Kumaravyasa are often described as contemporaries in Devaraya II’s time.
+
+Q 67 | his | Medieval India
+Which Mughal ruler founded the city of “Din-panah” in Delhi ?
+(1) Humayun
+(2) Jahangir
+(3) Akbar
+(4) Babur
+= 1
+~ Humayun, the second Mughal emperor, founded the city of Din-panah (‘refuge of the faith’) in Delhi in 1533, on the site near the Yamuna that later became the Purana Qila. So option (1) is correct. After defeating Humayun at Chausa (1539) and Kannauj (1540), Sher Shah Suri took over the site and rebuilt and extended it as Shergarh, so much of the present Purana Qila is his work. When Humayun regained Delhi in 1555, he used the Sher Mandal inside the fort as a library, and in 1556 he died after falling down its stairs. His tomb in Delhi, built later by his widow, is a UNESCO World Heritage Site and an early model for the Taj Mahal. The other options are wrong: Babur, the founder of the dynasty, built no new city in Delhi; Akbar founded Fatehpur Sikri near Agra (1571); and Jahangir is remembered for his memoir Tuzuk-i-Jahangiri and the ‘chain of justice’, not for founding Din-panah. Shah Jahan later built Shahjahanabad (Old Delhi). Memory tip: Humayun’s life is told in the Humayun-nama, written by his sister Gulbadan Begum.
+
+Q 68 | his | Medieval India
+From whom did Shivaji conquer Jovali in 1656, making him the master of the Mavala highlands ?
+(1) Adil Shah
+(2) Sarja Khan
+(3) Ganga Bhatt
+(4) Chandra Rao More
+= 4
+~ Javli (printed Jovali), in the hilly Mahabaleshwar region of the Western Ghats, was held by the Maratha chief Chandra Rao More, a powerful jagirdar under the Adil Shahi Sultan of Bijapur. In 1656 Shivaji captured Javli from More, which made him master of the Maval (Mavala) highlands and their hardy Mavali soldiers. So option (4) is correct. Near Javli Shivaji then built the Pratapgad fort, where in 1659 he killed the Bijapuri general Afzal Khan. The other options are wrong: Adil Shah was the Sultan of Bijapur and More’s overlord, not the person who held Javli directly; Sarja Khan was not the chief who held Javli; and Ganga Bhatt (Gaga Bhatt) was the Varanasi scholar who performed Shivaji’s coronation at Raigad in 1674, when he took the title Chhatrapati. Karnataka link: the Adil Shahi capital Bijapur is today’s Vijayapura in Karnataka, famous for the Gol Gumbaz, and Shivaji’s father Shahji Bhonsle served Bijapur and held a jagir around Bengaluru. Memory tip: ‘Javli 1656, Afzal Khan 1659, coronation 1674’.
+
+Q 69 | his | Karnataka History
+Bidanuru King Shivappanayaka’s revenue settlement was popularly known as
+(1) Shistu
+(2) Kappa
+(3) Pogadi
+(4) Kandaya
+= 1
+~ Shivappa Nayaka (ruled c. 1645–1660), the greatest ruler of the Keladi Nayakas, whose capital was Bidanur (Nagara, in present Shivamogga district), introduced a land-revenue settlement known as ‘Shivappa Nayakana Shistu’, so option (1) is correct. Under the Shistu system, land was surveyed and classified according to its quality and the kind of crops it could grow, and a fixed assessment was laid on each class; the settlement was considered so fair and practical that later rulers continued to follow it. The other terms are not the name of his settlement: Kappa means tribute paid by a subordinate chief to an overlord, Kandaya is simply the general Kannada word for land revenue or tax, and Pogadi does not refer to his settlement either. So options (2), (3) and (4) are wrong. Other facts about Shivappa Nayaka: he fought and defeated the Portuguese on the Kanara coast, gave shelter to the fugitive Vijayanagara king Sriranga III, and his palace in Shivamogga city is a protected monument. Remember: Keladi rulers also included Rani Chennamma of Keladi, who sheltered Rajaram, son of Shivaji.
+
+Q 70 | pol | Union & State Government
+Arrange the following Presidents in chronological order :
+(a) Pranab Mukherjee
+(b) Ram Nath Kovind
+(c) Dr. A.P.J. Abdul Kalam
+(d) Pratibha Patil
+(1) (a), (b), (c), (d)
+(2) (c), (a), (b), (d)
+(3) (a), (c), (d), (b)
+(4) (c), (d), (a), (b)
+= 4
+~ The correct order is (c), (d), (a), (b), option (4). Dr. A.P.J. Abdul Kalam was the 11th President (2002–2007); Pratibha Patil, the first woman President, was the 12th (2007–2012); Pranab Mukherjee was the 13th (2012–2017); and Ram Nath Kovind was the 14th (2017–2022). He was followed by Droupadi Murmu, the 15th President and the first from a Scheduled Tribe, who took office on 25 July 2022. Option (1) simply lists the names as printed, option (2) puts Pranab Mukherjee before Pratibha Patil, and option (3) starts with Pranab Mukherjee, so all three are wrong. Useful facts: the President is elected indirectly by an electoral college of elected MPs and elected MLAs (including those of Delhi and Puducherry) by proportional representation through the single transferable vote (Article 54–55); the term is five years (Article 56). Kalam, the ‘Missile Man’, received the Bharat Ratna in 1997, and Pranab Mukherjee received it in 2019. Karnataka link: B.D. Jatti from Karnataka, then Vice-President, served as acting President in 1977 after President Fakhruddin Ali Ahmed died in office.
+
+Q 71 | his | Modern India & Freedom Struggle
+Match List – I with List – II and choose the correct answer :
+List – I / List – II
+(a) De Almeida – (i) Discovered sea route to India
+(b) Albuquerque – (ii) Dual system of Government for the Bengal
+(c) Vasco da Gama – (iii) Attack on Goa in 1510
+(d) Bartholomeu Diaz – (iv) Blue water policy
+(e) Robert Clive – (v) Discovered Cape of Good Hope
+(1) a-iv, b-iii, c-i, d-v, e-ii
+(2) a-iv, b-v, c-iii, d-i, e-ii
+(3) a-v, b-iv, c-ii, d-iii, e-i
+(4) a-i, b-ii, c-iii, d-iv, e-v
+= 1
+~ The correct match is a-iv, b-iii, c-i, d-v, e-ii, option (1). Francisco de Almeida, the first Portuguese Viceroy in India (1505–1509), followed the ‘Blue Water Policy’ of building Portuguese power on naval supremacy at sea rather than on territory on land. Afonso de Albuquerque, the real founder of Portuguese power in India, captured Goa in 1510 from the Adil Shahi Sultan of Bijapur. Vasco da Gama discovered the sea route to India, reaching Calicut (Kappad) in May 1498, where he was received by the Zamorin. Bartholomeu Dias rounded the southern tip of Africa in 1488 and named it the Cape of Storms; it was renamed the Cape of Good Hope. Robert Clive introduced the Dual System of Government in Bengal (1765–1772) after the Treaty of Allahabad gave the Company the Diwani, while the Nawab kept the Nizamat; Warren Hastings ended it in 1772. Options (2), (3) and (4) mix up these pairs and are wrong. Karnataka link: Goa was wrested from the Adil Shahis, whose capital Bijapur is today’s Vijayapura, and the Portuguese later built forts along the Kanara coast at places such as Honnavar, Basrur and Mangaluru.
+
+Q 72 | his | Art & Culture
+Which of the following book is not written by Plato ?
+(1) The Republic
+(2) The Laws
+(3) Dialogues
+(4) The Politics
+= 4
+~ ‘The Politics’ was written by Aristotle, not Plato, so option (4) is the answer. Aristotle (384–322 BCE) was Plato’s student at the Academy and later the tutor of Alexander the Great; in The Politics he studied the constitutions of many Greek city-states, classified governments into monarchy, aristocracy and polity and their corrupt forms, and declared that ‘man is by nature a political animal’, which is why he is called the father of political science. The other three are Plato’s. The Republic describes an ideal state ruled by a philosopher-king and discusses justice; The Laws, his last and longest work, sketches a more practical second-best state governed by law; and Plato’s writings as a whole are known as the Dialogues, because almost all of them are written as conversations in which his teacher Socrates is the chief speaker (for example Apology, Crito, Phaedo and Symposium). So options (1), (2) and (3) are wrong. Memory chain: Socrates taught Plato, Plato taught Aristotle, and Aristotle taught Alexander. Plato founded the Academy in Athens and Aristotle the Lyceum.
+
+Q 73 | his | Medieval India
+The “Tulugama” system means
+(1) The administrative system introduced by Babur.
+(2) The religious system of Babur.
+(3) The land revenue system of Babur.
+(4) The scientific war strategy of Babur.
+= 4
+~ Tulughma (printed ‘Tulugama’) was the battle tactic Babur used in India, so option (4) is correct. Borrowed from the Uzbeks and other Central Asian armies, it divided the army into a centre, a left and a right wing, with mobile flanking parties that wheeled round to attack the enemy from the sides and the rear while the centre held firm. Babur combined it with the Araba (Rumi) device, a line of carts tied together as a barricade behind which gunners and musketeers were posted, and with field artillery handled by Ustad Ali Quli and Mustafa. With these he defeated the much larger army of Ibrahim Lodi at the First Battle of Panipat in 1526 and Rana Sanga at Khanwa in 1527. Tulughma had nothing to do with administration, religion or land revenue; Babur ruled only four years in India, and the later land-revenue (zabti) and mansabdari systems came under Sher Shah and Akbar, so options (1), (2) and (3) are wrong. Karnataka link: in his memoir Baburnama (Tuzuk-i-Baburi), written in Chagatai Turkish, Babur described the Raja of Vijayanagara, then Krishnadevaraya, as the most powerful ruler in India in territory and army.
+
+Q 74 | his | Ancient India
+Which Buddhist literature gives information about Sixteen or Sodasha Mahajanapadas ?
+(1) Tripitakas
+(2) Khuddaka-Nikaya
+(3) Anguttara-Nikaya
+(4) Digha-Nikaya
+= 3
+~ The Anguttara Nikaya, a collection in the Sutta Pitaka of the Pali canon, gives the well-known list of the sixteen Mahajanapadas (Shodasha Mahajanapadas) that existed in the sixth century BCE, so option (3) is correct. The sixteen are Anga, Magadha, Kashi, Kosala, Vajji, Malla, Chedi, Vatsa, Kuru, Panchala, Matsya, Shurasena, Ashmaka (Assaka), Avanti, Gandhara and Kamboja. Ashmaka, on the Godavari, was the only one south of the Vindhyas, and Magadha, with its capital first at Rajagriha and later at Pataliputra, grew into the most powerful. The other options are wrong: ‘Tripitakas’ is the name of the whole Buddhist canon (Vinaya, Sutta and Abhidhamma Pitakas), not the specific text; the Khuddaka Nikaya is the ‘minor collection’ containing the Dhammapada and the Jataka tales; and the Digha Nikaya contains the long discourses such as the Mahaparinibbana Sutta on the Buddha’s last days. Note that the Jain text Bhagavati Sutra gives a somewhat different list. Kalyana Karnataka link: Sannati and Kanaganahalli on the Bhima in Kalaburagi district were major Buddhist centres, where a sculpted panel labelled ‘Raya Asoko’ shows Emperor Ashoka.
+
+Q 75 | his | Ancient India
+Arrange the following Satavahana rulers in the chronological order :
+a. Gautamiputra Satakarni
+b. Satakarni – I
+c. Yajna Sri Satakarni
+d. Vasishthiputra Sri Satakarni
+Choose the answer from the options given below :
+(1) a, b, c, d
+(2) a, c, d, b
+(3) b, c, a, d
+(4) b, a, d, c
+= 4
+~ The correct sequence is b, a, d, c, option (4). Satakarni I ruled early, in the BCE period (exact dates vary between historians), soon after the founder Simuka; the Naneghat inscription of his queen Naganika records his Vedic sacrifices, including the Ashvamedha. Gautamiputra Satakarni came much later (early second century CE); the Nasik inscription of his mother Gautami Balashri praises him for destroying the Shakas, Yavanas and Pahlavas and for uprooting the Kshaharata ruler Nahapana, whose silver coins he re-struck. Vasishthiputra Sri Satakarni ruled after him in the second century; a Kanheri inscription says his queen was the daughter of the Shaka Mahakshatrapa Rudra(daman). Yajna Sri Satakarni (late second century CE) was the last great Satavahana king, known for coins bearing a ship motif that point to sea trade. Options (1), (2) and (3) do not begin with Satakarni I or misplace the later kings, so they are wrong. Karnataka link: the Satavahanas ruled much of north Karnataka; Sannati and Kanaganahalli in Kalaburagi district and Banavasi in Uttara Kannada have yielded Satavahana-period inscriptions and remains. Memory tip: ‘Simuka founded, Satakarni I expanded, Gautamiputra revived, Yajna Sri ended the glory.’
+
+Q 76 | his | Karnataka History
+Which work has referred Ganga ruler Durvinitha as a Kannada author ?
+(1) Chavundaraya Purana
+(2) Gajashastra
+(3) Kavirajamarga
+(4) Gajashtaka
+= 3
+~ Kavirajamarga (c. 850 CE), the earliest available Kannada work on poetics, was written by Srivijaya in the court of the Rashtrakuta king Amoghavarsha I (Nripatunga). It names earlier Kannada writers whose works are now lost, and among the prose writers it lists Vimala, Udaya, Nagarjuna, Jayabandhu and Durvinita. So it is the work that tells us the Western Ganga king Durvinita (6th century CE) wrote in Kannada; option 3 is correct. Chavundaraya Purana (978 CE) is the oldest surviving Kannada prose work, written by Chavundaraya, the Ganga minister; it narrates the lives of the 63 Jain great men and does not present Durvinita as an author. Gajashastra is a traditional treatise on elephants (linked with the sage Palakapya), and Gajashtaka is a lost Kannada work on elephants ascribed to the later Ganga king Shivamara II; neither refers to Durvinita. Memory tip: Durvinita is also credited with a Sanskrit version of Gunadhya's Brihatkatha and a commentary on the 15th canto of Bharavi's Kiratarjuniya, and the Jain grammarian Pujyapada is said to have been his teacher.
+
+Q 77 | his | Modern India & Freedom Struggle
+Who took away the police powers from the Zamindars and provided a new setup for the police administration in British India ?
+(1) Lord Cornwallis
+(2) Lord Wellesley
+(3) Lord Curzon
+(4) Lord Warren Hastings
+= 1
+~ Lord Cornwallis (Governor-General 1786–93) is regarded as the founder of the organised police system in British India. Through the regulations of 1793 (part of the Cornwallis Code), the zamindars of Bengal were relieved of their police duties, and each district was divided into thanas (police circles), each placed under a daroga who worked under the control of the district magistrate. So option 1 is correct. Lord Wellesley (1798–1805) is known for the Subsidiary Alliance system and the Fourth Anglo-Mysore War (1799) in which Tipu Sultan died. Lord Curzon (1899–1905) appointed the Police Commission of 1902 under Sir Andrew Fraser, which recommended reforms such as Criminal Investigation Departments, but the removal of zamindari police powers came a century earlier. Warren Hastings (1772–85), the first Governor-General of Bengal, set up Diwani and Faujdari Adalats (civil and criminal courts) in the districts. Exam tip: the Police Act of 1861, passed after the 1857 revolt, is the basis of today's police organisation; police and public order are State List subjects in the Seventh Schedule, and Karnataka has its own Karnataka Police Act, 1963.
+
+Q 78 | his | Ancient India
+How many of the following is/are correctly matched ?
+List – I (Vedic Name) / List – II (Cereal)
+(a) Yava – Barley
+(b) Vrihi – Paddy
+(c) Godhuma – Wheat
+(d) Tila – Sesamum
+(1) Only Two
+(2) All the Four
+(3) Only Three
+(4) Only One
+= 2
+~ All four pairs are correct, so option 2 is the answer. Yava is barley, the main cereal of the Rig Vedic people; in the Rig Veda the word yava is sometimes used for grain in general. Vrihi means rice (paddy); rice cultivation became common in the Later Vedic period as settlements spread into the fertile Ganga plains, and it is mentioned in later texts such as the Atharva Veda. Godhuma is wheat, which also became an important crop in the Later Vedic age. Tila is sesamum (sesame, ellu in Kannada), grown for its oil seeds; the Hindi word til comes from the same root. Other useful Vedic farm words are krishi (agriculture), sita (furrow), langala or sira (plough), urvara (fertile field) and masha (black gram). Memory tip: the Rig Vedic people mainly knew barley, while rice, wheat, pulses and sesame appear more in Later Vedic texts, which reflect a settled farming economy using iron tools. Since 'only two/three/one' type options are common in KEA papers, check every pair separately before counting; here none is wrong.
+
+Q 79 | his | Ancient India
+Which of the following coins is not associated with Samudragupta ?
+(1) Veenapani Type Coin
+(2) Archer Type Coin
+(3) Lion Type Coin
+(4) Ashwamedha Type Coin
+= 3
+~ Samudragupta (c. 335–375 CE) issued several types of gold coins (dinaras): the Standard or Sceptre type, the Archer type, the Battle-axe type, the Tiger-slayer type, the Ashvamedha type and the Lyrist (Veena-player) type. The Lion type, or Lion-slayer type, is not his; it is the well-known coin type of Chandragupta II Vikramaditya, who is shown killing a lion, often linked to his conquest of Gujarat and Saurashtra from the Western Kshatrapas. So option 3 is correct. The Veenapani (Lyrist) coin shows Samudragupta seated and playing the veena, proof of his love of music, which is also praised in the Allahabad pillar inscription (Prayag Prashasti) composed by his court poet Harishena. The Archer type shows the king holding a bow, and the Ashvamedha type shows a horse before a sacrificial post (yupa), recording the horse sacrifice he performed after his conquests. Memory tip: V. A. Smith called Samudragupta the 'Napoleon of India', and the Prayag Prashasti describes his southern campaign, which reached as far as Kanchi.
+
+Q 80 | his | Karnataka History
+Arrange the capital cities of the Gangas in their correct chronological order :
+a. Talakadu
+b. Manne
+c. Kolar
+Codes :
+(1) a, c, b
+(2) c, a, b
+(3) c, b, a
+(4) a, b, c
+= 2
+~ The Western Gangas (c. 350–1000 CE) ruled Gangavadi in southern Karnataka. Their earliest capital was Kolar (Kuvalala), from where the early rulers Konganivarma (Dadiga) and Madhava ruled. Later, under Harivarma, the capital was shifted to Talakadu on the banks of the Kaveri, which became their best-known capital. In the 8th century, Shripurusha moved the royal seat to Manne (Manyapura, near Nelamangala, not far from Bengaluru). So the order is Kolar, Talakadu, Manne, that is c, a, b (option 2). Options 1 and 4 wrongly put Talakadu first, and option 3 places Manne before Talakadu. Useful facts: the Ganga royal emblem was the elephant; Durvinita and Shivamara II were scholar-kings; and the Ganga minister Chavundaraya got the Gommateshwara (Bahubali) statue at Shravanabelagola carved around 983 CE during the reign of Rachamalla IV. Talakadu today is known for its sand-covered temples and the Panchalinga Darshana festival held once in several years.
+
+Q 81 | his | Art & Culture
+Through his great contributions to Theatre, who is popularly known as ‘Shakespeare of India’ ?
+(1) Agha Hashar Kashmiri
+(2) Balraj Sahni
+(3) Utpal Dutt
+(4) Shombhu Mitra
+= 1
+~ Agha Hashr Kashmiri (1879–1935), printed here as Agha Hashar Kashmiri, was a celebrated Urdu poet and playwright of the Parsi theatre era. He wrote dozens of popular plays, many of them adaptations of Shakespeare, and his own dramas such as Yahudi ki Ladki and Rustam-o-Sohrab drew huge audiences; for this he is remembered as the 'Shakespeare of India' (Shakespeare-e-Hind). So option 1 is correct. Balraj Sahni was a film and stage actor associated with the Indian People's Theatre Association (IPTA), best known for Do Bigha Zamin and Garm Hava. Utpal Dutt was a Bengali actor-director and a leading figure of political theatre, also popular in Hindi films. Shombhu Mitra was a pioneer of Bengali group theatre and founder of the Bohurupee troupe. None of them carries this title. Karnataka angle: Kannada professional theatre had its own giants, such as Gubbi Veeranna of the Gubbi Company, and K. V. Subbanna, founder of Ninasam at Heggodu, received the Ramon Magsaysay Award in 1991.
+
+Q 82 | his | Modern India & Freedom Struggle
+The Battle of Hooghly ended the power of ________ in India.
+(1) English
+(2) Dutch
+(3) French
+(4) Portuguese
+= 2
+~ KEA's key is Dutch. The reference is to the battle fought near Chinsurah on the Hooghly river in November 1759, also called the Battle of Chinsurah or the Battle of Bedara (Biderra). The Dutch, whose Bengal base was Chinsurah, sent an expedition from Batavia to challenge the English after Plassey (Mir Jafar is said to have encouraged them); Robert Clive's forces under Colonel Francis Forde defeated them decisively. After this the Dutch ceased to be a political power in India and confined themselves to trade, so option 2 is keyed. The English were the winners of this battle, not the losers. French power was crushed at the Battle of Wandiwash (1760). Students should also know the earlier Siege of Hooghly (1632), when Shah Jahan's Mughal forces drove the Portuguese out of their Hooghly settlement in Bengal; however, Portuguese rule in India continued in Goa, Daman and Diu until 1961, so their power did not end there. Memory tip: Bedara 1759 – Dutch out; Wandiwash 1760 – French out; Plassey 1757 and Buxar 1764 – English in.
+
+Q 83 | his | Modern India & Freedom Struggle
+Identify the Individual Satyagrahi/Satyagrahis in the following :
+a. Mahadeva Desai
+b. Jawaharlal Nehru
+c. Vinoba Bhave
+Choose the correct answer :
+(1) b only
+(2) b and c
+(3) c only
+(4) a and c
+= 2
+~ Gandhiji launched the Individual Satyagraha on 17 October 1940, after Viceroy Linlithgow's August Offer (1940) failed to satisfy the Congress and India had been dragged into the Second World War without consulting Indians. Instead of a mass movement, selected individuals offered satyagraha one after another by publicly speaking against the war effort. Acharya Vinoba Bhave was chosen as the first individual satyagrahi, Jawaharlal Nehru as the second and Brahma Datt as the third. So b and c are correct, and option 2 is the answer. Mahadev Desai was Gandhiji's personal secretary and close associate, famous for his diaries; he is not counted among the individual satyagrahis, and he died in detention at the Aga Khan Palace, Pune, in August 1942 during the Quit India Movement. Hence option 4 (with 'a') is wrong, and options 1 and 3 each leave out one correct name. Memory tip: the movement was also called the 'Delhi Chalo' movement because satyagrahis were to march towards Delhi, and around 25,000 people had been jailed by 1941.
+
+Q 84 | his | Ancient India
+Match List – I with List – II and choose the correct answer :
+List – I (Buddhist Councils) / List – II (Decisions)
+(a) First Buddhist Council – (i) Buddhism split into two sects
+(b) Second Buddhist Council – (ii) Effort for oneness in Buddha’s teachings
+(c) Third Buddhist Council – (iii) Dhamma Sangraha
+(d) Fourth Buddhist Council – (iv) Corrections of 10 elements
+(1) (a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)
+(2) (a) – (iii), (b) – (iv), (c) – (i), (d) – (ii)
+(3) (a) – (iii), (b) – (iv), (c) – (ii), (d) – (i)
+(4) (a) – (iv), (b) – (iii), (c) – (i), (d) – (ii)
+= 3
+~ The keyed match is (a)–(iii), (b)–(iv), (c)–(ii), (d)–(i), option 3. The First Buddhist Council met at Rajagriha (c. 483 BCE) soon after the Buddha's death, under Ajatashatru and presided over by Mahakassapa; Ananda recited the Sutta (Dhamma) and Upali the Vinaya, so it was the 'Dhamma Sangraha' (compilation). The Second Council at Vaishali (c. 383 BCE), under Kalashoka and presided over by Sabakami, was called to settle ten disputed points of monastic discipline practised by the Vajji monks, which matches 'corrections of 10 elements'. The Third Council at Pataliputra (c. 250 BCE), under Ashoka and presided over by Moggaliputta Tissa, purified the Sangha and tried to restore unity in the Buddha's teaching; the Abhidhamma Pitaka (Kathavatthu) took shape here. The Fourth Council at Kundalavana in Kashmir, under Kanishka, with Vasumitra as president and Ashvaghosha as vice-president, saw Buddhism divide into Hinayana and Mahayana. Note: many books also say the first schism (Sthaviravadins and Mahasanghikas) followed the Second Council; the key links the split to the Fourth Council, the more commonly taught fact.
+
+Q 85 | his | Medieval India
+Consider the following statements regarding Shahanama :
+a. It is a Persian great epic.
+b. Firdosi composed it.
+c. It is in Arabic language.
+d. It meant ‘The Book of Kings’.
+Choose the correct answer :
+(1) a, c and d
+(2) a, b and c
+(3) b, c and d
+(4) a, b and d
+= 4
+~ The Shahnama (Shahanama), meaning 'The Book of Kings', is the great national epic of Persia (Iran), composed by the poet Firdausi (Ferdowsi) of Tus and completed around 1010 CE. It has about 50,000 couplets and narrates the mythical and historical kings of Iran up to the Arab conquest in the 7th century, including the famous story of Rustam and Sohrab. Statements a, b and d are therefore correct. Statement c is wrong: the Shahnama is written in Persian (Farsi), and Firdausi deliberately used very few Arabic words, which is why the epic is credited with reviving the Persian language. So option 4 (a, b and d) is correct, while every other option includes the wrong statement c. Indian history link: Firdausi presented his epic to Mahmud of Ghazni, the Sultan who raided India 17 times between 1000 and 1027 CE, and tradition says Mahmud did not pay him the promised reward. Al-Biruni, author of Kitab-ul-Hind (Tahqiq-i-Hind), also came to India with Mahmud.
+
+Q 86 | cur | International & Sports
+When and where did the first Mallakamba World Championship take place ?
+(1) 2019, Mumbai
+(2) 2018, Jaipur
+(3) 2020, Bengaluru
+(4) 2016, Kolkata
+= 1
+~ The first Mallakhamb World Championship was held in Mumbai on 16–17 February 2019 at Shivaji Park, Dadar, organised by the Vishwa Mallakhamb Federation. Athletes from several countries took part, and India won the overall championship. So option 1 is correct; the other year–city pairs (2018 Jaipur, 2020 Bengaluru, 2016 Kolkata) are distractors. Mallakhamb (literally 'wrestler's pole') is a traditional Indian sport in which athletes perform yoga-like postures and aerial feats on a vertical wooden pole or a hanging rope. Maharashtra is its traditional home; it was revived in the early 19th century by Balambhatta Dada Deodhar in the time of Peshwa Bajirao II. Madhya Pradesh declared Mallakhamb its state sport in 2013, and the sport is part of the Khelo India Youth Games and featured at the 36th National Games in Gujarat (2022). Exam tip: a Mallakhamb demonstration was given at the 1936 Berlin Olympics, a fact often asked along with other indigenous sports such as Kabaddi and Kho-Kho.
+
+Q 87 | cur | International & Sports
+Match the famous cricketers (List-I) with their nickname (List-II) :
+List – I (Player) / List – II (Nickname)
+(a) Rahul Dravid – (i) Chiku
+(b) Shikhar Dhawan – (ii) Hitman
+(c) Virat Kohli – (iii) Gabbar
+(d) Rohit Sharma – (iv) The Wall
+Choose the correct answer from the options given below :
+(1) (a) – (i), (b) – (iv), (c) – (ii), (d) – (iii)
+(2) (a) – (iv), (b) – (iii), (c) – (i), (d) – (ii)
+(3) (a) – (iii), (b) – (ii), (c) – (iv), (d) – (i)
+(4) (a) – (ii), (b) – (i), (c) – (iii), (d) – (iv)
+= 2
+~ The correct match is (a)–(iv), (b)–(iii), (c)–(i), (d)–(ii), option 2. Rahul Dravid, who grew up in Bengaluru and played for Karnataka, is called 'The Wall' for his rock-solid defensive technique; as head coach he later guided India to the T20 World Cup title in 2024. Shikhar Dhawan is nicknamed 'Gabbar', after the famous villain of the film Sholay, a name linked with his moustache-twirling celebrations. Virat Kohli is 'Chiku', a childhood nickname given by a coach that became widely known when M. S. Dhoni used it on the field and the stump microphone picked it up. Rohit Sharma is the 'Hitman', for his effortless six-hitting and his record three double centuries in ODIs, including the highest ODI score of 264 against Sri Lanka in 2014. Options 1, 3 and 4 jumble these pairs. Other nicknames often asked: Sachin Tendulkar – 'Master Blaster', Sourav Ganguly – 'Dada', M. S. Dhoni – 'Captain Cool', and Karnataka's Anil Kumble – 'Jumbo' and Javagal Srinath – 'Mysore Express'.
+
+Q 88 | eco | Schemes & Development
+Which of the following is not listed as a sector-specific focus area for Atal Incubation Center (AICs) ?
+(1) Agriculture
+(2) Internet of Things (IoT)
+(3) Tourism
+(4) Cyber Security
+= 3
+~ Atal Incubation Centres (AICs) are set up under the Atal Innovation Mission (AIM), launched by NITI Aayog in 2016, to nurture start-ups with infrastructure, mentoring and funding support; AIM can give an AIC a grant of up to Rs 10 crore over five years. Besides general (sector-agnostic) incubators, AIM supports sector-focused AICs in areas where technology can solve national problems. As this question frames it, agriculture (agri-tech), the Internet of Things (IoT) and cyber security are among the sector-specific focus areas listed for AICs, while tourism is the one not listed. So option 3 is correct as per KEA's key, and options 1, 2 and 4, being listed areas, are not the answer. Other AIM programmes worth remembering: Atal Tinkering Labs (ATLs) in schools for students of classes 6 to 12, support to Established Incubation Centres (EICs), Atal Community Innovation Centres (ACICs) for underserved regions, and the Atal New India Challenge for product innovations. Memory tip: AIM is housed in NITI Aayog, and its flagship school programme is the Atal Tinkering Lab.
+
+Q 89 | eco | Indian Economy
+Which of the following is not mentioned as a part of gig economy ?
+(1) Freelancing
+(2) Delivery Services
+(3) Ridesharing
+(4) Commercial Banking
+= 4
+~ The gig economy is a labour market made up of short-term, task-based or freelance work, usually arranged through digital platforms, where workers are paid per task ('gig') instead of receiving a regular salary. Freelancing (writing, design or coding for many clients), delivery services (food and parcel delivery through apps such as Swiggy and Zomato) and ridesharing (Ola, Uber, Rapido) are classic examples. Commercial banking, by contrast, is a regulated financial service run by banks licensed by the Reserve Bank of India, with permanent staff, so it is not part of the gig economy; option 4 is correct. Exam facts: the Code on Social Security, 2020 defines 'gig worker' and 'platform worker' for the first time in Indian law. NITI Aayog's 2022 report 'India's Booming Gig and Platform Economy' estimated about 77 lakh gig workers in 2020–21, expected to rise to 2.35 crore by 2029–30. Rajasthan (2023) and Karnataka (2025) have passed laws for the welfare of platform-based gig workers, and the Union Budget 2025–26 announced e-Shram registration, identity cards and PM-JAY health cover for them.
+
+Q 90 | eco | Indian Economy
+In India ‘Minimum Support Price’ (MSP) for selected agricultural crops is recommended by :
+(1) Reserve Bank of India
+(2) Commission for Agricultural Cost and Prices
+(3) Agriculture Ministry of Indian Government
+(4) Food Corporation of India
+= 2
+~ The Minimum Support Price (MSP) is recommended by the Commission for Agricultural Costs and Prices (CACP), so option 2 is correct. CACP was set up in 1965 as the Agricultural Prices Commission and renamed in 1985; it is an attached office of the Ministry of Agriculture and Farmers Welfare. It recommends MSPs for 22 mandated crops (14 kharif crops, 6 rabi crops and 2 commercial crops, jute and copra) and the Fair and Remunerative Price (FRP) for sugarcane, taking into account cost of production (A2, A2+FL and C2), demand and supply, market price trends and inter-crop price parity. The final decision is taken by the Cabinet Committee on Economic Affairs (CCEA) chaired by the Prime Minister, and since 2018–19 MSP has been fixed at least 1.5 times the A2+FL cost. The RBI is the central bank and handles monetary policy, not crop prices. The Agriculture Ministry announces and implements MSP, but the recommending body is CACP. The Food Corporation of India (1965) procures grain at MSP and maintains buffer stocks for the public distribution system.
+
+Q 91 | his | Modern India & Freedom Struggle
+Gandhiji’s Harijan Newspaper belongs to which of the following form ?
+(1) Weekly
+(2) Monthly
+(3) Fortnightly
+(4) Daily
+= 1
+~ Harijan was a weekly newspaper started by Mahatma Gandhi in February 1933 (first issue 11 February 1933), as part of his campaign against untouchability after the Poona Pact (1932). It was published in English from Poona (Pune), with a Hindi edition (Harijan Sevak) and a Gujarati edition (Harijanbandhu), and Gandhiji used it to write on untouchability, village industries, basic education, prohibition and, later, the Quit India call. So option 1, weekly, is correct; it was never a monthly, fortnightly or daily paper. Its publication was suspended during the Quit India Movement in 1942 and resumed in 1946. Other papers linked with Gandhiji: Indian Opinion (South Africa, 1903), Young India (a weekly whose editorship he took over in 1919) and Navajivan (Gujarati). Memory tip: Gandhiji used the word 'Harijan' (people of God) for the depressed classes and founded the Harijan Sevak Sangh in 1932. Karnataka angle: during his Harijan tour of 1934 Gandhiji also visited many places in Karnataka to collect funds for Harijan welfare.
+
+Q 92 | sci | Science & Technology
+The fuels used in Flex Fuel Vehicles (FFV) engine are
+(1) 60% Petrol + 40% Ethanol
+(2) Petrol + Ethanol in any proportion
+(3) 75% Petrol + 25% Ethanol
+(4) 80% Petrol + 20% Ethanol
+= 2
+~ A Flex Fuel Vehicle (FFV) has an internal combustion engine designed to run on petrol, on ethanol, or on any blend of the two from a single tank; a sensor detects the ethanol content and the engine control unit automatically adjusts fuel injection and ignition timing. So option 2, petrol plus ethanol in any proportion, is correct. Options 1, 3 and 4 describe fixed blends (E40, E25 and E20); a normal vehicle is tuned for one such blend, whereas freedom of proportion is the defining feature of an FFV. Brazil is the world leader in flex-fuel cars. Indian context: under the Ethanol Blended Petrol (EBP) programme India reached about 20% blending (E20) in 2025, well ahead of the earlier 2030 target, and in 2023 Union Minister Nitin Gadkari launched a prototype flex-fuel strong-hybrid car (Toyota Innova Hycross) designed for high ethanol blends. Ethanol (C2H5OH) is produced mainly from sugarcane molasses, cane juice and grains, so the programme also benefits sugarcane farmers in states such as Karnataka and Maharashtra.
+
+Q 93 | sci | Chemistry
+Bacteria present in mouth converts sugar and remaining food items after eating into acids. This causes tooth decay. This can be prevented by using toothpaste which are generally
+(1) Basic
+(2) Antiseptic
+(3) Neutral
+(4) Acidic
+= 1
+~ Bacteria in the mouth break down sugars and food particles left after eating and produce acids. When the pH in the mouth falls below about 5.5, these acids begin to dissolve tooth enamel, which is made of calcium hydroxyapatite (a calcium phosphate compound) and is the hardest substance in the human body; this leads to tooth decay. Toothpastes are generally basic (alkaline), so they neutralise the excess acid and help prevent decay; option 1 is correct. This is a standard NCERT Class 10 example of neutralisation in daily life, along with antacids such as milk of magnesia (magnesium hydroxide) for acidity and baking soda for a bee sting. 'Antiseptic' means able to kill germs, which some toothpastes may also be, but the property that counters the acid is basicity. A neutral paste could not neutralise the acid, and an acidic paste would make decay worse. Memory tip: acid + base gives salt + water, so the alkaline toothpaste cancels mouth acid; brushing after meals removes food particles before bacteria act, and fluoride in toothpaste further strengthens enamel.
+
+Q 94 | sci | Chemistry
+The common name used for chlorofluoro methane and chlorofluoro ethane which is responsible for ozone depletion is
+(1) Freons
+(2) Spiranes
+(3) Crown ethers
+(4) Chloroform
+= 1
+~ The chlorofluorocarbon (CFC) compounds of methane and ethane are collectively known as freons; Freon was originally a trade name. Freon-12 (CCl2F2, dichlorodifluoromethane) is one of the most common. Freons are stable, non-toxic, non-flammable and easily liquefied, so they were widely used as refrigerants in fridges and air-conditioners, as aerosol propellants and as foaming agents. In the stratosphere, ultraviolet radiation breaks them down to release chlorine radicals, and a single chlorine atom can destroy thousands of ozone molecules through a chain reaction; this produced the Antarctic 'ozone hole'. So option 1 is correct, as stated in NCERT Class 12 Chemistry (Haloalkanes and Haloarenes). Spiranes are organic compounds with two rings joined through one common atom. Crown ethers are cyclic polyethers that bind metal ions. Chloroform (CHCl3) is trichloromethane, once used as an anaesthetic, and it contains no fluorine. Exam facts: the Montreal Protocol (1987) phased out CFCs, the Kigali Amendment (2016) targets HFCs, and 16 September is observed as World Ozone Day.
+
+Q 95 | sci | Chemistry
+The cell used in devices like hearing aids and watches is
+(1) Mercury cell
+(2) Nickel-Cadmium cell
+(3) Lead-storage cell
+(4) Dry cell
+= 1
+~ The mercury cell is the small button-type primary cell suited to low-current devices such as hearing aids and watches, so option 1 is correct. In it, zinc–mercury amalgam is the anode, a paste of mercuric oxide (HgO) and carbon is the cathode, and a paste of KOH and ZnO is the electrolyte. Its main advantage is a nearly constant voltage of about 1.35 V throughout its life, because the overall cell reaction involves no ion whose concentration changes during use. The nickel–cadmium cell is a rechargeable (secondary) cell with a long life, used in cordless tools and emergency lights. The lead storage battery is the secondary cell used in automobiles and inverters, with lead as anode, lead dioxide as cathode and sulphuric acid as electrolyte. The dry cell (Leclanché cell, about 1.5 V) is used in torches, remote controls and wall clocks, but its voltage falls with use. This is an NCERT Class 12 Electrochemistry fact. Note: because mercury is toxic, silver-oxide and zinc–air button cells have now largely replaced mercury cells in watches and hearing aids.
+
+Q 96 | sci | Biology
+Study the following statements regarding diseases of the digestive system and choose the correct statement :
+(1) Diarrhea is due to abnormal bowel movements.
+(2) Many parasites like Plasmodium vivax cause damage to intestinal inner lining.
+(3) Indigestion is due to inadequate secretion of hormones.
+(4) In jaundice, the intestine is affected. Skin and eyes turn yellow due to deposit of bile pigments.
+= 1
+~ This question is based on the NCERT Class 11 Biology section on disorders of the digestive system. NCERT describes diarrhoea as the abnormal frequency of bowel movement with increased liquidity of the faecal discharge, which reduces the absorption of food; so statement 1 is correct and is the keyed answer. Statement 2 is wrong because Plasmodium vivax is the protozoan that causes malaria; it multiplies in the liver and red blood cells and is spread by the female Anopheles mosquito. The intestinal parasites named by NCERT are tapeworm, roundworm, threadworm, hookworm and pinworm, and Entamoeba histolytica causes amoebic dysentery. Statement 3 is wrong because indigestion is due to inadequate enzyme secretion (not hormones), anxiety, food poisoning, overeating or spicy food. Statement 4 is wrong because in jaundice the liver, not the intestine, is affected; the yellowing of skin and eyes by deposited bile pigments is true, but the organ named is wrong. Memory tip: jaundice – liver; diarrhoea – frequent watery bowel movements; constipation – irregular bowel movements; vomiting – reflex controlled by a centre in the medulla oblongata.
+
+Q 97 | sci | Biology
+A novel strategy was adopted to prevent the infection of roots of tobacco plants by nematode is
+(1) RNA interference
+(2) Polymerase chain reaction
+(3) Gene Therapy
+(4) Incorporation of Bt. toxins gene
+= 1
+~ The nematode Meloidogyne incognita infects the roots of tobacco plants and causes a great reduction in yield. NCERT Class 12 Biology (Biotechnology and its Applications) describes the novel strategy used against it: RNA interference (RNAi). Using Agrobacterium vectors, nematode-specific genes were introduced into the host plant so that it produced both sense and anti-sense RNA. These complementary strands form double-stranded RNA (dsRNA), which starts RNAi and silences the specific mRNA of the nematode; the parasite cannot survive in the transgenic host, so the plant is protected. RNAi takes place naturally in all eukaryotes as a method of cellular defence. Hence option 1 is correct. Polymerase chain reaction (PCR) is a laboratory technique for amplifying DNA, used in diagnosis and DNA fingerprinting, not for protecting plants. Gene therapy corrects a defective gene in a human patient; the first case (1990) was a 4-year-old girl with ADA deficiency. Bt toxin (cry) genes from Bacillus thuringiensis protect crops such as Bt cotton from insect pests like bollworms, not from nematodes.
+
+Q 98 | geo | Environment & Ecology
+The percentage of forest cover recommended by National Forest Policy (1988) for plains and hills respectively is
+(1) 33% and 67%
+(2) 67% and 33%
+(3) 67% and 30%
+(4) 19.4% and 30%
+= 1
+~ The National Forest Policy, 1988 set the national goal of having a minimum of one-third (about 33%) of the total land area of the country under forest or tree cover. In the hills and mountainous regions it aimed at two-thirds (about 67%) of the area under such cover, to prevent soil erosion and land degradation and to keep fragile ecosystems stable. So the figures for plains and hills are 33% and 67% respectively, option 1. Option 2 reverses the two figures, and options 3 and 4 mix in unrelated numbers. The 1988 policy replaced the 1952 policy (which also had a 33% national goal, with 60% for hills) and put environmental stability, conservation and the needs of local and tribal people ahead of revenue; it led to Joint Forest Management in 1990. Current status: according to the India State of Forest Report 2023, forest cover is about 21.76% of India's geographical area and forest plus tree cover about 25.17%, still below the 33% goal. Karnataka's forest cover is roughly one-fifth of its area, mostly in the Western Ghats districts.
+
+Q 99 | sci | Biology
+Identify the incorrectly matched pair :
+(1) Flying fish – Fresh water
+(2) Katla – Fresh water
+(3) Dog fish – Marine water
+(4) Sting ray – Marine water
+= 1
+~ The flying fish (Exocoetus) is a marine bony fish of warm open seas; it glides above the water surface on its large wing-like pectoral fins to escape predators. It does not live in fresh water, so 'Flying fish – Fresh water' is the incorrectly matched pair and option 1 is the answer. The other pairs are correct. Katla (Catla catla) is one of the Indian major carps, a freshwater fish widely farmed in ponds and tanks along with Rohu (Labeo rohita) and Mrigal. The dogfish (Scoliodon) is a small shark, a marine cartilaginous fish. The sting ray (Trygon) is also a marine cartilaginous fish, with a poisonous sting on its tail. NCERT Class 11 (Animal Kingdom) gives these examples: Chondrichthyes (cartilaginous, marine) – Scoliodon (dogfish), Pristis (sawfish), Carcharodon (great white shark), Trygon (sting ray); Osteichthyes, marine – Exocoetus (flying fish), Hippocampus (sea horse); freshwater – Labeo (Rohu), Catla (Katla), Clarias (Magur); aquarium – Betta (fighting fish), Pterophyllum (angel fish). Memory tip: Katla, Rohu and Magur belong to fresh water; sharks and rays belong to the sea.
+
+Q 100 | sci | Chemistry
+When the food is being cooked in the utensil, black colour formed underneath the utensil indicate
+(1) Incomplete combustion of fuel
+(2) Lack of fuel
+(3) Charring of food
+(4) Complete combustion of fuel
+= 1
+~ When a fuel burns in a sufficient supply of air (oxygen), combustion is complete: the carbon is fully converted into carbon dioxide and water, and the flame is clean and blue. When the air supply is insufficient, combustion is incomplete; part of the carbon remains unburnt and is released as soot (fine carbon particles), along with poisonous carbon monoxide, and the flame becomes yellow and sooty. This soot settles on the outer bottom of the vessel and makes it black. NCERT Class 10 Science (Carbon and its Compounds) notes that if the bottoms of cooking vessels are getting blackened, the air holes of the stove are blocked and fuel is being wasted. So option 1, incomplete combustion of fuel, is correct. Lack of fuel would only give a small flame, not soot. Charring of food happens inside the vessel, not on its outer bottom. Complete combustion gives a blue flame and leaves no black deposit, the opposite of what is observed. Safety tip: incomplete combustion in closed rooms produces carbon monoxide, which can cause suffocation, so places with stoves and heaters need good ventilation.

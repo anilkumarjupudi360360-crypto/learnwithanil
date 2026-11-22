@@ -53,7 +53,11 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
              'wbpsc-ido': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('i19', 'm23')},
              'dsssb': {pid: (f'{pid}-qp.pdf',) for pid in ('j22', 'p22')},
              'jkssb-je-civil': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c25', 'c23')},   # JKSSB's Series A booklets + provisional key and final key notice
-             'meghalaya-psc': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c1', 'c2', 'l25')}}   # MPSC's Series I booklets + its answer keys   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
+             'meghalaya-psc': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c1', 'c2', 'l25')},
+             # KEA's own scanned booklets (version A1) + KEA's key; Civil PC: the key of 3 Aug 2026 + the revision notice of 7 Aug 2026 (22 Nov 2026)
+             'karnataka-police-si': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('kpo24', 'kpj24')},
+             'karnataka-police-constable': {'kcr26': ('kcr26-qp.pdf', 'kcr26-key.pdf', 'kcr26-key-revised.pdf'), 'kck26': ('kck26-qp.pdf', 'kck26-key.pdf', 'kck26-key-revised.pdf'),
+                                            'kar26': ('kar26-qp.pdf', 'kar26-key.pdf'), 'kak26': ('kak26-qp.pdf', 'kak26-key.pdf')}}   # MPSC's Series I booklets + its answer keys   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
 # Every released mock of every test series gets a booklet (Anil, 22 Nov 2026: "mocks uploaded should have pdf to get downloaded").
 # The list comes from build.MOCK_PACKS (live mocks only); the private keys of the sealed mocks are in BOOKS_PRIV/mock-keys.json.
 MOCK_NOTE = {   # series not made of new questions only: what the booklet's note says instead
@@ -141,6 +145,8 @@ def time_marks(conf, p):
     if conf['id'] == 'rrb-group-d': return '90 Minutes', 100   # RRB Group D CBT: 100 questions, 1 mark each
     if conf['id'] == 'tnpsc-group-4': return '3 Hours', 300   # TNPSC Group 4: 200 questions (Part A 150 marks, Parts B-C 150 marks)
     if conf['id'] == 'karnataka-gpstr': return '2 Hours 30 Minutes', 150   # GPSTR 2022 Paper-1: 150 questions, 150 marks
+    if conf['id'] == 'karnataka-police-constable': return '90 Minutes', 100   # KSP CPC / CAR-DAR 2026: 100 questions, 100 marks
+    if conf['id'] == 'karnataka-police-si': return '90 Minutes', (150 if p['id'] == 'kpo24' else 100)   # PSI Paper-2: 100 questions (2024: 150 marks)
     if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours

@@ -955,18 +955,20 @@
    "n": "Survey, Settlement & Land Records"
   },
   {
-   "id": "ksp-constable",
+   "id": "karnataka-police-constable",
    "cat": "ka",
    "b": "KSP",
    "t": "Police Constable",
-   "n": "Civil & Armed (CAR/DAR) Police Constable"
+   "n": "Civil & Armed (CAR/DAR) Police Constable",
+   "live": "karnataka-police-constable/"
   },
   {
-   "id": "ksp-psi",
+   "id": "karnataka-police-si",
    "cat": "ka",
    "b": "KSP",
    "t": "Police SI",
-   "n": "Police Sub-Inspector (Civil)"
+   "n": "Police Sub-Inspector (Civil)",
+   "live": "karnataka-police-si/"
   },
   {
    "id": "karnataka-gpstr",
