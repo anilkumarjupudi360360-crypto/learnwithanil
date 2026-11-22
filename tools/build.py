@@ -8145,11 +8145,11 @@ MOCK_PACKS = {
                           'only, as KEA prints them. Every answer has an explanation in English and Kannada. Your score, accuracy and topic-wise analysis '
                           'come after each paper.'],
                    mocks=[m for i in range(1, 11) for m in (
-                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 4),   # Mock 1 on 16 Nov 2026, Mock 2 on 18 Nov 2026, Mocks 3-4 (PYQ-based) on 22 Nov 2026
+                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 6),   # Mock 1 on 16 Nov 2026, Mock 2 on 18 Nov 2026, Mocks 3-4 (PYQ-based) on 22 Nov 2026, Mocks 5-6 on 23 Nov 2026
                             parts=[('his', 'History & Culture', ['his']), ('geo', 'Geography & Environment', ['geo']), ('pol', 'Constitution & Polity', ['pol']),
                                    ('eco', 'Economy & Rural Development', ['eco']), ('sci', 'General Science & Technology', ['sci']),
                                    ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
-                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 4),
+                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 6),
                             parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
   # Anil, 22 Nov 2026: "add 2 more mock test series in maharastar exam ...based on pyqs" -> Mocks 2 and 3, every question built on an MPSC PYQ
   # (writer + blind-checker helper agents; private source /home/claude/mgc/w, tools/merge.py).
