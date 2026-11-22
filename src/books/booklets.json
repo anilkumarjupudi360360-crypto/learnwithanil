@@ -1415,6 +1415,30 @@
    "mock": "bk-epfomk-1",
    "name": "LearnWithAnil-Sankalpa-EPFO-Mock-1-Mock-Test.pdf",
    "pages": 67
+  },
+  "epfomk2": {
+   "bytes": 1622338,
+   "file": "upsc-epfo-epfomk2-c87edfdb29.bin",
+   "key": "bk-upsc-epfo-epfomk2",
+   "mock": "bk-epfomk-2",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Mock-2-Mock-Test.pdf",
+   "pages": 78
+  },
+  "epfomk3": {
+   "bytes": 1701721,
+   "file": "upsc-epfo-epfomk3-e12c4ad7a7.bin",
+   "key": "bk-upsc-epfo-epfomk3",
+   "mock": "bk-epfomk-3",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Mock-3-Mock-Test.pdf",
+   "pages": 81
+  },
+  "epfomk4": {
+   "bytes": 1690777,
+   "file": "upsc-epfo-epfomk4-b5d611b774.bin",
+   "key": "bk-upsc-epfo-epfomk4",
+   "mock": "bk-epfomk-4",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Mock-4-Mock-Test.pdf",
+   "pages": 82
   }
  },
  "upsssc-inter-level": {

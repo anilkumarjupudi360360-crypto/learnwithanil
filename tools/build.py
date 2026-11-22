@@ -4898,7 +4898,7 @@ def FAQ_EPFO(total, npapers):
         'Yes. Open the mock test page and take a real APFC or EO/AO paper with a timer, ' if eo else 'Yes. Open the mock test page and take the real 2023 paper with a timer, ')
        + 'or tap Create a quiz to choose subjects such as Labour Laws, Social Security or Accounting. You get your score, the ' + ('' if E['nokey'] else 'official ') + 'answer and an explanation for every question. '
        'For new questions, Sankalpa EPFO is our series of 10 full-length APFC mock tests in UPSC\'s pattern (120 questions, 2 hours, English and Hindi); '
-       'Mock 1 is out, with three Current Affairs tests (50 questions each, November 2025 to November 2026) from our EPFO Current Affairs 2026 book, '
+       'Mocks 1 to 4 are out (from Mock 2 on, every question is modelled on a question UPSC asked in its EPFO papers), with three Current Affairs tests (50 questions each, November 2025 to November 2026) from our EPFO Current Affairs 2026 book, '
        'and all of it is included in the same All-in-One Pass.'),
       ('Do I need to register?',
        'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
@@ -8087,9 +8087,10 @@ MOCK_PACKS = {
                     title='Sankalpa EPFO – UPSC EPFO APFC Mock Test Series 2026',
                     summary='10 full-length UPSC EPFO APFC mock tests in the real Recruitment Test pattern, 120 questions in 2 hours, in English and Hindi, '
                             'with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
-                    about=['New questions written by Learn with Anil for this series in UPSC\'s EPFO pattern (statement, "how many", match-the-list '
-                           'and chronology questions as UPSC sets them), not copied from coaching material or previous papers. UPSC\'s six real '
-                           'EPFO papers (2017–2025) are on the previous-papers page, in the same pass.',
+                    about=['Built on UPSC\'s own EPFO papers: from Mock 2 on, every question is modelled on a question UPSC actually asked in its EPFO '
+                           'papers (2017–2025), on the same topic and in the same style (statement, "how many", match-the-list and chronology '
+                           'questions), but freshly written so it does not repeat the previous-papers page; each explanation names the paper and '
+                           'question it is modelled on. UPSC\'s six real EPFO papers are on the previous-papers page, in the same pass.',
                            'Each mock follows the APFC syllabus: General English 20, Indian Freedom Struggle & Culture 10, Current Events 10, Polity 9, '
                            'Economy 9, Accounting 14, Industrial Relations & Labour Laws 9, Social Security 9, General Science & Computers 15 and '
                            'Quantitative Aptitude 15. Labour and social-security questions follow the four Labour Codes as in force in 2026; current '
@@ -8100,7 +8101,7 @@ MOCK_PACKS = {
                            'Current Affairs tests: the 150 practice questions of our EPFO Current Affairs 2026 book (November 2025 to November 2026: '
                            'schemes, labour and social security, economy, international, reports, awards and sports, science and environment) as three '
                            'timed tests of 50 questions, in English, each chapter also as a short sectional.'],
-                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', track='full', qn=120, mins=120, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', track='full', qn=120, mins=120, live=(i <= 4),   # Mock 1 on 16 Nov 2026; Mocks 2-4 (PYQ-based, Anil 22 Nov 2026) from 22 Nov 2026
                                 parts=[('eng', 'General English', ['eng']), ('ih', 'History & Freedom Struggle', ['ih']),
                                        ('cur', 'Current Events', ['cur']), ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']),
                                        ('acc', 'Accounting Principles', ['acc']), ('lab', 'Industrial Relations & Labour Laws', ['lab']),

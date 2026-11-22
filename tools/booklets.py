@@ -66,6 +66,12 @@ MOCK_NOTE = {   # series not made of new questions only: what the booklet's note
     'appsc-amvi': 'New questions written by Learn with Anil, each built on a concept APPSC asked in its AMVI Paper II papers of 2019, 2023 and 2026 (the explanation names that previous question)',
 }
 
+MOCK_NOTE_ID = {   # single mocks built differently from the rest of their series (keyed by mock id; overrides MOCK_NOTE)
+    # Sankalpa EPFO Mocks 2+ (Anil, 22 Nov 2026: "based on pyqs"); Mock 1 and the Current Affairs tests keep the default note.
+    **{f'bk-epfomk-{i}': 'New questions written by Learn with Anil, each modelled on a question UPSC asked in its EPFO papers of 2017–2025 '
+                         '(the explanation names that previous question)' for i in range(2, 11)},
+}
+
 
 # Mock series whose match questions are pipe tables ("List-I | List-II" rows, drawn as a table in the app): their booklets print
 # those rows as two aligned columns. Opt-in per exam so other booklets keep their content hash (and their keys-tab file names).
@@ -278,12 +284,13 @@ def paper_doc(conf, p, qs, mock=None):
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
     when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
+    mnote = MOCK_NOTE_ID.get(p.get('mock')) or MOCK_NOTE.get(conf['id'])
     head = (f'<div class="hd"><img src="{LOGO}" alt="Learn with Anil"><div class="t"><b>{esc(board)}</b><span>{esc(title)}</span>'
             f'<i>{esc(sub)}{when}</i></div>{series}</div>'
             f'<div class="meta"><span>{"Time Allowed: " + esc(time_allowed) if time_allowed else ""}</span><span>Questions in this booklet: {len(qs)}</span>'
             f'<span>{"Maximum Marks: " + str(marks) if marks else ""}</span></div>'
-            + (f'<div class="note">{esc(MOCK_NOTE[conf["id"]])}, for the {esc(mock)} test series, with an explanation for every answer. '
-               'The answer key and answers with explanations are at the end of this booklet.</div>' if mock and conf['id'] in MOCK_NOTE else
+            + (f'<div class="note">{esc(mnote)}, for the {esc(mock)} test series, with an explanation for every answer. '
+               'The answer key and answers with explanations are at the end of this booklet.</div>' if mock and mnote else
                f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
                'with an explanation for every answer. The answer key and answers with explanations are at the end of this booklet.</div>' if mock else
                f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official {"question paper of this shift" if conf["board"] == "RRB" else "booklet"} (English'
