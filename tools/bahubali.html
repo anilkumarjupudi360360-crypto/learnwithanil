@@ -645,11 +645,32 @@ function submitExam(auto){
   const st = testState(id);
   st.hist.unshift({at: Date.now(), sc, c, w, k, secs, ans: s.ans});
   st.hist = st.hist.slice(0, 5); st.cur = null; saveA();
+  toMistakes(id, D, s.ans);
   if(ST.name) sendRecord({test:`Bahubali · ${D.paper_name} · ${D.label}`, score:`${f2(sc)}/${D.q.length} (correct ${c}, wrong ${w}, skipped ${k})`, acc:(c+w? Math.round(100*c/(c+w)) : 0)+"%", time: fmtT(secs)});
   track("quiz_complete", {mode:"test", exam:"Bahubali", test:id, correct:c});
   closeDialog();
   if(auto) toast("Time is up. Your test was submitted.");
   EX = null; showResult(id);
+}
+
+// Anil, 22 Nov 2026 ("if they have mistakes in mock test also ... they should be able to practise those mistakes here"): every wrong answer in a
+// Bahubali Mains test also goes into My Mistakes of the APPSC Group-II page (same browser storage as the app, lwa-appsc-g2-v1), with a copy of the
+// question, so it can be practised again there. A right answer counts towards clearing it (twice in a row), as in the app.
+function toMistakes(id, D, ans){
+  const K = "lwa-appsc-g2-v1"; let S = null; try{ S = JSON.parse(localStorage.getItem(K)||"null"); }catch(_){}
+  if(!S || typeof S!=="object") S = {};
+  S.qs = S.qs||{}; S.mistakes = S.mistakes||{}; S.bm = S.bm||{}; S.history = S.history||[];
+  const at = Date.now(), p = "bb-"+id, pp = {id:p, short:"Bahubali "+D.label, title:"Bahubali · "+D.paper_name+" · "+D.label, paper:D.paper_name, num:D.n};
+  let copies = Object.values(S.mistakes).filter(m=>m && m.q).length;
+  D.q.forEach(q=>{
+    const a = ans[q.n], qid = p+"-"+q.n, m = S.mistakes[qid];
+    if(a===undefined){ if(m) m.recall = 0; return; }
+    if(a===q.a){ if(m){ m.recall = (m.recall||0)+1; if(m.recall>=2){ delete S.mistakes[qid]; S.gone = S.gone||{}; S.gone[qid] = at; } } return; }
+    if(m){ m.recall = 0; m.reason = "w"; m.miss = (m.miss||0)+1; return; }
+    const sec = D.sections.find(x=>q.n>=x.from && q.n<=x.to) || {}, e = S.mistakes[qid] = {reason:"w", added:at, recall:0, miss:1};
+    if(copies < 250){ e.q = {id:qid, p, n:q.n, s:"bb-"+(sec.k||"x"), sn:sec.sub||"Bahubali", t:q.t||"", q:q.q, o:q.o, a:[q.a], w:q.w||"", qt:q.qt, ot:q.ot, wt:q.wt}; e.pp = pp; copies++; }
+  });
+  try{ localStorage.setItem(K, JSON.stringify(S)); }catch(_){}
 }
 
 /* ---------- result ---------- */

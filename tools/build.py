@@ -5441,8 +5441,12 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2,#f1f5f9)}
 .tcov b{font:800 10.5px/1 system-ui,sans-serif;letter-spacing:.16em;margin-top:14px}
 .tcov em{font:900 30px/1.05 system-ui,sans-serif;font-style:normal}
 .tcov.tc-pyq em{font-size:21px;margin-top:3px}
+.tcov.tc-sec b,.tcov.tc-ch b,.tcov.tc-mis b{font-size:8px;letter-spacing:.08em}
+.tcov.tc-sec b{margin-top:9px}.tcov.tc-sec em{font-size:26px}
+.tbtns.tparts{margin-top:8px}
 .tcov s{text-decoration:none;font:700 8.5px/1.15 system-ui,sans-serif;margin-top:2px;padding:0 5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tcov u{position:absolute;bottom:5px;left:0;right:0;text-decoration:none;font:600 6.5px/1 system-ui,sans-serif;opacity:.85}
+.tcov.tc-sec s{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:8px;line-height:1.1;padding:0 4px}
 .tcov.tsoon{filter:grayscale(1);opacity:.55}
 .tcov.tsoon::after{content:"SOON";position:absolute;top:68%;left:-20px;right:-20px;transform:rotate(-24deg);background:rgba(0,0,0,.6);font:800 8px/1.7 system-ui,sans-serif;letter-spacing:.14em}
 .tname{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.tname b{font-size:16px;color:var(--ink,#0D1830)}
@@ -8840,6 +8844,45 @@ def pyq_page(conf, papers, questions):
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('PYQs', can)], conf)
 
 
+def sec_label(name):
+    """The subject's name on a sectional cover (two short lines at most): 'Economy (India & AP)' -> 'Economy'."""
+    n = re.sub(r'\s*\([^)]*\)', '', name).strip()
+    if len(n) <= 24: return n
+    first = re.split(r'\s*(?:&|,| and )\s*', n)[0].strip()
+    return first if len(first) <= 24 else n[:23] + '…'
+
+
+def sec_mock_rows(conf, mk):
+    """The sections of every mock of a pack, one row per mock: its MOCK cover, and a button per section (coming-soon mocks greyed)."""
+    pb, hue = conf['pb'], tc_hue(mk.get('id', conf['id']))
+    out = ''
+    if 'mocks' in mk:
+        for m in mk['mocks']:
+            kind_lbl = re.sub(r'\s*Mock\s*\d+\s*$', '', m['name']).strip() if m.get('group') else ''
+            cov = tcover('mock', mk['name'], mock_num(m), kind_lbl, hue, soon=not m['live'])
+            if not m['live']:
+                out += trow(cov, f'{m["name"]} sections', 'Coming soon, one by one', soon=True); continue
+            parts = m.get('parts') or []
+            tks = ' '.join(f'mock:{m["id"]}:{k}' for k, *_ in parts)
+            btns = ''.join(f'<a class="mbtn" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}'
+                           f'{" · " + str(m["pmins"][k]) + " min" if m.get("pmins", {}).get(k) else ""}</a>' for k, v, *_ in parts)
+            out += trow(cov, f'{m["name"]} sections', f'{len(parts)} sections · each one its own timed test', tk=tks,
+                        extra=f'<div class="tbtns tparts">{btns}</div>',
+                        badge=' <span class="tbadge free">Free</span>' if m.get('free') else ' <span class="tbadge">Available now</span>')
+    else:   # older packs (Mission Khaki): mocks <id>-1 … <id>-n, sections Arithmetic / Reasoning / General Studies
+        for i in range(mk['n']):
+            cov = tcover('mock', mk['name'], i + 1, '', hue, soon=i >= mk['live'])
+            if i >= mk['live']:
+                out += trow(cov, f'Mock {i + 1} sections', 'Coming soon, one by one', soon=True); continue
+            mid = f'{mk["id"]}-{i + 1}'
+            secs = (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies'))
+            btns = ''.join(f'<a class="mbtn" href="{pb}?mock={mid}&amp;part={k}">{v}</a>' for k, v in secs)
+            out += trow(cov, f'Mock {i + 1} sections', '3 sections · each one its own timed test', tk=' '.join(f'mock:{mid}:{k}' for k, _ in secs),
+                        extra=f'<div class="tbtns tparts">{btns}</div>',
+                        badge=' <span class="tbadge free">Free</span>' if mk.get('free1') and i == 0 else ' <span class="tbadge">Available now</span>')
+    return f'<div class="tlist">{out}</div>'
+
+
 def sectional_page(conf, papers, questions):
     """Tile 3: sectional tests — PYQ sectionals by subject, and sectional mocks from the mock pack."""
     pb, seo = conf['pb'], conf['seo']
@@ -8853,17 +8896,14 @@ def sectional_page(conf, papers, questions):
     title = f'{seo} Sectional Tests – Subject-wise PYQ Tests{" & " + mk["name"] + " Sectional Mocks" if mk else ""} with Timer | Learn with Anil'
     desc = (f'{seo} sectional tests: subject-wise timed tests made of real previous year questions'
             + (f', and sectional mocks from the {mk["name"]} test series' if mk else '') + ', with answers and explanations.')
-    rows = ''.join(f'<li class="q"><div class="meta">{cnt[s[0]]} previous questions · all in one test · one minute per question</div><p>{esc(s[1])}</p>'
-                   f'<a class="cta" href="{pb}?sec={s[0]}">Start {esc(s[1])} sectional</a></li>' for s in subs)
-    secrows = (''.join((f'<li class="q"><div class="meta">{"Free now" if m.get("free") else "Available now"} · {m["name"]}</div><p>{esc(m["name"])} sections</p>'
-                        + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}</a>' for k, v, *_ in m['parts']) + '</li>')
-                       if m['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>{esc(m["name"])} sections</p></li>'
-                       for m in mk['mocks']) if mk and 'mocks' in mk else
-               ''.join((f'<li class="q"><div class="meta">{"Free now" if mk.get("free1") and i == 0 else "Available now"}</div><p>Mock {i + 1} sections</p>'
-                        + ''.join(f'<a class="cta alt" href="{pb}?mock={mk["id"]}-{i + 1}&amp;part={k}">{v}</a>' for k, v in (('ari', 'Arithmetic'), ('rea', 'Reasoning'), ('gs', 'General Studies')))
-                        + '</li>') if i < mk['live'] else f'<li class="q"><div class="meta">Coming soon</div><p>Mock {i + 1} sections</p></li>'
-                       for i in range(mk['n'])) if mk else '')
-    mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol><p>Each {esc(mk["name"])} mock\'s sections — '
+    # Anil, 22 Nov 2026 (screenshot of these subject cards next to the papers list): "make it as image like this one ... do this for all exams":
+    # each subject is a test row with its own cover (exam · SECTIONAL · number of questions · subject), Your marks and Attempt / Resume
+    rows = '<div class="tlist">' + ''.join(
+        trow(tcover('sec', conf['short'], cnt[s[0]], sec_label(s[1]), tc_hue(conf['key'] + s[0])), s[1],
+             f'{cnt[s[0]]} previous questions · all in one test · one minute per question', tk='sec:' + s[0],
+             start=f'{pb}?sec={s[0]}', start_label='Attempt this sectional') for s in subs) + '</div>'
+    secrows = sec_mock_rows(conf, mk) if mk else ''
+    mock_part = (f'<h2>{esc(mk["name"])} sectional mocks</h2>{secrows}<p>Each {esc(mk["name"])} mock\'s sections — '
                  + ', '.join(esc(x) for x in mk['sections']) + ' — open as separate timed tests as the mocks are released '
                  f'({live_text(mk)}). {INCL}.</p>'
                  + (urgent_note(f'the next {mk["name"]} sectional mocks for {seo}') if 'Coming soon' in secrows else '')
@@ -8872,15 +8912,11 @@ def sectional_page(conf, papers, questions):
                              f'<h2>Sectional mocks</h2><p>Sectional mocks open with this exam\'s mock test pack, coming soon and {INCL.lower()}.</p>')
                  + urgent_note(f'sectional mock tests for {seo}'))
     if conf.get('mockonly'):   # SBI PO / IBPS SO: no previous papers, so the sectional tests are the mocks' sections (with the real 20-minute limit)
-        live = [m for m in mk['mocks'] if m['live']]
         soon = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m['live']))
-        secrows = (''.join(f'<li class="q"><div class="meta">Available now · {m["qn"]} questions</div><p>{esc(m["name"])}</p>'
-                           + ''.join(f'<a class="cta alt" href="{pb}?mock={m["id"]}&amp;part={k}">{esc(v)}{" · " + str(m["pmins"][k]) + " min" if m.get("pmins", {}).get(k) else ""}</a>'
-                                     for k, v, *_ in m['parts']) + '</li>' for m in live)
-                   + (f'<li class="q"><div class="meta">Coming soon, one by one</div><p>{esc(soon[0])}{"–" + esc(soon[-1].replace("Mock ", "")) if len(soon) > 1 else ""} sections</p></li>' if soon else ''))
+        secrows = sec_mock_rows(conf, mk)
         title = f'{seo} Sectional Tests – Section-wise Mock Tests with the Real Time Limit | Learn with Anil'
         desc = f'{seo} sectional tests: each section of the {mk["name"]} mocks as its own timed test, in English and Hindi, with explanations. {INCL}.'
-        body = (f'<h2>{esc(mk["name"])} sectional mocks</h2><ol class="qs">{secrows}</ol>'
+        body = (f'<h2>{esc(mk["name"])} sectional mocks</h2>{secrows}'
                 + (urgent_note(f'the next {mk["name"]} sectional mocks for {seo}') if soon else '')
                 + f'<p>Every section of each mock opens as a separate test with the real 20-minute limit, in exam mode or practice mode. {INCL}.</p>'
                 + buy_box(conf, 'pyq') + '<h2>Plans</h2>' + plans_html(conf))
@@ -9001,7 +9037,7 @@ def tc_hue(seed):
 
 def tcover(kind, top, big, small, hue, soon=False):
     """A small booklet cover: kind 'mock' (MOCK + number) or 'pyq' (year + paper)."""
-    lab = 'MOCK' if kind == 'mock' else 'PYQ'
+    lab = {'mock': 'MOCK', 'sec': 'SECTIONAL'}.get(kind, 'PYQ')   # 'sec': a subject's PYQ sectional (Anil, 22 Nov 2026)
     return (f'<span class="tcov tc-{kind}{" tsoon" if soon else ""}" style="--h:{hue}" aria-hidden="true"><i>{esc(top)}</i><b>{lab}</b>'
             f'<em>{esc(str(big))}</em>' + (f'<s>{esc(small)}</s>' if small else '') + '<u>Learn with Anil</u></span>')
 
