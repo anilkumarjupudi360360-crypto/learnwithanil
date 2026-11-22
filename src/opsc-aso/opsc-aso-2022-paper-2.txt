@@ -12,7 +12,7 @@ Select the correct option that indicates the arrangement of the given words in t
 (3) (IV), (V), (II), (III), (I)
 (4) (IV), (III), (V), (III), (II)
 = 1
-~ All begin 'Krish'. 'Krisha…' (I, IV) comes before 'Krishn…'; of these, Krishanmurt-h-y (IV) precedes Krishanmurt-y (I). Next, 'Krishna…' (II, V) precedes 'Krishnm…' (III), and Krishnamurt-h-y (II) precedes Krishnamurt-i (V). Order: IV, I, II, V, III.
+~ The order is (IV), (I), (II), (V), (III). A telephone directory lists names letter by letter, as a dictionary does. All five names begin with 'Krish', so compare the 6th letter: (I) and (IV) have 'a' (Krisha…), while (II), (III) and (V) have 'n' (Krishn…); so (I) and (IV) come first. Between Krishanmurthy (IV) and Krishanmurty (I), the first eleven letters 'Krishanmurt' match; the 12th letter is 'h' in (IV) and 'y' in (I), and h comes before y, so (IV) leads. Among the 'Krishn…' names, look at the 7th letter: (II) and (V) have 'a', but (III) has 'm', so (III) goes last. Between Krishnamurthy (II) and Krishnamurti (V), the 12th letter is 'h' against 'i', so (II) comes before (V). Final order: IV, I, II, V, III. Option B wrongly puts (III) before (V), option C misplaces (V) and (I), and option D even repeats (III). Tip: move from left to right and decide at the first letter that differs; ignore everything after it.
 
 Q 2 | rea | Verbal Reasoning
 In a certain code language, ‘VIRTUE’ is coded as ‘201’ and ‘TRAGEDY’ is coded as ‘218’. How will ‘PROFANE’ be coded in that language ?
@@ -21,7 +21,7 @@ In a certain code language, ‘VIRTUE’ is coded as ‘201’ and ‘TRAGEDY’
 (3) 432
 (4) 456
 = 2
-~ Code = (sum of reverse alphabet positions, A = 26 … Z = 1) × (number of vowels). VIRTUE: 5+18+9+7+6+22 = 67, × 3 vowels = 201. TRAGEDY: 7+9+26+20+22+23+2 = 109, × 2 = 218. PROFANE: 11+9+12+21+26+13+22 = 114, × 3 vowels (O, A, E) = 342.
+~ PROFANE is coded as 342. The rule: add the reverse alphabet positions of the letters (A = 26, B = 25 … Z = 1) and multiply the total by the number of vowels in the word. Check VIRTUE: V 5 + I 18 + R 9 + T 7 + U 6 + E 22 = 67; vowels I, U, E = 3; 67 × 3 = 201. Check TRAGEDY: T 7 + R 9 + A 26 + G 20 + E 22 + D 23 + Y 2 = 109; vowels A, E = 2; 109 × 2 = 218. Now PROFANE: P 11 + R 9 + O 12 + F 21 + A 26 + N 13 + E 22 = 114; vowels O, A, E = 3; 114 × 3 = 342. Options 570 and 456 use the wrong vowel count (114 × 5, 114 × 4), and 432 is not a multiple of 114. Shortcut: reverse position = 27 − normal position, so for PROFANE the reverse total = 27 × 7 − 75 = 114.
 
 Q 3 | rea | Non-verbal Reasoning
 Directions (Q. Nos. 3 to 5) :
@@ -32,7 +32,7 @@ How many small cubes are there in the solid after the removal of the columns ?
 (3) 105
 (4) 100
 = 3
-~ The 125 cubes form a 5 × 5 × 5 cube. Four corner columns of 5 cubes each are removed: 4 × 5 = 20. Cubes left = 125 − 20 = 105.
+~ 105 cubes remain. Step 1: 125 cubes arranged as a cube means 5 × 5 × 5, since 5³ = 125, so each edge has 5 cubes and there are 5 layers. Step 2: a column at a corner is the vertical stack standing on one corner of the base; it is 5 cubes tall, one cube in each layer. Step 3: there are 4 vertical corner columns, so cubes removed = 4 × 5 = 20. Step 4: cubes left = 125 − 20 = 105. Layer check: each layer had 5 × 5 = 25 cubes; taking away its 4 corner cubes leaves 21, and 21 × 5 layers = 105. Why not the others: 120, 110 and 100 would mean 5, 15 or 25 cubes removed, not 20. This solid is the base for the next two questions: every layer is now a 5 × 5 square with its corners cut off, and only the top and the four sides are painted, not the base on the table. Tip: draw one layer as a 5 × 5 grid, cross out the corners, then multiply by the number of layers.
 
 Q 4 | rea | Non-verbal Reasoning
 Directions (Q. Nos. 3 to 5) :
@@ -43,7 +43,7 @@ How many cubes do not have any coloured face ?
 (3) 36
 (4) 48
 = 3
-~ A cube is unpainted only if it is not on the top layer and not on any outer side. In each of the lower 4 layers the inner 3 × 3 block (9 cubes) stays hidden — removing the corner columns exposes only edge cubes. So 9 × 4 = 36.
+~ 36 cubes have no coloured face. A cube stays unpainted only if none of its faces is exposed, apart from a bottom face resting on the table, which is not coloured. Step 1: look at one layer. After the corners go, each 5 × 5 layer has 21 cubes: 12 on the outer border (3 on each side) and an inner 3 × 3 block of 9. Step 2: every border cube shows at least one side face, so all are painted. Removing the corner columns exposes faces only of the border cubes next to the corners; the inner 3 × 3 block stays hidden, because its corner cube touches a removed corner only diagonally, not face to face. Step 3: the top layer is painted on top, so its inner 9 are coloured. Step 4: each of the lower four layers keeps 9 unpainted cubes, including the bottom layer, whose under-faces rest on the table. Total = 9 × 4 = 36. Quick formula when the base is unpainted: (n − 2)² × (n − 1) = 3² × 4 = 36. The options 12, 24 and 48 come from miscounting the layers or the inner block.
 
 Q 5 | rea | Non-verbal Reasoning
 Directions (Q. Nos. 3 to 5) :
@@ -54,7 +54,7 @@ How many cubes have only one red face ?
 (3) 20
 (4) 15
 = 2
-~ Top layer: the inner 3 × 3 cubes have only the top face red = 9. Lower 4 layers: only the middle cube of each side (4 per layer) has a single red side face — the others next to a removed corner have two = 4 × 4 = 16. Total = 9 + 16 = 25.
+~ 25 cubes have exactly one red face. Count layer by layer. Top layer: of its 21 cubes, the inner 3 × 3 block (9 cubes) shows only its top face, so these 9 have one red face; the 12 border cubes show the top and at least one side, so they have two or more. Lower four layers: each has 12 border cubes, 3 on each side. On every side the two end cubes stand next to a removed corner column, so they show their outer side face and the newly exposed face, which makes two red faces. Only the middle cube of each side shows a single face, giving 4 per layer. The bottom layer behaves the same way, because its under-faces touch the table and stay unpainted. So 4 × 4 layers = 16. Total = 9 + 16 = 25. The other options (40, 20, 15) come from counting all border cubes as one-face cubes or from leaving out the top block or some layers. Tip: removing a corner adds an exposed face to both cubes beside it, so on a side of 3 remaining cubes only 3 − 2 = 1 stays single-faced.
 
 Q 6 | rea | Verbal Reasoning
 David gets on the elevator at the 11th floor of a building and rides up at the rate of 57 floors per minute. At the same time, Albert gets on an elevator at the 51st floor of the same building and rides down at the rate of 63 floors per minute. If they continue travelling at these rates, then at which floor will their paths cross ?
@@ -63,7 +63,7 @@ David gets on the elevator at the 11th floor of a building and rides up at the r
 (3) 30
 (4) 37
 = 3
-~ Gap = 51 − 11 = 40 floors; they close it at 57 + 63 = 120 floors per minute, so they meet after 40/120 = 1/3 minute. David then has risen 57 × 1/3 = 19 floors: 11 + 19 = 30th floor (check: 51 − 63/3 = 30).
+~ Their paths cross at the 30th floor. Step 1: the gap between them = 51 − 11 = 40 floors. Step 2: they move towards each other, David going up and Albert coming down, so the gap closes at the sum of their speeds: 57 + 63 = 120 floors per minute (relative speed). Step 3: time to meet = gap ÷ relative speed = 40 ÷ 120 = 1/3 minute, that is 20 seconds. Step 4: in 1/3 minute David rises 57 × 1/3 = 19 floors, so he reaches 11 + 19 = 30. Check with Albert: he drops 63 × 1/3 = 21 floors, and 51 − 21 = 30. Both give 30, so the paths cross at the 30th floor. Shortcut: the meeting point splits the 40-floor gap in the ratio of the speeds, 57 : 63 = 19 : 21, so David covers 19 of the 40 floors. Trap: 19 is the number of floors David climbs, not the floor where they meet; 28 and 37 do not pass either check. The same relative-speed idea solves questions on two trains or two people moving towards each other.
 
 Q 7 | rea | Verbal Reasoning
 An egg vendor calls on his first customer and sells half his eggs and half an egg. To the second customer, he sells half of what he has left with and half an egg, and to the third customer, he sells half of what he was then left with and half an egg. However, he did not break any egg. If in the end, the vendor was left with three eggs. How many eggs did he have initially ?
@@ -72,7 +72,7 @@ An egg vendor calls on his first customer and sells half his eggs and half an eg
 (3) 39
 (4) None of these
 = 2
-~ Selling half plus half an egg leaves (x − 1)/2, so work backwards with x = 2 × (left) + 1: before the third sale 2 × 3 + 1 = 7, before the second 2 × 7 + 1 = 15, initially 2 × 15 + 1 = 31.
+~ He started with 31 eggs. Step 1: if he has x eggs and sells half of them plus half an egg, he sells x/2 + 1/2 and is left with x − (x/2 + 1/2) = (x − 1)/2. Step 2: so, working backwards, eggs before a sale = 2 × (eggs left) + 1. Step 3: after the third customer he had 3 eggs, so before that sale he had 2 × 3 + 1 = 7. Before the second sale: 2 × 7 + 1 = 15. At the start: 2 × 15 + 1 = 31. Forward check: from 31 he sells 15.5 + 0.5 = 16, leaving 15; then 7.5 + 0.5 = 8, leaving 7; then 3.5 + 0.5 = 4, leaving 3. Every sale is a whole number, so no egg is broken. Why not the others: 26 would need a first sale of 13.5 eggs (a broken egg), and 39 ends with 4, not 3. Shortcut: for n such sales, start = (end + 1) × 2ⁿ − 1 = (3 + 1) × 2³ − 1 = 32 − 1 = 31.
 
 Q 9 | rea | Non-verbal Reasoning
 Choose the box that is similar to the box formed from the given sheet of paper :
@@ -81,7 +81,7 @@ Choose the box that is similar to the box formed from the given sheet of paper :
 (3) 2 and 3
 (4) 2, 3 and 4
 = 4
-~ The four end-tabs fold in to close one face as a 2 × 2 block: half-disc and circle on top, cross and half-disc below. The bottom-right half-disc is the tab of the square-marked flap, so with this face in front the square is on the right face — box 3. Box 2 is the same box given a quarter-turn (square face hidden); box 4 shows three plain faces. Box 1 shows the square on top: impossible.
+~ Boxes 2, 3 and 4 can be formed. With the centre square as the base, the four flaps rise as the side faces and the four end-tabs fold over to close the open face as a 2 × 2 block. Read from the sheet, that block has the left flap's half-disc at top left, the circle at top right, the cross at bottom left and the right flap's half-disc at bottom right; both half-discs point the same way, as the two tabs are drawn alike. The only marked flap, the right one with the small square, lies along the edge shared by the circle and the bottom-right half-disc. Box 3 shows exactly this: the 2 × 2 face in front, a plain top and the square on the right. Box 2 is the same box given a quarter-turn (cross top left, circle bottom right), so the square face is hidden. Box 4 shows three plain faces, possible because the base and two plain flaps meet at a corner. Box 1 copies box 3's front but puts the square on top, where the plain top flap belongs, and its half-discs point opposite ways. Tip: place the marked face first.
 ! img/s2-q9.png
 
 Q 10 | rea | Verbal Reasoning
@@ -91,7 +91,7 @@ Select the option in which the numbers are related in the same way as are the nu
 (3) (26, 12, 369)
 (4) (21, 18, 234)
 = 1
-~ Third number = 2 × (first − second)^2: 2 × (24 − 10)^2 = 2 × 196 = 392. Likewise 2 × (29 − 18)^2 = 2 × 121 = 242. The others give 288, 392 and 18.
+~ (29, 18, 242) follows the same rule as (24, 10, 392). Rule: third number = 2 × (first − second)². Check the given set: 24 − 10 = 14; 14² = 196; 2 × 196 = 392. Option A: 29 − 18 = 11; 11² = 121; 2 × 121 = 242, which matches. Option B: 27 − 15 = 12; 12² = 144; 2 × 144 = 288, not 480. Option C: 26 − 12 = 14; 2 × 196 = 392, not 369. Option D: 21 − 18 = 3; 3² = 9; 2 × 9 = 18, not 234. So only A fits. How to find such a rule: when the third number is much larger than the first two, try products, squares or cubes of their sum or difference. Here 392 = 2 × 196, and 196 = 14², where 14 is the difference 24 − 10; that points straight to the rule. Quick tests that fail here: the product 24 × 10 = 240 and the square of the sum (24 + 10)² = 1,156.
 
 Q 11 | rea | Verbal Reasoning
 There are deer and peacocks in a zoo. By counting heads they are 80. The number of their legs is 200. How many peacocks are there ?
@@ -100,7 +100,7 @@ There are deer and peacocks in a zoo. By counting heads they are 80. The number 
 (3) 50
 (4) 60
 = 4
-~ If all 80 were peacocks there would be 160 legs. The extra 40 legs come from deer (2 extra legs each), so deer = 20 and peacocks = 80 − 20 = 60.
+~ There are 60 peacocks. Each animal has one head, so deer + peacocks = 80; a deer has 4 legs and a peacock 2. Method 1 (assume all are one kind): if all 80 were peacocks, legs = 80 × 2 = 160. The real count is 200, so 200 − 160 = 40 legs are extra. Each deer adds 4 − 2 = 2 extra legs, so deer = 40 ÷ 2 = 20 and peacocks = 80 − 20 = 60. Method 2 (equations): let deer = d and peacocks = p. Then d + p = 80 and 4d + 2p = 200. Halve the second: 2d + p = 100. Subtract the first: d = 20, so p = 60. Check: 20 × 4 + 60 × 2 = 80 + 120 = 200 legs, and 20 + 60 = 80 heads. Why not the others: 20 is the number of deer, a common trap; 30 peacocks would give 260 legs and 50 peacocks 220 legs. Shortcut: four-legged animals = (legs − 2 × heads) ÷ 2 = (200 − 160) ÷ 2 = 20. The same method solves the classic hens-and-cows puzzles.
 
 Q 12 | rea | Verbal Reasoning
 What day of the week was 31st January, 2007 ?
@@ -109,7 +109,7 @@ What day of the week was 31st January, 2007 ?
 (3) Thursday
 (4) Wednesday
 = 4
-~ 1 January 2007 was a Monday. 31 January is 30 days later; 30 = 4 weeks + 2 odd days, so it falls 2 days after Monday, i.e. Wednesday.
+~ 31 January 2007 was a Wednesday. Method 1, from a known date: 1 January 2007 was a Monday. 31 January is 30 days later, and 30 = 4 weeks + 2 days, so the day moves 2 steps forward: Monday → Tuesday → Wednesday. Method 2, odd days: 2000 years give 0 odd days, because every 400 years make a whole number of weeks. The years 2001 to 2006 have 5 ordinary years (1 odd day each) and 1 leap year, 2004 (2 odd days), so 5 + 2 = 7 odd days = 0. January 2007 has 31 days = 4 weeks + 3, so 3 odd days. Total = 0 + 0 + 3 = 3, and odd-day number 3 means Wednesday (0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday). Why not the others: Monday is 1 January itself, Tuesday would need 2 odd days in all, and Thursday 4. Tip: 1 January 2001 and 1 January 2007 were both Mondays, a handy check. Also, 2007 is not a leap year, so its calendar repeats in 2018.
 
 Q 13 | rea | Verbal Reasoning
 Arrange the following words in the order in which they appear in an English dictionary :
@@ -123,7 +123,7 @@ Arrange the following words in the order in which they appear in an English dict
 (3) (III), (IV), (V), (I), (II)
 (4) (V), (I), (III), (II), (IV)
 = 2
-~ All start with 'Met', so compare the fourth letter: Met-e-r, Met-h-od, Met-i-culous, Met-r-ic, Met-t-le (e < h < i < r < t). Order: Meter, Method, Meticulous, Metric, Mettle = (V), (III), (I), (II), (IV).
+~ The dictionary order is Meter, Method, Meticulous, Metric, Mettle, that is (V), (III), (I), (II), (IV). All five words begin with 'Met', so the first three letters decide nothing; compare the 4th letter instead. Meter has 'e', Method has 'h', Meticulous has 'i', Metric has 'r' and Mettle has 't'. In the alphabet e comes before h, h before i, i before r and r before t, so the order follows directly. Why not the others: option A puts Mettle (t) before Metric (r); option C starts with Method, but Meter (e) must come first; and option D puts Meticulous (i) before Method (h). Method of solving: write the words one below the other, find the first column where the letters differ, and arrange by that letter; if two words still tie, move to the next column. A quick memory line for this set, e-h-i-r-t: 'Every Hen Is Really Tiny'. The same steps apply to telephone directory questions, where names are arranged letter by letter in the same way.
 
 Q 14 | rea | Verbal Reasoning
 Rasik walked 20m towards north. Then he turned right and walks 30m. Then he turns right and walks 35m. Then he turns left and walks 15m. Finally he turns left and walks 15m. In which direction and how many metres is he from the starting position ?
@@ -132,7 +132,7 @@ Rasik walked 20m towards north. Then he turned right and walks 30m. Then he turn
 (3) 30m West
 (4) 45m East
 = 4
-~ Moves: 20 m north, right → 30 m east, right → 35 m south, left → 15 m east, left → 15 m north. North–south: 20 − 35 + 15 = 0. East: 30 + 15 = 45 m. So he is 45 m East of the start.
+~ Rasik ends 45 m East of his starting point. Trace each move. He walks 20 m North. Turning right from North means facing East: 30 m East. Turning right from East means facing South: 35 m South. Turning left from South means facing East: 15 m East. Turning left from East means facing North: 15 m North. Now add the movements by direction. North–South: 20 m North − 35 m South + 15 m North = 0, so he is back on his starting east–west line. East–West: 30 m + 15 m = 45 m East, with no westward move. So he is 45 m due East. Why not the others: 15 m West and 30 m West are impossible because he never walks West at all, and 30 m East forgets the second eastward stretch of 15 m. Tip: when facing North, right = East and left = West; when facing South, right = West and left = East. Draw a quick sketch, mark every turn, and add north–south and east–west distances separately; if both are non-zero, use Pythagoras for the straight-line distance.
 
 Q 15 | rea | Verbal Reasoning
 How is ‘sure’ written in a code language ?
@@ -143,7 +143,7 @@ II. ‘is she sure’ written as ‘Ka ja main in that code language
 (3) Ma
 (4) Ha
 = 2
-~ The codes are ‘ja ha ma’ and ‘ka ja ma’ (the printed 'main' is 'ma' + 'in'). The common words 'is' and 'sure' share the common codes 'ja' and 'ma', so 'sure' can be either 'ja' or 'ma' — it cannot be fixed from these two statements.
+~ 'Sure' is coded either 'ja' or 'ma'; the two statements cannot separate them. Read the codes carefully: 'he is sure' = 'ja ha ma' and 'is she sure' = 'ka ja ma' (the printed 'main' is just 'ma' followed by the word 'in'). Step 1: find the words common to both sentences: 'is' and 'sure'. Step 2: find the codes common to both: 'ja' and 'ma'. So the pair {is, sure} matches the pair {ja, ma}, but nothing tells us which code goes with which word. Step 3: the leftover words take the leftover codes: 'he' = 'ha' and 'she' = 'ka'. Why not the others: choosing only 'ja' or only 'ma' assumes a link the data do not give, and 'ha' is the code for 'he'. A third sentence containing 'sure' without 'is' would settle it. Tip: in word-code questions, common words map to common codes; when two words share two common codes, the answer is 'either of the two'. Codes are usually jumbled, so never match words to codes by their position in the sentence.
 
 Q 16 | rea | Verbal Reasoning
 Pointing to a woman, Nirmal said, “She is the daughter of my wife’s grandmother’s only child”. How is the woman related to Nirmal if she is not the wife of Nirmal ?
@@ -152,7 +152,7 @@ Pointing to a woman, Nirmal said, “She is the daughter of my wife’s grandmot
 (3) Sister
 (4) None of these
 = 2
-~ The only child of the wife's grandmother is the wife's parent. That parent's daughter is either the wife herself or the wife's sister. Since she is not his wife, she is his wife's sister, i.e. Nirmal's sister-in-law.
+~ The woman is Nirmal's sister-in-law. Work from the wife's side, one step at a time. Step 1: the wife's grandmother's only child must be one of the wife's parents (her mother or her father), because the grandmother has just one child and the wife descends from her. Step 2: a daughter of that parent is either the wife herself or the wife's sister. Step 3: the question says the woman is not Nirmal's wife, so she must be his wife's sister. A wife's sister is a sister-in-law. Why not the others: 'Wife' is ruled out by the question itself; 'Sister' would need the woman to be a child of Nirmal's own parents, but this chain runs entirely through his wife's family; and 'None of these' is wrong because sister-in-law fits exactly. Tip: in blood-relation puzzles, start from the far end of the sentence (here, 'wife's grandmother') and walk back towards the speaker, writing each link down. 'Only child' is the key clue: it pins that person down as the wife's parent, with no uncles or aunts to consider.
 
 Q 17 | rea | Verbal Reasoning
 IF ZIP = 198 and ZAP = 246, then how will you code VIP ?
@@ -161,7 +161,7 @@ IF ZIP = 198 and ZAP = 246, then how will you code VIP ?
 (3) 888
 (4) 990
 = 1
-~ Code = 6 × (first + last − middle letter), using alphabet positions. ZIP: 6 × (26 + 16 − 9) = 198; ZAP: 6 × (26 + 16 − 1) = 246; VIP: 6 × (22 + 16 − 9) = 174. (The examples also fit 6 × (sum of reverse positions + 3), giving 222 — the answer in many books; OPSC's revised final key is 174.)
+~ VIP is coded 174 as per OPSC's final key. Rule used by the key: code = 6 × (first letter + last letter − middle letter), with A = 1, B = 2 … Z = 26. Check ZIP: Z 26 + P 16 − I 9 = 33, and 6 × 33 = 198. Check ZAP: Z 26 + P 16 − A 1 = 41, and 6 × 41 = 246. Now VIP: V 22 + P 16 − I 9 = 29, and 6 × 29 = 174. The first clue is that both given codes are multiples of 6. Another rule also fits the same two examples: 6 × (sum of reverse positions + 3). ZIP: 1 + 18 + 11 + 3 = 33; ZAP: 1 + 26 + 11 + 3 = 41; VIP: 5 + 18 + 11 + 3 = 37, and 6 × 37 = 222. That is why many books print 222 (option B), but the site follows OPSC's key. Options 888 and 990 fit neither rule. Tip: with only two examples, more than one rule can fit, so test every option quickly. (Official key; some sources differ.)
 
 Q 18 | rea | Verbal Reasoning
 Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
@@ -172,7 +172,7 @@ What is the relationship between Aman and Nidhi ?
 (3) Father-Daughter
 (4) Uncle-Niece
 = 1
-~ Aman is the son of Komal, and Nidhi is the daughter of Anurag. Komal and Anurag are sister and brother, so their children Aman and Nidhi are cousins.
+~ Aman and Nidhi are cousins. Build the family tree first. Generation 1: Rani and Shreshtha (parents of Medha and Deepti), and Garima and Tarun (parents of Anurag and Komal). Generation 2: Deepti marries Anurag; Komal, Anurag's sister, marries Harshit. Generation 3: Nidhi is the daughter of Anurag and Deepti; Aman and Prem are the sons of Komal and Harshit. Now link the two: Aman's mother Komal and Nidhi's father Anurag are sister and brother, so their children are first cousins. The line 'Prem is the grandson of Garima and Tarun' confirms that Komal is Garima and Tarun's own daughter. Why not the others: Aman and Nidhi are in the same generation, so they cannot be father and daughter or uncle and niece; and nothing says they are married, so 'husband and wife' is wrong. Tip: in long family puzzles, draw three rows for three generations, use '=' for a married couple and a vertical line for children, and mark males and females; then each question is a quick look at the diagram.
 
 Q 19 | rea | Verbal Reasoning
 Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
@@ -183,7 +183,7 @@ How is Komal related to Deepti ?
 (3) Sister
 (4) None of these
 = 2
-~ Deepti is married to Anurag, and Komal is Anurag's sister. The husband's sister is one's sister-in-law.
+~ Komal is Deepti's sister-in-law. Deepti is married to Anurag, and Komal is Anurag's sister, so Komal is Deepti's husband's sister. A husband's sister is a sister-in-law (called 'nanad' in Hindi). Steps: (1) Deepti and Anurag are a married couple. (2) Anurag and Komal are brother and sister, both children of Garima and Tarun. (3) So Komal is related to Deepti through marriage, not by blood. Why not the others: 'Aunt' would need Komal to be a sister of one of Deepti's parents (Rani or Shreshtha), which she is not; Komal is the aunt of Nidhi, not of Deepti. 'Sister' is Medha's relation to Deepti, since both are daughters of Rani and Shreshtha. 'None of these' is wrong because sister-in-law fits exactly. Note the reverse relation too: Deepti is Komal's sister-in-law as well, being her brother's wife. Tip: the English word sister-in-law covers both a spouse's sister and a brother's wife, so read the chain to see which case applies; the answer word is the same either way.
 
 Q 20 | rea | Verbal Reasoning
 Directions (Q. Nos. 18 to 20) : Read the information given below to answer these questions :
@@ -194,7 +194,7 @@ Which of the following is true ?
 (3) Garima is Harshit’s mother-in-law
 (4) Nidhi is cousin of Komal
 = 3
-~ Komal is the daughter of Garima and Tarun (she is Anurag's sister) and is married to Harshit, so Garima is Harshit's mother-in-law. Tarun is Deepti's father-in-law, Aman is Komal's son, and Nidhi is Komal's niece.
+~ 'Garima is Harshit's mother-in-law' is the true statement. Steps: Garima and Tarun are Anurag's parents; Komal is Anurag's sister, and her son Prem is called the grandson of Garima and Tarun, which confirms that Komal is their daughter. Komal is married to Harshit, so Komal's mother Garima is Harshit's mother-in-law, and Tarun his father-in-law. Now test the other statements. A: Tarun is Anurag's father and Deepti is Anurag's wife, so Tarun is Deepti's father-in-law, not her maternal uncle (a mother's brother). B: Aman is the son of Komal and Harshit, not of Medha; Medha is Deepti's sister, and the passage gives her no children. D: Nidhi is the daughter of Komal's brother Anurag, so Nidhi is Komal's niece, not her cousin; Nidhi's cousins are Aman and Prem. Tip: in 'which is true' questions, test each option against the family tree instead of trying to prove one directly; the wrong ones usually fail at the first link. Mother-in-law means the mother of one's husband or wife.
 
 Q 21 | rea | Verbal Reasoning
 In a cetain code, MOTHER is written as ONHURF. How will ANSWER be written in that code ?
@@ -203,7 +203,7 @@ In a cetain code, MOTHER is written as ONHURF. How will ANSWER be written in tha
 (3) MAVSPE
 (4) NBWTRF
 = 4
-~ Split the word into pairs, swap each pair and move the second letter of each swapped pair one step forward: MO-TH-ER → OM-HT-RE → ON-HU-RF. Likewise AN-SW-ER → NA-WS-RE → NB-WT-RF = NBWTRF.
+~ ANSWER is written as NBWTRF. Step 1: find the rule from MOTHER → ONHURF. Split the word into pairs: MO, TH, ER. Swap the two letters of each pair: OM, HT, RE. Then move the second letter of each swapped pair one step forward in the alphabet: OM → ON (M + 1 = N), HT → HU (T + 1 = U), RE → RF (E + 1 = F). Result: ON HU RF = ONHURF, which matches. Step 2: apply it to ANSWER: pairs AN, SW, ER; swap to NA, WS, RE; move each second letter one step forward: NA → NB, WS → WT, RE → RF. So the code is NBWTRF. Why not the others: NBWRRF has R in the 4th place instead of T (it moves S back, not forward), and NBXSSE and MAVSPE change letters in ways that do not follow the rule. Tip: when the code looks like the word's own letters jumbled, check pairs first and compare position by position to see which letters shift by +1 or −1. Here ER → RF appears in both words, which confirms the rule.
 
 Q 22 | rea | Verbal Reasoning
 Find the odd one out :
@@ -212,7 +212,7 @@ Find the odd one out :
 (3) Bus-stand
 (4) Park
 = 4
-~ A platform (trains), a dock (ships) and a bus-stand (buses) are places where vehicles stop to pick up and drop passengers or goods. A park is a recreation ground, so it is the odd one out.
+~ Park is the odd one out. A platform, a dock and a bus-stand are all places where a vehicle stops so that passengers or goods can get on and off: trains at a railway platform, ships at a dock, and buses at a bus-stand. A park is an open green space for recreation; no vehicle halts there to load or unload people. So the common link of the other three is 'stopping place for transport', and the park does not share it. Watch the trap: 'park' can also mean a car park, or the verb to park a vehicle, but in a list like this the plain noun means a garden or public ground, not a halt for public transport. Related words exams like: hangar (shelter for aircraft), harbour or port (ships), depot (buses and goods) and terminus (last stop). Odisha example: Paradip Port has docks for ships, Bhubaneswar railway station has platforms for trains, and Baramunda is the city's main bus stand. Tip: in odd-one-out questions, name the common link in one phrase and then test each word against it.
 
 Q 23 | rea | Verbal Reasoning
 Find the odd one out :
@@ -221,7 +221,7 @@ Find the odd one out :
 (3) Fox
 (4) Deer
 = 4
-~ Lion, tiger and fox are flesh-eating predators (all belong to the order Carnivora), while the deer is a plant-eating herbivore. So Deer is the odd one out.
+~ Deer is the odd one out. Lion, tiger and fox are carnivores: they hunt other animals and eat flesh, and all three belong to the mammal order Carnivora (the lion and tiger to the cat family Felidae, the fox to the dog family Canidae). The deer is a herbivore that grazes on grass and browses on leaves; it belongs to the hoofed mammals, family Cervidae, and is in fact a common prey of tigers and lions. So the common link is 'flesh-eating predator', and the deer breaks it. Trap: don't pick the fox just because it is smaller or because it also eats fruit and insects; it is still a predator and a member of Carnivora. Indian examples: in Similipal Tiger Reserve in Odisha, sambar, spotted deer and barking deer form a large part of the tiger's prey; the Gir forests and nearby Saurashtra in Gujarat are the only wild home of the Asiatic lion; and the Indian fox lives in dry grasslands. Tip: in animal odd-one-out questions, look at food habit, family, habitat or number of legs, and choose the link that fits three words exactly.
 
 Q 24 | rea | Verbal Reasoning
 A doctor said to his compounder “I go to see the patients at their residence after every 3 hours 30 minutes. I have already gone to the patient 1 hour 20 minutes ago and next time I shall go at 1 : 40 P.M.” At what time this information was given to the compounder by the doctor ?
@@ -230,7 +230,7 @@ A doctor said to his compounder “I go to see the patients at their residence a
 (3) 10 : 10 A. M.
 (4) None of these
 = 1
-~ Last visit = next visit − 3 h 30 min = 1:40 P.M. − 3:30 = 10:10 A.M. He spoke 1 h 20 min after that visit: 10:10 + 1:20 = 11:30 A.M.
+~ The doctor spoke to the compounder at 11:30 A.M. Step 1: find the last visit. Visits are 3 hours 30 minutes apart, and the next one is at 1:40 P.M., so the last visit was at 1:40 P.M. − 3 h 30 min = 10:10 A.M. Step 2: he gave the information 1 hour 20 minutes after that visit: 10:10 A.M. + 1 h 20 min = 11:30 A.M. Check from the other side: from 11:30 A.M. to the next visit at 1:40 P.M. is 2 hours 10 minutes, and 1 h 20 min + 2 h 10 min = 3 h 30 min, the full gap. Why not the others: 10:10 A.M. is the time of the last visit, not the time he spoke (a common trap); 11:20 A.M. comes from a 10-minute slip; and since 11:30 A.M. works, 'None of these' is wrong. Tip: use 24-hour time when crossing noon: 1:40 P.M. = 13:40; 13:40 − 3:30 = 10:10, and 10:10 + 1:20 = 11:30. Shortcut: speaking time = next visit − (interval − time since last visit) = 1:40 P.M. − 2 h 10 min = 11:30 A.M.
 
 Q 25 | rea | Verbal Reasoning
 If in the word SEPTUAGENARIAN first three and then next three letters are written in reverse order and the rest of the letters are written as they appear in English alphabet, the positions of how many letters get changed in the new arrangement ?
@@ -239,7 +239,7 @@ If in the word SEPTUAGENARIAN first three and then next three letters are writte
 (3) 10
 (4) 12
 = 4
-~ SEP → PES, TUA → AUT, and GENARIAN in alphabetical order → AAEGINNR. New word: PESAUTAAEGINNR against SEPTUAGENARIAN. Only E (2nd) and U (5th) stay in place, so 14 − 2 = 12 letters change position.
+~ 12 letters change their positions. Step 1: number the letters of SEPTUAGENARIAN: S1 E2 P3 T4 U5 A6 G7 E8 N9 A10 R11 I12 A13 N14 (14 letters). Step 2: reverse the first three letters: SEP → PES. Step 3: reverse the next three: TUA → AUT. Step 4: arrange the remaining eight letters G, E, N, A, R, I, A, N in alphabetical order: A, A, E, G, I, N, N, R. New word: P E S A U T A A E G I N N R. Step 5: compare position by position. Position 2 (E) and position 5 (U) stay the same, because the middle letter of a reversed group of three never moves. Every other position changes: S→P, P→S, T→A, A→T, G→A, E→A, N→E, A→G, R→I, I→N, A→N, N→R. So 14 − 2 = 12 letters change. Why not the others: 2 is the number of letters that stay in place, not those that move; 'Nil' ignores the changes completely; and 10 misses two of them. Word meaning: a septuagenarian is a person aged between 70 and 79.
 
 Q 26 | rea | Non-verbal Reasoning
 How many rhombuses are in the figure ?
@@ -248,7 +248,7 @@ How many rhombuses are in the figure ?
 (3) 14
 (4) 17
 = 3
-~ Treat the figure as a 4 × 4 grid with four 1 × 2 strips not divided. Smallest rhombuses: 8 (4 in the centre + 4 around it). Rhombuses made of 2 × 2 small ones: 5 (the central one and one in each corner whose sides are all drawn). 3 × 3: none, as each has a missing side. The whole figure: 1. Total = 8 + 5 + 1 = 14.
+~ There are 14 rhombuses. The figure is a tilted square (a square standing on a corner is a rhombus) divided like a 4 × 4 grid, but in four places a short line is missing, so four 1 × 2 strips run along the sides in a pinwheel pattern. Those strips have unequal sides, so they are not rhombuses. Count by size. Smallest (1 × 1) rhombuses: 16 grid cells − 8 cells used by the strips = 8 (four in the centre and four around them). 2 × 2 rhombuses: a 4 × 4 grid has 9 possible 2 × 2 blocks, but only those whose four sides are fully drawn count: the central one and one at each of the four corners = 5; each of the other four has a gap in one side. 3 × 3 rhombuses: none, because each of the four possible blocks has a missing side. 4 × 4: the whole figure = 1. Total = 8 + 5 + 0 + 1 = 14. Tip: count by size, check that every side of each shape is a complete drawn line, and remember that every square is also a rhombus.
 ! img/s2-q26.png
 
 Q 27 | rea | Non-verbal Reasoning
@@ -258,7 +258,7 @@ What is the minimum number of different colours required to paint the given figu
 (3) 5
 (4) 6
 = 1
-~ Colour the centre circle 1 and the plain ring around it 2. The next ring has 6 pieces (an even number), so they alternate colours 1 and 3; the next plain ring is again 2, and the 8 pieces of the outer ring alternate 1 and 3. Two neighbouring pieces and the ring touching both need three different colours, so the minimum is 3.
+~ Three colours are enough, and three are needed. Look at the figure from the centre outward: a centre circle; a plain ring around it; a ring cut into 6 pieces; another plain ring; and an outer ring cut into 8 pieces. Step 1: colour the centre circle with colour 1. Step 2: the first plain ring touches the centre, so give it colour 2. Step 3: the 6 pieces of the next ring all touch that plain ring, so they must avoid colour 2; since 6 is even, they can alternate colours 1 and 3 all the way round without two neighbours matching. Step 4: the next plain ring touches those pieces (1 and 3), so it takes colour 2 again. Step 5: the 8 outer pieces touch that ring, and 8 is even, so they too alternate 1 and 3. Why not fewer: two neighbouring pieces in a cut ring touch each other and also the plain ring beside them, so those three regions need three different colours. Four, five or six colours are more than necessary. Tip: a ring with an even number of pieces needs two colours; an odd number would need three for the ring alone.
 ! img/s2-q27.png
 
 Q 28 | rea | Verbal Reasoning
@@ -268,7 +268,7 @@ Seven years from now, Anamika will be as old as Malini was 4 years ago. Srinidhi
 (3) 29 years
 (4) 28 years
 = 4
-~ Let Anamika be A now. A + 7 = Malini − 4, so Malini = A + 11; Srinidhi = 2. In 10 years the total is 3 × 33 = 99, so present total = 99 − 30 = 69. A + (A + 11) + 2 = 69 → 2A = 56 → A = 28 years.
+~ Anamika is 28 years old now. Step 1: let Anamika's present age be A. Seven years from now she will be A + 7, which equals Malini's age 4 years ago, M − 4. So A + 7 = M − 4, giving M = A + 11. Step 2: Srinidhi was born 2 years ago, so she is 2 now. Step 3: in 10 years their average will be 33, so the sum of their ages then = 3 × 33 = 99. Each of the three gains 10 years, so the present sum = 99 − 30 = 69. Step 4: A + (A + 11) + 2 = 69, so 2A + 13 = 69, 2A = 56 and A = 28. Check: Malini = 39 and Srinidhi = 2. In 7 years Anamika is 35, and 4 years ago Malini was 35, which matches. In 10 years: 38 + 49 + 12 = 99, and 99 ÷ 3 = 33. Options 30, 31 and 29 fail this sum check. Trap: subtract 10 years for each of the three persons (30 in all), not just 10 once.
 
 Q 29 | rea | Verbal Reasoning
 Nurture : Neglect :: Denigrate : ?
@@ -277,7 +277,7 @@ Nurture : Neglect :: Denigrate : ?
 (3) Recognise
 (4) CalumInate
 = 2
-~ Nurture (care for) and neglect are opposites. Denigrate means to criticise unfairly or belittle; its opposite is extol, to praise highly.
+~ Extol completes the pair. Nurture means to care for something and help it grow, and neglect means to fail to care for it, so the first pair are opposites (antonyms). Denigrate means to criticise unfairly or belittle someone, to run them down. Its opposite is extol, which means to praise highly and with enthusiasm. So Nurture : Neglect :: Denigrate : Extol. Why not the others: reveal (to make known) is the opposite of conceal, not of denigrate; recognise means to identify or acknowledge and is not a direct opposite; and calumniate (misspelt in the option) means to make false and damaging statements about someone, so it is a synonym of denigrate and the strongest trap. Example sentences: 'The critic denigrated the film'; 'The teacher extolled the student's honesty'. Other antonyms of denigrate: praise, laud, commend, acclaim. Other synonyms: belittle, disparage, defame, vilify. Tip: in analogy questions, first name the relation in the first pair (here, opposites), then test each option with it; when the pair are antonyms, a synonym in the options is the usual trap.
 
 Q 30 | rea | Verbal Reasoning
 Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
@@ -287,7 +287,7 @@ Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in 
 (3) 25
 (4) 48
 = 3
-~ The terms from 3 onwards are 3 × 1², 3 × 2², 3 × 3², 3 × 4² = 3, 12, 27, 48 (the gaps 9, 15, 21 grow by 6). The fourth term should be 27, so 25 is the wrong term.
+~ 25 is the wrong term; it should be 27. Leave aside the starting term 1 and look at the rest: 3, 12, 25, 48. Try multiples of 3: 3 = 3 × 1², 12 = 3 × 2² and 48 = 3 × 4². So the term between them should be 3 × 3² = 3 × 9 = 27, and 25 breaks the rule. Check with differences: with 27 in place, the gaps between 3, 12, 27 and 48 are 9, 15 and 21, which rise by 6 each time, a smooth pattern. With 25 the gaps become 9, 13 and 23, which follow no rule. Why not the others: 3, 12 and 48 all fit 3 × n² exactly, so changing any of them would break more of the series than it fixes. Tip: in 'find the wrong term' questions, test simple families first (squares, cubes, n² ± 1, multiples of a square) along with a difference table; the term that sits off both patterns is the wrong one. A wrong term is also usually close to the correct value, as 25 is to 27 here.
 
 Q 31 | rea | Verbal Reasoning
 Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
@@ -297,7 +297,7 @@ Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in 
 (3) 0
 (4) −45
 = 3
-~ The differences should be −20, −25, −30, −35, −40, −45: 105, 85, 60, 30, −5, −45, −90. So 0 is wrong; it should be −5.
+~ 0 is the wrong term; the correct term is −5. Find the differences between consecutive terms: 105 → 85 is −20, 85 → 60 is −25 and 60 → 30 is −30. So each step subtracts 5 more than the one before: −20, −25, −30, −35, −40, −45. Build the series from the start: 105, 85, 60, 30, then 30 − 35 = −5, then −5 − 40 = −45, then −45 − 45 = −90. The last two given terms, −45 and −90, match exactly, which confirms that only the fifth term is wrong. With 0 in its place, the gaps would be −30 (30 → 0) and −45 (0 → −45), breaking the steady change of 5. Why not the others: 105, 60 and −45 all fit the pattern, and changing any of them would spoil two differences instead of fixing one. Tip: once you suspect a term, check it against the terms on both sides; the correct value must fit with the term before and the term after. Here −5 links 30 and −45 perfectly. Keep signs carefully when a series crosses from positive to negative numbers.
 
 Q 32 | rea | Verbal Reasoning
 Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in the number series is wrong. Find out the wrong term.
@@ -307,7 +307,7 @@ Directions (Q. Nos. 30 to 32) : In each of the following questions, one term in 
 (3) 105
 (4) 96
 = 4
-~ The differences are −66, −55, −44, −33, −22, so the next should be −11: 105 − 11 = 94. Hence 96 is the wrong term.
+~ 96 is the wrong term; it should be 94. Find the differences: 325 − 259 = 66, 259 − 204 = 55, 204 − 160 = 44, 160 − 127 = 33, 127 − 105 = 22, and 105 − 96 = 9. The first five differences are multiples of 11 falling by 11 each time (11 × 6, 11 × 5, 11 × 4, 11 × 3, 11 × 2). The next difference should therefore be 11 × 1 = 11, so the last term = 105 − 11 = 94. Why not the others: 325, 127 and 105 all fit the pattern; if 127 or 105 were changed, two differences would go wrong, not one. Since only the final gap (9) breaks the rule, the last term is the culprit. Tip: when differences look like 66, 55, 44, spot the multiplication table at once; patterns built on tables of 11 or 12, or on squares, are common in these papers. An error at the very end of a series affects only one difference, while an error in the middle spoils two neighbouring differences, which helps you locate it quickly.
 
 Q 33 | rea | Verbal Reasoning
 Latex is related to Rubber as Flax is to ______.
@@ -316,7 +316,7 @@ Latex is related to Rubber as Flax is to ______.
 (3) Jute
 (4) Cotton
 = 1
-~ Rubber is made from latex, the milky sap of the rubber tree. In the same way, linen is the cloth made from the fibres of the flax plant.
+~ Linen completes the analogy. Latex is the milky sap tapped from the rubber tree (Hevea brasiliensis), and rubber is made from it, so the pair is 'raw material : product made from it'. In the same way, the fibres from the stem of the flax plant are spun and woven into linen cloth. So Latex : Rubber :: Flax : Linen. Why not the others: wool comes from the fleece of sheep, not from flax; jute is itself a plant fibre, from the Corchorus plant, used for gunny bags and ropes; and cotton is a fibre from the seed boll of the cotton plant. None of these is made from flax. Related facts: flax seeds give linseed oil, used in paints and varnishes, and linen is valued as a cool fabric for hot weather. In India, Kerala produces most of the natural rubber, while West Bengal leads in jute, a crop also grown in Odisha. Tip: name the relation in a short phrase, such as 'source to product', and then check which option has the same link with the third word.
 
 Q 34 | rea | Verbal Reasoning
 In a certain code language, “GOAT” is written as “45” and “COAT” is written as “41”. How is “BOAT” written in that code language ?
@@ -325,7 +325,7 @@ In a certain code language, “GOAT” is written as “45” and “COAT” is 
 (3) 42
 (4) 43
 = 1
-~ Code = sum of alphabet positions + 2. GOAT: 7 + 15 + 1 + 20 = 43, + 2 = 45. COAT: 3 + 15 + 1 + 20 = 39, + 2 = 41. BOAT: 2 + 15 + 1 + 20 = 38, + 2 = 40.
+~ BOAT is written as 40. Rule: code = sum of the alphabet positions of the letters + 2. Check GOAT: G 7 + O 15 + A 1 + T 20 = 43, and 43 + 2 = 45. Check COAT: C 3 + O 15 + A 1 + T 20 = 39, and 39 + 2 = 41. Now BOAT: B 2 + O 15 + A 1 + T 20 = 38, and 38 + 2 = 40. Quick method without full sums: the three words share 'OAT' and differ only in the first letter. G (7) to C (3) is a drop of 4, and the code also drops by 4 (45 to 41), so the code moves exactly with the first letter. B (2) is one less than C (3), so its code is one less than 41, that is 40. Options 41, 42 and 43 ignore this drop. Tip: when words in a code question differ in only one letter, compare the change in that letter with the change in the code. Remember positions with EJOTY: E 5, J 10, O 15, T 20, Y 25.
 
 Q 35 | rea | Verbal Reasoning
 In a certain code language, TUTORIAL is written as DODNGLCF and DANCE is written as YCJMZ, how is EDUCATION written in that code ?
@@ -334,7 +334,7 @@ In a certain code language, TUTORIAL is written as DODNGLCF and DANCE is written
 (3) ZYOMDCLNJ
 (4) ZYOTNLCMD
 = 2
-~ Each letter has a fixed substitute: T = D, U = O, O = N, R = G, I = L, A = C, L = F, D = Y, N = J, C = M, E = Z. So E-D-U-C-A-T-I-O-N → Z-Y-O-M-C-D-L-N-J = ZYOMCDLNJ.
+~ EDUCATION is written as ZYOMCDLNJ. This is a letter-to-letter substitution code: each letter always gets the same substitute, whatever its position. Step 1: from TUTORIAL = DODNGLCF, read off T = D, U = O, O = N, R = G, I = L, A = C, L = F (T appears twice and is D both times, which confirms a fixed code). Step 2: from DANCE = YCJMZ, read off D = Y, A = C, N = J, C = M, E = Z (A = C again agrees with the first word). Step 3: code EDUCATION letter by letter: E = Z, D = Y, U = O, C = M, A = C, T = D, I = L, O = N, N = J. So the code is ZYOMCDLNJ. Why not the others: ZYMODCLNJ swaps the codes of U and C and also of A and T; ZYOMDCLNJ swaps only the codes of A and T; and ZYOTNLCMD does not follow the table at all. Tip: make a small table of letter pairs first, then check each option from the left.
 
 Q 36 | rea | Verbal Reasoning
 The door of Aditya’s house faces the East. From the back side of his house, he walks straight 50 meters, then turns to the right and walks 50 meters again. Finally, he turns towards left and stops after walking 25 meters. Now, Aditya is in which direction from the starting point ?
@@ -343,7 +343,7 @@ The door of Aditya’s house faces the East. From the back side of his house, he
 (3) South-West
 (4) North-West
 = 4
-~ The back of an east-facing house is on the west, so he walks 50 m West. Turning right he goes 50 m North, then turning left 25 m West. He ends 75 m West and 50 m North of the start, i.e. North-West.
+~ Aditya ends up North-West of his starting point. Step 1: the door faces East, so the back of the house faces West; walking straight from the back side, he goes 50 m West. Step 2: when facing West, a right turn makes him face North, so he walks 50 m North. Step 3: when facing North, a left turn makes him face West, so he walks 25 m West. Step 4: add up. Westward: 50 + 25 = 75 m. Northward: 50 m. There is no movement East or South. So he is 75 m West and 50 m North of the start, which is the North-West direction. Straight-line distance, if asked: √(75² + 50²) = √(5,625 + 2,500) = √8,125 ≈ 90 m. Why not the others: South-East and North-East come from starting East (the door side) instead of West, and South-West comes from taking the right turn as South. Tip: when facing West, right = North and left = South; when facing North, right = East and left = West. Fix the first direction carefully, because 'back of the house' reverses the facing direction.
 
 Q 37 | rea | Verbal Reasoning
 A man is facing towards West and turns through 45° clock-wise, again 180° clock-wise and then turns through 270° anti clock-wise. In which direction is he facing now ?
@@ -352,7 +352,7 @@ A man is facing towards West and turns through 45° clock-wise, again 180° cloc
 (3) North
 (4) South-West
 = 4
-~ Net turn = 45° + 180° clockwise − 270° anticlockwise = 45° anticlockwise. Turning 45° anticlockwise from West (towards South) gives South-West.
+~ He ends up facing South-West. Method 1, step by step: he starts facing West. Turning 45° clockwise from West takes him to North-West (clockwise runs North → East → South → West → North, so from West it moves towards North). Turning a further 180° clockwise from North-West makes him face the exact opposite, South-East. Turning 270° anticlockwise from South-East is the same as turning 90° clockwise, which takes South-East to South-West. Method 2, net turn: total clockwise = 45° + 180° = 225°; anticlockwise = 270°; net = 270° − 225° = 45° anticlockwise. From West, 45° anticlockwise (towards South) gives South-West. Both methods agree. Why not the others: West would need a net turn of 0° or 360°; North-West is where he faced after only the first turn; and North is 90° clockwise from West. Tip: 270° one way equals 90° the other way, and 360° brings you back, so reduce large turns first. Draw a compass with 45° steps: N, NE, E, SE, S, SW, W, NW.
 
 Q 38 | rea | Verbal Reasoning
 In a row of thirty boys, R is 4th from right end and W is 10th from the left end. How many boys are there between R and W ?
@@ -361,7 +361,7 @@ In a row of thirty boys, R is 4th from right end and W is 10th from the left end
 (3) 17
 (4) Cannot be determined
 = 2
-~ R is 4th from the right, so 30 − 4 + 1 = 27th from the left. W is 10th from the left. Boys between them = 27 − 10 − 1 = 16.
+~ There are 16 boys between R and W. Step 1: convert R's position to a position from the left. In a row of 30, position from the left = total − position from the right + 1 = 30 − 4 + 1 = 27. So R is 27th from the left. Step 2: W is 10th from the left. Step 3: boys between them = 27 − 10 − 1 = 16 (subtract 1 because neither R nor W is counted). Quick formula when the two counts do not overlap: boys between = total − (left position + right position) = 30 − (10 + 4) = 16. Check: positions 11 to 26 lie between them, and 26 − 11 + 1 = 16. Why not the others: 17 forgets to leave out one of the two boys, 15 leaves out one too many, and 'Cannot be determined' is wrong because the total of 30 fixes both positions. Trap: if the two positions added up to more than the total, the counts would overlap and the formula changes. Tip: always convert both positions to the same end of the row before subtracting.
 
 Q 39 | rea | Non-verbal Reasoning
 How many cubes are there in the figure ?
@@ -370,7 +370,7 @@ How many cubes are there in the figure ?
 (3) 12
 (4) 8
 = 1
-~ Count layer by layer, including hidden supporting cubes. Bottom layer: 3 × 3 = 9. Middle layer: a plus-shaped group of 5 (a centre cube with one cube on each of its four sides; the corners are empty, so the bottom corner cubes show their tops). Top: 1 cube on the centre. Total = 9 + 5 + 1 = 15.
+~ There are 15 cubes. Count layer by layer, remembering that every cube you see must rest on cubes below it, even if those are hidden. Bottom layer: the front faces show 3 cubes along the left side and 3 along the right side, so the base is a full 3 × 3 square = 9 cubes. Middle layer: the corner positions are empty, because the tops of the bottom corner cubes are visible, but the four middle-edge positions are filled, and so is the centre, which must be there to hold up the top cube. That is a plus-shaped group of 5 cubes. Top layer: 1 cube sitting on the centre. Total = 9 + 5 + 1 = 15. Why not the others: 9 is only the base layer, and 8 or 12 come from leaving out hidden supporting cubes, such as the centre of the middle layer and the back cubes of the base; only 10 cubes show a face, so add the 5 hidden ones. Tip: for a stepped pile, treat each layer as a small grid, note which positions show a top face (nothing sits above them), and add the hidden cubes needed for support.
 ! img/s2-q39.png
 
 Q 40 | rea | Non-verbal Reasoning
@@ -380,7 +380,7 @@ Three positions of a dice are given. Find out which number is found opposite the
 (3) 3
 (4) 1
 = 1
-~ From the first two positions, 6 is adjacent to 1, 4, 5 and 3. A face cannot be adjacent to its opposite, so the only number left, 2, is opposite 6.
+~ 6 is opposite 2. Rule: two faces seen together in any view of a die are adjacent, and a face can never be adjacent to the face opposite it. Step 1: list the neighbours of 6. In the first view, 6 is seen with 1 and 4. In the second view, 6 is seen with 5 and 3. So 6 touches 1, 3, 4 and 5. Step 2: each face of a die has four neighbours and one opposite face. The only number never seen next to 6 is 2, so 2 must be opposite 6. Check with the third view: it shows 4, 1 and 2 together and does not contain 6, which fits. Why not the others: 5, 3 and 1 all appear next to 6 in the first two views, so none of them can be opposite it. A second check: the first and third views both show 1 and 4 side by side, with 6 as the third face in one and 2 in the other; the two corners at the ends of an edge always carry a pair of opposite faces. Tip: the number missing from the neighbour list is the opposite.
 ! img/s2-q40.png
 
 Q 41 | rea | Verbal Reasoning
@@ -392,7 +392,7 @@ If the third alphabet in each of the word is changed to the next alphabet in Eng
 (3) Two
 (4) Three
 = 2
-~ Changing the third letter gives THF, MOE, CPV, RAN and SHF. Only MOE has two vowels (O, E); none has more than two, so on the printed wording the answer would be 'None'. OPSC's key 'One' counts MOE, as if the question asked for 'more than one vowel'. (Official OPSC key; some sources differ.)
+~ OPSC's key gives 'One', counting the word MOE. Step 1: change the third letter of each word to the next letter of the alphabet: THE → THF (E → F), MOD → MOE (D → E), CPU → CPV (U → V), RAM → RAN (M → N), SHE → SHF (E → F). Step 2: count the vowels (A, E, I, O, U) in each new word. THF has none, MOE has two (O and E), CPV has none, RAN has one (A), and SHF has none. Step 3: MOE is the only word with more than one vowel, so the key's answer is one word. Read strictly, the question asks for words with 'more than two' vowels, and no word has three or more, which would make 'None' the answer; the key treats the condition as 'more than one vowel'. Note that the change removes vowels from THE, CPU and SHE (E → F, U → V) but adds one to MOD (D → E). Tip: in letter-change questions, write the new words in full before counting, and watch every vowel that the change creates or destroys. (Official OPSC key; some sources differ.)
 
 Q 45 | rea | Verbal Reasoning
 Nandini is the only daughter of Madan’s sister Sangita’s brother. How is Nandini related to Madan ?
@@ -401,7 +401,7 @@ Nandini is the only daughter of Madan’s sister Sangita’s brother. How is Nan
 (3) Cousin
 (4) Niece or Daughter
 = 4
-~ Sangita's brother may be Madan himself or another brother of Madan. So Nandini is either Madan's daughter or his niece; the relation cannot be fixed to one, hence 'Niece or Daughter'.
+~ Nandini is either Madan's daughter or his niece. Break the sentence into links. Step 1: Sangita is Madan's sister. Step 2: Sangita's brother may be Madan himself, or another brother of Madan, because the sentence does not say that Madan is her only brother. Step 3: Nandini is the only daughter of that brother. If the brother is Madan, Nandini is Madan's daughter. If it is another brother, Nandini is the daughter of Madan's brother, that is, Madan's niece. Since both are possible, the right choice is 'Niece or Daughter'. Why not the others: 'Daughter' alone and 'Niece' alone each pick one case without proof, and 'Cousin' would need Nandini to be a child of Madan's uncle or aunt, which does not fit this chain. Trap: many students assume the sister's brother is a third person, but a sister's brother can be the speaker himself. Tip: whenever a chain loops back into the speaker's own family (sister's brother, father's son, mother's daughter), check whether that person could be the speaker himself or herself.
 
 Q 46 | rea | Non-verbal Reasoning
 Choose the alternative which closely resembles the mirror image of the given combination :
@@ -411,7 +411,7 @@ TARAIN1014A
 (3) 3
 (4) 4
 = 4
-~ A mirror reverses the order of the characters and flips each one left to right (A, T, I and 0 look the same): A, 4, 1, 0, 1, N, I, A, R, A, T, with 4, 1, N and R laterally inverted. Alternative (IV) shows exactly this; (I) has the T upside down, and (II) and (III) change the order.
+~ Alternative (IV) is the mirror image. A mirror placed beside the text does two things: it reverses the order of the characters, so the last character comes first, and it flips each character left to right (lateral inversion). Step 1: reverse the order of TARAIN1014A: A, 4, 1, 0, 1, N, I, A, R, A, T. Step 2: flip each character. Symmetric characters such as A, T, I and 0 look unchanged, while 4, 1, N and R appear back to front. Step 3: compare. Alternative (IV) shows exactly this sequence with the right characters reversed. Why not the others: (I) has the order right but turns the T upside down, which no side mirror does; (II) and (III) mix up the order of the digits and letters, so they cannot be reflections. Tip: letters with a vertical line of symmetry (A, H, I, M, O, T, U, V, W, X, Y) do not change in a mirror, so focus on the asymmetric characters, here 1, 4, N and R. In a water image, by contrast, the order stays the same and each character turns upside down.
 ! img/s2-q46.png
 
 Q 47 | rea | Non-verbal Reasoning
@@ -421,7 +421,7 @@ Choose the correct water image of the question figure, from the given answer fig
 (3) 3
 (4) 4
 = 1
-~ A water image flips the figure upside down (top ↔ bottom) while left and right stay the same. The arrow pointing to the top-right corner now points to the bottom-right, and the shaded corners move from top-left/bottom-right to bottom-left/top-right — as in figure (1).
+~ Figure (1) is the water image. A water image is a reflection in a horizontal line (here XY lies below the figure), so the figure turns upside down: top and bottom swap, while left and right stay in place. Apply this to each part. The arrow in the question runs from the bottom-left corner to the top-right corner, with its head at the top-right; flipped, it runs from the top-left to the bottom-right, with its head at the bottom-right. The shaded corners are top-left and bottom-right; after flipping they become bottom-left and top-right. The small hooks on the arrow also turn upside down. Figure (1) shows all these changes. Why not the others: (2), with the head at the top-left, is the mirror image (left–right swap); (3), with the head at the bottom-left, is the figure turned through 180°; and (4) keeps the original arrow direction, so it is not flipped at all. Tip: water image = keep left–right, swap top–bottom; mirror image = keep top–bottom, swap left–right. Check one feature at a time, the arrowhead first, then the shading.
 ! img/s2-q47.png
 
 Q 48 | rea | Non-verbal Reasoning
@@ -431,7 +431,7 @@ Choose the correct mirror image from the answer figures (a), (b), (c) and (d) :
 (3) (c)
 (4) (d)
 = 1
-~ A mirror image swaps left and right but keeps top and bottom. The dot moves from the top-right to the top-left corner and the shaded part of the spade moves from its left lobe to its right lobe, with the spade still upright — figure (a). (b) and (c) are upside down; (d) keeps the dot on the right.
+~ Figure (a) is the mirror image. A mirror image (mirror placed at the side) swaps left and right but keeps top and bottom unchanged. In the question figure the spade stands upright, the dot is at the top-right corner, and the shading is on the left lobe of the spade. After the mirror flip, the spade stays upright, the dot moves to the top-left corner, and the shading moves to the right lobe. Figure (a) shows exactly this. Why not the others: (b) and (c) show the spade upside down with the dot at the bottom-right, which a side mirror never does; and (d) moves the shading to the right but leaves the dot at the top-right, so only part of the figure has been flipped. Tip: in mirror questions, track two or three features separately (an asymmetric mark such as a dot, the shading, and any arrow or tip) and check each one; a single wrong feature rules an option out. Remember: mirror image = left–right swap, water image = top–bottom swap, and a half-turn rotation swaps both.
 ! img/s2-q48.png
 
 Q 49 | rea | Non-verbal Reasoning
@@ -441,7 +441,7 @@ How many rectangles are there in the given diagram ?
 (3) 21
 (4) 14
 = 1
-~ The figure is an upright square cut into four, plus a tilted cross: a central square with a rectangle on each of its sides. Upright part: 4 quarters + 4 halves + 1 whole = 9. Tilted part: 5 single pieces + 4 (centre + one arm) + 2 (arm + centre + arm, in each direction) = 11. Total = 9 + 11 = 20 (squares count as rectangles).
+~ There are 20 rectangles (squares count as rectangles). The figure has two separate sets of lines: an upright square cut into four by a vertical and a horizontal line, and a tilted cross made of a central tilted square with a rectangle on each of its four sides. Upright part: the square has 3 vertical and 3 horizontal lines, so rectangles = (ways to choose 2 vertical lines) × (ways to choose 2 horizontal lines) = 3 × 3 = 9. These are 4 small quarters, 4 halves (two side by side, two one above the other) and 1 whole square. Tilted part: 5 single pieces (the centre and four arms), 4 two-piece rectangles (the centre with one arm each), and 2 three-piece rectangles (arm + centre + arm, in each direction) = 11. No rectangle can mix upright and tilted lines, because they do not meet at right angles. Total = 9 + 11 = 20. Why not the others: 14, 21 and 26 come from missing the combined shapes or counting some twice. Tip: count each set of lines separately and use the 'choose 2 × choose 2' rule for any full grid.
 ! img/s2-q49.png
 
 Q 50 | rea | Verbal Reasoning
@@ -451,7 +451,7 @@ A clock seen through a mirror show quarter past three. What is the correct time 
 (3) 8 : 45
 (4) 3 : 15
 = 3
-~ For a mirror image of a clock, actual time = 11:60 − mirror time. Quarter past three is 3:15, so the actual time = 11:60 − 3:15 = 8:45.
+~ The actual time is 8:45. Rule: for a clock seen in a mirror, actual time = 11:60 − mirror time (11:60 is just 12:00 written so that minutes can be subtracted). Mirror time = quarter past three = 3:15. Actual time = 11:60 − 3:15 = 8:45 (hours 11 − 3 = 8; minutes 60 − 15 = 45). Check by picturing the hands: at 8:45 the minute hand points at 9 and the hour hand is just before 9. In a mirror, 9 appears where 3 is, so the minute hand seems to point at 3 (15 minutes) and the hour hand seems just past 3, which reads as 3:15. Another check: actual time + mirror time = 12:00, and 8:45 + 3:15 = 12:00. Why not the others: 9:15 and 9:45 come from flipping only one hand or misreading the minutes, and 3:15 is the mirror reading itself. Trap: if the mirror time is between 11:00 and 12:59, subtract from 23:60 instead; a mirror reading of 12:30, for example, means 11:30. Tip: the 11:60 rule covers every time from 1:00 to 10:59.
 
 Q 51 | math | Arithmetic
 1/(1.3) + 1/(3.5) + 1/(5.7) + 1/(7.9) = ?
@@ -460,7 +460,7 @@ Q 51 | math | Arithmetic
 (3) 9/4
 (4) 4/9
 = 4
-~ Here '1.3' means 1 × 3, etc. Each term splits as 1/(a × b) = (1/2)(1/a − 1/b), so the sum telescopes: (1/2)(1 − 1/3 + 1/3 − 1/5 + 1/5 − 1/7 + 1/7 − 1/9) = (1/2)(1 − 1/9) = (1/2)(8/9) = 4/9.
+~ The sum is 4/9. Here 1.3 means 1 × 3 (the dot is a multiplication sign), so the terms are 1/(1 × 3) + 1/(3 × 5) + 1/(5 × 7) + 1/(7 × 9). Step 1: use the splitting rule 1/(a × b) = 1/(b − a) × (1/a − 1/b). Every pair here differs by 2, so 1/(a × b) = ½ × (1/a − 1/b). Step 2: write each term this way: ½(1 − 1/3) + ½(1/3 − 1/5) + ½(1/5 − 1/7) + ½(1/7 − 1/9). Step 3: the middle fractions cancel in pairs (this is called telescoping), leaving ½ × (1 − 1/9) = ½ × 8/9 = 4/9. Check by direct addition: 1/3 + 1/15 + 1/35 + 1/63; over 315 this is (105 + 21 + 9 + 5)/315 = 140/315 = 4/9. Why not the others: 9/4 is the reciprocal of the answer, and 5/11 and 6/11 do not come from these fractions. Shortcut: for such a series, sum = (1/d) × (1/first − 1/last), where d is the gap between the paired numbers, so ½ × (1 − 1/9) = 4/9.
 
 Q 52 | math | Arithmetic
 Determine the smallest 3-digit number which is exactly divisible by 6 and 12 ?
@@ -469,7 +469,7 @@ Determine the smallest 3-digit number which is exactly divisible by 6 and 12 ?
 (3) 108
 (4) 120
 = 3
-~ A number divisible by both 6 and 12 must be a multiple of their LCM, 12. The smallest 3-digit multiple of 12 is 12 × 9 = 108 (12 × 8 = 96 has only two digits).
+~ The answer is 108. A number divisible by both 6 and 12 must be a multiple of their LCM. Since 12 is itself a multiple of 6 (12 = 6 × 2), LCM(6, 12) = 12, so we need the smallest 3-digit multiple of 12. Step 1: the smallest 3-digit number is 100. Step 2: divide 100 by 12: 100 = 12 × 8 + 4, so the remainder is 4. Step 3: add (12 − 4) = 8 to 100 to reach the next multiple: 100 + 8 = 108. Check: 108 ÷ 12 = 9 and 108 ÷ 6 = 18, both exact. Why not the others: 96 (12 × 8) and 84 (12 × 7) are multiples of 12 but have only two digits; 120 (12 × 10) is a 3-digit multiple, but not the smallest. Trap: don't multiply 6 × 12 = 72 and look for multiples of 72; that gives 144 and skips 108. Related: the largest 3-digit multiple of 12 comes from 999 = 12 × 83 + 3, so 999 − 3 = 996. Tip: smallest n-digit multiple = smallest n-digit number + (divisor − remainder), unless the remainder is 0.
 
 Q 53 | math | Arithmetic
 What is the HCF of 1/5, 2/7 and 3/11 ?
@@ -478,7 +478,7 @@ What is the HCF of 1/5, 2/7 and 3/11 ?
 (3) 1/35
 (4) 5/77
 = 1
-~ HCF of fractions = HCF of numerators ÷ LCM of denominators = HCF(1, 2, 3)/LCM(5, 7, 11) = 1/385.
+~ The HCF is 1/385. Rule: HCF of fractions = HCF of the numerators ÷ LCM of the denominators. Step 1: the numerators are 1, 2 and 3; their HCF is 1. Step 2: the denominators are 5, 7 and 11; all are prime, so their LCM is 5 × 7 × 11 = 385. Step 3: HCF = 1/385. Check: each fraction divided by 1/385 gives a whole number: 1/5 ÷ 1/385 = 77, 2/7 ÷ 1/385 = 110 and 3/11 ÷ 1/385 = 105. Why not the others: 6 is the LCM of these fractions, found by the opposite rule (LCM of fractions = LCM of numerators ÷ HCF of denominators = 6 ÷ 1 = 6), which is the classic trap; 1/35 and 5/77 use the wrong combination of numbers. Memory tip: the HCF of fractions must be smaller than every fraction, so put the small HCF on top and the big LCM below; the LCM of fractions must be bigger, so put the big LCM on top and the small HCF below. For two fractions, HCF × LCM = product of the fractions.
 
 Q 54 | math | Arithmetic
 0.03 × 0.0165 is equal to :
@@ -487,7 +487,7 @@ Q 54 | math | Arithmetic
 (3) 4.95 × 10^-5
 (4) 4.95 × 10^-6
 = 2
-~ 3 × 165 = 495, and the factors have 2 + 4 = 6 decimal places, so 0.03 × 0.0165 = 0.000495 = 4.95 × 10^-4.
+~ 0.03 × 0.0165 = 0.000495 = 4.95 × 10⁻⁴. Method 1, count decimal places: ignore the decimals and multiply 3 × 165 = 495. Now count the digits after the decimal point: 0.03 has 2 and 0.0165 has 4, so the product must have 2 + 4 = 6 decimal places: 0.000495. To write it in standard form, move the decimal point 4 places to the right to get 4.95; so the number is 4.95 × 10⁻⁴. Method 2, standard form first: 0.03 = 3 × 10⁻² and 0.0165 = 1.65 × 10⁻². Multiply the numbers: 3 × 1.65 = 4.95. Add the powers: 10⁻² × 10⁻² = 10⁻⁴. Result: 4.95 × 10⁻⁴. Why not the others: 4.95 × 10⁻³ = 0.00495 has one decimal place too few, while 10⁻⁵ and 10⁻⁶ add too many places. Tip: when you multiply powers of 10, add the exponents; when you divide, subtract them. A quick estimate also helps: 0.03 × 0.02 = 0.0006 = 6 × 10⁻⁴, so the answer must be close to that, which points to 4.95 × 10⁻⁴.
 
 Q 55 | math | Algebra & Geometry
 [(799 + 267)^2 − (799 − 267)^2] / (799 × 267) = ?
@@ -496,7 +496,7 @@ Q 55 | math | Algebra & Geometry
 (3) 2
 (4) 4
 = 4
-~ Use (a + b)^2 − (a − b)^2 = 4ab. With a = 799 and b = 267 the numerator is 4 × 799 × 267, so the value is 4ab/ab = 4.
+~ The value is 4. Use the identity (a + b)² − (a − b)² = 4ab. Proof: (a + b)² = a² + 2ab + b² and (a − b)² = a² − 2ab + b²; on subtracting, a² and b² cancel, and 2ab − (−2ab) = 4ab. Step 1: here a = 799 and b = 267, so the numerator = 4 × 799 × 267. Step 2: the denominator is 799 × 267. Step 3: dividing, 799 × 267 cancels out and the value is 4. No long multiplication is needed. Why not the others: 1066 is a + b (799 + 267), 532 is a − b (799 − 267), and 2 comes from mixing this up with the other identity, (a + b)² + (a − b)² = 2(a² + b²). Tip: whenever a question shows (x + y)² and (x − y)² with big numbers, look for one of these two identities; the answer is usually a small number like 2 or 4. A related trick: (a + b)(a − b) = a² − b², so 52 × 48 = 50² − 2² = 2,500 − 4 = 2,496.
 
 Q 56 | math | Arithmetic
 0.68 (with 68 recurring) + 0.73 (with 73 recurring) = ?
@@ -505,7 +505,7 @@ Q 56 | math | Arithmetic
 (3) 0.141 (with 141 recurring)
 (4) None of these
 = 2
-~ A pure recurring decimal with two repeating digits ab equals ab/99. So 0.6868... + 0.7373... = 68/99 + 73/99 = 141/99 = 1 + 42/99 = 1.4242..., i.e. 1.42 with 42 recurring.
+~ The sum is 1.42 with 42 recurring (1.4242…). Rule: a pure recurring decimal with a two-digit repeating block equals that block over 99, so 0.6868… = 68/99 and 0.7373… = 73/99. Step 1: add the fractions: 68/99 + 73/99 = 141/99. Step 2: split it: 141/99 = 1 + 42/99. Step 3: 42/99 = 0.4242…, so the sum = 1.4242…, that is 1.42 with 42 recurring. Check by long addition: 0.686868… + 0.737373… = 1.424242…; each block adds to 68 + 73 = 141, which sends a carry of 1 to the block on its left, so every block becomes 42, not 41. Why not the others: 1.41 recurring is the trap of adding only the first two digits (0.68 + 0.73 = 1.41) and forgetting the carry; 0.141 recurring misplaces the decimal point; and since 1.42 recurring is correct, 'None of these' is wrong. Tip: for one repeating digit use 9 as the denominator (0.333… = 3/9), for two digits 99, for three 999; for a mixed recurring decimal such as 0.1666…, use (16 − 1)/90 = 15/90 = 1/6.
 
 Q 57 | math | Arithmetic
 Two numbers are 20% and 40% more than the third number respectively. The ratio of first and second number is :
@@ -514,7 +514,7 @@ Two numbers are 20% and 40% more than the third number respectively. The ratio o
 (3) 6 : 7
 (4) 5 : 7
 = 3
-~ Let the third number be 100. Then the first is 120 and the second is 140, so the ratio is 120 : 140 = 6 : 7.
+~ The ratio is 6 : 7. Step 1: take the third number as 100 (percent questions are easiest with 100). Step 2: the first number is 20% more than 100, that is 100 + 20 = 120. The second is 40% more than 100, that is 100 + 40 = 140. Step 3: ratio of first to second = 120 : 140. Divide both by their HCF, 20: 120 ÷ 20 = 6 and 140 ÷ 20 = 7, giving 6 : 7. Algebra check: 1.2x : 1.4x = 6 : 7, so the third number's value does not matter. Why not the others: 7 : 6 is the reverse ratio (second : first), a common slip; 7 : 5 and 5 : 7 come from comparing 140 with 100 instead of with 120. Shortcut: ratio = (100 + first %) : (100 + second %). If a number were less than the third, use (100 − %) instead; for example, 20% less and 40% more gives 80 : 140 = 4 : 7. Tip: always check which number comes first in the ratio.
 
 Q 58 | math | Arithmetic
 A fruit seller had some oranges. He sells 30% oranges and still has 140 oranges. Originally he had :
@@ -523,7 +523,7 @@ A fruit seller had some oranges. He sells 30% oranges and still has 140 oranges.
 (3) 200 oranges
 (4) 60 oranges
 = 3
-~ After selling 30%, 70% of the oranges remain. 70% of x = 140, so x = 140 × 100/70 = 200 oranges.
+~ He had 200 oranges at first. Step 1: if he sold 30% of the oranges, the part left is 100% − 30% = 70%. Step 2: this 70% equals 140 oranges. So 70% of x = 140, which gives x = 140 × 100 ÷ 70 = 200. Check: 30% of 200 = 60 sold, and 200 − 60 = 140 left, as given. Unitary method: 70% → 140, so 1% → 2 and 100% → 200. Why not the others: 140 is the number left, not the original stock; 60 is the number sold; and 420 comes from wrongly treating 140 as one-third of the total. Trap: don't take 30% of 140 and add it (140 + 42 = 182); the 30% is of the original amount, not of the remainder. Tip: when a percent is removed and the remainder is given, divide the remainder by the remaining fraction: original = remainder ÷ (1 − rate) = 140 ÷ 0.7 = 200. The same method works for a question like 'after spending 25% of his salary he has ₹30,000 left; find the salary': 30,000 ÷ 0.75 = ₹40,000.
 
 Q 59 | math | Arithmetic
 11 oranges are bought for Rs. 10 and 10 oranges for Rs. 11. What is the gain in percentage ?
@@ -532,7 +532,7 @@ Q 59 | math | Arithmetic
 (3) 25%
 (4) 28%
 = 2
-~ Cost price per orange = Rs. 10/11 and selling price per orange = Rs. 11/10. SP/CP = (11/10) × (11/10) = 121/100, so the gain is 21%.
+~ The gain is 21%. Step 1: cost price of 1 orange = ₹10 ÷ 11 = ₹10/11. Step 2: selling price of 1 orange = ₹11 ÷ 10 = ₹11/10. Step 3: gain% = (SP − CP) ÷ CP × 100. SP ÷ CP = (11/10) ÷ (10/11) = (11/10) × (11/10) = 121/100, so SP is 121% of CP and the gain is 121 − 100 = 21%. Check with a convenient number: buy 110 oranges, the LCM of 11 and 10. Cost = 110 × 10/11 = ₹100. Selling price = 110 × 11/10 = ₹121. Profit = ₹21 on ₹100, that is 21%. Why not the others: 11%, 25% and 28% do not follow from these figures; a common slip is to see only ₹10 → ₹11 and guess about 10–11%. Shortcut: if x items are bought for ₹y and y items are sold for ₹x, gain% = (x² − y²)/y² × 100 = (121 − 100)/100 × 100 = 21%. Tip: compare the cost price and selling price of the same number of items before finding the percentage.
 
 Q 60 | math | Arithmetic
 The difference between Compound Interest and Simple Interest for 2 years at 5% per annum is Rs. 2.50. Find the sum :
@@ -541,7 +541,7 @@ The difference between Compound Interest and Simple Interest for 2 years at 5% p
 (3) 1000
 (4) None of these
 = 3
-~ For 2 years, CI − SI = P(R/100)^2. So 2.50 = P × (5/100)^2 = P/400, giving P = 2.50 × 400 = Rs. 1,000.
+~ The sum is ₹1,000. Formula: for 2 years, CI − SI = P × (R/100)². Step 1: put in the values: 2.50 = P × (5/100)² = P × 1/400. Step 2: P = 2.50 × 400 = ₹1,000. Check: SI for 2 years = 1,000 × 5 × 2 ÷ 100 = ₹100. CI: after year 1, 1,000 × 1.05 = 1,050; after year 2, 1,050 × 1.05 = 1,102.50, so CI = ₹102.50. Difference = 102.50 − 100 = ₹2.50, which matches. Why it works: in the first year CI and SI are equal; in the second year CI also earns interest on the first year's interest, 5% of ₹50 = ₹2.50, and that is the whole difference. Why not the others: ₹500 gives a difference of ₹1.25 and ₹1,500 gives ₹3.75; since ₹1,000 fits, 'None of these' is wrong. Related formula for 3 years: CI − SI = P × (R/100)² × (3 + R/100). Tip: remember (R/100)², not R/100; at 10% the 2-year gap is 1% of the principal, and at 5% it is 0.25%.
 
 Q 62 | math | Arithmetic
 The ratio between the speeds of two trains is 7 : 8. If the second train runs 400 kms in 4 hours, then the speed of first train is :
@@ -550,7 +550,7 @@ The ratio between the speeds of two trains is 7 : 8. If the second train runs 40
 (3) 84 km / h
 (4) 87.5 km / h
 = 4
-~ Speed of the second train = 400/4 = 100 km/h. Since the speeds are in the ratio 7 : 8, the first train's speed = 100 × 7/8 = 87.5 km/h.
+~ The first train's speed is 87.5 km/h. Step 1: find the second train's speed: speed = distance ÷ time = 400 km ÷ 4 h = 100 km/h. Step 2: the speeds are in the ratio 7 : 8, so first speed : 100 = 7 : 8. Step 3: first speed = 100 × 7/8 = 700/8 = 87.5 km/h. Check: 87.5 : 100 = 875 : 1000 = 7 : 8 (divide both by 125). Method of parts: 8 parts = 100 km/h, so 1 part = 12.5 km/h and 7 parts = 7 × 12.5 = 87.5 km/h. Why not the others: 70 km/h treats 100 as if it were 10 parts (7 × 10), ignoring that the second train has 8 parts; 75 and 84 km/h do not give the ratio 7 : 8 with 100 (they give 3 : 4 and 21 : 25). Trap: the second train ran 400 km in 4 hours; don't use 400 as its speed. Tip: in ratio questions, find the value of one part from the known quantity, then multiply by the parts asked for.
 
 Q 63 | math | Arithmetic
 √1.5625 = ?
@@ -559,7 +559,7 @@ Q 63 | math | Arithmetic
 (3) 1.45
 (4) 1.55
 = 2
-~ 1.5625 = 15625/10000, and 125^2 = 15625 while 100^2 = 10000. So √1.5625 = 125/100 = 1.25 (check: 1.25 × 1.25 = 1.5625).
+~ √1.5625 = 1.25. Method 1, as a fraction: 1.5625 = 15625/10000. Now 125² = 15,625 and 100² = 10,000, so √1.5625 = 125/100 = 1.25. Check: 1.25 × 1.25 = 1.5625. Method 2, estimate and last digit: 1.2² = 1.44 and 1.3² = 1.69, so the root lies between 1.2 and 1.3; the only option in that range is 1.25. Also, a number ending in 25 has a square root ending in 5, which fits. Why not the others: 1.05² = 1.1025, 1.45² = 2.1025 and 1.55² = 2.4025, none of which is 1.5625. Tip: count decimal places; a perfect-square decimal has an even number of decimal places (here 4), and its root has half as many (here 2). Useful squares to remember: 1.25² = 1.5625, 1.5² = 2.25, 1.75² = 3.0625 and 2.25² = 5.0625. Another quick idea: 1.25 = 5/4, so 1.25² = 25/16 = 1.5625.
 
 Q 64 | math | Algebra & Geometry
 If α and β are the roots of quardatic equation such that α + β = 12 and α − β = 4, then the equation is :
@@ -568,7 +568,7 @@ If α and β are the roots of quardatic equation such that α + β = 12 and α �
 (3) x^2 + 12x + 32 = 0
 (4) x^2 + 12x − 32 = 0
 = 1
-~ Adding the two conditions: 2α = 16, so α = 8 and β = 4. Sum of roots = 12 and product = 32, so the equation is x^2 − (sum)x + product = 0, i.e. x^2 − 12x + 32 = 0.
+~ The equation is x² − 12x + 32 = 0. Step 1: find the roots. Adding α + β = 12 and α − β = 4 gives 2α = 16, so α = 8; then β = 12 − 8 = 4. Step 2: sum of roots = 12, and product of roots = 8 × 4 = 32. Step 3: use x² − (sum)x + (product) = 0, giving x² − 12x + 32 = 0. Check: x² − 12x + 32 = (x − 8)(x − 4), which is zero at x = 8 and x = 4. Shortcut without finding the roots: αβ = [(α + β)² − (α − β)²] ÷ 4 = (144 − 16) ÷ 4 = 32. Why not the others: x² − 12x − 32 has product −32, so one root would be negative; x² + 12x + 32 has sum −12 (roots −8 and −4); and x² + 12x − 32 has both signs wrong. Sign rule: for ax² + bx + c = 0, sum of roots = −b/a and product = c/a.
 
 Q 65 | math | Algebra & Geometry
 If for p ≠ 1, p^(5x+3) = 1 then x = ?
@@ -577,7 +577,7 @@ If for p ≠ 1, p^(5x+3) = 1 then x = ?
 (3) −3/5
 (4) 2/5
 = 3
-~ 1 = p^0, and for a base p ≠ 1 equal powers mean equal exponents. So 5x + 3 = 0, giving x = −3/5.
+~ x = −3/5. Step 1: any non-zero number raised to the power 0 equals 1, so write 1 as p⁰. The equation becomes p^(5x + 3) = p⁰. Step 2: when the bases are equal and the base is not 1, equal values mean equal exponents. So 5x + 3 = 0. Step 3: 5x = −3, so x = −3/5. Check: 5 × (−3/5) + 3 = −3 + 3 = 0, and p⁰ = 1. Why the condition p ≠ 1 matters: 1 raised to any power is 1, so if p were 1, every value of x would work and x could not be found. Why not the others: 3/5 forgets the minus sign when 3 is moved across; −2/5 comes from wrongly setting 5x + 3 = 1, and 2/5 from a further sign slip. Laws used: a⁰ = 1 for a ≠ 0, and if aᵐ = aⁿ with a ≠ 0, ±1, then m = n. Tip: in exponent equations, first make the bases the same on both sides, then equate the powers. For example, 2^(x − 1) = 8 = 2³ gives x − 1 = 3, so x = 4.
 
 Q 66 | math | Algebra & Geometry
 If n is a natural number, then (6n^2 + 6n) is always divisible by :
@@ -586,7 +586,7 @@ If n is a natural number, then (6n^2 + 6n) is always divisible by :
 (3) 12 only
 (4) 18 only
 = 2
-~ 6n^2 + 6n = 6n(n + 1). n(n + 1) is a product of two consecutive numbers, so it is always even; hence the expression is always a multiple of 12, and so of 6 as well. It is not always divisible by 18 (n = 1 gives 12).
+~ The expression is always divisible by both 6 and 12. The key step is to factorise: 6n² + 6n = 6n(n + 1). Here n and n + 1 are two consecutive natural numbers, so one of them is always even, which makes n(n + 1) a multiple of 2. Therefore 6n(n + 1) = 6 × (an even number) = a multiple of 12, and every multiple of 12 is also a multiple of 6. '6 only' is incomplete because 12 also always divides it; '12 only' ignores 6, which divides every multiple of 12; '18 only' fails at once, since n = 1 gives 12, which 18 does not divide. Shortcut for such questions: put n = 1 and n = 2 and keep only the divisors common to both results (12 and 36 share 6 and 12, but not 18). Remember: the product of any two consecutive integers is even, and the product of any three consecutive integers is divisible by 6.
 
 Q 67 | math | Arithmetic
 If x/5 = y/9 then (x + 5) : (y + 9) = ?
@@ -595,7 +595,7 @@ If x/5 = y/9 then (x + 5) : (y + 9) = ?
 (3) 5 : 9
 (4) 9 : 5
 = 3
-~ Let x/5 = y/9 = k, so x = 5k and y = 9k. Then (x + 5) : (y + 9) = 5(k + 1) : 9(k + 1) = 5 : 9.
+~ The ratio (x + 5) : (y + 9) equals 5 : 9. Put x/5 = y/9 = k, so x = 5k and y = 9k. Then x + 5 = 5k + 5 = 5(k + 1) and y + 9 = 9k + 9 = 9(k + 1). On dividing, the common factor (k + 1) cancels and leaves 5 : 9. Check with numbers: take x = 10 and y = 18 (both ratios equal 2); then x + 5 = 15 and y + 9 = 27, and 15 : 27 = 5 : 9. The other choices fail: 9 : 5 is the ratio written the wrong way round (a common slip), while 3 : 5 and 13 : 8 do not come from any value of k. The idea behind it is a property of equal ratios (called addendo): if a/b = c/d, then (a + c)/(b + d) has the same value. Here x : y = 5 : 9 and we add 5 and 9, which are in the same ratio, so the result stays 5 : 9.
 
 Q 68 | math | Arithmetic
 The fourth proportional to 5, 8, 15 is :
@@ -604,7 +604,7 @@ The fourth proportional to 5, 8, 15 is :
 (3) 19
 (4) 24
 = 4
-~ If x is the fourth proportional, 5 : 8 = 15 : x, so 5x = 8 × 15 = 120 and x = 24.
+~ The fourth proportional is 24. Four numbers a, b, c, d are in proportion when a : b = c : d, and d is called the fourth proportional to a, b and c. So 5 : 8 = 15 : x. Using the rule product of extremes = product of means: 5 × x = 8 × 15 = 120, so x = 120 ÷ 5 = 24. Check: 5/8 = 0.625 and 15/24 = 0.625, so the two ratios match. The other options fail this check: 15/18, 15/21 and 15/19 are all larger than 0.625. Quick method: 15 is 3 times 5, so the fourth term must be 3 times 8 = 24. Related terms that are often asked: the third proportional to a and b is b²/a (for 4 and 6 it is 36 ÷ 4 = 9), and the mean proportional between a and b is √(ab) (between 4 and 9 it is 6). Don't mix up the third proportional, the fourth proportional and the mean proportional; write the proportion first and then solve.
 
 Q 70 | math | Algebra & Geometry
 If M = |−1, 0 ; 2, 3|, N = |0, −2 ; −2, 3|, then 2M + N is :
@@ -613,7 +613,7 @@ If M = |−1, 0 ; 2, 3|, N = |0, −2 ; −2, 3|, then 2M + N is :
 (3) |−2, 2 ; 2, 9|
 (4) |−2, −2 ; 2, 9|
 = 4
-~ M and N are 2 × 2 matrices (rows separated by ';'). 2M = |−2, 0 ; 4, 6|. Adding N entry by entry: |−2 + 0, 0 − 2 ; 4 − 2, 6 + 3| = |−2, −2 ; 2, 9|.
+~ 2M + N = |−2, −2 ; 2, 9|. Matrices of the same order are added entry by entry, and multiplying a matrix by a number (a scalar) multiplies every entry. Step 1: 2M = 2 × |−1, 0 ; 2, 3| = |−2, 0 ; 4, 6|. Step 2: add N = |0, −2 ; −2, 3| position by position. Row 1: −2 + 0 = −2 and 0 + (−2) = −2. Row 2: 4 + (−2) = 2 and 6 + 3 = 9. So the result is |−2, −2 ; 2, 9|. Option A has 6 in the last place, as if N's entry 3 was not added; option B has −2 in row 2, column 1, which drops the 4 from 2M; option C has +2 at the top right, a sign error. Tip: in such questions, find only the entries in which the options differ. Here the top-right entry (−2) rules out C, the bottom-left entry (2) rules out B and the bottom-right entry (9) rules out A, which leaves D. Trap: 2M doubles all four entries of M, not just one row.
 
 Q 71 | math | Algebra & Geometry
 For what value of α does the equations αx + y = 3, 2x − 3y = 5 has no solution ?
@@ -622,7 +622,7 @@ For what value of α does the equations αx + y = 3, 2x − 3y = 5 has no soluti
 (3) 1/5
 (4) 3/5
 = 1
-~ Two linear equations have no solution when a₁/a₂ = b₁/b₂ ≠ c₁/c₂. So α/2 = 1/(−3), giving α = −2/3; and 1/(−3) ≠ 3/5, so the lines are parallel and distinct.
+~ α = −2/3 makes the system have no solution. Write both equations in the form ax + by + c = 0: αx + y − 3 = 0 and 2x − 3y − 5 = 0. A pair of linear equations has no solution (parallel lines) when a₁/a₂ = b₁/b₂ ≠ c₁/c₂. Here a₁/a₂ = α/2, b₁/b₂ = 1/(−3) = −1/3 and c₁/c₂ = (−3)/(−5) = 3/5. Setting α/2 = −1/3 gives α = −2/3, and since −1/3 ≠ 3/5 the lines are distinct, so there is no solution. The other values (3/4, 1/5 and 3/5) make α/2 ≠ −1/3, so the two lines have different slopes and cross at exactly one point, giving a unique solution. Remember the three cases: a₁/a₂ ≠ b₁/b₂ → unique solution (intersecting lines); a₁/a₂ = b₁/b₂ = c₁/c₂ → infinitely many solutions (coincident lines); a₁/a₂ = b₁/b₂ ≠ c₁/c₂ → no solution (parallel lines). A slope check also works: line 2 has slope 2/3, and line 1 has slope −α, so −α = 2/3.
 
 Q 72 | math | Algebra & Geometry
 The discriminant of the quadratic equation 3x^2 − 5x + 3 = 0 is :
@@ -631,7 +631,7 @@ The discriminant of the quadratic equation 3x^2 − 5x + 3 = 0 is :
 (3) −11
 (4) −1
 = 3
-~ Discriminant D = b^2 − 4ac = (−5)^2 − 4 × 3 × 3 = 25 − 36 = −11.
+~ The discriminant is −11. For a quadratic equation ax² + bx + c = 0, the discriminant is D = b² − 4ac. Here a = 3, b = −5 and c = 3, so D = (−5)² − 4 × 3 × 3 = 25 − 36 = −11. The other options do not follow from the formula: −5 is only the coefficient b, 3 is the value of a (or c), and −1 is an arithmetic slip. Take care: (−5)² = +25, not −25. What the discriminant tells you: D > 0 means two distinct real roots; D = 0 means two equal real roots, each equal to −b/2a; D < 0 means no real roots. Since D = −11 here, 3x² − 5x + 3 = 0 has no real roots, and its graph, an upward-opening parabola, never touches the x-axis. If D is a perfect square (with rational a, b, c), the roots are rational, which helps in factorisation questions. The roots themselves come from the formula x = (−b ± √D) ÷ 2a.
 
 Q 73 | math | Algebra & Geometry
 If a pair of linear equations is given by a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0 where a₁/a₂ = b₁/b₂ ≠ c₁/c₂ then :
@@ -640,7 +640,7 @@ If a pair of linear equations is given by a₁x + b₁y + c₁ = 0 and a₂x + b
 (3) The pair of linear equation is independent
 (4) The pair of linear equation is dependent
 = 2
-~ When a₁/a₂ = b₁/b₂ ≠ c₁/c₂ the two lines have the same slope but are not the same line, so they are parallel and never meet: there is no solution, i.e. the pair is inconsistent.
+~ The pair is inconsistent. When a₁/a₂ = b₁/b₂, the two lines have the same slope, so they are either parallel or the same line. The extra condition ≠ c₁/c₂ means they are not the same line, so they are parallel and never meet. No point satisfies both equations, and a system with no solution is called inconsistent. 'Consistent' is wrong because a consistent pair has at least one solution, which happens when a₁/a₂ ≠ b₁/b₂ (a unique solution, intersecting lines) or when all three ratios are equal (infinitely many solutions). 'Dependent' describes coincident lines, where a₁/a₂ = b₁/b₂ = c₁/c₂ and one equation is a multiple of the other. 'Independent' is not the standard name for this case. Example: x + 2y = 3 and 2x + 4y = 10 give 1/2 = 2/4 ≠ 3/10, so the lines are parallel and the pair is inconsistent. Memory tip: intersecting → unique solution → consistent; coincident → infinite solutions → consistent and dependent; parallel → no solution → inconsistent.
 
 Q 74 | math | Algebra & Geometry
 If the 7th and 13th terms of an A. P. be 34 and 64 respectively, then its 18th term is :
@@ -649,7 +649,7 @@ If the 7th and 13th terms of an A. P. be 34 and 64 respectively, then its 18th t
 (3) 89
 (4) 100
 = 3
-~ a + 6d = 34 and a + 12d = 64, so 6d = 30, d = 5 and a = 4. The 18th term = a + 17d = 4 + 85 = 89.
+~ The 18th term is 89. The nth term of an A.P. is aₙ = a + (n − 1)d. So a₇ = a + 6d = 34 and a₁₃ = a + 12d = 64. Subtracting the first equation from the second gives 6d = 30, so d = 5. Then a = 34 − 6 × 5 = 4. Now a₁₈ = a + 17d = 4 + 17 × 5 = 4 + 85 = 89. Faster method: you don't need a at all. From the 13th term to the 18th term there are 5 steps, so a₁₈ = a₁₃ + 5d = 64 + 25 = 89. In general, aₘ − aₙ = (m − n)d, so d = (64 − 34) ÷ (13 − 7) = 30 ÷ 6 = 5. The other options cannot be terms of this A.P.: the sequence is 4, 9, 14, 19, ..., so every term ends in 4 or 9, which rules out 87, 88 and 100 straight away. Memory tip: gap in positions × d = gap in values.
 
 Q 75 | math | Algebra & Geometry
 If the sum of n terms of an A. P. is 3n^2 + 5n then which of its terms is 164 ?
@@ -658,7 +658,7 @@ If the sum of n terms of an A. P. is 3n^2 + 5n then which of its terms is 164 ?
 (3) 30th
 (4) None of these
 = 2
-~ nth term = Sₙ − Sₙ₋₁ = [3n^2 + 5n] − [3(n − 1)^2 + 5(n − 1)] = 6n + 2. Setting 6n + 2 = 164 gives n = 27, so 164 is the 27th term.
+~ 164 is the 27th term. When the sum of the first n terms is given, the nth term is aₙ = Sₙ − Sₙ₋₁. Here Sₙ = 3n² + 5n, so Sₙ₋₁ = 3(n − 1)² + 5(n − 1) = 3n² − 6n + 3 + 5n − 5 = 3n² − n − 2. Subtracting: aₙ = (3n² + 5n) − (3n² − n − 2) = 6n + 2. Set 6n + 2 = 164, so 6n = 162 and n = 27. Check: a₂₇ = 6 × 27 + 2 = 164. The first term is a₁ = S₁ = 8 and d = 6, so the A.P. is 8, 14, 20, .... The 26th term is 158 and the 30th term is 182, so those options are wrong, and 'None of these' fails because the 27th term works. Shortcut: if Sₙ = pn² + qn, then d = 2p and a₁ = p + q, so aₙ = 2pn + (q − p). Here p = 3 and q = 5, which gives aₙ = 6n + 2 directly.
 
 Q 76 | math | Algebra & Geometry
 If the sum of n terms of an A. P. be 3n^2 + n and the common difference is 6, then its 1st term is :
@@ -667,7 +667,7 @@ If the sum of n terms of an A. P. be 3n^2 + n and the common difference is 6, th
 (3) 1
 (4) 4
 = 4
-~ The first term equals the sum of the first one term: S₁ = 3(1)^2 + 1 = 4. (Check: S₂ = 14, so the second term is 10 and the common difference is 6.)
+~ The first term is 4. The sum of the first one term is the first term itself, so a₁ = S₁. With Sₙ = 3n² + n, S₁ = 3(1)² + 1 = 4. Check against the given common difference: S₂ = 3(4) + 2 = 14, so a₂ = S₂ − S₁ = 14 − 4 = 10, and d = 10 − 4 = 6, which matches the question. The general term is aₙ = Sₙ − Sₙ₋₁ = 6n − 2, giving the A.P. 4, 10, 16, 22, .... The other options fail: if the first term were 2, 3 or 1, then S₁ would be 2, 3 or 1, but the formula gives S₁ = 4. Shortcut: whenever Sₙ = pn² + qn, the common difference is 2p and the first term is p + q. Here p = 3 and q = 1, so d = 6 and a₁ = 4. Trap: Sₙ is a sum, not a term; to get the nth term always use Sₙ − Sₙ₋₁, and to get the first term use S₁.
 
 Q 78 | math | Arithmetic
 In a group of 500 students, there are 475 students who can speak Hindi and 200 can speak English. What is the number of students who can speak Hindi only ?
@@ -676,7 +676,7 @@ In a group of 500 students, there are 475 students who can speak Hindi and 200 c
 (3) 175
 (4) 500
 = 2
-~ Each student speaks at least one of the two languages, so those speaking both = 475 + 200 − 500 = 175. Hindi only = 475 − 175 = 300.
+~ 300 students speak Hindi only. Every one of the 500 students speaks at least one of the two languages, so use n(H ∪ E) = n(H) + n(E) − n(H ∩ E). Then 500 = 475 + 200 − n(H ∩ E), which gives n(H ∩ E) = 675 − 500 = 175 students who speak both. Hindi only = n(H) − n(H ∩ E) = 475 − 175 = 300. Similarly, English only = 200 − 175 = 25. Check: 300 + 175 + 25 = 500. The other options are traps: 475 is the total number of Hindi speakers, including those who also speak English; 175 is the number who speak both languages; and 500 is the whole group. Quick method: Hindi only = total − English speakers = 500 − 200 = 300, because anyone who does not speak English must speak only Hindi. A Venn diagram with two overlapping circles makes this clear. Trap: don't subtract 200 from 475; that gives 275, which has no meaning here.
 
 Q 79 | math | Arithmetic
 In a cricket match, a batsman hits a boundary 15 times out of 60 balls he plays. Find the probability that he didn’t hit a boundary in next ball :
@@ -685,7 +685,7 @@ In a cricket match, a batsman hits a boundary 15 times out of 60 balls he plays.
 (3) 0.60
 (4) 0.18
 = 1
-~ He did not hit a boundary on 60 − 15 = 45 of the 60 balls, so P(no boundary) = 45/60 = 3/4 = 0.75.
+~ The probability is 0.75. Experimental (empirical) probability = number of times an event happened ÷ total number of trials. The batsman played 60 balls and hit a boundary on 15, so P(boundary) = 15/60 = 1/4 = 0.25. The event 'no boundary' is its complement: P(no boundary) = 1 − 0.25 = 0.75, or directly 45/60 = 3/4. The other choices are slips: 0.15 treats the 15 boundaries as if they were 15 per cent, 0.60 confuses the 60 balls with a probability, and 0.18 has no basis. Remember that P(E) + P(not E) = 1, so once you find one, the other follows at once. This is a classic textbook type of question on experimental probability. Another example: a coin tossed 100 times shows heads 56 times, so the experimental probability of tails is 44/100 = 0.44. Note also that a probability always lies between 0 and 1, so any value outside that range must be wrong. Trap: read whether the question asks for the event or its opposite.
 
 Q 80 | math | Arithmetic
 Find the probability that a non-leap year has 53 Sundays :
@@ -694,7 +694,7 @@ Find the probability that a non-leap year has 53 Sundays :
 (3) 1/7
 (4) 6/7
 = 3
-~ A non-leap year has 365 days = 52 weeks + 1 extra day. There are 53 Sundays only if that extra day is a Sunday, which is 1 of 7 equally likely days: probability 1/7.
+~ The probability is 1/7. A non-leap year has 365 days = 52 weeks + 1 day. The 52 full weeks give exactly 52 Sundays, so a 53rd Sunday appears only if the one extra day is a Sunday. That extra day can be any of the 7 days of the week, each equally likely, so P(53 Sundays) = 1/7. The other options belong to other cases: 2/7 is the answer for a leap year (366 days = 52 weeks + 2 days; the 2 extra days form one of 7 pairs, Sun–Mon, Mon–Tue, ..., Sat–Sun, and 2 of these pairs contain a Sunday); 5/7 is the leap-year chance of NOT getting 53 Sundays; and 6/7 is the non-leap-year chance of NOT getting 53 Sundays. Memory tip: ordinary year → 1 odd day → 1/7; leap year → 2 odd days → 2/7. The same 'odd days' idea is used in calendar questions in the reasoning section.
 
 Q 81 | math | Arithmetic
 If a number is selected from numbers 1 to 25, then find the probability that it is a prime number :
@@ -703,7 +703,7 @@ If a number is selected from numbers 1 to 25, then find the probability that it 
 (3) 7/25
 (4) 9/25
 = 4
-~ The primes from 1 to 25 are 2, 3, 5, 7, 11, 13, 17, 19 and 23, i.e. 9 of the 25 numbers. Probability = 9/25.
+~ The probability is 9/25. Count the prime numbers from 1 to 25: 2, 3, 5, 7, 11, 13, 17, 19 and 23, which makes 9. The total number of equally likely outcomes is 25. So P(prime) = 9/25. Note that 1 is neither prime nor composite, so it is not counted, and 2 is the only even prime. The other options are wrong: 3/5 = 15/25 would need 15 primes, 1/5 = 5/25 would need only 5, and 7/25 misses two of the primes. Useful counts to remember: there are 4 primes up to 10, 8 up to 20, 9 up to 25, 10 up to 30, 15 up to 50 and 25 up to 100. Trap: numbers like 9, 15, 21 and 25 look prime but are not (3 × 3, 3 × 5, 3 × 7 and 5 × 5). In the same set, P(not prime) = 16/25, since the two probabilities must add to 1.
 
 Q 82 | math | Arithmetic
 How many natural numbers are there between 23 and 100 which are exactly divisible by 6 ?
@@ -712,7 +712,7 @@ How many natural numbers are there between 23 and 100 which are exactly divisibl
 (3) 13
 (4) 12
 = 3
-~ The multiples of 6 in this range run from 24 (6 × 4) to 96 (6 × 16), so there are 16 − 4 + 1 = 13 such numbers.
+~ There are 13 such numbers. The multiples of 6 between 23 and 100 start at 24 (= 6 × 4) and end at 96 (= 6 × 16), because the next multiple after 96 is 102. These numbers form an A.P. with first term 24, common difference 6 and last term 96. Number of terms = (last − first) ÷ d + 1 = (96 − 24) ÷ 6 + 1 = 12 + 1 = 13. Another way: multiples of 6 up to 100 = 16 (100 ÷ 6 = 16.67), and multiples of 6 up to 23 = 3 (23 ÷ 6 = 3.83). So the count between them = 16 − 3 = 13. Listing confirms it: 24, 30, 36, 42, 48, 54, 60, 66, 72, 78, 84, 90, 96, which is 13 numbers. Option 12 comes from forgetting the '+ 1' (the most common slip in counting terms), and 11 and 8 are simple miscounts. Memory tip: the count of multiples of k from 1 to N is the whole-number part of N ÷ k; for a range, subtract the two counts.
 
 Q 83 | math | Algebra & Geometry
 If a set has 5 elements, then the power set of that set has ______ elements.
@@ -721,7 +721,7 @@ If a set has 5 elements, then the power set of that set has ______ elements.
 (3) 10
 (4) None of these
 = 2
-~ A set with n elements has 2^n subsets, and the power set is the set of all subsets. For n = 5 it has 2^5 = 32 elements.
+~ The power set has 32 elements. The power set P(A) is the set of all subsets of A, including the empty set φ and A itself. For a set with n elements, each element is either in a subset or not, which gives 2 choices per element, so the number of subsets = 2 × 2 × ... (n times) = 2ⁿ. For n = 5, this is 2⁵ = 32. Option 25 (that is, 5²) confuses 2ⁿ with n², option 10 (5 × 2) confuses it with 2n, and 'None of these' is wrong because 32 is listed. Example: A = {a, b} has 2² = 4 subsets: φ, {a}, {b} and {a, b}. Related results: the number of proper subsets is 2ⁿ − 1 (here 31), and the number of non-empty proper subsets is 2ⁿ − 2 (here 30). Trap: some questions ask for 'proper subsets', so read carefully; the power set always counts all 2ⁿ subsets.
 
 Q 84 | math | Arithmetic
 A bag contains 3 green, 4 blue and 2 orange marbles. If a marble is picked at random then find the probability of not getting an orange marble :
@@ -730,7 +730,7 @@ A bag contains 3 green, 4 blue and 2 orange marbles. If a marble is picked at ra
 (3) 1/4
 (4) 1/3
 = 2
-~ There are 3 + 4 + 2 = 9 marbles, of which 7 are not orange. P(not orange) = 7/9 (or 1 − 2/9).
+~ The probability of not getting an orange marble is 7/9. Total marbles = 3 green + 4 blue + 2 orange = 9. Non-orange marbles = 3 + 4 = 7. So P(not orange) = 7/9. Using the complement gives the same answer: P(orange) = 2/9, so P(not orange) = 1 − 2/9 = 7/9. The other options fail: 4/9 is the probability of a blue marble, 1/3 (= 3/9) is the probability of a green marble, and 1/4 has no basis because the total is 9. Remember the rule P(E) + P(not E) = 1; it often saves time when the word 'not' appears, because the event asked about may have many cases while its opposite has only a few. Another example from the same bag: P(not blue) = 1 − 4/9 = 5/9, and P(green or orange) = 5/9 as well, since these are the same event. Trap: always add up all the colours to get the total; don't use only the colours mentioned in the question.
 
 Q 85 | math | Arithmetic
 If x is any number chosen from 1, 2, 3 and y is selected from the numbers 1, 4, 9, then P(xy < 9) = ?
@@ -739,7 +739,7 @@ If x is any number chosen from 1, 2, 3 and y is selected from the numbers 1, 4, 
 (3) 7/9
 (4) 1/3
 = 2
-~ There are 3 × 3 = 9 equally likely pairs. Products below 9: 1 × 1, 1 × 4, 2 × 1, 2 × 4 (= 8) and 3 × 1, i.e. 5 pairs (1 × 9 = 9, 2 × 9, 3 × 4 and 3 × 9 are not less than 9). P = 5/9.
+~ P(xy < 9) = 5/9. x can be 1, 2 or 3 and y can be 1, 4 or 9, so there are 3 × 3 = 9 equally likely pairs. List the products: with x = 1 they are 1, 4, 9; with x = 2 they are 2, 8, 18; with x = 3 they are 3, 12, 27. The products strictly less than 9 are 1, 4, 2, 8 and 3, which is 5 pairs. So P(xy < 9) = 5/9. Trap: 1 × 9 = 9 is NOT less than 9, so it is excluded; including it gives 6/9 = 2/3, which is option A. Option C (7/9) and option D (1/3) don't match any count. Read the sign carefully: '<' means strictly less than, while '≤' would include 9 and make the answer 2/3. The fastest and safest way to solve such questions is a small 3 × 3 table of products, which avoids missing a case. Also note that P(xy ≥ 9) = 4/9, the complement of the answer, since the two must add to 1.
 
 Q 86 | math | Algebra & Geometry
 If the angle of elevation of the top of tower from a point 20m away from the foot is 45°, then find height of the tower :
@@ -748,7 +748,7 @@ If the angle of elevation of the top of tower from a point 20m away from the foo
 (3) 30m
 (4) 25m
 = 2
-~ tan 45° = height/distance, and tan 45° = 1. So height = 20 × 1 = 20 m.
+~ The height of the tower is 20 m. The tower, the ground and the line of sight form a right-angled triangle. The height is the side opposite the 45° angle, and the 20 m distance is the side adjacent to it. So tan 45° = height ÷ distance. Since tan 45° = 1, height = 20 × 1 = 20 m. At 45° the triangle is an isosceles right triangle, so the height always equals the distance from the foot. The other options fail: 40 m would need tan θ = 2, 30 m would need tan θ = 1.5, and 25 m would need tan θ = 1.25. Values to remember: tan 30° = 1/√3, tan 45° = 1 and tan 60° = √3. So, with the same 20 m distance, an elevation of 60° would give 20√3 ≈ 34.64 m, and 30° would give 20/√3 ≈ 11.55 m. Trap: use tan (opposite ÷ adjacent), not sin or cos, whenever the height and the horizontal distance are involved.
 
 Q 87 | math | Algebra & Geometry
 If a circle and a semi-circle have the same radius as 14 cm, then the ratio of their perimeters is ______.
@@ -757,7 +757,7 @@ If a circle and a semi-circle have the same radius as 14 cm, then the ratio of t
 (3) 11 : 9
 (4) 12 : 9
 = 3
-~ Circle: 2πr = 2 × 22/7 × 14 = 88 cm. Semicircle: curved part πr plus diameter 2r = 44 + 28 = 72 cm. Ratio = 88 : 72 = 11 : 9.
+~ The ratio of the perimeters is 11 : 9. Circle: perimeter = 2πr = 2 × 22/7 × 14 = 88 cm. Semicircle: perimeter = curved arc + diameter = πr + 2r = 22/7 × 14 + 28 = 44 + 28 = 72 cm. Ratio = 88 : 72; dividing both by 8 gives 11 : 9. Quicker method, with r cancelling: 2πr : (π + 2)r = 2π : (π + 2) = 44/7 : 36/7 = 44 : 36 = 11 : 9, so the radius does not matter at all. Trap: if you forget to add the diameter, the semicircle's perimeter is just 44 cm and the ratio becomes 2 : 1, which is not among the options. The other options, 5 : 1, 6 : 7 and 12 : 9, do not come from any correct formula. Remember: perimeter of a semicircle = (π + 2)r = 36r/7, and area of a semicircle = πr²/2. For r = 14, the semicircle's area is 308 cm² and the circle's area is 616 cm².
 
 Q 89 | math | Arithmetic
 A single letter is drawn at random from the word “ASPIRATION” the probability that it is a vowel is :
@@ -766,7 +766,7 @@ A single letter is drawn at random from the word “ASPIRATION” the probabilit
 (3) 1/4
 (4) 0
 = 1
-~ ASPIRATION has 10 letters, of which 5 are vowels (A, I, A, I, O). Probability = 5/10 = 1/2.
+~ The probability is 1/2. ASPIRATION has 10 letters: A, S, P, I, R, A, T, I, O, N. The vowels are A, I, A, I and O, which is 5 letters; repeated letters count separately because each one is a separate card or tile that can be drawn. So P(vowel) = 5/10 = 1/2. The consonants S, P, R, T and N are also 5, so P(consonant) = 1/2 too. The other options fail: 1/3 and 1/4 do not match the count, and 0 would mean the word has no vowels at all. Trap: don't count only the different vowels (A, I, O = 3), which would give 3/10; each position in the word is one equally likely outcome. A similar example: 'ASSASSINATION' has 13 letters and 6 vowels (A, A, I, A, I, O), so P(vowel) = 6/13. Always write the word out letter by letter and tick each vowel so that no repeated letter is missed.
 
 Q 90 | math | Arithmetic
 If 4 coins are tossed once then what is the probability of getting exactly 2 heads ?
@@ -775,7 +775,7 @@ If 4 coins are tossed once then what is the probability of getting exactly 2 hea
 (3) 1/2
 (4) 3/8
 = 4
-~ 4 coins give 2^4 = 16 equally likely outcomes. Exactly 2 heads can occur in 4C2 = 6 ways, so the probability is 6/16 = 3/8.
+~ The probability of exactly 2 heads is 3/8. When 4 coins are tossed, each coin has 2 outcomes, so there are 2⁴ = 16 equally likely outcomes. The number of ways to get exactly 2 heads is the number of ways to choose which 2 of the 4 coins show heads: ⁴C₂ = (4 × 3) ÷ (2 × 1) = 6. They are HHTT, HTHT, HTTH, THHT, THTH and TTHH. So P = 6/16 = 3/8. The other options fail: 1/2 wrongly assumes that 'half heads' happens half the time, while 5/8 and 7/8 count extra outcomes (for example, 7/8 is the chance that the four coins do not all show the same face). The counts for 0, 1, 2, 3 and 4 heads are 1, 4, 6, 4 and 1 (row 4 of Pascal's triangle), which add up to 16. Memory tip: for n coins, P(exactly r heads) = ⁿCᵣ ÷ 2ⁿ. So with 3 coins, P(exactly 2 heads) = 3/8 as well, but for a different reason (3 of 8 outcomes).
 
 Q 91 | math | Arithmetic
 A and B are two independent events such that P(A ∪ B′) = 0.8, and P(A) = 0.3, then P(B) = ?
@@ -784,7 +784,7 @@ A and B are two independent events such that P(A ∪ B′) = 0.8, and P(A) = 0.3
 (3) 3/8
 (4) 1/8
 = 1
-~ If A and B are independent, so are A and B′. P(A ∪ B′) = P(A) + P(B′) − P(A)P(B′) = 0.3 + 0.7 P(B′) = 0.8, so P(B′) = 0.5/0.7 = 5/7 and P(B) = 1 − 5/7 = 2/7.
+~ P(B) = 2/7. For independent events A and B, the events A and B′ are also independent, so P(A ∩ B′) = P(A) × P(B′). By the addition rule, P(A ∪ B′) = P(A) + P(B′) − P(A)P(B′). Substitute P(A) = 0.3: 0.8 = 0.3 + P(B′) − 0.3P(B′) = 0.3 + 0.7P(B′). So 0.7P(B′) = 0.5 and P(B′) = 5/7. Therefore P(B) = 1 − 5/7 = 2/7. Check: P(B′) ≈ 0.714, and 0.3 + 0.714 − 0.3 × 0.714 = 0.3 + 0.714 − 0.214 = 0.8. The other options don't satisfy the equation: for example, P(B) = 2/3 gives P(B′) = 1/3 and P(A ∪ B′) = 0.3 + 0.333 − 0.1 ≈ 0.53, not 0.8. A shorter route: P(A ∪ B′) = 1 − P(A′ ∩ B) = 1 − P(A′)P(B) = 1 − 0.7P(B) = 0.8, so P(B) = 0.2 ÷ 0.7 = 2/7. Memory tip: independence carries over to complements, so the pairs (A′, B), (A, B′) and (A′, B′) are independent too.
 
 Q 92 | math | Arithmetic
 Find the probability of getting a number greater than 3 in rolling of a dice once :
@@ -793,7 +793,7 @@ Find the probability of getting a number greater than 3 in rolling of a dice onc
 (3) 1/4
 (4) 1/5
 = 1
-~ A die has 6 equally likely faces; 4, 5 and 6 are greater than 3. Probability = 3/6 = 1/2.
+~ The probability is 1/2. A fair die has six faces, 1 to 6, all equally likely. The numbers greater than 3 are 4, 5 and 6, which gives 3 favourable outcomes. So P(number > 3) = 3/6 = 1/2. Trap: 'greater than 3' does not include 3 itself; if the question said 'at least 3' or '3 or more', the favourable outcomes would be 3, 4, 5 and 6, giving 4/6 = 2/3. The other options fail: 1/3 (= 2/6) would count only two numbers, such as 5 and 6, which is 'greater than 4'; 1/4 and 1/5 are impossible for one throw of a die, because every such probability is a whole number of sixths (0, 1/6, 2/6, ... 6/6). Related results for one die: P(even number) = 3/6 = 1/2, P(prime number: 2, 3, 5) = 3/6 = 1/2, and P(multiple of 3: 3, 6) = 2/6 = 1/3. This 'denominator check' quickly removes impossible options in simple probability questions.
 
 Q 93 | math | Arithmetic
 What is the sum of two consecutive even numbers, the difference of whose squares is 84 ?
@@ -802,7 +802,7 @@ What is the sum of two consecutive even numbers, the difference of whose squares
 (3) 42
 (4) 46
 = 3
-~ For numbers n and n + 2: (n + 2)^2 − n^2 = 2(2n + 2) = 2 × (their sum). So the sum = 84/2 = 42 (the numbers are 20 and 22: 484 − 400 = 84).
+~ The sum is 42. Let the two consecutive even numbers be n and n + 2. The difference of their squares is (n + 2)² − n² = (n + 2 − n)(n + 2 + n) = 2 × (sum of the numbers). So 2 × sum = 84, which gives sum = 42. The numbers are 20 and 22: 22² − 20² = 484 − 400 = 84. This uses the identity a² − b² = (a − b)(a + b), where a − b = 2 for consecutive even (or consecutive odd) numbers. The other options fail: a sum of 34 means 16 and 18, whose squares differ by 68; 38 means 18 and 20 (difference 76); and 46 means 22 and 24 (difference 92). For consecutive natural numbers (difference 1), the difference of squares equals their sum itself, for example 11² − 10² = 121 − 100 = 21 = 11 + 10. Memory tip: difference of squares = difference of the numbers × their sum.
 
 Q 94 | math | Arithmetic
 What is the geometric mean of 4 and 16 ?
@@ -811,7 +811,7 @@ What is the geometric mean of 4 and 16 ?
 (3) 6
 (4) 8
 = 4
-~ Geometric mean of two numbers a and b = √(ab) = √(4 × 16) = √64 = 8.
+~ The geometric mean of 4 and 16 is 8. For two positive numbers a and b, the geometric mean (GM) is √(ab). So GM = √(4 × 16) = √64 = 8. It is the middle term of the geometric progression 4, 8, 16. Compare the three classic means: arithmetic mean (AM) = (4 + 16) ÷ 2 = 10, and harmonic mean (HM) = 2ab ÷ (a + b) = 128 ÷ 20 = 6.4. For positive numbers AM ≥ GM ≥ HM always holds (10 ≥ 8 ≥ 6.4), and for two numbers GM² = AM × HM (64 = 10 × 6.4). The other options fail: 2 is the common ratio of the progression 4, 8, 16, not a mean; 4 is just one of the given numbers; and 6 is neither the AM (10) nor the HM (6.4). Memory tip: GM of two numbers = square root of their product; for n numbers it is the nth root of the product, so the GM of 2, 4 and 8 is ∛64 = 4.
 
 Q 95 | math | Arithmetic
 The average of 30 numbers is 12. The average of the first 20 of them is 11 and that of the next 9 is 10. The last number is :
@@ -820,7 +820,7 @@ The average of 30 numbers is 12. The average of the first 20 of them is 11 and t
 (3) 50
 (4) 40
 = 3
-~ Total of all 30 = 30 × 12 = 360. First 20 total 20 × 11 = 220 and the next 9 total 9 × 10 = 90. Last number = 360 − 220 − 90 = 50.
+~ The last number is 50. Work with totals, not averages: total = average × count. All 30 numbers: 30 × 12 = 360. First 20: 20 × 11 = 220. Next 9: 9 × 10 = 90. These 29 numbers add up to 220 + 90 = 310, so the 30th (last) number = 360 − 310 = 50. Quick method using deviations from the overall average 12: the first 20 numbers average 1 below 12, a total shortfall of 20, and the next 9 average 2 below 12, a shortfall of 18. Total shortfall = 38, so the last number must make it up: 12 + 38 = 50. The other options fail: 60, 45 and 40 would make the total 370, 355 and 350, not 360. Trap: never average the averages (11 and 10) directly; groups of different sizes must be weighted by their counts. This deviation method is very fast for 'one number added or left out' questions, which appear often in the arithmetic part of state exams.
 
 Q 96 | math | Arithmetic
 The average of two numbers A and B is 20, that of B and C is 19 and of C and A is 21. What is the value of A ?
@@ -829,7 +829,7 @@ The average of two numbers A and B is 20, that of B and C is 19 and of C and A i
 (3) 22
 (4) 18
 = 3
-~ A + B = 40, B + C = 38 and C + A = 42. Adding: 2(A + B + C) = 120, so A + B + C = 60. A = 60 − (B + C) = 60 − 38 = 22.
+~ A = 22. Turn each average into a sum: A + B = 2 × 20 = 40, B + C = 2 × 19 = 38 and C + A = 2 × 21 = 42. Adding all three equations: 2(A + B + C) = 40 + 38 + 42 = 120, so A + B + C = 60. Then A = (A + B + C) − (B + C) = 60 − 38 = 22. In the same way, B = 60 − 42 = 18 and C = 60 − 40 = 20. The other options are traps: 18 is the value of B, 20 is the value of C (and also the first average), and 24 fits nothing. Shortcut: A = [(A + B) + (C + A) − (B + C)] ÷ 2 = (40 + 42 − 38) ÷ 2 = 44 ÷ 2 = 22. Trap: subtract the pair that does NOT contain A.
 
 Q 97 | math | Data Interpretation
 Find the sum of deviations of the variate values 3, 4, 6, 7, 8 and 14 from their mean ?
@@ -838,7 +838,7 @@ Find the sum of deviations of the variate values 3, 4, 6, 7, 8 and 14 from their
 (3) 4
 (4) 6
 = 1
-~ Mean = 42/6 = 7. Deviations: −4, −3, −1, 0, 1, 7, whose sum is 0. The sum of deviations of any data from their arithmetic mean is always zero.
+~ The sum of the deviations from the mean is 0. First find the mean: (3 + 4 + 6 + 7 + 8 + 14) ÷ 6 = 42 ÷ 6 = 7. The deviations from 7 are 3 − 7 = −4, 4 − 7 = −3, 6 − 7 = −1, 7 − 7 = 0, 8 − 7 = 1 and 14 − 7 = 7. They add up to −8 + 8 = 0. This is a general property of the arithmetic mean: Σ(x − x̄) = 0 for any data set, because the values above the mean exactly balance those below it. The other options (3, 4 and 6) are impossible, because the signed deviations always cancel; even the sum of absolute deviations here is 4 + 3 + 1 + 0 + 1 + 7 = 16, which is not an option either. Related property: the sum of squared deviations is least when taken about the mean, and the sum of absolute deviations is least about the median. Memory tip: deviations from the mean always cancel out.
 
 Q 98 | math | Arithmetic
 What is the mean of 1st 5 multiple of 7 ?
@@ -847,7 +847,7 @@ What is the mean of 1st 5 multiple of 7 ?
 (3) 14
 (4) 21
 = 4
-~ The first five multiples of 7 are 7, 14, 21, 28 and 35. Their sum is 105, so the mean = 105/5 = 21 (the middle term of this A.P.).
+~ The mean is 21. The first five multiples of 7 are 7, 14, 21, 28 and 35. Their sum is 105, so the mean = 105 ÷ 5 = 21. Quick method: these numbers form an A.P. with common difference 7, and the mean of an A.P. is simply the average of its first and last terms: (7 + 35) ÷ 2 = 21. With an odd number of terms it is also the middle term, 21. Another way: mean = 7 × (mean of 1, 2, 3, 4, 5) = 7 × 3 = 21. The other options fail: 14 is the 2nd multiple, 28 the 4th and 35 the 5th (the largest); none of them is the centre. Trap: the first multiple of 7 is 7 itself (7 × 1), not 0. General formula: the mean of the first n multiples of k is k(n + 1) ÷ 2. Here k = 7 and n = 5 give 7 × 6 ÷ 2 = 21. In the same way, the mean of the first 10 natural numbers is 11 ÷ 2 = 5.5.
 
 Q 99 | math | Data Interpretation
 Find out the algebraic sum of deviation of a set of P values from their mean :
@@ -856,7 +856,7 @@ Find out the algebraic sum of deviation of a set of P values from their mean :
 (3) P
 (4) P + 1
 = 2
-~ Σ(xᵢ − mean) = Σxᵢ − P × mean = Σxᵢ − Σxᵢ = 0, because mean = Σxᵢ/P. So the algebraic sum of deviations from the arithmetic mean is always zero.
+~ The algebraic sum of deviations from the mean is 0, whatever the number of values P. Proof: if the values are x₁, x₂, ..., xₚ with mean x̄, then x̄ = Σx ÷ P, so Σx = P × x̄. The sum of deviations is Σ(x − x̄) = Σx − P × x̄ = P × x̄ − P × x̄ = 0. 'Algebraic' sum means signs are kept: deviations above the mean are positive, those below are negative, and they cancel exactly. The options P − 1, P and P + 1 wrongly tie the answer to the number of values; the result depends neither on P nor on the data. Example: for 2, 5 and 8 the mean is 5 and the deviations are −3, 0 and +3, which add to 0. Related facts often asked: the sum of squared deviations is least about the mean; the sum of absolute deviations is least about the median; and if every value is increased by a constant c, the mean rises by c but the deviations do not change.
 
 Q 100 | math | Data Interpretation
 The median of the following data :
@@ -871,4 +871,4 @@ Class interval | Frequency
 (3) 50
 (4) 36
 = 1
-~ N = 100, so N/2 = 50. Cumulative frequencies: 8, 24, 60, 94, 100, so the median class is 20 – 30 (L = 20, cf = 24, f = 36, h = 10). Median = L + [(N/2 − cf)/f] × h = 20 + (26/36) × 10 = 20 + 7.22 = 27.22.
+~ The median is 27.22. For grouped data, median = L + [(N/2 − cf) ÷ f] × h. Step 1: N = 8 + 16 + 36 + 34 + 6 = 100, so N/2 = 50. Step 2: the cumulative frequencies are 8, 24, 60, 94 and 100. The first cumulative frequency to reach 50 is 60, so the median class is 20–30. Step 3: L = 20 (lower limit of the median class), cf = 24 (cumulative frequency of the class before it), f = 36 (frequency of the median class) and h = 10 (class width). Median = 20 + [(50 − 24) ÷ 36] × 10 = 20 + 260/36 = 20 + 7.22 = 27.22. The other options are traps: 24 is the cumulative frequency before the median class, 50 is N/2 (a position, not a value), and 36 is the frequency of the median class. Trap: use the cumulative frequency of the class BEFORE the median class, not of the median class itself. Quick sense check: the answer must lie inside the median class, between 20 and 30, and only 27.22 does.
