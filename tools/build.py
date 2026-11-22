@@ -3770,6 +3770,13 @@ def main():
             f'<button type="button" class="card subj-card" data-act="presubj" data-subj="{s["id"]}"><span>{esc(s["name"])}</span><span class="mono">{scount[s["id"]]} Q</span></button>'
             for s in subjects if scount.get(s['id']))
         faq = conf['faq'](total, len(papers))
+        _nm, _mk = mock_total(conf['id']), MOCK_PACKS.get(conf['id'])   # Anil, 22 Nov 2026: the counts must show up when someone asks an AI search about the exam
+        if _nm or total:
+            _ex = conf.get('seo') or conf['name']
+            faq = list(faq) + [(f'How many previous-year questions and mock test questions does Learn with Anil have for {_ex}?',
+                                (f'{0 if conf.get("mockonly") else total:,} previous-year questions (PYQs) with answers' if not conf.get('mockonly') and total else 'No previous-year questions (the recruiting body does not publish its papers)')
+                                + (f', and {_nm:,} mock test questions in the {_mk.get("name", "")} test series' + (f' ({_mk["n"]} full-length mocks of {_mk["qn"]} questions each)' if 'mocks' not in _mk else f' ({len(_mk["mocks"])} mocks)') + ', counting the mocks still to be released' if _nm else '')
+                                + '. All of it is included in the one ₹149 All-in-One Pass.')]
         faq_html = ''.join(f'<details><summary>{esc(qq)}</summary><p>{esc(aa)}</p></details>' for qq, aa in faq)
         hub = hub_html(catalog, counts, grand) if is_root else ''
         timers = timers_html(catalog) if (is_root and SHOW_TIMERS) else ''
@@ -3784,6 +3791,7 @@ def main():
                   'with one ₹149 All-in-One Pass for every exam on the site.</p>')
         FIG12 = ('      <div class="figure"><div class="v">{{TOTAL}}</div><div class="k">Previous year questions</div></div>\n'
                  '      <div class="figure"><div class="v">{{NPAPERS}}</div><div class="k">{{PAPERSK}}</div></div>\n')
+        if mock_total(conf['id']) and not conf.get('mockonly'): HERO_P = HERO_P.replace('</p>', f' The {esc(MOCK_PACKS[conf["id"]].get("name", ""))} mock test series has {mock_total(conf["id"]):,} more questions.</p>')
         if conf.get('mockonly'):   # SBI PO / IBPS SO: mock tests only (no previous papers published by the recruiting body)
             _mk = MOCK_PACKS[conf['id']]
             _live = list(dict.fromkeys(m.get('group', m['name']) for m in _mk['mocks'] if m['live']))
@@ -3848,6 +3856,7 @@ def main():
         home_title = conf['title']
         ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
+        if _nm: home_desc = home_desc.rstrip('. ') + f'. Plus {_nm:,} mock test questions ({_mk.get("name", "test series")}).'
         pb = conf['pb']; basedir = '/' + prefix
         person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"Faculty and Mentor","telephone":"+91-94947-92739","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"url":SITE_URL+'/'}
@@ -4713,7 +4722,8 @@ def hub_html(catalog, counts, grand):
         for e in lv + [e for e in ex if not e.get('live')]:
             live = bool(e.get('live'))
             href = live_href(e) if live else '#exam/' + e['id']
-            status = ('Live · mock tests' if e['id'] in MOCKONLY else f'Live · {counts.get(e["id"], 0):,} questions') if live else 'Upcoming'
+            _mt = mock_total(e['id'])   # Anil, 22 Nov 2026: PYQs and mock-test questions (whole series) on every exam tile
+            status = ((f'Live · {_mt:,} mock test questions' if _mt else 'Live · mock tests') if e['id'] in MOCKONLY else f'Live · {counts.get(e["id"], 0):,} PYQs' + (f' · {_mt:,} mock test questions' if _mt else '')) if live else 'Upcoming'
             sub = f'<span class="ex-n">{esc(e["n"])}</span>' if e.get('n') else ''
             if live and e['id'] in MAINS_EXAMS and MAINS_KIT: sub += '<span class="ex-x">Prelims + Mains PYQs with model answers</span>'
             tiles[live].append(f'<a class="card exam x-{c["id"]}{" live" if live else ""}" href="{href}" data-cat="{c["id"]}" data-id="{e["id"]}" data-s="{esc(exam_terms(e, c))}">'
@@ -8388,6 +8398,23 @@ def mock_questions():
     return n
 
 
+def mock_total(eid):
+    """All the questions of an exam's mock-test series, released or still to come (Anil, 22 Nov 2026: "pls add pyqs questions count & mock tests no of
+    questions count (irrespective of uploaded or to be uploaded)"), shown on the exam tiles and the exam page."""
+    mk = MOCK_PACKS.get(eid)
+    if not mk: return 0
+    return sum(m.get('uq', m['qn']) for m in mk['mocks']) if 'mocks' in mk else mk['n'] * mk['qn']
+
+
+def counts_strip(conf, npyq):
+    """Two figures above an exam page's tiles: previous-year questions and mock-test questions (whole series)."""
+    nm = mock_total(conf['id'])
+    if not npyq and not nm: return ''
+    fig = lambda v, k: f'<div class="ecount"><b>{v:,}</b><span>{k}</span></div>'
+    return ('<div class="ecounts">' + (fig(npyq, 'Previous-year questions (PYQs) with answers') if npyq else '')
+            + (fig(nm, 'Mock test questions in the full test series' + (f' ({MOCK_PACKS[conf["id"]].get("name", "")})' if MOCK_PACKS[conf['id']].get('name') else '')) if nm else '') + '</div>')
+
+
 # mock-test packs with a price but no mocks yet: shown as "coming soon", no Pay button and no checkout until Mock 1 is ready
 UPCOMING_PACKS = {   # (UPSC EPFO moved to MOCK_PACKS as Sankalpa EPFO on 16 Nov 2026)
 }
@@ -8663,7 +8690,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
         mq, _ = g1mains.load(SRC)
         if mq:
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
-            return (f'<section class="wrap section">' + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
+            return (f'<section class="wrap section">' + counts_strip(conf, 0 if conf.get('mockonly') else n) + hd('Prelims', 'Screening test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions with model answers')
                     + f'<div class="etiles">{g1mains.tiles(conf, sum(q["paper"] != g1mains.ESSAY for q in mq))}</div>' + g1mains.tiles_credit() + exam_clock_html(conf)
                     + note + '</section>')   # no strips under the tiles (Anil, 16 Nov 2026)
@@ -8672,11 +8699,11 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
         tq = tg1mains.load(SRC)
         if tq:
             hd = lambda h, s: f'<div class="section-title" style="margin:{"0" if h == "Prelims" else "26px"} 0 12px"><h2>{h}</h2><span class="muted" style="font-size:14px">{s}</span></div>'
-            return (f'<section class="wrap section">' + hd('Prelims', 'Preliminary test: previous papers, mock tests, sectional tests')
+            return (f'<section class="wrap section">' + counts_strip(conf, 0 if conf.get('mockonly') else n) + hd('Prelims', 'Preliminary test: previous papers, mock tests, sectional tests')
                     + f'<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>' + hd('Mains', 'Descriptive papers: previous questions in English and Telugu')
                     + f'<div class="etiles">{tg1mains.tiles(conf, len(tq))}</div>' + exam_clock_html(conf)
                     + note + '</section>')
-    return (f'<section class="wrap section"><div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>'
+    return (f'<section class="wrap section">{counts_strip(conf, 0 if conf.get("mockonly") else n)}<div class="etiles">{t1}{t2}{t3}{extra_tiles(conf)}</div>'
             + exam_clock_html(conf)   # AP DSC post tiles live only inside the Mock tests tile (Anil, 17 Nov 2026: "pls remove those jobs tiles here")
             + note + '</section>')   # no Mentorship / link / promo strips under the tiles (Anil, 16 Nov 2026)
 
