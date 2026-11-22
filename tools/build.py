@@ -8171,21 +8171,25 @@ MOCK_PACKS = {
   # agents), 6 mocks announced. Mock layout: ecs 1-13, nrr 14-25, bdv 26-39, emt 40-52, flu 53-68, ptd 69-83, apc 84-103, swm 104-118,
   # gel 119-134, eia 135-150. Private source /home/claude/hrt; ids start with "bk-" (any paid All-in-One Pass holder; no payments-script
   # change). Sealed files: src/appsc-aee-mocks/.
+  # Anil, 22 Nov 2026: "add mock tests for environment exam questions for appsc" -> chose Mocks 4-6 (Paper II), completing the series.
+  # Modelled on APPSC's 2025 AEE Paper II (his rule: mocks based on PYQs): same section weights and, like the real paper, about 14
+  # statement-conclusion, 10 assertion-reason and 9-10 match questions per mock; explanations 100-200 words. Each mock solved blind by
+  # an independent checker before release. Source /home/claude/hrt (m4-m6).
   'appsc-env-engineer': dict(id='bk-aeemk', name='Harita AEE', price=149, src='appsc-aee-mocks', dir='appsc-assistant-environmental-engineer', langs='English',
                              title='Harita AEE – APPSC Assistant Environmental Engineer Paper II (Common Subject) Mock Test Series',
                              summary='6 full-length mock tests for APPSC Assistant Environmental Engineer Paper II (Common Subject), 150 questions in 150 minutes, '
                                      'with an explanation for every answer. Each part of the syllabus can also be taken on its own as a sectional test.',
-                             about=['New questions written by Learn with Anil for this series, not copied from coaching material or previous papers. '
+                             about=['New questions written by Learn with Anil for this series, modelled on APPSC\'s 2025 AEE Paper II but not copied from it or from coaching material. '
                                     'Each mock follows the Notification 08/2026 Paper II (Common Subject) syllabus and is in English, as APPSC sets this paper: '
                                     'ecosystems 13, natural resources 12, biodiversity 14, engineering materials 13, fluid mechanics and hydraulics 16, '
                                     'process calculations and thermodynamics 15, air, water, soil and noise pollution and their control 20, solid and industrial '
                                     'waste 15, global environment, policies and laws 16, and EIA and sustainable development 16: 150 questions in 150 minutes.',
-                                    'Concept, statement, match-the-list and assertion–reason questions, with numericals in fluid mechanics, process calculations, '
+                                    'Concept, statement, statement–conclusion, match-the-list and assertion–reason questions (as in the 2025 paper), with numericals in fluid mechanics, process calculations, '
                                     'thermodynamics, materials and treatment-unit design, at degree level. Laws, rules and standards are as of November 2026. '
                                     'Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs one-third of a mark, '
                                     'so practise skipping blind guesses.',
                                     'APPSC\'s 2025 Paper I and Paper II are on the previous-papers page, in the same pass.'],
-                             mocks=[dict(id=f'bk-aeemk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3),   # Mocks 1-3 on 18 Nov 2026
+                             mocks=[dict(id=f'bk-aeemk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 6),   # Mocks 1-3 on 18 Nov 2026, Mocks 4-6 on 22 Nov 2026
                                          parts=[('eco', 'Ecology, Resources & Biodiversity', ['ecs', 'nrr', 'bdv']),
                                                 ('eng', 'Materials, Fluids & Thermodynamics', ['emt', 'flu', 'ptd']),
                                                 ('pol', 'Pollution Control & Waste', ['apc', 'swm']),

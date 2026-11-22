@@ -238,6 +238,30 @@
    "name": "LearnWithAnil-Harita-AEE-Mock-3-Mock-Test.pdf",
    "pages": 27
   },
+  "aeemk4": {
+   "bytes": 558652,
+   "file": "appsc-env-engineer-aeemk4-02952852ec.bin",
+   "key": "bk-appsc-env-engineer-aeemk4",
+   "mock": "bk-aeemk-4",
+   "name": "LearnWithAnil-Harita-AEE-Mock-4-Mock-Test.pdf",
+   "pages": 36
+  },
+  "aeemk5": {
+   "bytes": 591541,
+   "file": "appsc-env-engineer-aeemk5-cdf2b20b36.bin",
+   "key": "bk-appsc-env-engineer-aeemk5",
+   "mock": "bk-aeemk-5",
+   "name": "LearnWithAnil-Harita-AEE-Mock-5-Mock-Test.pdf",
+   "pages": 38
+  },
+  "aeemk6": {
+   "bytes": 607578,
+   "file": "appsc-env-engineer-aeemk6-8e9ad789a1.bin",
+   "key": "bk-appsc-env-engineer-aeemk6",
+   "mock": "bk-aeemk-6",
+   "name": "LearnWithAnil-Harita-AEE-Mock-6-Mock-Test.pdf",
+   "pages": 40
+  },
   "v25c": {
    "bytes": 429008,
    "file": "appsc-env-engineer-v25c-812361e6ec.bin",

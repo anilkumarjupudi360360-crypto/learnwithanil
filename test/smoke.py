@@ -468,7 +468,7 @@ async def main():
             if not any(f.startswith(f'bk-anmk-{_n}-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-analyst-grade-2', 'mk'))): errors.append(f'appsc-analyst-grade-2/mk: sealed bk-anmk-{_n} missing')
         aee = open(os.path.join(SITE, 'appsc-assistant-environmental-engineer', 'mock-test.html'), encoding='utf-8').read()   # Harita AEE (APPSC AEE Paper II), live since 18 Nov 2026
         if 'Harita AEE' not in aee or '?buy=mock' in aee: errors.append('appsc-assistant-environmental-engineer/mock-test.html: should show the Harita AEE series in the All-in-One Pass')
-        for _n in range(1, 4):
+        for _n in range(1, 7):   # Mocks 4-6 live since 22 Nov 2026
             if not any(f.startswith(f'bk-aeemk-{_n}-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-assistant-environmental-engineer', 'mk'))): errors.append(f'appsc-assistant-environmental-engineer/mk: sealed bk-aeemk-{_n} missing')
         amv = open(os.path.join(SITE, 'appsc-amvi', 'mock-test.html'), encoding='utf-8').read()   # Chakra AMVI (APPSC AMVI Paper II), live since 22 Nov 2026
         if 'Chakra AMVI' not in amv or '?buy=mock' in amv: errors.append('appsc-amvi/mock-test.html: should show the Chakra AMVI series in the All-in-One Pass')
