@@ -473,6 +473,12 @@ async def main():
         amv = open(os.path.join(SITE, 'appsc-amvi', 'mock-test.html'), encoding='utf-8').read()   # Chakra AMVI (APPSC AMVI Paper II), live since 22 Nov 2026
         if 'Chakra AMVI' not in amv or '?buy=mock' in amv: errors.append('appsc-amvi/mock-test.html: should show the Chakra AMVI series in the All-in-One Pass')
         if not any(f.startswith('bk-amvimk-1-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-amvi', 'mk'))): errors.append('appsc-amvi/mk: sealed bk-amvimk-1 missing')
+        for _d, _ids in (('ap-police-si', ('bk-apsimk-1a', 'bk-apsimk-1b')), ('ap-police-constable', ('bk-appcmk-1',))):   # Mission Khaki AP, live since 22 Nov 2026 (Mock 1 free)
+            _t = open(os.path.join(SITE, _d, 'mock-test.html'), encoding='utf-8').read()
+            if 'Mission Khaki AP' not in _t or '?buy=mock' in _t: errors.append(f'{_d}/mock-test.html: should show the Mission Khaki AP series in the All-in-One Pass')
+            for _m in _ids:
+                if f'?mock={_m}' not in _t: errors.append(f'{_d}/mock-test.html: no link to {_m}')
+                if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, _d, 'mk'))): errors.append(f'{_d}/mk: sealed {_m} missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:

@@ -132,6 +132,14 @@
    "key": "bk-ap-police-constable-a2023pc",
    "name": "LearnWithAnil-AP-Police-Constable-Prelims-2023-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 41
+  },
+  "appcmk1": {
+   "bytes": 1882967,
+   "file": "ap-police-constable-appcmk1-55aa321120.bin",
+   "key": "bk-ap-police-constable-appcmk1",
+   "mock": "bk-appcmk-1",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Constable-Mock-1-Mock-Test.pdf",
+   "pages": 95
   }
  },
  "ap-police-si": {
@@ -148,6 +156,22 @@
    "key": "bk-ap-police-si-a2023s2",
    "name": "LearnWithAnil-AP-Police-SI-Prelims-2023-Paper-2-Prelims-Paper-II-General-Studies-Question-Paper.pdf",
    "pages": 24
+  },
+  "apsimk1a": {
+   "bytes": 1017922,
+   "file": "ap-police-si-apsimk1a-ea92908df4.bin",
+   "key": "bk-ap-police-si-apsimk1a",
+   "mock": "bk-apsimk-1a",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Mock-1-Paper-I-Arithmetic-Reasoning-Mock-Test.pdf",
+   "pages": 45
+  },
+  "apsimk1b": {
+   "bytes": 1243536,
+   "file": "ap-police-si-apsimk1b-8e5dcfbccf.bin",
+   "key": "bk-ap-police-si-apsimk1b",
+   "mock": "bk-apsimk-1b",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Mock-1-Paper-II-General-Studies-Mock-Test.pdf",
+   "pages": 64
   }
  },
  "appsc-amvi": {

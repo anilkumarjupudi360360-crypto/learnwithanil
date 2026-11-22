@@ -64,6 +64,8 @@ MOCK_NOTE = {   # series not made of new questions only: what the booklet's note
     'appsc-eo': 'Built from real APPSC questions (EO Grade-III, AMVI and other APPSC papers) with APPSC\'s official answers, mixed in the proportions APPSC asks',
     'appsc-group-2': 'History, Geography and Mental Ability are real questions from APPSC\'s other papers with the official answers; Indian Society and Current Affairs are new questions written by Learn with Anil',
     'appsc-amvi': 'New questions written by Learn with Anil, each built on a concept APPSC asked in its AMVI Paper II papers of 2019, 2023 and 2026 (the explanation names that previous question)',
+    'ap-police-si': 'Built from real police exam questions (Telangana Police SI papers with TSLPRB\'s official keys, Learn with Anil\'s Mission Khaki questions and APPSC questions on Andhra history) plus new Andhra Pradesh questions, in SLPRB AP\'s pattern',
+    'ap-police-constable': 'Built from real police exam questions (Telangana Police Constable papers with TSLPRB\'s official keys and Learn with Anil\'s Mission Khaki questions) plus new Andhra Pradesh questions, in SLPRB AP\'s pattern',
 }
 
 MOCK_NOTE_ID = {   # single mocks built differently from the rest of their series (keyed by mock id; overrides MOCK_NOTE)

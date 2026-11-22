@@ -5154,6 +5154,12 @@ def FAQ_AP(post):
           (f'Are the {name} questions available in Telugu?',
            'Yes. Every question that the booklet printed in Telugu is here exactly as printed. Tap తెలుగు at the top of the page to practise in Telugu.'
            + ('' if si else ' The English-language questions are printed in English only, as in the real paper.')),
+          (f'Is there an {name} mock test series?',   # Mission Khaki AP, 22 Nov 2026
+           ('Yes: Mission Khaki AP, 10 full-length SI Prelims mocks, each with Paper I Arithmetic & Reasoning and Paper II General Studies (100 questions, 3 hours each), '
+            if si else
+            'Yes: Mission Khaki AP – Constable, 10 full-length Constable Prelims mocks of 200 questions in 3 hours (English, Arithmetic, Reasoning and General Studies), ')
+           + 'in English and Telugu with an explanation for every answer, built on Telangana Police papers with their official keys, Learn with Anil\'s Mission Khaki '
+             'questions and new Andhra Pradesh questions. Mock 1 is free for registered students; the others are in the ₹149 All-in-One Pass.'),
         ]
     return faq
 
@@ -7932,6 +7938,53 @@ MOCK_PACKS = {
                   mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 5), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
+  # Anil, 22 Nov 2026: "use tg SI & constable questions to....start a test series for ap SI & Constable....and add questions from exiting
+  # question bank and ...if required make new ones". Chose the name "Mission Khaki AP" (same family as the TG series), Mock 1 free for
+  # registered students (FREE_MOCKS in the payments script) and writer + independent blind-checker helper agents. Each mock follows SLPRB AP's
+  # 2023 Preliminary Written Test pattern. Questions: TSLPRB SI/Constable papers (final keys; explanation names the paper and question),
+  # Mission Khaki (TS) mock questions, APPSC Group-II Andhra-history questions, and new Andhra Pradesh questions; nothing Telangana-specific.
+  # Private source /home/claude/apmk (tools/select.py, merge.py); ids start with "bk-" (any paid All-in-One Pass holder).
+  'ap-police-si': dict(id='bk-apsimk', name='Mission Khaki AP', price=149, src='ap-police-si-mocks', dir='ap-police-si', langs='English &amp; Telugu',
+                       title='Mission Khaki AP – AP Police SI Prelims Test Series (Paper I & Paper II)',
+                       summary='10 full-length AP Police SI Preliminary mock tests in SLPRB\'s pattern, each with Paper I Arithmetic & Reasoning '
+                               '(100 questions, 3 hours) and Paper II General Studies (100 questions, 3 hours), in English and Telugu, with an '
+                               'explanation for every answer. Every section can also be taken on its own as a sectional test.',
+                       about=['Built on real police exam questions: Telangana Police (TSLPRB) SI papers with their official final keys, '
+                              'Learn with Anil\'s own Mission Khaki mock questions and APPSC questions on Andhra history, plus new questions on '
+                              'Andhra Pradesh geography, economy and schemes. Each real question\'s explanation says which paper it came from. '
+                              'Nothing Telangana-specific is asked.',
+                              'Paper I: Arithmetic 55 and Reasoning & Mental Ability 45. Paper II: General Science 18, Current Affairs 25 '
+                              '(2025–26), Indian History 15, Andhra Pradesh 8, Indian Polity 12, Indian Economy 9 and Geography 13, as in SLPRB\'s '
+                              '2023 SI Preliminary Written Test.',
+                              'Every question is in English and Telugu, with a 100–200-word explanation in both. Your score, accuracy and topic-wise '
+                              'analysis come after each paper. Mock 1 is free: register once and take it. The real AP SI 2023 papers are on the '
+                              'previous-papers page.'],
+                       mocks=[m for i in range(1, 11) for m in (
+                           dict(id=f'bk-apsimk-{i}a', name=f'Mock {i} · Paper I (Arithmetic & Reasoning)', group=f'Mock {i}', qn=100, mins=180,
+                                live=(i == 1), free=(i == 1),   # Mock 1 on 22 Nov 2026
+                                parts=[('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning & Mental Ability', ['rea'])]),
+                           dict(id=f'bk-apsimk-{i}b', name=f'Mock {i} · Paper II (General Studies)', group=f'Mock {i}', qn=100, mins=180,
+                                live=(i == 1), free=(i == 1),
+                                parts=[('sci', 'General Science', ['sci']), ('cur', 'Current Affairs', ['cur']), ('his', 'History & Andhra Pradesh', ['ih', 'ap']),
+                                       ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']), ('geo', 'Geography', ['geo'])]))]),
+  'ap-police-constable': dict(id='bk-appcmk', name='Mission Khaki AP – Constable', price=149, src='ap-police-constable-mocks', dir='ap-police-constable',
+                       langs='English &amp; Telugu',
+                       title='Mission Khaki AP – Constable: AP Police Constable Prelims Test Series',
+                       summary='10 full-length AP Police Constable Preliminary mock tests in SLPRB\'s pattern, 200 questions in 3 hours (English 30, '
+                               'Arithmetic 23, Reasoning 22, General Studies 125), in English and Telugu, with an explanation for every answer. '
+                               'Each section can also be taken on its own as a sectional test.',
+                       about=['Built on real police exam questions: Telangana Police (TSLPRB) Constable papers with their official final keys and '
+                              'Learn with Anil\'s own Mission Khaki mock questions, plus new questions on Andhra Pradesh geography, economy and '
+                              'schemes. Each real question\'s explanation says which paper it came from. Nothing Telangana-specific is asked.',
+                              'Each mock: English 30 (in English only, as in the real exam), Arithmetic 23, Reasoning & Mental Ability 22, General '
+                              'Science 30, Indian History 20, Andhra Pradesh 15, Geography 10, Indian Polity 15, Indian Economy 10 and Current '
+                              'Affairs 25 (2025–26), as in SLPRB\'s 2023 Constable Preliminary Written Test, at Intermediate level.',
+                              'Every other question is in English and Telugu, with a 100–200-word explanation in both. Your score, accuracy and '
+                              'topic-wise analysis come after each mock. Mock 1 is free: register once and take it. Writing the SI exam too? '
+                              'Mission Khaki AP (SI) is in the same All-in-One Pass.'],
+                       mocks=[dict(id=f'bk-appcmk-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i == 1), free=(i == 1),   # Mock 1 on 22 Nov 2026
+                                   parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
+                                          ('gs', 'General Studies', ['sci', 'ih', 'ap', 'geo', 'pol', 'eco', 'cur'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
   # Ids start with "bk-" so the payments script gives the keys to any paid All-in-One Pass holder (no script change); 'dir' = the exam folder.
   'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 3 mocks (6 papers) are available now', price=149, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
