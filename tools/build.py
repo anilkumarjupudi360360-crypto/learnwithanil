@@ -951,8 +951,11 @@ GCC_SUBJECTS = [
   ('qa', 'Quantitative Aptitude', 'quantitative-aptitude', ['Number System & Simplification', 'Arithmetic', 'Algebra, Geometry & Mensuration']),
   ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Usage & Sentence Correction', 'Comprehension']),
   ('guj', 'Gujarati', 'gujarati', ['Grammar', 'Vocabulary & Usage', 'Literature & Writers', 'Translation & Comprehension']),
+  # General Awareness & Current Affairs: new in CCE 2.0 (none in the 2024 papers); used by the Girnar CCE mocks (22 Nov 2026)
+  ('ga', 'General Awareness & Current Affairs', 'general-awareness', ['Gujarat History & Culture', 'Gujarat Geography & Economy',
+                                                                      'Indian Polity & History', 'Geography, Economy & Science', 'Current Affairs']),
 ]
-GCC_SUBJ_GU = {'rea': 'તાર્કિક કસોટી (રિઝનિંગ)', 'qa': 'ગાણિતિક ક્ષમતા', 'eng': 'અંગ્રેજી', 'guj': 'ગુજરાતી'}
+GCC_SUBJ_GU = {'rea': 'તાર્કિક કસોટી (રિઝનિંગ)', 'qa': 'ગાણિતિક ક્ષમતા', 'eng': 'અંગ્રેજી', 'guj': 'ગુજરાતી', 'ga': 'સામાન્ય જ્ઞાન અને વર્તમાન પ્રવાહો'}
 
 
 def FAQ_GCC(total, npapers):
@@ -973,8 +976,10 @@ def FAQ_GCC(total, npapers):
        'Yes. Tap ગુજરાતી at the top of the page: the Reasoning and Quantitative Aptitude questions show in Gujarati as GSSSB printed them, the Gujarati section is in '
        'Gujarati and the English section in English, and every explanation is in Gujarati and English.'),
       ('Is there a GSSSB CCE mock test?',
-       'Yes. Every paper here can be taken as a full 100-question mock test with the real 60-minute limit and negative marking, and the sectional tests take all the '
-       'previous questions of one subject, such as Reasoning or Gujarati. Answers and explanations open with the ₹149 All-in-One Pass, which covers every exam on the site.'),
+       'Yes. Girnar CCE is Learn with Anil\'s GSSSB CCE 2.0 Prelims mock test series: full 150-question mocks in the new pattern (Reasoning 60, Quantitative '
+       'Aptitude 30, General Awareness & Current Affairs 30, English 15, Gujarati 15; 120 minutes), built on the question types of GSSSB\'s own previous papers, '
+       'in Gujarati and English with explanations; each section can also be taken as a sectional test. Every previous paper here can also be taken as a full '
+       '100-question test with its real 60-minute limit. Everything opens with the ₹149 All-in-One Pass, which covers every exam on the site.'),
       ('What is the last date to apply for GSSSB CCE 2.0?',
        'Online applications on ojas.gujarat.gov.in are open from 5 November (2 pm) to 30 November 2026 (11.59 pm), and the fee must be paid by 2 December 2026. '
        'The advertisement (No. 468/2026-27) has 1,237 posts: 243 Group-A posts (Senior Clerk, Head Clerk, Social Welfare Inspector, Sub Registrar and others) and '
@@ -6511,7 +6516,7 @@ LANDINGS = {
             '<p lang="gu">જીએસએસએસબી સંયુક્ત સ્પર્ધાત્મક પરીક્ષા (ગ્રુપ-A અને ગ્રુપ-B) ના અગાઉના પ્રશ્નપત્રો (2024) આખરી જવાબો સાથે — રિઝનિંગ, ગણિત, અંગ્રેજી, ગુજરાતી; '
             'ગુજરાતી અને અંગ્રેજીમાં સમજૂતી.</p>'
             '<p class="note">GSSSB CCE 2.0: <a href="/gsssb-cce-notification-2026.html">1,237 posts (Advt. 468/2026-27), apply by 30 November 2026</a>. '
-            'Full papers with a 60-minute timer: <a href="/gsssb-cce/mock-test.html">GSSSB CCE mock test</a>.</p>',
+            'New-pattern mocks (150 questions, 120 minutes) built on these papers: <a href="/gsssb-cce/mock-test.html">Girnar CCE, the GSSSB CCE mock test series</a>.</p>',
       te={'GSSSB CCE': 'જીએસએસએસબી સીસીઈ પ્રશ્નપત્રો'},
       order=lambda c: 0),  'upsssc-pyqs.html': dict(   # Anil, 15 Nov 2026: UP exams, starting with the UPSSSC Inter level Mains
       board='UPSSSC', ename='UPSSSC', crumb='UPSSSC PYQs', lang='hi',
@@ -8218,6 +8223,32 @@ MOCK_PACKS = {
                                         ('chs', 'Chassis & Transmission', ['chs']),
                                         ('thm', 'Thermodynamics, Mechanics & Materials', ['thm', 'mec', 'mfg', 'flu']),
                                         ('ele', 'Auto Electricals, Alternative Fuels & Testing', ['ael', 'emv', 'mva'])]) for i in range(1, 11)]),
+  # Anil, 22 Nov 2026: "pls start mock test series for gujarat exam...and 2 tests". Chose the name "Girnar CCE", new questions on GSSSB's
+  # PYQ topics (his standing rule of 22 Nov 2026: mock questions must be based on the exam's PYQs: every question is modelled on a question
+  # type of GSSSB's CCE 2024 papers on this site, with new numbers and content) and writer + independent blind-checker helper agents.
+  # GSSSB CCE 2.0 Preliminary (Advt. 468/2026-27): 150 questions, 150 marks, 120 minutes, 0.25 cut per wrong answer: Reasoning 60 (Q1-60),
+  # Quantitative Aptitude 30 (61-90), General Awareness & Current Affairs 30 (91-120), English 15 (121-135, English only), Gujarati 15
+  # (136-150, Gujarati only). Explanations 100-200 words in English and Gujarati. Private source /home/claude/gjm; ids start with "bk-"
+  # (any paid All-in-One Pass holder; no payments-script change). Sealed files and figure PNGs: src/gsssb-cce-mocks/.
+  'gsssb-cce': dict(id='bk-gccmk', name='Girnar CCE', price=149, src='gsssb-cce-mocks', dir='gsssb-cce', langs='English &amp; Gujarati',
+                    title='Girnar CCE – GSSSB CCE 2.0 Prelims Mock Test Series (Gujarati & English)',
+                    summary='10 full-length GSSSB CCE 2.0 Preliminary mock tests in the new pattern, 150 questions in 120 minutes (Reasoning 60, '
+                            'Quantitative Aptitude 30, General Awareness & Current Affairs 30, English 15, Gujarati 15), in Gujarati and English, '
+                            'with an explanation for every answer. Every section can also be taken on its own as a sectional test.',
+                    about=['Built on GSSSB\'s own previous papers: every Reasoning, Quantitative Aptitude, English and Gujarati question follows a '
+                           'question type GSSSB set in its CCE 2024 Preliminary papers (on the previous-papers page, in the same pass), with new '
+                           'numbers and content, so the mocks drill what GSSSB repeats. General Awareness, new in CCE 2.0, follows the Gujarat and '
+                           'India GK that GSSSB and GPSSB papers keep asking, with current affairs from November 2025 onwards.',
+                           'Each mock follows the CCE 2.0 Preliminary pattern of Advt. No. 468/2026-27: Reasoning 60 (verbal and non-verbal reasoning, '
+                           'puzzles, data interpretation), Quantitative Aptitude 30, General Awareness & Current Affairs 30, English 15 and Gujarati 15: '
+                           '150 questions, 150 marks, 120 minutes.',
+                           'Reasoning, Quantitative Aptitude and General Awareness are in Gujarati and English; the English section is in English only and '
+                           'the Gujarati section in Gujarati only, as GSSSB prints them. Every answer has an explanation in Gujarati and English. In the real '
+                           'exam a wrong answer costs 0.25 mark, so practise skipping blind guesses. Your score, accuracy and topic-wise analysis come after each mock.'],
+                    mocks=[dict(id=f'bk-gccmk-{i}', name=f'Mock {i}', qn=150, mins=120, live=(i <= 2),   # Mocks 1-2 on 22 Nov 2026
+                                parts=[('rea', 'Reasoning', ['rea']), ('qa', 'Quantitative Aptitude', ['qa']),
+                                       ('ga', 'General Awareness & Current Affairs', ['ga']), ('eng', 'English', ['eng']),
+                                       ('guj', 'Gujarati', ['guj'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',

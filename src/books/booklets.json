@@ -601,6 +601,22 @@
    "name": "LearnWithAnil-GSSSB-CCE-Prelims-2024-Paper-71-Question-Paper.pdf",
    "orig": 2,
    "pages": 82
+  },
+  "gccmk1": {
+   "bytes": 1614620,
+   "file": "gsssb-cce-gccmk1-91fcbd56e9.bin",
+   "key": "bk-gsssb-cce-gccmk1",
+   "mock": "bk-gccmk-1",
+   "name": "LearnWithAnil-Girnar-CCE-Mock-1-Mock-Test.pdf",
+   "pages": 62
+  },
+  "gccmk2": {
+   "bytes": 1605071,
+   "file": "gsssb-cce-gccmk2-9b1173fd7f.bin",
+   "key": "bk-gsssb-cce-gccmk2",
+   "mock": "bk-gccmk-2",
+   "name": "LearnWithAnil-Girnar-CCE-Mock-2-Mock-Test.pdf",
+   "pages": 60
   }
  },
  "ibps-rrb": {
