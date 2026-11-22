@@ -63,6 +63,7 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
 MOCK_NOTE = {   # series not made of new questions only: what the booklet's note says instead
     'appsc-eo': 'Built from real APPSC questions (EO Grade-III, AMVI and other APPSC papers) with APPSC\'s official answers, mixed in the proportions APPSC asks',
     'appsc-group-2': 'History, Geography and Mental Ability are real questions from APPSC\'s other papers with the official answers; Indian Society and Current Affairs are new questions written by Learn with Anil',
+    'appsc-amvi': 'New questions written by Learn with Anil, each built on a concept APPSC asked in its AMVI Paper II papers of 2019, 2023 and 2026 (the explanation names that previous question)',
 }
 
 

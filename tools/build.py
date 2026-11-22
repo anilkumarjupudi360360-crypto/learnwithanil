@@ -5077,7 +5077,12 @@ def FAQ_AMVI(state):
           (f'Are the {name} questions available in Telugu?',
            'Yes. Paper I is printed in English and Telugu, and every question is here as printed; tap తెలుగు at the top of the page to practise in Telugu. Paper II (Automobile Engineering) is printed in English only.'),
           (f'Is there a {name} mock test?',
-           'Yes. Open the mock test page and take a real AMVI paper with a timer, or tap Create a quiz to choose subjects such as IC Engines, Brakes, the Motor Vehicles Act or Current Affairs. You get your score, the answer and an explanation for every question.'),
+           ('Yes: <a href="/appsc-amvi/mock-test.html">Chakra AMVI</a>, Learn with Anil\'s test series for Paper II (Automobile Engineering): full-length mocks of 150 new questions '
+            'in 150 minutes, each built on a concept from APPSC\'s AMVI previous papers, in English with an explanation for every answer, and each part (IC engines; chassis and '
+            'transmission; thermodynamics, mechanics and materials; auto electricals) also as a sectional test. It is included in the same ₹149 All-in-One Pass. '
+            'You can also take a real AMVI paper with a timer from the mock test page.'   # Chakra AMVI, 22 Nov 2026
+            if ap else
+            'Yes. Open the mock test page and take a real AMVI paper with a timer, or tap Create a quiz to choose subjects such as IC Engines, Brakes, the Motor Vehicles Act or Current Affairs. You get your score, the answer and an explanation for every question.')),
           ('Do I need to register?',
            'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
           ('Which questions are left out?',
@@ -8185,6 +8190,30 @@ MOCK_PACKS = {
                                                 ('eng', 'Materials, Fluids & Thermodynamics', ['emt', 'flu', 'ptd']),
                                                 ('pol', 'Pollution Control & Waste', ['apc', 'swm']),
                                                 ('law', 'Laws, Conventions & EIA', ['gel', 'eia'])]) for i in range(1, 7)]),
+  # Anil, 22 Nov 2026 (12:22 IST): "start test series for appsc AVMI ...and add one test", then "based on pyqs". He chose Paper II
+  # (Automobile Engineering) and the name "Chakra AMVI" (chakra = wheel). Every question is new but built on a concept from APPSC's AMVI
+  # Paper II PYQs (2026, 2023, 2019; TGPSC 2023 as a second reference), with the topic mix of those papers: thm 16, ice 58, chs 40,
+  # ael 7, mec 20, mfg 6, flu/emv/mva 1 each. 10 writer + 10 independent blind-checker helper agents. Private source /home/claude/cak;
+  # ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change). Sealed files: src/appsc-amvi-mocks/.
+  'appsc-amvi': dict(id='bk-amvimk', name='Chakra AMVI', price=149, src='appsc-amvi-mocks', dir='appsc-amvi', langs='English',
+                     title='Chakra AMVI – APPSC Assistant Motor Vehicle Inspector Paper II (Automobile Engineering) Mock Test Series',
+                     summary='10 full-length mock tests for APPSC AMVI Paper II Automobile Engineering, 150 questions in 150 minutes, '
+                             'with an explanation for every answer. Each part of the syllabus can also be taken on its own as a sectional test.',
+                     about=['Built on APPSC\'s own AMVI Paper II papers of 2019, 2023 and 2026: every question is new, but each one tests a concept '
+                            'APPSC has already asked, in the same style, and its explanation names the previous question it comes from. '
+                            'The real papers themselves are on the previous-papers page, in the same pass.',
+                            'Each mock follows the topic mix of those papers: IC engines, fuels and emissions 58, automobile chassis and transmission 40 '
+                            '(clutch and gearbox, drive line, brakes, steering and suspension, wheels and tyres), engineering mechanics and machine design 20, '
+                            'thermodynamics and refrigeration 16, automotive electricals 7, materials, manufacturing and metrology 6, and one question each '
+                            'on fluid mechanics, alternative fuels and vehicle testing: 150 questions in 150 minutes.',
+                            'Direct concept, statement, match-the-list and assertion–reason questions with short numericals, at diploma level, in English as '
+                            'APPSC sets Paper II. Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs '
+                            'one-third of a mark, so practise skipping blind guesses.'],
+                     mocks=[dict(id=f'bk-amvimk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i == 1),   # Mock 1 on 22 Nov 2026
+                                 parts=[('eng', 'IC Engines, Fuels & Emissions', ['ice']),
+                                        ('chs', 'Chassis & Transmission', ['chs']),
+                                        ('thm', 'Thermodynamics, Mechanics & Materials', ['thm', 'mec', 'mfg', 'flu']),
+                                        ('ele', 'Auto Electricals, Alternative Fuels & Testing', ['ael', 'emv', 'mva'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',

@@ -126,6 +126,16 @@
    "pages": 24
   }
  },
+ "appsc-amvi": {
+  "amvimk1": {
+   "bytes": 580124,
+   "file": "appsc-amvi-amvimk1-b16c3106dc.bin",
+   "key": "bk-appsc-amvi-amvimk1",
+   "mock": "bk-amvimk-1",
+   "name": "LearnWithAnil-Chakra-AMVI-Mock-1-Mock-Test.pdf",
+   "pages": 38
+  }
+ },
  "appsc-analyst": {
   "anmk1": {
    "bytes": 466575,
