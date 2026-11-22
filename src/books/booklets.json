@@ -1351,6 +1351,22 @@
    "name": "LearnWithAnil-Mission-Khaki-Mock-5-Mock-Test.pdf",
    "pages": 70
   },
+  "mksi6": {
+   "bytes": 1121858,
+   "file": "ts-police-si-mksi6-b66866b799.bin",
+   "key": "bk-ts-police-si-mksi6",
+   "mock": "mk-si-6",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-6-Mock-Test.pdf",
+   "pages": 55
+  },
+  "mksi7": {
+   "bytes": 1109601,
+   "file": "ts-police-si-mksi7-6e4d90e63b.bin",
+   "key": "bk-ts-police-si-mksi7",
+   "mock": "mk-si-7",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-7-Mock-Test.pdf",
+   "pages": 54
+  },
   "s2022": {
    "bytes": 1285937,
    "file": "ts-police-si-s2022-c49d923cbd.bin",
