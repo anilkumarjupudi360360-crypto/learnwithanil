@@ -674,5 +674,46 @@
    "appsc-env-engineer"
   ],
   "free": "/LearnWithAnil-Environmental-Science-APPSC-AEE-Paper-2-Free-Sample.pdf"
+ },
+ {
+  "id": "dscms-en",
+  "lang": "en",
+  "vol": null,
+  "series": "AP DSC 2026 · Secondary Grade Teacher (SGT)",
+  "subject": "SGT Micro-Syllabus",
+  "title": "AP DSC 2026 SGT Micro-Syllabus with Mega DSC 2025 Questions Mapped",
+  "title_en": "AP DSC 2026 SGT Micro-Syllabus with Mega DSC 2025 Questions Mapped",
+  "subtitle": "The official SCERT DSC-2026 syllabus for Secondary Grade Teachers split into 271 micro-topics you can tick off, with what to study in each one and 861 Mega DSC 2025 questions placed under the topic they came from: GK and current affairs, Perspectives in Education, Educational Psychology, Telugu, English, Mathematics, Science and Social Studies with their methodologies",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "AP DSC 2026 SGT Micro-Syllabus with Mega DSC 2025 Questions Mapped (English Medium)",
+  "pages": 40,
+  "chapters": [
+   "Part I · General Knowledge & Current Affairs",
+   "Part II · Perspectives in Education",
+   "Part III · Educational Psychology",
+   "Part IV · Telugu (Language-I): content & methodology",
+   "Part V · English (Language-II): content & methodology",
+   "Part VI · Mathematics: content & methodology",
+   "Part VII · Science: content & methodology",
+   "Part VIII · Social Studies: content & methodology"
+  ],
+  "pyqs": 861,
+  "price": 45,
+  "syllabus": "AP DSC 2026 (APTRT-2026) · SGT: GK 8, Perspectives 4, Psychology 8, Content & Methodology 60 (Telugu, English, Maths, Science, Social) · 160 questions, 80 marks",
+  "badge": "AP DSC SGT",
+  "subject_label": "SGT Micro-Syllabus",
+  "chapters_label": "8 parts of the official SCERT DSC-2026 SGT syllabus · 271 micro-topics · 861 Mega DSC 2025 questions mapped · ★ topics asked 3+ times",
+  "product_en": "AP DSC 2026 SGT Micro-Syllabus with Mega DSC 2025 Questions Mapped (English Medium)",
+  "cover": "notes-dscms-en-cover.jpg",
+  "samples": [
+   "notes-dscms-en-p1.jpg",
+   "notes-dscms-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "ap-dsc"
+  ],
+  "free": "/LearnWithAnil-AP-DSC-2026-SGT-Micro-Syllabus-Free-Sample.pdf"
  }
 ]

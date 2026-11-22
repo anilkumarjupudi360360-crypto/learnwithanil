@@ -3243,6 +3243,17 @@ def exam_confs():
       dict(id='ap-dsc', dir='ap-dsc', src='ap-dsc', key='ap-dsc', name='AP DSC (Teacher Recruitment Test)',
            short='AP DSC', seo='AP DSC', slugp='ap-dsc', papers=DSC_PAPERS, subjects=DSC_SUBJECTS, faq=FAQ_DSC,
            board='AP DSC', l2=L2_TE, pb='/ap-dsc/', keyname="the School Education Department's final key", keyshort='the official final keys', bits=True,
+           notes_title='Study material for AP DSC 2026',   # Anil, 22 Nov 2026: "Publish it" (book dscms-en, the SGT micro-syllabus)
+           notes_seo=('AP DSC 2026 SGT Micro-Syllabus – Topic-wise SCERT Syllabus with Mega DSC 2025 Questions Mapped (Free Sample PDF) | Learn with Anil',
+                      'AP DSC 2026 SGT micro-syllabus by Jupudi Anil Kumar: the official SCERT DSC-2026 syllabus for Secondary Grade Teachers split into 271 '
+                      'micro-topics, with what to study in each and 861 Mega DSC 2025 questions mapped to the topic they came from. Free sample PDF.'),
+           notes_lede=('Know exactly what to study for the SGT paper. This book by Jupudi Anil Kumar takes the official SCERT DSC-2026 Suggestive Syllabus for '
+                       'Secondary Grade Teachers, word for word, and splits all eight parts (GK and current affairs, Perspectives in Education, Educational '
+                       'Psychology, Telugu, English, Mathematics, Science and Social Studies with their methodologies) into 271 micro-topics, each with a line on '
+                       'what to cover. Under every topic are the Mega DSC 2025 questions that came from it, 861 in all, with a star on the topics asked three or '
+                       'more times.'),
+           notes_line='SGT Micro-Syllabus: the official DSC-2026 SGT syllabus in 271 micro-topics, with 861 Mega DSC 2025 questions mapped to their topics.',
+           notes_tile='1 Learn with Anil book: the AP DSC 2026 SGT Micro-Syllabus, 271 micro-topics with 861 Mega DSC 2025 questions mapped.',
            te_name='ఏపీ డీఎస్సీ', te_paper='టీచర్ రిక్రూట్‌మెంట్ టెస్ట్', subj_te=DSC_SUBJ_TE,
            title='AP DSC Previous Question Papers with Answers – Mega DSC 2025 SGT, School Assistant & PET Final Key, Telugu & English | Learn with Anil',
            h1='AP DSC previous question papers <em>with answers.</em>',

@@ -29,6 +29,7 @@ SLUGS = {
     'epfoca-en': 'epfo-current-affairs-2026-upsc-apfc-book',
     'hcse-en': 'computer-science-it-tgpsc-hmwssb-manager-paper-2-book',
     'aee2-en': 'environmental-science-engineering-appsc-aee-paper-2-book',
+    'dscms-en': 'ap-dsc-2026-sgt-micro-syllabus-book',
 }
 CSS = ('<style>.bk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:14px 0 26px}'
        '.bk{border:1px solid #d8dee9;border-radius:12px;padding:12px;background:#fff;display:flex;flex-direction:column;gap:6px}'
