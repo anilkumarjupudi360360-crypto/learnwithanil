@@ -8108,9 +8108,9 @@ MOCK_PACKS = {
                  title='Akshara DSC – AP DSC 2026 Mock Test Series (SGT & School Assistant Social Studies)',
                  summary='Full-length AP DSC 2026 mock tests in the latest CBT pattern, 160 questions in 150 minutes, for SGT and School Assistant '
                          'Social Studies, in English and Telugu, with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
-                 about=['New questions written by Learn with Anil for this series in the AP DSC 2026 pattern (statement, match-the-following, '
-                        'assertion–reason and classroom-situation questions as the DSC sets them), not copied from coaching material or previous papers. '
-                        'The real AP DSC 2025 papers are on the previous-papers page, in the same pass.',
+                 about=['Based on the real Mega DSC 2025 papers: every mock follows the topics, question types (statement, match-the-following, '
+                        'assertion–reason and classroom-situation questions) and difficulty of the 2025 papers, with new questions written by Learn with Anil, '
+                        'not copied from coaching material or previous papers. The real AP DSC 2025 papers are on the previous-papers page, in the same pass.',
                         'SGT mocks: General Knowledge & Current Affairs 16, Perspectives in Education 8, Educational Psychology 16, then Telugu, English, '
                         'Mathematics, Science and Social Studies, 16 content + 8 methodology questions each (content of Classes III–VIII). '
                         'SA Social Studies mocks: General Knowledge & Current Affairs 20, Perspectives 10, Educational Psychology 10, Social Studies content 80 '
@@ -8119,11 +8119,11 @@ MOCK_PACKS = {
                         'exam), with an explanation in both. Current affairs cover November 2025 to November 2026, with Andhra Pradesh news. Your score, '
                         'accuracy and topic-wise analysis come after each mock.'],
                  mocks=[m for i in range(1, 11) for m in (
-                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', track='sgt', qn=160, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
+                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', track='sgt', qn=160, mins=150, live=(i <= 3),   # Mock 1 on 17 Nov 2026; Mocks 2-3 on 22 Nov 2026 (Anil: "add appsc dsc 3 more exams.....based on pyqs")
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
                                  ('psy', 'Educational Psychology', ['psy']), ('tel', 'Telugu (Language-I)', ['tel']), ('eng', 'English', ['eng']),
                                  ('mat', 'Mathematics', ['mat']), ('sci', 'Science', ['sci']), ('soc', 'Social Studies', ['soc'])]),
-                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', track='sa-social-studies', qn=160, mins=150, live=(i == 1),
+                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', track='sa-social-studies', qn=160, mins=150, live=(i <= 2),   # Mock 2 on 22 Nov 2026
                           # a student's request (via Anil, 17 Nov 2026): the five SA Social parts as separate tests, so Social content and
                           # methodology are separate parts (4th element = topics: the part takes only those topics of its subjects)
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
