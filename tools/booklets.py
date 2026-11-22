@@ -66,6 +66,20 @@ MOCK_NOTE = {   # series not made of new questions only: what the booklet's note
 }
 
 
+# Mock series whose match questions are pipe tables ("List-I | List-II" rows, drawn as a table in the app): their booklets print
+# those rows as two aligned columns. Opt-in per exam so other booklets keep their content hash (and their keys-tab file names).
+PIPE_COLS = {'appsc-analyst'}   # Pariksha Lab Mocks 2-3 (22 Nov 2026)
+
+
+def pipe_cols(q):
+    """'A. X | 1. Y' table rows (two or more in a row) -> 'A. X    1. Y', which text() prints as two columns."""
+    lines = str(q['q']).split('\n')
+    row = [ln.count('|') == 1 and ln.strip() != '|' for ln in lines]
+    out = [(' ' * 4).join(c.strip() for c in ln.split('|')) if row[i] and ((i > 0 and row[i - 1]) or (i + 1 < len(lines) and row[i + 1])) else ln
+           for i, ln in enumerate(lines)]
+    return dict(q, q='\n'.join(out))
+
+
 def released_mocks(eid):
     """[(mock id, series name, mock name, minutes, questions)] for the live mocks of an exam's test series."""
     mk = B.MOCK_PACKS.get(eid)
@@ -383,6 +397,7 @@ def main(exams, mocks_only=False):
             raw = open(f, 'rb').read()
             mq = [inline_img(q) for q in json.loads(_A(base64.b64decode(mkeys[mid])).decrypt(raw[:12], raw[12:], mid.encode()))['questions']]
             for i, q in enumerate(mq, 1): q.setdefault('n', i)
+            if eid in PIPE_COLS: mq = [pipe_cols(q) for q in mq]
             mq = share_passages(mq)
             p = dict(id=mock_pid(mid), mock=mid, notif=f'{pack} · {mname}', held='', kw=f'{pack} {mname}', key='Learn with Anil', mins=mins)
             p['title'] = f'{conf["seo"]} Prelims 2026 · {mname}' if mid.startswith('mk-si-') or mid.startswith('mk-pc-') else f'{conf["seo"]} Mock Test · {mname}'

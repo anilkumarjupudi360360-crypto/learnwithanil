@@ -460,7 +460,8 @@ async def main():
             if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'ap-dsc', 'mk'))): errors.append(f'ap-dsc/mk: sealed {_m} missing')
         anm = open(os.path.join(SITE, 'appsc-analyst-grade-2', 'mock-test.html'), encoding='utf-8').read()   # Pariksha Lab (APPSC Analyst Grade-II Paper II), live since 17 Nov 2026
         if 'Pariksha Lab' not in anm or '?buy=mock' in anm: errors.append('appsc-analyst-grade-2/mock-test.html: should show the Pariksha Lab series in the All-in-One Pass')
-        if not any(f.startswith('bk-anmk-1-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-analyst-grade-2', 'mk'))): errors.append('appsc-analyst-grade-2/mk: sealed bk-anmk-1 missing')
+        for _n in (1, 2, 3):   # Pariksha Lab Mocks 1-3 live (Mocks 2-3 since 22 Nov 2026)
+            if not any(f.startswith(f'bk-anmk-{_n}-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-analyst-grade-2', 'mk'))): errors.append(f'appsc-analyst-grade-2/mk: sealed bk-anmk-{_n} missing')
         aee = open(os.path.join(SITE, 'appsc-assistant-environmental-engineer', 'mock-test.html'), encoding='utf-8').read()   # Harita AEE (APPSC AEE Paper II), live since 18 Nov 2026
         if 'Harita AEE' not in aee or '?buy=mock' in aee: errors.append('appsc-assistant-environmental-engineer/mock-test.html: should show the Harita AEE series in the All-in-One Pass')
         for _n in range(1, 4):

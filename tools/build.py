@@ -8135,11 +8135,16 @@ MOCK_PACKS = {
   # (Notification 21/2026): 150 questions, 150 minutes, degree standard, 1/3 negative, English only; Chemistry 38, Biochemistry 37,
   # Biology 37, Environmental Science 38 per mock. Private source /home/claude/anmk; ids start with "bk-" (any paid All-in-One Pass
   # holder; no payments-script change). Sealed files: src/appsc-analyst-mocks/.
+  # Anil, 22 Nov 2026: "add 2 more mock tests" -> Mocks 2 and 3; chose "new questions on the 2025 PYQ topics" (his standing rule: mocks based
+  # on PYQs): every question is linked to one APPSC Analyst 2025 Paper II question (same topic, format and level, a different fact), and its
+  # explanation ends with that PYQ link. Private source /home/claude/anmk2.
   'appsc-analyst': dict(id='bk-anmk', name='Pariksha Lab', price=149, src='appsc-analyst-mocks', dir='appsc-analyst-grade-2', langs='English',
                         title='Pariksha Lab – APPSC Analyst Grade-II Paper II (Common Paper) Mock Test Series',
                         summary='5 full-length mock tests for the new APPSC Analyst Grade-II Paper II Common Paper, 150 questions in 150 minutes, '
                                 'with an explanation for every answer. Each subject can also be taken on its own as a sectional test.',
                         about=['New questions written by Learn with Anil for this series, not copied from coaching material or previous papers. '
+                               'From Mock 2 on, every question is modelled on a question APPSC asked in its 2025 Paper II papers: the same topic, format '
+                               'and level, but a different fact, and its explanation names that previous question. '
                                'From 2026 every candidate writes one Common Paper II of Chemistry, Biochemistry, Biology and Environmental Science, '
                                'so each mock covers all four. APPSC\'s 2025 Paper II papers (one per subject) are on the previous-papers page, in the same pass.',
                                'Each mock follows the Notification 21/2026 syllabus: Chemistry 38 (non-transition elements, boranes, photochemistry and '
@@ -8150,7 +8155,7 @@ MOCK_PACKS = {
                                'Statement, match-the-list, assertion–reason and short numerical questions at degree level, in English as APPSC sets Paper II. '
                                'Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs one-third of a mark, '
                                'so practise skipping blind guesses.'],
-                        mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i == 1),   # Mock 1 on 17 Nov 2026
+                        mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3),   # Mock 1 on 17 Nov 2026, Mocks 2-3 on 22 Nov 2026
                                     parts=[('chm', 'Chemistry', ['chm']), ('bch', 'Biochemistry', ['bch']),
                                            ('bio', 'Biology', ['bio']), ('evs', 'Environmental Science', ['evs'])]) for i in range(1, 6)]),
   # Anil, 17 Nov 2026 (23:33 IST): "prepare mock test series for environmental engineer appsc ...and add 3 mocks". He chose all three on

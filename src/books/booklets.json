@@ -128,12 +128,28 @@
  },
  "appsc-analyst": {
   "anmk1": {
-   "bytes": 468533,
-   "file": "appsc-analyst-anmk1-ab3efcc869.bin",
+   "bytes": 466575,
+   "file": "appsc-analyst-anmk1-bcf7c8eaac.bin",
    "key": "bk-appsc-analyst-anmk1",
    "mock": "bk-anmk-1",
    "name": "LearnWithAnil-Pariksha-Lab-Mock-1-Mock-Test.pdf",
    "pages": 27
+  },
+  "anmk2": {
+   "bytes": 659575,
+   "file": "appsc-analyst-anmk2-5265f9242a.bin",
+   "key": "bk-appsc-analyst-anmk2",
+   "mock": "bk-anmk-2",
+   "name": "LearnWithAnil-Pariksha-Lab-Mock-2-Mock-Test.pdf",
+   "pages": 42
+  },
+  "anmk3": {
+   "bytes": 651247,
+   "file": "appsc-analyst-anmk3-06c28aeb3e.bin",
+   "key": "bk-appsc-analyst-anmk3",
+   "mock": "bk-anmk-3",
+   "name": "LearnWithAnil-Pariksha-Lab-Mock-3-Mock-Test.pdf",
+   "pages": 40
   },
   "n2025a": {
    "bytes": 1130224,
