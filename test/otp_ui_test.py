@@ -54,7 +54,7 @@ async def run(br, base, mode):
         s = await stv()
         check(s.get('session') == 'b' * 64 and s.get('lm') == 'email' and s.get('phone') == '9959346357' and s.get('email') == 'ravi@gmail.com', 'the right code logs in: session, phone and email saved')
         check(any(a == 'setphone' and b.get('session') == 'b' * 64 and b.get('phone') == '9959346357' for a, b in st['calls']), 'the phone number is linked to the new account')
-        check('Ravi' in (await pg.text_content('#navAcct')), 'top bar shows the student')
+        check(await pg.eval_on_selector('#navAcct', 'a => a.hidden'), 'logged in: the top bar Login button hides')
         await pg.goto(base + '/ts-police-si/account/'); await pg.wait_for_timeout(1100)
         check(await pg.is_visible('text=Logged in with your email'), 'My Account says logged in with email')
         check(await pg.locator('.devs li').count() == 1, 'My Account lists the device')

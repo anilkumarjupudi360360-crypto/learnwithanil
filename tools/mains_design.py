@@ -205,7 +205,7 @@ def author_box(about_href, url, headline):
     ld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': headline[:110], 'url': url, 'inLanguage': 'en',
           'author': {'@type': 'Organization', 'name': 'Learn with Anil', 'url': 'https://learnwithanil.in/'},
           'publisher': {'@type': 'Organization', 'name': 'Learn with Anil', 'url': 'https://learnwithanil.in/', 'logo': {'@type': 'ImageObject', 'url': 'https://learnwithanil.in/icon-512.png'},
-                        'founder': {'@type': 'Person', 'name': 'Jupudi Anil Kumar', 'jobTitle': 'UPSC Faculty and Mentor'}}}
+                        'founder': {'@type': 'Person', 'name': 'Jupudi Anil Kumar', 'jobTitle': 'Faculty and Mentor'}}}
     return ('<aside class="abox"><img src="/anil.jpg" width="64" height="64" alt="Jupudi Anil Kumar" loading="lazy" decoding="async">'
             '<div><p class="ak">About Learn with Anil</p><p><b>Jupudi Anil Kumar</b> is a civil-services educator who teaches Indian Polity, Governance and Ethics '
             'to UPSC, APPSC and TGPSC aspirants and has evaluated more than 2,000 Mains answer copies. Learn with Anil\'s model answers follow the structure '

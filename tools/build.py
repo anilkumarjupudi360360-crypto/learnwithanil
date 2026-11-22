@@ -3694,9 +3694,20 @@ def main():
     tpl = open(os.path.join(ROOT, 'tools', 'app.html'), encoding='utf-8').read()
     head, body = tpl.split('<!--BODY-->')
     live_names = [c['name'] for c, _, _ in loaded]
-    NAVB = {'upsc': 'UPSC', 'ap': 'APPSC', 'tg': 'TGPSC & TS Police', 'ssc': 'SSC', 'rail': 'Railways', 'bank': 'Banking'}   # Anil, 2 Nov 2026: the top bar lists boards, not every exam
+    # Anil, 22 Nov 2026: the board links (APPSC, TGPSC & TS Police, SSC, Railways, Banking) are "not needed": the start page's top bar
+    # shows UPSC and then the student's own exams (the last 3 they opened on this device, lwa_recent; filled in by navMine() in app.html)
+    NAVB = {'upsc': 'UPSC'}   # was (2 Nov 2026): UPSC, APPSC, TGPSC & TS Police, SSC, Railways, Banking
     nav_extra = ''.join(f'      <a href="/#exams-list" data-act="excat" data-cat="{cid}" data-hubonly>{lbl}</a>\n' for cid, lbl in NAVB.items()
                         if any(c['id'] == cid for c in catalog['cats']))
+    nav_extra += '      <span id="navMine" class="nav-mine" data-hubonly></span>\n'
+    # the label each exam gets in that top bar: the app's short name, with the board where the short name alone is unclear
+    _short = {c['id']: c['short'] for c, _, _ in loaded}
+    _navfix = {'appsc-group-1': 'APPSC Group-I', 'appsc-group-2': 'APPSC Group-II', 'upsc-epfo': 'UPSC EPFO', 'upsc-capf': 'UPSC CAPF (AC)', 'upsc-cse': 'UPSC CSE', 'upsc-ifos': 'UPSC IFoS', 'karnataka-police-constable': 'Karnataka Constable'}
+    def _navl(e):
+        x = _navfix.get(e['id']) or _short.get(e['id']) or f"{e['b']} {e['t']}"
+        bt = f"{e['b']} {e['t']}"
+        return bt if len(x) > 22 and len(bt) < len(x) else x
+    NAV_LABELS = {e['id']: _navl(e) for e in catalog['exams'] if e.get('live')}
     hub_ctas = ''.join(f'<a class="btn btn-primary" href="{"#home" if c["dir"] == "" else c["dir"] + "/"}">{esc(c["name"])}</a>' for c, _, _ in loaded)
     live_list = [c['name'] for c, _, _ in loaded]
     live_summary = (f'Live now: {", ".join(live_list[:-1]) + " and " + live_list[-1] if len(live_list) > 1 else live_list[0]} '
@@ -3745,7 +3756,7 @@ def main():
                     board=conf['board'], l2={k: conf['l2'][k] for k in ('code', 'label', 'name', 'font')},
                     base=prefix, qotd=qotd_pool([x for x in loaded if not x[0].get('ncert')], 120) if is_root else [],
                     pay=dict(pay_data(conf), sample=len(free_sample(conf, papers, questions)) if any(p['fmt'] == 'mcq' for p in papers) else 0),
-                    exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [],
+                    exams=catalog['exams'] if is_root else [], cats=catalog['cats'] if is_root else [], navl=NAV_LABELS if is_root else {},
                     timers=catalog.get('timers', []) if (is_root and SHOW_TIMERS) else [])
         data_json = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
         total = len(questions)
@@ -3835,7 +3846,7 @@ def main():
         ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
         pb = conf['pb']; basedir = '/' + prefix
-        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"UPSC Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:learnwithanil0608@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
+        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:learnwithanil0608@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"url":SITE_URL+'/'}
         org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://t.me/learn_with_anil06","https://www.youtube.com/@learn_with_anil06"]}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
@@ -6054,7 +6065,7 @@ def funders_page(loaded):
                'దీన్ని అభివృద్ధి చేస్తున్నది నేను ఒక్కడినే, అందుకే నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'),
       'wa': ('WhatsApp me', 'WhatsApp पर संपर्क करें', 'WhatsAppలో సంప్రదించండి'),
       'mail': ('Email me', 'ईमेल करें', 'ఈమెయిల్ చేయండి'),
-      'mentor': ('Founder, Learn with Anil · UPSC faculty &amp; mentor', 'संस्थापक, Learn with Anil · UPSC शिक्षक और मार्गदर्शक', 'వ్యవస్థాపకులు, Learn with Anil · UPSC అధ్యాపకులు, మెంటార్'),
+      'mentor': ('Founder, Learn with Anil · Faculty &amp; mentor', 'संस्थापक, Learn with Anil · शिक्षक और मार्गदर्शक', 'వ్యవస్థాపకులు, Learn with Anil · అధ్యాపకులు, మెంటార్'),
       'f1': ('Previous-year questions so far', 'अब तक के पिछले वर्षों के प्रश्न', 'ఇప్పటివరకు ఉన్న గత సంవత్సరాల ప్రశ్నలు'),
       'f2': ('The goal: 1 lakh PYQs + a mock test series for every exam', 'लक्ष्य: 1 लाख PYQs + हर परीक्षा के लिए मॉक टेस्ट सीरीज़', 'లక్ష్యం: 1 లక్ష PYQs + ప్రతి పరీక్షకు మాక్ టెస్ట్ సిరీస్'),
       'f3': ('Aspirants apply for these exams in one cycle', 'अभ्यर्थी एक भर्ती चक्र में इन परीक्षाओं के लिए आवेदन करते हैं', 'అభ్యర్థులు ఒక్క నియామక చక్రంలో ఈ పరీక్షలకు దరఖాస్తు చేస్తారు'),
