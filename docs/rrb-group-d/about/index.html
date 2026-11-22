@@ -754,8 +754,16 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 .tcov b{font:800 10.5px/1 system-ui,sans-serif;letter-spacing:.16em;margin-top:14px}
 .tcov em{font:900 30px/1.05 system-ui,sans-serif;font-style:normal}
 .tcov.tc-pyq em{font-size:21px;margin-top:3px}
+.tcov.tc-sec b,.tcov.tc-ch b,.tcov.tc-mis b{font-size:8px;letter-spacing:.08em}
+.tcov.tc-sec b{margin-top:9px}.tcov.tc-sec em{font-size:26px}
+.tbtns.tparts{margin-top:8px}
+.tmk.mis .tmv{color:var(--bad)}
+.trow.mrow.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.mbtn[aria-pressed="true"]{background:var(--accent-soft)}
+button.mbtn{cursor:pointer;font-family:inherit}
 .tcov s{text-decoration:none;font:700 8.5px/1.15 system-ui,sans-serif;margin-top:2px;padding:0 5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .tcov u{position:absolute;bottom:5px;left:0;right:0;text-decoration:none;font:600 6.5px/1 system-ui,sans-serif;opacity:.85}
+.tcov.tc-sec s{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:8px;line-height:1.1;padding:0 4px}
 .tcov.tsoon{filter:grayscale(1);opacity:.55}
 .tcov.tsoon::after{content:"SOON";position:absolute;top:68%;left:-20px;right:-20px;transform:rotate(-24deg);background:rgba(0,0,0,.6);font:800 8px/1.7 system-ui,sans-serif;letter-spacing:.14em}
 .tname{display:flex;flex-wrap:wrap;align-items:center;gap:6px}.tname b{font-size:16px;color:var(--ink,#0D1830)}
@@ -1045,7 +1053,7 @@ table.mtab tr.msoon td{color:var(--muted);background:var(--surface-2)}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/rrb-d-e4b2618acd.js"></script>
+<script src="data/rrb-d-a43a0a28aa.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1087,12 +1095,12 @@ let S = readLS(KEY, blank());
 // Anil, 16 Nov 2026 ("why mistake book ... is not present in every exam tile"): mock-test questions are not in the exam's data, so a
 // mistake from a mock keeps its own copy of the question (m.q, and the mock's name in m.pp) and comes back into QMAP on every visit.
 // That is how SBI PO / IBPS SO (mock tests only) and every other exam's mocks fill My Mistakes. At most MIS_COPIES copies per exam.
-const BASEQ = new Set(QS.map(q=>q.id)), MIS_COPIES = 100;
+const BASEQ = new Set(QS.map(q=>q.id)), MIS_COPIES = 250;   // was 100; a mock mistake without a copy is loaded again from its mock (misLoad)
 (()=>{ for(const [id, m] of Object.entries(S.mistakes||{})){ if(!m || !m.q || QMAP[id]) continue;
   QMAP[id] = m.q;
   if(m.pp && !PMAP[m.pp.id]) PMAP[m.pp.id] = Object.assign({fmt:"mcq", paid:true}, m.pp);
   if(!PMAP[m.q.p]) PMAP[m.q.p] = {id:m.q.p, short:"Mock test", title:"Mock test", fmt:"mcq", paid:true};
-  if(!SUBJ[m.q.s]) SUBJ[m.q.s] = {id:m.q.s, name:m.q.s, topics:[]}; } })();
+  if(!SUBJ[m.q.s]) SUBJ[m.q.s] = {id:m.q.s, name:m.q.sn||m.q.s, topics:[]}; } })();
 function misCopy(id, m){   // keep a copy of a mock question with its mistake (not for the exam's own questions)
   if(BASEQ.has(id) || m.q || !QMAP[id]) return;
   if(Object.values(S.mistakes).filter(x=>x && x.q).length >= MIS_COPIES) return;
@@ -1141,7 +1149,7 @@ function decorateTests(root){   // fill the marks column and show Resume on ever
 }
 const shortDate = t=>new Date(t).toLocaleDateString(undefined,{day:"numeric",month:"short"});
 function tcovJS(kind, top, big, small, hue){
-  return `<span class="tcov tc-${kind}" style="--h:${hue}" aria-hidden="true"><i>${esc(top)}</i><b>${kind==="mock"?"MOCK":"PYQ"}</b><em>${esc(String(big))}</em>${small?`<s>${esc(small)}</s>`:""}<u>Learn with Anil</u></span>`;
+  return `<span class="tcov tc-${kind}" style="--h:${hue}" aria-hidden="true"><i>${esc(top)}</i><b>${({mock:"MOCK", sec:"SECTIONAL", ch:"CHAPTER"})[kind]||"PYQ"}</b><em>${esc(String(big))}</em>${small?`<s>${esc(small)}</s>`:""}<u>Learn with Anil</u></span>`;
 }
 const TC_HUES = [222, 262, 158, 18, 338, 196, 32, 288, 120, 4];
 const tcHue = seed=>TC_HUES[[...String(seed)].reduce((a,c)=>a+c.charCodeAt(0),0) % TC_HUES.length];
@@ -1486,25 +1494,31 @@ async function paperPdf(pid, btn){
 
 /* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹149 All-in-One Pass since 26 Oct 2026) */
 const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
+// Load one mock's questions into QMAP (the payments script gives the questions, or the key to the sealed file on this site).
+// Used to start a mock, and by My Mistakes to bring back mock questions whose copy is not on this device (misLoad).
+async function loadMock(id, quiet){
+  const r = await payCall({action:"mock", exam:PAYC.exam, id, phone:ST.phone, email:ST.email||"", device:DEVICE});
+  if(!r || !r.ok){ if(!quiet){ if(r && (r.need==="mock" || r.need==="pyq")) openPay("pyq"); else toast((r && r.error) || "Could not load the mock. Please try again."); } return null; }
+  if(!r.questions){   // sealed mock: the encrypted file is on this site, the key comes from the payments script
+    const blob = new Uint8Array(await (await fetch(PB + "mk/" + r.file)).arrayBuffer());
+    const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
+    const plain = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(id)}, key, blob.slice(12));
+    r.questions = JSON.parse(new TextDecoder().decode(plain)).questions;
+  }
+  const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
+  const mname = mm? mm.name : "Mock " + id.split("-").pop();
+  PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length, alabel:"Answer"};   // not "Official answer": most mock questions are Learn with Anil's own
+  r.questions.forEach(q=>{ if(!q.p) q.p = id; QMAP[q.id] = q; });   // q.p: the mock, so a saved mistake keeps its mock name
+  return {r, mm, mname};
+}
 async function startMock(id, part, mode, resume){   // mode "practice": check each answer as you go (like the previous papers); else the exam-style test
   if(!PAYC || !PAYC.mock) return;
   if(!ST.name){ UI.pendingMock = {id, part, mode, resume}; go("join"); return; }
   if(!PAYC.on || !PAYC.api){ openPay("pyq"); return; }
   toast("Loading the mock…");
   try{
-    const r = await payCall({action:"mock", exam:PAYC.exam, id, phone:ST.phone, email:ST.email||"", device:DEVICE});
-    if(!r || !r.ok){ if(r && (r.need==="mock" || r.need==="pyq")) openPay("pyq"); else toast((r && r.error) || "Could not load the mock. Please try again."); return; }
-    if(!r.questions){   // sealed mock: the encrypted file is on this site, the key comes from the payments script
-      const blob = new Uint8Array(await (await fetch(PB + "mk/" + r.file)).arrayBuffer());
-      const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
-      const plain = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(id)}, key, blob.slice(12));
-      r.questions = JSON.parse(new TextDecoder().decode(plain)).questions;
-    }
-    const no = id.split("-").pop();
-    const mm = (PAYC.mock.mocks||[]).find(x=>x.id===id);   // packs with several kinds of mock (e.g. Mission CGL Tier-I / Tier-II)
-    const mname = mm? mm.name : "Mock " + no;
-    PMAP[id] = PMAP[id] || {id, short: PAYC.mock.name + " " + mname, title: PAYC.mock.name + " · " + mname, fmt:"mcq", paid:true, count:r.questions.length, alabel:"Answer"};   // not "Official answer": most mock questions are Learn with Anil's own
-    r.questions.forEach(q=>{ if(!q.p) q.p = id; QMAP[q.id] = q; });   // q.p: the mock, so a saved mistake keeps its mock name
+    const L = await loadMock(id); if(!L) return;
+    const {r, mm, mname} = L;
     let qs = r.questions, pname = PART_NAME[part], mins;
     if(mm){
       const pt = (mm.parts||[]).find(x=>x[0]===part);
@@ -1807,7 +1821,7 @@ function render(){
   const hubCtx = v==="exams" || v==="exam";
   $("#nav").classList.toggle("hub", hubCtx); $(".topbar").classList.toggle("g2", !hubCtx);
   document.querySelectorAll("#nav a").forEach(a=>{ const on = a.dataset.v===v || (a.dataset.rev!==undefined && REV.includes(v)) || (v==="exam"&&a.dataset.v==="exams") || ((v==="quiz"||v==="result")&&a.dataset.v==="practice"); if(on || (v==="join"&&a.dataset.v==="practice"&&UI.pending)) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
-  { const m = $("#navMis"), tm = $("#tbMis"), n = Object.keys(QMAP).length ? mistakeIds().length : 0;
+  { const m = $("#navMis"), tm = $("#tbMis"), n = Object.keys(QMAP).length ? misAll().length : 0;
     if(m){ m.hidden = !n; m.textContent = n; } if(tm){ tm.hidden = !n; tm.textContent = n; }
     { const k = Object.keys(QMAP).length ? n : Object.keys(S.mistakes||{}).length;   // card 04 on the exam page (My Mistakes left the top bar, 16 Nov 2026)
       const op = gateOK("mistakes");   // My Mistakes comes with any plan (anyPlan)
@@ -2243,7 +2257,7 @@ function linkAction(sp){   // a link to this exam with ?buy / ?pdf / ?mock / ?se
   const bk = sp.get("buy"); if(bk==="pyq" || bk==="mock" || bk==="combo"){ openPay(bk); return true; }
   const pd = sp.get("pdf"); if(pd && (DATA.pdfs||{})[pd]){ paperPdf(pd); return true; }
   const mk = sp.get("mock"); if(mk && /^[a-z0-9-]+$/.test(mk)){ startMock(mk, sp.get("part")||"", sp.get("mode")||"", !!sp.get("resume")); return true; }
-  const sec = sp.get("sec"); if(sec && SUBJ[sec]){ startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional"); return true; }
+  const sec = sp.get("sec"); if(sec && SUBJ[sec]){ if(sp.get("resume") && runRestore("sec:"+sec)) return true; startQuiz(shuffle(QS.filter(q=>q.s===sec && isMCQ(q)).map(q=>q.id)), SUBJ[sec].name+" · PYQ sectional", "test", "sectional", null, "sec:"+sec); return true; }
   const pp = sp.get("practice"); if(pp && PMAP[pp]){ if(sp.get("resume") && runRestore("paper:"+pp)) return true; startQuiz(QS.filter(q=>q.p===pp).map(q=>q.id), PMAP[pp].title, "practice", "paper", PMAP[pp].mins, "paper:"+pp); return true; }
   const tp = sp.get("test"); if(tp && PMAP[tp]){ if(sp.get("resume") && runRestore("test:"+tp)) return true; startQuiz(QS.filter(q=>q.p===tp && isMCQ(q)).map(q=>q.id), PMAP[tp].title+" · Mock test", "test", "paper", PMAP[tp].mins, "test:"+tp); return true; }
   return false;
@@ -2652,24 +2666,85 @@ function revTabs(v){ return ""; }   // My Revision sub-tabs removed (Anil, 8 Nov
 
 /* ---------- mistakes ---------- */
 function recallDots(m){ const r=m.recall||0; return `<span class="recall" title="Correct recalls: ${r} of 2"><i class="${r>=1?"on":""}"></i><i class="${r>=2?"on":""}"></i></span>`; }
+/* ---------- My Mistakes, grouped by previous paper and mock test (Anil, 22 Nov 2026: "in mistake book also ... make it as image like this one
+   [the papers list with covers] ... do this for all exams ... and if they have mistakes in mock test also ... they should be able to practise those mistakes here") */
+function mockOf(id){   // the mock of this exam that a question belongs to (mock question ids start with "<mock id>-"), or ""
+  if(!PAYC || !PAYC.mock) return "";
+  const ms = (PAYC.mock.mocks||[]).map(m=>m.id);
+  if(!ms.length && PAYC.mock.n) for(let i=1;i<=PAYC.mock.n;i++) ms.push(PAYC.mock.id+"-"+i);
+  let best = ""; ms.forEach(m=>{ if(id.indexOf(m+"-")===0 && m.length>best.length) best = m; });
+  return best;
+}
+const misSrc = id=>QMAP[id] ? QMAP[id].p : mockOf(id);
+// every mistake of this exam: questions on this device, and mock questions whose copy is not here (on another phone, or over MIS_COPIES)
+const misAll = ()=>Object.keys(S.mistakes).filter(id=>QMAP[id] || mockOf(id));
+const isMockSrc = p=>!!(PAYC && PAYC.mock && (p===mockOf(p+"-x") || ((PAYC.mock.mocks||[]).some(m=>m.id===p))));
+function misSrcInfo(p){   // cover, name and kind of one previous paper or mock test
+  const pp = PMAP[p], num = (String(p).match(/(\d+)(?!.*\d)/)||[])[1] || "";
+  if(/^bb-/.test(p)) return {kind:"mock", title:(pp && pp.title) || "Bahubali test", cov:tcovJS("mock", "Bahubali Mains", (pp && pp.num) || num, (pp && pp.paper) || "", tcHue("bahubali"))};   // Bahubali Mains tests (their own page; toMistakes() in bahubali.html)
+  if(isMockSrc(p) || (pp && pp.paid)){
+    const mm = PAYC && PAYC.mock ? (PAYC.mock.mocks||[]).find(m=>m.id===p) : null, series = PAYC && PAYC.mock ? PAYC.mock.name : "Mock test";
+    const grp = mm && mm.group ? mm.name.replace(/\s*Mock\s*\d+\s*$/,"").trim() : "";
+    return {kind:"mock", title:(pp && pp.title) || series + " · " + (mm ? mm.name : "Mock " + num), cov:tcovJS("mock", series, (mm && (mm.name.match(/\d+(?!.*\d)/)||[])[0]) || num, grp, tcHue((PAYC && PAYC.mock && PAYC.mock.id) || PAYC.exam))};
+  }
+  if(pp && DATA.ncert) return {kind:"ch", title:String(pp.short||pp.title||"").replace(/^Ch \d+\. /,""), cov:tcovJS("ch", DATA.examShort||"", (String(pp.short||"").match(/^Ch (\d+)/)||[])[1]||"", pp.stage||"", tcHue((DATA.key||"")+pp.nsub))};
+  if(pp) return {kind:"pyq", title:pp.kw || pp.title || pp.short || "Previous paper", cov:tcovJS("pyq", DATA.examShort||"", pp.year||"", pyqLabel(pp), tcHue((DATA.key||"")+"pyq"))};
+  return {kind:"other", title:"Other questions", cov:tcovJS("pyq", DATA.examShort||"", "", "", tcHue((DATA.key||"")+"pyq"))};
+}
+function misGroups(){   // [{p, ids, at}] newest mistake first
+  const g = {};
+  misAll().forEach(id=>{ const p = misSrc(id) || "?"; const e = g[p] || (g[p] = {p, ids:[], at:0}); e.ids.push(id); e.at = Math.max(e.at, S.mistakes[id].added||0); });
+  return Object.values(g).sort((a,b)=>b.at-a.at);
+}
+function misRow(G){
+  const I = misSrcInfo(G.p), n = G.ids.length, here = G.ids.filter(id=>QMAP[id]), twice = G.ids.filter(id=>(S.mistakes[id].miss||1)>=2).length;
+  const subs = {}; here.forEach(id=>{ const s = QMAP[id].s; subs[s] = (subs[s]||0)+1; });
+  const top = Object.entries(subs).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([s,c])=>esc((SUBJ[s]||{name:s}).name)+" "+c).join(" · ");
+  const meta = (I.kind==="mock" ? "Mock test" : I.kind==="ch" ? "Chapter" : I.kind==="pyq" ? "Previous paper" : "Practice") + " · last mistake " + shortDate(G.at) + (top ? " · " + top : "")
+    + (here.length < n ? ` · ${n - here.length} load from the mock when you practise` : "");
+  const lock = gateOK("mistakes") ? "" : "🔒 ";
+  return `<div class="trow mrow${UI.mPaper===G.p ? " on" : ""}">${I.cov}<div class="tmain"><div class="tname"><b>${esc(I.title)}</b></div><div class="tmeta">${meta}</div></div>
+    <div class="tside"><div class="tmk mis"><span class="tml">Your mistakes</span><b class="tmv">${n}</b><small class="tms">${twice ? twice + " missed twice or more" : "to practise again"}</small></div>
+    <div class="tbtns"><button class="mbtn go" type="button" data-act="misgo" data-p="${esc(G.p)}">${lock}▶ Practise ${n} mistake${n===1?"":"s"}</button>${here.length ? `<button class="mbtn" type="button" data-act="mpaper" data-p="${esc(G.p)}" aria-pressed="${UI.mPaper===G.p}">${UI.mPaper===G.p ? "Showing below" : "See them"}</button>` : ""}</div></div></div>`;
+}
+async function misPractise(p){   // one paper's or mock's mistakes; a mock's questions are loaded again if their copy is not on this device
+  let ids = misAll().filter(id=>misSrc(id)===p);
+  if(ids.some(id=>!QMAP[id]) && isMockSrc(p)){
+    if(!ST.name){ go("join"); return; }
+    if(!PAYC.on || !PAYC.api){ openPay("pyq"); return; }
+    toast("Loading your mistakes from the mock…");
+    try{ if(!await loadMock(p)) return; }catch(_){ toast("No connection. Please try again."); return; }
+    ids.forEach(id=>{ if(QMAP[id]) misCopy(id, S.mistakes[id]); }); save();
+  }
+  ids = ids.filter(id=>QMAP[id]).sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1));
+  if(!ids.length){ toast("These questions could not be found. Please try again later."); return; }
+  startQuiz(shuffle(ids), "My Mistakes · " + misSrcInfo(p).title, "practice", "smart");
+}
 function vMistakes(){   // Anil, 8 Nov 2026: "i want wrong questions to be separated for the student and need to practice them again and again ... in that same exam pages"
-  const ids = mistakeIds();
-  if(!ids.length) return `<div class="wrap view">${head("My Mistakes","Your wrong answers, ready to practise","Every question you answer wrongly in this exam is saved here automatically, so you can practise it again and again.")}${DATA.mockonly ? emptyHTML("No mistakes yet","Take a mock test or a sectional test. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="#mocks">Open the mock tests</a><a class="btn btn-secondary" href="#sectionals">Sectional tests</a>`) : emptyHTML("No mistakes yet","Take a previous paper, a mock test or a practice quiz. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="/rrb-group-d/papers/">Open previous papers</a><a class="btn btn-secondary" href="/rrb-group-d/practice/">Start a practice quiz</a>`)}</div>`;
-  const subs = [...new Set(ids.map(id=>QMAP[id].s))];
+  const all = misAll(), ids = mistakeIds();
+  if(!all.length) return `<div class="wrap view">${head("My Mistakes","Your wrong answers, ready to practise","Every question you answer wrongly in this exam, in previous papers and mock tests, is saved here automatically, so you can practise it again and again.")}${DATA.mockonly ? emptyHTML("No mistakes yet","Take a mock test or a sectional test. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="#mocks">Open the mock tests</a><a class="btn btn-secondary" href="#sectionals">Sectional tests</a>`) : emptyHTML("No mistakes yet","Take a previous paper, a mock test or a practice quiz. Every question you get wrong will appear here, ready to practise again.",`<a class="btn btn-primary" href="/rrb-group-d/papers/">Open previous papers</a><a class="btn btn-secondary" href="#mocks">Mock tests</a>`)}</div>`;
+  const groups = misGroups();
+  if(UI.mPaper && !groups.some(G=>G.p===UI.mPaper)) UI.mPaper = "";
+  const inP = id=>!UI.mPaper || misSrc(id)===UI.mPaper;
+  const subs = [...new Set(ids.filter(inP).map(id=>QMAP[id].s))];
   if(UI.mFilter!=="all" && !subs.includes(UI.mFilter)) UI.mFilter="all";
-  const pick = ids.filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter);
+  const pick = ids.filter(id=>inP(id) && (UI.mFilter==="all"||QMAP[id].s===UI.mFilter));
   const list = pick.slice().sort((a,b)=>(S.mistakes[b].miss||1)-(S.mistakes[a].miss||1) || S.mistakes[b].added-S.mistakes[a].added);
   const n = UI.smartCount==="all"? pick.length : Math.min(UI.smartCount, pick.length);
+  const away = all.length - ids.length;
   return `<div class="wrap view">
-    ${head("My Mistakes", ids.length+" question"+(ids.length===1?"":"s")+" to practise again", "Every question you answer wrongly is saved here. Practise them again and again: a question leaves this list once you get it right twice in a row.")}
+    ${head("My Mistakes", all.length+" question"+(all.length===1?"":"s")+" to practise again", "Every question you answer wrongly, in previous papers and mock tests, is saved here. Practise them again and again: a question leaves this list once you get it right twice in a row.")}
+    <section class="section"><div class="section-title"><h2>By paper and mock test</h2><span class="muted" style="font-size:14px">${groups.length} test${groups.length===1?"":"s"}</span></div>
+      <div class="tlist">${groups.map(misRow).join("")}</div></section>
     <section class="card mis-go">
-      <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>QMAP[id].s===s).length}</span></button>`).join("")}</div>
+      <h2 style="font-size:19px;font-weight:800">${UI.mPaper ? "Mistakes from " + esc(misSrcInfo(UI.mPaper).title) + ` <button type="button" class="chip" data-act="mpaper" data-p="" style="margin-left:6px">✕ Show all tests</button>` : "All your mistakes together"}</h2>
+      <div class="row"><button type="button" class="chip" data-act="mfilter" data-f="all" aria-pressed="${UI.mFilter==="all"}">All subjects <span class="n">${ids.filter(inP).length}</span></button>${subs.map(s=>`<button type="button" class="chip" data-act="mfilter" data-f="${s}" aria-pressed="${UI.mFilter===s}">${esc(SUBJ[s].name)} <span class="n">${ids.filter(id=>inP(id) && QMAP[id].s===s).length}</span></button>`).join("")}</div>
       <div class="mis-run"><div class="row" style="gap:8px"><span class="muted" style="font-size:14px">How many:</span>${[10,25,"all"].map(c=>`<button type="button" class="chip" data-act="scount" data-count="${c}" aria-pressed="${UI.smartCount===c}">${c==="all"?"All "+pick.length:c}</button>`).join("")}</div>
       <button class="btn btn-primary" type="button" data-act="smartgo" ${n?"":"disabled"}>▶ Practise ${n} mistake${n===1?"":"s"} now</button></div>
-      <p class="muted" style="font-size:13.5px;margin:0">The questions you missed most come first. Got one right twice in a row? It is cleared from the list automatically. ${progOn() ? "✓ Saved with your login, so they follow you to any phone." : PAYC && PAYC.on && PAYC.prog && GID ? `Saved on this phone. <a href="#account">Log in with Google</a> to keep them on every device.` : "Saved on this phone."}</p>
+      <p class="muted" style="font-size:13.5px;margin:0">The questions you missed most come first. Got one right twice in a row? It is cleared from the list automatically. ${away && !UI.mPaper ? `${away} mock-test mistake${away===1?" is":"s are"} not on this device yet: tap <b>Practise</b> on that mock above to load ${away===1?"it":"them"}. ` : ""}${progOn() ? "✓ Saved with your login, so they follow you to any phone." : PAYC && PAYC.on && PAYC.prog && GID ? `Saved on this phone. <a href="#account">Log in with Google</a> to keep them on every device.` : "Saved on this phone."}</p>
     </section>
     <div class="list">${list.map(id=>{ const m=S.mistakes[id], q=QMAP[id];
-      const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Right in a row ${recallDots(m)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I know it now · remove</button></div>`;
+      const extra = `<div class="row" style="justify-content:space-between"><div class="row" style="gap:8px"><span class="pill ${m.reason==="k"?"warn":"bad"}">${m.reason==="k"?"Skipped last time":"Answered wrongly"}</span><span class="pill">Missed ${m.miss||1}×</span><span class="pill">Right in a row ${recallDots(m)}</span><span class="pill">${esc(misSrcInfo(q.p).title)}</span></div><button class="btn btn-ghost btn-sm" type="button" data-act="learnt" data-id="${id}">I know it now · remove</button></div>`;
       return reviewCard(q, q.n, {hideAnswer:true, extra}); }).join("")}</div>
   </div>`;
 }
@@ -3319,13 +3394,15 @@ document.addEventListener("click", e=>{
     case "trypaper": { const p=PMAP[b.dataset.paper]; UI.tryPaper = p.id; startQuiz(QS.filter(q=>q.p===p.id && isMCQ(q)).slice(0,10).map(q=>q.id), (p.short||p.title) + " · free try (first 10)", "practice", "try", 10); track("try_free", {exam: DATA.examShort||"", paper: p.id}); break; }
     case "install": if(INSTALL){ INSTALL.prompt(); INSTALL.userChoice.then(c=>{ track("app_install", {outcome: c.outcome}); INSTALL = null; render(); }).catch(()=>{}); } break;
     case "learnt": delete S.mistakes[b.dataset.id]; goneMark(b.dataset.id); save(); progSave(); toast("Removed from My Mistakes"); render(); break;
+    case "misgo": misPractise(b.dataset.p); break;
+    case "mpaper": UI.mPaper = UI.mPaper===b.dataset.p ? "" : b.dataset.p; UI.mFilter = "all"; render(); if(UI.mPaper){ const l = document.querySelector(".mis-go"); if(l) l.scrollIntoView({behavior:"smooth", block:"start"}); } break;
     case "ssubj": UI.smartSubj=b.dataset.f; render(); break;
     case "scount": UI.smartCount = b.dataset.count==="all"? "all" : +b.dataset.count; render(); break;
     case "smartgo": {
-      const avail = mistakeIds().filter(id=>UI.mFilter==="all"||QMAP[id].s===UI.mFilter)
+      const avail = mistakeIds().filter(id=>(!UI.mPaper || misSrc(id)===UI.mPaper) && (UI.mFilter==="all"||QMAP[id].s===UI.mFilter))
         .sort((a,b2)=>(S.mistakes[b2].miss||1)-(S.mistakes[a].miss||1) || (S.mistakes[a].recall||0)-(S.mistakes[b2].recall||0));
       const n = UI.smartCount==="all"? avail.length : Math.min(UI.smartCount, avail.length);
-      startQuiz(shuffle(avail.slice(0,n)), "My Mistakes · "+(UI.mFilter==="all"?"All subjects":SUBJ[UI.mFilter].name), "practice", "smart"); break; }
+      startQuiz(shuffle(avail.slice(0,n)), "My Mistakes · "+(UI.mPaper ? misSrcInfo(UI.mPaper).title+" · " : "")+(UI.mFilter==="all"?"All subjects":SUBJ[UI.mFilter].name), "practice", "smart"); break; }
     case "bmquiz": startQuiz(shuffle(bmIds()), "Bookmarked questions", "practice", "bookmarks"); break;
     case "topicquiz": { const k=b.dataset.key; const ids=QS.filter(q=>tkey(q)===k).map(q=>q.id); startQuiz(shuffle(ids), SUBJ[k.split("|")[0]].name+" · "+k.split("|")[1], "practice", "topic"); break; }
     case "bankmore": bankLimit+=20; { const box=$("#bankResults"); if(box) box.innerHTML=bankResults(); } break;
