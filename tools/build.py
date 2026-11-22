@@ -7956,7 +7956,7 @@ MOCK_PACKS = {
                          '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
                          'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
                          'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹149 All-in-One Pass.'],
-                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 5), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026 (Anil)
+                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 7), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 23 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
   # Anil, 22 Nov 2026: "use tg SI & constable questions to....start a test series for ap SI & Constable....and add questions from exiting

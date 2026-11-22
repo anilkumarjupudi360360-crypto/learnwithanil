@@ -1267,6 +1267,22 @@
    "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-5-Mock-Test.pdf",
    "pages": 55
   },
+  "mkpc6": {
+   "bytes": 1070039,
+   "file": "ts-police-constable-mkpc6-329deb97ac.bin",
+   "key": "bk-ts-police-constable-mkpc6",
+   "mock": "mk-pc-6",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-6-Mock-Test.pdf",
+   "pages": 50
+  },
+  "mkpc7": {
+   "bytes": 1078126,
+   "file": "ts-police-constable-mkpc7-e980b53100.bin",
+   "key": "bk-ts-police-constable-mkpc7",
+   "mock": "mk-pc-7",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-7-Mock-Test.pdf",
+   "pages": 50
+  },
   "p2016": {
    "bytes": 1184880,
    "file": "ts-police-constable-p2016-4c451aee91.bin",
