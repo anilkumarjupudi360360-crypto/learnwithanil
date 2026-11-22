@@ -479,6 +479,10 @@ async def main():
             for _m in _ids:
                 if f'?mock={_m}' not in _t: errors.append(f'{_d}/mock-test.html: no link to {_m}')
                 if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, _d, 'mk'))): errors.append(f'{_d}/mk: sealed {_m} missing')
+        g1m = open(os.path.join(SITE, 'appsc-group-1', 'mock-test.html'), encoding='utf-8').read()   # Gandiva Group-I (APPSC Group-I Screening Test), live since 22 Nov 2026
+        if 'Gandiva Group-I' not in g1m or '?buy=mock' in g1m: errors.append('appsc-group-1/mock-test.html: should show the Gandiva Group-I series in the All-in-One Pass')
+        for _m in ('bk-g1mk-1a', 'bk-g1mk-1b'):
+            if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-group-1', 'mk'))): errors.append(f'appsc-group-1/mk: sealed {_m} missing')
         # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:

@@ -4822,8 +4822,11 @@ def FAQ_G1(total, npapers):
        'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series (Mission Khaki, Mission CGL, Bahubali and the ones still to come) and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('Where is the APPSC Group 1 Prelims 2024 answer key?',
        'Each question on this site shows the answer from APPSC\'s final key, for Paper 1 (General Studies) and Paper 2 (General Aptitude) of the 2024 Prelims, and for the 2023 and 2019 Prelims. Open a paper to see every question with its answer.'),
-      ('Is there a APPSC Group 1 mock test?',
-       'Yes. Tap Create a quiz, choose papers or subjects, and pick Timed test: you get a mock test made of real APPSC Group 1 Prelims questions, in English or Telugu, with your score and a topic-wise analysis at the end.'),
+      ('Is there an APPSC Group 1 mock test series?',   # Gandiva Group-I, 22 Nov 2026
+       'Yes: <a href="/appsc-group-1/mock-test.html">Gandiva Group-I</a>, Learn with Anil\'s test series for the Screening Test. Each test has both papers as on the exam day: '
+       'Paper I General Studies and Paper II General Aptitude, 120 new questions each in 120 minutes, in English and Telugu with an explanation for every answer. '
+       'Every question is built on a topic APPSC has asked in its Group-I Prelims papers, and every section can also be taken as a sectional test. '
+       'It is included in the same ₹149 All-in-One Pass. You can also take the real 2024, 2023 and 2019 papers as timed tests.'),
       ('What is the APPSC Group 1 Prelims exam pattern?',
        'The Preliminary Examination has two objective papers on the same day: Paper I General Studies (History and Culture; Constitution, Polity, Social Justice and International Relations; Indian and AP Economy and Planning; Geography) and Paper II General Aptitude (General Mental Ability, Administrative and Psychological Abilities; Science and Technology; Current Events). Each paper has 120 questions for 120 marks in 120 minutes, and one-third of the marks of a question is deducted for a wrong answer. Prelims marks are used only to shortlist candidates for the Mains.'),
       ('Are the answers on this site official?',
@@ -8008,6 +8011,32 @@ MOCK_PACKS = {
                                  parts=[('epi', 'Ramayanam, Mahabharatham & Bhagavatham', ['ram', 'mbh', 'bhg']), ('pur', 'Puranas & Itihasa', ['pur']),
                                         ('aga', 'Agamas, Festivals & Arts', ['aga', 'fes']), ('ved', 'Vedic Culture & Philosophies', ['ved', 'phi']),
                                         ('law', 'Family Law, Endowments Act & Lands', ['fam', 'inc', 'eod', 'lan'])]))]),
+  # Anil, 22 Nov 2026: "start appsc group-1 test series ....and add 1 test". Chose the name "Gandiva Group-I", Test 1 = the full
+  # Screening Test (Paper I GS + Paper II General Aptitude, 120 questions / 120 minutes each), and "based on PYQs" = new questions,
+  # each on a topic APPSC asked in its Group-I Prelims 2019/2023/2024 papers (not copies). English + Telugu, explanations in both.
+  # Ids start with "bk-" (any paid All-in-One Pass holder; no payments-script change; not free). Private source: /home/claude/g1mk;
+  # sealed files in src/appsc-group-1-mocks/ (tools/mk_seal.py scheme: AES-256-GCM, 12-byte nonce, mock id as associated data).
+  'appsc-group-1': dict(id='bk-g1mk', name='Gandiva Group-I', price=149, src='appsc-group-1-mocks', dir='appsc-group-1', langs='English &amp; Telugu',
+                   title='Gandiva Group-I – APPSC Group 1 Screening Test Series (Paper I & Paper II Mock Tests)',
+                   summary='10 full-length APPSC Group-I Screening Test mocks, each with Paper I General Studies and Paper II General Aptitude '
+                           '(120 questions in 120 minutes each, as on the exam day), in English and Telugu, with an explanation for every answer. '
+                           'Every section can also be taken on its own as a sectional test.',
+                   about=['New questions written by Learn with Anil for this series, each built on a topic APPSC has asked in its Group-I Prelims papers '
+                          '(2024, 2023 and 2019), at UPSC Prelims standard: statement, match-the-following, assertion-reason and chronology questions '
+                          'as APPSC sets them. Practise the real papers themselves on the previous-papers page.',
+                          'Paper I: History & Culture, Polity & International Relations, Indian & AP Economy and Geography, 30 each. Paper II: Mental Ability '
+                          'with Administrative & Psychological Abilities 60, Science & Technology 30 and Current Affairs 30 (November 2025 to November 2026, '
+                          'with Andhra Pradesh news).',
+                          'Every question is in English and Telugu, with an explanation in both. Facts were checked against official sources, and every answer '
+                          'was solved again by a separate checker. Your score, accuracy and topic-wise analysis come after each paper '
+                          '(the real exam cuts one-third of a mark for a wrong answer).'],
+                   mocks=[m for i in range(1, 11) for m in (
+                       dict(id=f'bk-g1mk-{i}a', name=f'Test {i} · Paper I (General Studies)', group=f'Test {i}', qn=120, mins=120, live=(i == 1),   # Test 1 on 22 Nov 2026
+                            parts=[('ih', 'History & Culture', ['ih']), ('pol', 'Polity, Social Justice & IR', ['pol']),
+                                   ('eco', 'Indian & AP Economy', ['eco']), ('geo', 'Geography', ['geo'])]),
+                       dict(id=f'bk-g1mk-{i}b', name=f'Test {i} · Paper II (General Aptitude)', group=f'Test {i}', qn=120, mins=120, live=(i == 1),
+                            parts=[('men', 'Mental Ability & Aptitude', ['men', 'apt']), ('sci', 'Science & Technology', ['sci']),
+                                   ('cur', 'Current Affairs', ['cur'])]))]),
   # Anil, 8 Nov 2026: "start group-2 prelims test series ... suggest a name, no of exams ... add few exams"; "add info from our existing
   # questions"; chose the name "Bahubali Prelims" (same family as the Bahubali Group-II Mains tests) and Mock 1 free for registered students.
   # Each mock: History, Geography and Mental Ability = real questions from the site's other APPSC (and police) papers with official keys;

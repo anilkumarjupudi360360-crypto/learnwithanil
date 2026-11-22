@@ -455,6 +455,22 @@
   }
  },
  "appsc-group-1": {
+  "g1mk1a": {
+   "bytes": 1733371,
+   "file": "appsc-group-1-g1mk1a-a78782855a.bin",
+   "key": "bk-appsc-group-1-g1mk1a",
+   "mock": "bk-g1mk-1a",
+   "name": "LearnWithAnil-Gandiva-Group-I-Test-1-Paper-I-General-Studies-Mock-Test.pdf",
+   "pages": 97
+  },
+  "g1mk1b": {
+   "bytes": 1577546,
+   "file": "appsc-group-1-g1mk1b-91967f1074.bin",
+   "key": "bk-appsc-group-1-g1mk1b",
+   "mock": "bk-g1mk-1b",
+   "name": "LearnWithAnil-Gandiva-Group-I-Test-1-Paper-II-General-Aptitude-Mock-Test.pdf",
+   "pages": 81
+  },
   "p2019a": {
    "bytes": 625119,
    "file": "appsc-group-1-p2019a-6bc8393831.bin",
