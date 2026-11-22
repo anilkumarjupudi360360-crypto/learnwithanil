@@ -54,12 +54,78 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
              'dsssb': {pid: (f'{pid}-qp.pdf',) for pid in ('j22', 'p22')},
              'jkssb-je-civil': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c25', 'c23')},   # JKSSB's Series A booklets + provisional key and final key notice
              'meghalaya-psc': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid in ('c1', 'c2', 'l25')}}   # MPSC's Series I booklets + its answer keys   # DSSSB's own question papers with answers (green ticks), from its Question Bank   # WBPSC's own booklets (m23 pages 18, 20 turned upright) + its keys   # OPSC's own scans + its keys (key pages of that paper)   # Vyapam's own booklets + final keys
-# released mocks with a booklet: exam -> [(mock id, pack, mock name)]; their keys are in BOOKS_PRIV/mock-keys.json
-MOCKS = {'ts-police-si': [('mk-si-1', 'Mission Khaki', 'Mock 1')], 'ts-police-constable': [('mk-pc-1', 'Mission Khaki – Constable', 'Mock 1')]}
+# Every released mock of every test series gets a booklet (Anil, 22 Nov 2026: "mocks uploaded should have pdf to get downloaded").
+# The list comes from build.MOCK_PACKS (live mocks only); the private keys of the sealed mocks are in BOOKS_PRIV/mock-keys.json.
+MOCK_NOTE = {   # series not made of new questions only: what the booklet's note says instead
+    'appsc-eo': 'Built from real APPSC questions (EO Grade-III, AMVI and other APPSC papers) with APPSC\'s official answers, mixed in the proportions APPSC asks',
+    'appsc-group-2': 'History, Geography and Mental Ability are real questions from APPSC\'s other papers with the official answers; Indian Society and Current Affairs are new questions written by Learn with Anil',
+}
+
+
+def released_mocks(eid):
+    """[(mock id, series name, mock name, minutes, questions)] for the live mocks of an exam's test series."""
+    mk = B.MOCK_PACKS.get(eid)
+    if not mk: return []
+    if 'mocks' in mk:
+        return [(m['id'], mk['name'], m['name'], m.get('mins'), m.get('qn')) for m in mk['mocks'] if m.get('live')]
+    return [(f'{mk["id"]}-{i}', mk['name'], f'Mock {i}', 180, mk.get('qn')) for i in range(1, mk.get('live', 0) + 1)]   # Mission Khaki (SI): n / live counts
+
+
+def mock_pid(mid):
+    """Paper id of a mock's booklet: 'mk-si-1' -> 'mksi1' (as before), 'bk-dscmk-sgt-2' -> 'dscmksgt2'."""
+    return (mid[3:] if mid.startswith('bk-') else mid).replace('-', '')
+
+
+def sealed_mock(mid):
+    """Path of a mock's sealed file in src/ (any series folder), or None."""
+    import glob
+    hits = [f for f in glob.glob(os.path.join(ROOT, 'src', '*', f'{mid}-*.bin'))
+            if re.fullmatch(re.escape(mid) + r'-[0-9a-f]{8,12}\.bin', os.path.basename(f)) and os.sep + 'books' + os.sep not in f]
+    return sorted(hits)[-1] if hits else None
+
+
+def inline_img(q):
+    """A figure question's site path (/exam/mk/x.png) as a data: URI, so the booklet prints the figure."""
+    import glob, mimetypes
+    src = q.get('img')
+    if not src or src.startswith('data:'): return q
+    hits = glob.glob(os.path.join(ROOT, 'src', '*', os.path.basename(src))) or glob.glob(os.path.join(ROOT, 'src', '**', os.path.basename(src)), recursive=True)
+    if not hits: return q
+    mime = mimetypes.guess_type(hits[0])[0] or 'image/png'
+    return dict(q, img=f'data:{mime};base64,' + base64.b64encode(open(hits[0], 'rb').read()).decode())
+
+
+def share_passages(qs):
+    """Mock booklets: when consecutive questions repeat the same passage (the app shows it with every question), print it with the
+    first one only and point the others to it. Long questions may break across a column (no near-empty first page)."""
+    out, prev, first = [], None, None
+    for q in qs:
+        q = dict(q)
+        lines = str(q['q']).split('\n')
+        if prev is not None:
+            i = 0
+            while i < min(len(lines), len(prev)) - 1 and lines[i] == prev[i]: i += 1
+            if sum(len(x) for x in lines[:i]) > 300:
+                same_t = q.get('qt') == q['q']
+                q['q'] = f'(Read the passage given with Q.{first}.)\n' + '\n'.join(lines[i:])
+                if same_t: q['qt'] = q['q']
+                elif q.get('qt'):
+                    lt, pt = str(q['qt']).split('\n'), prevt
+                    j = 0
+                    while pt and j < min(len(lt), len(pt)) - 1 and lt[j] == pt[j]: j += 1
+                    if j: q['qt'] = '\n'.join(lt[j:])
+                out.append(q); continue
+        prev, prevt, first = lines, (str(q.get('qt')).split('\n') if q.get('qt') else None), q['n']
+        if len(q['q']) > 900: q['long'] = 1
+        out.append(q)
+    return out
 
 
 def time_marks(conf, p):
     """(time allowed, maximum marks) as printed on the board's booklet."""
+    if p.get('mock') and conf['board'] != 'TSLPRB':
+        mins = p.get('mins') or 0
+        return (f'{mins} Minutes' if mins else ''), ''
     if conf['board'] == 'TSLPRB': return '3 Hours', 200
     if conf['board'] == 'RRB': return '90 Minutes', 120   # RPF SI / Constable CBT: 120 questions, 1 mark each
     if conf['board'] == 'SLPRB': return '3 Hours', (100 if conf['id'] == 'ap-police-si' else 200)   # AP SI prelims: two papers of 100; AP PC prelims: 200
@@ -118,6 +184,7 @@ body{font:9.6pt/1.38 'Source Sans 3',sans-serif;color:#111}
 .note{position:relative;z-index:1;font-size:8.4pt;margin:2mm 0 2.5mm;padding:1.6mm 3mm;border:.6pt dashed #777}
 .cols{position:relative;z-index:1;column-count:2;column-gap:7mm;column-rule:.6pt solid #999}
 .q{break-inside:avoid;margin:0 0 2.6mm}
+.q.long{break-inside:auto}
 .q .en{font-weight:600}
 .q .n{font-weight:800;margin-right:1.2mm}
 .q .ml{display:grid;grid-template-columns:1fr 1fr;gap:0 3mm}
@@ -162,7 +229,7 @@ def q_html(q, l2):
     same = q.get('qt') == q['q']   # a Telugu-only question carries the same text in both fields: print it once
     two = (f'<div class="l2" lang="{l2}">{text(q["qt"])}{opts(q["ot"]) if q.get("ot") else ""}</div>') if q.get('qt') and not same else ''
     sl = script_lang(q['q'])
-    return (f'<div class="q"><div class="en"{f' lang="{sl}"' if sl else ""}><span class="n">{q["n"]}.</span>{first}</div>{img}'
+    return (f'<div class="q{" long" if q.get("long") else ""}"><div class="en"{f' lang="{sl}"' if sl else ""}><span class="n">{q["n"]}.</span>{first}</div>{img}'
             f'{f'<div lang="{sl}">' if sl else ""}{opts(q["o"]) if q.get("o") else ""}{"</div>" if sl else ""}{two}</div>')
 
 
@@ -194,7 +261,9 @@ def paper_doc(conf, p, qs, mock=None):
             f'<i>{esc(sub)}{when}</i></div>{series}</div>'
             f'<div class="meta"><span>{"Time Allowed: " + esc(time_allowed) if time_allowed else ""}</span><span>Questions in this booklet: {len(qs)}</span>'
             f'<span>{"Maximum Marks: " + str(marks) if marks else ""}</span></div>'
-            + (f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
+            + (f'<div class="note">{esc(MOCK_NOTE[conf["id"]])}, for the {esc(mock)} test series, with an explanation for every answer. '
+               'The answer key and answers with explanations are at the end of this booklet.</div>' if mock and conf['id'] in MOCK_NOTE else
+               f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
                'with an explanation for every answer. The answer key and answers with explanations are at the end of this booklet.</div>' if mock else
                f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official {"question paper of this shift" if conf["board"] == "RRB" else "booklet"} (English'
                + (f' &amp; <span lang="{l2["code"]}">{esc(l2["label"])}</span>' if l2name and l2.get('label') else (f' &amp; {esc(l2name)}' if l2name else ''))
@@ -277,7 +346,7 @@ def brand_original(conf, p, srcs, out):
     dst.save(out, deterministic_id=True, compress_streams=True)
 
 
-def main(exams):
+def main(exams, mocks_only=False):
     from cryptography.hazmat.primitives.ciphers.aead import AESGCM
     import pikepdf
     os.makedirs(OUTDIR, exist_ok=True); os.makedirs(SEALED, exist_ok=True)
@@ -290,7 +359,7 @@ def main(exams):
     mkeys = json.load(open(os.path.join(PRIV, 'mock-keys.json'))) if os.path.exists(os.path.join(PRIV, 'mock-keys.json')) else {}
     for eid in exams:
         conf = confs[eid]
-        papers, qs = B.load_exam(conf)[:2]
+        papers, qs = B.load_exam(conf)[:2] if not mocks_only else ([], [])
         for p in papers:
             pq = [q for q in qs if q['p'] == p['id']]
             if not pq or p.get('fmt') == 'recall': continue   # answer-only papers without options: no booklet
@@ -301,17 +370,16 @@ def main(exams):
             doc = paper_doc(conf, p, pq)
             jobs.append((out, doc))
             todo.append((eid, conf, p, out, hashlib.sha256(doc.encode()).hexdigest()[:10]))
-        for mid, pack, mname in MOCKS.get(eid, []):   # released Mission Khaki mocks: decrypt the sealed file with its private key
-            import glob
+        for mid, pack, mname, mins, qn in released_mocks(eid):   # every released mock: decrypt the sealed file with its private key
             from cryptography.hazmat.primitives.ciphers.aead import AESGCM as _A
-            f = sorted(glob.glob(os.path.join(ROOT, 'docs', conf['dir'], 'mk', f'{mid}-*.bin')))
+            f = sealed_mock(mid)
             if not f or mid not in mkeys: print('  no sealed file or key for', mid); continue
-            raw = open(f[-1], 'rb').read()
-            mq = json.loads(_A(base64.b64decode(mkeys[mid])).decrypt(raw[:12], raw[12:], mid.encode()))['questions']
-            mk = B.MOCK_PACKS[eid]
-            p = dict(id=mid.replace('-', ''), mock=mid, title=f'{mk["title"].split(":")[-1].split("–")[-1].strip()} · {mname}', notif=f'{pack} · {mname}', held='',
-                     kw=f'{pack} {mname}', key='Learn with Anil')
-            p['title'] = f'{conf["seo"]} Prelims 2026 · {mname}'
+            raw = open(f, 'rb').read()
+            mq = [inline_img(q) for q in json.loads(_A(base64.b64decode(mkeys[mid])).decrypt(raw[:12], raw[12:], mid.encode()))['questions']]
+            for i, q in enumerate(mq, 1): q.setdefault('n', i)
+            mq = share_passages(mq)
+            p = dict(id=mock_pid(mid), mock=mid, notif=f'{pack} · {mname}', held='', kw=f'{pack} {mname}', key='Learn with Anil', mins=mins)
+            p['title'] = f'{conf["seo"]} Prelims 2026 · {mname}' if mid.startswith('mk-si-') or mid.startswith('mk-pc-') else f'{conf["seo"]} Mock Test · {mname}'
             out = os.path.join(OUTDIR, f'{eid}-{p["id"]}.pdf')
             doc = paper_doc(conf, p, mq, mock=pack)
             jobs.append((out, doc))
@@ -341,4 +409,9 @@ def main(exams):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:] or DEFAULT)
+    a = sys.argv[1:]
+    if '--mocks' in a:   # python3 tools/booklets.py --mocks [exam ids]: booklets of every released mock (default: every test series)
+        a.remove('--mocks')
+        main(a or list(B.MOCK_PACKS), mocks_only=True)
+    else:
+        main(a or DEFAULT)

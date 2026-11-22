@@ -1,5 +1,21 @@
 {
  "ap-dsc": {
+  "dscmksass1": {
+   "bytes": 1005880,
+   "file": "ap-dsc-dscmksass1-501a713aca.bin",
+   "key": "bk-ap-dsc-dscmksass1",
+   "mock": "bk-dscmk-sass-1",
+   "name": "LearnWithAnil-Akshara-DSC-Mock-1-SA-Social-Studies-Mock-Test.pdf",
+   "pages": 46
+  },
+  "dscmksgt1": {
+   "bytes": 955821,
+   "file": "ap-dsc-dscmksgt1-695a214448.bin",
+   "key": "bk-ap-dsc-dscmksgt1",
+   "mock": "bk-dscmk-sgt-1",
+   "name": "LearnWithAnil-Akshara-DSC-Mock-1-SGT-Mock-Test.pdf",
+   "pages": 41
+  },
   "pet25": {
    "bytes": 807614,
    "file": "ap-dsc-pet25-6bc9095b4d.bin",
@@ -111,6 +127,14 @@
   }
  },
  "appsc-analyst": {
+  "anmk1": {
+   "bytes": 468533,
+   "file": "appsc-analyst-anmk1-ab3efcc869.bin",
+   "key": "bk-appsc-analyst-anmk1",
+   "mock": "bk-anmk-1",
+   "name": "LearnWithAnil-Pariksha-Lab-Mock-1-Mock-Test.pdf",
+   "pages": 27
+  },
   "n2025a": {
    "bytes": 1130224,
    "file": "appsc-analyst-n2025a-4c0e4c4284.bin",
@@ -164,6 +188,30 @@
   }
  },
  "appsc-env-engineer": {
+  "aeemk1": {
+   "bytes": 473022,
+   "file": "appsc-env-engineer-aeemk1-6076bd579d.bin",
+   "key": "bk-appsc-env-engineer-aeemk1",
+   "mock": "bk-aeemk-1",
+   "name": "LearnWithAnil-Harita-AEE-Mock-1-Mock-Test.pdf",
+   "pages": 27
+  },
+  "aeemk2": {
+   "bytes": 476953,
+   "file": "appsc-env-engineer-aeemk2-be3dd5eb3c.bin",
+   "key": "bk-appsc-env-engineer-aeemk2",
+   "mock": "bk-aeemk-2",
+   "name": "LearnWithAnil-Harita-AEE-Mock-2-Mock-Test.pdf",
+   "pages": 26
+  },
+  "aeemk3": {
+   "bytes": 490552,
+   "file": "appsc-env-engineer-aeemk3-319cf46ffe.bin",
+   "key": "bk-appsc-env-engineer-aeemk3",
+   "mock": "bk-aeemk-3",
+   "name": "LearnWithAnil-Harita-AEE-Mock-3-Mock-Test.pdf",
+   "pages": 27
+  },
   "v25c": {
    "bytes": 429008,
    "file": "appsc-env-engineer-v25c-812361e6ec.bin",
@@ -207,6 +255,54 @@
    "key": "bk-appsc-eo-e2025b",
    "name": "LearnWithAnil-APPSC-EO-Grade-3-2026-Paper-2-Hindu-Philosophy-Temple-System-Question-Paper.pdf",
    "pages": 31
+  },
+  "eomk1a": {
+   "bytes": 898699,
+   "file": "appsc-eo-eomk1a-df315ae1c1.bin",
+   "key": "bk-appsc-eo-eomk1a",
+   "mock": "bk-eomk-1a",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-1-Paper-I-GS-Mental-Ability-Mock-Test.pdf",
+   "pages": 40
+  },
+  "eomk1b": {
+   "bytes": 705140,
+   "file": "appsc-eo-eomk1b-bcf3bd27c1.bin",
+   "key": "bk-appsc-eo-eomk1b",
+   "mock": "bk-eomk-1b",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-1-Paper-II-Hindu-Philosophy-Mock-Test.pdf",
+   "pages": 33
+  },
+  "eomk2a": {
+   "bytes": 919751,
+   "file": "appsc-eo-eomk2a-f4de7d247c.bin",
+   "key": "bk-appsc-eo-eomk2a",
+   "mock": "bk-eomk-2a",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-2-Paper-I-GS-Mental-Ability-Mock-Test.pdf",
+   "pages": 43
+  },
+  "eomk2b": {
+   "bytes": 692878,
+   "file": "appsc-eo-eomk2b-4b77b12209.bin",
+   "key": "bk-appsc-eo-eomk2b",
+   "mock": "bk-eomk-2b",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-2-Paper-II-Hindu-Philosophy-Mock-Test.pdf",
+   "pages": 31
+  },
+  "eomk3a": {
+   "bytes": 1004174,
+   "file": "appsc-eo-eomk3a-45513bd8da.bin",
+   "key": "bk-appsc-eo-eomk3a",
+   "mock": "bk-eomk-3a",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-3-Paper-I-GS-Mental-Ability-Mock-Test.pdf",
+   "pages": 41
+  },
+  "eomk3b": {
+   "bytes": 706511,
+   "file": "appsc-eo-eomk3b-609a386727.bin",
+   "key": "bk-appsc-eo-eomk3b",
+   "mock": "bk-eomk-3b",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-3-Paper-II-Hindu-Philosophy-Mock-Test.pdf",
+   "pages": 33
   }
  },
  "appsc-fro": {
@@ -305,6 +401,38 @@
   }
  },
  "appsc-group-2": {
+  "g2mk1": {
+   "bytes": 915299,
+   "file": "appsc-group-2-g2mk1-fd164f7a98.bin",
+   "key": "bk-appsc-group-2-g2mk1",
+   "mock": "bk-g2mk-1",
+   "name": "LearnWithAnil-Bahubali-Prelims-Mock-1-Mock-Test.pdf",
+   "pages": 46
+  },
+  "g2mk2": {
+   "bytes": 902852,
+   "file": "appsc-group-2-g2mk2-c99d9332c5.bin",
+   "key": "bk-appsc-group-2-g2mk2",
+   "mock": "bk-g2mk-2",
+   "name": "LearnWithAnil-Bahubali-Prelims-Mock-2-Mock-Test.pdf",
+   "pages": 44
+  },
+  "g2mk3": {
+   "bytes": 895428,
+   "file": "appsc-group-2-g2mk3-ec567b1bfc.bin",
+   "key": "bk-appsc-group-2-g2mk3",
+   "mock": "bk-g2mk-3",
+   "name": "LearnWithAnil-Bahubali-Prelims-Mock-3-Mock-Test.pdf",
+   "pages": 45
+  },
+  "g2mk4": {
+   "bytes": 938060,
+   "file": "appsc-group-2-g2mk4-5df14b1f98.bin",
+   "key": "bk-appsc-group-2-g2mk4",
+   "mock": "bk-g2mk-4",
+   "name": "LearnWithAnil-Bahubali-Prelims-Mock-4-Mock-Test.pdf",
+   "pages": 47
+  },
   "m2019p1": {
    "bytes": 612766,
    "file": "appsc-group-2-m2019p1-87de9345a3.bin",
@@ -425,6 +553,58 @@
    "pages": 82
   }
  },
+ "ibps-rrb": {
+  "ibpsrrb1": {
+   "bytes": 408993,
+   "file": "ibps-rrb-ibpsrrb1-bc394f0d61.bin",
+   "key": "bk-ibps-rrb-ibpsrrb1",
+   "mock": "bk-ibpsrrb-1",
+   "name": "LearnWithAnil-IBPS-RRB-Clerk-Prelims-Mock-1-Mock-Test.pdf",
+   "pages": 21
+  },
+  "ibpsrrb2": {
+   "bytes": 447007,
+   "file": "ibps-rrb-ibpsrrb2-9360743658.bin",
+   "key": "bk-ibps-rrb-ibpsrrb2",
+   "mock": "bk-ibpsrrb-2",
+   "name": "LearnWithAnil-IBPS-RRB-Clerk-Prelims-Mock-2-Mock-Test.pdf",
+   "pages": 21
+  }
+ },
+ "ibps-so": {
+  "ibpsso1agri": {
+   "bytes": 689741,
+   "file": "ibps-so-ibpsso1agri-18f2db4d5a.bin",
+   "key": "bk-ibps-so-ibpsso1agri",
+   "mock": "bk-ibpsso-1-agri",
+   "name": "LearnWithAnil-IBPS-SO-Prelims-Mock-1-Agriculture-Field-Officer-Mock-Test.pdf",
+   "pages": 32
+  },
+  "ibpsso1hr": {
+   "bytes": 726990,
+   "file": "ibps-so-ibpsso1hr-9799fa75b0.bin",
+   "key": "bk-ibps-so-ibpsso1hr",
+   "mock": "bk-ibpsso-1-hr",
+   "name": "LearnWithAnil-IBPS-SO-Prelims-Mock-1-HR-Personnel-Officer-Mock-Test.pdf",
+   "pages": 34
+  },
+  "ibpsso1it": {
+   "bytes": 663487,
+   "file": "ibps-so-ibpsso1it-34952a21db.bin",
+   "key": "bk-ibps-so-ibpsso1it",
+   "mock": "bk-ibpsso-1-it",
+   "name": "LearnWithAnil-IBPS-SO-Prelims-Mock-1-IT-Officer-Mock-Test.pdf",
+   "pages": 33
+  },
+  "ibpsso1mkt": {
+   "bytes": 735454,
+   "file": "ibps-so-ibpsso1mkt-fd77f24f59.bin",
+   "key": "bk-ibps-so-ibpsso1mkt",
+   "mock": "bk-ibpsso-1-mkt",
+   "name": "LearnWithAnil-IBPS-SO-Prelims-Mock-1-Marketing-Officer-Mock-Test.pdf",
+   "pages": 33
+  }
+ },
  "jkssb-je-civil": {
   "c23": {
    "bytes": 18830918,
@@ -471,6 +651,38 @@
    "key": "bk-karnataka-fda-sda-k22k",
    "name": "LearnWithAnil-KEA-SDA-2026-Kalyana-Karnataka-Kannada-English-Computer-Question-Paper.pdf",
    "pages": 18
+  },
+  "kfsmk1a": {
+   "bytes": 735913,
+   "file": "karnataka-fda-sda-kfsmk1a-e115b40e17.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk1a",
+   "mock": "bk-kfsmk-1a",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-1-Paper-1-General-Knowledge-Mock-Test.pdf",
+   "pages": 37
+  },
+  "kfsmk1b": {
+   "bytes": 863373,
+   "file": "karnataka-fda-sda-kfsmk1b-e64234e19f.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk1b",
+   "mock": "bk-kfsmk-1b",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-1-Paper-2-Kannada-English-Computer-Mock-Test.pdf",
+   "pages": 23
+  },
+  "kfsmk2a": {
+   "bytes": 1268832,
+   "file": "karnataka-fda-sda-kfsmk2a-780db08cbf.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk2a",
+   "mock": "bk-kfsmk-2a",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-2-Paper-1-General-Knowledge-Mock-Test.pdf",
+   "pages": 73
+  },
+  "kfsmk2b": {
+   "bytes": 1348327,
+   "file": "karnataka-fda-sda-kfsmk2b-e9de2212a0.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk2b",
+   "mock": "bk-kfsmk-2b",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-2-Paper-2-Kannada-English-Computer-Mock-Test.pdf",
+   "pages": 52
   },
   "s25g": {
    "bytes": 707918,
@@ -546,6 +758,14 @@
    "name": "LearnWithAnil-MPSC-Group-C-Prelims-2025-Question-Paper.pdf",
    "orig": 1,
    "pages": 42
+  },
+  "mgcmk1": {
+   "bytes": 485267,
+   "file": "mpsc-group-c-mgcmk1-1701f5684c.bin",
+   "key": "bk-mpsc-group-c-mgcmk1",
+   "mock": "bk-mgcmk-1",
+   "name": "LearnWithAnil-Sahyadri-Group-C-Mock-1-Mock-Test.pdf",
+   "pages": 19
   }
  },
  "opsc-aso": {
@@ -572,6 +792,22 @@
    "name": "LearnWithAnil-OPSC-ASO-2025-Paper-3-English-Odia-Question-Paper.pdf",
    "orig": 1,
    "pages": 38
+  },
+  "oasmk1": {
+   "bytes": 297289,
+   "file": "opsc-aso-oasmk1-e80f12530e.bin",
+   "key": "bk-opsc-aso-oasmk1",
+   "mock": "bk-oasmk-1",
+   "name": "LearnWithAnil-Konark-ASO-Test-1-Paper-I-Mock-Test.pdf",
+   "pages": 16
+  },
+  "oasmk2": {
+   "bytes": 370885,
+   "file": "opsc-aso-oasmk2-012bdb54dd.bin",
+   "key": "bk-opsc-aso-oasmk2",
+   "mock": "bk-oasmk-2",
+   "name": "LearnWithAnil-Konark-ASO-Test-2-Paper-II-Mock-Test.pdf",
+   "pages": 12
   },
   "s1": {
    "bytes": 5520554,
@@ -688,6 +924,34 @@
    "pages": 23
   }
  },
+ "sbi-po": {
+  "sbipo1": {
+   "bytes": 652108,
+   "file": "sbi-po-sbipo1-db1aa864cf.bin",
+   "key": "bk-sbi-po-sbipo1",
+   "mock": "bk-sbipo-1",
+   "name": "LearnWithAnil-SBI-PO-Prelims-Mock-1-Mock-Test.pdf",
+   "pages": 33
+  }
+ },
+ "ssc-cgl": {
+  "mkcglt11": {
+   "bytes": 644244,
+   "file": "ssc-cgl-mkcglt11-83743dea8e.bin",
+   "key": "bk-ssc-cgl-mkcglt11",
+   "mock": "mk-cgl-t1-1",
+   "name": "LearnWithAnil-Mission-CGL-Tier-I-Mock-1-Mock-Test.pdf",
+   "pages": 25
+  },
+  "mkcglt21": {
+   "bytes": 959986,
+   "file": "ssc-cgl-mkcglt21-fb6efdfeac.bin",
+   "key": "bk-ssc-cgl-mkcglt21",
+   "mock": "mk-cgl-t2-1",
+   "name": "LearnWithAnil-Mission-CGL-Tier-II-Mock-1-Mock-Test.pdf",
+   "pages": 39
+  }
+ },
  "tgpsc-group-1": {
   "g1p22": {
    "bytes": 1169482,
@@ -766,12 +1030,44 @@
  },
  "ts-police-constable": {
   "mkpc1": {
-   "bytes": 1181952,
-   "file": "ts-police-constable-mkpc1-94ee348001.bin",
+   "bytes": 1110769,
+   "file": "ts-police-constable-mkpc1-e1d3315dca.bin",
    "key": "bk-ts-police-constable-mkpc1",
    "mock": "mk-pc-1",
    "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-1-Mock-Test.pdf",
-   "pages": 51
+   "pages": 50
+  },
+  "mkpc2": {
+   "bytes": 1239576,
+   "file": "ts-police-constable-mkpc2-f4b2d4927b.bin",
+   "key": "bk-ts-police-constable-mkpc2",
+   "mock": "mk-pc-2",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-2-Mock-Test.pdf",
+   "pages": 55
+  },
+  "mkpc3": {
+   "bytes": 1236392,
+   "file": "ts-police-constable-mkpc3-f3822a7ee5.bin",
+   "key": "bk-ts-police-constable-mkpc3",
+   "mock": "mk-pc-3",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-3-Mock-Test.pdf",
+   "pages": 56
+  },
+  "mkpc4": {
+   "bytes": 997199,
+   "file": "ts-police-constable-mkpc4-1809206f1f.bin",
+   "key": "bk-ts-police-constable-mkpc4",
+   "mock": "mk-pc-4",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-4-Mock-Test.pdf",
+   "pages": 48
+  },
+  "mkpc5": {
+   "bytes": 1227761,
+   "file": "ts-police-constable-mkpc5-6759955e53.bin",
+   "key": "bk-ts-police-constable-mkpc5",
+   "mock": "mk-pc-5",
+   "name": "LearnWithAnil-Mission-Khaki-Constable-Mock-5-Mock-Test.pdf",
+   "pages": 55
   },
   "p2016": {
    "bytes": 1184880,
@@ -818,12 +1114,44 @@
  },
  "ts-police-si": {
   "mksi1": {
-   "bytes": 978339,
-   "file": "ts-police-si-mksi1-11573e3f2a.bin",
+   "bytes": 922277,
+   "file": "ts-police-si-mksi1-9793fca04b.bin",
    "key": "bk-ts-police-si-mksi1",
    "mock": "mk-si-1",
    "name": "LearnWithAnil-Mission-Khaki-Mock-1-Mock-Test.pdf",
    "pages": 45
+  },
+  "mksi2": {
+   "bytes": 1240588,
+   "file": "ts-police-si-mksi2-08a4346372.bin",
+   "key": "bk-ts-police-si-mksi2",
+   "mock": "mk-si-2",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-2-Mock-Test.pdf",
+   "pages": 61
+  },
+  "mksi3": {
+   "bytes": 1404517,
+   "file": "ts-police-si-mksi3-128a930631.bin",
+   "key": "bk-ts-police-si-mksi3",
+   "mock": "mk-si-3",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-3-Mock-Test.pdf",
+   "pages": 68
+  },
+  "mksi4": {
+   "bytes": 1153011,
+   "file": "ts-police-si-mksi4-1e304337d4.bin",
+   "key": "bk-ts-police-si-mksi4",
+   "mock": "mk-si-4",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-4-Mock-Test.pdf",
+   "pages": 57
+  },
+  "mksi5": {
+   "bytes": 1396468,
+   "file": "ts-police-si-mksi5-b5b1721cb6.bin",
+   "key": "bk-ts-police-si-mksi5",
+   "mock": "mk-si-5",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-5-Mock-Test.pdf",
+   "pages": 70
   },
   "s2022": {
    "bytes": 1285937,
@@ -895,6 +1223,40 @@
    "name": "LearnWithAnil-UPPSC-RO-ARO-Prelims-2025-Question-Paper.pdf",
    "orig": 2,
    "pages": 34
+  }
+ },
+ "upsc-epfo": {
+  "epfoca1": {
+   "bytes": 261869,
+   "file": "upsc-epfo-epfoca1-471530b7bd.bin",
+   "key": "bk-upsc-epfo-epfoca1",
+   "mock": "bk-epfoca-1",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Current-Affairs-Test-1-Mock-Test.pdf",
+   "pages": 14
+  },
+  "epfoca2": {
+   "bytes": 255815,
+   "file": "upsc-epfo-epfoca2-b83129fe03.bin",
+   "key": "bk-upsc-epfo-epfoca2",
+   "mock": "bk-epfoca-2",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Current-Affairs-Test-2-Mock-Test.pdf",
+   "pages": 14
+  },
+  "epfoca3": {
+   "bytes": 251192,
+   "file": "upsc-epfo-epfoca3-c46c76a420.bin",
+   "key": "bk-upsc-epfo-epfoca3",
+   "mock": "bk-epfoca-3",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Current-Affairs-Test-3-Mock-Test.pdf",
+   "pages": 14
+  },
+  "epfomk1": {
+   "bytes": 1470049,
+   "file": "upsc-epfo-epfomk1-fc448fcdbf.bin",
+   "key": "bk-upsc-epfo-epfomk1",
+   "mock": "bk-epfomk-1",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Mock-1-Mock-Test.pdf",
+   "pages": 67
   }
  },
  "upsssc-inter-level": {

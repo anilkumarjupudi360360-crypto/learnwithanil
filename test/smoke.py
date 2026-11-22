@@ -630,14 +630,17 @@ async def main():
             # exam-booklet PDFs of the previous papers (All-in-One Pass only): a button per paper, a real PDF after decryption
             for eid, ex in BOOKLETS.items():
                 edir = EXAM_DIR.get(eid, eid)
-                pyq = open(os.path.join(SITE, edir, 'pyqs.html'), encoding='utf-8').read()
                 papers_ex = {k: v for k, v in ex.items() if not v.get('mock')}
-                if pyq.count('?pdf=') != len(papers_ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(papers_ex)} paper booklets')
+                if papers_ex:
+                    pyq = open(os.path.join(SITE, edir, 'pyqs.html'), encoding='utf-8').read()
+                    if pyq.count('?pdf=') != len(papers_ex): errors.append(f'{eid}/pyqs.html: {pyq.count("?pdf=")} PDF links for {len(papers_ex)} paper booklets')
                 mocks_ex = [k for k, v in ex.items() if v.get('mock')]
-                if mocks_ex:
-                    mt = open(os.path.join(SITE, edir, 'mock-test.html'), encoding='utf-8').read()
+                if mocks_ex:   # every released mock's PDF (Anil, 22 Nov 2026): on the exam's mock-test page(s) (AP DSC: one page per post)
+                    import glob as _g
+                    mt = ''.join(open(f, encoding='utf-8').read() for f in _g.glob(os.path.join(SITE, edir, '*mock-test.html')))
                     for k in mocks_ex:
-                        if f'?pdf={k}' not in mt: errors.append(f'{eid}/mock-test.html: no PDF link for {k}')
+                        if f'?pdf={k}' not in mt: errors.append(f'{eid}: no mock-test page has the PDF link for {k}')
+                if not papers_ex: continue   # mock-only exams (banking): no papers view to test
                 for passes, paid in [({}, False), (PAID, True)]:
                     bp = await b.new_page(passes=passes, viewport={'width': 1280, 'height': 900}, accept_downloads=True)
                     await bp.add_init_script(REGISTERED); bp.on('pageerror', lambda e: errors.append(f'booklet pageerror: {e}'))
