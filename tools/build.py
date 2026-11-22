@@ -8018,6 +8018,8 @@ MOCK_PACKS = {
                                    ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
                        dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 2),
                             parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
+  # Anil, 22 Nov 2026: "add 2 more mock test series in maharastar exam ...based on pyqs" -> Mocks 2 and 3, every question built on an MPSC PYQ
+  # (writer + blind-checker helper agents; private source /home/claude/mgc/w, tools/merge.py).
   # Anil, 16 Nov 2026: "start a test series ...add one test" (MPSC Group C). Name "Sahyadri Group-C". Each mock = 100 questions, 1 hour,
   # as in MPSC's Group-C prelims (History 11, Geography 8, Polity 15, Economy 16, Science 15, Current Affairs 15, Intelligence & Arithmetic 20).
   # New questions in English and Marathi with explanations in both (private source /home/claude/mgc). Ids start with "bk-"
@@ -8026,15 +8028,16 @@ MOCK_PACKS = {
                    title='Sahyadri Group-C – MPSC Group C Prelims Mock Test Series',
                    summary='10 full-length MPSC Group-C prelims mock tests in the latest pattern, 100 questions in 1 hour each, in Marathi and '
                            'English, with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
-                   about=['New questions written by Learn with Anil for this series in MPSC\'s Group-C prelims pattern (statement, pair-matching '
-                          'and "which is incorrect" questions as MPSC sets them), not copied from coaching material or previous papers. Practise '
-                          'MPSC\'s real Group-C papers free on the previous-papers page.',
+                   about=['Questions written by Learn with Anil for this series in MPSC\'s Group-C prelims pattern (statement, pair-matching '
+                          'and "which is incorrect" questions as MPSC sets them). From Mock 2, every question is built on one of MPSC\'s own '
+                          'previous questions (Group-C prelims 2023 to 2025): the same topic and style, freshly worded, and its explanation names '
+                          'the PYQ it builds on. Practise MPSC\'s real Group-C papers on the previous-papers page.',
                           'Each mock: History 11, Geography & Environment 8, Indian Constitution & Polity 15, Economy 16, General Science 15, '
                           'Current Affairs 15 (with Maharashtra news) and Intelligence Test & Arithmetic 20: 100 questions in 1 hour, as in the '
                           'real exam (where a wrong answer costs ¼ mark, so practise skipping blind guesses).',
                           'Every question and every explanation is in Marathi and English. Your score, accuracy and topic-wise analysis come '
                           'after each mock.'],
-                   mocks=[dict(id=f'bk-mgcmk-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i == 1),   # Mock 1 on 16 Nov 2026
+                   mocks=[dict(id=f'bk-mgcmk-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i <= 3),   # Mock 1 on 16 Nov 2026; Mocks 2-3 (PYQ-based) on 22 Nov 2026
                                parts=[('his', 'History', ['his']), ('geo', 'Geography & Environment', ['geo']),
                                       ('pol', 'Indian Constitution & Polity', ['pol']), ('eco', 'Economy', ['eco']),
                                       ('sci', 'General Science', ['sci']), ('cur', 'Current Affairs', ['cur']),

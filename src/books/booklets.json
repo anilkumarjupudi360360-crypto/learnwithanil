@@ -834,6 +834,22 @@
    "mock": "bk-mgcmk-1",
    "name": "LearnWithAnil-Sahyadri-Group-C-Mock-1-Mock-Test.pdf",
    "pages": 19
+  },
+  "mgcmk2": {
+   "bytes": 1189304,
+   "file": "mpsc-group-c-mgcmk2-af6e31e31b.bin",
+   "key": "bk-mpsc-group-c-mgcmk2",
+   "mock": "bk-mgcmk-2",
+   "name": "LearnWithAnil-Sahyadri-Group-C-Mock-2-Mock-Test.pdf",
+   "pages": 51
+  },
+  "mgcmk3": {
+   "bytes": 1228433,
+   "file": "mpsc-group-c-mgcmk3-669538abd5.bin",
+   "key": "bk-mpsc-group-c-mgcmk3",
+   "mock": "bk-mgcmk-3",
+   "name": "LearnWithAnil-Sahyadri-Group-C-Mock-3-Mock-Test.pdf",
+   "pages": 54
   }
  },
  "opsc-aso": {
