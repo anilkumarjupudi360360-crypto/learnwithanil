@@ -7713,7 +7713,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('JKSSB', 'JKSSB (Jammu & Kashmir): JE Civil'), ('Meghalaya PSC', 'Meghalaya PSC'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA, Police SI & Constable'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('JKSSB', 'JKSSB (Jammu & Kashmir): JE Civil'), ('Meghalaya PSC', 'Meghalaya PSC'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
 
 
 def news_hub_page(loaded, rels):
@@ -8352,7 +8352,7 @@ EXAM_NOTIF = {
     'ssc-gd': 'ssc-gd-constable-2027-notification.html', 'rrb-ntpc': 'rrb-ntpc-2026-notification.html',
     'rpf-si': 'rpf-si-notification-2026.html', 'rpf-constable': 'rpf-constable-notification-2026.html',
     'tnpsc-group-4': 'tnpsc-group-4-notification-2026.html', 'karnataka-fda-sda': 'kea-fda-sda-notification-2026.html',
-    'karnataka-gpstr': 'karnataka-teacher-recruitment-notification-2026.html', 'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
+    'karnataka-gpstr': 'karnataka-teacher-recruitment-notification-2026.html', 'karnataka-police-si': 'karnataka-psi-notification-2026.html', 'karnataka-police-constable': 'ksp-constable-recruitment-2026.html', 'mpsc-group-c': 'mpsc-group-c-notification-2026.html', 'gsssb-cce': 'gsssb-cce-notification-2026.html',
     'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
     'ukpsc-lower-pcs': 'ukpsc-lower-pcs-notification-2026.html', 'cg-vyapam-group-2': 'cg-vyapam-group-2-notification-2026.html',
     # 16 Nov 2026 (Anil: "why ... notification is not present in every exam tile"): pages that existed but were not linked

@@ -1022,6 +1022,101 @@ NEW['karnataka-teacher-recruitment-notification-2026.html'] = dict(   # Anil, 16
 ASOF_PAGE['karnataka-teacher-recruitment-notification-2026.html'] = '16 November 2026'
 
 
+KP_ASOF = '22 November 2026'
+NEW['karnataka-psi-notification-2026.html'] = dict(   # Anil, 22 Nov 2026: Karnataka Police SI PYQs; status page. Facts from KEA's PSI pages (PSIREC2024.aspx, PSI2023.aspx), read 22 Nov 2026
+    exam='karnataka-police-si', board='KEA', site='ksp.karnataka.gov.in and cetonline.karnataka.gov.in/kea', crumb='Karnataka PSI 2026: notification status', faq_asof=KP_ASOF,
+    title='Karnataka PSI Notification 2026 – Status, Last KSP PSI Exams (402 & 545 Posts), Pattern & Previous Papers | Learn with Anil',
+    desc='Karnataka State Police Sub-Inspector (KSP PSI Civil) recruitment 2026: no new notification as of 22 November 2026. Facts of the last two written exams '
+         'conducted by KEA (402 posts on 3 October 2024; the 545-post re-examination on 23 January 2024), the Paper-1 and Paper-2 pattern, and the PSI Paper-2 '
+         'previous papers with KEA\'s final keys in Kannada and English.',
+    h1='Karnataka PSI 2026: no new notification yet',
+    lede='There is no new Karnataka State Police Sub-Inspector (Civil) notification as of 22 November 2026. The last two PSI written exams were conducted for KSP by the '
+         'Karnataka Examinations Authority (KEA): the 402-post exam on 3 October 2024 and the 545-post re-examination on 23 January 2024. Below: the status, the facts '
+         'of those two exams, the pattern, and their Paper-2 question papers with KEA\'s final keys.',
+    kn='ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಪಿಎಸ್‌ಐ (ಸಿವಿಲ್) ನೇಮಕಾತಿ 2026: 22 ನವೆಂಬರ್ 2026ರವರೆಗೆ ಹೊಸ ಅಧಿಸೂಚನೆ ಪ್ರಕಟವಾಗಿಲ್ಲ. ಕೆಇಎ ನಡೆಸಿದ 402 ಹುದ್ದೆಗಳ ಪರೀಕ್ಷೆ (3 ಅಕ್ಟೋಬರ್ 2024) ಮತ್ತು '
+       '545 ಹುದ್ದೆಗಳ ಮರು ಪರೀಕ್ಷೆ (23 ಜನವರಿ 2024)ಯ ಪತ್ರಿಕೆ-2 ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ ಇಲ್ಲಿ ಅಭ್ಯಾಸಕ್ಕೆ ಲಭ್ಯ.',
+    pdf='https://cetonline.karnataka.gov.in/keawebentry456/PSIREC2024/PSI_KEY_2024_kannada.pdf', pdfname='KEA, PSI 2024 (402 posts) Paper-2 final key answers (6 November 2024)',
+    more_src=[('https://cetonline.karnataka.gov.in/kea/PSIREC2024.aspx', 'KEA: PSI recruitment 2024 (402 posts)'),
+              ('https://cetonline.karnataka.gov.in/kea/PSI2023.aspx', 'KEA: PSI recruitment re-examination (545 posts)')],
+    related=['ksp-constable-recruitment-2026.html'],
+    sections=[
+      ('Status (as of 22 November 2026)', 'table', [
+        ('New KSP PSI notification', 'Not issued yet'),
+        ('Who conducts the written exam', 'The Karnataka Examinations Authority (KEA), for the Karnataka State Police (as in 2024)'),
+        ('Where to watch', 'ksp.karnataka.gov.in and cetonline.karnataka.gov.in/kea'),
+        ('Last PSI written exam', '3 October 2024 (402 posts)')]),
+      ('', 'note', 'Post numbers or dates for a 2026 PSI recruitment seen on some websites are not official until KSP or KEA publishes the notification.'),
+      ('PSI (Civil) 402 posts, 2024 (KEA)', 'table', [
+        ('Written exam', 'Thursday, 3 October 2024: Paper-1 (descriptive) and Paper-2 (objective)'),
+        ('Paper-2 key answers', '4 October 2024, with an online objection window'),
+        ('Final key and provisional results', '6 November 2024'),
+        ('Final score list', '14 November 2024')]),
+      ('PSI (Civil) 545 posts, re-examination (KEA)', 'table', [
+        ('Why a re-examination', 'The original written exam of this recruitment was cancelled after irregularities came to light, and KEA held it afresh'),
+        ('Written exam', 'Tuesday, 23 January 2024, in two sessions'),
+        ('Provisional key', 'Published with a notice of 29 January 2024; the objection date was extended to 5 February 2024'),
+        ('Final key answers', '1 March 2024'),
+        ('Final score list', '28 March 2024')]),
+      ('Written exam pattern', 'table+', (['Paper', 'What it has', 'Marks · time'], [
+        ('Paper-1 (descriptive)', 'Essay, précis writing and translation (Kannada ↔ English)', '50 marks · 90 minutes'),
+        ('Paper-2 (objective)', '100 multiple-choice questions on general knowledge, current affairs and mental ability, printed in Kannada and English', '150 marks (1.5 a question) · 90 minutes')])),
+    ],
+    faqs=[
+      ('Is the Karnataka PSI notification 2026 out?', 'No, not as of 22 November 2026. The last KSP PSI written exam was held on 3 October 2024 for 402 posts.'),
+      ('Who conducts the Karnataka PSI exam?', 'The Karnataka Examinations Authority (KEA) conducted both 2024 written exams (the 545-post re-examination and the 402-post exam) for the Karnataka State Police and published their keys and results.'),
+      ('What is the Karnataka PSI exam pattern?', 'Paper-1 is descriptive (essay, précis and translation, 50 marks). Paper-2 has 100 objective questions in Kannada and English; in 2024 it carried 150 marks, 1.5 marks a question, with 90 minutes to answer.'),
+      ('When was the Karnataka PSI re-exam held?', 'On 23 January 2024, for the 545 PSI (Civil) posts. KEA published the final key on 1 March 2024 and the final score list on 28 March 2024.'),
+      ('Where can I practise Karnataka PSI previous papers?', 'On Learn with Anil: Paper-2 of the 3 October 2024 exam and of the 23 January 2024 re-examination, with KEA\'s final keys and explanations in Kannada and English, as 90-minute timed tests or subject-wise practice.'),
+    ])
+ASOF_PAGE['karnataka-psi-notification-2026.html'] = KP_ASOF
+
+NEW['ksp-constable-recruitment-2026.html'] = dict(   # Anil, 22 Nov 2026: Karnataka Police Constable PYQs; status page. Facts from KEA's CPC/CAR-DAR pages (cpcrpc2026, cpckk2026, apcrpc, apckk) and news reports, 22 Nov 2026
+    exam='karnataka-police-constable', board='KEA', site='ksp.karnataka.gov.in and cetonline.karnataka.gov.in/kea', crumb='KSP Constable 2026: status', faq_asof=KP_ASOF,
+    title='KSP Police Constable 2026 – Civil (3,991 Posts) & CAR/DAR: Exam Dates, Keys, PET Stage, Pattern & Previous Papers | Learn with Anil',
+    desc='Karnataka State Police constable recruitment 2026: Civil Police Constable (3,991 posts, written exam 2 August 2026) and Armed Police Constable CAR/DAR '
+         '(written exam 6 September 2026), both conducted by KEA. Key dates, keys, the PET/ET and document verification stage, the exam pattern and both papers '
+         'with answers in Kannada and English.',
+    h1='KSP Police Constable 2026: written exams over, physical and document stage',
+    lede='The Karnataka Examinations Authority (KEA) held the written exams of the Karnataka State Police\'s 2026 constable recruitments: Civil Police Constable on '
+         '2 August 2026 and Armed Police Constable (CAR/DAR) on 6 September 2026, separately for the rest of Karnataka (RPC) and Kalyana Karnataka (KK). Below: '
+         'the dates, the keys, the stage reached, the pattern, and the four question papers with answers.',
+    kn='ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ನೇಮಕಾತಿ 2026: ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ ಲಿಖಿತ ಪರೀಕ್ಷೆ 02.08.2026, ಸಶಸ್ತ್ರ ಪೊಲೀಸ್ ಕಾನ್ಸ್‌ಟೇಬಲ್ (ಸಿಎಆರ್/ಡಿಎಆರ್) 06.09.2026 — '
+       'ಕೆಇಎ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ ನಾಲ್ಕೂ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಇಲ್ಲಿ ಅಭ್ಯಾಸಕ್ಕೆ ಲಭ್ಯ.',
+    pdf='https://cetonline.karnataka.gov.in/kea/cpcrpc2026.aspx', pdfname='KEA: Civil Police Constable recruitment 2026 (RPC) page',
+    more_src=[('https://cetonline.karnataka.gov.in/kea/cpckk2026.aspx', 'KEA: Civil Police Constable recruitment 2026 (Kalyana Karnataka)'),
+              ('https://cetonline.karnataka.gov.in/kea/apcrpc.aspx', 'KEA: Armed Police Constable CAR/DAR 2026 (RPC)'),
+              ('https://cetonline.karnataka.gov.in/kea/apckk.aspx', 'KEA: Armed Police Constable CAR/DAR 2026 (Kalyana Karnataka)')],
+    related=['karnataka-psi-notification-2026.html'],
+    sections=[
+      ('Civil Police Constable 2026', 'table', [
+        ('Posts', '3,991: 3,395 for the rest of Karnataka (RPC) and 596 for Kalyana Karnataka (KK), as reported'),
+        ('Online application', '8 June to 3 July 2026, as reported'),
+        ('Compulsory Kannada test', '19 July 2026'),
+        ('Written exam', 'Sunday, 2 August 2026: RPC 10.30 am to 12 noon; KK 4.00 to 5.30 pm (time revised by KEA from 2.30 to 4.00 pm)'),
+        ('Key answers', '3 August 2026; revised key 7 August 2026 after objections'),
+        ('Provisional score lists', 'August 2026, district-wise'),
+        ('PET and endurance test', 'Schedule published on 16 September 2026'),
+        ('Document verification and medical test', 'Call letters from 20 November 2026')]),
+      ('Armed Police Constable (CAR/DAR) 2026', 'table', [
+        ('Notification', 'June 2026 (KEA notices of 19 and 22 June 2026)'),
+        ('Written exam', 'Sunday, 6 September 2026: RPC 10.30 am to 12 noon; KK 3.00 to 4.30 pm'),
+        ('Key answers', '7 September 2026; revised key 10 September 2026'),
+        ('Final key and provisional score lists', '17 September 2026')]),
+      ('Written exam pattern', 'table+', (['Paper', 'Questions · marks', 'Time'], [
+        ('General Knowledge (Civil PC and CAR/DAR)', '100 questions · 100 marks, in Kannada and English', '90 minutes')])),
+      ('', 'note', 'A quarter mark is deducted for each wrong answer. Candidates are shortlisted from the written exam for the physical tests (PST and endurance test); the '
+                   'KSRP, IRB and KSISF constable recruitment is a separate exam.'),
+    ],
+    faqs=[
+      ('When was the KSP civil police constable exam 2026?', 'On Sunday, 2 August 2026: 10.30 am to 12 noon for the rest of Karnataka (RPC) and 4.00 to 5.30 pm for Kalyana Karnataka, conducted by KEA.'),
+      ('Is the KSP constable answer key out?', 'Yes. KEA published the Civil PC key on 3 August 2026 and a revised key on 7 August 2026; the CAR/DAR final key came on 17 September 2026.'),
+      ('How many posts are in KSP civil police constable 2026?', '3,991, as reported: 3,395 for the rest of Karnataka and 596 for Kalyana Karnataka.'),
+      ('What is the KSP constable exam pattern?', 'One General Knowledge paper of 100 questions and 100 marks in 90 minutes, printed in Kannada and English, with a quarter mark cut for each wrong answer.'),
+      ('What stage is KSP constable 2026 at?', 'For Civil PC, KEA published the PET/ET schedule on 16 September 2026 and document verification and medical test call letters from 20 November 2026.'),
+      ('Where can I practise KSP constable previous papers?', 'On Learn with Anil: the 2026 Civil PC (RPC and KK) and CAR/DAR (RPC and KK) papers with KEA\'s keys and explanations in Kannada and English, as 90-minute timed tests or subject-wise practice.'),
+    ])
+ASOF_PAGE['ksp-constable-recruitment-2026.html'] = KP_ASOF
+
 NEW['mpsc-group-c-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: MPSC Group C (apply till 27 November; prelims 24 January 2027); facts from MPSC's own PDFs (in Marathi), read on 16 Nov 2026
     exam='mpsc-group-c', board='MPSC', site='mpsc.gov.in', crumb='MPSC Group C Notification 2026', faq_asof='16 November 2026',
     title='MPSC Group C Notification 2026: 16,717 Posts, Apply 13–27 November, Prelims 24 January 2027, Pattern & Previous Papers | Learn with Anil',
