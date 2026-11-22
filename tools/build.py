@@ -8510,6 +8510,15 @@ def full_mocks(mk):
     return len(dict.fromkeys(m.get('group') or m['name'].split(' · ')[0] for m in mk['mocks'] if not m.get('extra')))
 
 
+def live_count(mk):
+    """(mocks live now, mocks in the series), counting a mock with several versions once."""
+    if 'mocks' in mk:
+        on = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if m['live'] and not m.get('extra')))
+        allg = list(dict.fromkeys(m.get('group', m['name']) for m in mk['mocks'] if not m.get('extra')))
+        return len(on), len(allg)
+    return min(mk['live'], mk['n']), mk['n']
+
+
 def live_text(mk):
     """'Mock 1 is available now; Mocks 2–10 are coming soon.' (all mocks are included in the pack price)"""
     if 'mocks' in mk:
@@ -9386,8 +9395,15 @@ def mock_page(conf, papers, questions):
     title = (f'{tseo} Mock Test 2026 – {mk["name"]} Test Series & Previous Papers with Timer | Learn with Anil' if mk else
              f'{seo} Mock Test – Full Previous Papers with Timer, English & {l2["name"]} | Learn with Anil')
     desc = ((f'{mk["title"]}: {mk["summary"]} {INCL}. ' if mk else f'{seo} mock tests online: ')
-            + f'take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
+            + f'Take the real {", ".join(paper_kw(conf, p).replace(seo + " ", "") for p in mcq)} question paper{"s" if len(mcq) > 1 else ""} as timed tests, '
             f'in English and {l2["name"]}, with your score, official answers and an explanation for every question.')
+    if mk:   # Anil, 23 Nov 2026 ("update seo"): a short description that search results show in full, with how many mocks are live now
+        on, alln = live_count(mk)
+        qn = (mk['mocks'][0].get('qn') if 'mocks' in mk else mk.get('qn')) or ''
+        desc = (f'{tseo} mock test 2026: {mk["name"]} – {on} of {alln} full-length mocks live now'
+                + (f' ({qn} questions each' if qn else ' (') + f', English & {l2["name"]}, every answer explained)'
+                + (f' + {len(mcq)} real previous paper{"s" if len(mcq) > 1 else ""} as timed tests' if mcq else '')
+                + f'. ₹{PAY["pyq_price"]} All-in-One Pass.')
     pack, rows, info = mock_parts(conf, papers)
     if conf.get('mockonly'):   # SBI PO / IBPS SO: the mock series only
         title = f'{seo} Mock Test 2026 – {mk["title"]}, English & Hindi | Learn with Anil'
