@@ -35,9 +35,9 @@
   "pdf": "LearnWithAnil-Hindu-Philosophy-Temple-System-Telugu-Medium-2026-27.pdf"
  },
  "ma-en": {
-  "file": "ma-en-ae72538596.bin",
-  "bytes": 4127465,
-  "pdf": "LearnWithAnil-Mental-Ability-APPSC-Group-1-Group-2-English-Medium-2026-27.pdf"
+  "file": "ma-en-8c565861ed.bin",
+  "bytes": 13709176,
+  "pdf": "LearnWithAnil-Mental-Ability-APPSC-Group-1-Group-2-Easy-Edition-2026-27.pdf"
  },
  "aphist-en": {
   "file": "aphist-en-7431de62c0.bin",
@@ -78,5 +78,10 @@
   "file": "dscms-en-35b30c16d3.bin",
   "bytes": 944859,
   "pdf": "LearnWithAnil-AP-DSC-2026-SGT-Micro-Syllabus-with-Mega-DSC-2025-Questions-Mapped-English-Medium-2026-27.pdf"
+ },
+ "dscgk-en": {
+  "file": "dscgk-en-b960ddcfc1.bin",
+  "bytes": 4370450,
+  "pdf": "LearnWithAnil-GK-Current-Affairs-AP-DSC-2026-English-Medium-2026-27.pdf"
  }
 }

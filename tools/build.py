@@ -31,7 +31,7 @@ def urgent_note(item, tag='p'):
 
 
 PHONE = '+91 94947 92739'
-EMAIL = 'learnwithanil0608@gmail.com'
+EMAIL = '@learn_with_anil06 (Instagram)'
 # Google Analytics 4 measurement id (G-XXXXXXXXXX) from Anil's Analytics property; empty = no tracking tag on the site.
 GA_ID = os.environ.get('GA_ID', '') or (open(os.path.join(ROOT, 'src', 'ga-id.txt')).read().strip() if os.path.exists(os.path.join(ROOT, 'src', 'ga-id.txt')) else '')
 
@@ -2849,21 +2849,21 @@ def exam_confs():
            notes_title='Study material: all Learn with Anil books',   # Anil, 17 Nov 2026: every book here (ALL_BOOKS_EXAMS), Group-II books first
            notes_seo=('APPSC Group 2 Study Material 2026 (Notification 37/2026) – Books with Previous Questions | Learn with Anil',
                       'Books by Jupudi Anil Kumar for APPSC Group-II (Notification 37/2026): History and Culture of Andhra Pradesh (all 207 APPSC AP history questions), '
-                      'the Mental Ability book (all 212 APPSC mental-ability questions solved, 500 practice questions), Public Administration and Governance, Ethics and Laws, '
+                      'the Mental Ability book (all 212 APPSC mental-ability questions solved step by step, 310 practice questions), Public Administration and Governance, Ethics and Laws, '
                       'AP Economy Crisp Notes and the Science & Technology book.'),
-           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new History and Culture of Andhra Pradesh book for Mains Paper I (17 chapters, all 207 AP history questions APPSC has asked with the official answers), the Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
-           notes_line='The new AP History book for Mains Paper I (all 207 APPSC AP history questions with official answers), the Mental Ability book for the Screening Test (212 APPSC questions solved, 500 practice questions), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-II: the new History and Culture of Andhra Pradesh book for Mains Paper I (17 chapters, all 207 AP history questions APPSC has asked with the official answers), the new easy-edition Mental Ability book for the Screening Test (all 212 APPSC mental-ability questions solved step by step, 154 shortcuts explained in plain words and 310 practice questions), Crisp Notes on AP Economy, and a full Science & Technology book. Every book has APPSC\'s own previous questions inside.',
+           notes_line='The new AP History book for Mains Paper I (all 207 APPSC AP history questions with official answers), the easy-edition Mental Ability book for the Screening Test (212 APPSC questions solved, 310 practice questions), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book, built on APPSC\'s own previous questions.',
            papers_note="Every paper uses APPSC's official final key. The 2024 and 2025 keys show all four options. The 2019 keys print only the correct answer: there the answer is APPSC's and the other three options are written by Learn with Anil (inside the All-in-One Pass)."),
       dict(id='appsc-group-1', dir='appsc-group-1', src='appsc-group-1', key='appsc-g1', name='APPSC Group-I', short='Group-I', seo='APPSC Group 1',
            # Mental Ability book added 8 Nov 2026 (Anil): it is for Prelims Paper II, so the card text no longer says 'for APPSC Mains' only
            # History and Culture of AP book (aphist-en) added 8 Nov 2026 (Anil: "pls go ahead"); on both Group-I and Group-II pages
            notes_title='Study material for APPSC Group-I',
-           notes_seo=('APPSC Group 1 Mental Ability Book – Shortcuts, All Previous Questions Solved, 500 Practice Questions (Free Sample PDF) | Learn with Anil',
-                      'Mental Ability for APPSC Group-I Prelims Paper II and the Group-II Screening Test by Jupudi Anil Kumar: 25 chapters, 269 shortcuts, all 212 APPSC '
-                      'mental-ability questions (2019–2024) solved the fast way and 500 practice questions with answers. Free sample chapter (Percentage); '
+           notes_seo=('APPSC Group 1 Mental Ability Book – Shortcuts, All Previous Questions Solved, 310 Practice Questions (Free Sample PDF) | Learn with Anil',
+                      'Mental Ability for APPSC Group-I Prelims Paper II and the Group-II Screening Test by Jupudi Anil Kumar, new easy edition: 25 chapters, 154 shortcuts explained in plain words, all 212 APPSC '
+                      'mental-ability questions (2019–2024) solved step by step and 310 practice questions with answers. Free sample chapter (Percentage); '
                       'plus Group-I Mains books on History and Culture of Andhra Pradesh (with answer frames), Public Administration, Ethics and Laws, AP Economy and Science & Technology.'),
-           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-I: the new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 269 shortcuts and 500 practice questions), and for the Mains: the new History and Culture of Andhra Pradesh book for Paper II Section B (17 chapters, all 30 Group-I Mains AP history questions with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book. Every book has APPSC\'s own previous questions with the official answers.',
-           notes_line='The new Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved the fast way, 500 practice questions), plus History and Culture of Andhra Pradesh (Paper II, with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book for the Mains, built on APPSC\'s own previous questions.',
+           notes_lede='Exam-focused books by Jupudi Anil Kumar for APPSC Group-I: the new easy-edition Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved step by step, 154 shortcuts explained in plain words and 310 practice questions), and for the Mains: the new History and Culture of Andhra Pradesh book for Paper II Section B (17 chapters, all 30 Group-I Mains AP history questions with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book. Every book has APPSC\'s own previous questions with the official answers.',
+           notes_line='The new easy-edition Mental Ability book for Prelims Paper II (all 212 APPSC mental-ability questions solved step by step, 310 practice questions), plus History and Culture of Andhra Pradesh (Paper II, with answer frames), Public Administration and Governance, Ethics and Laws, Crisp Notes on AP Economy and a full Science & Technology book for the Mains, built on APPSC\'s own previous questions.',
            slugp='appsc-group-1', papers=G1_PAPERS, subjects=G1_SUBJECTS, faq=FAQ_G1, board='APPSC', l2=L2_TE, pb='/appsc-group-1/',
            keyname="APPSC's official final key", keyshort="APPSC's final keys",
            title='APPSC Group 1 Previous Year Question Papers (PYQs) with Answers – Prelims 2019–2024, English & Telugu | Learn with Anil',
@@ -3244,16 +3244,19 @@ def exam_confs():
            short='AP DSC', seo='AP DSC', slugp='ap-dsc', papers=DSC_PAPERS, subjects=DSC_SUBJECTS, faq=FAQ_DSC,
            board='AP DSC', l2=L2_TE, pb='/ap-dsc/', keyname="the School Education Department's final key", keyshort='the official final keys', bits=True,
            notes_title='Study material for AP DSC 2026',   # Anil, 22 Nov 2026: "Publish it" (book dscms-en, the SGT micro-syllabus)
-           notes_seo=('AP DSC 2026 SGT Micro-Syllabus – Topic-wise SCERT Syllabus with Mega DSC 2025 Questions Mapped (Free Sample PDF) | Learn with Anil',
-                      'AP DSC 2026 SGT micro-syllabus by Jupudi Anil Kumar: the official SCERT DSC-2026 syllabus for Secondary Grade Teachers split into 271 '
-                      'micro-topics, with what to study in each and 861 Mega DSC 2025 questions mapped to the topic they came from. Free sample PDF.'),
-           notes_lede=('Know exactly what to study for the SGT paper. This book by Jupudi Anil Kumar takes the official SCERT DSC-2026 Suggestive Syllabus for '
+           # Anil, 22 Nov 2026: GK & Current Affairs book (dscgk-en) added for Part I of every DSC paper
+           notes_seo=('AP DSC 2026 Study Material – GK & Current Affairs Book and SGT Micro-Syllabus (Free Sample PDFs) | Learn with Anil',
+                      'AP DSC 2026 books by Jupudi Anil Kumar: GK & Current Affairs for AP DSC 2026 (current affairs Nov 2025 – Nov 2026, all 213 Mega DSC 2025 GK '
+                      'questions solved, 340 practice questions) and the SGT micro-syllabus (271 micro-topics, 861 Mega DSC 2025 questions mapped). Free sample PDFs.'),
+           notes_lede=('GK & Current Affairs for AP DSC 2026 covers Part I of every DSC paper, for every post: current affairs from November 2025 to November 2026, '
+                       'the static GK DSC keeps asking, all 213 Mega DSC 2025 GK questions solved with the official keys, and 340 practice questions. '
+                       'And to know exactly what to study for the SGT paper, the SGT Micro-Syllabus by Jupudi Anil Kumar takes the official SCERT DSC-2026 Suggestive Syllabus for '
                        'Secondary Grade Teachers, word for word, and splits all eight parts (GK and current affairs, Perspectives in Education, Educational '
                        'Psychology, Telugu, English, Mathematics, Science and Social Studies with their methodologies) into 271 micro-topics, each with a line on '
                        'what to cover. Under every topic are the Mega DSC 2025 questions that came from it, 861 in all, with a star on the topics asked three or '
                        'more times.'),
-           notes_line='SGT Micro-Syllabus: the official DSC-2026 SGT syllabus in 271 micro-topics, with 861 Mega DSC 2025 questions mapped to their topics.',
-           notes_tile='1 Learn with Anil book: the AP DSC 2026 SGT Micro-Syllabus, 271 micro-topics with 861 Mega DSC 2025 questions mapped.',
+           notes_line='GK & Current Affairs for AP DSC 2026 (all 213 Mega DSC 2025 GK questions solved, 340 practice questions) and the SGT Micro-Syllabus (271 micro-topics, 861 questions mapped).',
+           notes_tile='2 Learn with Anil books: GK & Current Affairs for AP DSC 2026, and the SGT Micro-Syllabus with 861 Mega DSC 2025 questions mapped.',
            te_name='ఏపీ డీఎస్సీ', te_paper='టీచర్ రిక్రూట్‌మెంట్ టెస్ట్', subj_te=DSC_SUBJ_TE,
            title='AP DSC Previous Question Papers with Answers – Mega DSC 2025 SGT, School Assistant & PET Final Key, Telugu & English | Learn with Anil',
            h1='AP DSC previous question papers <em>with answers.</em>',
@@ -3846,7 +3849,7 @@ def main():
         ptxt = (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {papers[0]["stage"]} question paper') if papers else ''
         home_desc = conf['desc'](total)
         pb = conf['pb']; basedir = '/' + prefix
-        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"Faculty and Mentor","telephone":"+91-94947-92739","email":"mailto:learnwithanil0608@gmail.com","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
+        person = {"@context":"https://schema.org","@type":"Person","name":"Jupudi Anil Kumar","jobTitle":"Faculty and Mentor","telephone":"+91-94947-92739","url":SITE_URL+'/appsc-group-2/about/',"image":SITE_URL+'/anil.jpg',"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://www.youtube.com/@learn_with_anil06"]}
         website = {"@context":"https://schema.org","@type":"WebSite","name":"Learn with Anil","alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"url":SITE_URL+'/'}
         org = {"@context":"https://schema.org","@type":"Organization","name":"Learn with Anil","url":SITE_URL+'/',"logo":SITE_URL+'/icon-512.png',"alternateName":["LearnWithAnil","learnwithanil.in","Learn with Anil PYQs"],"founder":{"@type":"Person","name":"Jupudi Anil Kumar"},"sameAs":[f"https://www.instagram.com/{INSTAGRAM}/","https://t.me/learn_with_anil06","https://www.youtube.com/@learn_with_anil06"]}
         faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":qq,"acceptedAnswer":{"@type":"Answer","text":aa}} for qq,aa in faq]}
@@ -5805,7 +5808,8 @@ def llms_txt(loaded, grand):
 
 
 GRIEVANCE_OFFICER = 'Jupudi Anil Kumar'
-CONTACT_PHONE, CONTACT_EMAIL = '+91 94947 92739', 'learnwithanil0608@gmail.com'
+CONTACT_PHONE, CONTACT_EMAIL = '+91 94947 92739', '@learn_with_anil06'
+CONTACT_IG = 'https://www.instagram.com/learn_with_anil06/'   # Anil, 22 Nov 2026: Instagram instead of the email address
 
 
 def help_page(loaded):
@@ -5846,7 +5850,7 @@ Every complaint gets a ticket number, so you can refer to it later.</p>
 </form>
 <h2>Grievance officer</h2>
 <p><b>{esc(GRIEVANCE_OFFICER)}</b>, Learn with Anil (learnwithanil.in)<br>
-Email: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br>
+Instagram: <a href="{CONTACT_IG}">{CONTACT_EMAIL}</a><br>
 Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)</p>
 <p>If you are not satisfied with our reply, you can also contact the National Consumer Helpline: call 1915 or visit <a href="https://consumerhelpline.gov.in/" rel="nofollow">consumerhelpline.gov.in</a>.</p>
 <script>(function(){{var f=document.getElementById('gForm'),m=document.getElementById('gMsg');if(!f)return;
@@ -5899,7 +5903,7 @@ def privacy_page():
          'we do it within 30 days. You can also remove Learn with Anil\'s access to your Google account at any time at '
          '<a href="https://myaccount.google.com/connections" rel="nofollow">myaccount.google.com/connections</a>.</p>'),
         ('Contact',
-         f'<p>Grievance officer: <b>{esc(GRIEVANCE_OFFICER)}</b>, Learn with Anil (learnwithanil.in)<br>Email: <a href="mailto:{CONTACT_EMAIL}">'
+         f'<p>Grievance officer: <b>{esc(GRIEVANCE_OFFICER)}</b>, Learn with Anil (learnwithanil.in)<br>Instagram: <a href="{CONTACT_IG}">'
          f'{CONTACT_EMAIL}</a><br>Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'
          '<p class="muted">If we change this policy, the new version will be posted on this page with its date.</p>'),
     ]
@@ -5941,7 +5945,7 @@ def terms_page():
         ('Privacy',
          '<p>How we handle your details is explained in the <a href="/privacy.html">privacy policy</a>.</p>'),
         ('Contact',
-         f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil · <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> · '
+         f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil · <a href="{CONTACT_IG}">{CONTACT_EMAIL}</a> · '
          f'<a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a></p>'),
     ]
     body = '<p class="muted">Last updated: 4 November 2026</p>' + ''.join(f'<h2>{esc(h)}</h2>{t}' for h, t in sec)
@@ -5959,7 +5963,7 @@ def _policy_page(fn, title, desc, h1, lede, crumb, sec):
 
 
 def _contact_html():
-    return (f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil (learnwithanil.in)<br>Email: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br>'
+    return (f'<p>{esc(GRIEVANCE_OFFICER)}, Learn with Anil (learnwithanil.in)<br>Instagram: <a href="{CONTACT_IG}">{CONTACT_EMAIL}</a><br>'
             f'Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(" ", "")}">{CONTACT_PHONE}</a> (10 am – 7 pm, Monday to Saturday)<br>'
             'Complaint form: <a href="/help.html">Help &amp; grievances</a> (reply within 48 hours)</p>')
 
@@ -6065,7 +6069,7 @@ def funders_page(loaded):
     TOT = [amount_lang(total, li, True) for li in range(3)]
     LIVE_TOT = [amount_lang(live_total, li, True) for li in range(3)]
     wa = f'https://wa.me/{WHATSAPP}?text=' + quote('Hi Learn_with_anil Team, I am interested in funding Learn with Anil.')
-    mail = f'mailto:{CONTACT_EMAIL}?subject=' + quote('Funding Learn with Anil')
+    mail = CONTACT_IG
     share = 'https://wa.me/?text=' + quote('Learn with Anil: 1 lakh PYQs of government exams under one roof, for ₹149. Anil is building it alone and needs funders: https://learnwithanil.in/funders')
     T = {
       'eyebrow': ('Fund Learn with Anil', 'Learn with Anil को सहयोग दें', 'Learn with Anil‌కు నిధులు ఇవ్వండి'),
@@ -6369,7 +6373,7 @@ def funders_page(loaded):
     <div class="section-title">{t('contactT', 'h2')}</div>
     <div class="card fund-box">
       <p><b>{esc(GRIEVANCE_OFFICER)}</b>, {t('founder')}<br>
-      Email: <a href="{mail}">{CONTACT_EMAIL}</a><br>
+      Instagram: <a href="{mail}">{CONTACT_EMAIL}</a><br>
       Phone / WhatsApp: <a href="tel:{CONTACT_PHONE.replace(' ', '')}">{CONTACT_PHONE}</a> ({t('hours')})</p>
       <div class="row"><a class="btn btn-primary" href="{wa}" target="_blank" rel="noopener">{t('wa')}</a><a class="btn btn-secondary" href="{mail}">{t('mail')}</a></div>
       {t('note', 'p', 'class="fund-note"')}

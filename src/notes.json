@@ -58,11 +58,11 @@
   "subject": "Mental Ability",
   "title": "Mental Ability for APPSC Group-I & Group-II",
   "title_en": "Mental Ability for APPSC Group-I & Group-II",
-  "subtitle": "Problem types, shortcuts, every APPSC mental-ability question solved the fast way, and 500 simulated practice questions",
+  "subtitle": "New easy edition: every shortcut explained in plain words with everyday examples, every APPSC mental-ability question solved step by step, and 310 practice questions",
   "medium": "English Medium",
   "medium_en": "English Medium",
   "product": "Mental Ability for APPSC Group-I & Group-II, 2026-27 (English Medium)",
-  "pages": 283,
+  "pages": 252,
   "chapters": [
    "Number system, digits, remainders, HCF & LCM",
    "Simplification, approximation, surds & equations",
@@ -95,7 +95,7 @@
   "syllabus": "Group-I Prelims Paper II (Section A) · Group-II Screening Test (Mental Ability)",
   "badge": "Group-I & II",
   "subject_label": "Mental Ability",
-  "chapters_label": "25 chapters · 269 shortcuts · all 212 APPSC PYQs solved · 500 practice questions",
+  "chapters_label": "New easy edition · 25 chapters · 154 shortcuts · all 212 APPSC PYQs solved · 310 practice questions",
   "product_en": "Mental Ability for APPSC Group-I & Group-II, 2026-27 (English Medium)",
   "cover": "notes-ma-en-cover.jpg",
   "samples": [
@@ -674,6 +674,56 @@
    "appsc-env-engineer"
   ],
   "free": "/LearnWithAnil-Environmental-Science-APPSC-AEE-Paper-2-Free-Sample.pdf"
+ },
+ {
+  "id": "dscgk-en",
+  "lang": "en",
+  "vol": null,
+  "series": "AP DSC 2026 · Part I of every paper · all posts",
+  "subject": "GK & Current Affairs",
+  "title": "GK & Current Affairs for AP DSC 2026",
+  "title_en": "GK & Current Affairs for AP DSC 2026",
+  "subtitle": "Current affairs from November 2025 to November 2026 and the static GK DSC keeps asking, with all 213 Mega DSC 2025 GK questions solved with the official keys and 340 practice questions",
+  "medium": "English Medium",
+  "medium_en": "English Medium",
+  "product": "GK & Current Affairs for AP DSC 2026, 2026-27 (English Medium)",
+  "pages": 324,
+  "chapters": [
+   "Andhra Pradesh Current Affairs",
+   "India: Government, Schemes, Appointments and Operations",
+   "World Affairs, Summits and International Organisations",
+   "Science, Space, Defence, Environment and Reports",
+   "Awards and Honours",
+   "Sports",
+   "Books, Authors and Quotes",
+   "Important Days, Years and Themes",
+   "Indian History and the Freedom Struggle",
+   "Art, Culture, Languages and Literature",
+   "Andhra Pradesh and Telugu: History, Culture and Persons",
+   "Polity and Constitutional Posts",
+   "Economy, Committees and Schemes",
+   "Geography",
+   "Environment and Ecology",
+   "General Science and Scientists",
+   "Organisations, Firsts, Nicknames and India at a Glance"
+  ],
+  "pyqs": 213,
+  "price": 45,
+  "syllabus": "AP DSC 2026 (APTRT-2026) · Part I General Knowledge & Current Affairs · SGT, SA, PET and all other posts",
+  "badge": "AP DSC",
+  "subject_label": "GK & Current Affairs",
+  "chapters_label": "17 chapters · current affairs Nov 2025 – Nov 2026 · all 213 Mega DSC 2025 GK PYQs solved · 340 practice questions",
+  "product_en": "GK & Current Affairs for AP DSC 2026, 2026-27 (English Medium)",
+  "cover": "notes-dscgk-en-cover.jpg",
+  "samples": [
+   "notes-dscgk-en-p1.jpg",
+   "notes-dscgk-en-p2.jpg"
+  ],
+  "buy": "",
+  "exams": [
+   "ap-dsc"
+  ],
+  "free": "/LearnWithAnil-AP-DSC-2026-GK-Current-Affairs-Free-Sample.pdf"
  },
  {
   "id": "dscms-en",
