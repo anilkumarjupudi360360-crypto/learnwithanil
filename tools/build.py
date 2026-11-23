@@ -3421,19 +3421,21 @@ def exam_confs():
                         "Kannada is as printed and the English is our translation.")),
       dict(id='karnataka-police-si', dir='karnataka-police-si', src='karnataka-police-si', key='ka-psi', name='Karnataka Police SI', short='Karnataka Police SI', seo='Karnataka PSI',
            slugp='karnataka-psi', papers=KPSI_PAPERS, subjects=KP_SUBJECTS, faq=FAQ_KP('SI'), board='KEA', l2=L2_KN, pb='/karnataka-police-si/',
-           keyname="KEA's final key", keyshort="KEA's final keys", bits=True,
+           keyname="the official key (KEA's for 2024, KSP's before)", keyshort="KEA's and KSP's official keys", bits=True,
            kn_name='ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ', subj_te=KP_SUBJ_KN,
-           title="Karnataka PSI Previous Year Question Papers with Answers – KSP PSI 2024 Paper-2 (402 & 545 posts), Kannada & English | Learn with Anil",
+           title="Karnataka PSI Previous Year Question Papers with Answers – KSP PSI Paper-2 2024, 2021, 2020, 2019, 2017, Kannada & English | Learn with Anil",
            h1='Karnataka PSI previous year question papers <em>with answers.</em>',
            aka=('Also known as the KSP PSI (Civil) exam: Police Sub-Inspector recruitment of the Karnataka State Police, with the written exam conducted by the '
-                'Karnataka Examinations Authority (KEA). Paper-2 General Studies of the 402-post exam (3 October 2024) and the 545-post re-exam (23 January 2024).'),
+                'Karnataka Examinations Authority (KEA) since 2024. Paper-2 General Studies of the 402-post exam (3 October 2024), the 545-post re-exam (23 January 2024) '
+                'and the earlier KSP exams of 3 October 2021, 5 January 2020, 13 January 2019 and 17 September 2017.'),
            aka_short='Karnataka State Police Sub-Inspector (KSP PSI Civil)',
-           l2line='ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ (ಸಿವಿಲ್) ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು — 402 ಹುದ್ದೆಗಳ ಪರೀಕ್ಷೆ (3 ಅಕ್ಟೋಬರ್ 2024) ಮತ್ತು 545 ಹುದ್ದೆಗಳ ಮರು ಪರೀಕ್ಷೆ (23 ಜನವರಿ 2024) ಪತ್ರಿಕೆ-2, ಕೆಇಎ ಅಂತಿಮ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
-           desc=lambda t: (f"Karnataka PSI (KSP Police Sub-Inspector, Civil) previous year question papers with answers from KEA's final keys: Paper-2 General Studies of the "
-                           f"402-post exam of 3 October 2024 and the 545-post re-exam of 23 January 2024. {t:,} questions in Kannada and English with explanations; "
+           l2line='ಕರ್ನಾಟಕ ಪಿಎಸ್‌ಐ (ಸಿವಿಲ್) ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು — 2024ರ 402 ಹುದ್ದೆಗಳ ಪರೀಕ್ಷೆ, 545 ಹುದ್ದೆಗಳ ಮರು ಪರೀಕ್ಷೆ ಮತ್ತು 2021, 2020, 2019, 2017ರ ಪತ್ರಿಕೆ-2, ಅಧಿಕೃತ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ; ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.',
+           desc=lambda t: (f"Karnataka PSI (KSP Police Sub-Inspector, Civil) previous year question papers with answers from the official keys: Paper-2 General Studies of "
+                           f"2024 (402 posts and the 545-post re-exam), 2021, 2020, 2019 and 2017. {t:,} questions in Kannada and English with explanations; "
                            f"subject-wise practice and 90-minute timed mock tests with the ₹149 All-in-One Pass."),
-           eyebrow='KSP · Police Sub-Inspector (Civil) · Paper-2 · 2024',
-           papers_note=("Both papers are KEA's own question booklets (version A1), with the answer from KEA's final key. Every question is printed in Kannada and "
+           eyebrow='KSP · Police Sub-Inspector (Civil) · Paper-2 · 2017–2024',
+           papers_note=("The 2024 papers are KEA's own question booklets (version A1) with KEA's final key; the 2017–2021 papers are KSP's own booklets with the key KSP "
+                        "published for that booklet series. Every question is printed in Kannada and "
                         "English, and both are shown here. Questions KEA deleted (grace marks) are left out; where KEA accepted more than one option, all of them "
                         "are marked correct. Paper-1 (descriptive) is not included.")),
       dict(id='karnataka-police-constable', dir='karnataka-police-constable', src='karnataka-police-constable', key='ka-pc', name='Karnataka Police Constable',
@@ -6542,13 +6544,13 @@ LANDINGS = {
   'karnataka-police-pyqs.html': dict(   # Anil, 22 Nov 2026: KSP PSI + Constable (KEA conducts the written exams)
       board='KEA', ename='Karnataka Police', crumb='Karnataka Police PYQs', lang='kn',
       title='Karnataka Police Previous Question Papers with Answers – KSP PSI & Constable (Civil, CAR/DAR) PYQs, Kannada & English | Learn with Anil',
-      desc='Karnataka State Police (KSP) PSI and Constable previous question papers in one place: PSI Paper-2 of 2024 (402 posts and the 545-post re-exam) and the '
-           '2026 Civil and Armed (CAR/DAR) Police Constable papers, {n} questions with KEA\'s keys and explanations in Kannada and English. '
+      desc='Karnataka State Police (KSP) PSI and Constable previous question papers in one place: PSI Paper-2 of 2024, 2021, 2020, 2019 and 2017 and the '
+           '2026 Civil and Armed (CAR/DAR) Police Constable papers, {n} questions with the official keys and explanations in Kannada and English. '
            'Practise them online with one ₹149 All-in-One Pass for every exam.',
       h1='Karnataka Police PSI & Constable previous question papers with answers',
-      lede="Every Karnataka State Police PSI and Constable question paper on Learn with Anil, {n} questions in all. Each is KEA's own question booklet "
-           "with the answer from KEA's key, and every question has an explanation in Kannada and English.",
-      intro='<p>Looking for the Karnataka PSI question paper 2024 with the key answer, the KSP civil police constable question paper 2026, the CAR/DAR constable paper, '
+      lede="Every Karnataka State Police PSI and Constable question paper on Learn with Anil, {n} questions in all. Each is the board's own question booklet (KEA's, or KSP's for the "
+           "2017–2021 PSI papers) with the answer from its official key, and every question has an explanation in Kannada and English.",
+      intro='<p>Looking for the Karnataka PSI question paper 2024, 2021, 2020, 2019 or 2017 with the key answer, the KSP civil police constable question paper 2026, the CAR/DAR constable paper, '
             'or a Karnataka police mock test in Kannada? They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="kn">ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಪಿಎಸ್‌ಐ ಮತ್ತು ಕಾನ್ಸ್‌ಟೇಬಲ್ (ಸಿವಿಲ್, ಸಿಎಆರ್/ಡಿಎಆರ್) ಹಿಂದಿನ ವರ್ಷದ ಪ್ರಶ್ನೆಪತ್ರಿಕೆಗಳು ಕೆಇಎ ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ — ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ವಿವರಣೆಗಳು; ಎಲ್ಲಾ ಪರೀಕ್ಷೆಗಳಿಗೆ ಒಂದೇ ₹149 ಆಲ್-ಇನ್-ಒನ್ ಪಾಸ್.</p>'
             '<p class="note">Full papers with a 90-minute timer: <a href="/karnataka-police-si/mock-test.html">Karnataka PSI mock test</a> · '

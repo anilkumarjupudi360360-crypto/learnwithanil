@@ -1028,11 +1028,11 @@ NEW['karnataka-psi-notification-2026.html'] = dict(   # Anil, 22 Nov 2026: Karna
     title='Karnataka PSI Notification 2026 – Status, Last KSP PSI Exams (402 & 545 Posts), Pattern & Previous Papers | Learn with Anil',
     desc='Karnataka State Police Sub-Inspector (KSP PSI Civil) recruitment 2026: no new notification as of 22 November 2026. Facts of the last two written exams '
          'conducted by KEA (402 posts on 3 October 2024; the 545-post re-examination on 23 January 2024), the Paper-1 and Paper-2 pattern, and the PSI Paper-2 '
-         'previous papers with KEA\'s final keys in Kannada and English.',
+         'previous papers (2024 with KEA\'s final keys, plus KSP\'s 2017–2021 papers with their official keys) in Kannada and English, and the Rakshaka PSI mock tests.',
     h1='Karnataka PSI 2026: no new notification yet',
     lede='There is no new Karnataka State Police Sub-Inspector (Civil) notification as of 22 November 2026. The last two PSI written exams were conducted for KSP by the '
          'Karnataka Examinations Authority (KEA): the 402-post exam on 3 October 2024 and the 545-post re-examination on 23 January 2024. Below: the status, the facts '
-         'of those two exams, the pattern, and their Paper-2 question papers with KEA\'s final keys.',
+         'of those two exams, the pattern, and the Paper-2 question papers of 2024, 2021, 2020, 2019 and 2017 with their official keys.',
     kn='ಕರ್ನಾಟಕ ಪೊಲೀಸ್ ಪಿಎಸ್‌ಐ (ಸಿವಿಲ್) ನೇಮಕಾತಿ 2026: 22 ನವೆಂಬರ್ 2026ರವರೆಗೆ ಹೊಸ ಅಧಿಸೂಚನೆ ಪ್ರಕಟವಾಗಿಲ್ಲ. ಕೆಇಎ ನಡೆಸಿದ 402 ಹುದ್ದೆಗಳ ಪರೀಕ್ಷೆ (3 ಅಕ್ಟೋಬರ್ 2024) ಮತ್ತು '
        '545 ಹುದ್ದೆಗಳ ಮರು ಪರೀಕ್ಷೆ (23 ಜನವರಿ 2024)ಯ ಪತ್ರಿಕೆ-2 ಕೀ ಉತ್ತರಗಳೊಂದಿಗೆ ಇಲ್ಲಿ ಅಭ್ಯಾಸಕ್ಕೆ ಲಭ್ಯ.',
     pdf='https://cetonline.karnataka.gov.in/keawebentry456/PSIREC2024/PSI_KEY_2024_kannada.pdf', pdfname='KEA, PSI 2024 (402 posts) Paper-2 final key answers (6 November 2024)',
