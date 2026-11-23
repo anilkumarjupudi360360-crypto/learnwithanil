@@ -140,6 +140,14 @@
    "mock": "bk-appcmk-1",
    "name": "LearnWithAnil-Mission-Khaki-AP-Constable-Mock-1-Mock-Test.pdf",
    "pages": 95
+  },
+  "appcmk2": {
+   "bytes": 1395628,
+   "file": "ap-police-constable-appcmk2-8ec86f3370.bin",
+   "key": "bk-ap-police-constable-appcmk2",
+   "mock": "bk-appcmk-2",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Constable-Mock-2-Mock-Test.pdf",
+   "pages": 68
   }
  },
  "ap-police-si": {
@@ -172,6 +180,22 @@
    "mock": "bk-apsimk-1b",
    "name": "LearnWithAnil-Mission-Khaki-AP-Mock-1-Paper-II-General-Studies-Mock-Test.pdf",
    "pages": 64
+  },
+  "apsimk2a": {
+   "bytes": 881406,
+   "file": "ap-police-si-apsimk2a-99d67ddb60.bin",
+   "key": "bk-ap-police-si-apsimk2a",
+   "mock": "bk-apsimk-2a",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Mock-2-Paper-I-Arithmetic-Reasoning-Mock-Test.pdf",
+   "pages": 43
+  },
+  "apsimk2b": {
+   "bytes": 1104595,
+   "file": "ap-police-si-apsimk2b-c2d224e5d1.bin",
+   "key": "bk-ap-police-si-apsimk2b",
+   "mock": "bk-apsimk-2b",
+   "name": "LearnWithAnil-Mission-Khaki-AP-Mock-2-Paper-II-General-Studies-Mock-Test.pdf",
+   "pages": 56
   }
  },
  "appsc-amvi": {

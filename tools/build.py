@@ -8003,10 +8003,10 @@ MOCK_PACKS = {
                               'previous-papers page.'],
                        mocks=[m for i in range(1, 11) for m in (
                            dict(id=f'bk-apsimk-{i}a', name=f'Mock {i} · Paper I (Arithmetic & Reasoning)', group=f'Mock {i}', qn=100, mins=180,
-                                live=(i == 1), free=(i == 1),   # Mock 1 on 22 Nov 2026
+                                live=(i <= 2), free=(i == 1),   # Mock 1 on 22 Nov 2026; Mock 2 (PYQ-based: AP SI 2023 / TS SI questions) on 23 Nov 2026
                                 parts=[('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning & Mental Ability', ['rea'])]),
                            dict(id=f'bk-apsimk-{i}b', name=f'Mock {i} · Paper II (General Studies)', group=f'Mock {i}', qn=100, mins=180,
-                                live=(i == 1), free=(i == 1),
+                                live=(i <= 2), free=(i == 1),
                                 parts=[('sci', 'General Science', ['sci']), ('cur', 'Current Affairs', ['cur']), ('his', 'History & Andhra Pradesh', ['ih', 'ap']),
                                        ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']), ('geo', 'Geography', ['geo'])]))]),
   'ap-police-constable': dict(id='bk-appcmk', name='Mission Khaki AP – Constable', price=149, src='ap-police-constable-mocks', dir='ap-police-constable',
@@ -8024,7 +8024,7 @@ MOCK_PACKS = {
                               'Every other question is in English and Telugu, with a 100–200-word explanation in both. Your score, accuracy and '
                               'topic-wise analysis come after each mock. Mock 1 is free: register once and take it. Writing the SI exam too? '
                               'Mission Khaki AP (SI) is in the same All-in-One Pass.'],
-                       mocks=[dict(id=f'bk-appcmk-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i == 1), free=(i == 1),   # Mock 1 on 22 Nov 2026
+                       mocks=[dict(id=f'bk-appcmk-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 2), free=(i == 1),   # Mock 1 on 22 Nov 2026; Mock 2 (PYQ-based: AP PC 2023 / TS PC questions) on 23 Nov 2026
                                    parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                           ('gs', 'General Studies', ['sci', 'ih', 'ap', 'geo', 'pol', 'eco', 'cur'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
