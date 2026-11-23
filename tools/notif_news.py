@@ -1548,6 +1548,54 @@ NEW['opsc-aso-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Odisha OPS
     ])
 ASOF_PAGE['opsc-aso-notification-2026.html'] = '16 November 2026'
 
+NEW['osssc-medical-laboratory-technician-notification-2026.html'] = dict(   # Anil, 23 Nov 2026: OSSSC Medical Laboratory Technician PYQs; facts from OSSSC's Advertisement No. IIE-99/2026-3440/OSSSC dated 17.11.2026 (read on 23 Nov 2026)
+    exam='osssc-mlt', board='OSSSC', site='osssc.gov.in', crumb='OSSSC Lab Technician Notification 2026', faq_asof='23 November 2026',
+    title='OSSSC Medical Laboratory Technician Notification 2026: 380 Posts, Apply by 17 December, Exam Pattern, Age, Fee & Previous Paper | Learn with Anil',
+    desc='OSSSC Advertisement No. IIE-99/2026-3440/OSSSC (17 November 2026): 380 District Cadre posts of Medical Laboratory Technician in 13 districts '
+         'under the Health & Family Welfare Department. Apply on osssc.gov.in by 17 December 2026. +2 Science with DMLT/BMLT, age 21–42, pay Level 7, '
+         'a 100-question written test, and the OSSSC Lab Technician previous paper with answers.',
+    h1='OSSSC Medical Laboratory Technician notification 2026: 380 posts, apply by 17 December',
+    lede='The Odisha Sub-ordinate Staff Selection Commission (OSSSC) has advertised 380 District Cadre Group-C posts of Medical Laboratory Technician '
+         'in 13 districts under the Health & Family Welfare Department (Advertisement No. IIE-99/2026-3440/OSSSC, 17 November 2026). Register or '
+         're-register on osssc.gov.in by 10 December 2026 and submit the online application by 17 December 2026. Below: the key dates, who can '
+         'apply, the written test and OSSSC\'s previous Lab Technician paper to practise.',
+    pdf='https://www.osssc.gov.in', pdfname='OSSSC Advertisement No. IIE-99/2026-3440/OSSSC, osssc.gov.in > Notifications',
+    sections=[
+      ('Key dates', 'table', [
+        ('Advertisement', 'No. IIE-99/2026-3440/OSSSC, 17 November 2026'),
+        ('Online registration / re-registration', '17 November to 10 December 2026 on osssc.gov.in'),
+        ('Submission of online application', '17 November to 17 December 2026'),
+        ('Written test', 'Date, time and venue to be notified on osssc.gov.in and in local newspapers'),
+      ]),
+      ('Post and pay', 'table+', (['Post', 'Posts', 'Pay'], [
+        ('Medical Laboratory Technician (District Cadre, Group-C)', '380 in 13 districts', 'Rs. 25,500–81,100, Pay Matrix Level 7')])),
+      ('Written test', 'table+', (['Part', 'Questions (marks)', 'Time'], [
+        ('Diploma in Medical Laboratory Technology syllabus', '60', ''),
+        ('Questions based on practical skills', '25', ''),
+        ('Arithmetic (High School Certificate standard)', '10', ''),
+        ('English (High School Certificate standard)', '5', ''),
+        ('Total (one paper, MCQ, OMR/CBRE mode)', '100', '2 hours'),
+      ])),
+      ('', 'note', 'A wrong answer (or more than one answer) costs 0.25 mark; a question left blank costs nothing. The minimum qualifying score is 35%, '
+                   'or 30% for SC, ST, persons with disabilities, ex-servicemen and sportspersons.'),
+      ('Who can apply', 'list', [
+        'Passed +2 Science (CHSE Odisha or equivalent) and a Diploma in Medical Laboratory Technology (DMLT) or Bachelor in Medical Laboratory '
+        'Technology (BMLT) from a Government Medical College & Hospital of Odisha or another institution recognised by the Government of Odisha or AICTE.',
+        'Registered with the Laboratory Technician Council of Odisha, with a valid registration or renewal certificate on the date of applying.',
+        'Able to speak, read and write Odia (Odia at Middle School level, Odia-medium Matriculation, Odia up to Class VII, or the M.E. School standard Odia test).',
+        'Age: 21 to 42 years on the date of advertisement; 5 years more for SC, ST, SEBC and women, 10 more for persons with disabilities; up to 45 for '
+        'contractual Medical Laboratory Technicians under the OSH&FW Society/Scheme.',
+        'Fee: Rs. 500 online; no fee for SC, ST and persons with disabilities. The fee is refunded to candidates who appear in the written test.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for OSSSC Medical Laboratory Technician 2026?', 'Registration or re-registration closes on 10 December 2026 and the online application on 17 December 2026, on osssc.gov.in.'),
+      ('How many posts are there?', '380 District Cadre Group-C posts of Medical Laboratory Technician in 13 districts under the Health & Family Welfare Department.'),
+      ('What is the OSSSC Lab Technician exam pattern?', 'One written test of 100 multiple-choice questions in 2 hours: DMLT syllabus 60, practical skills 25, Arithmetic 10 and English 5, with 0.25 cut for each wrong answer.'),
+      ('What qualification is needed?', '+2 Science with DMLT or BMLT, registration with the Laboratory Technician Council of Odisha, and knowledge of Odia.'),
+      ('Where can I practise the OSSSC Lab Technician previous paper?', 'On Learn with Anil: OSSSC\'s Laboratory Technician-2021 written test of 6 February 2022, all 100 questions with answers and explanations.'),
+    ])
+ASOF_PAGE['osssc-medical-laboratory-technician-notification-2026.html'] = '23 November 2026'
+
 NEW['olm-recruitment-2026.html'] = dict(   # Anil, 23 Nov 2026: OLM / Mission Shakti PYQs; facts from OLM's advertisement (applications 6 Nov - 5 Dec 2026, missionshakti.odisha.gov.in), read on 23 Nov 2026
     exam='olm', board='OLM', site='missionshakti.odisha.gov.in', crumb='OLM Recruitment 2026', faq_asof='23 November 2026',
     title='OLM Recruitment 2026: 1,115 Posts (Block Manager, BMM, Block Accountant), Apply by 5 December, CBT Pattern, Age, Fee & PYQs | Learn with Anil',

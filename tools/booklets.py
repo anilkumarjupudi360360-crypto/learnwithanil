@@ -33,7 +33,7 @@ BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC
               'KEA': 'KARNATAKA EXAMINATIONS AUTHORITY', 'MPSC': 'MAHARASHTRA PUBLIC SERVICE COMMISSION', 'GSSSB': 'GUJARAT SUBORDINATE SERVICE SELECTION BOARD',
               'UPSSSC': 'UTTAR PRADESH SUBORDINATE SERVICES SELECTION COMMISSION', 'UPPSC': 'UTTAR PRADESH PUBLIC SERVICE COMMISSION',
               'UKPSC': 'UTTARAKHAND PUBLIC SERVICE COMMISSION', 'CG Vyapam': 'CHHATTISGARH VYAPAM (CHHATTISGARH KARMCHARI CHAYAN MANDAL)',
-              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD', 'JKSSB': 'JAMMU & KASHMIR SERVICES SELECTION BOARD', 'Meghalaya PSC': 'MEGHALAYA PUBLIC SERVICE COMMISSION',
+              'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'OSSSC': 'ODISHA SUB-ORDINATE STAFF SELECTION COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD', 'JKSSB': 'JAMMU & KASHMIR SERVICES SELECTION BOARD', 'Meghalaya PSC': 'MEGHALAYA PUBLIC SERVICE COMMISSION',
               'Karnataka School Education': 'DEPARTMENT OF SCHOOL EDUCATION, GOVERNMENT OF KARNATAKA'}
 BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS', 'olm': 'LEARN WITH ANIL · PRACTICE SET FOR THE ODISHA LIVELIHOODS MISSION (OLM) CBT'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
@@ -177,6 +177,7 @@ def time_marks(conf, p):
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
     if conf['id'] == 'opsc-aso': return (('2 Hours', 200) if p['id'] in ('a3', 's3') else ('1 Hour 30 Minutes', 100))   # OPSC ASO papers
     if conf['id'] == 'olm': return f"{p.get('mins') or 45} Minutes", p.get('count') or ''   # OLM practice sets: 1 mark a question
+    if conf['id'] == 'osssc-mlt': return '2 Hours', 100   # OSSSC Lab Technician-2021: 100 questions, 1 mark each, 0.25 negative
     if conf['id'] == 'jkssb-je-civil': return '120 Minutes', 120   # JKSSB JE (Civil): 120 questions, 1 mark each
     if conf['id'] == 'meghalaya-psc': return (('2 Hours 30 Minutes', 300) if p['id'] == 'l25' else ('2 Hours', 200))   # MPSC: MCS Prelims papers 100 x 2 marks; LDA 150 x 2 marks
     if conf['id'] == 'dsssb': return '120 Minutes', 200   # DSSSB one-tier tests: 200 questions, 1 mark each

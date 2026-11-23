@@ -1,0 +1,870 @@
+# OSSSC Laboratory Technician-2021 written test, held 6 February 2022: OSSSC's own question booklet, Series A (100 questions, 2 hours, 0.25 negative). Questions in English as printed (the booklet is in English and Odia). Answers worked out by Learn with Anil with two independent solvers; OSSSC's public revisions of 7, 16 and 25 March 2022 applied (Q31, 39, 46, 48, 61, 67, 69, 74, 89 follow OSSSC's revised key). Left out: Q30, Q73, Q75 (graced by OSSSC) and Q41 (no single defensible answer).
+
+Q 1 | ari | Arithmetic
+Which number should replace both the ‘*’ s in (*/18) × (*/162) = 1 ?
+(1) 18
+(2) 54
+(3) 162
+(4) 2916
+= 2
+~ (x/18)(x/162)=1 gives x^2 = 18*162 = 2916, so x = 54.
+
+Q 2 | ari | Arithmetic
+If √5625 = 75, then find the value of √5625 + √56.25 + √0.5625
+(1) 56.25
+(2) 832.5
+(3) 8.325
+(4) 83.25
+= 4
+~ sqrt(56.25)=7.5 and sqrt(0.5625)=0.75, so 75 + 7.5 + 0.75 = 83.25.
+
+Q 3 | ari | Arithmetic
+The H.C.F. of two numbers is 9. Which one of the following numbers can never be their L.C.M.?
+(1) 36
+(2) 54
+(3) 66
+(4) 81
+= 3
+~ The L.C.M. must be a multiple of the H.C.F. (9). 36, 54 and 81 are multiples of 9; 66 is not.
+
+Q 4 | ari | Arithmetic
+Find the value of (0.67 × 0.67−2×0.67×0.52+0.52×0.52)/(0.67−0.52)
+(1) 0.15
+(2) 1
+(3) 1.19
+(4) 0.30
+= 1
+~ Numerator is (0.67-0.52)^2, so the expression equals 0.67-0.52 = 0.15.
+
+Q 5 | ari | Arithmetic
+Of the three numbers, second is twice the first and is also thrice the third. If the average of the three numbers is 33, the largest number is:
+(1) 18
+(2) 27
+(3) 54
+(4) 81
+= 3
+~ Let first = x, second = 2x, third = 2x/3. Sum = 11x/3 = 3*33 = 99, so x = 27; largest = 2x = 54.
+
+Q 6 | ari | Arithmetic
+If the side of a square is increased by 40%, its area is increased by:
+(1) 100%
+(2) 96%
+(3) 80%
+(4) 60%
+= 2
+~ New area = (1.4)^2 = 1.96 times the old area, an increase of 96%.
+
+Q 7 | ari | Arithmetic
+Two numbers are in the ratio 4:5. If 24 is added to each number, the ratio becomes 6:7. The sum of the number is:
+(1) 81
+(2) 90
+(3) 99
+(4) 108
+= 4
+~ (4k+24)/(5k+24) = 6/7 gives 28k+168 = 30k+144, so k = 12; sum = 9k = 108.
+
+Q 8 | ari | Arithmetic
+A grocer sells rice at a profit 20% and uses a weight which is 20% less. Find out overall gain percentage.
+(1) 50%
+(2) 40%
+(3) 30%
+(4) 20%
+= 1
+~ He gives 800 g for the price of 1000 g plus 20%: cost 800, selling price 1200, so gain = 400/800 = 50%.
+
+Q 9 | ari | Arithmetic
+A man takes as much time in running 16 metres as a car takes in covering 64 metres. The ratio of the speeds of the man and the car is:
+(1) 2 : 3
+(2) 4 : 1
+(3) 1 : 4
+(4) 3 : 4
+= 3
+~ In equal time, speed is proportional to distance: 16 : 64 = 1 : 4.
+
+Q 10 | ari | Arithmetic
+17 men can do a piece of work in 5 days. How many men would be required to do the same work in 8 1/2 days?
+(1) 8
+(2) 10
+(3) 12
+(4) 15
+= 2
+~ Total work = 17*5 = 85 man-days; 85 / 8.5 = 10 men.
+
+Q 11 | eng | Grammar & Usage
+The teacher said, “Honesty is the best policy”.
+(Transform the sentence into Indirect speech.)
+(1) The teacher said that honesty is the best policy.
+(2) The teacher said that honesty was the best policy.
+(3) The teacher said that honesty would be the best policy.
+(4) The teacher said that honesty will be the best policy.
+= 1
+~ A universal truth keeps its present tense in indirect speech even after a past reporting verb, so 'honesty is the best policy'.
+
+Q 12 | eng | Vocabulary
+Cut your coat according to your cloth.
+(Choose the Odia proverb with the same meaning. The options are printed in Odia; an English rendering is given in brackets.)
+(1) ଧୀର ପାଣି ପଥର କାଟେ (Slow water cuts the stone)
+(2) ଆକାଶ କଇଁଆ ଚିଲିକା ମାଛ (A sky lily and a Chilika fish)
+(3) ଆୟ ଦେଖି ବ୍ୟୟ କର (Spend after seeing your income)
+(4) ଗରଜିଲା ମେଘ ବରଷେ ନାହିଁ (Thundering clouds do not rain)
+= 3
+~ 'Aya dekhi byaya kara' means 'spend according to your income', which is the sense of 'cut your coat according to your cloth'. The other proverbs mean slow persistence wins, wishful thinking, and barking dogs seldom bite.
+
+Q 13 | eng | Grammar & Usage
+The Ganges ______ a holy river.
+(Fill in the blank with appropriate verb.)
+(1) are
+(2) is
+(3) am
+(4) were
+= 2
+~ 'The Ganges' is the name of one river, so it takes the singular verb 'is'.
+
+Q 14 | eng | Grammar & Usage
+Haste makes waste.
+(Choose the correct part of speech of the word 'waste', which is underlined in the paper.)
+(1) noun
+(2) pronoun
+(3) Adjective
+(4) Adverb
+= 1
+~ In 'Haste makes waste', 'waste' is the object of the verb 'makes', so it is a noun.
+
+Q 15 | eng | Grammar & Usage
+The boy is devoid ______ common sense.
+(Fill in the blanks with appropriate preposition)
+(1) from
+(2) into
+(3) of
+(4) in
+= 3
+~ 'Devoid' is always followed by 'of' (devoid of common sense).
+
+Q 16 | pat | Haematology
+When performing a venipuncture bright red blood spurts into the tube. This means:
+(1) An arterial puncture
+(2) High hemoglobin
+(3) High blood pressure
+(4) High blood ph
+= 1
+~ Bright red blood that spurts under pressure means an artery was punctured instead of a vein. Venous blood is darker and flows steadily.
+
+Q 17 | ana | Anatomy & Physiology
+Outer-cortex of kidney is ______ in colour.
+(1) Blue-black
+(2) Reddish-brown
+(3) Yellowish-green
+(4) Orange-red
+= 2
+~ The renal cortex is the reddish-brown outer zone of the kidney. The medulla with its pyramids is paler and striated.
+
+Q 18 | pat | Histopathology & Cytology
+Smear should be prepared and fixed immediately for cytology because:
+(1) Exfoliated cells degenerate rapidly
+(2) Exfoliated cells may be blown away
+(3) The nuclei of the cells get extruded from the cell
+(4) Cytoplasm develops granularity
+= 1
+~ Exfoliated cells have already left their tissue and start to degenerate and autolyse quickly, so smears are fixed at once while still wet.
+
+Q 19 | ana | Anatomy & Physiology
+Which part of central nervous system is present in the vertebral canal.
+(1) Cerebrum
+(2) Mid brain
+(3) Cerebellum
+(4) Spinal cord
+= 4
+~ The spinal cord lies in the vertebral canal. The cerebrum, midbrain and cerebellum are inside the skull.
+
+Q 20 | mic | Virology, Mycology & Serology
+Which skin test is done to demonstrate circulating diphtheria antitoxin.
+(1) Petroff’s method
+(2) Mantoux test
+(3) Schick’s test
+(4) Lepromin skin test
+= 3
+~ The Schick test injects a small amount of diphtheria toxin into the skin. No reaction means the person has enough circulating antitoxin. Mantoux is for TB and lepromin is for leprosy.
+
+Q 21 | mic | Bacteriology
+Which of the following is a substitute for crystal violet used in gram-staining procedure?
+(1) Methylene blue
+(2) Bromocresol green
+(3) Safranin
+(4) Phenolpthalene
+= 1
+~ The usual substitutes for crystal violet are methyl violet or gentian violet. None of those is listed, and methylene blue is the only basic primary-type dye among the options. Safranin is the counterstain.
+
+Q 22 | bch | Clinical Biochemistry
+Which chondroitin sulphate is present in bone and cornea.
+(1) Chondroitin sulfate A
+(2) Chondroitin sulfate C
+(3) Chondroitin sulfate B
+(4) All options
+= 1
+~ Chondroitin sulfate A (chondroitin 4-sulfate) occurs in cartilage, bone and cornea. Chondroitin sulfate B (dermatan sulfate) is mainly found in skin.
+
+Q 23 | lab | Lab Equipment, Computers & Safety
+Which of the following items are examples of storage devices?
+(1) Floppy / hard disks
+(2) CD-ROMs
+(3) Tape devices
+(4) All of the above
+= 4
+~ Floppy and hard disks, CD-ROMs and magnetic tapes all store data, so all of the above is correct.
+
+Q 24 | lab | Lab Equipment, Computers & Safety
+What is the name of the computer terminal which gives paper printout?
+(1) Display screen
+(2) Soft copy terminal
+(3) Hard copy terminal
+(4) Plotter
+= 3
+~ A hard copy terminal produces its output on paper. A display screen gives soft copy.
+
+Q 25 | ana | Anatomy & Physiology
+The respiratory gases that are present in plasma are
+(1) Helium and oxygen
+(2) Nitrogen and oxygen
+(3) Oxygen and carbon dioxide
+(4) Hydrogen and oxygen
+= 3
+~ The respiratory gases are oxygen and carbon dioxide, and both are carried partly dissolved in plasma.
+
+Q 26 | ana | Anatomy & Physiology
+In the human body, the largest endocrine gland is called.
+(1) Parathyroid gland
+(2) Thyroid gland
+(3) Pituitary gland
+(4) Adrenal gland
+= 2
+~ The thyroid is the largest purely endocrine gland in the body.
+
+Q 27 | mic | Virology, Mycology & Serology
+Largest virus is:-
+(1) Parvo Virus
+(2) Herpes Virus
+(3) Pox Virus
+(4) Mycoplasma
+= 3
+~ Poxviruses (for example variola and vaccinia, about 300 nm) are the largest viruses. Parvoviruses are among the smallest, and Mycoplasma is a bacterium, not a virus.
+
+Q 28 | bch | Clinical Biochemistry
+Cholesterol is synthesized mainly in which part of the body.
+(1) Heart
+(2) Lung
+(3) Liver
+(4) Kidney
+= 3
+~ The liver makes most of the body's cholesterol, by way of HMG-CoA reductase.
+
+Q 29 | bch | Clinical Biochemistry
+Glycosylated hemoglobin is performed on the following sample:
+(1) Serum
+(2) Plasma
+(3) Whole blood
+(4) Urine
+= 3
+~ HbA1c is measured on haemoglobin inside red cells, so the sample is EDTA whole blood, not serum or plasma.
+
+Q 31 | pat | Histopathology & Cytology
+For electron microscopy study, dehydration of tissue is started with ______ percent alcohol.
+(1) 40%
+(2) 50%
+(3) 60%
+(4) 70%
+= 2
+~ For electron microscopy, tissue is usually dehydrated through graded ethanol starting at 50% (50-70-90-100%) to reduce shrinkage and distortion. Some protocols start at 30%. (OSSSC's revised answer key of 7 March 2022 gives option B.)
+
+Q 32 | lab | Lab Equipment, Computers & Safety
+Which solvent is not flammable:
+(1) Ether
+(2) Ethanol
+(3) Methanol
+(4) Saline
+= 4
+~ Saline is a salt solution in water and does not burn. Ether, ethanol and methanol are all flammable.
+
+Q 33 | pat | Histopathology & Cytology
+During section cutting if paraffin wax is too soft, then section is
+(1) Crumbled
+(2) Thick
+(3) Thin
+(4) None option
+= 1
+~ Wax that is too soft does not support the tissue, so sections crumble or compress while being cut.
+
+Q 34 | pat | Histopathology & Cytology
+Which piece of histology equipment is not temperature dependant:
+(1) Wax
+(2) Microtome
+(3) Embedding center
+(4) Water bath
+= 2
+~ The microtome cuts sections mechanically and has no heating element. Wax, the embedding centre and the flotation water bath all depend on temperature control.
+
+Q 35 | ana | Anatomy & Physiology
+Neuromuscular transmission is mediated by
+(1) Acetylcholine
+(2) Lipoprotein
+(3) Triglyceride
+(4) Nitroglycerine
+= 1
+~ Acetylcholine released at the motor end plate carries the signal across the neuromuscular junction.
+
+Q 36 | pat | Parasitology
+Knott concentration method is used for demonstration of
+(1) Malarial parasite in blood film
+(2) Microfilariae in peripheral blood film
+(3) Leishmania donovani in bone marrow aspirate
+(4) Trypanosoma cruzi in blood.
+= 2
+~ Knott's method lyses blood in 2% formalin and centrifuges it to concentrate microfilariae.
+
+Q 37 | bch | Clinical Biochemistry
+Antioxidant property of vitamin C is due to :
+(1) Phenolic hydroxyl group
+(2) Sulfhydryl group
+(3) Active reducing group
+(4) Alcoholic group
+= 3
+~ Ascorbic acid is a strong reducing agent because of its enediol group. It donates electrons and is oxidised to dehydroascorbic acid, which is how it acts as an antioxidant.
+
+Q 38 | mic | Bacteriology
+Catalase production is negative in which of the following?
+(1) Streptococcus
+(2) Salmonella
+(3) Proteus
+(4) Staphylococcus
+= 1
+~ Streptococci are catalase negative. Staphylococci and Enterobacteriaceae such as Salmonella and Proteus are catalase positive.
+
+Q 39 | pat | Histopathology & Cytology
+Which of the following is cytological fixative.
+(1) Flemming’s fluid
+(2) Carnoy’s fluid
+(3) Gendre’s fluid
+(4) None option
+= 2
+~ Carnoy's fluid (absolute alcohol, chloroform and glacial acetic acid) is a rapid fixative used for cytological smears and for preserving nuclei and glycogen. Flemming's fluid is a chromosome (nuclear) fixative for histology, and Gendre's fluid is used for glycogen. (OSSSC's revised answer key of 7 March 2022 gives option B.)
+
+Q 40 | ana | Anatomy & Physiology
+______ is the longest bone.
+(1) Hip bone
+(2) Scapula
+(3) Tarsal bone
+(4) Femur
+= 4
+~ The femur (thigh bone) is the longest and strongest bone in the body.
+
+Q 42 | bch | Clinical Biochemistry
+Osteoporosis occurs as a result of ______ mineral deficiency.
+(1) Sodium
+(2) Iodine
+(3) Calcium
+(4) Iron
+= 3
+~ Osteoporosis is loss of bone mass, mainly linked to calcium deficiency or loss (together with vitamin D).
+
+Q 43 | bch | Clinical Biochemistry
+In which condition, there is no increase in blood glucose level.
+(1) Hyperglycemic glycosuria
+(2) Renal glycosuria
+(3) Alimentary glycosuria
+(4) All options
+= 2
+~ In renal glycosuria the renal threshold for glucose is low, so glucose appears in urine while blood glucose stays normal.
+
+Q 44 | bch | Clinical Biochemistry
+Which of these amino acids are essential for infants?
+(1) Methionine
+(2) Arginine and Histidine
+(3) Valine
+(4) Lysine and Leucine
+= 2
+~ Arginine and histidine are semi-essential. Adults make enough of them, but growing infants need them in the diet.
+
+Q 45 | pat | Histopathology & Cytology
+Section cutting is best after.
+(1) Heating the block
+(2) Cold treatment
+(3) Room temperature
+(4) At 37°C
+= 2
+~ Cooling the paraffin block on ice hardens the wax and tissue to a similar consistency, which gives thin, even sections.
+
+Q 46 | pat | Histopathology & Cytology
+The eosin solution used in H and E stains are prepared from ______.
+(1) Eosin Y
+(2) Eosin Z
+(3) Eosin C
+(4) Eosin R
+= 1
+~ The eosin in routine H&E is eosin Y (yellowish), usually used as a 1% aqueous or alcoholic solution. (OSSSC's revised answer key of 7 March 2022 gives option A.)
+
+Q 47 | bch | Clinical Biochemistry
+Find the INCORRECT statement about the biological functions of lipids.
+(1) Storage form of metabolic fuel
+(2) Have a protective function in bacteria, plant and insect
+(3) The structural component of membranes
+(4) Exhibit increased catalytic activity
+= 4
+~ Lipids act as fuel stores, protective layers and membrane components, but they are not catalysts. Enzymes, which are proteins, do catalysis.
+
+Q 48 | ana | Anatomy & Physiology
+How many types of tissues are present in Human Muscular System?
+(1) 3
+(2) 5
+(3) 4
+(4) 2
+= 1
+~ There are three types of muscle tissue: skeletal, smooth and cardiac. (OSSSC's revised answer key of 7 March 2022 gives option A.)
+
+Q 49 | pat | Histopathology & Cytology
+Which fixative is used in PAP stain.
+(1) Formalin
+(2) Alcohol-ether
+(3) Carnoy’s fluid
+(4) Bovin’s fluid
+= 2
+~ Pap smears are wet-fixed in equal parts of 95% ethanol and ether (or in 95% ethanol alone). Formalin is not used.
+
+Q 50 | ana | Anatomy & Physiology
+Animal cells are interconnected by
+(1) Plasma membrane
+(2) Cell wall
+(3) Desmosomes
+(4) Plasmodesmata
+= 3
+~ Desmosomes (along with tight and gap junctions) join adjacent animal cells. Plasmodesmata and cell walls are found in plant cells.
+
+Q 51 | mic | Sterilisation & Disinfection
+What is the purpose of CSSD?
+(1) Storage of clean equipment
+(2) Providing sterile equipment to the operation theater
+(3) Storing sterile equipment
+(4) Pharmacy of the operation theatre
+= 2
+~ The Central Sterile Supply Department cleans, sterilises and supplies sterile instruments and linen to operation theatres and wards.
+
+Q 52 | bch | Clinical Biochemistry
+The general formula of polysaccharides is
+(1) (C₆H₁₀O₅)n
+(2) (C₆H₁₂O₅)n
+(3) (C₆H₁₀O₆)n
+(4) (C₆H₁₂O₆)n
+= 1
+~ Polysaccharides such as starch and glycogen are chains of glucose residues. Each residue loses one water, giving (C6H10O5)n.
+
+Q 53 | pat | Clinical Pathology
+The tablet used for glucose testing in urine is:
+(1) Clinitest
+(2) Ictotest
+(3) Ace test
+(4) TCA
+= 1
+~ Clinitest is a copper-reduction tablet test for reducing sugar (glucose). Ictotest detects bilirubin and Acetest detects ketones.
+
+Q 54 | mic | Virology, Mycology & Serology
+Chicken-pox is caused by
+(1) Herpes simplex virus
+(2) Varicella virus
+(3) Adenovirus
+(4) None option
+= 2
+~ Chickenpox is caused by the varicella-zoster virus. Herpes simplex causes cold sores and genital herpes.
+
+Q 55 | bch | Clinical Biochemistry
+Which simple protein is soluble in dilute alcohol but not in absolute alcohol.
+(1) Scleroprotein
+(2) Histones
+(3) Prolamines
+(4) Protamines
+= 3
+~ Prolamines (for example zein and gliadin) dissolve in 70-80% alcohol but not in water or absolute alcohol.
+
+Q 56 | mic | Bacteriology
+The agents which prevent multiplication of bacteria is known as
+(1) Bactericidal
+(2) Disinfectant
+(3) Germicidal
+(4) Bacteriostatic
+= 4
+~ Bacteriostatic agents stop bacteria from multiplying without killing them. Bactericidal and germicidal agents kill them.
+
+Q 57 | mic | Bacteriology
+Which alcohol is most frequently used as skin disinfectant.
+(1) Methyl alcohol
+(2) Industrial alcohol
+(3) Isopropyl alcohol
+(4) All options
+= 3
+~ Isopropyl alcohol (about 70%) is widely used to disinfect skin, for example before venepuncture. Methyl alcohol is toxic and is not used on skin.
+
+Q 58 | mic | Virology, Mycology & Serology
+Which method is used for cultivation of viruses.
+(1) Animal inoculation
+(2) Inoculation of embryonated eggs
+(3) Tissue culture method
+(4) All options
+= 4
+~ Viruses grow only in living cells, so they are cultivated in animals, embryonated eggs and tissue culture.
+
+Q 59 | ana | Anatomy & Physiology
+By which tube, middle ear communicates anteriorly with nasopharynx.
+(1) Trachea
+(2) Eustachian tube
+(3) Oesophagus
+(4) None option
+= 2
+~ The Eustachian (auditory) tube connects the middle ear to the nasopharynx and equalises pressure.
+
+Q 60 | pat | Clinical Pathology
+Before performing an R & M on a specimen, the urine would be:
+(1) Filtered
+(2) Brought to room temperature
+(3) Centrifuged
+(4) Well-mixed
+= 4
+~ Urine must be mixed well before routine and microscopic examination so that sediment (cells, casts, crystals) is evenly suspended and the aliquot is representative.
+
+Q 61 | bch | Clinical Biochemistry
+Which of the following enzyme is a sensitive marker of alcoholic liver disease
+(1) Alanine transaminase
+(2) Aspartate transaminase
+(3) Alkaline phosphatase
+(4) Gamma-Glutamyltransferase
+= 4
+~ Gamma-glutamyl transferase is induced by alcohol and is the most sensitive enzyme marker of alcohol intake and alcoholic liver disease. (OSSSC's revised answer key of 7 March 2022 gives option D.)
+
+Q 62 | bch | Clinical Biochemistry
+Absorption of calcium is enhanced by:
+(1) Vitamin A
+(2) Vitamin E
+(3) Vitamin D
+(4) Vitamin L
+= 3
+~ Calcitriol, the active form of vitamin D, increases intestinal calcium absorption by inducing calcium-binding protein.
+
+Q 63 | ana | Anatomy & Physiology
+______ is not a salivary gland
+(1) Submandibular gland
+(2) Sublingual gland
+(3) Parotid gland
+(4) Thyroid gland
+= 4
+~ The parotid, submandibular and sublingual glands are salivary glands. The thyroid is an endocrine gland.
+
+Q 64 | ana | Anatomy & Physiology
+Inability to write is known as
+(1) Alexia
+(2) Aphasia
+(3) Agraphia
+(4) Myopia
+= 3
+~ Agraphia is loss of the ability to write. Alexia is inability to read, and aphasia is a language disorder.
+
+Q 65 | pat | Histopathology & Cytology
+Section cutting machine is also known as:
+(1) Microtome
+(2) Histomat
+(3) Histocut
+(4) Histoform
+= 1
+~ A microtome is the instrument that cuts thin tissue sections.
+
+Q 66 | bch | Clinical Biochemistry
+Which hormone is a polypeptide.
+(1) TSH
+(2) Insulin
+(3) Both A & B
+(4) None option
+= 2
+~ Insulin is a polypeptide hormone with 51 amino acids in A and B chains. TSH is a glycoprotein hormone, so 'both' is not strictly correct.
+
+Q 67 | bch | Clinical Biochemistry
+Which type of phospholipid is found in brain tissues.
+(1) Phosphatidyl ethanolamine
+(2) Phosphatidyl choline
+(3) Phosphatidyl serine
+(4) Plasmalogens
+= 4
+~ Plasmalogens (ether phospholipids) make up a large share of the phospholipid in brain and nerve tissue, especially myelin. Cephalin (phosphatidyl ethanolamine) and phosphatidyl serine are also present, but plasmalogens are the type characteristic of brain. (OSSSC's revised answer key of 7 March 2022 gives option D.)
+
+Q 68 | bch | Clinical Biochemistry
+In animals, carbohydrate is stored in which part of the body.
+(1) Liver
+(2) Muscles
+(3) Both A & B
+(4) Intestine
+= 3
+~ Animals store carbohydrate as glycogen, mainly in the liver and skeletal muscle.
+
+Q 69 | mic | Virology, Mycology & Serology
+Immunoglobuline are which type of Protein in Nature ?
+(1) Alpha Globulin
+(2) Beta Globulin
+(3) Gamma Globulin
+(4) Delta Globulin
+= 3
+~ Most antibodies move in the gamma-globulin fraction on serum electrophoresis, hence the name immunoglobulins or gamma globulins. (OSSSC's revised answer key of 7 March 2022 gives option C.)
+
+Q 70 | ana | Anatomy & Physiology
+Fallopian tubes in females has
+(1) An uterine end
+(2) An ampulla
+(3) A fumbrial end
+(4) All options
+= 4
+~ The fallopian tube has a uterine (intramural) part, an isthmus, an ampulla and a fimbriated infundibulum, so all options apply.
+
+Q 71 | pat | Histopathology & Cytology
+The secretion from the lungs which is tested for malignant cells is called:
+(1) Spittle
+(2) Semen
+(3) Saliva
+(4) Sputum
+= 4
+~ Sputum is the secretion coughed up from the lungs and bronchi, and it is examined cytologically for malignant cells. Saliva comes from the mouth.
+
+Q 72 | pat | Histopathology & Cytology
+Which technique is used in histology for immediate diagnosis.
+(1) Paraffin technique
+(2) Frozen section technique
+(3) Celloidin section technique
+(4) None option
+= 2
+~ Frozen (cryostat) sections can be cut and stained within minutes, so they are used for rapid intra-operative diagnosis.
+
+Q 74 | mic | Bacteriology
+Commonest bacteria in milk
+(1) Bacillus cereus
+(2) Lactobacilli
+(3) Coliform bacilli
+(4) Proteus vulgaris
+= 2
+~ The normal and most common bacteria in milk are lactic acid bacteria (lactobacilli and lactic streptococci), which sour it. Coliforms indicate contamination. (OSSSC's revised answer key of 7 March 2022 gives option B.)
+
+Q 76 | lab | Lab Equipment, Computers & Safety
+Which unit converts user data into machine readable form?
+(1) Input unit
+(2) Output unit
+(3) ALU
+(4) Control Unit
+= 1
+~ Input devices and the input unit convert data entered by the user into binary form that the computer can process.
+
+Q 77 | pat | Histopathology & Cytology
+Iron in tissue is detected by which reaction.
+(1) Silver impregnation method
+(2) Prussian blue reaction
+(3) Uranyl nitrate method
+(4) Toluidine blue method
+= 2
+~ Perls' Prussian blue reaction stains ferric iron (haemosiderin) bright blue in tissue.
+
+Q 78 | mic | Virology, Mycology & Serology
+Silver methenamine stain is used for detection of
+(1) Bacteria
+(2) Parasite
+(3) Fungi
+(4) All options
+= 3
+~ Grocott's methenamine silver stain outlines fungal walls (and Pneumocystis) in black.
+
+Q 79 | ana | Anatomy & Physiology
+Large intestine has all parts except ______.
+(1) Caecum
+(2) Sigmoid colon
+(3) Ascending colon
+(4) Jejunum
+= 4
+~ The jejunum is part of the small intestine. The caecum, ascending colon and sigmoid colon belong to the large intestine.
+
+Q 80 | mic | Bacteriology
+In which type of stain, the organism is stained in a different shade of colour from that of the stain.
+(1) Indirect stain
+(2) Negative stain
+(3) Metachromatic stain
+(4) Spore stain
+= 3
+~ In metachromatic staining the dye colours a structure a different shade from the dye itself, for example volutin granules stained with toluidine or methylene blue.
+
+Q 81 | ana | Anatomy & Physiology
+Which part supplies nutrients from maternal blood to the foetus.
+(1) Uterus
+(2) Placenta
+(3) Fallopian tubes
+(4) Vagina
+= 2
+~ The placenta exchanges nutrients, gases and wastes between maternal and fetal blood.
+
+Q 82 | lab | Lab Equipment, Computers & Safety
+What is the responsibility of the logical unit in the CPU of a computer?
+(1) To produce result
+(2) To compare numbers
+(3) To control flow of information
+(4) To do math’s works
+= 2
+~ The logic part of the ALU makes comparisons (greater than, equal to, less than). The arithmetic part does calculations, and the control unit directs the flow of information.
+
+Q 83 | lab | Lab Equipment, Computers & Safety
+What reagent is mutagenic/clastogenic:
+(1) Crystal violet
+(2) Picric acid
+(3) Zenker’s fluid
+(4) Brazil fixative
+= 1
+~ Crystal violet (gentian violet) has been shown to be mutagenic and clastogenic, causing chromosome damage. Picric acid is mainly an explosion hazard and Zenker's is toxic because it contains mercury.
+
+Q 84 | mic | Virology, Mycology & Serology
+Commercially available ELISA kits are used for the detection of ______
+(1) Rotavirus
+(2) Hepatitis B surface antigen
+(3) Anti-HIV antibodies
+(4) All of these
+= 4
+~ ELISA kits are sold commercially for rotavirus antigen, HBsAg and anti-HIV antibodies, so all of these is correct.
+
+Q 85 | ana | Anatomy & Physiology
+How many ribs are present in a human body?
+(1) 12
+(2) 12 pairs
+(3) 24 pairs
+(4) 14
+= 2
+~ Humans have 24 ribs, which is 12 pairs.
+
+Q 86 | pat | Histopathology & Cytology
+Which acid increases staining intensity of eosin.
+(1) Hydrochloric acid
+(2) Acetic acid
+(3) Nitric acid
+(4) Trichloroacetic acid
+= 2
+~ Adding a little glacial acetic acid to eosin sharpens and intensifies the staining.
+
+Q 87 | bch | Clinical Biochemistry
+Name the structure analog of vitamin K, which is used as anticoagulant?
+(1) Warfarin
+(2) Tocopherol
+(3) Ergocalciferol
+(4) β-carotene
+= 1
+~ Warfarin (a coumarin) is a structural analogue of vitamin K. It blocks vitamin K epoxide reductase and works as an oral anticoagulant.
+
+Q 88 | ana | Anatomy & Physiology
+Somatic Nervous system consists of ______ pairs of cranial nerves.
+(1) 12
+(2) 18
+(3) 65
+(4) 8
+= 1
+~ There are 12 pairs of cranial nerves, along with 31 pairs of spinal nerves.
+
+Q 89 | mic | Sterilisation & Disinfection
+Which type of radiations are used for sterilizing syringes & catheters.
+(1) Ultraviolet radiations
+(2) Infrared radiations
+(3) Gamma radiations
+(4) X-rays
+= 3
+~ Gamma rays penetrate deeply without heating, so they are used to cold-sterilise disposable plastic syringes and catheters. UV only acts on surfaces. (OSSSC's revised answer key of 7 March 2022 gives option C.)
+
+Q 90 | bch | Clinical Biochemistry
+Which enzyme is more active between pH 8 and 10.
+(1) Amylase
+(2) Lipase
+(3) Alkaline phosphatase
+(4) Acid phosphatase
+= 3
+~ Alkaline phosphatase works best at alkaline pH (about 9-10). Acid phosphatase works best near pH 5.
+
+Q 91 | lab | Lab Equipment, Computers & Safety
+Which type of Microscope is mostly used for routine microbiological work?
+(1) Phase-contrast Microscope
+(2) Brightfield Microscope
+(3) Electron Microscope
+(4) Fluorescence Microscope
+= 2
+~ The ordinary bright-field compound microscope is used for routine work such as stained smears and wet mounts.
+
+Q 92 | ana | Anatomy & Physiology
+Which part of the brain controls intellectual ability?
+(1) Frontal lobe
+(2) Parietal lobe
+(3) Temporal lobe
+(4) Occipital lobe
+= 1
+~ The frontal lobe handles intellect, reasoning, judgement and personality.
+
+Q 93 | ana | Anatomy & Physiology
+An organ or structure that is not a component of the urinary system.
+(1) Urethra.
+(2) Urinary bladder.
+(3) Ureter
+(4) Adrenal gland.
+= 4
+~ The adrenal gland sits on the kidney but is an endocrine gland. The ureter, bladder and urethra are urinary organs.
+
+Q 94 | bch | Clinical Biochemistry
+Which method is most commonly used for uric acid estimation.
+(1) Berthelot method
+(2) Caraway method
+(3) Diacetyl Monoxime method
+(4) Sulphosalicyclic acid test
+= 2
+~ The Caraway method (uric acid reducing phosphotungstic acid to tungsten blue) is the classic method for uric acid. Berthelot and diacetyl monoxime are urea methods, and SSA is a test for urine protein.
+
+Q 95 | mic | Virology, Mycology & Serology
+Most naturally occurring antigens are
+(1) Proteins
+(2) Lipids
+(3) Polysaccharides
+(4) Nucleic acids
+= 1
+~ Most natural antigens are proteins, which are large, complex and strongly immunogenic. Polysaccharides come next.
+
+Q 96 | mic | Bacteriology
+Which biochemical test is done for identification of Pseudomonas, Neisseria and Vibrio groups.
+(1) Gluconate test
+(2) Oxidation-fermentation test
+(3) Urease test
+(4) Oxidase test
+= 4
+~ Pseudomonas, Neisseria and Vibrio are oxidase positive, so the oxidase test is used to identify them.
+
+Q 97 | ana | Anatomy & Physiology
+Cramp is involuntary, painful and localized ______ of muscles.
+(1) Contraction
+(2) inflammation
+(3) Relaxation
+(4) Infection
+= 1
+~ A cramp is a sudden involuntary, painful contraction (spasm) of a muscle.
+
+Q 98 | bch | Clinical Biochemistry
+Which mineral is required for the synthesis of DNA, RNA and phospholipids.
+(1) Sodium
+(2) Calcium
+(3) Potassium
+(4) Phosphorus
+= 4
+~ Phosphorus, as phosphate, makes up the sugar-phosphate backbone of DNA and RNA and is part of phospholipids.
+
+Q 99 | bch | Clinical Biochemistry
+In essential pentosuria, urine contains
+(1) D-Ribose
+(2) D-Xylulose
+(3) L-Xylulose
+(4) D-Xylose
+= 3
+~ Essential pentosuria is caused by a lack of L-xylulose reductase, so L-xylulose is excreted in the urine.
+
+Q 100 | bch | Clinical Biochemistry
+Which enzyme is present mainly in the prostate and increased in prostatic cancer.
+(1) Alkaline phosphatase
+(2) Isocitrate dehydrogenase
+(3) Acid phosphatase
+(4) Amylase
+= 3
+~ Acid phosphatase, especially its prostatic, tartrate-labile fraction, is plentiful in the prostate and rises in metastatic prostate cancer.

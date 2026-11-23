@@ -1335,6 +1335,14 @@
    "live": "opsc-aso/"
   },
   {
+   "id": "osssc-mlt",
+   "cat": "od",
+   "b": "OSSSC",
+   "t": "Lab Technician",
+   "n": "Medical Laboratory Technician, Health & Family Welfare Dept",
+   "live": "osssc-lab-technician/"
+  },
+  {
    "id": "olm",
    "cat": "od",
    "b": "OLM · Mission Shakti",
