@@ -9050,8 +9050,7 @@ def inapp_mocks(conf, papers):
     if conf.get('mockonly'):   # SBI PO / IBPS SO: the mock series only
         return (pack + '<h2>How the mock test works</h2><ul>'
                 f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>'
-                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
-                '<b>Practice mode</b> checks each answer as you go, with its explanation.</li>'
+                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit.</li>'
                 '<li>The green <b>TIMER</b> switch at the top turns the timer off and on again. The timer also pauses while you are away from the test.</li>'
                 '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
                 f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months).</li></ul>')
@@ -9061,8 +9060,7 @@ def inapp_mocks(conf, papers):
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
                f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>') +
-            '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
-            '<b>Practice mode</b> checks each answer as you go, with its explanation, like the previous papers.</li>'
+            '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit.</li>'
             '<li>The green <b>TIMER</b> switch at the top turns the timer off and on again. The timer also pauses while you are away from the test.</li>'
             '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question. Wrong answers go to your Mistakes notebook.</li>'
             f'<li>Everything here opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months){"; the same pass opens " + esc(mk["name"]) if mk else ""}.</li></ul>')
@@ -9160,7 +9158,7 @@ def trow(cover, name, meta, tk='', start='', start_label='Attempt', practice='',
         side = '<div class="tside"><div class="tmk"><span class="tml">Opens soon</span><small class="tms">Coming soon, one by one</small></div></div>'
     else:
         b = (f'<a class="mbtn tres" href="{start}&amp;resume=1" hidden>⟳ Resume</a>' if start and tk else '') + (f'<a class="mbtn go" href="{start}">▶ {start_label}</a>' if start else '')
-        if practice: b += f'<a class="mbtn" href="{practice}">Practice mode</a>'
+        # Anil, 23 Nov 2026: "remove that pratice mood button from all test series" (the practice param is ignored)
         if alt: b += alt
         if pdf: b += pdf.replace(' · <a ', '<a class="mbtn mpdf" ', 1)
         side = ('<div class="tside">' + ('<div class="tmk"><span class="tml">Your marks</span><b class="tmv">—</b><small class="tms">Not attempted yet</small></div>' if tk else '')
@@ -9453,8 +9451,7 @@ def mock_page(conf, papers, questions):
         desc = f'{mk["title"]} by Learn with Anil: {mk["summary"]} {INCL}.'
         body = (pack + '<h2>How the mock test works</h2><ul>'
                 f'<li>Questions appear in English and {esc(l2["name"])} (the English Language section in English only). Switch language with the buttons at the top.</li>'
-                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit. '
-                '<b>Practice mode</b> checks each answer as you go, with its explanation.</li>'
+                '<li><b>Start</b> is the exam-style test: answer, mark for review, and see your score with every answer and explanation when you submit.</li>'
                 '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
                 f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months). Register once with your phone number.</li></ul>'
                 + '<h2>Plans</h2>' + plans_html(conf)
