@@ -905,6 +905,34 @@
   }
  },
  "karnataka-police-si": {
+  "kpc17": {
+   "bytes": 786649,
+   "file": "karnataka-police-si-kpc17-c439dce967.bin",
+   "key": "bk-karnataka-police-si-kpc17",
+   "name": "LearnWithAnil-Karnataka-PSI-2017-Paper-2-Question-Paper.pdf",
+   "pages": 35
+  },
+  "kpc19": {
+   "bytes": 827667,
+   "file": "karnataka-police-si-kpc19-9dd55fddd4.bin",
+   "key": "bk-karnataka-police-si-kpc19",
+   "name": "LearnWithAnil-Karnataka-PSI-2019-Paper-2-Question-Paper.pdf",
+   "pages": 38
+  },
+  "kpc20": {
+   "bytes": 856874,
+   "file": "karnataka-police-si-kpc20-2165c9faf1.bin",
+   "key": "bk-karnataka-police-si-kpc20",
+   "name": "LearnWithAnil-Karnataka-PSI-2020-Paper-2-Question-Paper.pdf",
+   "pages": 39
+  },
+  "kpc21": {
+   "bytes": 884670,
+   "file": "karnataka-police-si-kpc21-19b4c4e3a9.bin",
+   "key": "bk-karnataka-police-si-kpc21",
+   "name": "LearnWithAnil-Karnataka-PSI-2021-545-posts-Paper-2-Question-Paper.pdf",
+   "pages": 41
+  },
   "kpj24": {
    "bytes": 6870808,
    "file": "karnataka-police-si-kpj24-9f8f0d8316.bin",

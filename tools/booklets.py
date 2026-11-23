@@ -39,7 +39,8 @@ BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whos
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}, 'tnpsc-group-4': {'t24': 'A', 't22': 'A'},
-          'karnataka-fda-sda': {'f11g': 'A1', 'f11k': 'A1', 's25g': 'B1', 's25k': 'A1', 'k22g': 'A1', 'k22k': 'A1'}, 'karnataka-gpstr': {'g22g': '1A'}}
+          'karnataka-fda-sda': {'f11g': 'A1', 'f11k': 'A1', 's25g': 'B1', 's25k': 'A1', 'k22g': 'A1', 'k22k': 'A1'}, 'karnataka-gpstr': {'g22g': '1A'},
+          'karnataka-police-si': {'kpc21': 'D', 'kpc20': 'A', 'kpc19': 'C', 'kpc17': 'B'}}
 # Papers whose PDF is the board's ORIGINAL booklet, not a typeset one (Anil, 16 Nov 2026: "no need to upload like this... upload the original ones...
 # just add our brand (at bottom of every page or something like that) on the original and upload... no need to use more energy for making new pdfs").
 # exam -> paper -> (question booklet, official key) under BOOKS_PRIV/originals/<exam>/ (never committed); brand_original() adds a Learn with Anil
@@ -169,7 +170,7 @@ def time_marks(conf, p):
     if conf['id'] == 'tnpsc-group-4': return '3 Hours', 300   # TNPSC Group 4: 200 questions (Part A 150 marks, Parts B-C 150 marks)
     if conf['id'] == 'karnataka-gpstr': return '2 Hours 30 Minutes', 150   # GPSTR 2022 Paper-1: 150 questions, 150 marks
     if conf['id'] == 'karnataka-police-constable': return '90 Minutes', 100   # KSP CPC / CAR-DAR 2026: 100 questions, 100 marks
-    if conf['id'] == 'karnataka-police-si': return '90 Minutes', (150 if p['id'] == 'kpo24' else 100)   # PSI Paper-2: 100 questions (2024: 150 marks)
+    if conf['id'] == 'karnataka-police-si': return '90 Minutes', (100 if p['id'] == 'kpj24' else 150)   # PSI Paper-2: 100 questions, 150 marks (2024 re-exam: 100)
     if conf['id'] == 'karnataka-fda-sda': return '2 Hours', 100   # KEA FDA/SDA: each paper 100 questions, 100 marks, 2 hours
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours

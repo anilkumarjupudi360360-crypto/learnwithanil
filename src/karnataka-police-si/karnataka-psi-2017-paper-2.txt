@@ -1,0 +1,911 @@
+# KSP PSI (Civil) & PSI (State Intelligence)-2017, Paper-2 General Studies, held 17 September 2017, KSP booklet series B; answers: KSP's provisional key
+
+Q 1 | apt | Reasoning
+Kajol goes 20 meters towards West from her house, then to her left she goes 10 meters. After this turning to her left she goes 20 meters. How far and in what direction is she from her house ?
+(1) 20 m, North
+(2) 30 m, South
+(3) 10 m, South
+(4) 10 m, North
+= 3
+~ Draw the path step by step from the house H. Kajol first walks 20 m West. When a person faces West, her left hand points South, so she turns and walks 10 m South. Now facing South, her left points East, so she walks 20 m East. The two 20 m legs (West and East) cancel each other, and she ends up directly below her starting point by the 10 m she walked South. So she is 10 m away from her house in the South direction, option (3). Option (4) gives the right distance but the wrong direction (it would be correct only if her turns were to the right). Options (1) and (2) mix up distances that cancel out with the net displacement. Exam tip: for direction questions, remember that left of West is South and left of South is East; always draw a quick sketch, and cancel equal opposite movements before measuring the final distance.
+
+Q 2 | apt | Reasoning
+Which one is different from the other three ?
+(1) Exoneration
+(2) Dismissal
+(3) Retribution
+(4) Acquittal
+= 2
+~ The official key gives option (2), Dismissal, as the odd word. Exoneration means officially clearing a person of blame, acquittal is a court verdict that the accused is not guilty, and retribution means punishment given in return for a wrong. The key's reasoning appears to be that exoneration, retribution and acquittal are all final judgements on a person's guilt (cleared or punished), while dismissal is a procedural or administrative act, such as dismissing a case or removing an employee from service, which says nothing about guilt. However, many candidates would pick Retribution as the odd one, because exoneration, acquittal and dismissal (of charges) all lead to the person being set free, while retribution alone is a punishment. Since the question is open to two readings, follow the key's answer, Dismissal. Exam tip: in odd-one-out word questions, first find the common meaning shared by three words (here, outcomes in a legal case) and look for the word whose meaning or category differs.
+
+Q 3 | apt | Series & Puzzles
+7 | 21 | 8
+17 | ? | 5
+12 | 1 | 23
+Which of the following is the missing number ?
+(1) 14
+(2) 18
+(3) 3
+(4) 1
+= 1
+~ Look at the totals of the complete rows and columns. Row 1: 7 + 21 + 8 = 36. Row 3: 12 + 1 + 23 = 36. Column 1: 7 + 17 + 12 = 36. Column 3: 8 + 5 + 23 = 36. So every row and every column adds up to 36. For row 2: 17 + ? + 5 = 36, so ? = 36 – 22 = 14. Check with column 2: 21 + 14 + 1 = 36, which confirms the answer. Hence the missing number is 14, option (1). The other options fail the check: 18 gives a row total of 40, 3 gives 25 and 1 gives 23, none of which equals 36. Exam tip: in number-grid puzzles, first test the simplest rule, equal row or column sums, using a row or column that is fully known; then confirm the missing number in the other direction before marking the answer.
+
+Q 4 | apt | Arithmetic
+A train 110 m long passes a platform 90 m long in 10 sec. The speed of the train is
+(1) 54 km/hr.
+(2) 70 km/hr.
+(3) 72 km/hr.
+(4) 90 km/hr.
+= 3
+~ To pass a platform completely, the train must cover its own length plus the length of the platform. Distance = 110 m + 90 m = 200 m. Time = 10 seconds. Speed = 200 ÷ 10 = 20 m/s. To convert metres per second into kilometres per hour, multiply by 18/5: 20 × 18/5 = 72 km/hr. So the speed of the train is 72 km/hr, option (3). Common mistakes lead to the other options: using only the train's length gives 11 m/s = 39.6 km/hr, and using only the platform gives 9 m/s = 32.4 km/hr; 54 km/hr (15 m/s) and 90 km/hr (25 m/s) do not fit the data at all. Exam tip: when a train crosses a pole or a person, distance = train length; when it crosses a platform, bridge or another train, add both lengths. Remember: m/s × 18/5 = km/hr and km/hr × 5/18 = m/s.
+
+Q 5 | geo | Environment & Ecology
+Which is true for DDT ? It is
+(1) not a pollutant
+(2) an antibiotic
+(3) an antiseptic agent
+(4) a non-degradable pollutant
+= 4
+~ DDT (dichloro-diphenyl-trichloroethane) is a synthetic organochlorine insecticide, widely used from the 1940s to control mosquitoes (malaria) and crop pests. It is a non-biodegradable (persistent) pollutant: microorganisms cannot break it down easily into simple harmless compounds, so it stays in soil and water for years. It is fat-soluble, so it accumulates in the bodies of organisms (bioaccumulation) and its concentration rises at each level of the food chain (biomagnification). High DDT levels in birds of prey caused thin eggshells and population crashes, as described in Rachel Carson's book 'Silent Spring' (1962). It is now banned for agriculture under the Stockholm Convention on Persistent Organic Pollutants (2001), with limited use allowed for vector control. Hence option (4). It is clearly a pollutant, so (1) is wrong; it is not an antibiotic (which kills bacteria) or an antiseptic (used on living tissue). Tip: DDT is the standard example of biomagnification in exam questions.
+
+Q 6 | sci | Biology
+Apiculture is the branch of biology that deals with
+(1) Study of cultivation of flower bearing plants
+(2) Study of rearing honey-bees
+(3) Study of rearing of silkworms
+(4) Study of rearing of fishes
+= 2
+~ Apiculture (from Latin 'apis', bee) is the scientific rearing and management of honey-bees for honey, beeswax, royal jelly, propolis and pollination services. Common honey-bee species used in India are Apis cerana indica (Indian bee) and Apis mellifera (European bee); bee-keeping is promoted under the Khadi and Village Industries Commission and the National Bee-keeping and Honey Mission. So option (2) is correct. The other options refer to different branches: cultivation of flowering plants is floriculture, rearing of silkworms is sericulture (Karnataka is India's leading mulberry silk producer, with Ramanagara known as 'Silk City'), and rearing of fishes is pisciculture. Exam tip: learn these '-culture' terms together, as they are frequently asked: apiculture – bees, sericulture – silkworms, pisciculture – fish, aquaculture – aquatic organisms in general, horticulture – fruits and vegetables, floriculture – flowers, viticulture – grapes, olericulture – vegetables, and vermiculture – earthworms.
+
+Q 7 | sci | Biology
+Which is termed as 'Power House' of the cell ?
+(1) Mitochondria
+(2) Centriole
+(3) Lysosome
+(4) Golgi apparatus
+= 1
+~ Mitochondria are called the 'power house' of the cell because they carry out aerobic respiration (the Krebs cycle and the electron transport chain) and produce most of the cell's energy in the form of ATP (adenosine triphosphate). They are double-membraned organelles whose inner membrane is folded into cristae, and they contain their own circular DNA and ribosomes, so they can multiply on their own; this supports the endosymbiotic theory of their origin. So option (1) is correct. The other organelles have different roles: the centriole helps form spindle fibres during cell division in animal cells; lysosomes contain digestive enzymes and are called the 'suicide bags' of the cell; the Golgi apparatus modifies, packs and dispatches proteins and lipids and is called the cell's 'post office' or packaging centre. Exam tip: remember the nicknames together: mitochondria – power house, lysosome – suicide bag, ribosome – protein factory, chloroplast – kitchen of the plant cell.
+
+Q 8 | sci | Biology
+Retinol is another name of
+(1) Vitamin C
+(2) Vitamin A
+(3) Vitamin D
+(4) Vitamin K
+= 2
+~ Retinol is the chemical name of vitamin A, a fat-soluble vitamin. It is needed to form rhodopsin (visual purple) in the rod cells of the retina, which allows vision in dim light, and it also keeps the skin and mucous membranes healthy. Its deficiency causes night blindness, xerophthalmia (dry eyes) and Bitot's spots. Good sources are milk, eggs, liver, fish-liver oil, and carrots and green leafy vegetables, which supply beta-carotene that the body converts to vitamin A. So option (2) is correct. The other vitamins have different chemical names: vitamin C is ascorbic acid (deficiency – scurvy), vitamin D is calciferol (deficiency – rickets in children, osteomalacia in adults), and vitamin K is phylloquinone (needed for blood clotting). Exam tip: memorise the chemical name and deficiency disease of each vitamin as a pair – A retinol, B1 thiamine (beri-beri), B12 cobalamin (pernicious anaemia), C ascorbic acid, D calciferol, E tocopherol, K phylloquinone.
+
+Q 9 | sci | Biology
+Metabolic seat in human is
+(1) Heart
+(2) Liver
+(3) Kidney
+(4) Cardio-pulmonary system
+= 2
+~ The liver, the largest gland in the human body (about 1.5 kg), is called the 'metabolic seat' or chemical factory of the body because most metabolic reactions take place there. It regulates carbohydrate metabolism by storing glucose as glycogen and releasing it when needed (glycogenesis, glycogenolysis, gluconeogenesis); it converts excess amino acids into urea (deamination and the urea cycle); it synthesises plasma proteins such as albumin and fibrinogen; it produces bile for fat digestion; it stores vitamins A, D and B12 and iron; and it detoxifies drugs and alcohol. So option (2) is correct. The heart only pumps blood, the kidney filters blood and forms urine (excretion and osmoregulation), and the cardio-pulmonary system handles circulation and gas exchange; none of them is the main centre of metabolism. Exam tip: the liver is also the only internal organ that can regenerate significantly, and in the foetus it is a site of red blood cell formation.
+
+Q 10 | his | Ancient India
+Which of the following was the largest city of the Indus Valley Civilization ?
+(1) Kalibangan
+(2) Lothal
+(3) Dholavira
+(4) Mohenjodaro
+= 4
+~ Among the given options, Mohenjodaro (in Larkana district of Sindh, Pakistan, on the Indus) was the largest city of the Harappan or Indus Valley Civilization, covering more than 200 hectares. Excavated by R. D. Banerji in 1922 and later by John Marshall, it is famous for the Great Bath, the Great Granary, the assembly hall, a planned grid of streets with covered drains, the bronze 'dancing girl' and the steatite 'priest-king'. So option (4) is correct. The other sites are smaller: Kalibangan (Rajasthan, on the Ghaggar) is known for a ploughed field and fire altars; Lothal (Gujarat) was a port town with a dockyard; and Dholavira (Kachchh, Gujarat), though large, is known for its water reservoirs and a signboard inscription and is the largest Harappan site in India. Note that later excavations at Rakhigarhi (Haryana) suggest it may be equally large, but it is not among the options. Exam tip: link each Harappan site with its unique find.
+
+Q 11 | his | Ancient India
+Who was the first Tirthankara of Jainism ?
+(1) Mahavira
+(2) Parshvanath
+(3) Ajinath
+(4) Rishaba
+= 4
+~ According to Jain tradition there were 24 Tirthankaras (ford-makers who show the way across the cycle of rebirth). The first was Rishabhanatha, also called Rishabha or Adinatha, whose symbol is the bull; he is regarded in tradition as the founder of Jainism, and he also appears in the Bhagavata Purana. So option (4) is correct. Parshvanatha was the 23rd Tirthankara, a historical figure who preached four vows (non-violence, truth, non-stealing and non-possession). Vardhamana Mahavira was the 24th and last Tirthankara; he added the fifth vow, brahmacharya, and is treated as the historical organiser of Jainism. Ajitanatha (printed as 'Ajinath') was the 2nd Tirthankara; the 22nd was Neminatha. Exam tip: for Jainism, remember the first (Rishabha – bull), the 22nd (Neminatha – conch), the 23rd (Parshvanatha – serpent) and the 24th (Mahavira – lion), together with their symbols; Karnataka's Shravanabelagola is linked with Bahubali, the son of Rishabhanatha.
+
+Q 12 | his | Ancient India
+Which Ashokan edict describes his victory over Kalinga ?
+(1) Eleventh
+(2) Twelfth
+(3) Thirteenth
+(4) Fourteenth
+= 4
+~ The official key gives option (4), the Fourteenth. Historically, however, Ashoka's conquest of Kalinga (about 261 BCE, in the eighth year after his coronation) is described in Major Rock Edict XIII. In it Ashoka records that about 1,50,000 people were deported, 1,00,000 were killed and many more died, expresses deep remorse, and announces his shift from conquest by war (bherighosha) to conquest by dhamma (dhammaghosha). Rock Edict XIII also mentions Greek kings such as Antiochus II. Interestingly, this edict is absent at Dhauli and Jaugada in Kalinga itself, where separate Kalinga edicts were inscribed instead. Rock Edict XII deals with religious tolerance among sects, Rock Edict XI explains dhamma, and Rock Edict XIV is a short epilogue about the engraving of the edicts. So the factually correct answer is the Thirteenth, option (3), although the key marks the Fourteenth. Exam tip: memorise 'XIII – Kalinga war', 'XII – tolerance', 'II – medical care for men and animals'.
+
+Q 13 | his | Art & Culture
+Which of the following statements are true ?
+(1) Shankaracharya propounded the theory of Advaitavad
+(2) Madhvacharya propounded the theory of Vishishtadvaitavad
+(3) Both
+(4) None
+= 1
+~ Only statement (a) is correct. Adi Shankaracharya (8th century CE, born at Kaladi in Kerala) propounded Advaita Vedanta, the non-dualism which holds that Brahman alone is real, the world is maya, and the individual soul (atman) is identical with Brahman. He established four mathas, including the Sringeri Sharada Peetham in Karnataka. Statement (b) is wrong: Vishishtadvaita (qualified non-dualism) was propounded by Ramanujacharya (11th–12th century), who stayed at Melukote in Karnataka under Hoysala patronage. Madhvacharya (13th century, born near Udupi) propounded Dvaita, or dualism, which holds that God (Vishnu) and the individual souls are eternally distinct; he founded the Udupi Krishna Matha and the eight Ashta mathas. Since only (a) is true, option (1) is correct, and 'Both' and 'None' are wrong. Exam tip: remember the trio with their Karnataka links – Shankara: Advaita (Sringeri), Ramanuja: Vishishtadvaita (Melukote), Madhva: Dvaita (Udupi).
+
+Q 14 | his | Karnataka History
+Who among the following did not travelled to Vijayanagar Kingdom ?
+(1) Ibn Batuta
+(2) Abd-ur-Razzaq
+(3) Nicolo Conte
+(4) Marco Polo
+= 4
+~ The Vijayanagara empire was founded in 1336 by Harihara I and Bukka I of the Sangama dynasty. Marco Polo, the Venetian traveller, visited South India around 1292–93, mainly the Kakatiya port of Motupalli and the Pandya kingdom, more than four decades before Vijayanagara existed, so he never visited it; option (4) is correct. The others did travel in the region: the Italian Nicolo de Conti came in about 1420 during the reign of Devaraya I and described the city and its festivals; the Persian envoy Abdur Razzaq visited the court of Devaraya II in 1443 and praised the capital's seven fortifications; and the Moroccan Ibn Battuta, who was in India from 1333 to the 1340s, recorded meeting Harihara I (whom he called 'Haraib') on the west coast in the early years of the kingdom. Later visitors included Duarte Barbosa, Domingo Paes and Fernao Nuniz. Exam tip: check dates – a traveller before 1336 cannot have seen Vijayanagara.
+
+Q 15 | his | Modern India & Freedom Struggle
+Partition of Bengal was annulled in
+(1) 1911
+(2) 1935
+(3) 1947
+(4) 1956
+= 1
+~ The Partition of Bengal was announced by Viceroy Lord Curzon in July 1905 and came into effect on 16 October 1905. Officially justified on administrative grounds, it was seen as an attempt to divide Hindus and Muslims and weaken Bengali nationalism. It triggered the Swadeshi and Boycott movement, with bonfires of foreign cloth, national schools, and Rabindranath Tagore's call to observe Raksha Bandhan as a symbol of unity. Because of the sustained agitation, King George V announced the annulment of the partition at the Delhi Durbar on 12 December 1911, during the viceroyalty of Lord Hardinge II; at the same time the capital of British India was shifted from Calcutta to Delhi. So option (1) is correct. 1935 is the year of the Government of India Act, 1947 is Independence (when Bengal was partitioned again), and 1956 is the States Reorganisation Act. Exam tip: pair 1905 (partition, Curzon) with 1911 (annulment, Hardinge II, capital to Delhi).
+
+Q 16 | his | Modern India & Freedom Struggle
+Bhagat Singh, Sukhdev and Rajguru were hanged for
+(1) Meerut Conspiracy
+(2) Alipore Conspiracy
+(3) Lahore Conspiracy
+(4) None
+= 3
+~ Bhagat Singh, Sukhdev and Rajguru, members of the Hindustan Socialist Republican Association (HSRA), were tried in the Lahore Conspiracy Case (the second Lahore Conspiracy Case, 1929–30) for the killing of British police officer J. P. Saunders in Lahore in December 1928, an act meant to avenge the death of Lala Lajpat Rai after a lathi charge during the protest against the Simon Commission. A special tribunal sentenced them to death, and they were hanged in Lahore Central Jail on 23 March 1931, a day now observed as Shaheed Diwas (Martyrs' Day). So option (3) is correct. The Meerut Conspiracy Case (1929) was against communist and trade union leaders, and the Alipore Bomb Case (1908) involved Aurobindo Ghosh, Barindra Kumar Ghosh and others after the Muzaffarpur bombing by Khudiram Bose. Exam tip: Bhagat Singh and B. K. Dutt also threw bombs in the Central Legislative Assembly on 8 April 1929, for which they were given life sentences.
+
+Q 17 | his | Modern India & Freedom Struggle
+Which of the following organization boycotted the Simon Commission ?
+1. Congress
+2. Muslim League
+3. Hindu Mahasabha
+(1) 1, 2, 3
+(2) 1, 2
+(3) 1, 3
+(4) 2, 3
+= 1
+~ The Indian Statutory Commission, headed by Sir John Simon, was appointed in November 1927 to review the working of the 1919 reforms. Because all its seven members were British and no Indian was included, it was widely seen as an insult. When it arrived in Bombay on 3 February 1928, it was greeted with hartals and black flags and the slogan 'Simon Go Back'. The Indian National Congress decided at its Madras session (1927) to boycott it 'at every stage and in every form'. The Muslim League faction led by Mohammad Ali Jinnah and the Hindu Mahasabha also joined the boycott; only a section of the League under Muhammad Shafi and some others cooperated. Hence all three organisations are counted as having boycotted it, option (1). During a protest against the commission at Lahore, Lala Lajpat Rai was injured in a lathi charge and died in November 1928. Exam tip: the Nehru Report (1928) was prepared as the Indian answer to the Simon Commission.
+
+Q 18 | his | Modern India & Freedom Struggle
+The only annual session of the Congress presided over by Gandhi was
+(1) Kakinada, 1923
+(2) Belgaum, 1924
+(3) Kanpur, 1925
+(4) Guwahati, 1926
+= 2
+~ Mahatma Gandhi presided over only one session of the Indian National Congress: the 39th annual session held at Belgaum (now Belagavi, Karnataka) in December 1924. The venue was named Vijayanagar, and the session is remembered for songs by Gangubai Hangal and for the efforts of local leaders such as Gangadhar Rao Deshpande; it also helped bring the Swarajists and the no-changers together. So option (2) is correct. The other sessions had different presidents: Kakinada 1923 – Maulana Mohammad Ali; Kanpur 1925 – Sarojini Naidu, the first Indian woman to preside over the Congress; Guwahati 1926 – S. Srinivasa Iyengar. In 2024, the centenary of the Belagavi session was commemorated by the Karnataka government. Exam tip: Belgaum 1924 is a favourite question in Karnataka exams because it is the only Congress session Gandhi ever presided over, and it was held in present-day Karnataka.
+
+Q 19 | his | Art & Culture
+Who is the father of Carnatic Music ?
+(1) Kanakadasa
+(2) Purandaradasa
+(3) Raghavanka
+(4) Sarvajna
+= 2
+~ Purandaradasa (1484–1564), a Haridasa saint-composer of the Vijayanagara period, is known as the 'Karnataka Sangeeta Pitamaha', the father of Carnatic music. Born Srinivasa Nayaka, a wealthy merchant, he renounced his wealth and became a disciple of Vyasatirtha. He systematised music teaching by introducing graded lessons such as sarali varisai, janti varisai, alankaras and geethas, set in the raga Mayamalavagowla, which students still learn first today. He is said to have composed about 4.75 lakh songs (devaranamas) in Kannada with the signature 'Purandara Vittala'. So option (2) is correct. Kanakadasa was another Haridasa saint, famous for 'Mohana Tarangini' and the Kanakana Kindi at Udupi; Raghavanka was a 13th-century Kannada poet who wrote 'Harishchandra Kavya'; and Sarvajna was a 16th-century poet known for his three-line vachanas (tripadis). Exam tip: the Haridasa movement gave Kannada devotional music; Purandaradasa is the music teacher, Kanakadasa the social reformer.
+
+Q 20 | cur | National
+Which Committee recommended changes in Indian Cricket Board Structure ?
+(1) Lodha Committee
+(2) Debroy Committee
+(3) Parekh Committee
+(4) Sri Krishna Committee
+= 1
+~ The Justice R. M. Lodha Committee was appointed by the Supreme Court in January 2015, after the IPL betting and spot-fixing scandal of 2013, to recommend reforms in the Board of Control for Cricket in India (BCCI). Its report of January 2016 proposed sweeping changes in the board's structure: one state, one vote; an age cap of 70 years and term limits for office-bearers, with cooling-off periods; a ban on ministers and government servants holding posts; a players' association; and a separate governing council for the IPL. The Supreme Court accepted most of these recommendations in July 2016, and in January 2017 it removed BCCI president Anurag Thakur and appointed a Committee of Administrators headed by Vinod Rai. So option (1) is correct. The Bibek Debroy Committee dealt with restructuring Indian Railways, the Deepak Parekh Committee with infrastructure financing, and the Justice B. N. Srikrishna Committee with Telangana and later financial sector laws. Exam tip: link each committee name with its subject.
+
+Q 21 | eco | Money, Banking & Budget
+How many banks were nationalised in 1969 ?
+(1) 16
+(2) 14
+(3) 15
+(4) 20
+= 2
+~ On 19 July 1969, the Government of India under Prime Minister Indira Gandhi nationalised 14 major commercial banks, each with deposits of over Rs 50 crore, through an ordinance later replaced by the Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970. The aim was to extend banking to rural areas, direct credit to priority sectors such as agriculture and small industry, and reduce the concentration of economic power. The banks included Central Bank of India, Bank of India, Punjab National Bank, Bank of Baroda, United Commercial Bank, Canara Bank, Syndicate Bank, Union Bank, Indian Bank, Dena Bank, Allahabad Bank, Indian Overseas Bank, United Bank of India and Bank of Maharashtra. So option (2) is correct. A second round of nationalisation on 15 April 1980 took over 6 more banks (deposits over Rs 200 crore), making the total 20, which explains option (4). Exam tip: remember '1969 – 14 banks (Rs 50 crore); 1980 – 6 banks (Rs 200 crore)'; note that Canara and Syndicate Banks were from Karnataka.
+
+Q 22 | cur | International & Sports
+World Yoga Day is celebrated on
+(1) 20 June
+(2) 22 June
+(3) 21 June
+(4) 30 June
+= 3
+~ The International Day of Yoga is observed every year on 21 June. Prime Minister Narendra Modi proposed it in his address to the UN General Assembly in September 2014, and the UNGA adopted the resolution on 11 December 2014 with a record 177 co-sponsoring countries. 21 June was chosen because it is the summer solstice, the longest day of the year in the Northern Hemisphere, which has special significance in many cultures. The first International Day of Yoga was celebrated on 21 June 2015, with a mass yoga session at Rajpath, New Delhi, which set Guinness world records. In 2017, the year of this exam, the main national event was held at Lucknow, with the theme 'Yoga for Health'. So option (3) is correct; the other dates have no link with Yoga Day. Exam tip: the Ministry of AYUSH is the nodal ministry, and each year has a different theme and host city, which are often asked in current affairs.
+
+Q 23 | cur | National
+Shri Ramnath Kovind is the
+(1) 15th President of India
+(2) 13th President of India
+(3) 12th President of India
+(4) 14th President of India
+= 4
+~ Ram Nath Kovind was elected as the 14th President of India in July 2017, defeating Meira Kumar in the presidential election, and was sworn in on 25 July 2017 by Chief Justice J. S. Khehar. A lawyer from Kanpur Dehat in Uttar Pradesh, he had earlier served as a Rajya Sabha member (1994–2006) and as Governor of Bihar (2015–2017). He succeeded Pranab Mukherjee, the 13th President. So option (4) is correct. Pratibha Patil was the 12th President, the first woman to hold the office, and the 15th President is Droupadi Murmu, who took office in 2022 after Kovind's term ended. Counting rule: the 14 Presidents are counted by persons, not terms, so Dr Rajendra Prasad, though elected twice, is counted only once; acting Presidents (such as V. V. Giri in 1969 before his election, and M. Hidayatullah) are not counted. Exam tip: Kovind was the second Dalit President of India after K. R. Narayanan.
+
+Q 24 | cur | International & Sports
+Which country is not a part of SAARC ?
+(1) Nepal
+(2) Myanmar
+(3) Afghanistan
+(4) Bangladesh
+= 2
+~ The South Asian Association for Regional Cooperation (SAARC) was founded on 8 December 1985 at Dhaka with seven members: India, Pakistan, Bangladesh, Nepal, Bhutan, Sri Lanka and the Maldives. Afghanistan joined as the eighth member in April 2007 at the 14th summit in New Delhi. Its secretariat is at Kathmandu, Nepal. Myanmar is not a member; it is only one of the nine observers of SAARC (along with China, Japan, the USA, the EU, Iran, South Korea, Australia and Mauritius). So option (2) is correct, and Nepal, Afghanistan and Bangladesh are all members. Myanmar is, however, a member of ASEAN and of BIMSTEC, which links India with its eastern neighbours. In 2016 the 19th SAARC summit planned for Islamabad was cancelled after India and others pulled out following the Uri attack. Exam tip: remember SAARC as 'eight members, secretariat Kathmandu, founded Dhaka 1985'; Myanmar and China are common distractors.
+
+Q 25 | his | Art & Culture
+Kathakali is dance of which state ?
+(1) Kerala
+(2) Karnataka
+(3) Andhra Pradesh
+(4) Manipur
+= 1
+~ Kathakali is the classical dance-drama of Kerala, which developed in the 17th century from Ramanattam and Krishnanattam. It is known for its elaborate make-up and costumes, with face colours indicating character types (green 'pacha' for noble heroes, red-and-black 'kathi' for proud villains, 'thadi' beards and so on), large headgear, and stories from the Ramayana, Mahabharata and Puranas told through hand gestures (mudras) and facial expressions, traditionally by male performers. The poet Vallathol Narayana Menon revived it by founding the Kerala Kalamandalam in 1930. So option (1) is correct. Karnataka's famous dance-drama is Yakshagana, Andhra Pradesh's classical dance is Kuchipudi, and Manipur's is Manipuri. Kerala also has Mohiniyattam as a classical dance. Exam tip: India's Sangeet Natak Akademi recognises eight classical dances: Bharatanatyam (Tamil Nadu), Kathak (North India), Kathakali and Mohiniyattam (Kerala), Kuchipudi (Andhra Pradesh), Odissi (Odisha), Manipuri (Manipur) and Sattriya (Assam).
+
+Q 26 | comp | Computer Fundamentals
+In computer, 'MPG' refers to which file ?
+(1) Movie file
+(2) Image file
+(3) MS Office Word document
+(4) Power Point
+= 1
+~ MPG (also written MPEG) is a file extension named after the Moving Picture Experts Group, the body that sets standards for compressing digital video and audio. A .mpg/.mpeg file therefore holds video, that is, a movie file, so option (1) is correct. Image files use extensions such as .jpg/.jpeg, .png, .gif and .bmp, so option (2) is wrong. MS Word documents are saved as .doc or .docx, and PowerPoint presentations as .ppt or .pptx, so options (3) and (4) are also wrong. The same MPEG group created the MP3 audio format (MPEG-1 Audio Layer III) and the MP4 video container. Other common video extensions are .avi, .mkv, .mov and .wmv. Exam tip: learn file extensions in groups (text, image, audio, video, office files); questions matching an extension to its file type are frequent in police and other state-level exams.
+
+Q 27 | geo | Environment & Ecology
+Largest number of Tiger Reserve is located in
+(1) Karnataka
+(2) Andhra Pradesh
+(3) Tamil Nadu
+(4) Madhya Pradesh
+= 4
+~ Madhya Pradesh had the largest number of tiger reserves among the given states in 2017, with six: Kanha, Pench, Bandhavgarh, Panna, Satpura and Sanjay-Dubri (Maharashtra also had six, but it is not an option). So option (4) is the key. Karnataka had five tiger reserves (Bandipur, Nagarahole, Bhadra, Biligiri Ranganatha Temple and Dandeli-Anshi/Kali); Karnataka is famous for having the largest tiger population (406 tigers in the 2014 census), which is a different fact and a common trap. Tamil Nadu had four reserves (Kalakad-Mundanthurai, Anamalai, Mudumalai, Sathyamangalam), and Andhra Pradesh only Nagarjunasagar-Srisailam after the state's bifurcation. Madhya Pradesh is also called the 'Tiger State' and later added more reserves (Veerangana Durgavati, Ratapani, Madhav). Tiger reserves are notified under Project Tiger (launched 1973) and managed by the NTCA. Exam tip: separate 'most tigers' from 'most tiger reserves' while answering.
+
+Q 28 | cur | Awards, Books & Persons
+Ashwini Ponnappa won Arjuna Award for which sport ?
+(1) Swimming
+(2) Badminton
+(3) Chess
+(4) Carom
+= 2
+~ Ashwini Ponnappa, a badminton player with roots in Kodagu (Coorg) district of Karnataka and raised in Bengaluru, received the Arjuna Award in 2012 for badminton, so option (2) is correct. She is a doubles specialist: with Jwala Gutta she won the women's doubles bronze at the 2011 BWF World Championships, the first world medal for India in women's doubles, and gold at the 2010 Commonwealth Games in Delhi. She also represented India at the 2012 London Olympics. She is not linked to swimming, chess or carom, so the other options are wrong. The Arjuna Award, instituted in 1961 by the Ministry of Youth Affairs and Sports, honours consistent outstanding performance in sport. Exam tip: Karnataka-linked sportspersons such as Ashwini Ponnappa, Prakash Padukone and Rahul Dravid are frequently asked in KSP exams, so revise their sport and awards.
+
+Q 29 | pol | Constitution & Rights
+Which Article of Indian Constitution provides for special status to Jammu and Kashmir ?
+(1) Article 300
+(2) Article 356
+(3) Article 370
+(4) Article 368
+= 3
+~ Article 370, placed in Part XXI (Temporary, Transitional and Special Provisions), gave special status to the State of Jammu and Kashmir. It limited Parliament's law-making power for the State to the subjects agreed with the State government and allowed J&K its own constitution; Article 35A, added by the 1954 Presidential Order, flowed from it. So option (3) is correct as of the 2017 exam. Article 356 deals with President's Rule in a state when its constitutional machinery fails; Article 368 lays down the power and procedure to amend the Constitution; Article 300 deals with suits and proceedings by or against the Government of India and the states. Later, on 5 August 2019, the provisions of Article 370 were made inoperative and the State was reorganised into the Union Territories of Jammu & Kashmir and Ladakh. Exam tip: remember 370 (J&K), 371 (special provisions for other states, 371J for Kalyana-Karnataka).
+
+Q 30 | his | Karnataka History
+Rakkasa Thangadi or Thalikote War was held in
+(1) 1565
+(2) 1545
+(3) 1550
+(4) 1560
+= 1
+~ The Battle of Talikota, also called the Battle of Rakkasa-Tangadi after the two villages near which it was fought on the banks of the Krishna, took place on 23 January 1565, so option (1) is correct. The allied Deccan Sultanates of Bijapur, Ahmednagar, Golconda and Bidar defeated the Vijayanagara army led by Aliya Rama Raya, the regent of Sadashiva Raya. Rama Raya was captured and beheaded, and the capital Vijayanagara (Hampi) was plundered for months, which marked the end of the empire's glory, though the dynasty continued from Penukonda and Chandragiri under the Aravidu kings. The years 1545, 1550 and 1560 are not linked to this battle. Exam tip: remember '1565 - Talikota/Rakkasa-Tangadi - Rama Raya', and also that Krishnadevaraya ruled from 1509 to 1529, both being favourite Karnataka history questions.
+
+Q 31 | geo | Karnataka Geography
+Thermal power plants in Karnataka is located in
+(1) Raichur and Kalburgi
+(2) Raichur and Bellary
+(3) Kalburgi and Bellary
+(4) Bellary and Koppal
+= 2
+~ Karnataka's major coal-based thermal power stations of the state-owned KPCL are in Raichur and Ballari (Bellary) districts, so option (2) is correct. The Raichur Thermal Power Station (RTPS) at Shaktinagar, Raichur district, began production in 1985 and is the state's oldest large coal plant; the Yermarus Thermal Power Station is also in Raichur district. The Bellary Thermal Power Station (BTPS) is at Kudatini in Ballari district, commissioned in 2008. Kalaburagi and Koppal do not host these major state thermal stations, so options (1), (3) and (4) are wrong. Both Raichur and Ballari lie near the Krishna-Tungabhadra system, which provides cooling water, and receive coal by rail. Karnataka has no coal deposits of its own. Exam tip: link Raichur with 'RTPS and gold (Hutti)', Ballari with 'BTPS and iron ore', and Kaiga (Uttara Kannada) with nuclear power.
+
+Q 32 | cur | Awards, Books & Persons
+Who is the founder of Facebook ?
+(1) Tim Cook
+(2) Jimmy Wales
+(3) Mark Zuckerberg
+(4) Julian
+= 3
+~ Facebook was founded by Mark Zuckerberg on 4 February 2004 from his Harvard University dormitory, with fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes, so option (3) is correct. Zuckerberg remains its chairman and chief executive; the parent company was renamed Meta Platforms in 2021. Tim Cook is the CEO of Apple since 2011, after Steve Jobs; Jimmy Wales co-founded Wikipedia in 2001 with Larry Sanger; 'Julian' refers to Julian Assange, the founder of WikiLeaks (2006). None of them founded Facebook, so the other options are wrong. Facebook also owns WhatsApp (acquired 2014) and Instagram (acquired 2012). Exam tip: prepare a small table of tech companies and their founders or CEOs (Google - Larry Page and Sergey Brin; Microsoft - Bill Gates and Paul Allen; Twitter - Jack Dorsey and others) as they are asked frequently.
+
+Q 33 | his | Art & Culture
+Jallikattu is associated with which festival ?
+(1) Pongal
+(2) Shivaratri
+(3) Dasara
+(4) Diwali
+= 1
+~ Jallikattu is a traditional bull-taming sport of Tamil Nadu held during the Pongal harvest festival in January, especially on Mattu Pongal, the day dedicated to cattle, so option (1) is correct. Participants try to hold on to the hump of a running bull; Alanganallur near Madurai is the most famous venue. The sport was in the news in 2017: after the Supreme Court's 2014 ban, massive protests at Chennai's Marina Beach in January 2017 led Tamil Nadu to amend the Prevention of Cruelty to Animals Act for the state and allow Jallikattu again. Shivaratri, Dasara and Diwali are not linked to this sport. Karnataka's similar event is Kambala, the buffalo race in coastal Dakshina Kannada and Udupi, for which the Karnataka legislature passed an amendment in 2017 to allow it. Exam tip: pair Jallikattu with Pongal and Tamil Nadu, and Kambala with coastal Karnataka.
+
+Q 34 | pol | Constitution & Rights
+In which year was Fundamental Duties included in Indian Constitution ?
+(1) 1976
+(2) 1965
+(3) 1970
+(4) 1982
+= 1
+~ Fundamental Duties were added to the Constitution in 1976 by the 42nd Constitutional Amendment Act, on the recommendation of the Sardar Swaran Singh Committee, during the Emergency under Prime Minister Indira Gandhi, so option (1) is correct. They were placed in a new Part IV-A as Article 51A and originally listed ten duties; the idea was borrowed from the Constitution of the former USSR. An eleventh duty, the duty of parents or guardians to provide opportunities for education to children aged 6 to 14, was added by the 86th Amendment Act of 2002. The years 1965, 1970 and 1982 have no connection with Fundamental Duties. The 42nd Amendment is called the 'mini-Constitution' because it also added the words socialist, secular and integrity to the Preamble. Exam tip: remember '42nd - 1976 - Part IV-A - Article 51A - Swaran Singh Committee' as one chain.
+
+Q 35 | pol | Union & State Government
+Who of the following do not participate in election of President of India ?
+(1) Rajya Sabha Members
+(2) Members of Legislative Assemblies
+(3) Members of Legislative Councils
+(4) Members of Delhi Legislative Assembly
+= 3
+~ Under Article 54, the President of India is elected by an electoral college made up of the elected members of both Houses of Parliament and the elected members of the Legislative Assemblies of the states, including (by the 70th Amendment, 1992) the National Capital Territory of Delhi and the Union Territory of Puducherry. Members of the Legislative Councils (Vidhan Parishads) are not part of this electoral college, so option (3) is correct. Elected Rajya Sabha members, elected MLAs of the states, and elected members of the Delhi Legislative Assembly all vote, so options (1), (2) and (4) are wrong. Nominated members of Parliament and of assemblies also do not vote in the presidential election, though nominated MPs do vote in the Vice-President's election. The election uses proportional representation by the single transferable vote. Exam tip: MLCs never vote for President; nominated MPs vote only for Vice-President.
+
+Q 36 | pol | Union & State Government
+Being a non-member, who can participate in proceedings of Parliament, without Right to Vote ?
+(1) Chief Justice of India
+(2) Attorney General
+(3) CAG
+(4) President
+= 2
+~ The Attorney General of India, appointed under Article 76 as the government's chief law officer, has the right under Article 88 to speak in and otherwise take part in the proceedings of either House of Parliament, their joint sitting and any parliamentary committee of which he is named a member, but without the right to vote. So option (2) is correct. The Chief Justice of India and the Comptroller and Auditor General have no such right to take part in parliamentary proceedings. The President is a constituent part of Parliament (Article 79) and may address or send messages to the Houses (Articles 86 and 87), but he does not take part in their debates. Article 88 gives the same right to every Union Minister in the House he is not a member of. At the state level, the Advocate General enjoys similar rights in the state legislature under Article 177. Exam tip: Article 88 = Ministers and Attorney General.
+
+Q 37 | pol | Constitution & Rights
+Article 44 of Indian Constitution is related to
+(1) Fundamental Right
+(2) Early Childhood Care
+(3) Citizenship
+(4) Uniform Civil Code
+= 4
+~ Article 44, a Directive Principle of State Policy in Part IV, says that the State shall endeavour to secure for the citizens a Uniform Civil Code throughout the territory of India, so option (4) is correct. A Uniform Civil Code would mean one set of personal laws on marriage, divorce, inheritance and adoption for all citizens irrespective of religion; Goa already follows a common civil code. Fundamental Rights are in Part III (Articles 12 to 35), so option (1) is wrong. Early childhood care and education for children below six is in Article 45, as substituted by the 86th Amendment of 2002, so option (2) is wrong. Citizenship is dealt with in Part II, Articles 5 to 11, so option (3) is wrong. Being a Directive Principle, Article 44 is not enforceable by courts, though the Supreme Court has urged its implementation in cases such as Shah Bano (1985). Exam tip: 44 UCC, 45 early childhood care, 48A environment.
+
+Q 38 | pol | Constitution & Rights
+Which Article is "Heart and Soul" of Indian Constitution ?
+(1) Article 19
+(2) Article 32
+(3) Article 20
+(4) Article 30
+= 2
+~ Dr. B.R. Ambedkar described Article 32, the Right to Constitutional Remedies, as 'the very soul of the Constitution and the very heart of it' in the Constituent Assembly, so option (2) is correct. Article 32 lets any person move the Supreme Court directly for the enforcement of Fundamental Rights, and the Court can issue writs of habeas corpus, mandamus, prohibition, certiorari and quo warranto; High Courts have wider writ powers under Article 226. Article 19 guarantees six freedoms such as speech and expression; Article 20 protects against ex post facto laws, double jeopardy and self-incrimination; Article 30 gives minorities the right to establish and administer educational institutions. These are important rights, but none was called the heart and soul. Article 32 is itself a Fundamental Right and part of the basic structure. Exam tip: Article 32 = heart and soul; the Preamble is often called the 'key' or 'identity card' of the Constitution.
+
+Q 39 | his | Modern India & Freedom Struggle
+After returning from South Africa, first successful Satyagraha of Gandhiji was
+(1) Dandi
+(2) Bardoli
+(3) Champaran
+(4) Chauri-Chaura
+= 3
+~ Gandhiji returned from South Africa in January 1915, and his first satyagraha in India was at Champaran in Bihar in 1917, so option (3) is correct. Invited by Raj Kumar Shukla, he took up the cause of indigo cultivators forced by European planters to grow indigo on part of their land under the tinkathia system. The government set up an inquiry committee with Gandhiji as a member, and the Champaran Agrarian Act of 1918 abolished the system. It was followed by the Ahmedabad mill strike and the Kheda satyagraha (both 1918). Dandi (Salt March, 1930) came much later; Bardoli (1928) was led by Vallabhbhai Patel, who earned the title 'Sardar' there; Chauri Chaura (1922) was the violent incident that led Gandhiji to withdraw the Non-Cooperation Movement. The centenary of Champaran was observed in 2017, the year of this exam. Exam tip: order - Champaran 1917, Ahmedabad and Kheda 1918.
+
+Q 40 | pol | Laws, Police & Society
+The Supreme Court in D. K. Basu Vs. State of West Bengal gave guidelines for
+(1) Environment Protection
+(2) Procedure to be followed during arrests
+(3) Child Protection
+(4) Women Rights
+= 2
+~ In D.K. Basu vs. State of West Bengal (1996, judgment of 18 December 1996), the Supreme Court laid down eleven guidelines to be followed by the police in all cases of arrest and detention, to prevent custodial torture and deaths, so option (2) is correct. Key guidelines: police officers making the arrest must wear accurate, visible identification and name tags; an arrest memo must be prepared, attested by a witness and countersigned by the arrestee; a relative or friend must be informed; the arrestee must be told of this right; he must be medically examined every 48 hours; he may meet a lawyer during interrogation; and the control room must display arrest information. Many of these were later written into the CrPC by the 2005 and 2008 amendments (for example Sections 41B, 41D and 50A). The case did not deal with environment, child protection or women's rights. Exam tip: very important for PSI aspirants - D.K. Basu = arrest guidelines; Vishaka = sexual harassment at workplace.
+
+Q 41 | his | Modern India & Freedom Struggle
+Who presided the 1929 Lahore Session of Indian National Congress ?
+(1) Jawaharlal Nehru
+(2) Motilal Nehru
+(3) Rajendra Prasad
+(4) Lala Lajpat Rai
+= 1
+~ The Lahore Session of the Indian National Congress in December 1929 was presided over by Jawaharlal Nehru, so option (1) is correct. At this session the Congress passed the Purna Swaraj (complete independence) resolution, and Nehru hoisted the tricolour on the banks of the Ravi on 31 December 1929. It was decided to observe 26 January 1930 as Independence Day; later the Constitution came into force on 26 January 1950 to honour this date. The session also authorised a civil disobedience movement, which began with the Dandi March in 1930. Motilal Nehru presided over the Amritsar (1919) and Calcutta (1928) sessions; Rajendra Prasad presided over the Bombay session (1934); Lala Lajpat Rai presided over the special Calcutta session (1920). Exam tip: 1929 Lahore - Jawaharlal Nehru - Purna Swaraj; 1931 Karachi - Vallabhbhai Patel - Fundamental Rights resolution; 1924 Belgaum - Gandhiji (the only session he presided).
+
+Q 42 | geo | Environment & Ecology
+Which of the following is not a Green House Gas ?
+(1) Methane
+(2) Nitrous Oxide
+(3) Hydrogen
+(4) Carbon Dioxide
+= 3
+~ Greenhouse gases absorb the infrared (heat) radiation emitted by the Earth's surface and re-emit it, warming the lower atmosphere. Carbon dioxide (CO2), methane (CH4) and nitrous oxide (N2O) are major greenhouse gases and are listed among the six gases covered by the Kyoto Protocol (with HFCs, PFCs and sulphur hexafluoride). Hydrogen (H2) is a diatomic molecule of identical atoms with no permanent dipole, so it does not absorb infrared radiation significantly and is not counted as a greenhouse gas; option (3) is therefore correct. Methane, released from paddy fields, livestock and landfills, is far more potent than CO2 per molecule; nitrous oxide comes mainly from nitrogen fertilisers; CO2 is the largest contributor because of fossil fuel burning. Water vapour and ozone are also natural greenhouse gases. Exam tip: noble gases, nitrogen, oxygen and hydrogen are not greenhouse gases; gases with three or more atoms usually are.
+
+Q 43 | eco | Indian Economy
+Which Constitutional Amendment Act introduced GST in India ?
+(1) 100
+(2) 105
+(3) 110
+(4) 101
+= 4
+~ The Goods and Services Tax was made possible by the Constitution (One Hundred and First Amendment) Act, 2016, so option (4) is correct. The Bill (122nd Amendment Bill) was passed by Parliament in August 2016, ratified by more than half the states, and received presidential assent on 8 September 2016. It inserted Article 246A (concurrent power of the Union and states to levy GST), Article 269A (IGST on inter-state supply) and Article 279A (GST Council chaired by the Union Finance Minister). GST itself was rolled out on 1 July 2017, shortly before this exam, replacing taxes such as central excise, service tax and VAT. The 100th Amendment (2015) gave effect to the India-Bangladesh Land Boundary Agreement; there was no 105th or 110th Amendment Act linked to GST. Exam tip: GST - 101st Amendment 2016 - launched 1 July 2017 - Article 279A GST Council.
+
+Q 44 | sci | Biology
+Rabies is a
+(1) Viral disease
+(2) Bacterial disease
+(3) Fungal disease
+(4) Parasitic disease
+= 1
+~ Rabies is a viral disease caused by the rabies virus, a Lyssavirus of the family Rhabdoviridae, so option (1) is correct. It spreads mainly through the bite or scratch of an infected animal, usually a dog in India, and the virus travels along nerves to the brain, causing encephalitis. Symptoms include fever, agitation, hydrophobia (fear of water, hence its old name) and paralysis; once symptoms appear, it is almost always fatal. It is fully preventable by prompt wound washing with soap and water and post-exposure vaccination. Louis Pasteur developed the first rabies vaccine in 1885. Since it is caused by a virus, antibiotics do not cure it, so 'bacterial' (option 2) is wrong; it is not caused by fungi (option 3) or by protozoan or worm parasites (option 4). Exam tip: other viral diseases are polio, measles, AIDS, dengue and chickenpox; bacterial ones include tuberculosis, cholera, typhoid and tetanus.
+
+Q 45 | sci | Biology
+ORS, which is used for the treatment of diarrhea stands for
+(1) Oral Recharging Solution
+(2) Oral Reducing Solution
+(3) Oral Replenishing Solution
+(4) Oral Rehydration Salt
+= 4
+~ ORS stands for Oral Rehydration Salts (or Oral Rehydration Solution once dissolved in water), so option (4) is correct. It is used to replace the water and electrolytes lost in diarrhoea and prevent dehydration, which is the main cause of death in diarrhoeal diseases among children. The WHO-UNICEF formula contains sodium chloride, potassium chloride, trisodium citrate and glucose; glucose helps the intestine absorb sodium and water. ORS is widely regarded as one of the most important medical advances of the 20th century; it is given along with zinc supplements in India. A home-made solution can be prepared with clean water, salt and sugar. The terms recharging, reducing and replenishing in options (1) to (3) are not what ORS stands for. Exam tip: ORS is linked to diarrhoea and cholera; 29 July is observed as ORS Day in India.
+
+Q 46 | geo | World Geography
+Which of the following is the second most populated country in the world ?
+(1) China
+(2) India
+(3) U.S.A.
+(4) Brazil
+= 2
+~ At the time of this exam (2017), China was the most populous country in the world with about 1.39 billion people, and India was second with about 1.34 billion, so option (2) is the key. India's 2011 Census counted 121.09 crore people, about 17.5 percent of the world's population on 2.4 percent of its land area. The USA was third (about 325 million) and Brazil, with about 208 million, was behind Indonesia as well, so options (3) and (4) are wrong, and China was first, not second. Note the later change: according to United Nations estimates, India overtook China as the most populous country in April 2023, so for exams held after 2023 India would be the first and China the second. Exam tip: for population questions, check the year of the exam and the source (Census of India or UN World Population Prospects) before answering.
+
+Q 47 | geo | Indian Geography
+Which state ranks the first in overall sex ratio ?
+(1) Kerala
+(2) Manipur
+(3) Mizoram
+(4) Punjab
+= 1
+~ Sex ratio is the number of females per 1,000 males. According to the 2011 Census, Kerala had the highest sex ratio among Indian states at 1084, so option (1) is correct. Among Union Territories, Puducherry was highest (1037). India's overall sex ratio was 943. Manipur and Mizoram, though they have relatively good sex ratios, are below Kerala and below 1000, while Punjab is among the lowest states (895), with Haryana the lowest (879). Kerala's high ratio is linked to high female literacy, better health care and male out-migration for work. In Karnataka the sex ratio was 973 in 2011, with Udupi and Kodagu among the better districts. Exam tip: Census 2011 - highest Kerala 1084, lowest Haryana 879; highest UT Puducherry, lowest UT Daman and Diu; India 943. Child sex ratio (0-6 years) is a separate figure, 919 for India.
+
+Q 48 | geo | Indian Geography
+Which of the following is not atomic mineral ?
+(1) Uranium
+(2) Thorium
+(3) Lithium
+(4) Kyanite
+= 4
+~ Atomic minerals are those listed under the Atomic Energy Act and Part B of the First Schedule of the MMDR Act, 1957, because they are useful for nuclear energy. In 2017 this list included minerals of uranium, thorium, lithium, beryllium, zirconium, niobium, tantalum and rare earths; they are explored by the Atomic Minerals Directorate for Exploration and Research (AMD), Hyderabad. Kyanite is an aluminium silicate mineral used to make heat-resistant refractories, ceramics and spark plugs; it is an ordinary industrial mineral, not an atomic mineral, so option (4) is correct. Uranium (Jaduguda in Jharkhand, Tummalapalle in Andhra Pradesh) and thorium (monazite sands of Kerala) are the main nuclear fuels; lithium was then a prescribed atomic mineral, though a 2023 amendment shifted it to the critical minerals list. Exam tip: kyanite and sillimanite are refractory minerals; Jharkhand and Maharashtra are leading kyanite producers.
+
+Q 49 | sci | Science & Technology
+Kudankulam Project has been developed with assistance of
+(1) U.S.A.
+(2) Canada
+(3) Russia
+(4) U.K.
+= 3
+~ The Kudankulam Nuclear Power Project in Tirunelveli district, Tamil Nadu, is being built by the Nuclear Power Corporation of India (NPCIL) with technical cooperation from Russia, so option (3) is correct. The original agreement was signed in 1988 between Prime Minister Rajiv Gandhi and Soviet leader Mikhail Gorbachev and revived with Russia in 1998. It uses Russian VVER-1000 pressurised water reactors of 1000 MW each; Unit 1 started commercial operation in December 2014 and Unit 2 in 2017, making it India's largest nuclear power station. The USA assisted India's first nuclear plant at Tarapur (1969), and Canada helped with the Rawatbhata (Rajasthan) reactors and the CIRUS research reactor, so options (1) and (2) are wrong; the UK has not built a nuclear plant in India. Exam tip: Kudankulam - Tamil Nadu - Russia; Tarapur - Maharashtra - USA; Rawatbhata - Rajasthan - Canada; Kaiga - Karnataka - indigenous.
+
+Q 50 | geo | Karnataka Geography
+Which among the following district has highest population ?
+(1) Davangere
+(2) Bijapur
+(3) Bellary
+(4) Tumkuru
+= 4
+~ According to the 2011 Census, the populations of the four districts were: Tumakuru about 26.8 lakh, Ballari (Bellary) about 24.5 lakh, Vijayapura (Bijapur) about 21.8 lakh and Davanagere about 19.5 lakh. Tumakuru has the highest population among them, so option (4) is correct. Tumakuru is also one of the largest districts of Karnataka by area and is famous for coconut, the Siddaganga Mutt and the HAL helicopter factory at Gubbi. In the whole state, Bengaluru Urban is the most populous district (about 96 lakh), followed by Belagavi (about 47.8 lakh), while Kodagu is the least populous (about 5.5 lakh). Karnataka's total population in 2011 was 6.11 crore. Exam tip: for Karnataka census questions remember the extremes: most populous Bengaluru Urban, second Belagavi, least populous Kodagu; highest sex ratio Udupi, highest literacy Bengaluru Urban and lowest Yadgir.
+
+Q 51 | apt | Reasoning
+In certain language, CALCUTTA is written as ACCLTUAT, then how will you write KARNATAK in the language ?
+(1) AKRNTAAK
+(2) AKNRTAKA
+(3) AKNRATAK
+(4) NATKAKAR
+= 2
+~ Split CALCUTTA into pairs of letters and reverse each pair: CA → AC, LC → CL, UT → TU, TA → AT, which gives AC CL TU AT = ACCLTUAT, exactly the code given. Apply the same rule to KARNATAK: KA → AK, RN → NR, AT → TA, AK → KA, giving AK NR TA KA = AKNRTAKA, option (2). Check the others: AKRNTAAK (AK RN TA AK) reverses only the first and third pairs and leaves RN and AK unchanged; AKNRATAK (AK NR AT AK) reverses the first two pairs but not the last two; NATKAKAR is just a rearrangement of the letters that does not follow the pair-swap rule. Only option (2) applies the pair-swap rule to all four pairs. Exam tip: when a coded word has the same letters as the original word (only the order changes), first test simple patterns such as reversing pairs, reversing halves or reversing the whole word, before trying letter shifts.
+
+Q 52 | apt | Reasoning
+Pointing towards a photograph a man said, "His son is my only brother". How is the man related to the man in photography ?
+(1) Father
+(2) Brother
+(3) Cousin
+(4) Nephew
+= 1
+~ The speaker says that the son of the man in the photograph is the speaker's only brother. If the photographed man's son is the speaker's brother, then the photographed man is the father of that brother and, therefore, the father of the speaker too (they are siblings with the same father). So the speaker is the son of the man in the photograph; put the other way, the man in the photograph is the speaker's father. The key gives option (1), Father, reading the relation as "who is the man in the photograph to the speaker". Brother (2) is wrong because the brother is the photographed man's son, not the photographed man himself; Cousin (3) and Nephew (4) would need an uncle or aunt in the chain, which the statement does not contain. Exam tip: in blood-relation puzzles, replace each phrase step by step from the end ("my only brother" → "his son"), and note carefully whose relation the question asks for.
+
+Q 53 | apt | Arithmetic
+Ratio of Arun's age to Vinod's age is 4 : 3. Vinod will be 20 years old after 5 years. What was Arun's age before 3 years ?
+(1) 20 years
+(2) 21 years
+(3) 17 years
+(4) 15 years
+= 3
+~ Step 1: Vinod will be 20 years old after 5 years, so his present age is 20 – 5 = 15 years. Step 2: Arun : Vinod = 4 : 3, so Arun's present age = 15 × 4/3 = 20 years. Step 3: Arun's age 3 years ago = 20 – 3 = 17 years, option (3). The other options are traps: 20 years (1) is Arun's present age, not his age 3 years ago; 15 years (4) is Vinod's present age; 21 years (2) would come from wrongly adding instead of subtracting at some step. Check: present ages 20 and 15 are in the ratio 4 : 3, and Vinod becomes 20 after 5 years, so the data fit. Exam tip: in age problems, always convert every statement to present ages first, then move forward or backward in time only at the end, reading carefully whether the question says "after" or "before".
+
+Q 54 | apt | Arithmetic
+If each side of a square is increased by 25%, its area is increased by
+(1) 25%
+(2) 50%
+(3) 40.5%
+(4) 56.25%
+= 4
+~ Let the side be 100, so the area is 100 × 100 = 10,000. After a 25% increase the side becomes 125, and the new area is 125 × 125 = 15,625. Increase = 15,625 – 10,000 = 5,625, which is 5,625/10,000 × 100 = 56.25%, option (4). The same result comes from the successive-percentage formula x + y + xy/100 with x = y = 25: 25 + 25 + 625/100 = 56.25%. Option (1) wrongly assumes area grows at the same rate as the side; option (2) simply doubles 25% and ignores the product term xy/100; 40.5% has no basis in the calculation. Exam tip: area depends on the square of the length, so multiply the factors: (1.25)² = 1.5625, i.e. a 56.25% increase. For a cube's volume, use the cube of the factor instead.
+
+Q 55 | apt | Arithmetic
+If the average expenditure of petrol for 5 months of a car be 96 litres and that for the next 7 months be 120 litres, what is the monthly average expenditure ?
+(1) 105 litres
+(2) 100 litres
+(3) 110 litres
+(4) 115 litres
+= 3
+~ Average = total quantity ÷ total number of months. Petrol used in the first 5 months = 5 × 96 = 480 litres. Petrol used in the next 7 months = 7 × 120 = 840 litres. Total for 12 months = 480 + 840 = 1,320 litres. Monthly average = 1,320 ÷ 12 = 110 litres, option (3). A common mistake is to take the simple mean (96 + 120) ÷ 2 = 108, which ignores that the two periods have different numbers of months; a weighted average is needed. Options 105, 100 and 115 litres do not fit the total of 1,320 litres. Exam tip: when averages of groups of different sizes are combined, always use the weighted average: (n1 × a1 + n2 × a2) ÷ (n1 + n2); the answer must lie between the two averages and closer to the larger group's value, here 120.
+
+Q 56 | apt | Arithmetic
+A student got twice as many sums wrong as he got right. If he attempted 48 sums in all, how many did he solve correctly ?
+(1) 12
+(2) 16
+(3) 18
+(4) 24
+= 2
+~ Let the number of sums solved correctly be x. The wrong sums are twice that, 2x. Together they make all 48 attempted sums: x + 2x = 48, so 3x = 48 and x = 16. So he solved 16 sums correctly (and 32 wrongly), option (2). Check: 32 is exactly twice 16, and 16 + 32 = 48. Option (4), 24, would be correct only if right and wrong sums were equal (48 ÷ 2); 12 would mean a ratio of 1 : 3; 18 does not divide 48 into a 1 : 2 ratio at all. Exam tip: in ratio-of-parts problems, add the ratio terms (1 + 2 = 3 parts), divide the total by the sum of parts (48 ÷ 3 = 16), and then multiply by each part's share. This method solves most "twice as many" and "thrice as many" questions in a few seconds.
+
+Q 57 | his | Medieval India
+Who among the following was the King of Delhi during the third battle of Panipat ?
+(1) Muhammad Shah
+(2) Ahmed Shah
+(3) Shah Alam II
+(4) Akbar Shah II
+= 3
+~ The Third Battle of Panipat was fought on 14 January 1761 between the Marathas under Sadashivrao Bhau and the Afghan ruler Ahmad Shah Abdali (Durrani). At that time the Mughal emperor was Shah Alam II, who had been proclaimed emperor in December 1759 after his father Alamgir II was murdered by the wazir Imad-ul-Mulk; Shah Alam II was then away in Bihar and returned to Delhi only in 1772, but he was the recognised Mughal sovereign. Muhammad Shah (1) ruled 1719–1748 and saw Nadir Shah's invasion of 1739; Ahmad Shah Bahadur (2) ruled 1748–1754 (do not confuse him with Ahmad Shah Abdali, the invader); Akbar Shah II (4) ruled 1806–1837 under British protection. Exam tip: link the battles with emperors: Plassey 1757 – Alamgir II; Panipat III 1761 and Buxar 1764 – Shah Alam II.
+
+Q 58 | his | Modern India & Freedom Struggle
+Which among the following was the last European power to arrive in India ?
+(1) French
+(2) Portuguese
+(3) English
+(4) Dutch
+= 1
+~ The French were the last major European power to come to India for trade. The French East India Company was formed in 1664 under Colbert, and its first factory was set up at Surat in 1668, followed by Masulipatnam (1669) and Pondicherry (1674). The order of arrival was: Portuguese first (Vasco da Gama reached Calicut in 1498), then the Dutch (Dutch East India Company 1602, first factory at Masulipatnam 1605), then the English (East India Company chartered on 31 December 1600, factory at Surat 1613), then the Danes (Tranquebar 1620), and finally the French. So Portuguese (2), English (3) and Dutch (4) had all arrived earlier. Exam tip: remember the sequence "Portuguese – Dutch – English – Danes – French"; the first to come (Portuguese) were also the last to leave India, in 1961 from Goa.
+
+Q 59 | his | Modern India & Freedom Struggle
+The system of examination for entering civil services was introduced in
+(1) 1793
+(2) 1813
+(3) 1833
+(4) 1853
+= 4
+~ The Charter Act of 1853 ended the East India Company directors' power of patronage in appointing civil servants and introduced open competitive examination for entry into the Indian Civil Service; the first examination was held in London in 1855 (following the Macaulay Committee report of 1854). The other years are earlier Charter Acts: the Charter Act of 1793 (1) renewed the Company's charter for 20 years; the Charter Act of 1813 (2) ended the Company's trade monopoly in India (except tea and China trade) and set aside one lakh rupees for education; the Charter Act of 1833 (3) made the Governor-General of Bengal the Governor-General of India and proposed open competition, but that provision was never put into effect. Exam tip: Lord Cornwallis is called the father of the civil services in India, but the competitive examination came only with the 1853 Act; Satyendranath Tagore became the first Indian to clear the ICS in 1863.
+
+Q 60 | sci | Physics
+Smallest planet of solar system is
+(1) Mars
+(2) Mercury
+(3) Uranus
+(4) Saturn
+= 2
+~ Mercury is the smallest planet of the solar system, with a diameter of about 4,880 km, only a little larger than Earth's Moon. It is also the planet closest to the Sun and has the shortest year (about 88 Earth days). Pluto was once considered the smallest planet, but in 2006 the International Astronomical Union reclassified it as a dwarf planet, so Mercury holds the title. Mars (1), the "Red Planet", is the second smallest (about 6,780 km); Uranus (3) is an ice giant, the third largest planet; Saturn (4) is the second largest planet after Jupiter and is famous for its rings. Exam tip: Jupiter is the largest planet, Mercury the smallest; Venus is the hottest and brightest; Mars is the Red Planet; Uranus and Venus rotate in the opposite or tilted sense compared with the other planets.
+
+Q 61 | his | Modern India & Freedom Struggle
+Who was the founder of East India Association ?
+(1) Debendranath Tagore
+(2) M. G. Ranade
+(3) Dadabhai Naoroji
+(4) None of the above
+= 3
+~ The East India Association was founded by Dadabhai Naoroji in London in 1866, replacing the London Indian Society, to place Indian grievances before the British public and Parliament; branches were later opened in Bombay, Calcutta and Madras. Naoroji, the "Grand Old Man of India", also propounded the Drain Theory in "Poverty and Un-British Rule in India". Debendranath Tagore (1) led the Brahmo Samaj, founded the Tattvabodhini Sabha (1839) and was associated with the British Indian Association (1851); M. G. Ranade (2) was a founder of the Poona Sarvajanik Sabha (1870) and a leader of the Prarthana Samaj and the Indian National Social Conference. Since option (3) is correct, (4) is wrong. Exam tip: associations before the Congress: Landholders' Society (1838), British Indian Association (1851), East India Association (1866), Poona Sarvajanik Sabha (1870), Indian Association (1876, Surendranath Banerjea).
+
+Q 62 | his | Modern India & Freedom Struggle
+Who of the following leaders died on the day the Non-Cooperation Movement was launched in 1920 ?
+(1) Gopalkrishna Gokhale
+(2) Bal Gangadhar Tilak
+(3) Pheroz Shah Mehta
+(4) C. R. Das
+= 2
+~ Bal Gangadhar Tilak died in Bombay on 1 August 1920, the very day Mahatma Gandhi formally launched the Non-Cooperation Movement (with the return of his Kaiser-i-Hind medal). The movement was later approved by the Congress at its special session in Calcutta (September 1920) and at the Nagpur session (December 1920). Gopal Krishna Gokhale (1), Gandhi's political guru, died on 19 February 1915; Pherozeshah Mehta (3), the moderate leader from Bombay, died in November 1915; C. R. Das (4) actively took part in the Non-Cooperation Movement, later founded the Swaraj Party with Motilal Nehru in 1923, and died in June 1925. Exam tip: Tilak is remembered for "Swaraj is my birthright and I shall have it", the newspapers Kesari and Maratha, and the Home Rule League of 1916; the date of his death links neatly with the start of the Gandhian mass movement.
+
+Q 63 | his | Modern India & Freedom Struggle
+The Lucknow Pact was concluded in between
+(1) Congress and the British
+(2) Moderates and Militants
+(3) Congress and Muslim League
+(4) Gandhi and Ambedkar
+= 3
+~ The Lucknow Pact of December 1916 was an agreement between the Indian National Congress and the All-India Muslim League, reached at their sessions held together in Lucknow. Bal Gangadhar Tilak and Muhammad Ali Jinnah played key roles; the Congress accepted separate electorates for Muslims, and both parties jointly demanded self-government and constitutional reforms from the British. Option (2) is a trap: the Moderates and Extremists (Militants) did reunite at the same Lucknow session of the Congress in 1916, but that was a reunion, not the Lucknow Pact. Option (1) is wrong because the pact was not with the British, and option (4) describes the Poona Pact of 1932 between Gandhi and Ambedkar on depressed-class representation. Exam tip: the Lucknow session (1916) was presided over by Ambika Charan Mazumdar; remember "two reunions at Lucknow": Moderates with Extremists, and Congress with the League.
+
+Q 64 | his | Modern India & Freedom Struggle
+________ period in the Indian National Movement can be considered as an era of mass revolution.
+(1) 1857 – 1885
+(2) 1885 – 1895
+(3) 1901 – 1905
+(4) 1920 – 1947
+= 4
+~ The period 1920–1947 is known as the Gandhian era, when the freedom struggle became a true mass movement involving peasants, workers, women and students across India. It saw the Non-Cooperation Movement (1920–22), the Civil Disobedience Movement with the Dandi March (1930–34), the Quit India Movement (1942) and finally independence in 1947. The other periods were limited in their reach: 1857–1885 (1) covers the aftermath of the 1857 revolt and the rise of regional associations before the Congress; 1885–1895 (2) is part of the Moderate phase (1885–1905), marked by petitions and prayers by an educated elite; 1901–1905 (3) falls at the end of the Moderate phase, just before the Swadeshi movement and the rise of the Extremists after the Partition of Bengal (1905). Exam tip: phases of the national movement: Moderate 1885–1905, Extremist 1905–1919, Gandhian (mass) 1919/20–1947.
+
+Q 65 | his | Modern India & Freedom Struggle
+Which is the correct sequence of the following developments in the Constitutional history of India ?
+1. Cabinet Mission Plan
+2. Minto-Morley Report
+3. Montague-Chelmsford Report
+4. Simon Commission Report
+(1) 2, 3, 4, 1
+(2) 3, 2, 1, 4
+(3) 1, 4, 2, 3
+(4) 3, 4, 1, 2
+= 1
+~ Arrange the events by date. Minto-Morley Reforms: Indian Councils Act 1909, which introduced separate electorates for Muslims (2). Montagu-Chelmsford Report: 1918, leading to the Government of India Act 1919 and dyarchy in the provinces (3). Simon Commission: appointed 1927, its report was published in 1930 (4). Cabinet Mission Plan: 1946, proposing the Constituent Assembly and an interim government (1). So the correct chronological order is 2, 3, 4, 1, option (1). Option (2) puts the Montagu-Chelmsford Report before the Minto-Morley reforms; options (3) and (4) start with later events and are clearly out of sequence. Exam tip: remember the constitutional ladder: 1909 (Morley-Minto) → 1919 (Montford) → 1927–30 (Simon) → 1935 (Government of India Act) → 1942 (Cripps) → 1946 (Cabinet Mission) → 1947 (Mountbatten Plan and Indian Independence Act).
+
+Q 66 | pol | Judiciary & Constitutional Bodies
+Number of writs that can be issued by Supreme Court and High Courts in India are
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 3
+~ The Supreme Court (under Article 32) and the High Courts (under Article 226) can issue five types of writs: Habeas Corpus (to produce a detained person before the court), Mandamus (to command a public authority to perform its duty), Prohibition (to stop a lower court from exceeding its jurisdiction), Certiorari (to quash an order already passed by a lower court or tribunal) and Quo Warranto (to question a person's right to hold a public office). Hence the answer is 5, option (3); 3, 4 and 6 do not match the constitutional list. The Supreme Court can issue writs only for enforcing Fundamental Rights, while the High Courts can issue them for Fundamental Rights and also "for any other purpose", so the writ jurisdiction of High Courts is wider. Exam tip: Dr B. R. Ambedkar called Article 32 the "heart and soul" of the Constitution; the writs are borrowed from English law.
+
+Q 67 | geo | World Geography
+Island of Seychelles is located in
+(1) Indian Ocean
+(2) Pacific Ocean
+(3) Arctic Ocean
+(4) Atlantic Ocean
+= 1
+~ Seychelles is an archipelago country of about 115 islands in the western Indian Ocean, lying north-east of Madagascar and about 1,500 km east of mainland East Africa. Its capital, Victoria, is on the largest island, Mahé, and it is the smallest African country by population. It is an important partner for India in the Indian Ocean region (for example, the Assumption Island project). Seychelles is not in the Pacific Ocean (2), which has island nations such as Fiji, Tonga and Samoa; nor in the Arctic Ocean (3), which surrounds the North Pole and contains islands such as Svalbard; nor in the Atlantic Ocean (4), where islands such as Cape Verde, the Azores and Saint Helena lie. Exam tip: Indian Ocean island countries to remember: Sri Lanka, Maldives, Mauritius, Seychelles, Madagascar and Comoros.
+
+Q 68 | eco | Indian Economy
+Headquarters of Oil and Natural Gas Commission (ONGC) is in
+(1) Goa
+(2) Vishakhapatnam
+(3) Mumbai
+(4) Dehradun
+= 4
+~ The Oil and Natural Gas Commission (ONGC) was set up in 1956 (originally as the Oil and Natural Gas Directorate in 1955) with its headquarters at Dehradun, Uttarakhand; it became the Oil and Natural Gas Corporation Ltd in 1994 and is a Maharatna public sector company. Dehradun remains its traditional headquarters and the home of its institutes such as the KDM Institute of Petroleum Exploration, although its registered office is in New Delhi. Goa (1) is the base of the National Institute of Oceanography; Visakhapatnam (2) hosts the Eastern Naval Command and HPCL's refinery; Mumbai (3) has ONGC's major offshore operations (Mumbai High oil field, discovered in 1974) and the headquarters of companies such as HPCL and BPCL, but not of ONGC. Exam tip: remember "ONGC – Dehradun", "Indian Oil – New Delhi", "Oil India – Duliajan (Assam)".
+
+Q 69 | cur | Awards, Books & Persons
+Nobel Prize was first given in
+(1) 1970
+(2) 1901
+(3) 1905
+(4) 1900
+= 2
+~ The first Nobel Prizes were awarded on 10 December 1901, the fifth death anniversary of Alfred Nobel, the Swedish inventor of dynamite who died in 1896 and left his fortune for the prizes. The original five fields were Physics, Chemistry, Physiology or Medicine, Literature and Peace; the Economics prize (Sveriges Riksbank Prize) was added in 1968 and first given in 1969. The first winners included Wilhelm Röntgen (Physics) and Henri Dunant and Frédéric Passy (Peace). 1900 (4) is the year the Nobel Foundation was set up, not the year of the first award; 1905 (3) and 1970 (1) have no such link. Exam tip: Rabindranath Tagore (Literature, 1913) was the first Indian and first Asian Nobel laureate; the Peace Prize is given in Oslo, and the others in Stockholm.
+
+Q 70 | cur | Awards, Books & Persons
+The two foreigners who were awarded Bharat Ratna are
+(1) Nelson Mandela and Tito
+(2) Abdul Gaffar Khan and Tito
+(3) Nelson Mandela and Khan Abdul Gaffar Khan
+(4) None of the above
+= 3
+~ Bharat Ratna, India's highest civilian award (instituted in 1954), has been given to two persons who were not Indian citizens: Khan Abdul Ghaffar Khan, the "Frontier Gandhi" who founded the Khudai Khidmatgar movement and later lived in Pakistan, in 1987; and Nelson Mandela, the anti-apartheid leader and first black President of South Africa, in 1990. Josip Broz Tito of Yugoslavia, a founder of the Non-Aligned Movement, was never given the Bharat Ratna (he received the Nehru Award for International Understanding), so options (1) and (2) are wrong, and option (4) is wrong because (3) is correct. Mother Teresa (1980) was born abroad but had become an Indian citizen, so she is counted as a naturalised citizen rather than a foreigner. Exam tip: Mandela also received the Gandhi Peace Prize (2000); Abdul Ghaffar Khan was the first non-Indian to receive the Bharat Ratna.
+
+Q 71 | pol | Judiciary & Constitutional Bodies
+Who was the first woman Judge of India ?
+(1) Leila Seth
+(2) Fatima Beevi
+(3) Anna Chandy
+(4) Sujata
+= 3
+~ Anna Chandy of Kerala is regarded as the first woman judge in India: she became a munsif in the princely state of Travancore in 1937, a district judge in 1948, and in 1959 the first woman judge of a High Court in India (Kerala High Court). The other names are famous for different "firsts": Leila Seth (1) was the first woman judge of the Delhi High Court and the first woman Chief Justice of a State High Court (Himachal Pradesh, 1991); M. Fathima Beevi (2) was the first woman judge of the Supreme Court of India (1989) and later Governor of Tamil Nadu; Sujata V. Manohar (4) was the first woman Chief Justice of the Bombay and Kerala High Courts and later a Supreme Court judge. Exam tip: keep the four firsts apart: first woman judge – Anna Chandy; first woman High Court Chief Justice – Leila Seth; first woman Supreme Court judge – Fathima Beevi.
+
+Q 72 | sci | Science & Technology
+When was IISc. (Indian Institute of Science) established ?
+(1) 1909
+(2) 1910
+(3) 1921
+(4) 1914
+= 1
+~ The Indian Institute of Science (IISc), Bengaluru, was established on 27 May 1909. It was the vision of the industrialist Jamsetji Nusserwanji Tata, and the Maharaja of Mysore, Krishnaraja Wadiyar IV, donated about 371 acres of land for the campus, while the Government of India and the Mysore state also supported it. Classes began in 1911, and Morris Travers was its first director; Sir C. V. Raman was its first Indian director (1933). The years 1910, 1914 and 1921 are not linked with its founding; they are simply distractors close to the correct year. The institute is popularly called the "Tata Institute" in Bengaluru. Exam tip: IISc is a deemed university and an Institution of Eminence; it is a favourite Karnataka-related question, so remember 1909, Jamsetji Tata and Krishnaraja Wadiyar IV together.
+
+Q 73 | pol | Laws, Police & Society
+Where is International Court of Justice located ?
+(1) Vienna
+(2) Paris
+(3) Geneva
+(4) Hague
+= 4
+~ The International Court of Justice (ICJ), the principal judicial organ of the United Nations, sits in the Peace Palace at The Hague in the Netherlands. It was set up in 1945 under the UN Charter, began work in 1946 and has 15 judges elected for nine-year terms by the UN General Assembly and Security Council; it is the only one of the six principal UN organs not located in New York. Vienna (1) hosts the International Atomic Energy Agency (IAEA) and OPEC; Paris (2) is the headquarters of UNESCO; Geneva (3) hosts the WHO, ILO, UN Human Rights Council and the Red Cross (ICRC). Exam tip: Indian judges at the ICJ include B. N. Rau, Nagendra Singh (who also became its President) and Dalveer Bhandari; India won the Kulbhushan Jadhav case at the ICJ in 2019. The International Criminal Court (ICC) is also at The Hague.
+
+Q 74 | sci | Biology
+Total number of bones in human body is
+(1) 198
+(2) 206
+(3) 220
+(4) 200
+= 2
+~ The adult human skeleton has 206 bones. A newborn baby has about 270–300 bones or bony parts, but many of them (for example in the skull, the sacrum and the coccyx) fuse during growth, leaving 206 in the adult. The axial skeleton (skull, vertebral column, ribs and sternum) has 80 bones and the appendicular skeleton (limbs and girdles) has 126 bones. The options 198, 200 and 220 are distractors close to the correct figure but do not match the standard count. Useful facts: the femur (thigh bone) is the longest and strongest bone; the stapes in the middle ear is the smallest bone; the hyoid is the only bone not joined to any other bone; the hands and feet together contain more than half of all the bones. Exam tip: remember "206 for adults, about 300 at birth"; the human skull alone has 22 bones (8 cranial and 14 facial).
+
+Q 75 | pol | Constitution & Rights
+Tenth Schedule of Indian Constitution deals with
+(1) Disqualification on grounds of defection
+(2) Languages
+(3) Forms of oath
+(4) The States
+= 1
+~ The Tenth Schedule, known as the Anti-Defection Law, deals with disqualification of members of Parliament and State Legislatures on the ground of defection. It was added by the 52nd Constitutional Amendment Act, 1985, during Rajiv Gandhi's government, and the 91st Amendment Act, 2003, removed the "split" exception, leaving only mergers of at least two-thirds of a legislature party as protected. The Speaker or Chairman decides on disqualification, subject to judicial review (Kihoto Hollohan case, 1992). The other options belong to other Schedules: Languages (2) are in the Eighth Schedule (22 languages); Forms of oath or affirmation (3) are in the Third Schedule; the States and Union Territories (4) are listed in the First Schedule. Exam tip: memorise the important Schedules: 1st – States and UTs, 3rd – Oaths, 7th – Union, State and Concurrent Lists, 8th – Languages, 10th – Anti-defection, 11th – Panchayats, 12th – Municipalities.
+
+Q 76 | geo | World Geography
+Which of the following planets have no moon ?
+(1) Pluto and Mercury
+(2) Pluto and Mars
+(3) Mars and Venus
+(4) Mercury and Venus
+= 4
+~ Mercury and Venus are the only two planets of the solar system that have no natural satellite, so option (4) is correct. Mercury is closest to the Sun and Venus is the second planet; being near the Sun's strong gravity, any moon they might have captured would be unstable. Every other option includes a body that does have moons: Mars has two small moons, Phobos and Deimos, and Pluto (reclassified as a dwarf planet by the International Astronomical Union in 2006) has five known moons, the largest being Charon. So options (1), (2) and (3) are all wrong. For reference, Earth has one moon, while Saturn and Jupiter have the largest number of known moons, with Ganymede (Jupiter) the largest moon in the solar system. Exam tip: remember the pair "Mercury and Venus – moonless"; questions on the number of moons of Mars (two) and the status of Pluto (dwarf planet since 2006) are also common.
+
+Q 77 | cur | Awards, Books & Persons
+The Dronacharya Award is associated with
+(1) Famous Artists
+(2) Sport Coaches
+(3) Surgeons
+(4) Expert Engineers
+= 2
+~ The Dronacharya Award is India's highest honour for sports coaches, so option (2) is correct. It was instituted by the Ministry of Youth Affairs and Sports in 1985 and is given to coaches who have consistently produced medal-winning sportspersons at international events. It is named after Dronacharya, the teacher (guru) of the Pandavas and Kauravas in the Mahabharata, which fits its purpose of honouring teachers of sport. The awardee receives a statuette of Dronacharya, a certificate and cash. The other options are unrelated: artists are honoured by awards such as the Sangeet Natak Akademi Awards and Padma awards, while there is no Dronacharya award for surgeons or engineers. Related sports awards: the Arjuna Award (1961) for outstanding sportspersons, the Rajiv Gandhi Khel Ratna (1991–92, now Major Dhyan Chand Khel Ratna) as the highest sporting honour, and the Dhyan Chand Award for lifetime achievement. Exam tip: Arjuna is for players, Dronacharya is for coaches.
+
+Q 78 | pol | Union & State Government
+Legal Advisor to State Governments in India are called
+(1) Advocate General
+(2) Solicitor General
+(3) Chief Legal Officer
+(4) State Advocate
+= 1
+~ The Advocate General is the highest law officer of a State, so option (1) is correct. Article 165 of the Constitution provides that the Governor of each State shall appoint a person qualified to be a High Court judge as the Advocate General; he advises the State Government on legal matters, holds office during the pleasure of the Governor and has the right to speak in the State Legislature (Article 177) without the right to vote. The Solicitor General is a law officer of the Union Government, assisting the Attorney General of India (Article 76), who is the Union's chief legal adviser; unlike the Attorney General, the Solicitor General's post is not created by the Constitution. "Chief Legal Officer" and "State Advocate" are not constitutional posts. Exam tip: Attorney General – Article 76 (Union); Advocate General – Article 165 (State). Both must be qualified to be judges of the Supreme Court and High Court respectively.
+
+Q 79 | pol | Constitution & Rights
+Which of the following writs deals with unlawful detentions ?
+(1) Mandamus
+(2) Certiorari
+(3) Habeas Corpus
+(4) Quo Warranto
+= 3
+~ Habeas Corpus, Latin for "you may have the body", is the writ against unlawful detention, so option (3) is correct. Through it a court orders the person or authority holding someone in custody to produce the detained person before the court and justify the detention; if the detention is illegal, the person is set free. It can be issued against both public authorities and private individuals. The Supreme Court issues writs under Article 32 and High Courts under Article 226. The other writs have different purposes: Mandamus ("we command") orders a public official or body to perform a public duty; Certiorari ("to be certified") quashes an order already passed by a lower court or tribunal acting beyond its jurisdiction; Quo Warranto ("by what authority") questions a person's right to hold a public office. Exam tip: Habeas Corpus is called the bulwark of personal liberty and is linked to Article 21 (protection of life and personal liberty).
+
+Q 80 | pol | Constitution & Rights
+Which of the following is not a Fundamental Right under Indian Constitution ?
+(1) Right to Equality
+(2) Right to Speech
+(3) Right to Freedom
+(4) Right to Property
+= 4
+~ The Right to Property is no longer a Fundamental Right, so option (4) is correct. It was originally a Fundamental Right under Article 19(1)(f) and Article 31, but the 44th Constitutional Amendment Act, 1978 removed it from Part III and made it a constitutional (legal) right under Article 300A in Part XII: no person can be deprived of property save by authority of law. The other options are Fundamental Rights: the Right to Equality covers Articles 14–18; the Right to Freedom covers Articles 19–22; and freedom of speech and expression is guaranteed by Article 19(1)(a), part of the Right to Freedom. Today there are six categories of Fundamental Rights: Equality, Freedom, against Exploitation, Freedom of Religion, Cultural and Educational Rights, and Constitutional Remedies (Article 32). Exam tip: the 44th Amendment was passed by the Janata Government; the original Constitution had seven Fundamental Rights, now six.
+
+Q 81 | pol | Judiciary & Constitutional Bodies
+To be a Supreme Court Judge, a person must be High Court Judge for atleast
+(1) 5 years
+(2) 7 years
+(3) 4 years
+(4) None of the above
+= 1
+~ Under Article 124(3) of the Constitution, a person to be appointed as a judge of the Supreme Court must be a citizen of India and either (a) a judge of a High Court (or of two or more High Courts in succession) for at least five years, or (b) an advocate of a High Court (or of two or more such courts in succession) for at least ten years, or (c) a distinguished jurist in the opinion of the President. So option (1), 5 years, is correct. Seven years is not a requirement here; it is wrongly confused with other posts (for example, a district judge needs seven years of practice as an advocate under Article 233). Four years appears nowhere, so options (2), (3) and (4) are wrong. Supreme Court judges are appointed by the President and hold office until the age of 65. Exam tip: Supreme Court – 5 years as HC judge or 10 years as HC advocate; High Court judge – 10 years judicial office or 10 years as advocate (Article 217).
+
+Q 82 | comp | Computer Fundamentals
+Smallest unit in digital system is
+(1) byte
+(2) character
+(3) bit
+(4) word
+= 3
+~ The bit (binary digit) is the smallest unit of data in a digital system, so option (3) is correct. A bit can hold only one of two values, 0 or 1, corresponding to the off and on states of an electronic switch. All larger units are built from bits: 4 bits make a nibble, 8 bits make a byte, and a byte is usually enough to store one character (letter, digit or symbol) in ASCII coding. A word is the group of bits a processor handles at one time, commonly 16, 32 or 64 bits. So byte, character and word are all larger than a bit, making options (1), (2) and (4) wrong. Memory sizes then go up as kilobyte (1024 bytes), megabyte, gigabyte, terabyte and so on. Exam tip: the order to remember is bit < nibble < byte < KB < MB < GB < TB; the term "bit" was popularised by Claude Shannon.
+
+Q 83 | geo | Indian Geography
+On which river is Bhakranangal Dam located ?
+(1) Sutlej
+(2) Ravi
+(3) Chenab
+(4) Beas
+= 1
+~ The Bhakra–Nangal project is on the Sutlej river, so option (1) is correct. The Bhakra dam stands in Bilaspur district of Himachal Pradesh, and its reservoir is the Gobind Sagar; the Nangal dam lies a short distance downstream in Punjab. Completed in 1963, Bhakra is one of the highest concrete gravity dams in India, and Jawaharlal Nehru called such projects the "temples of modern India". It supplies irrigation and power to Punjab, Haryana, Rajasthan and Himachal Pradesh. The other rivers have different dams: the Ranjit Sagar (Thein) dam is on the Ravi, the Pong and Pandoh dams are on the Beas, and the Salal and Baglihar projects are on the Chenab. Exam tip: Sutlej – Bhakra Nangal and Nathpa Jhakri; Beas – Pong; Ravi – Ranjit Sagar; Chenab – Salal and Baglihar. The Sutlej enters India through the Shipki La pass.
+
+Q 84 | cur | International & Sports
+Who was the first Indian woman to win Olympic Medal ?
+(1) P. T. Usha
+(2) Karnam Malleswari
+(3) Mary Kom
+(4) Chanu
+= 2
+~ Karnam Malleswari, a weightlifter from Andhra Pradesh, became the first Indian woman to win an Olympic medal when she won bronze in the 69 kg category at the Sydney Olympics in 2000, so option (2) is correct. P. T. Usha, the "Payyoli Express", narrowly missed a medal, finishing fourth in the 400 m hurdles at the 1984 Los Angeles Olympics by a hundredth of a second. M. C. Mary Kom won bronze in women's boxing (flyweight) at the London Olympics in 2012, twelve years after Malleswari. Chanu refers to weightlifter Saikhom Mirabai Chanu (or Manipuri athletes with that name); as of 2017 she had not won an Olympic medal. Other women medal winners before 2017: Saina Nehwal (badminton bronze, 2012), P. V. Sindhu (badminton silver, 2016) and Sakshi Malik (wrestling bronze, 2016). Exam tip: Karnam Malleswari – Sydney 2000 – first; she also received the Rajiv Gandhi Khel Ratna in 1995.
+
+Q 85 | his | Modern India & Freedom Struggle
+August 9, 1925 is known in Indian history for
+(1) Chauri-Chaura Incident
+(2) Jallianwala Bagh Incident
+(3) Bengal Partition
+(4) Kakori Train Robbery
+= 4
+~ On 9 August 1925, revolutionaries of the Hindustan Republican Association (HRA) stopped a train at Kakori near Lucknow and looted government treasury money it was carrying, to fund their armed struggle. This is the Kakori Train Robbery (Kakori conspiracy), so option (4) is correct. It was led by Ram Prasad Bismil with Ashfaqulla Khan, Rajendra Lahiri, Chandrashekhar Azad and others. After the trial, Bismil, Ashfaqulla Khan, Rajendra Lahiri and Roshan Singh were hanged in December 1927. The other events have different dates: Chauri Chaura (Gorakhpur), where a police station was burnt, on 5 February 1922, leading Gandhi to withdraw the Non-Cooperation Movement; the Jallianwala Bagh massacre at Amritsar on 13 April 1919; and the Partition of Bengal by Lord Curzon on 16 October 1905. Exam tip: 9 August is also the date of the Quit India Movement (1942), so do not confuse the two.
+
+Q 86 | eco | Money, Banking & Budget
+Currency Sign for Indian Rupee was introduced in
+(1) 2012
+(2) 2010
+(3) 2011
+(4) 2000
+= 1
+~ The official key gives 2012. The symbol ₹, designed by D. Udaya Kumar (then a postgraduate at IIT Bombay), was approved by the Union Cabinet on 15 July 2010, which made India the fifth country with a distinctive currency symbol after the US dollar, British pound, Japanese yen and euro. Coins carrying the new symbol were released in July 2011, and the Reserve Bank of India announced its first banknotes bearing ₹ (the ₹10 note) in September 2011, with other denominations following; the key's 2012 can only be read as the year such notes became common in circulation, which is a weak reading. The symbol combines the Devanagari "र" and the Roman "R" with two horizontal lines, recalling the national flag and the "equal to" sign. 2000 has no link with the symbol. Exam tip: most standard references give 2010 as the year the rupee symbol was adopted, so read the question's wording carefully.
+
+Q 87 | comp | Internet, Networking & Security
+Which of these are forms of social media ?
+(1) Facebook
+(2) Linkedin
+(3) Twitter
+(4) All of the above
+= 4
+~ All three are social media platforms, so option (4) is correct. Social media are websites and applications that let users create profiles, share content and interact with others online. Facebook, founded by Mark Zuckerberg in 2004, is a general social networking site for sharing posts, photos and videos with friends. LinkedIn, launched in 2003, is a professional networking site used for jobs, careers and business contacts (it was acquired by Microsoft in 2016). Twitter, founded in 2006 by Jack Dorsey and others, is a micro-blogging site where users post short messages called tweets (140 characters at the time of the exam). Since each individual option is correct, choosing only one of them would be incomplete. Other examples include Instagram, YouTube and WhatsApp. Exam tip: when every listed item fits the definition, "All of the above" is the answer; remember the founders and launch years, which are often asked.
+
+Q 88 | his | Karnataka History
+Who wrote the book Kavirajamarga ?
+(1) Pampa
+(2) Amoghavarsha I
+(3) Nagavarma
+(4) Chavundaraya
+= 2
+~ Kavirajamarga, the earliest available literary work in Kannada (around 850 CE), is attributed to the Rashtrakuta king Amoghavarsha I (Nripatunga), so option (2) is correct; some scholars credit his court poet Srivijaya. It is a work on poetics (rhetoric) based on Dandin's Kavyadarsha and is famous for describing the Kannada land as extending "from the Kaveri to the Godavari" and praising the Kannada people. Pampa (10th century) wrote Vikramarjuna Vijaya (Pampa Bharata) and Adipurana and is called Adikavi; Nagavarma I wrote Chhandombudhi, and Nagavarma II wrote Kavyavalokana and Karnataka Bhashabhushana; Chavundaraya wrote Chavundaraya Purana (978 CE) and built the Gommateshwara statue at Shravanabelagola. Amoghavarsha I also wrote Prashnottara Ratnamalika in Sanskrit. Exam tip: Kavirajamarga – Amoghavarsha I – Rashtrakutas – capital Manyakheta (Malkhed); it is the first Kannada book available to us.
+
+Q 89 | his | Karnataka History
+Karnataka was formed in 1956 on the basis of which report ?
+(1) JVP Committee
+(2) Dhar Committee
+(3) Fazal Ali Committee
+(4) Wanchoo Committee
+= 3
+~ The unified Mysore State (renamed Karnataka in 1973) was formed on 1 November 1956 on the basis of the report of the States Reorganisation Commission headed by Justice Fazal Ali, so option (3) is correct. The commission was set up in 1953 with K. M. Panikkar and H. N. Kunzru as members and submitted its report in 1955, recommending reorganisation largely on linguistic lines; it was implemented by the States Reorganisation Act, 1956. The other committees came earlier and did not create Karnataka: the Linguistic Provinces Commission under S. K. Dhar (1948) and the JVP Committee of Jawaharlal Nehru, Vallabhbhai Patel and Pattabhi Sitaramayya (1948–49) both advised against immediate linguistic reorganisation; the Wanchoo Committee (1953) dealt with the financial aspects of forming Andhra State. Exam tip: Mysore was renamed Karnataka on 1 November 1973 under Chief Minister D. Devaraj Urs; 1 November is celebrated as Kannada Rajyotsava.
+
+Q 90 | geo | Indian Geography
+Mullaperiyar Dam is a matter of dispute between
+(1) Tamil Nadu and Kerala
+(2) Tamil Nadu and Karnataka
+(3) Tamil Nadu and Andhra Pradesh
+(4) None of the above
+= 1
+~ The Mullaperiyar Dam is the subject of a long-running dispute between Tamil Nadu and Kerala, so option (1) is correct. The masonry gravity dam stands on the Periyar river in Idukki district of Kerala but is owned and operated by Tamil Nadu under a 999-year lease signed in 1886 between the Maharaja of Travancore and the British Madras Presidency. It was built under Colonel John Pennycuick and completed in 1895 to divert water to the drought-prone Vaigai basin in Tamil Nadu. Kerala raises safety concerns about the old dam and the downstream population, while Tamil Nadu wants to raise the water level for irrigation; the Supreme Court in 2014 allowed the level to be kept at 142 feet. Tamil Nadu and Karnataka dispute the Cauvery waters, not Mullaperiyar. Exam tip: Mullaperiyar – Periyar river – Kerala location, Tamil Nadu control; Cauvery – Karnataka and Tamil Nadu.
+
+Q 91 | sci | Physics
+The irregular motion of particles arising from the thermal motion of the particles is known as
+(1) Velocity
+(2) Drift velocity
+(3) Brownian motion
+(4) Diffusion
+= 3
+~ Brownian motion is the random, zig-zag movement of tiny particles suspended in a liquid or gas, caused by uneven collisions with the fast-moving molecules of the fluid, which are in constant thermal motion. So option (3) is correct. It was first observed in 1827 by the botanist Robert Brown, who saw pollen grains jiggling in water, and it was explained mathematically by Albert Einstein in 1905; its study gave strong evidence for the existence of atoms and molecules. The motion increases with temperature and decreases with the size of the particle and the viscosity of the medium. Velocity is simply the rate of change of displacement; drift velocity is the small average velocity of free electrons in a conductor under an electric field; diffusion is the net spreading of particles from higher to lower concentration, which is a result of such random motion, not the motion itself. Exam tip: Brownian motion – Robert Brown 1827 – Einstein 1905.
+
+Q 92 | sci | Physics
+The phenomenon of sound propagation in air is
+(1) Isothermic process
+(2) Adiabatic process
+(3) Isochoric process
+(4) Isobaric process
+= 2
+~ Sound travels through air as rapid compressions and rarefactions. These changes happen so quickly that there is no time for heat to flow in or out of the compressed or rarefied layers, so the process is adiabatic, option (2). Newton assumed the process was isothermal (constant temperature) and his formula v = √(P/ρ) gave the speed of sound in air as about 280 m/s, well below the measured value of about 332 m/s at 0 °C. Laplace corrected this by treating it as adiabatic, giving v = √(γP/ρ), where γ (about 1.4 for air) is the ratio of specific heats; this matches experiment (Laplace's correction). An isochoric process occurs at constant volume and an isobaric process at constant pressure; neither applies, because both pressure and volume change in a sound wave. Exam tip: Newton's formula – isothermal; Laplace's correction – adiabatic.
+
+Q 93 | sci | Physics
+Tesla is the unit of
+(1) Electric field
+(2) Electric flux
+(3) Magnetic field
+(4) Magnetic flux
+= 3
+~ The tesla (T) is the SI unit of magnetic field, more precisely magnetic flux density (B), so option (3) is correct. One tesla equals one weber per square metre (Wb/m²) or one newton per ampere-metre (N/A·m). The unit is named after the Serbian-American scientist Nikola Tesla. The smaller CGS unit is the gauss: 1 tesla = 10,000 gauss; the Earth's magnetic field is only about 0.3–0.6 gauss. The other quantities have different units: electric field is measured in newton per coulomb (N/C) or volt per metre (V/m); electric flux in volt-metre (N·m²/C); and magnetic flux in the weber (Wb), which equals tesla × square metre. So options (1), (2) and (4) are wrong. Exam tip: Weber is for magnetic flux, tesla for magnetic flux density (field); MRI machines typically use fields of 1.5 to 3 tesla.
+
+Q 94 | sci | Chemistry
+Which of the following is a chemical change ?
+(1) Twinkling of stars
+(2) Boiling of water
+(3) Cutting of fruits
+(4) Cooking of vegetables
+= 4
+~ Cooking vegetables is a chemical change, option (4). Heat breaks down cell walls, starches and proteins and forms new substances with new taste, colour and texture; the change is permanent and the raw vegetable cannot be recovered. A chemical change produces new substances and is usually irreversible. The other options are not chemical changes: twinkling of stars is an optical effect caused by atmospheric refraction of starlight through layers of air of varying density, not a change in any substance; boiling of water is a physical change of state from liquid to vapour, and the steam can be condensed back into water with the same composition (H2O); cutting fruit only changes its size and shape. Other examples of chemical change: rusting of iron, burning of paper, curdling of milk, ripening of fruit and digestion of food. Exam tip: ask whether a new substance is formed; if yes, it is a chemical change.
+
+Q 95 | sci | Chemistry
+Chemical formula for baking soda is
+(1) NaHCO3
+(2) NaOH
+(3) NaCl
+(4) NaBr
+= 1
+~ Baking soda is sodium hydrogen carbonate (sodium bicarbonate), NaHCO3, so option (1) is correct. It is made by the Solvay (ammonia-soda) process. When heated, it decomposes: 2NaHCO3 → Na2CO3 + H2O + CO2; the carbon dioxide released makes cakes and bread soft and spongy. It is mildly alkaline, so it is also used as an antacid to relieve acidity and in soda-acid fire extinguishers. The other formulas belong to different compounds: NaOH is sodium hydroxide (caustic soda), a strong base used in soap making; NaCl is sodium chloride (common salt); NaBr is sodium bromide, once used as a sedative. Related compounds often asked: washing soda is Na2CO3·10H2O, baking powder is baking soda mixed with a mild acid such as tartaric acid, and bleaching powder is CaOCl2. Exam tip: baking soda – NaHCO3; washing soda – Na2CO3·10H2O; caustic soda – NaOH.
+
+Q 96 | sci | Science & Technology
+Sagar Samrat is
+(1) Oil platform
+(2) A research vessel
+(3) Dam on Southern river
+(4) None of these
+= 1
+~ Sagar Samrat is the Oil and Natural Gas Corporation's (ONGC) first offshore drilling rig, a jack-up oil platform, so option (1) is correct. Built in Japan and acquired by ONGC in 1973, it began drilling in the Arabian Sea off Mumbai and struck oil at Bombay High in February 1974, which opened up India's largest offshore oil field. Bombay High lies about 160 km west of Mumbai and remains a major source of India's domestic crude oil production. Sagar Samrat is not a research vessel; India's oceanographic research ships carry names such as Sagar Kanya and Sagar Nidhi, which may confuse candidates. It is not a dam either, and since option (1) is correct, "None of these" is wrong. Exam tip: Bombay High – offshore oil field discovered by Sagar Samrat in 1974; Digboi (Assam) is India's oldest oil field and refinery.
+
+Q 97 | geo | Indian Geography
+The largest river basin in India is
+(1) Ganga
+(2) Brahmaputra
+(3) Godawari
+(4) Indus
+= 1
+~ The Ganga basin is the largest river basin in India, covering about 8.6 lakh sq km, roughly a quarter (about 26%) of the country's area, so option (1) is correct. It spreads over Uttarakhand, Uttar Pradesh, Madhya Pradesh, Rajasthan, Haryana, Himachal Pradesh, Delhi, Bihar, Jharkhand, Chhattisgarh and West Bengal, and supports a very large share of India's population. The Indus basin is larger overall, but most of it lies in Pakistan; its Indian part is only about 3.2 lakh sq km. The Godavari basin, about 3.1 lakh sq km, is the largest basin in peninsular India, and Godavari is called the Dakshina Ganga. The Brahmaputra basin within India is smaller, about 1.9 lakh sq km, though the river carries a huge volume of water. Exam tip: largest basin – Ganga; largest peninsular basin – Godavari; longest peninsular river – Godavari (about 1,465 km).
+
+Q 98 | geo | Indian Geography
+Which state has Jute Industry ?
+(1) Bihar
+(2) Gujarat
+(3) Maharashtra
+(4) None of these
+= 1
+~ Among the options, only Bihar has a jute industry, so option (1) is correct. Jute is a fibre crop of the hot and humid Ganga–Brahmaputra delta region and needs fertile alluvial soil, high temperature and heavy rainfall. West Bengal is by far the leading state in jute cultivation and jute mills (mostly along the Hooghly river), followed by Bihar, Assam and Odisha. In Bihar, jute is grown in the Purnia, Katihar and Kishanganj region, and jute mills have operated at Katihar and Samastipur. Gujarat and Maharashtra are known for the cotton textile industry (Ahmedabad and Mumbai), not jute, so options (2) and (3) are wrong, and since Bihar fits, "None of these" is wrong. Jute is called the "golden fibre" and is used to make gunny bags, sacking, carpets and ropes. Exam tip: jute – West Bengal (Hooghly belt) first, then Bihar and Assam; cotton textiles – Maharashtra and Gujarat.
+
+Q 99 | geo | Indian Geography
+National Highway 2 connects the following cities
+(1) Delhi to Kolkata
+(2) Delhi to Mumbai
+(3) Chennai to Bengaluru
+(4) Agra to Chennai
+= 1
+~ Under the old numbering system, National Highway 2 ran from Delhi to Kolkata, so option (1) is correct. It passed through Faridabad, Mathura, Agra, Kanpur, Allahabad, Varanasi, Mohania, Aurangabad (Bihar), Dhanbad and Asansol, roughly following the historic Grand Trunk Road; about 1,465 km long, it formed part of the Golden Quadrilateral. After the highways were renumbered in 2010, the Delhi–Agra–Kolkata route became mainly NH 19, and the number NH 2 now belongs to a highway in north-east India. The other routes were different highways under the old system: Delhi–Mumbai was NH 8 (via Jaipur and Ahmedabad), Chennai–Bengaluru was NH 4 (now NH 48), and there is no single Agra–Chennai national highway; Agra–Mumbai was NH 3. Exam tip: the Grand Trunk Road was rebuilt by Sher Shah Suri; the Golden Quadrilateral links Delhi, Mumbai, Chennai and Kolkata.
+
+Q 100 | geo | Indian Geography
+Name the state where density of population is the lowest.
+(1) Meghalaya
+(2) Mizoram
+(3) Arunachal Pradesh
+(4) Sikkim
+= 3
+~ According to the 2011 Census, Arunachal Pradesh has the lowest population density among Indian states, only 17 persons per sq km, so option (3) is correct. It is the largest state in north-east India by area (about 83,743 sq km) but has a small population (about 13.8 lakh) spread over rugged, forested mountain terrain. The other options have higher densities: Mizoram about 52, Sikkim about 86 and Meghalaya about 132 persons per sq km. The national average in 2011 was 382 persons per sq km. At the other end, Bihar has the highest density among states (1,106 per sq km), and among union territories the National Capital Territory of Delhi has the highest (11,320 per sq km), while the Andaman and Nicobar Islands have the lowest (46). Exam tip: lowest density – Arunachal Pradesh (state), Andaman and Nicobar Islands (UT); highest – Bihar (state), Delhi (UT); India – 382.

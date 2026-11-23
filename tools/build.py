@@ -756,6 +756,8 @@ KP_BLURB_PC = ('General Knowledge: 100 questions, 100 marks, 90 minutes, in Kann
 KP_BLURB_PSI24 = ('Paper-2 General Studies: 100 objective questions, 150 marks (1.5 marks each), 90 minutes, in Kannada and English. '
                   '(Paper-1, the descriptive paper, is not part of this set.)')
 KP_BLURB_PSI23 = ('Paper-2 General Studies: 100 objective questions, 90 minutes, in Kannada and English. (Paper-1, the descriptive paper, is not part of this set.)')
+KP_BLURB_PSI_OLD = ('Paper-2 General Studies: 100 objective questions, 150 marks (1.5 marks each; 0.375 deducted for a wrong answer), 90 minutes, '
+                    'in Kannada and English. (Paper-1, the descriptive paper, is not part of this set.)')
 def _kp(pid, year, stage, short, title, notif, held, key, file_, slug, kwname, kn_paper, blurb):
     return dict(id=pid, file=file_, year=year, stage=stage, short=short, title=title, notif=notif, held=held, key=key, fmt='mcq', slug=slug,
                 kwname=kwname, kn_paper=kn_paper, blurb=blurb, mins=90)
@@ -767,7 +769,24 @@ KPSI_PAPERS = [
   _kp('kpj24', 2024, 'PSI (Civil) 545 posts re-exam · Paper-2', 'PSI Jan 2024 · P2', 'Karnataka PSI Re-exam 2024 (545 posts) Paper-2: General Studies',
       'KSP Police Sub-Inspector (Civil) recruitment, 545 posts, re-examination conducted by KEA · version A1, paper code DE2023GA',
       '23 January 2024', "KEA's final key answers (1 March 2024)", 'karnataka-psi-re-exam-2024-paper-2.txt',
-      'karnataka-psi-re-exam-2024-545-posts-paper-2-question-paper-with-answers', 'Karnataka PSI re-exam 2024 (545 posts) Paper 2', 'ಮರು ಪರೀಕ್ಷೆ ಪತ್ರಿಕೆ-2', KP_BLURB_PSI23),
+      'karnataka-psi-re-exam-2024-545-posts-paper-2-question-paper-with-answers', 'Karnataka PSI re-exam 2024 (545 posts) Paper 2', 'ಮರು ಪರೀಕ್ಷೆ ಪತ್ರಿಕೆ-2', KP_BLURB_PSI23),  # Older KSP PSI (Civil) Paper-2s, conducted by KSP's recruitment wing (Anil, 23 Nov 2026: "add pyqs for karnataka police SI of all other years"):
+  # KSP's own bilingual booklets (one series each) with the key KSP published for that series. 2016 (15 Sep 2016) left out: no official key found.
+  _kp('kpc21', 2021, 'PSI (Civil) 545 posts · Paper-2', 'PSI Oct 2021 · P2', 'Karnataka PSI 2021 (545 posts) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil) recruitment, 545 posts (KK & NKK), written exam conducted by KSP · booklet series D (this exam was later annulled and re-held by KEA in January 2024)',
+      '3 October 2021', "KSP's final key (12 November 2021) and revised final key (23 November 2021)", 'karnataka-psi-2021-paper-2.txt',
+      'karnataka-psi-2021-545-posts-paper-2-question-paper-with-answers', 'Karnataka PSI 2021 (545 posts) Paper 2', 'ಪತ್ರಿಕೆ-2 (2021)', KP_BLURB_PSI_OLD),
+  _kp('kpc20', 2020, 'PSI (Civil) 212 posts · Paper-2', 'PSI Jan 2020 · P2', 'Karnataka PSI 2020 (HK-12 & NHK-200 posts) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil) recruitment, 212 posts (HK-12 & NHK-200), written exam conducted by KSP · booklet series A',
+      '5 January 2020', "KSP's provisional key (18 January 2020)", 'karnataka-psi-2020-paper-2.txt',
+      'karnataka-psi-2020-paper-2-question-paper-with-answers', 'Karnataka PSI 2020 Paper 2', 'ಪತ್ರಿಕೆ-2 (2020)', KP_BLURB_PSI_OLD),
+  _kp('kpc19', 2019, 'PSI (Civil)-2018 · Paper-2', 'PSI Jan 2019 · P2', 'Karnataka PSI 2019 (PSI Civil-2018) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil)-2018 recruitment, written exam conducted by KSP · booklet series C',
+      '13 January 2019', "KSP's provisional key", 'karnataka-psi-2019-paper-2.txt',
+      'karnataka-psi-2019-paper-2-question-paper-with-answers', 'Karnataka PSI 2019 Paper 2', 'ಪತ್ರಿಕೆ-2 (2019)', KP_BLURB_PSI_OLD),
+  _kp('kpc17', 2017, 'PSI (Civil) & Intelligence 2017 · Paper-2', 'PSI Sep 2017 · P2', 'Karnataka PSI 2017 (Civil & State Intelligence) Paper-2: General Studies',
+      'KSP Police Sub-Inspector (Civil) & PSI (State Intelligence)-2017 recruitment, written exam conducted by KSP · booklet series B',
+      '17 September 2017', "KSP's provisional key", 'karnataka-psi-2017-paper-2.txt',
+      'karnataka-psi-2017-paper-2-question-paper-with-answers', 'Karnataka PSI 2017 Paper 2', 'ಪತ್ರಿಕೆ-2 (2017)', KP_BLURB_PSI_OLD),
 ]
 KPC_PAPERS = [
   _kp('kcr26', 2026, 'Civil PC 2026 · RPC', 'Civil PC 2026 · RPC', 'KSP Civil Police Constable 2026 (RPC): General Knowledge',
