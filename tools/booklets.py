@@ -176,7 +176,7 @@ def time_marks(conf, p):
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
     if conf['id'] == 'opsc-aso': return (('2 Hours', 200) if p['id'] in ('a3', 's3') else ('1 Hour 30 Minutes', 100))   # OPSC ASO papers
-    if conf['id'] == 'olm': return '45 Minutes', p.get('count') or ''   # OLM practice sets: 1 mark a question
+    if conf['id'] == 'olm': return f"{p.get('mins') or 45} Minutes", p.get('count') or ''   # OLM practice sets: 1 mark a question
     if conf['id'] == 'jkssb-je-civil': return '120 Minutes', 120   # JKSSB JE (Civil): 120 questions, 1 mark each
     if conf['id'] == 'meghalaya-psc': return (('2 Hours 30 Minutes', 300) if p['id'] == 'l25' else ('2 Hours', 200))   # MPSC: MCS Prelims papers 100 x 2 marks; LDA 150 x 2 marks
     if conf['id'] == 'dsssb': return '120 Minutes', 200   # DSSSB one-tier tests: 200 questions, 1 mark each

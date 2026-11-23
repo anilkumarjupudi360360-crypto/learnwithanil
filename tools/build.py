@@ -1353,6 +1353,16 @@ def _olm(pid, no, subj, short_subj, slug):
 OLM_PAPERS = [
   _olm('o1', 1, 'SHGs, NRLM, Mission Shakti & Livelihoods', 'SHGs, NRLM, Mission Shakti & Livelihoods', 'shg-nrlm-mission-shakti-livelihoods'),
   _olm('o2', 2, 'Rural Development, Panchayati Raj & Financial Inclusion', 'Rural Development, Panchayati Raj & Financial Inclusion', 'rural-development-panchayati-raj-financial-inclusion'),
+  # Anil, 23 Nov 2026 ("ok" to adding OSSSC 2026 papers): Set 3 = the Odisha, Mission Shakti, scheme and rural questions of OSSSC's own
+  # Forester / Forest Guard / Excise Constable CBT (CRE-2025 II, 16 Apr - 3 May 2026), read from candidates' official response sheets
+  # (the option OSSSC's key marks correct is shown in green). Work files: /home/claude/osssc.
+  dict(_olm('o3', 3, 'Odisha GK, Mission Shakti & Odisha Schemes (OSSSC 2026)', 'Odisha GK, Mission Shakti & Odisha Schemes', 'odisha-gk-mission-shakti-odisha-schemes-osssc-2026'),
+       notif="Real questions from OSSSC's Forester, Forest Guard & Excise Constable CBT, 16 April - 3 May 2026 (11 shifts)",
+       key="OSSSC's answer key (as marked on the candidates' response sheets)",
+       held='OSSSC CBT, 16 April – 3 May 2026', mins=70,
+       held_line=("Real questions from OSSSC's own Forester, Forest Guard & Excise Constable CBT (CRE-2025 II), held from 16 April to 3 May 2026: "
+                  "every question on Odisha, Mission Shakti, Odisha schemes and rural development from 11 shifts, with the shift in brackets before each "
+                  "question and the answer OSSSC's key marks on the candidates' response sheets")),
 ]
 OLM_SUBJECTS = [
   ('liv', 'Livelihoods, SHGs & Mission Shakti', 'livelihoods-shg-mission-shakti', ['SHGs & NRLM', 'Mission Shakti & Odisha Schemes', 'Microfinance & Enterprise', 'Skills & Livelihoods']),
@@ -1373,12 +1383,13 @@ def FAQ_OLM(total, npapers):
       ('Is there an OLM (Odisha Livelihoods Mission) previous year question paper?',
        'No. OLM has never published its question paper: the 2020 recruitment released no answer key, and the 2026 CBT has not been held yet '
        '(OLM says it will publish a provisional answer key after it). So this page gives you the next best thing: '
-       f'{total} real questions on OLM\'s subjects, from official papers of UPSC, APPSC, KEA, Karnataka Police, RRB and other boards, each '
+       f'{total} real questions on OLM\'s subjects, from official papers of OSSSC (Odisha), UPSC, APPSC, KEA, Karnataka Police, RRB and other boards, each '
        'with that board\'s official answer and the exam it was asked in. We will add the real OLM paper as soon as OLM publishes it.'),
       ('Are these Mission Shakti questions?',
        'Yes. Mission Shakti Odisha does not hold a separate recruitment exam: OLM works under the Department of Mission Shakti and its CBT is the '
        'Mission Shakti recruitment of 2026. Set 1 covers self-help groups, DAY-NRLM, Mission Shakti, women\'s schemes, microfinance and livelihoods; '
-       'Set 2 covers rural development, MGNREGA, poverty, Panchayati Raj, rural credit (NABARD, RRBs, cooperatives) and financial inclusion.'),
+       'Set 2 covers rural development, MGNREGA, poverty, Panchayati Raj, rural credit (NABARD, RRBs, cooperatives) and financial inclusion; '
+       'Set 3 has the Odisha, Mission Shakti and Odisha-scheme questions of OSSSC\'s 2026 Forester, Forest Guard and Excise Constable exam.'),
       ('What is the OLM 2026 exam pattern?',
        'One Computer Based Test of 100 multiple-choice questions in 90 minutes (120 minutes for eligible PwD candidates), in English only, 1 mark '
        'a question with 0.33 deducted for each wrong answer. It has a domain-specific part linked to the post and a common part. There is no '
@@ -3674,11 +3685,11 @@ def exam_confs():
                            f"DAY-NRLM, Mission Shakti, livelihoods, rural development, Panchayati Raj and financial inclusion, with official keys and "
                            f"explanations, timed tests and the Jeebika OLM mock test series for the OLM CBT 2026 (1,115 posts, Block Manager, BMM, Block Accountant)."),
            eyebrow='OLM · Department of Mission Shakti, Odisha · CBT 2026',
-           frompapers='2 practice sets of real questions from official papers', papersk='Practice sets of real exam questions',
+           frompapers='3 practice sets of real questions from official papers', papersk='Practice sets of real exam questions',
            foot="Questions are real questions from official papers of other boards (the source exam is printed before each question); answers from each board's official key. OLM has not published its own question paper.",
-           mock_lede='both practice sets of real exam questions as timed tests.',
-           papers_note=("OLM has never published a question paper, so these two sets are real questions on OLM's subjects from official papers of other "
-                        "boards (UPSC, APPSC, KEA, Karnataka Police, RRB and others). The exam each question was asked in is printed in brackets before it, "
+           mock_lede='the three practice sets of real exam questions as timed tests.',
+           papers_note=("OLM has never published a question paper, so these three sets are real questions on OLM's subjects from official papers of other "
+                        "boards (OSSSC Odisha, UPSC, APPSC, KEA, Karnataka Police, RRB and others). The exam each question was asked in is printed in brackets before it, "
                         "and every answer is that board's official key. The questions are in English, like the OLM CBT. The real OLM paper will be "
                         "added when OLM publishes it.")),
       dict(id='wbpsc-ido', dir='wbpsc-ido', src='wbpsc-ido', key='wb-ido', name='WBPSC IDO', short='WBPSC IDO', seo='WBPSC IDO',
@@ -9073,7 +9084,7 @@ def pyq_page(conf, papers, questions):
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
     lede = esc(f'Every {seo} previous paper on Learn with Anil, free to attempt online as practice quizzes and timed tests, with the official answers. '
                f'The ₹{PAY["pyq_price"]} All-in-One Pass adds the explanations, the mock tests and every other exam for 12 months.' if free else
-               (f'Both {seo} practice sets of real exam questions, with official answers and explanations, as practice quizzes and timed tests. ' if conf.get('frompapers') else
+               (f'All the {seo} practice sets of real exam questions, with official answers and explanations, as practice quizzes and timed tests. ' if conf.get('frompapers') else
                 f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. ')
                + f'One ₹{PAY["pyq_price"]} All-in-One Pass opens every exam on the site for 12 months.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
