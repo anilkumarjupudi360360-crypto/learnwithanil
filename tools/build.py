@@ -7926,7 +7926,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
 MOCK_PACKS = {
-  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=7, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
+  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=9, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
