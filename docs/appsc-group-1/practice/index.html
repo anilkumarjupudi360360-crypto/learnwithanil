@@ -1448,9 +1448,33 @@ async function payReturn(params){
   return true;
 }
 
+/* Save a decrypted PDF (Anil, 23 Nov 2026: "pdf ... getting downloaded in mobile but not in desktop"). A desktop browser can
+   silently block a download that starts long after the click (the PDF is fetched and decrypted first), so when the click was
+   more than ~3 s ago, or there was no click at all (?pdf= link), a "Save PDF" button is shown and the student's own click saves it. */
+function savePdf(pdf, name, t0){
+  const url = URL.createObjectURL(new Blob([pdf], {type:"application/pdf"}));
+  setTimeout(()=>URL.revokeObjectURL(url), 30*60000);
+  if(t0 && Date.now() - t0 < 3000){
+    const a = document.createElement("a"); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    toast("Your PDF is downloading. For your personal study only."); return;
+  }
+  const old = document.getElementById("pdfReady"); if(old) old.remove();
+  const box = document.createElement("div"); box.id = "pdfReady";
+  box.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9999;background:#fff;border:2px solid #0E7A43;border-radius:12px;padding:14px 16px;box-shadow:0 8px 30px rgba(0,0,0,.25);display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:92vw;font-size:15px";
+  const t = document.createElement("span"); t.textContent = "✓ Your PDF is ready.";
+  const a = document.createElement("a"); a.href = url; a.download = name; a.textContent = "⬇ Save PDF";
+  a.style.cssText = "background:#0E7A43;color:#fff;padding:9px 16px;border-radius:8px;font-weight:700;text-decoration:none";
+  const x = document.createElement("button"); x.type = "button"; x.textContent = "✕"; x.setAttribute("aria-label","Close");
+  x.style.cssText = "border:0;background:none;font-size:18px;cursor:pointer;color:#555";
+  a.addEventListener("click", ()=>{ setTimeout(()=>box.remove(), 300); toast("Your PDF is downloading. For your personal study only."); });
+  x.addEventListener("click", ()=>box.remove());
+  box.append(t, a, x); document.body.appendChild(box);
+}
+
 /* Study books (since 26 Oct 2026 part of the All-in-One Pass): /books/<file> is encrypted; the payments script gives its key only to
    a phone with a valid All-in-One Pass, and the PDF is decrypted here in the browser and saved. */
 async function bookDownload(id, btn){
+  const t0 = btn ? Date.now() : 0;
   const b = (DATA.notes||[]).find(x=>x.id===id); if(!b || !PAYC || !PAYC.api) return;
   if(!ST.name){ UI.pendingBook = id; go("join"); return; }
   if(needPaid()) return;
@@ -1462,10 +1486,8 @@ async function bookDownload(id, btn){
     const blob = new Uint8Array(await res.arrayBuffer());
     const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
     const pdf = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode("bk-"+id)}, key, blob.slice(12));
-    const url = URL.createObjectURL(new Blob([pdf], {type:"application/pdf"}));
-    const a = document.createElement("a"); a.href = url; a.download = b.dl || ("LearnWithAnil-" + id + ".pdf"); document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url), 60000);
-    track("book_download", {book: id}); toast("Your PDF is downloading. For your personal study only.");
+    savePdf(pdf, b.dl || ("LearnWithAnil-" + id + ".pdf"), t0);
+    track("book_download", {book: id});
   }catch(_){ toast("No connection. Please try again."); }
   finally{ if(btn){ btn.disabled = false; btn.textContent = label; } }
 }
@@ -1473,6 +1495,7 @@ async function bookDownload(id, btn){
 /* Exam-booklet PDF of a previous paper (tools/booklets.py, 27 Oct 2026): /books/<file> is encrypted; the payments script gives
    its key ("bk-<exam>-<paper>") only to a phone with a valid All-in-One Pass, and the PDF is decrypted here and saved. */
 async function paperPdf(pid, btn){
+  const t0 = btn ? Date.now() : 0;
   const p = PAPERS.find(x=>x.id===pid) || {}, bk = p.bk || (DATA.pdfs||{})[pid];   // a paper, or a released mock (DATA.pdfs)
   if(!bk || !PAYC || !PAYC.api) return;
   if(!ST.name){ UI.pendingPdf = pid; go("join"); return; }
@@ -1486,10 +1509,8 @@ async function paperPdf(pid, btn){
     const blob = new Uint8Array(await res.arrayBuffer());
     const key = await crypto.subtle.importKey("raw", Uint8Array.from(atob(r.key), c=>c.charCodeAt(0)), "AES-GCM", false, ["decrypt"]);
     const pdf = await crypto.subtle.decrypt({name:"AES-GCM", iv: blob.slice(0,12), additionalData: new TextEncoder().encode(kid)}, key, blob.slice(12));
-    const url = URL.createObjectURL(new Blob([pdf], {type:"application/pdf"}));
-    const a = document.createElement("a"); a.href = url; a.download = bk.name; document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url), 60000);
-    track("paper_pdf_download", {paper: pid}); toast("Your PDF is downloading. For your personal study only.");
+    savePdf(pdf, bk.name, t0);
+    track("paper_pdf_download", {paper: pid});
   }catch(_){ toast("No connection. Please try again."); }
   finally{ if(btn){ btn.disabled = false; btn.textContent = label; } }
 }
