@@ -1325,6 +1325,78 @@ def FAQ_OAS(total, npapers):
        'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
     ]
 
+# ---------- OLM: Odisha Livelihoods Mission, Department of Mission Shakti (Odisha) ----------
+# Anil, 23 Nov 2026: "add odisha OLM (Odisha Livelihoods Mission), Mission Shakti pyqs to portal website"; chose "topic PYQs + mock series".
+# OLM has never published a question paper (the 2020 drive released no key) and Mission Shakti recruits through OLM, so the PYQs here are
+# two practice sets of REAL questions on OLM's subjects (SHGs, NRLM, Mission Shakti, livelihoods, rural development, Panchayati Raj, rural
+# credit, financial inclusion) taken from official papers already on the site, each with that board's official answer and its source exam
+# printed before the question. OLM advertisement of 4 Nov 2026: 1,115 contractual posts (State 53, District 188, Block 874: Block Manager 453,
+# Block Mission Manager 174, Block Accountant cum MIS Assistant 247), apply 6 Nov - 5 Dec 2026 on missionshakti.odisha.gov.in; one CBT of 100
+# MCQs in 90 minutes, English only, 1 mark each, 0.33 negative, domain-specific + common syllabus; provisional key with objections; CBT date
+# on the e-admit card. Work files: /home/claude/olm (sets), /home/claude/olmm (Jeebika OLM mocks).
+OLM_BLURB = ('OLM CBT 2026: one paper of 100 multiple-choice questions in 90 minutes, in English only, with a domain-specific part (livelihoods, '
+             'SHGs, rural development, financial inclusion…) and a common part; 1 mark a question, 0.33 cut for each wrong answer.')
+_OLM_NOT = 'Practice set of real questions from official exam papers (UPSC, APPSC, KEA, KSP, RRB and other boards)'
+_OLM_KEY = "each board's official answer key"
+def _olm(pid, no, subj, short_subj, slug):
+    return dict(id=pid, file=f'olm-pyq-set-{no}.txt', year=2026, stage='Practice set', short=f'Set {no} · {short_subj}',
+                title=f'OLM PYQ Set {no}: {subj} – Real Exam Questions with Answers', notif=_OLM_NOT, held='official papers of 2019–2026',
+                key=_OLM_KEY, fmt='mcq', slug=f'olm-pyq-set-{no}-{slug}-questions-with-answers', kwname=f'OLM PYQ Set {no} {short_subj}',
+                blurb=OLM_BLURB, mins=45, en_only=True,
+                held_line=('Real questions from official exam papers of 2019–2026 (UPSC, APPSC, KEA, Karnataka Police, RRB and other boards); the source exam is '
+                           'printed in brackets before each question. OLM has never published its own question paper'),
+                page_title=f'OLM & Mission Shakti PYQ Set {no}: {subj} – Real Exam Questions with Answers | Learn with Anil',
+                page_desc=(f'OLM (Odisha Livelihoods Mission) and Mission Shakti practice set {no}: {{n}} real exam questions on {subj.replace("&", "and")} '
+                           'from official papers, each with the official answer, its source exam and an explanation. For the OLM CBT 2026 (Block Manager, '
+                           'BMM, Block Accountant). Practise it as a quiz or a timed test.'),
+                or_kw=f'ଓଡ଼ିଶା ଜୀବିକା ମିଶନ (OLM) ଅଭ୍ୟାସ ସେଟ୍ {no}: ସରକାରୀ ପରୀକ୍ଷାର ପ୍ରକୃତ ପ୍ରଶ୍ନ, ଉତ୍ତର ସହିତ')
+OLM_PAPERS = [
+  _olm('o1', 1, 'SHGs, NRLM, Mission Shakti & Livelihoods', 'SHGs, NRLM, Mission Shakti & Livelihoods', 'shg-nrlm-mission-shakti-livelihoods'),
+  _olm('o2', 2, 'Rural Development, Panchayati Raj & Financial Inclusion', 'Rural Development, Panchayati Raj & Financial Inclusion', 'rural-development-panchayati-raj-financial-inclusion'),
+]
+OLM_SUBJECTS = [
+  ('liv', 'Livelihoods, SHGs & Mission Shakti', 'livelihoods-shg-mission-shakti', ['SHGs & NRLM', 'Mission Shakti & Odisha Schemes', 'Microfinance & Enterprise', 'Skills & Livelihoods']),
+  ('rd', 'Rural Development & Panchayati Raj', 'rural-development-panchayati-raj', ['Rural Development Programmes', 'Poverty & Employment', 'Panchayati Raj']),
+  ('fin', 'Financial Inclusion & Rural Credit', 'financial-inclusion-rural-credit', ['Rural Credit & Banking', 'Financial Inclusion Schemes', 'Cooperatives & Agri Marketing']),
+  ('gk', 'General Awareness (India & Odisha)', 'general-awareness', ['Odisha GK', 'India GK', 'Current Affairs']),
+  ('rea', 'Reasoning', 'reasoning', ['Verbal Reasoning', 'Logical Reasoning']),
+  ('apt', 'Quantitative Aptitude', 'quantitative-aptitude', ['Arithmetic', 'Data Interpretation']),
+  ('eng', 'English', 'english', ['Grammar', 'Vocabulary', 'Comprehension & Usage']),
+  ('comp', 'Computer Knowledge', 'computer-knowledge', ['Computer Fundamentals', 'MS Office & Internet']),
+]
+OLM_SUBJ_OR = {'liv': 'ଜୀବିକା, ସ୍ୱୟଂ ସହାୟକ ଗୋଷ୍ଠୀ ଓ ମିଶନ ଶକ୍ତି', 'rd': 'ଗ୍ରାମ୍ୟ ଉନ୍ନୟନ ଓ ପଞ୍ଚାୟତିରାଜ', 'fin': 'ଆର୍ଥିକ ଅନ୍ତର୍ଭୁକ୍ତି ଓ ଗ୍ରାମ୍ୟ ଋଣ',
+               'gk': 'ସାଧାରଣ ସଚେତନତା', 'rea': 'ତର୍କଶକ୍ତି', 'apt': 'ପରିମାଣାତ୍ମକ ଦକ୍ଷତା', 'eng': 'ଇଂରାଜୀ', 'comp': 'କମ୍ପ୍ୟୁଟର ଜ୍ଞାନ'}
+
+
+def FAQ_OLM(total, npapers):
+    return [
+      ('Is there an OLM (Odisha Livelihoods Mission) previous year question paper?',
+       'No. OLM has never published its question paper: the 2020 recruitment released no answer key, and the 2026 CBT has not been held yet '
+       '(OLM says it will publish a provisional answer key after it). So this page gives you the next best thing: '
+       f'{total} real questions on OLM\'s subjects, from official papers of UPSC, APPSC, KEA, Karnataka Police, RRB and other boards, each '
+       'with that board\'s official answer and the exam it was asked in. We will add the real OLM paper as soon as OLM publishes it.'),
+      ('Are these Mission Shakti questions?',
+       'Yes. Mission Shakti Odisha does not hold a separate recruitment exam: OLM works under the Department of Mission Shakti and its CBT is the '
+       'Mission Shakti recruitment of 2026. Set 1 covers self-help groups, DAY-NRLM, Mission Shakti, women\'s schemes, microfinance and livelihoods; '
+       'Set 2 covers rural development, MGNREGA, poverty, Panchayati Raj, rural credit (NABARD, RRBs, cooperatives) and financial inclusion.'),
+      ('What is the OLM 2026 exam pattern?',
+       'One Computer Based Test of 100 multiple-choice questions in 90 minutes (120 minutes for eligible PwD candidates), in English only, 1 mark '
+       'a question with 0.33 deducted for each wrong answer. It has a domain-specific part linked to the post and a common part. There is no '
+       'interview: a provisional merit list from the normalised CBT marks, then document verification (three candidates a post) and the final merit list.'),
+      ('How many OLM vacancies are there in 2026?',
+       '1,115 contractual posts at state, district and block level (advertisement of 4 November 2026), including 453 Block Managers, 174 Block '
+       'Mission Managers and 247 Block Accountant cum MIS Assistants. Apply on missionshakti.odisha.gov.in from 6 November to 5 December 2026 '
+       '(11:55 pm); the CBT date will be on the e-admit card.'),
+      ('Is there an OLM mock test?',
+       'Yes. Both sets can be taken as timed tests, and the sectional tests take one subject at a time. For full-length practice, Jeebika OLM is '
+       'our series of OLM mock tests in the CBT pattern (100 questions, 90 minutes, English, 0.33 negative), with a domain part on livelihoods, '
+       'rural development and financial inclusion and a common part on general awareness, reasoning, aptitude, English and computers. '
+       'Every mock question is built on a real previous question. Answers, explanations and the mocks open with the ₹149 All-in-One Pass.'),
+      ('Do I need to register?',
+       'Only once, and it is free. Before your first quiz or test you enter your name, phone, email and district one time; after that one ₹149 '
+       'All-in-One Pass opens the previous papers of every exam for 12 months. There is no password.'),
+    ]
+
 # ---------- WBPSC Industrial Development Officer (West Bengal) ----------
 # Anil, 16 Nov 2026 ("ok continue": West Bengal IDO, apply till 26 Nov). WBPSC Advt. No. 15/2024 (detailed advertisement 5 Nov 2026): 247 IDO posts in the
 # Directorate of MSME, MSME & Textiles Department; apply 6-26 Nov 2026; Part I written 100 questions/100 marks in 1½ hours (English 15, Industrial Safety &
@@ -2183,7 +2255,7 @@ def load_exam(conf):
         if nown:
             if nown == len(qs): pp['fmt'], pp['own'] = 'mcq', 1   # four options now (ours + APPSC's answer); still All-in-One Pass only
             else: print(f'  ! {conf["short"]} {p["id"]}: options for {nown} of {len(qs)} questions only; paper stays quick-recall')
-        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'bn_paper', 'en_only', 'kwname', 'mins', 'nokey', 'alabel', 'nsub', 'nbook', 'nch'):
+        for k in ('key', 'alt', 'te_paper', 'hi_paper', 'kn_paper', 'mr_paper', 'gu_paper', 'or_paper', 'bn_paper', 'en_only', 'held_line', 'page_title', 'page_desc', 'or_kw', 'kwname', 'mins', 'nokey', 'alabel', 'nsub', 'nbook', 'nch'):
             if p.get(k): pp[k] = p[k]
         pp['pdf'] = pdf_href(conf, p) if PUBLIC_PDFS else ''
         alt = paper_alt(conf, p)
@@ -3587,6 +3659,28 @@ def exam_confs():
                         "and the English part of Paper III are in English, as printed; the Odia part of Paper III is in Odia, with explanations in Odia and English. "
                         "Questions OPSC did not value are left out. The 2025 papers are from the ASO exam for the Office of the Advocate General, which had the "
                         "same three papers.")),
+      dict(id='olm', dir='olm', src='olm', key='od-olm', name='OLM (Odisha Livelihoods Mission)', short='OLM', seo='OLM',
+           slugp='olm', papers=OLM_PAPERS, subjects=OLM_SUBJECTS, faq=FAQ_OLM, board='OLM', l2=L2_OR, pb='/olm/',
+           keyname="each board's official answer key", keyshort="the official keys",
+           or_name='ଓଡ଼ିଶା ଜୀବିକା ମିଶନ (OLM)', subj_te=OLM_SUBJ_OR,
+           title="OLM Previous Year Question Papers 2026 – Odisha Livelihoods Mission & Mission Shakti PYQs with Answers, Mock Test | Learn with Anil",
+           h1='OLM &amp; Mission Shakti previous year questions <em>with answers.</em>',
+           aka=('Odisha Livelihoods Mission (OLM), Department of Mission Shakti, Government of Odisha: CBT for Block Manager, Block Mission Manager, '
+                'Block Accountant cum MIS Assistant and other contractual posts. Real exam questions on SHGs, NRLM, Mission Shakti, livelihoods, rural '
+                'development and financial inclusion, with official answers.'),
+           aka_short='Odisha Livelihoods Mission (OLM), Department of Mission Shakti — Block Manager, Block Mission Manager, Block Accountant',
+           l2line='ଓଡ଼ିଶା ଜୀବିକା ମିଶନ (OLM) ଓ ମିଶନ ଶକ୍ତି ପରୀକ୍ଷା ପାଇଁ ସରକାରୀ ପରୀକ୍ଷାର ପ୍ରକୃତ ପ୍ରଶ୍ନ — ସ୍ୱୟଂ ସହାୟକ ଗୋଷ୍ଠୀ, ଜୀବିକା, ଗ୍ରାମ୍ୟ ଉନ୍ନୟନ ଓ ଆର୍ଥିକ ଅନ୍ତର୍ଭୁକ୍ତି, ସରକାରୀ ଉତ୍ତର ସହିତ।',
+           desc=lambda t: (f"OLM (Odisha Livelihoods Mission) and Mission Shakti previous year questions with answers: {t:,} real exam questions on SHGs, "
+                           f"DAY-NRLM, Mission Shakti, livelihoods, rural development, Panchayati Raj and financial inclusion, with official keys and "
+                           f"explanations, timed tests and the Jeebika OLM mock test series for the OLM CBT 2026 (1,115 posts, Block Manager, BMM, Block Accountant)."),
+           eyebrow='OLM · Department of Mission Shakti, Odisha · CBT 2026',
+           frompapers='2 practice sets of real questions from official papers', papersk='Practice sets of real exam questions',
+           foot="Questions are real questions from official papers of other boards (the source exam is printed before each question); answers from each board's official key. OLM has not published its own question paper.",
+           mock_lede='both practice sets of real exam questions as timed tests.',
+           papers_note=("OLM has never published a question paper, so these two sets are real questions on OLM's subjects from official papers of other "
+                        "boards (UPSC, APPSC, KEA, Karnataka Police, RRB and others). The exam each question was asked in is printed in brackets before it, "
+                        "and every answer is that board's official key. The questions are in English, like the OLM CBT. The real OLM paper will be "
+                        "added when OLM publishes it.")),
       dict(id='wbpsc-ido', dir='wbpsc-ido', src='wbpsc-ido', key='wb-ido', name='WBPSC IDO', short='WBPSC IDO', seo='WBPSC IDO',
            slugp='wbpsc-ido', papers=WBI_PAPERS, subjects=WBI_SUBJECTS, faq=FAQ_WBI, board='WBPSC', l2=L2_BN, pb='/wbpsc-ido/',
            keyname="WBPSC's answer key", keyshort="WBPSC's key",
@@ -3828,12 +3922,12 @@ def main():
                      .replace('{{L2CODE}}', l2['code']).replace('{{L2LABEL}}', l2['label']).replace('{{FONTS2}}', l2['gf']).replace('{{TA_HIDDEN}}', '' if l2['code'] == 'ta' else ' hidden').replace('{{KN_HIDDEN}}', '' if l2['code'] == 'kn' else ' hidden').replace('{{MR_HIDDEN}}', '' if l2['code'] == 'mr' else ' hidden').replace('{{GU_HIDDEN}}', '' if l2['code'] == 'gu' else ' hidden').replace('{{OR_HIDDEN}}', '' if l2['code'] == 'or' else ' hidden').replace('{{BN_HIDDEN}}', '' if l2['code'] == 'bn' else ' hidden')
                      .replace('{{LANGS}}', 'English' if papers and all(p.get('en_only') for p in papers) else 'English and ' + l2['name']).replace('{{KEYSHORT}}', conf['keyshort'])
                      .replace('{{BOARD}}', conf['board'])
-                     .replace('{{FOOTSRC}}', conf['foot'] if conf.get('ncert') else f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
+                     .replace('{{FOOTSRC}}', conf['foot'] if conf.get('ncert') or conf.get('foot') else f'Mock tests written by Learn with Anil ({conf["board"]} does not publish its question papers).' if conf.get('mockonly') else
                               ('Questions and answers are from the official final keys, or the preliminary key where the final key could not be found.'
                                               if any('preliminary key' in x.get('key', '') for x in papers) else 'Questions and answers are from the official final keys.') if conf['board'] in ('APPSC', 'TSLPRB', 'SLPRB')
                               else f'Questions are from {conf["board"]}\'s official question paper; answers from {conf["keyshort"]}.')
-                     .replace('{{FROMPAPERS}}', (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper') if papers else '')
-                     .replace('{{PAPERSK}}', f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else ''))
+                     .replace('{{FROMPAPERS}}', conf['frompapers'] if conf.get('frompapers') else (f'{len(papers)} official papers' if len(papers) > 1 else f'the official {papers[0]["year"]} {esc(papers[0]["stage"])} question paper') if papers else '')
+                     .replace('{{PAPERSK}}', conf.get('papersk') or (f'Official {conf["board"]} paper' + ('s' if len(papers) > 1 else '')))
                      .replace('{{HOME_PAPERS}}', home_papers).replace('{{PYQPAGE}}', conf['pb'] + 'pyqs.html').replace('{{HOME_SUBJECTS}}', home_subjects).replace('{{FAQ}}', faq_html)
                      .replace('{{DATA}}', data_json).replace('{{PHOTO}}', photo)
                      .replace('{{TOTAL}}', str(total)).replace('{{SITE}}', SITE_URL).replace('{{NPAPERS}}', str(len(papers)))
@@ -4182,6 +4276,7 @@ def paper_kw_l2(conf, p):
         return f'{conf["kn_name"]} {p["year"]} {p.get("kn_paper", "")} ಪ್ರಶ್ನೆಪತ್ರಿಕೆ ಉತ್ತರಗಳೊಂದಿಗೆ'.replace('  ', ' ')
     if conf.get('mr_name'):
         return f'{conf["mr_name"]} {p.get("mr_paper", "")} {p["year"]} प्रश्नपत्रिका उत्तरांसह'.replace('  ', ' ')
+    if p.get('or_kw'): return p['or_kw']
     if conf.get('or_name'):
         return f'{conf["or_name"]} {p.get("or_paper", "")} {p["year"]} ପ୍ରଶ୍ନପତ୍ର ଉତ୍ତର ସହିତ'.replace('  ', ' ')
     if conf.get('gu_name'):
@@ -4291,6 +4386,7 @@ def exam_terms(e, cat):
     if e['id'] == 'ukpsc-lower-pcs': words += ['ukpsc', 'uttarakhand public service commission', 'uttarakhand', 'uk', 'lower pcs', 'lower subordinate', 'lower subordinate services', 'combined state civil', 'naib tehsildar', 'excise inspector', 'marketing inspector', 'supply inspector', 'labour enforcement officer', 'cane development inspector', 'uttarakhand gk', 'general aptitude', 'ro aro', 'ukpsc lower pcs previous year paper', 'uttarakhand lower pcs question paper', 'uksssc']
     if e['id'] == 'cg-vyapam-group-2': words += ['cg vyapam', 'vyapam', 'cgssb', 'chhattisgarh', 'cg', 'karmchari chayan mandal', 'chhattisgarh staff selection board', 'group 2', 'assistant grade 3', 'assistant grade-3', 'sahayak grade 3', 'data entry operator', 'deo', 'stenographer', 'steno typist', 'registration clerk', 'asi', 'cg gk', 'chhattisgarh gk', 'computer', 'vdag', 'agdo', 'cg vyapam previous year paper', 'cg vyapam assistant grade 3 question paper']
     if e['id'] == 'opsc-aso': words += ['opsc', 'odisha public service commission', 'odisha', 'orissa', 'aso', 'assistant section officer', 'odisha secretariat', 'secretariat assistant', 'advocate general', 'odia', 'oriya', 'odisha gk', 'general awareness', 'reasoning', 'mathematics', 'english', 'opsc aso previous year paper', 'opsc aso question paper', 'osssc']
+    if e['id'] == 'olm': words += ['olm', 'odisha livelihoods mission', 'odisha livelihood mission', 'mission shakti', 'department of mission shakti', 'odisha', 'orissa', 'block manager', 'block mission manager', 'bmm', 'block accountant', 'mis assistant', 'shg', 'self help group', 'nrlm', 'day-nrlm', 'aajeevika', 'lakhpati didi', 'livelihood', 'rural development', 'panchayati raj', 'financial inclusion', 'nabard', 'mgnrega', 'olm previous year paper', 'olm question paper', 'mission shakti question paper']
     if e['id'] == 'wbpsc-ido': words += ['wbpsc', 'psc wb', 'west bengal public service commission', 'west bengal', 'bengal', 'ido', 'industrial development officer', 'msme', 'industrial safety', 'pollution control', 'renewable energy', 'physical science', 'west bengal industry', 'miscellaneous', 'misc', 'msre', 'clerkship', 'bengali', 'bangla', 'wbpsc ido previous year paper', 'wbpsc ido question paper', 'wbpsc miscellaneous question paper', 'wbssc']
     if e['id'] == 'dsssb': words += ['dsssb', 'delhi subordinate services selection board', 'delhi', 'mts', 'multi tasking staff', 'multi-tasking staff', 'aaya', 'je', 'junior engineer', 'electrical', 'patwari', 'section officer', 'delhi gk', 'hindi', 'reasoning', 'arithmetic', 'electrical engineering', 'dsssb previous year paper', 'dsssb question paper', 'dsssb mts question paper', 'dsssb je question paper']
     if e['id'] == 'jkssb-je-civil': words += ['jkssb', 'jk ssb', 'jammu and kashmir services selection board', 'jammu', 'kashmir', 'j&k', 'je', 'junior engineer', 'civil', 'civil engineering', 'jal shakti', 'pwd', 'r&b', 'surveying', 'rcc', 'soil mechanics', 'hydraulics', 'jkssb je civil previous year paper', 'jkssb je question paper', 'jkssb junior engineer civil question paper']
@@ -4617,6 +4713,7 @@ EXAM_PHOTO = {   # one free-licence photo per live exam (Wikimedia Commons; Anil
     'jkssb-je-civil': ('Bridges over the Tawi river, Jammu', 'Timothy A. Gonsalves', 'CC BY-SA 4.0', _CW + 'Tawi_Bridges_River_Jammu_Aerial_Jul24_A7CR_01909.jpg'),   # JKSSB JE Civil (16 Nov 2026)
     'meghalaya-psc': ('Nohkalikai Falls, near Sohra (Cherrapunji)', 'Vikramjit Kakati', 'CC BY-SA 4.0', _CW + 'NohKaLikai_Falls_V2_Wiki.jpg'),   # Meghalaya PSC (16 Nov 2026)
     'opsc-aso': ('Lingaraja Temple, Bhubaneswar', 'Bernard Gagnon', 'CC BY-SA 3.0', _CW + 'Lingaraja_Temple_01.jpg'),   # OPSC ASO (16 Nov 2026)
+    'olm': ("The weekly haat (village market) of Doraguda, Odisha", 'Ad031259', 'CC BY-SA 4.0', _CW + "%27The_Haat%27_of_Doraguda_-_7_(The_weekly_village_market_of_Doraguda,_Odisha).jpg"),   # OLM (23 Nov 2026)
     'ukpsc-lower-pcs': ('Har Ki Pauri, Haridwar', 'Whispyhistory', 'CC BY-SA 4.0', _CW + 'Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg'),   # UKPSC Lower PCS (16 Nov 2026)
     'cg-vyapam-group-2': ('Bhoramdeo Temple, Kawardha', 'Pankaj Oudhia', 'CC BY-SA 3.0', _CW + 'Bhoramdeo_Temple,_Kawardha.jpg'),   # CG Vyapam Group 2 (16 Nov 2026)
     # Karnataka exams added as upcoming (Anil, 16 Nov 2026: "add other exam names in the site and ....add pic.....questions we will add later")
@@ -5624,7 +5721,7 @@ def static_page(rel_depth, title, desc, canonical, h1, lede, body_html, crumbs, 
 <p class="lede">{lede}</p>
 {'<p class="passon" hidden></p>' if PAY.get('on') else ''}{body_html}
 </main>
-<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-chsl/">SSC CHSL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/karnataka-police-si/">Karnataka Police SI (KSP PSI)</a> · <a href="/karnataka-police-constable/">Karnataka Police Constable</a> · <a href="/karnataka-police-pyqs.html">All Karnataka Police previous question papers</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
+<footer><div class="wrap"><p style="margin:0 0 8px"><b>Learn with Anil</b> · <a href="/">LearnWithAnil.in</a>: previous year questions with answers for every exam.</p><p style="margin:0 0 8px"><a href="{rootup}appsc-pyqs.html">All APPSC previous question papers (PYQs)</a> · <a href="{rootup}ts-police-pyqs.html">All TS Police previous question papers</a> · <a href="{rootup}ap-police-pyqs.html">All AP Police previous question papers</a> · <a href="/exam-notifications.html">All exam notifications 2026</a> · <a href="/appsc-group-2-notification-2026.html">APPSC Group 2 Notification 2026</a> · <a href="/appsc-group-1-notification-2026.html">Group 1 Notification 2026</a> · <a href="{rootup}appsc-group-1/">APPSC Group-I</a> · <a href="/appsc-group-2/">APPSC Group-II</a> · <a href="/upsc-prelims/">UPSC Prelims</a> · <a href="/upsc-cse/">UPSC Mains</a> · <a href="/upsc-capf/">UPSC CAPF (AC)</a> · <a href="/upsc-epfo/">UPSC EPFO (APFC)</a> · <a href="/ssc-cgl/">SSC CGL</a> · <a href="/ssc-mts/">SSC MTS</a> · <a href="/ssc-chsl/">SSC CHSL</a> · <a href="/ssc-gd-constable/">SSC GD Constable</a> · <a href="/rrb-ntpc/">RRB NTPC</a> · <a href="/rrb-group-d/">RRB Group D</a> · <a href="/rrb-ntpc-2026-notification.html">RRB NTPC 2026 Notification</a> · <a href="/ts-police-si/">TS Police SI</a> · <a href="/ts-police-constable/">TS Police Constable</a> · <a href="/ap-police-si/">AP Police SI</a> · <a href="/ap-police-constable/">AP Police Constable</a> · <a href="/ap-police-si-notification-2026.html">AP Police SI Notification 2026</a> · <a href="/ap-police-constable-notification-2026.html">AP Police Constable Notification 2026</a> · <a href="/rpf-si/">RPF SI</a> · <a href="/rpf-constable/">RPF Constable</a> · <a href="/tnpsc-group-4/">TNPSC Group 4</a> · <a href="/tnpsc-pyqs.html">All TNPSC previous question papers</a> · <a href="/tnpsc-group-4-notification-2026.html">TNPSC Group 4 Notification 2026</a> · <a href="/karnataka-fda-sda/">KEA FDA &amp; SDA (Karnataka)</a> · <a href="/kea-pyqs.html">All KEA previous question papers</a> · <a href="/kea-fda-sda-notification-2026.html">KEA FDA SDA Notification 2026</a> · <a href="/karnataka-gpstr/">Karnataka GPSTR (Teacher Recruitment)</a> · <a href="/karnataka-teacher-recruitment-notification-2026.html">Karnataka Teacher Recruitment 2026</a> · <a href="/karnataka-police-si/">Karnataka Police SI (KSP PSI)</a> · <a href="/karnataka-police-constable/">Karnataka Police Constable</a> · <a href="/karnataka-police-pyqs.html">All Karnataka Police previous question papers</a> · <a href="/mpsc-group-c/">MPSC Group C (Maharashtra)</a> · <a href="/mpsc-pyqs.html">All MPSC previous question papers</a> · <a href="/mpsc-group-c-notification-2026.html">MPSC Group C Notification 2026</a> · <a href="/gsssb-cce/">GSSSB CCE (Gujarat)</a> · <a href="/gsssb-pyqs.html">All GSSSB previous question papers</a> · <a href="/gsssb-cce-notification-2026.html">GSSSB CCE Notification 2026</a> · <a href="/upsssc-inter-level/">UPSSSC Inter Level Mains</a> · <a href="/upsssc-pyqs.html">All UPSSSC previous question papers</a> · <a href="/upsssc-inter-level-notification-2026.html">UPSSSC Inter Level Notification 2026</a> · <a href="/uppsc-ro-aro/">UPPSC RO/ARO</a> · <a href="/uppsc-pyqs.html">All UPPSC previous question papers</a> · <a href="/uppsc-ro-aro-notification-2026.html">UPPSC RO/ARO Notification 2026</a> · <a href="{rootup}ukpsc-lower-pcs/">UKPSC Lower PCS (Uttarakhand)</a> · <a href="{rootup}ukpsc-pyqs.html">All UKPSC previous question papers</a> · <a href="{rootup}ukpsc-lower-pcs-notification-2026.html">UKPSC Lower PCS Notification 2026</a> · <a href="{rootup}cg-vyapam-group-2/">CG Vyapam Group 2 (Chhattisgarh)</a> · <a href="{rootup}cg-vyapam-pyqs.html">All CG Vyapam previous question papers</a> · <a href="{rootup}cg-vyapam-group-2-notification-2026.html">CG Vyapam Group 2 Notification 2026</a> · <a href="{rootup}opsc-aso/">OPSC ASO (Odisha)</a> · <a href="{rootup}opsc-pyqs.html">All OPSC previous question papers</a> · <a href="{rootup}opsc-aso-notification-2026.html">OPSC ASO Notification 2026</a> · <a href="{rootup}olm/">OLM &amp; Mission Shakti (Odisha)</a> · <a href="{rootup}wbpsc-ido/">WBPSC IDO (West Bengal)</a> · <a href="{rootup}wbpsc-pyqs.html">All WBPSC previous question papers</a> · <a href="{rootup}wbpsc-ido-notification-2026.html">WBPSC IDO Notification 2026</a> · <a href="{rootup}dsssb/">DSSSB MTS &amp; JE (Delhi)</a> · <a href="{rootup}dsssb-pyqs.html">All DSSSB previous question papers</a> · <a href="{rootup}dsssb-mts-je-notification-2026.html">DSSSB MTS &amp; JE Notification 2026</a> · <a href="{rootup}jkssb-je-civil/">JKSSB JE Civil (J&amp;K)</a> · <a href="{rootup}jkssb-pyqs.html">All JKSSB previous question papers</a> · <a href="{rootup}jkssb-je-civil-notification-2026.html">JKSSB JE Civil Notification 2026</a> · <a href="{rootup}meghalaya-psc/">Meghalaya PSC</a> · <a href="{rootup}meghalaya-psc-pyqs.html">All Meghalaya PSC previous question papers</a> · <a href="{rootup}meghalaya-psc-notification-2026.html">Meghalaya PSC Notification 2026</a> · <a href="{rootup}rpf-pyqs.html">All RPF previous question papers</a> · <a href="/appsc-amvi/">APPSC AMVI</a> · <a href="/tgpsc-amvi/">TGPSC AMVI</a> · <a href="/tgpsc-group-1/">TGPSC Group-I</a> · <a href="/tgpsc-group-2/">TGPSC Group-II</a> · <a href="/appsc-endowment-officer/">APPSC Endowment Officer (EO Grade-III)</a> · <a href="/appsc-eo-grade-3-notification-2026.html">EO Grade-III Notification 2026</a> · <a href="/appsc-analyst-grade-2/">APPSC Analyst Grade-II</a> · <a href="/appsc-assistant-environmental-engineer/">APPSC Assistant Environmental Engineer</a> · <a href="/appsc-assistant-statistical-officer/">APPSC Assistant Statistical Officer (ASO)</a> · <a href="/appsc-forest-range-officer/">APPSC Forest Range Officer (FRO)</a> · <a href="/sbi-po/">SBI PO mock tests</a> · <a href="/ibps-so/">IBPS SO mock tests</a> · <a href="/study-material.html">Study material (books)</a> · <a href="/">All exams</a> · <a href="/help.html">Help &amp; grievances</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/refund.html">Refunds</a> · <a href="/delivery.html">Delivery</a> · <a href="/contact.html">Contact</a> · <a href="/funders.html">Fund this project</a></p>{foot} Visits are counted with Google Analytics.</div></footer>
 <script>try{{var c=(new URLSearchParams(location.search).get("ref")||"").toUpperCase(),st=JSON.parse(localStorage.getItem("lwa-appsc-g2-student-v1")||"{{}}")||{{}},rf=JSON.parse(localStorage.getItem("lwa-ref-from")||"null");
 if(/^[A-Z]{{6}}$/.test(c)&&!st.name&&!(rf&&rf.c&&Date.now()-rf.t<2592e6))localStorage.setItem("lwa-ref-from",JSON.stringify({{c:c,t:Date.now()}}))}}catch(e){{}}
 try{{var a=(JSON.parse(localStorage.getItem("lwa-passes-v1")||"{{}}").all)||{{}},L=function(d){{return!!d&&new Date(d+"T23:59:59+05:30")>=new Date()}};
@@ -6660,7 +6757,8 @@ LANDINGS = {
             'They are all here: open a paper to see its questions, or practise it online with answers and explanations.</p>'
             '<p lang="or">ଓଡ଼ିଶା ଲୋକ ସେବା ଆୟୋଗ ସହକାରୀ ସେକ୍ସନ ଅଫିସର (ASO) ପରୀକ୍ଷାର 2025 ଓ 2022 ପ୍ରଶ୍ନପତ୍ର ଆୟୋଗଙ୍କ ଉତ୍ତର ଚାବି ସହିତ — ସାଧାରଣ ସଚେତନତା, ତର୍କଶକ୍ତି, ଗଣିତ, ଇଂରାଜୀ ଓ ଓଡ଼ିଆ।</p>'
             '<p class="note">OPSC ASO 2026: <a href="/opsc-aso-notification-2026.html">340 posts (Advt. 15 of 2026-27), apply by 30 November 2026, exam on 17 January 2027</a>. '
-            'Full papers with the real timer: <a href="/opsc-aso/mock-test.html">OPSC ASO mock test</a>.</p>',
+            'Full papers with the real timer: <a href="/opsc-aso/mock-test.html">OPSC ASO mock test</a>. Preparing for the Odisha Livelihoods Mission '
+            '(Mission Shakti) CBT? See <a href="/olm/">OLM &amp; Mission Shakti PYQs and mock tests</a>.</p>',
       te={'OPSC ASO': 'ଓପିଏସସି ASO ପ୍ରଶ୍ନପତ୍ର'},
       order=lambda c: 0),
   'wbpsc-pyqs.html': dict(   # Anil, 16 Nov 2026: West Bengal WBPSC IDO
@@ -7793,7 +7891,7 @@ def notif_page(loaded, rel):
 
 NEWS_HUB = 'exam-notifications.html'
 NEWS_BOARDS = [('UPSC', 'UPSC'), ('SSC', 'SSC'), ('RRB', 'Railways (RRB): NTPC, Group D'), ('APPSC', 'APPSC (Andhra Pradesh)'), ('SLPRB AP', 'AP Police (SLPRB)'), ('AP DSC', 'AP DSC (teachers)'),
-               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA, Police SI & Constable'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('JKSSB', 'JKSSB (Jammu & Kashmir): JE Civil'), ('Meghalaya PSC', 'Meghalaya PSC'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
+               ('TGPSC', 'TGPSC (Telangana)'), ('TGPRB', 'TS Police (TGPRB)'), ('RPF', 'Railways: RPF SI & Constable'), ('TNPSC', 'TNPSC (Tamil Nadu)'), ('KEA', 'KEA (Karnataka): FDA, SDA, Police SI & Constable'), ('MPSC', 'MPSC (Maharashtra): Group C'), ('GSSSB', 'GSSSB (Gujarat): CCE'), ('UPSSSC', 'UPSSSC (Uttar Pradesh): Inter Level Mains'), ('UPPSC', 'UPPSC (Uttar Pradesh): RO/ARO'), ('UKPSC', 'UKPSC (Uttarakhand): Lower PCS'), ('CG Vyapam', 'CG Vyapam (CGSSB, Chhattisgarh): Group 2'), ('OPSC', 'OPSC (Odisha): ASO'), ('OLM', 'OLM (Odisha): Mission Shakti'), ('WBPSC', 'WBPSC (West Bengal): IDO'), ('DSSSB', 'DSSSB (Delhi): MTS, JE'), ('JKSSB', 'JKSSB (Jammu & Kashmir): JE Civil'), ('Meghalaya PSC', 'Meghalaya PSC'), ('SBI', 'Banking: SBI PO'), ('IBPS', 'Banking: IBPS SO')]
 
 
 def news_hub_page(loaded, rels):
@@ -8310,6 +8408,30 @@ MOCK_PACKS = {
                                       [('rea', 'Reasoning & Mental Ability', ['rea']), ('math', 'Mathematics', ['math'])],
                                       [('eng', 'English', ['eng']), ('odi', 'Odia', ['odi'])])[(i - 1) % 3])
                           for i in range(1, 13)]),
+  # Anil, 23 Nov 2026: OLM / Mission Shakti PYQs + "topic PYQs + mock series". Name "Jeebika OLM" (Odia ଜୀବିକା, livelihood). OLM CBT 2026: one
+  # paper, 100 MCQs, 90 minutes, English only, 0.33 negative, domain + common syllabus (split not published, so ours: domain 50 = livelihoods 20,
+  # rural development 15, financial inclusion 15; common 50 = general awareness 15, reasoning 10, aptitude 10, English 10, computer 5). Every
+  # question built on a real PYQ (OLM sets on /olm/, OPSC ASO papers, KEA/KSP computer questions); writer + blind-checker agents, private
+  # source /home/claude/olmm. Ids "bk-" (All-in-One Pass, no payments-script change). Sealed files: src/olm-mocks/.
+  'olm': dict(id='bk-olmmk', name='Jeebika OLM', price=149, src='olm-mocks', dir='olm', langs='English',
+                   title='Jeebika OLM – Odisha Livelihoods Mission (Mission Shakti) CBT Mock Test Series 2026',
+                   summary='10 full-length OLM CBT mock tests for Block Manager, Block Mission Manager, Block Accountant and other OLM posts: 100 '
+                           'questions in 90 minutes each, in English as in the real CBT, with an explanation for every answer. Every subject can also '
+                           'be taken on its own as a sectional test.',
+                   about=['Every question is built on a real previous question from an official exam paper: the domain questions on our OLM sets of '
+                          'real questions on SHGs, NRLM, Mission Shakti, rural development and financial inclusion; the common questions on OPSC\'s '
+                          'own ASO papers. Same topic from a new angle, freshly worded, and its explanation names the PYQ it builds on.',
+                          'Each mock: Livelihoods, SHGs & Mission Shakti 20, Rural Development & Panchayati Raj 15, Financial Inclusion & Rural Credit '
+                          '15 (the domain part) and General Awareness 15 (with Odisha GK and current affairs), Reasoning 10, Quantitative Aptitude 10, '
+                          'English 10, Computer Knowledge 5 (the common part). OLM has not published how its 100 questions are split, so this is our '
+                          'pattern; the real CBT has 100 questions in 90 minutes with 0.33 cut for each wrong answer, so skip blind guesses.',
+                          'Your score, accuracy and topic-wise analysis come after each mock.'],
+                   mocks=[dict(id=f'bk-olmmk-{i}', name=f'Mock {i}', qn=100, mins=90, live=(i <= 1),   # Mock 1 on 23 Nov 2026
+                               parts=[('liv', 'Livelihoods, SHGs & Mission Shakti', ['liv']), ('rd', 'Rural Development & Panchayati Raj', ['rd']),
+                                      ('fin', 'Financial Inclusion & Rural Credit', ['fin']), ('gk', 'General Awareness', ['gk']),
+                                      ('rea', 'Reasoning', ['rea']), ('apt', 'Quantitative Aptitude', ['apt']), ('eng', 'English', ['eng']),
+                                      ('comp', 'Computer Knowledge', ['comp'])])
+                          for i in range(1, 11)]),
   # Anil, 17 Nov 2026: "start a test series for it...and upload a test" (APPSC Analyst Grade-II); chose Paper II Common Paper first,
   # all new questions (writer + independent blind-checker helper agents), the name "Pariksha Lab" and 5 mocks. Paper II Common Paper
   # (Notification 21/2026): 150 questions, 150 minutes, degree standard, 1/3 negative, English only; Chemistry 38, Biochemistry 37,
@@ -8621,7 +8743,7 @@ EXAM_NOTIF = {
     'uppsc-ro-aro': 'uppsc-ro-aro-notification-2026.html', 'upsssc-inter-level': 'upsssc-inter-level-notification-2026.html',
     'ukpsc-lower-pcs': 'ukpsc-lower-pcs-notification-2026.html', 'cg-vyapam-group-2': 'cg-vyapam-group-2-notification-2026.html',
     # 16 Nov 2026 (Anil: "why ... notification is not present in every exam tile"): pages that existed but were not linked
-    'opsc-aso': 'opsc-aso-notification-2026.html', 'rrb-group-d': 'rrb-group-d-result-2026.html',
+    'opsc-aso': 'opsc-aso-notification-2026.html', 'olm': 'olm-recruitment-2026.html', 'rrb-group-d': 'rrb-group-d-result-2026.html',
     'ts-police-si': 'ts-police-si-exam-date-hall-ticket-2026.html', 'ts-police-constable': 'ts-police-constable-exam-date-hall-ticket-2026.html',
     # and new pages for the six exams that had none (tools/notif_news.py, 16 Nov 2026)
     'upsc-ifos': 'upsc-ifos-2027-notification.html', 'appsc-aso': 'appsc-aso-notification-2026.html', 'tgpsc-group-1': 'tgpsc-group-1-notification-2026.html',
@@ -8677,7 +8799,7 @@ def tiles_html(conf, papers, questions, extra_links, mains=()):
     n = len(questions)
     nsub = len({q['s'] for q in questions})
     t1 = (f'<a class="etile" href="{pb}pyqs.html"><span class="etile-k">01 · Previous papers</span><b>PYQs with answers</b>'
-          f'<span class="etile-p">{n:,} questions from {len(papers)} official paper{"s" if len(papers) > 1 else ""}, with answers and explanations, as quizzes and timed tests'
+          f'<span class="etile-p">{n:,} questions from {conf.get("frompapers") or str(len(papers)) + " official paper" + ("s" if len(papers) > 1 else "")}, with answers and explanations, as quizzes and timed tests'
           f'{", and as PDFs to download" if BOOKLETS.get(conf["id"]) else ""}. '
           f'One pass for every exam.</span>'
           + (f'<span class="etile-price">✓ Free to attempt · explanations with the ₹{PAY["pyq_price"]} All-in-One Pass</span></a>' if conf['id'] in FREE_PYQ else
@@ -8875,8 +8997,9 @@ def free_sample_html(conf, papers, questions, qs):
                      + '</details></li>')
         items.append(''.join(parts))
     return (f'<section id="free-sample" class="sample"><h2>Try {len(qs)} free questions</h2>'
-            f'<p>Real {esc(seo)} questions from the official papers, with the official answer and an explanation. '
-            f'Tap an option to check your answer. No registration needed.</p>'
+            + (f'<p>Real exam questions on {esc(seo)} subjects from official papers, with the official answer and an explanation. ' if conf.get('frompapers') else
+             f'<p>Real {esc(seo)} questions from the official papers, with the official answer and an explanation. ')
+            + f'Tap an option to check your answer. No registration needed.</p>'
             '<ol class="qs">' + ''.join(items) + '</ol>'
             '<p class="sscore" aria-live="polite" hidden></p>'
             f'<div class="buy"><div><b>Liked these? Practise all {len(questions):,} {esc(seo)} questions</b>'
@@ -8923,7 +9046,7 @@ def pyq_page(conf, papers, questions):
     sample = free_sample(conf, papers, questions)
     course = (f'<section class="course"><div class="chead"><div><p class="ck">All-in-One Pass · ₹{PAY["pyq_price"]} once · every exam, mock test &amp; book</p>'
               f'<h2>Every previous paper, one pass</h2>'
-              f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in English and {esc(l2["name"])}, '
+              f'<p>One payment of ₹{PAY["pyq_price"]} for the whole website, valid for 12 months. Every answer and explanation in {"English" if allp and all(p.get("en_only") for p in allp) else "English and " + esc(l2["name"])}, '
               f'practice question by question, timed tests, PYQ sectionals, subject and topic quizzes, and all study tools. '
               + ('Every paper runs with its real time limit (' + ', '.join(f'{m} minutes for {esc(st)}' for st, m in dict.fromkeys((p['stage'], p['mins']) for p in allp if p.get('mins'))) + ') on a timer that you can switch off and on at the top of the screen.</p></div>'
                  if allp and allp[0].get('mins') else 'Every paper runs with a timer (1 minute per question) that you can switch off and on at the top of the screen.</p></div>') +
@@ -8950,8 +9073,9 @@ def pyq_page(conf, papers, questions):
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
     lede = esc(f'Every {seo} previous paper on Learn with Anil, free to attempt online as practice quizzes and timed tests, with the official answers. '
                f'The ₹{PAY["pyq_price"]} All-in-One Pass adds the explanations, the mock tests and every other exam for 12 months.' if free else
-               f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. '
-               f'One ₹{PAY["pyq_price"]} All-in-One Pass opens every exam on the site for 12 months.')
+               (f'Both {seo} practice sets of real exam questions, with official answers and explanations, as practice quizzes and timed tests. ' if conf.get('frompapers') else
+                f'Every {seo} previous paper on Learn with Anil, with official answers and explanations, as practice quizzes and timed tests. ')
+               + f'One ₹{PAY["pyq_price"]} All-in-One Pass opens every exam on the site for 12 months.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} PYQs with answers', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('PYQs', can)], conf)
 
@@ -9055,7 +9179,7 @@ def inapp_mocks(conf, papers):
                 '<li>When you finish you get your score, accuracy and a topic-wise analysis, with the correct answer and an explanation for every question.</li>'
                 f'<li>Every mock opens with the All-in-One Pass (₹{PAY["pyq_price"]} for every exam on the site, 12 months).</li></ul>')
     return (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + ('<h2>Real previous papers as mock tests</h2>' + rows if rows and not conf.get('mockonly') else '')
+            + (('<h2>Practice sets of real exam questions as timed tests</h2>' if conf['id'] == 'olm' else '<h2>Real previous papers as mock tests</h2>') + rows if rows and not conf.get('mockonly') else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>' if not conf.get('mockonly') else
@@ -9460,7 +9584,7 @@ def mock_page(conf, papers, questions):
         return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
                                 [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
     body = (pack + (f'<p class="note">{esc(info)}</p>' if info else '')
-            + ('<h2>Real previous papers as mock tests</h2>' + rows if rows else '')
+            + (('<h2>Practice sets of real exam questions as timed tests</h2>' if conf['id'] == 'olm' else '<h2>Real previous papers as mock tests</h2>') + rows if rows else '')
             + '<h2>How the mock test works</h2><ul>'
             + (f'<li>{esc(conf["l2_line"])} Switch language with the buttons at the top.</li>' if conf.get('l2_line') else
                f'<li>Questions appear in English and {esc(l2["name"])} as printed. Switch language with the buttons at the top.</li>') +
@@ -9471,7 +9595,7 @@ def mock_page(conf, papers, questions):
             + '<h2>Plans</h2>' + plans_html(conf)
             + f'<p><a class="cta alt" href="{pb}sectional-tests.html">Sectional tests</a><a class="cta alt" href="{pb}pyqs.html">All {esc(seo)} PYQs</a></p>'
             + (pdf_inline_js(conf) if BOOKLETS.get(conf['id']) else ''))
-    lede = esc((f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
+    lede = esc((f'{mk["title"]}, plus {conf["mock_lede"]}' if conf.get('mock_lede') else f'{mk["title"]}, plus every real {seo} previous paper as a timed mock test.') if mk else
                f'Take a real {seo} previous paper as a full mock test with a timer, then see your score and an explanation for every answer.')
     return rel, static_page(0 if conf['dir'] else 1, title, desc, can, f'{seo} mock tests', lede, body,
                             [('Home', SITE_URL + '/'), (conf['name'], SITE_URL + pb), ('Mock test', can)], conf)
@@ -9543,7 +9667,9 @@ def build_static(conf, papers, subjects, questions, subj):
                 f'with the ₹{PAY["pyq_price"]} All-in-One Pass, one payment for every exam on the site.</p>'
                 f'<h2>Subjects in this paper</h2>{toc}<h2>All {len(qs)} questions</h2><ol class="qs">'
                 + ''.join(q_html(q, p['short'], f'Q{q["n"]}', subj, conf['l2'], f'{conf["pb"]}q/{q["id"]}.html', unl(q)) for q in qs) + '</ol>')
-        held = f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
+        held = p['held_line'] if p.get('held_line') else f'{p["notif"]}, held on {p["held"]}' if conf['board'] == 'APPSC' else f'Held on {p["held"]} ({p["notif"].replace(" · ", ", ")})'
+        if p.get('page_title'): title = p['page_title']
+        if p.get('page_desc'): desc = p['page_desc'].format(n=len(qs))
         lede = esc(f'{p["title"]}{f" ({alt_shown(alt, p['title'])})" if alt_shown(alt, p['title']) else ""}. {p["blurb"]} {held}. {fmt}, plus a short explanation for every question (the first {SAMPLE_N} here, all of them in the app). '
                    + ('' if p.get('en_only') else conf['l2_line'] if conf.get('l2_line') else f'Each question is shown in English and {conf["l2"]["name"]}, as printed in the ' + ('question paper.' if 'CBT' in p['notif'] or 'CBRT' in p['notif'] else 'booklet.')))
         pages[rel] = static_page(1, title, desc, can, f'{kw} question paper with answers', lede, body,

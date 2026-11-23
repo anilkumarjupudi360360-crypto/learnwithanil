@@ -1548,6 +1548,49 @@ NEW['opsc-aso-notification-2026.html'] = dict(   # Anil, 15 Nov 2026: Odisha OPS
     ])
 ASOF_PAGE['opsc-aso-notification-2026.html'] = '16 November 2026'
 
+NEW['olm-recruitment-2026.html'] = dict(   # Anil, 23 Nov 2026: OLM / Mission Shakti PYQs; facts from OLM's advertisement (applications 6 Nov - 5 Dec 2026, missionshakti.odisha.gov.in), read on 23 Nov 2026
+    exam='olm', board='OLM', site='missionshakti.odisha.gov.in', crumb='OLM Recruitment 2026', faq_asof='23 November 2026',
+    title='OLM Recruitment 2026: 1,115 Posts (Block Manager, BMM, Block Accountant), Apply by 5 December, CBT Pattern, Age, Fee & PYQs | Learn with Anil',
+    desc='Odisha Livelihoods Mission (OLM), Department of Mission Shakti: 1,115 contractual posts at state, district and block level. Apply on '
+         'missionshakti.odisha.gov.in from 6 November to 5 December 2026. Block Manager, Block Mission Manager, Block Accountant cum MIS Assistant; '
+         'age 21–42, fee Rs. 500, one 100-question CBT in English, and OLM / Mission Shakti practice questions with answers.',
+    h1='OLM recruitment 2026: 1,115 posts, apply by 5 December',
+    lede='The Odisha Livelihoods Mission (OLM), under the Department of Mission Shakti, Government of Odisha, is filling 1,115 contractual positions at '
+         'state, district and block level, including 453 Block Managers, 174 Block Mission Managers and 247 Block Accountant cum MIS Assistants. '
+         'Online applications are open on missionshakti.odisha.gov.in from 6 November to 5 December 2026 (11:55 pm). Selection is by one Computer Based '
+         'Test and document verification, with no interview. Below: the key dates, the block-level posts, who can apply, the CBT pattern and practice questions.',
+    pdf='https://missionshakti.odisha.gov.in', pdfname='OLM advertisement, missionshakti.odisha.gov.in',
+    sections=[
+      ('Key dates', 'table', [
+        ('Online applications and fee', '6 November to 5 December 2026 (11:55 pm) on missionshakti.odisha.gov.in'),
+        ('Computer Based Test', 'Date, shift and centre will be on the e-admit card'),
+        ('After the CBT', 'Provisional answer key with objections, provisional merit list, document verification, final merit list'),
+      ]),
+      ('Block-level posts', 'table+', (['Post', 'Posts', 'Pay a month'], [
+        ('Block Manager', '453', 'Rs. 19,080'), ('Block Mission Manager', '174', 'Rs. 31,338'), ('Block Accountant cum MIS Assistant', '247', 'Rs. 20,700')])),
+      ('', 'note', 'In all, about 1,115 positions in 57 roles: about 53 at state level, 188 at district level and 874 at block level. The engagement is '
+                   'contractual, first for one year, renewable on performance; it gives no right to regularisation.'),
+      ('Exam pattern', 'table+', (['Paper', 'Questions', 'Time'], [
+        ('Computer Based Test (English only): domain-specific syllabus of the post + common syllabus', '100 multiple-choice questions, 1 mark each', '90 minutes (120 for PwD)'),
+      ])),
+      ('', 'note', '0.33 mark is cut for each wrong answer; a question left blank costs nothing. There is no group discussion or interview: three candidates '
+                   'per vacancy are called for document verification from the provisional merit list, and the final merit list uses the normalised CBT marks.'),
+      ('Who can apply', 'list', [
+        'Block Manager and Block Mission Manager: a postgraduate or master\'s degree in Arts, Science or Commerce, MBA, MSW or Rural Development, with at least 3 years of relevant experience.',
+        'Block Accountant cum MIS Assistant: B.Com with PGDCA, Computer Science or IT, with at least 3 years of relevant experience.',
+        'Age: 21 to 42 years on 1 January 2026; 5 years more for SC, ST, SEBC and women, 10 more for persons with disabilities. No upper age limit for candidates already working with OLM.',
+        'Fee: Rs. 500 online; no fee for SC, ST and persons with disabilities. The fee is refunded to candidates who appear in the CBT.']),
+    ],
+    faqs=[
+      ('What is the last date to apply for OLM recruitment 2026?', '5 December 2026 (11:55 pm), on missionshakti.odisha.gov.in.'),
+      ('How many posts are in OLM recruitment 2026?', 'About 1,115 contractual posts, including 453 Block Managers, 174 Block Mission Managers and 247 Block Accountant cum MIS Assistants.'),
+      ('What is the OLM exam pattern?', 'One Computer Based Test of 100 multiple-choice questions in 90 minutes, in English only, 1 mark each with 0.33 cut for a wrong answer, then document verification. No interview.'),
+      ('When is the OLM CBT?', 'OLM has not announced the date yet; it will be on the e-admit card.'),
+      ('Is this the Mission Shakti recruitment?', 'Yes. OLM works under the Department of Mission Shakti, Government of Odisha, and applications are made on the Mission Shakti website.'),
+      ('Where can I practise for the OLM CBT?', 'On Learn with Anil: two sets of real exam questions on SHGs, NRLM, Mission Shakti, rural development and financial inclusion with official answers, and the Jeebika OLM mock test series in the CBT pattern.'),
+    ])
+ASOF_PAGE['olm-recruitment-2026.html'] = '23 November 2026'
+
 NEW['wbpsc-ido-notification-2026.html'] = dict(   # Anil, 16 Nov 2026 ("ok continue": West Bengal IDO, apply till 26 Nov); facts from WBPSC's Advertisement No. 15/2024 (detailed advertisement and announcement of 5 Nov 2026), read on 16 Nov 2026
     exam='wbpsc-ido', board='WBPSC', site='psc.wb.gov.in', crumb='WBPSC IDO Notification 2026', faq_asof='16 November 2026',
     title='WBPSC IDO Notification 2026: 247 Posts, Apply by 26 November, Age, Fee, Exam Pattern & Previous Papers | Learn with Anil',

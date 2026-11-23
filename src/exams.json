@@ -80,7 +80,7 @@
   {
    "id": "od",
    "name": "OPSC, OSSC & Odisha",
-   "desc": "OPSC Assistant Section Officer and other Odisha exams"
+   "desc": "OPSC Assistant Section Officer, OLM (Mission Shakti) and other Odisha exams"
   },
   {
    "id": "wb",
@@ -1333,6 +1333,14 @@
    "t": "ASO",
    "n": "Assistant Section Officer, Odisha Secretariat",
    "live": "opsc-aso/"
+  },
+  {
+   "id": "olm",
+   "cat": "od",
+   "b": "OLM · Mission Shakti",
+   "t": "OLM CBT",
+   "n": "Odisha Livelihoods Mission: Block Manager, BMM, Block Accountant",
+   "live": "olm/"
   },
   {
    "id": "wbpsc-ido",

@@ -1058,6 +1058,30 @@
    "pages": 54
   }
  },
+ "olm": {
+  "o1": {
+   "bytes": 189664,
+   "file": "olm-o1-5c277b8c03.bin",
+   "key": "bk-olm-o1",
+   "name": "LearnWithAnil-OLM-PYQ-Set-1-SHGs-NRLM-Mission-Shakti-Livelihoods-Question-Paper.pdf",
+   "pages": 9
+  },
+  "o2": {
+   "bytes": 189529,
+   "file": "olm-o2-aa5107a016.bin",
+   "key": "bk-olm-o2",
+   "name": "LearnWithAnil-OLM-PYQ-Set-2-Rural-Development-Panchayati-Raj-Financial-Inclusion-Question-Paper.pdf",
+   "pages": 9
+  },
+  "olmmk1": {
+   "bytes": 305267,
+   "file": "olm-olmmk1-a35a21a78d.bin",
+   "key": "bk-olm-olmmk1",
+   "mock": "bk-olmmk-1",
+   "name": "LearnWithAnil-Jeebika-OLM-Mock-1-Mock-Test.pdf",
+   "pages": 16
+  }
+ },
  "opsc-aso": {
   "a1": {
    "bytes": 3475715,

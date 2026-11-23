@@ -35,7 +35,7 @@ BOARD_NAME = {'TSLPRB': 'TELANGANA STATE LEVEL POLICE RECRUITMENT BOARD', 'APPSC
               'UKPSC': 'UTTARAKHAND PUBLIC SERVICE COMMISSION', 'CG Vyapam': 'CHHATTISGARH VYAPAM (CHHATTISGARH KARMCHARI CHAYAN MANDAL)',
               'OPSC': 'ODISHA PUBLIC SERVICE COMMISSION', 'WBPSC': 'PUBLIC SERVICE COMMISSION, WEST BENGAL', 'DSSSB': 'DELHI SUBORDINATE SERVICES SELECTION BOARD', 'JKSSB': 'JAMMU & KASHMIR SERVICES SELECTION BOARD', 'Meghalaya PSC': 'MEGHALAYA PUBLIC SERVICE COMMISSION',
               'Karnataka School Education': 'DEPARTMENT OF SCHOOL EDUCATION, GOVERNMENT OF KARNATAKA'}
-BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
+BOARD_NAME_EXAM = {'rrb-group-d': 'RAILWAY RECRUITMENT BOARDS', 'olm': 'LEARN WITH ANIL · PRACTICE SET FOR THE ODISHA LIVELIHOODS MISSION (OLM) CBT'}   # an exam whose board line differs from its board's (RRB: RPF papers also use 'RRB')
 # booklet series of the papers transcribed from a known booklet (others show the Learn with Anil box)
 SERIES = {'ap-police-si': {'a2023s1': 'A', 'a2023s2': 'C'}, 'ap-police-constable': {'a2023pc': 'A'}, 'appsc-group-2': {'s2024': 'A', 'm2025p1': 'A', 'm2025p2': 'A'}, 'appsc-group-1': {'p2024a': 'A', 'p2024b': 'A'},
           'appsc-eo': {'e2025a': 'A', 'e2025b': 'A'}, 'tnpsc-group-4': {'t24': 'A', 't22': 'A'},
@@ -62,6 +62,7 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
 # Every released mock of every test series gets a booklet (Anil, 22 Nov 2026: "mocks uploaded should have pdf to get downloaded").
 # The list comes from build.MOCK_PACKS (live mocks only); the private keys of the sealed mocks are in BOOKS_PRIV/mock-keys.json.
 MOCK_NOTE = {   # series not made of new questions only: what the booklet's note says instead
+    'olm': 'New questions written by Learn with Anil, each built on a real previous question from an official exam paper (the explanation names that question), in our pattern for the OLM CBT',
     'appsc-eo': 'Built from real APPSC questions (EO Grade-III, AMVI and other APPSC papers) with APPSC\'s official answers, mixed in the proportions APPSC asks',
     'appsc-group-2': 'History, Geography and Mental Ability are real questions from APPSC\'s other papers with the official answers; Indian Society and Current Affairs are new questions written by Learn with Anil',
     'appsc-amvi': 'New questions written by Learn with Anil, each built on a concept APPSC asked in its AMVI Paper II papers of 2019, 2023 and 2026 (the explanation names that previous question)',
@@ -175,6 +176,7 @@ def time_marks(conf, p):
     if conf['id'] == 'mpsc-group-c': return '1 Hour', 100   # MPSC Group-C prelims: 100 questions, 100 marks, 1 hour
     if conf['id'] == 'upsssc-inter-level': return '2 Hours', 100   # UPSSSC Mains: 100 questions, 100 marks, 2 hours
     if conf['id'] == 'opsc-aso': return (('2 Hours', 200) if p['id'] in ('a3', 's3') else ('1 Hour 30 Minutes', 100))   # OPSC ASO papers
+    if conf['id'] == 'olm': return '45 Minutes', p.get('count') or ''   # OLM practice sets: 1 mark a question
     if conf['id'] == 'jkssb-je-civil': return '120 Minutes', 120   # JKSSB JE (Civil): 120 questions, 1 mark each
     if conf['id'] == 'meghalaya-psc': return (('2 Hours 30 Minutes', 300) if p['id'] == 'l25' else ('2 Hours', 200))   # MPSC: MCS Prelims papers 100 x 2 marks; LDA 150 x 2 marks
     if conf['id'] == 'dsssb': return '120 Minutes', 200   # DSSSB one-tier tests: 200 questions, 1 mark each
@@ -285,7 +287,7 @@ def paper_doc(conf, p, qs, mock=None):
     key = p.get('key') or ("APPSC's final key" if conf['board'] == 'APPSC' else conf.get('keyname') or 'the official key')
     title = re.sub(r'^(TSLPRB|APPSC|UPSC|TGPSC|TSPSC|SSC|SLPRB AP|RRB|TNPSC|KEA|MPSC|GSSSB|UPSSSC|UPPSC|UKPSC|CG Vyapam|OPSC|WBPSC|DSSSB|JKSSB|Meghalaya PSC)\s+', '', p['title'])
     l2name = l2['name'] if not p.get('en_only') and any(q.get('qt') for q in qs) else ''
-    when = f' · Held on {esc(p["held"])}' if p.get('held') else ''
+    when = f' · Held on {esc(p["held"])}' if p.get('held') and conf['id'] != 'olm' else ''
     if mock: board = 'LEARN WITH ANIL · ' + mock.upper() + ' TEST SERIES'
     mnote = MOCK_NOTE_ID.get(p.get('mock')) or MOCK_NOTE.get(conf['id'])
     head = (f'<div class="hd"><img src="{LOGO}" alt="Learn with Anil"><div class="t"><b>{esc(board)}</b><span>{esc(title)}</span>'
@@ -296,6 +298,9 @@ def paper_doc(conf, p, qs, mock=None):
                'The answer key and answers with explanations are at the end of this booklet.</div>' if mock and mnote else
                f'<div class="note">New questions written by Learn with Anil for the {esc(mock)} test series in the {esc(conf["board"])} pattern (not previous-year questions), '
                'with an explanation for every answer. The answer key and answers with explanations are at the end of this booklet.</div>' if mock else
+               ('<div class="note">OLM has never published a question paper. These are real questions on OLM\'s subjects from official papers of other boards '
+                '(the source exam is in brackets before each question), with each board\'s official answer. The answer key and answers with explanations '
+                'are at the end of this booklet.</div>') if conf['id'] == 'olm' else
                f'<div class="note">Questions as printed in {esc(conf["board"])}\'s official {"question paper of this shift" if conf["board"] == "RRB" else "booklet"} (English'
                + (f' &amp; <span lang="{l2["code"]}">{esc(l2["label"])}</span>' if l2name and l2.get('label') else (f' &amp; {esc(l2name)}' if l2name else ''))
                + f'); answers from {esc(key)}. Questions deleted by {esc(conf["board"])} are left out. '
