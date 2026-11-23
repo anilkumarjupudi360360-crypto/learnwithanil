@@ -8170,6 +8170,28 @@ MOCK_PACKS = {
                                    ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
                        dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 6),
                             parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
+  # Anil, 23 Nov 2026: "start mock test series for karnataka SI based on pyqs.... Name the test series.... And add one test".
+  # Name "Rakshaka PSI" (ರಕ್ಷಕ, protector). KSP PSI (Civil) Paper-2 pattern: 100 questions, 90 minutes, 150 marks, 0.375 negative, Kannada +
+  # English. Subject mix = the average of KSP's six real Paper-2s on the site (595 PYQs); every question is built on one of those PYQs
+  # (private source /home/claude/kpm). Ids start with "bk-" (any All-in-One Pass holder). Sealed files: src/karnataka-police-si-mocks/.
+  'karnataka-police-si': dict(id='bk-kpsimk', name='Rakshaka PSI', price=149, src='karnataka-police-si-mocks', dir='karnataka-police-si', langs='English &amp; Kannada',
+                   title='Rakshaka PSI – Karnataka Police SI (KSP PSI) Mock Test Series',
+                   summary='10 full-length Karnataka PSI (Civil) Paper-2 mock tests in KSP\'s pattern, 100 questions in 90 minutes each, in Kannada '
+                           'and English, with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
+                   about=['Every question is built on a question KSP actually asked in its PSI Paper-2s of 2017, 2019, 2020, 2021 and 2024: the same '
+                          'topic from a new angle, freshly worded, and its explanation names the PYQ it builds on. Practise KSP\'s real papers on '
+                          'the previous-papers page.',
+                          'Each mock: History & Culture 17, Geography & Environment 15, Indian Constitution & Polity 13, Economy 8, General Science '
+                          '& Technology 17, Current Affairs 15 (with Karnataka news), Mental Ability & Arithmetic 12 and Computer Knowledge 3: 100 '
+                          'questions, 150 marks, 90 minutes, as in the real exam (where a wrong answer costs 0.375 marks, so skip blind guesses).',
+                          'Every question and every explanation is in Kannada and English. Your score, accuracy and topic-wise analysis come after '
+                          'each mock.'],
+                   mocks=[dict(id=f'bk-kpsimk-{i}', name=f'Mock {i}', qn=100, mins=90, live=(i <= 1),   # Mock 1 on 23 Nov 2026
+                               parts=[('his', 'History & Culture', ['his']), ('geo', 'Geography & Environment', ['geo']),
+                                      ('pol', 'Indian Constitution & Polity', ['pol']), ('eco', 'Economy', ['eco']),
+                                      ('sci', 'General Science & Technology', ['sci']), ('cur', 'Current Affairs', ['cur']),
+                                      ('apt', 'Mental Ability & Arithmetic', ['apt']), ('comp', 'Computer Knowledge', ['comp'])])
+                          for i in range(1, 11)]),
   # Anil, 22 Nov 2026: "add 2 more mock test series in maharastar exam ...based on pyqs" -> Mocks 2 and 3, every question built on an MPSC PYQ
   # (writer + blind-checker helper agents; private source /home/claude/mgc/w, tools/merge.py).
   # Anil, 16 Nov 2026: "start a test series ...add one test" (MPSC Group C). Name "Sahyadri Group-C". Each mock = 100 questions, 1 hour,
