@@ -8304,10 +8304,10 @@ MOCK_PACKS = {
                           'was solved again by a separate checker. Your score, accuracy and topic-wise analysis come after each paper '
                           '(the real exam cuts one-third of a mark for a wrong answer).'],
                    mocks=[m for i in range(1, 11) for m in (
-                       dict(id=f'bk-g1mk-{i}a', name=f'Test {i} · Paper I (General Studies)', group=f'Test {i}', qn=120, mins=120, live=(i == 1),   # Test 1 on 22 Nov 2026
+                       dict(id=f'bk-g1mk-{i}a', name=f'Test {i} · Paper I (General Studies)', group=f'Test {i}', qn=120, mins=120, live=(i <= 3),   # Test 1 on 22 Nov 2026; Tests 2-3 on 24 Nov 2026
                             parts=[('ih', 'History & Culture', ['ih']), ('pol', 'Polity, Social Justice & IR', ['pol']),
                                    ('eco', 'Indian & AP Economy', ['eco']), ('geo', 'Geography', ['geo'])]),
-                       dict(id=f'bk-g1mk-{i}b', name=f'Test {i} · Paper II (General Aptitude)', group=f'Test {i}', qn=120, mins=120, live=(i == 1),
+                       dict(id=f'bk-g1mk-{i}b', name=f'Test {i} · Paper II (General Aptitude)', group=f'Test {i}', qn=120, mins=120, live=(i <= 3),
                             parts=[('men', 'Mental Ability & Aptitude', ['men', 'apt']), ('sci', 'Science & Technology', ['sci']),
                                    ('cur', 'Current Affairs', ['cur'])]))]),
   # Anil, 8 Nov 2026: "start group-2 prelims test series ... suggest a name, no of exams ... add few exams"; "add info from our existing
