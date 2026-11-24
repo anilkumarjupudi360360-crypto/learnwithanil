@@ -6037,7 +6037,7 @@ def llms_txt(loaded, grand):
     if iq:
         ib = f'{SITE_URL}/upsc-ifos/mains-pyqs/'
         L.append(f'- [UPSC Indian Forest Service (IFoS) Mains previous year questions, Paper I General English and Paper II General Knowledge]({ib}): {len(iq):,} questions of '
-                 f'{min(q["year"] for q in iq)}–{max(q["year"] for q in iq)} from UPSC\'s official papers, year-wise and subject-wise; model answers free (added year by year, newest first). '
+                 f'{min(q["year"] for q in iq)}–{max(q["year"] for q in iq)} from UPSC\'s official papers, year-wise and subject-wise; model answers with the All-in-One Pass (two free samples per paper). '
                  f'IFoS Prelims is the common Civil Services Prelims (see UPSC Prelims). Hub: {SITE_URL}/upsc-ifos/')
         for y in sorted({q['year'] for q in iq}, reverse=True):
             for p in upscmains.IF_PAPERS:
@@ -8182,7 +8182,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
 MOCK_PACKS = {
-  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=9, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
+  'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=10, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026, Mock 10 on 24 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
                        summary='10 full-length TS SI Prelims mock tests, 200 questions each (Arithmetic & Reasoning 100, General Studies 100), '
                                'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',

@@ -55,7 +55,7 @@ COURSES = {
   # UPSC Indian Forest Service (Main), the two compulsory papers (Anil, 16 Nov 2026: "add ... IFS"; chose "Mains GK + English").
   # IFoS Prelims is the Civil Services Prelims paper (the /upsc-prelims/ app), so the IFoS hub links there.
   'if': dict(dir='mains-pyqs', pp='paper-', kk='if', papers=IF_PAPERS, seo='UPSC IFoS Mains', crumb='Mains PYQs', pfx='Paper', plabel='IFoS Mains Paper',
-             subj='General English and General Knowledge', part_word='syllabus part', free_note='every model answer is free',
+             subj='General English and General Knowledge', part_word='syllabus part', free_note='the first two answers of every paper are free',
              structure=('Paper I General English (300 marks): an essay of 800–1000 words (one of four topics), a letter, report or paragraph, a précis, '
                         'a comprehension passage with five questions and grammar exercises. Paper II General Knowledge (300 marks): six questions of four parts each, '
                         '15 marks (about 200 words) and 10 marks (about 125 words); all parts are compulsory.'),

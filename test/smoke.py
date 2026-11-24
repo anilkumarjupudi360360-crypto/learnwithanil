@@ -775,7 +775,7 @@ async def main():
                 nfree += bool(fr); nlock += bool(lk)
                 if bool(fr) == bool(lk): errors.append(f'upsc-ifos/mains-pyqs/{f}: answer page is neither free nor sealed')
                 if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'upsc-ifos/mains-pyqs/{f}: sealed file {lk.group(1)} missing from /books/')
-            if nlock and nfree > 2 * len(yp) or not nfree + nlock: errors.append(f'ifos mains: {nfree} free and {nlock} sealed answer pages (expected two free samples per paper)')
+            if nfree > 2 * len(yp) or not nlock: errors.append(f'ifos mains: {nfree} free and {nlock} sealed answer pages (expected two free samples per paper)')
             print(f'ifos mains: {len(yp)} paper pages, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
         # UPSC Anthropology optional Papers I-II (tools/upscmains.py course 'an'): 2 papers a year, an answer page per part,
         # Q1(a) and Q1(b) of every paper free, the rest sealed in books/upa-ans-<year>-an<n>-*.bin
