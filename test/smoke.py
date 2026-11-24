@@ -54,10 +54,24 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         _new = b.new_page
-        async def new_page(passes=PAID, **kw):   # every page talks to a fake payments script: by default a student with the All-in-One Pass
-            pg = await _new(**kw); await pg.route(PAY_API, fake_pay(passes)); return pg
+        async def new_page(passes=PAID, share_ask=False, **kw):   # every page talks to a fake payments script: by default a student with the All-in-One Pass
+            pg = await _new(**kw); await pg.route(PAY_API, fake_pay(passes))
+            if not share_ask: await pg.add_init_script('try{localStorage.setItem("lwa_sa_last",String(Date.now()));sessionStorage.setItem("lwa_sc_x","1")}catch(e){}')   # the once-a-session share request (24 Nov 2026) stays out of the other checks
+            return pg
         b.new_page = new_page
         errors = []
+        # the share request (Anil, 24 Nov 2026): first visit only a bottom card; a later visit the popup, Skip closes it, not again that week
+        sctx = await b.new_context(viewport={'width': 390, 'height': 800}); sp = await sctx.new_page(); await sp.route(PAY_API, fake_pay(PAID))
+        await sp.goto(URL); await sp.wait_for_timeout(2000)
+        if await sp.locator('#lwa-sa').count() or not await sp.locator('#lwa-sc').count(): errors.append('share request: first visit should get the card, not the popup')
+        sp2 = await sctx.new_page(); await sp2.route(PAY_API, fake_pay(PAID)); await sp2.goto(URL); await sp2.wait_for_timeout(2000)
+        if await sp2.locator('#lwa-sa').count() != 1: errors.append('share request: no popup on the second visit')
+        else:
+            await sp2.click('#lwa-sa .s')
+            if await sp2.locator('#lwa-sa').count(): errors.append('share request: Skip does not close it')
+            sp3 = await sctx.new_page(); await sp3.route(PAY_API, fake_pay(PAID)); await sp3.goto(URL); await sp3.wait_for_timeout(2000)
+            if await sp3.locator('#lwa-sa').count(): errors.append('share request: popup again in the same week')
+        await sctx.close()
         for width, name in [(1280, 'desk'), (390, 'phone')]:
             pg = await b.new_page(viewport={'width': width, 'height': 900})
             pg.on('pageerror', lambda e: errors.append(f'pageerror: {e}'))

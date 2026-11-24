@@ -2592,6 +2592,7 @@ function finishQuiz(){
   }
   track("quiz_complete", {mode: res.mode, exam: DATA.examShort||"", questions: n, correct: res.c});
   go("result");
+  if(res.mode==="test" || n>=5) setTimeout(()=>{ try{ window.lwaShareAsk && window.lwaShareAsk("result"); }catch(e){} }, 2500);   // the share request after a finished quiz or test, at most once a week (Anil, 24 Nov 2026)
 }
 
 /* ---------- result ---------- */
