@@ -8401,11 +8401,11 @@ MOCK_PACKS = {
                           'only, as KEA prints them. Every answer has an explanation in English and Kannada. Your score, accuracy and topic-wise analysis '
                           'come after each paper.'],
                    mocks=[m for i in range(1, 11) for m in (
-                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 6),   # Mock 1 on 16 Nov 2026, Mock 2 on 18 Nov 2026, Mocks 3-4 (PYQ-based) on 22 Nov 2026, Mocks 5-6 on 23 Nov 2026
+                       dict(id=f'bk-kfsmk-{i}a', name=f'Mock {i} · Paper-1 (General Knowledge)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 8),   # Mock 1 on 16 Nov 2026, Mock 2 on 18 Nov 2026, Mocks 3-4 (PYQ-based) on 22 Nov 2026, Mocks 5-6 on 23 Nov 2026, Mocks 7-8 on 24 Nov 2026
                             parts=[('his', 'History & Culture', ['his']), ('geo', 'Geography & Environment', ['geo']), ('pol', 'Constitution & Polity', ['pol']),
                                    ('eco', 'Economy & Rural Development', ['eco']), ('sci', 'General Science & Technology', ['sci']),
                                    ('cur', 'Current Affairs', ['cur']), ('apt', 'Mental Ability', ['apt'])]),
-                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 6),
+                       dict(id=f'bk-kfsmk-{i}b', name=f'Mock {i} · Paper-2 (Kannada, English & Computer)', group=f'Mock {i}', qn=100, mins=120, live=(i <= 8),
                             parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']), ('comp', 'Computer Knowledge', ['comp'])]))]),
   # Anil, 23 Nov 2026: "start mock test series for karnataka SI based on pyqs.... Name the test series.... And add one test".
   # Name "Rakshaka PSI" (ರಕ್ಷಕ, protector). KSP PSI (Civil) Paper-2 pattern: 100 questions, 90 minutes, 150 marks, 0.375 negative, Kannada +
