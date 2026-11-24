@@ -8327,7 +8327,7 @@ MOCK_PACKS = {
                           'November 2026), each checked against official and newspaper sources.',
                           'Every question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis '
                           'come after each mock. Mock 1 is free: register once and take it.'],
-                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 4), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026, Mock 4 on 15 Nov 2026
+                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 6), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026, Mock 4 on 15 Nov 2026, Mocks 5-6 on 24 Nov 2026
                                parts=[('ih', 'Indian History', ['ih']), ('geo', 'Geography', ['geo']), ('soc', 'Indian Society', ['soc']),
                                       ('cur', 'Current Affairs', ['cur']), ('men', 'Mental Ability', ['men'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: SBI PO and IBPS SO — original Learn with Anil mocks (no previous papers exist to publish; see BANK_SUBJECTS).
