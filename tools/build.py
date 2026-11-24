@@ -67,7 +67,7 @@ function css(){if(document.getElementById("lwa-sa-css"))return;var st=document.c
 function share(e,w,done){ev(w+"_share");if(navigator.share&&mob){e.preventDefault();navigator.share({title:"Learn with Anil",text:T,url:U}).then(function(){done&&done()},function(){})}}
 function show(why){if(document.getElementById("lwa-sa"))return;css();var c0=document.getElementById("lwa-sc");if(c0)c0.remove();
 var d=document.createElement("div");d.id="lwa-sa";d.setAttribute("role","dialog");d.setAttribute("aria-modal","true");d.setAttribute("aria-labelledby","lwa-sa-h");
-d.innerHTML='<div class="b"><button class="x" aria-label="Close">&times;</button><h2 id="lwa-sa-h">A small request from Team Anil 🙏</h2><p>Every one of the 27,000+ questions on this site was collected from real exam papers, checked and explained one by one. Bringing them here takes a lot of time, energy and money.</p><p>We keep the All-in-One Pass at just ₹149 so that every student can afford it. But our website is new, and Google doesn’t show it to many students yet. Without more students, we would have to raise the price, and that goes against our principles.</p><p>If this site has genuinely helped you, please <b>share it with your 3 best friends</b> who are preparing for exams. Students helping students is how we grow. 💙</p><div class="r"><a class="w" target="_blank" rel="noopener">Share on WhatsApp</a><button class="c">Copy link</button><button class="s">Skip</button></div></div>';
+d.innerHTML='<div class="b"><button class="x" aria-label="Close">&times;</button><h2 id="lwa-sa-h">A small request from Team Anil 🙏</h2><p>Every one of the <b>__NPYQ__ previous-year questions</b> on this site was collected from real exam papers, checked and explained one by one. On top of that, we have written <b>__NMOCK__ mock test questions</b> and <b>__NBOOK__ study books (__NPAGE__ pages)</b>. Bringing all this to you takes <b>a lot of time, energy and money</b>.</p><p>We keep the All-in-One Pass at <b>just ₹149</b> so that every student can afford it. But <b>our website is new</b>, and Google doesn’t show it to many students yet. Without more students, we would have to raise the price, and that <b>goes against our principles</b>.</p><p>If this site has genuinely helped you, please <b>share it with your 3 best friends</b> who are preparing for exams. Students helping students is how we grow. 💙</p><div class="r"><a class="w" target="_blank" rel="noopener">Share on WhatsApp</a><button class="c">Copy link</button><button class="s">Skip</button></div></div>';
 d.querySelector(".w").href=WA;document.body.appendChild(d);ev("share_ask_shown",why);
 function close(n){if(n)ev(n);d.remove();document.removeEventListener("keydown",k)}function k(e){if(e.key==="Escape")close("share_ask_skip")}
 document.addEventListener("keydown",k);d.addEventListener("click",function(e){if(e.target===d)close("share_ask_skip")});
@@ -4322,6 +4322,17 @@ def main():
             for f in os.listdir(mkdir_):
                 if f.endswith(('.bin', '.png')): shutil.copy(os.path.join(mkdir_, f), os.path.join(DIST, 'site', exam_dir, 'mk', f))   # .png: figures of Konark ASO Paper II tests
     open(os.path.join(DIST, 'site', '.nojekyll'), 'w').write('')
+    # the numbers in the share request (Anil, 24 Nov 2026: "add mock questions number also", "add material number also"): filled in on every page
+    _r = lambda n: f'{n // 100 * 100:,}+' if n >= 1000 else str(n)
+    _bk = [b for b in notes if b.get('cover')]
+    _fill = {'__NPYQ__': _r(grand), '__NMOCK__': _r(mock_questions()), '__NBOOK__': str(len(_bk)), '__NPAGE__': _r(sum(int(b.get('pages') or 0) for b in _bk))}
+    for _d, _, _fs in os.walk(os.path.join(DIST, 'site')):
+        for _f in _fs:
+            if not _f.endswith('.html'): continue
+            _p = os.path.join(_d, _f); _h = open(_p, encoding='utf-8').read()
+            if '__NPYQ__' in _h:
+                for _k, _v in _fill.items(): _h = _h.replace(_k, _v)
+                open(_p, 'w', encoding='utf-8').write(_h)
     print(f'  grand total {grand} questions, {len(all_pages)} static pages')
 
 
