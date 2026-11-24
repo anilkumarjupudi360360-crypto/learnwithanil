@@ -74,6 +74,9 @@ MOCK_NOTE_ID = {   # single mocks built differently from the rest of their serie
     # Sankalpa EPFO Mocks 2+ (Anil, 22 Nov 2026: "based on pyqs"); Mock 1 and the Current Affairs tests keep the default note.
     **{f'bk-epfomk-{i}': 'New questions written by Learn with Anil, each modelled on a question UPSC asked in its EPFO papers of 2017–2025 '
                          '(the explanation names that previous question)' for i in range(2, 11)},
+    # APPSC EO Grade-III Mocks 4-10 (Anil, 24 Nov 2026): new questions, not APPSC's own like Mocks 1-3
+    **{f'bk-eomk-{i}{x}': 'New questions written by Learn with Anil, each built on a question APPSC asked in its EO Grade-III or AMVI papers '
+                          '(the explanation names that previous question), in the subject proportions of the real exam' for i in range(4, 11) for x in 'ab'},
 }
 
 

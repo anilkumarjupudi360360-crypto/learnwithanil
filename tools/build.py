@@ -8181,6 +8181,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'ts-police-constable': ('2026-12-21', 'TS Police Constable Prelims on 20 December 2026'),
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
+EO_LIVE = 4   # APPSC EO Grade-III mocks released (each = Paper I + Paper II)
 MOCK_PACKS = {
   'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=10, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026, Mock 10 on 24 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
                        title='Mission Khaki – TS Police SI Prelims 2026 Test Series',
@@ -8264,20 +8265,22 @@ MOCK_PACKS = {
                                           ('gs', 'General Studies', ['sci', 'ih', 'ap', 'geo', 'pol', 'eco', 'cur'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: EO Grade-III test series from the site's own previous questions (tools/eo_mocks.py), full-length and sectional.
   # Ids start with "bk-" so the payments script gives the keys to any paid All-in-One Pass holder (no script change); 'dir' = the exam folder.
-  'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 3 mocks (6 papers) are available now', price=149, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
+  'appsc-eo': dict(id='bk-eomk', name='EO Grade-III', live_note='All 10 mocks (20 papers) are available now', price=149, src='appsc-eo-mocks', dir='appsc-endowment-officer', langs='English &amp; Telugu',
                    title='APPSC EO Grade-III Test Series – Paper I & Paper II Full-Length Mocks',
-                   summary='3 full-length APPSC EO Grade-III mock tests, each with Paper I (General Studies & Mental Ability, 150 questions) and Paper II '
+                   summary='10 full-length APPSC EO Grade-III mock tests, each with Paper I (General Studies & Mental Ability, 150 questions) and Paper II '
                            '(Hindu Philosophy & Temple System, 150 questions), in English and Telugu, with an explanation for every answer. Every section can also be taken on its own as a sectional test.',
-                   about=['Built from real APPSC questions: Paper I from the common APPSC General Studies & Mental Ability papers (EO 2026 and 2023, AMVI 2026 and 2023), '
-                          'Paper II from the EO Hindu Philosophy & Temple System papers of 2026 and 2023, mixed subject by subject in the proportions APPSC asks.',
-                          'Official APPSC answers; each explanation says which paper and question it came from. Paper I questions never repeat across the 3 mocks. '
-                          'APPSC has asked only 291 Paper II questions with four options, so about half of them appear in two of the three Paper II mocks.',
+                   about=['Mocks 1–3 are made of real APPSC questions: Paper I from the common APPSC General Studies & Mental Ability papers (EO 2026 and 2023, '
+                          'AMVI 2026 and 2023), Paper II from the EO Hindu Philosophy & Temple System papers of 2026 and 2023, with APPSC\'s official answers.',
+                          'Mocks 4–10 are new questions written for this series, each built on a topic APPSC has asked in these papers (the explanation names the '
+                          'question it is built on), in the same subject proportions and style as the real exam.',
                           'Each paper: 150 questions, 150 minutes, as in the real exam. Your score, accuracy and topic-wise analysis come after each test.'],
-                   mocks=[m for i in range(1, 4) for m in (dict(id=f'bk-eomk-{i}a', name=f'Mock {i} · Paper I (GS & Mental Ability)', qn=150, mins=150, live=True,
+                   # Anil, 24 Nov 2026: "add more tests to endowment officer test series.....10 tests....and add one test now": Mocks 4-10 new
+                   # PYQ-based questions (work: /home/claude/eomk); a mock goes live when its sealed files exist. 'group' counts a mock's two papers once.
+                   mocks=[m for i in range(1, 11) for m in (dict(id=f'bk-eomk-{i}a', name=f'Mock {i} · Paper I (GS & Mental Ability)', qn=150, mins=150, live=i <= EO_LIVE, group=f'Mock {i}',
                                parts=[('cur', 'Current Affairs', ['cur']), ('sci', 'General Science', ['sci']), ('ih', 'History & Culture', ['ih']),
                                       ('geo', 'Geography & Environment', ['geo']), ('pol', 'Polity & Governance', ['pol']),
                                       ('eco', 'Economy & AP Issues', ['eco', 'apr']), ('men', 'Mental Ability', ['men'])]),
-                                                           dict(id=f'bk-eomk-{i}b', name=f'Mock {i} · Paper II (Hindu Philosophy)', qn=150, mins=150, live=True,
+                                                           dict(id=f'bk-eomk-{i}b', name=f'Mock {i} · Paper II (Hindu Philosophy)', qn=150, mins=150, live=i <= EO_LIVE, group=f'Mock {i}',
                                  parts=[('epi', 'Ramayanam, Mahabharatham & Bhagavatham', ['ram', 'mbh', 'bhg']), ('pur', 'Puranas & Itihasa', ['pur']),
                                         ('aga', 'Agamas, Festivals & Arts', ['aga', 'fes']), ('ved', 'Vedic Culture & Philosophies', ['ved', 'phi']),
                                         ('law', 'Family Law, Endowments Act & Lands', ['fam', 'inc', 'eod', 'lan'])]))]),

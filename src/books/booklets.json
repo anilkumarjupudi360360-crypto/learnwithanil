@@ -425,6 +425,22 @@
    "mock": "bk-eomk-3b",
    "name": "LearnWithAnil-EO-Grade-III-Mock-3-Paper-II-Hindu-Philosophy-Mock-Test.pdf",
    "pages": 33
+  },
+  "eomk4a": {
+   "bytes": 843785,
+   "file": "appsc-eo-eomk4a-18dc900e2a.bin",
+   "key": "bk-appsc-eo-eomk4a",
+   "mock": "bk-eomk-4a",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-4-Paper-I-GS-Mental-Ability-Mock-Test.pdf",
+   "pages": 38
+  },
+  "eomk4b": {
+   "bytes": 827244,
+   "file": "appsc-eo-eomk4b-bb460282ff.bin",
+   "key": "bk-appsc-eo-eomk4b",
+   "mock": "bk-eomk-4b",
+   "name": "LearnWithAnil-EO-Grade-III-Mock-4-Paper-II-Hindu-Philosophy-Mock-Test.pdf",
+   "pages": 39
   }
  },
  "appsc-fro": {
