@@ -303,7 +303,7 @@ async def main():
                     errors.append(f'{rel}: says something is free or offers a free PDF')
                 if '<h2>Plans</h2>' not in body or 'All-in-One Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
-                free_ = rel.startswith(('ts-police-si/', 'ts-police-constable/'))   # TS Police papers are free to attempt (Anil, 28 Oct 2026)
+                free_ = False   # no exam's papers are free to attempt (TS Police came under the pass on 24 Nov 2026)
                 if ('?sec=' in body or '?practice=' in body or '?test=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
                 if free_ and rel.endswith('pyqs.html') and 'Free: attempt every' not in body: errors.append(f'{rel}: free TS Police papers not announced')
                 if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'Attempt this paper</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
@@ -567,9 +567,9 @@ async def main():
             if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
         await np.goto(URL + 'appsc-group-1/?test=p2024a'); await np.wait_for_timeout(900)
         if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'All-in-One Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the All-in-One Pass checkout')
-        for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: free without a pass
+        for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: under the pass since 24 Nov 2026
             await np.goto(URL + path); await np.wait_for_timeout(900)
-            if not (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: free {path} did not open')
+            if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
         for v in ('practice', 'mistakes'):
             await np.goto(URL + f'appsc-group-2/{v}/'); await np.wait_for_timeout(600)
             if 'Unlock' not in await np.inner_text('#view'): errors.append(f'nopass: {v} is open without a plan')
@@ -724,7 +724,7 @@ async def main():
                 h = open(os.path.join(md_, f), encoding='utf-8').read()
                 links = re.findall(r'href="(20\d\d-paper-\d-q\d+[ab]\.html)"', h)
                 if f.endswith('-paper-1.html') and (links or 'data-ans="' in h): errors.append(f'mains-pyqs/{f}: essay page links to answers')
-                nf_ = 30   # every answer free (Anil, 2 Nov 2026: "make both mains free")
+                nf_ = 2   # Q1(a) and Q1(b) free, the rest in the All-in-One Pass (Anil, 24 Nov 2026: "bring all under pass"; all were free from 2 Nov)
                 if not f.endswith('-paper-1.html') and (len(set(links)) != 30 or h.count('Free model answer') != nf_):
                     errors.append(f'mains-pyqs/{f}: {len(set(links))} answer links and {h.count("Free model answer")} free (expected 30 and {nf_})')
             nfree = nlock = 0
@@ -734,9 +734,9 @@ async def main():
                 nfree += fr; nlock += lk
                 if fr == lk: errors.append(f'mains-pyqs/{f}: answer page is neither free nor sealed')
                 if lk and not re.search(r'FILE="g1m-ans-20\d\d-p\d-[0-9a-f]{10}\.bin"', h): errors.append(f'mains-pyqs/{f}: no sealed answer file')
-                if lk and ('class="mans pw"' not in h or '"isAccessibleForFree": false' not in h or '"cssSelector": ".pw"' not in h):
-                    errors.append(f'mains-pyqs/{f}: paid answer not in the page with the paid-content markup')
-            if len(apg) != 360 or nfree != 360 or nlock != 0: errors.append(f'mains-pyqs: {len(apg)} answer pages, {nfree} free, {nlock} sealed (expected 360, 360, 0)')
+                if lk and 'class="mans pw"' in h and ('"isAccessibleForFree": false' not in h or '"cssSelector": ".pw"' not in h):   # answers.json 'pw' (hidden in the page for Google) is optional
+                    errors.append(f'mains-pyqs/{f}: paid answer in the page without the paid-content markup')
+            if len(apg) != 360 or nfree != 24 or nlock != 336: errors.append(f'mains-pyqs: {len(apg)} answer pages, {nfree} free, {nlock} sealed (expected 360, 24, 336)')
             for f in os.listdir(md_):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(md_, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(md_, h)): errors.append(f'mains-pyqs/{f}: broken link {h}')
@@ -754,7 +754,29 @@ async def main():
             for f in os.listdir(ud):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ud, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(ud, h)): errors.append(f'upsc-cse/mains-pyqs/{f}: broken link {h}')
-            print(f'upsc mains: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages')
+            nfree = nlock = 0
+            for f in ap_:
+                h = open(os.path.join(ud, f), encoding='utf-8').read()
+                fr = 'Model answer · free' in h; lk = re.search(r'FILE="(upm-ans-20\d\d-gs[1-4]-[0-9a-f]{10}\.bin)"', h) if 'data-ans="' in h else None
+                nfree += bool(fr); nlock += bool(lk)
+                if bool(fr) == bool(lk): errors.append(f'upsc-cse/mains-pyqs/{f}: answer page is neither free nor sealed')
+                if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'upsc-cse/mains-pyqs/{f}: sealed file {lk.group(1)} missing from /books/')
+            if nfree > 2 * len(yp) or not nlock: errors.append(f'upsc mains: {nfree} free and {nlock} sealed answer pages (expected two free samples per paper, the rest sealed; since 24 Nov 2026)')
+            print(f'upsc mains: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
+        # UPSC IFoS Mains (General English, General Knowledge): two free samples per paper, the rest sealed in books/ifm-ans-*.bin (24 Nov 2026)
+        idr = os.path.join(SITE, 'upsc-ifos', 'mains-pyqs')
+        if os.path.isdir(idr):
+            yp = [f for f in os.listdir(idr) if re.fullmatch(r'20\d\d-paper-[12]\.html', f)]
+            ap_ = [f for f in os.listdir(idr) if re.fullmatch(r'20\d\d-paper-[12]-q.+\.html', f)]
+            nfree = nlock = 0
+            for f in ap_:
+                h = open(os.path.join(idr, f), encoding='utf-8').read()
+                fr = 'Model answer · free' in h; lk = re.search(r'FILE="(ifm-ans-20\d\d-if[12]-[0-9a-f]{10}\.bin)"', h) if 'data-ans="' in h else None
+                nfree += bool(fr); nlock += bool(lk)
+                if bool(fr) == bool(lk): errors.append(f'upsc-ifos/mains-pyqs/{f}: answer page is neither free nor sealed')
+                if lk and not os.path.isfile(os.path.join(SITE, 'books', lk.group(1))): errors.append(f'upsc-ifos/mains-pyqs/{f}: sealed file {lk.group(1)} missing from /books/')
+            if nlock and nfree > 2 * len(yp) or not nfree + nlock: errors.append(f'ifos mains: {nfree} free and {nlock} sealed answer pages (expected two free samples per paper)')
+            print(f'ifos mains: {len(yp)} paper pages, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
         # UPSC Anthropology optional Papers I-II (tools/upscmains.py course 'an'): 2 papers a year, an answer page per part,
         # Q1(a) and Q1(b) of every paper free, the rest sealed in books/upa-ans-<year>-an<n>-*.bin
         ad = os.path.join(SITE, 'upsc-cse', 'anthropology-pyqs')
@@ -772,7 +794,7 @@ async def main():
             for f in os.listdir(ad):
                 for h in re.findall(r'href="([^"#?]+\.html)"', open(os.path.join(ad, f), encoding='utf-8').read()):
                     if '/' not in h and not os.path.isfile(os.path.join(ad, h)): errors.append(f'upsc-cse/anthropology-pyqs/{f}: broken link {h}')
-            if nlock: errors.append(f'anthropology: {nlock} answer pages still sealed (every written answer is free since 2 Nov 2026)')
+            if nfree > 2 * len(yp) or not nlock: errors.append(f'anthropology: {nfree} free and {nlock} sealed of {len(ap_)} answer pages (expected Q1(a) and Q1(b) of each answered paper free, the rest sealed; since 24 Nov 2026)')
             print(f'upsc anthropology: {len(yp)} paper pages, {nq} question cards, {len(ap_)} answer pages ({nfree} free, {nlock} sealed)')
         # SEO (2 Nov 2026): one-question MCQ pages tell Google not to index them and are not in the sitemap; the Mains answer pages are
         smx = open(os.path.join(SITE, 'sitemap.xml')).read()

@@ -99,9 +99,11 @@ async def main():
         await pg.add_init_script(REG)
         await pg.route('https://pay.test/**', api)
         await pg.route('**/formResponse', lambda r: r.fulfill(status=200, body='ok'))
-        # 0. TS Police papers are free (Anil, 28 Oct 2026): a test opens without a pass, the bank shows answers, the study tools stay locked
+        # 0. TS Police papers need the All-in-One Pass like every other exam (Anil, 24 Nov 2026; they were free from 28 Oct): a test without a pass opens the checkout
         await pg.goto(url + 'ts-police-si/?test=s2022'); await pg.wait_for_timeout(1200)
-        if not (await pg.evaluate('location.pathname')).endswith('/quiz/') or await pg.locator('#payDlg[open]').count(): errors.append('free TS Police paper did not open without a pass')
+        if not await pg.locator('#payDlg[open]').count(): errors.append('TS Police paper opened without a pass')
+        await pg.goto(url + 'ts-police-constable/?test=p2022'); await pg.wait_for_timeout(1200)
+        if not await pg.locator('#payDlg[open]').count(): errors.append('TS Police Constable paper opened without a pass')
         # (the question bank, Smart revision, heatmap and bookmarks pages were removed on 16 Nov 2026: those routes now go to Papers / My Mistakes)
         await pg.goto(url + 'ts-police-si/mistakes/'); await pg.wait_for_timeout(700)
         if not await pg.locator('[data-act="openpay"]').count(): errors.append('TS Police mistakes notebook open without a pass')

@@ -162,7 +162,7 @@ NEW = {
       ('', 'note', 'One-third of the marks of a question is deducted for each wrong answer in both Prelims papers, including CSAT.'),
       ('Start with the previous papers', 'html',
        '<p>Practise the real UPSC papers with UPSC\'s answer keys and explanations in English and Hindi: '
-       '<a href="/upsc-prelims/pyqs.html">UPSC Prelims GS and CSAT previous papers</a> · <a href="/upsc-cse/mains-pyqs/">UPSC Mains GS 1–4 PYQs with free model answers</a> · '
+       '<a href="/upsc-prelims/pyqs.html">UPSC Prelims GS and CSAT previous papers</a> · <a href="/upsc-cse/mains-pyqs/">UPSC Mains GS 1–4 PYQs with model answers</a> · '
        '<a href="/upsc-cse/">UPSC CSE hub</a></p>'),
     ],
     faqs=[

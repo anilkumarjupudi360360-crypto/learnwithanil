@@ -353,7 +353,7 @@ def FAQ_PRE(total, npapers):
        'with one ₹149 All-in-One Pass for every exam.'),
       ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
        'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, '
-       'with answers, explanations, quizzes, timed tests and all study tools, every mock test series and the study books (the UPSC and APPSC Mains model answers are free to read). '
+       'with answers, explanations, quizzes, timed tests and all study tools, every mock test series and the study books (including the UPSC and APPSC Mains model answers). '
        'Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 '
        'questions of each paper.'),
       ('Are the answers official?',
@@ -5009,7 +5009,7 @@ def p5_card(el_id):
     text = f'Hi Anil sir, I need the APPSC Group-1 Mains Paper V ({MAINS_P5["name"]}) Answer Writing Tool Kit.'
     return (f'<div class="card p5-card" id="{el_id}" hidden><p class="eyebrow">APPSC Group-1 Mains · Paper V</p>'
             f'<h3>Looking for Paper V ({esc(MAINS_P5["name"])})?</h3>'
-            f'<p>All 90 Paper V previous questions of 2020, 2023 and 2025 are on the site, each with a free model answer. '
+            f'<p>All 90 Paper V previous questions of 2020, 2023 and 2025 are on the site, each with a model answer (in the All-in-One Pass; Q1(a) and Q1(b) free). '
             f'The Paper V tool kit (PDF) is not on the website: message Anil on WhatsApp and he will help you get it.</p>'
             f'<div class="row"><a class="btn btn-primary" href="/appsc-group-1/mains-pyqs/2025-paper-5.html">Paper V questions with answers</a>'
             f'<a class="btn btn-secondary" href="https://wa.me/{WHATSAPP}?text={quote(text)}" target="_blank" rel="noopener">Message Anil on WhatsApp</a>'
@@ -5992,7 +5992,7 @@ def llms_txt(loaded, grand):
             L.append(f'  - [{paper_kw(c, p)} question paper with answers]({SITE_URL}/{base}papers/{p["slug"]}.html) — held {p["held"]}, {p["count"]} questions')
         if c['id'] in MAINS_EXAMS and os.path.exists(os.path.join(SRC, c['src'], 'mains-pyqs', 'questions.json')):   # descriptive Mains PYQs (tools/g1mains.py)
             L.append(f'  - [APPSC Group 1 Mains previous year questions with model answers, year-wise and subject-wise]({SITE_URL}{c["pb"]}mains-pyqs/) — '
-                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions and all model answers free')
+                     f'Papers II to V of the 2020, 2023 and 2025 Mains, 360 questions, plus the 27 Paper I essay topics; questions free, model answers with the All-in-One Pass (two free samples per paper)')
             mdir = os.path.join(DIST, 'site', c['dir'], 'mains-pyqs')   # each year-paper page (SEO, 1 Nov 2026)
             for y in (2025, 2023, 2020):
                 for n, nm in ((1, 'Paper I (Essay) topics'), (2, 'Paper II (History & Geography)'), (3, 'Paper III (Polity & Ethics)'), (4, 'Paper IV (Economy)'), (5, 'Paper V (Science, Technology & Environment)')):
@@ -6016,7 +6016,7 @@ def llms_txt(loaded, grand):
         ub = f'{SITE_URL}/{upscmains.EXAM}/mains-pyqs/'
         L.append(f'- [UPSC Civil Services (CSE) Mains previous year questions with model answers, GS Papers 1–4]({ub}): {len(uq):,} questions of '
                  f'{min(q["year"] for q in uq)}–{max(q["year"] for q in uq)}, year-wise and subject-wise, each with a model answer on its own page '
-                 f'(key words, points, diagrams); questions and all model answers free. Hub: {SITE_URL}/{upscmains.EXAM}/')
+                 f'(key words, points, diagrams); questions free, model answers with the All-in-One Pass (two free samples per paper). Hub: {SITE_URL}/{upscmains.EXAM}/')
         for y in sorted({q['year'] for q in uq}, reverse=True):
             for p in upscmains.PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in uq):
@@ -6038,7 +6038,7 @@ def llms_txt(loaded, grand):
         ab = f'{SITE_URL}/{upscmains.EXAM}/anthropology-pyqs/'
         L.append(f'- [UPSC Anthropology optional previous year questions with model answers, Papers I and II]({ab}): {len(aq):,} question parts of '
                  f'{min(q["year"] for q in aq)}–{max(q["year"] for q in aq)}, year-wise and syllabus-wise, each with a model answer on its own page '
-                 f'(key words, anthropologists and ethnographic examples, diagrams); questions and all written model answers free (answers for 2019–2022 are being added).')
+                 f'(key words, anthropologists and ethnographic examples, diagrams); questions free, written model answers with the All-in-One Pass (two free samples per paper; answers for 2019–2022 are being added).')
         for y in sorted({q['year'] for q in aq}, reverse=True):
             for p in upscmains.AN_PAPERS:
                 if any(q['year'] == y and q['paper'] == p for q in aq):
@@ -8156,7 +8156,7 @@ TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid Al
 # Anil, 28 Oct 2026: TS Police papers free to attempt (registration needed): questions, answers and score. The explanations
 # (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹149 All-in-One Pass.
 PRE_LIVE = None
-FREE_PYQ = {'ts-police-si', 'ts-police-constable'}
+FREE_PYQ = set()   # Anil, 24 Nov 2026: "bring the SI & constable TG exams under the pass": TS Police papers now need the All-in-One Pass like every other exam (were free from 28 Oct 2026)
 FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or a timed test, with the correct answers and your score. '
                  'Register once (free); Mission Khaki Mock 1 is free too. The ₹{price} All-in-One Pass adds the explanations, the other Mission Khaki mocks, the PDF booklets and every other exam.')
 SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the All-in-One Pass

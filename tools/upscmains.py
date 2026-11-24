@@ -172,7 +172,7 @@ def course_pages(B, code):
     crumbs0 = [('Home', B.SITE_URL + '/'), (conf['name'], B.SITE_URL + pb), (C['crumb'], base)]
     parts = part_pages(qs)
     free = man.get('free', {})
-    allfree = len(free) >= man.get('n', 10 ** 9)   # Anil, 2 Nov 2026: "make both mains free" (GS), then "ok" to Anthropology too: every written answer free
+    allfree = len(free) >= man.get('n', 10 ** 9)   # False since 24 Nov 2026 (Anil: "bring all under pass"; answers.json keeps two free samples per paper). Anil, 2 Nov 2026: "make both mains free" (GS), then "ok" to Anthropology too: every written answer free
     payline = 'Questions and model answers free.' if allfree else f'Questions free; answers with the ₹{price} All-in-One Pass.'
     years = [y for y in YEARS if any(q['year'] == y for q in qs)]
     done = sorted({int(k[:4]) for k in files} | {y for y in {q['year'] for q in qs} if all(q['id'] in (man.get('free') or {}) for q in qs if q['year'] == y)}, reverse=True)

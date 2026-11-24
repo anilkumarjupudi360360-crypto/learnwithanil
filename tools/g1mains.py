@@ -71,7 +71,7 @@ def load(src):
     return qs, man
 
 
-FREE_YEARS = (2025, 2023, 2020)   # every answer of these years is free (Anil, 2 Nov 2026: 2020 first, then "make both mains free": all)
+FREE_YEARS = ()   # years whose every answer is free. Anil, 2 Nov 2026: all free; 24 Nov 2026: "bring all under pass" (Q1(a) and Q1(b) of each paper stay free samples)
 ALL_FREE = set(FREE_YEARS) >= set(YEARS)
 
 
@@ -195,7 +195,7 @@ def pages(B, conf):
                f'It is in the ₹{price} All-in-One Pass, with every previous paper of every exam on the site, practice quizzes, timed tests, mock test series and study books.</p>'
                f'<p class="muted">₹{price} · {B.PYQ_VALID} · pay by UPI, card or net banking</p></div><a class="cta" href="{pb}?buy=pyq">Get it for ₹{price}</a></div>')
     howto = (f'<p class="note">Tap a question to open its model answer on its own page. '
-             + ('Every model answer is free. ' if ALL_FREE else f'Every 2020 answer is free, and so are Q1(a) and Q1(b) of the 2023 and 2025 papers; the rest open with the ₹{price} All-in-One Pass on the phone you registered in the app. ')
+             + ('Every model answer is free. ' if ALL_FREE else f'Q1(a) and Q1(b) of every paper are free samples; the rest open with the ₹{price} All-in-One Pass on the phone you registered in the app. ')
              + f'Answers are by Learn with Anil (Jupudi Anil Kumar), not by APPSC; facts as of October 2026.</p>')
     howto_e = (f'<p class="note">Paper I is the essay paper: 9 topics in 3 sections of 3, and candidates write one essay from each section '
                f'(50 marks each, 150 in all). These are the real topics only, with no model essays. Practice essay topics on every syllabus part are in the '
@@ -342,9 +342,9 @@ def pages(B, conf):
     title = 'APPSC Group 1 Mains Previous Year Questions with Model Answers (2020, 2023, 2025) – Year-wise & Subject-wise | Learn with Anil'
     desc = (f'All {nans} APPSC Group 1 Mains questions of 2020, 2023 and 2025 for Paper II (History & Geography), Paper III (Polity & Ethics), Paper IV (Economy) '
             f'and Paper V (Science, Technology & Environment), each with a model answer by Learn with Anil, plus the {len(qs) - nans} Paper I essay topics; '
-            f'year-wise and subject-wise. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; all 2020 answers free, the rest with the ₹{price} All-in-One Pass.'))
+            f'year-wise and subject-wise. ' + ('Questions and model answers free.' if ALL_FREE else f'Questions free; Q1(a) and Q1(b) of every paper free, the rest with the ₹{price} All-in-One Pass.'))
     lede = esc(f'{nans} real APPSC Group-I Mains questions from the 2020, 2023 and 2025 papers (Papers {aps}), each with a model answer on its own page, '
-               f'and the {len(qs) - nans} Paper I essay topics. {"Every model answer is free" if ALL_FREE else "All 2020 answers are free"}. Pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
+               f'and the {len(qs) - nans} Paper I essay topics. {"Every model answer is free" if ALL_FREE else "Q1(a) and Q1(b) of every paper are free; the rest open with the All-in-One Pass"}. Pick a year and paper, or a syllabus part to see every question APPSC has asked on it.')
     page = B.static_page(1, title, desc, base, 'APPSC Group 1 Mains PYQs with model answers', lede, body, crumbs0, conf)
     out[f'{DIR}/index.html'] = D.rehero(page, D.hero('APPSC Group-I Mains · 2025, 2023 and 2020 papers', [D.LOOK[p][0] for p in PAPERS]))
     return out
@@ -357,12 +357,14 @@ def tiles(conf, qs_n):
     css = ('<style>.etile-ph{display:block;margin:-20px -22px 6px;height:128px;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--line)}'
            '.etile-ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}.etile:hover .etile-ph img{transform:scale(1.06)}'
            '@media (prefers-reduced-motion:reduce){.etile-ph img{transition:none}.etile:hover .etile-ph img{transform:none}}</style>')
+    TILE_PRICE = (f'<span class="etile-price">✓ Questions & model answers free</span></a>' if ALL_FREE else
+                  f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">✓ Questions free · 🔒 answers with the All-in-One Pass</span></a>')
     return (css + f'<a class="etile" href="{pb}{DIR}/#year">{ph("lepakshi")}<span class="etile-k">01 · Mains PYQs</span><b>Year-wise</b>'
             f'<span class="etile-p">The 2025, 2023 and 2020 Mains: all {qs_n} questions of Papers II–V, each with a model answer, and the Paper I essay topics.</span>'
-            f'<span class="etile-price">✓ Questions & model answers free</span></a>'
+            + TILE_PRICE +
             f'<a class="etile" href="{pb}{DIR}/#subject">{ph("ap-assembly")}<span class="etile-k">02 · Mains PYQs</span><b>Subject-wise</b>'
             f'<span class="etile-p">The same questions by syllabus part: essay themes, history, geography, polity, ethics, economy, science, technology and environment.</span>'
-            f'<span class="etile-price">✓ Questions & model answers free</span></a>'
+            + TILE_PRICE +
             f'<a class="etile" href="#mains">{ph("paddy")}<span class="etile-k">03 · Answer writing</span><b>Answer Writing Tool Kit</b>'
             f'<span class="etile-p">Four PDF books (Papers I–IV): every previous question sorted by syllabus, with practice questions.</span>'
             f'<span class="etile-price" data-paidtxt="✓ Included in your All-in-One Pass">🔒 Included in the All-in-One Pass</span></a>')
