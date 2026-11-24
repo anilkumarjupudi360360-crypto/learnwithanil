@@ -8167,7 +8167,7 @@ TRIAL_DAYS = 0   # Anil, 23 Oct 2026: no free trial; every PYQ needs the paid Al
 # Anil, 28 Oct 2026: TS Police papers free to attempt (registration needed): questions, answers and score. The explanations
 # (Q11 onwards of each paper), the Mission Khaki mocks from Mock 2, the PDF booklets, the study tools and every other exam stay in the ₹149 All-in-One Pass.
 PRE_LIVE = None
-FREE_PYQ = set()   # Anil, 24 Nov 2026: "bring the SI & constable TG exams under the pass": TS Police papers now need the All-in-One Pass like every other exam (were free from 28 Oct 2026)
+FREE_PYQ = {'ts-police-si', 'ts-police-constable'}   # free to attempt (Anil, 28 Oct 2026); under the pass for a few hours on 24 Nov 2026, then "ok unlock constable and SI of TG"
 FREE_PYQ_NOTE = ('Free: attempt every {seo} paper online, as a practice quiz or a timed test, with the correct answers and your score. '
                  'Register once (free); Mission Khaki Mock 1 is free too. The ₹{price} All-in-One Pass adds the explanations, the other Mission Khaki mocks, the PDF booklets and every other exam.')
 SAMPLE_N = 10        # public paper / question pages show every correct answer (since 25 Oct 2026) and the explanations of the first SAMPLE_N questions of each paper; the other explanations need the All-in-One Pass

@@ -303,7 +303,7 @@ async def main():
                     errors.append(f'{rel}: says something is free or offers a free PDF')
                 if '<h2>Plans</h2>' not in body or 'All-in-One Pass' not in body: errors.append(f'{rel}: no plans table')
                 if 'Free trial' in body or 'days free' in body.lower(): errors.append(f'{rel}: still offers a free trial')
-                free_ = False   # no exam's papers are free to attempt (TS Police came under the pass on 24 Nov 2026)
+                free_ = rel.startswith(('ts-police-si/', 'ts-police-constable/'))   # TS Police papers are free to attempt (Anil, 28 Oct 2026; again from 24 Nov 2026)
                 if ('?sec=' in body or '?practice=' in body or '?test=' in body) and not free_ and 'class="lk"' not in body: errors.append(f'{rel}: PYQ buttons show no lock')
                 if free_ and rel.endswith('pyqs.html') and 'Free: attempt every' not in body: errors.append(f'{rel}: free TS Police papers not announced')
                 if rel.endswith('pyqs.html') and ('Attempt as a timed test' in body or 'Practise question by question' in body or 'Attempt this paper</a>' not in body): errors.append(f'{rel}: papers should have one "Attempt this paper" button')
@@ -567,9 +567,9 @@ async def main():
             if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
         await np.goto(URL + 'appsc-group-1/?test=p2024a'); await np.wait_for_timeout(900)
         if not await np.evaluate('!!document.querySelector("#payDlg[open]")') or 'All-in-One Pass' not in await np.inner_text('#payDlg'): errors.append('nopass: ?test= did not open the All-in-One Pass checkout')
-        for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: under the pass since 24 Nov 2026
+        for path in ('ts-police-si/?test=s2022', 'ts-police-constable/?sec=ari'):   # TS Police papers: free without a pass
             await np.goto(URL + path); await np.wait_for_timeout(900)
-            if (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: {path} opened a quiz without a pass')
+            if not (await np.evaluate('location.pathname')).endswith('/quiz/'): errors.append(f'nopass: free {path} did not open')
         for v in ('practice', 'mistakes'):
             await np.goto(URL + f'appsc-group-2/{v}/'); await np.wait_for_timeout(600)
             if 'Unlock' not in await np.inner_text('#view'): errors.append(f'nopass: {v} is open without a plan')
