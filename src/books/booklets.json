@@ -806,6 +806,22 @@
    "name": "LearnWithAnil-KEA-SDA-2026-Kalyana-Karnataka-Kannada-English-Computer-Question-Paper.pdf",
    "pages": 18
   },
+  "kfsmk10a": {
+   "bytes": 650627,
+   "file": "karnataka-fda-sda-kfsmk10a-adaaa55797.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk10a",
+   "mock": "bk-kfsmk-10a",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-10-Paper-1-General-Knowledge-Mock-Test.pdf",
+   "pages": 30
+  },
+  "kfsmk10b": {
+   "bytes": 640425,
+   "file": "karnataka-fda-sda-kfsmk10b-68aacd3a52.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk10b",
+   "mock": "bk-kfsmk-10b",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-10-Paper-2-Kannada-English-Computer-Mock-Test.pdf",
+   "pages": 17
+  },
   "kfsmk1a": {
    "bytes": 735913,
    "file": "karnataka-fda-sda-kfsmk1a-e115b40e17.bin",
@@ -900,6 +916,22 @@
    "key": "bk-karnataka-fda-sda-kfsmk8b",
    "mock": "bk-kfsmk-8b",
    "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-8-Paper-2-Kannada-English-Computer-Mock-Test.pdf",
+   "pages": 18
+  },
+  "kfsmk9a": {
+   "bytes": 681058,
+   "file": "karnataka-fda-sda-kfsmk9a-08606d41e4.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk9a",
+   "mock": "bk-kfsmk-9a",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-9-Paper-1-General-Knowledge-Mock-Test.pdf",
+   "pages": 32
+  },
+  "kfsmk9b": {
+   "bytes": 632086,
+   "file": "karnataka-fda-sda-kfsmk9b-37cc903f1b.bin",
+   "key": "bk-karnataka-fda-sda-kfsmk9b",
+   "mock": "bk-kfsmk-9b",
+   "name": "LearnWithAnil-Vijaya-FDA-SDA-Mock-9-Paper-2-Kannada-English-Computer-Mock-Test.pdf",
    "pages": 18
   },
   "s25g": {
