@@ -249,6 +249,22 @@
    "name": "LearnWithAnil-Pariksha-Lab-Mock-3-Mock-Test.pdf",
    "pages": 40
   },
+  "anmk4": {
+   "bytes": 677286,
+   "file": "appsc-analyst-anmk4-b3f7ef234b.bin",
+   "key": "bk-appsc-analyst-anmk4",
+   "mock": "bk-anmk-4",
+   "name": "LearnWithAnil-Pariksha-Lab-Mock-4-Mock-Test.pdf",
+   "pages": 42
+  },
+  "anmk5": {
+   "bytes": 682559,
+   "file": "appsc-analyst-anmk5-431f9b74cb.bin",
+   "key": "bk-appsc-analyst-anmk5",
+   "mock": "bk-anmk-5",
+   "name": "LearnWithAnil-Pariksha-Lab-Mock-5-Mock-Test.pdf",
+   "pages": 43
+  },
   "n2025a": {
    "bytes": 1130224,
    "file": "appsc-analyst-n2025a-4c0e4c4284.bin",
@@ -1728,6 +1744,14 @@
    "key": "bk-ukpsc-lower-pcs-r23",
    "name": "LearnWithAnil-UKPSC-RO-ARO-Prelims-2023-Question-Paper.pdf",
    "orig": 1,
+   "pages": 36
+  },
+  "ukmk1": {
+   "bytes": 879417,
+   "file": "ukpsc-lower-pcs-ukmk1-1b6b6499fb.bin",
+   "key": "bk-ukpsc-lower-pcs-ukmk1",
+   "mock": "bk-ukmk-1",
+   "name": "LearnWithAnil-Devbhoomi-Lower-PCS-Mock-1-Mock-Test.pdf",
    "pages": 36
   }
  },

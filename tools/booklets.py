@@ -62,6 +62,7 @@ ORIGINALS = {'mpsc-group-c': {pid: (f'{pid}-qp.pdf', f'{pid}-key.pdf') for pid i
 # Every released mock of every test series gets a booklet (Anil, 22 Nov 2026: "mocks uploaded should have pdf to get downloaded").
 # The list comes from build.MOCK_PACKS (live mocks only); the private keys of the sealed mocks are in BOOKS_PRIV/mock-keys.json.
 MOCK_NOTE = {   # series not made of new questions only: what the booklet's note says instead
+    'ukpsc-lower-pcs': 'New questions written by Learn with Anil, each built on a question UKPSC asked in its Lower PCS Prelims 2024 and 2021 or RO/ARO Prelims 2023 papers (the explanation names that previous question), in the weightage of the real paper',
     'olm': 'New questions written by Learn with Anil, each built on a real previous question from an official exam paper (the explanation names that question), in our pattern for the OLM CBT',
     'appsc-eo': 'Built from real APPSC questions (EO Grade-III, AMVI and other APPSC papers) with APPSC\'s official answers, mixed in the proportions APPSC asks',
     'appsc-group-2': 'History, Geography and Mental Ability are real questions from APPSC\'s other papers with the official answers; Indian Society and Current Affairs are new questions written by Learn with Anil',

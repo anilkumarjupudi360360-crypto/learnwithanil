@@ -8181,6 +8181,7 @@ PASS_UNTIL = {'ts-police-si': ('2026-11-30', 'TS Police SI Prelims on 29 Novembe
               'ts-police-constable': ('2026-12-21', 'TS Police Constable Prelims on 20 December 2026'),
               'appsc-group-1': ('2027-01-25', 'APPSC Group 1 screening test on 24 January 2027')}
 # mock-test packs on sale (Anil sets the price per exam)
+UKM_LIVE = 1   # UKPSC Lower PCS mocks released
 EO_LIVE = 4   # APPSC EO Grade-III mocks released (each = Paper I + Paper II)
 MOCK_PACKS = {
   'ts-police-si': dict(id='mk-si', name='Mission Khaki', price=150, n=10, live=10, qn=200, free1=True,   # live = mocks released so far (Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 22 Nov 2026, Mocks 8-9 on 23 Nov 2026, Mock 10 on 24 Nov 2026; rest: coming soon); free1: Mock 1 free for registered students (Anil, 28 Oct 2026; FREE_MOCKS in the payments script)
@@ -8597,7 +8598,7 @@ MOCK_PACKS = {
                                'Statement, match-the-list, assertion–reason and short numerical questions at degree level, in English as APPSC sets Paper II. '
                                'Your score, accuracy and topic-wise analysis come after each mock. In the real exam a wrong answer costs one-third of a mark, '
                                'so practise skipping blind guesses.'],
-                        mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 3),   # Mock 1 on 17 Nov 2026, Mocks 2-3 on 22 Nov 2026
+                        mocks=[dict(id=f'bk-anmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 5),   # Mock 1 on 17 Nov 2026, Mocks 2-3 on 22 Nov, Mocks 4-5 on 25 Nov 2026 (source /home/claude/anm)
                                     parts=[('chm', 'Chemistry', ['chm']), ('bch', 'Biochemistry', ['bch']),
                                            ('bio', 'Biology', ['bio']), ('evs', 'Environmental Science', ['evs'])]) for i in range(1, 6)]),
   # Anil, 17 Nov 2026 (23:33 IST): "prepare mock test series for environmental engineer appsc ...and add 3 mocks". He chose all three on
@@ -8678,6 +8679,24 @@ MOCK_PACKS = {
                                 parts=[('rea', 'Reasoning', ['rea']), ('qa', 'Quantitative Aptitude', ['qa']),
                                        ('ga', 'General Awareness & Current Affairs', ['ga']), ('eng', 'English', ['eng']),
                                        ('guj', 'Gujarati', ['guj'])]) for i in range(1, 11)]),
+  # Anil, 24 Nov 2026 (21:51 IST): "create test series and add one mock test out of 10" for UKPSC Lower PCS Prelims (proposed 27 Dec 2026).
+  # New questions, each built on a question UKPSC asked in its Lower PCS 2024/2021 or RO/ARO 2023 prelims (his rule); English & Hindi;
+  # subject weights from those papers. Writers + independent blind checkers; private source /home/claude/ukm. Sealed files: src/ukpsc-lower-pcs-mocks/.
+  'ukpsc-lower-pcs': dict(id='bk-ukmk', name='Devbhoomi Lower PCS', price=149, src='ukpsc-lower-pcs-mocks', dir='ukpsc-lower-pcs', langs='English &amp; Hindi',
+                          title='Devbhoomi Lower PCS – UKPSC Lower PCS Prelims Mock Test Series (Hindi & English)',
+                          summary='10 full-length UKPSC Lower PCS (Combined State Civil / Lower Subordinate Services) Prelims mock tests, 150 questions in '
+                                  '2 hours, in Hindi and English, with an explanation for every answer. Every section can also be taken on its own as a sectional test.',
+                          about=['New questions written by Learn with Anil for this series, each built on a question UKPSC asked in its Lower PCS Prelims '
+                                 '2024 and 2021 and RO/ARO Prelims 2023 papers (the explanation names that previous question): the same topic and style, '
+                                 'with a different fact. Those three papers are on the previous-papers page, in the same pass.',
+                                 'Each mock follows the weightage of UKPSC\'s own papers: Uttarakhand GK 43, General Aptitude (reasoning and mathematics) 52, '
+                                 'History 8, Polity 11, Geography & Environment 10, Economy 7, General Science 10 and Current Affairs 9: 150 questions, 150 marks, '
+                                 '2 hours. Current affairs cover November 2025 onwards.',
+                                 'Every question and explanation is in Hindi and English. In the real exam a quarter of a question\'s marks is cut for each '
+                                 'wrong answer, so practise skipping blind guesses. Your score, accuracy and topic-wise analysis come after each mock.'],
+                          mocks=[dict(id=f'bk-ukmk-{i}', name=f'Mock {i}', qn=150, mins=120, live=(i <= UKM_LIVE),
+                                      parts=[('ukg', 'Uttarakhand GK', ['ukg']), ('gs', 'General Studies', ['his', 'pol', 'geo', 'eco', 'sci']),
+                                             ('cur', 'Current Affairs', ['cur']), ('apt', 'General Aptitude', ['apt'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
@@ -8736,7 +8755,7 @@ EXAM_CLOCK = {   # exam id: (exam name, date or None, where the date comes from)
   'karnataka-police-si': ('Next Karnataka PSI (Civil) written exam', None, 'No new KSP Police Sub-Inspector notification as of 22 November 2026; the last written exams were held by KEA on 23 January and 3 October 2024.'),
   'karnataka-police-constable': ('Next KSP Police Constable written exam', None, 'The 2026 Civil (2 August) and CAR/DAR (6 September) written exams are over; no new constable notification as of 22 November 2026.'),
   'karnataka-fda-sda': ('KEA FDA/SDA competitive exam (FDA-level papers, Kalyana Karnataka)', '2027-01-09', 'KEA notifications of 29 October 2026: Kannada language test 8 January; FDA-level papers 9 (KK) and 10 January (RPC); SDA-level papers 16 (KK) and 17 January 2027 (RPC).'),
-  'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', None, 'UKPSC Advt. A-1/E-2/DR/LSS/2026-27: applications 6 to 26 November 2026; UKPSC has not announced the prelims date yet.'),
+  'ukpsc-lower-pcs': ('UKPSC Lower PCS Prelims 2026 (Advt. A-1/E-2/DR/LSS/2026-27)', '2026-12-27', 'Proposed date in UKPSC\'s updated exam calendar (notification 115/2026-27); applications under Advt. A-1/E-2/DR/LSS/2026-27 ran from 6 to 26 November 2026. UKPSC confirms the date with the admit cards.'),
   'jkssb-je-civil': ('JKSSB Junior Engineer (Civil) written exam (Advt. 11 of 2026)', None, 'JKSSB Advertisement Notification No. 11 of 2026 (27 October 2026): online applications 30 November to 29 December 2026; JKSSB will notify the exam date separately.'),
   'meghalaya-psc': ('Meghalaya PSC screening tests (Advt. 01/2026-2027)', None, 'MPSC Advt. No. 01/2026-2027 (12 November 2026): apply online till 5 pm on 12 December 2026; screening test dates to be notified.'),
   'dsssb': ('DSSSB MTS and JE Combined Exams 2026 (Advt. 06/2026)', None, 'DSSSB Advt. No. 06/2026 (6 November 2026): applications 12 November to 11 December 2026; the exam dates will be announced on the Board\'s website.'),
