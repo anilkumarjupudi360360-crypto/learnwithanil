@@ -16,6 +16,14 @@
    "name": "LearnWithAnil-Akshara-DSC-Mock-2-SA-Social-Studies-Mock-Test.pdf",
    "pages": 106
   },
+  "dscmksass3": {
+   "bytes": 1379186,
+   "file": "ap-dsc-dscmksass3-7eb56a2228.bin",
+   "key": "bk-ap-dsc-dscmksass3",
+   "mock": "bk-dscmk-sass-3",
+   "name": "LearnWithAnil-Akshara-DSC-Mock-3-SA-Social-Studies-Mock-Test.pdf",
+   "pages": 65
+  },
   "dscmksgt1": {
    "bytes": 956748,
    "file": "ap-dsc-dscmksgt1-695a214448.bin",
@@ -39,6 +47,14 @@
    "mock": "bk-dscmk-sgt-3",
    "name": "LearnWithAnil-Akshara-DSC-Mock-3-SGT-Mock-Test.pdf",
    "pages": 83
+  },
+  "dscmksgt4": {
+   "bytes": 1288508,
+   "file": "ap-dsc-dscmksgt4-b4399efb69.bin",
+   "key": "bk-ap-dsc-dscmksgt4",
+   "mock": "bk-dscmk-sgt-4",
+   "name": "LearnWithAnil-Akshara-DSC-Mock-4-SGT-Mock-Test.pdf",
+   "pages": 56
   },
   "pet25": {
    "bytes": 807614,

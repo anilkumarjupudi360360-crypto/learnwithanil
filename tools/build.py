@@ -8513,11 +8513,11 @@ MOCK_PACKS = {
                         'exam), with an explanation in both. Current affairs cover November 2025 to November 2026, with Andhra Pradesh news. Your score, '
                         'accuracy and topic-wise analysis come after each mock.'],
                  mocks=[m for i in range(1, 11) for m in (
-                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', track='sgt', qn=160, mins=150, live=(i <= 3),   # Mock 1 on 17 Nov 2026; Mocks 2-3 on 22 Nov 2026 (Anil: "add appsc dsc 3 more exams.....based on pyqs")
+                     dict(id=f'bk-dscmk-sgt-{i}', name=f'Mock {i} · SGT', group=f'Mock {i}', track='sgt', qn=160, mins=150, live=(i <= 4),   # Mock 1 on 17 Nov 2026; Mocks 2-3 on 22 Nov 2026; Mock 4 on 25 Nov 2026 (Anil: "add appsc dsc 3 more exams.....based on pyqs")
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
                                  ('psy', 'Educational Psychology', ['psy']), ('tel', 'Telugu (Language-I)', ['tel']), ('eng', 'English', ['eng']),
                                  ('mat', 'Mathematics', ['mat']), ('sci', 'Science', ['sci']), ('soc', 'Social Studies', ['soc'])]),
-                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', track='sa-social-studies', qn=160, mins=150, live=(i <= 2),   # Mock 2 on 22 Nov 2026
+                     dict(id=f'bk-dscmk-sass-{i}', name=f'Mock {i} · SA Social Studies', group=f'Mock {i}', track='sa-social-studies', qn=160, mins=150, live=(i <= 3),   # Mock 2 on 22 Nov 2026; Mock 3 on 25 Nov 2026
                           # a student's request (via Anil, 17 Nov 2026): the five SA Social parts as separate tests, so Social content and
                           # methodology are separate parts (4th element = topics: the part takes only those topics of its subjects)
                           parts=[('gk', 'GK & Current Affairs', ['gk']), ('pie', 'Perspectives in Education', ['pie']),
