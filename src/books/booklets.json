@@ -1635,6 +1635,14 @@
    "name": "LearnWithAnil-Mission-Khaki-Mock-10-Mock-Test.pdf",
    "pages": 35
   },
+  "mksi11": {
+   "bytes": 1264202,
+   "file": "ts-police-si-mksi11-ffe0ec62b9.bin",
+   "key": "bk-ts-police-si-mksi11",
+   "mock": "mk-si-11",
+   "name": "LearnWithAnil-Mission-Khaki-Mock-11-Mock-Test.pdf",
+   "pages": 67
+  },
   "mksi2": {
    "bytes": 1240588,
    "file": "ts-police-si-mksi2-08a4346372.bin",
@@ -1700,22 +1708,22 @@
    "pages": 54
   },
   "s2022": {
-   "bytes": 1285937,
-   "file": "ts-police-si-s2022-c49d923cbd.bin",
+   "bytes": 1204774,
+   "file": "ts-police-si-s2022-e1ace7f150.bin",
    "key": "bk-ts-police-si-s2022",
    "name": "LearnWithAnil-TS-Police-SI-Prelims-2022-Preliminary-Written-Test-Question-Paper.pdf",
    "pages": 45
   },
   "s2023c": {
-   "bytes": 1833140,
-   "file": "ts-police-si-s2023c-be3497cd9d.bin",
+   "bytes": 1769057,
+   "file": "ts-police-si-s2023c-12159c0177.bin",
    "key": "bk-ts-police-si-s2023c",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-3-Final-Written-Exam-Arithmetic-Reasoning-Question-Paper.pdf",
-   "pages": 53
+   "pages": 52
   },
   "s2023d": {
-   "bytes": 970510,
-   "file": "ts-police-si-s2023d-f0f0a6fd78.bin",
+   "bytes": 917221,
+   "file": "ts-police-si-s2023d-9d7e010889.bin",
    "key": "bk-ts-police-si-s2023d",
    "name": "LearnWithAnil-TS-Police-SI-Mains-2023-Paper-4-Final-Written-Exam-General-Studies-Question-Paper.pdf",
    "pages": 43

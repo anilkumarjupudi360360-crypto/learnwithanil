@@ -587,7 +587,7 @@ II. Marriages are made in heaven before the couple even meet on earth.
 ~ The saying means that who marries whom is ultimately decided by a divine power, so I follows. II takes the proverb literally, as if weddings are actually performed in heaven before the couple meet, which the statement does not convey.
 
 Q 65 | rea | Logical Reasoning
-Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Given option
+Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Mark your option.
 Is the product xy an irrational number?
 I: x is an irrational number.
 II: y is an irrational number.
@@ -599,7 +599,7 @@ II: y is an irrational number.
 ~ Even with both statements, the product of two irrational numbers may be rational (√2 × √2 = 2) or irrational (√2 × √3 = √6), so the question cannot be answered.
 
 Q 66 | rea | Logical Reasoning
-Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Given option
+Directions: Decide whether the data provided in the two statements given under the question is sufficient to answer the question or not. Mark your option.
 What is the perimeter of the circle?
 I. The centre (0,0) of the circle is at a distance of 5 units from the point P (3, 4)
 II. The images of P with respect to both x-axis and y-axis lie on the circle
@@ -644,7 +644,7 @@ In case a Candidate satisfies all the above conditions, except
 I. (e) above, he must have 60% and above at X class and P.G degree in management
 II. (a) above, he must have minimum 2 years of work experience.
 If any information is not known, then such case will be referred to CEO.
-Mr. Y was a 1st class student throught his academic career and completed his 25th birth day on 2nd September 2017. Prior to applying for this post of manager, he worked as assistant manager from 1st July 2018 to 3rd August 2019. He had a diploma in management from IIM. Then Mr. Y
+Mr. Y was a 1st class student throughout his academic career and completed his 25th birth day on 2nd September 2017. Prior to applying for this post of manager, he worked as assistant manager from 1st July 2018 to 3rd August 2019. He had a diploma in management from IIM. Then Mr. Y
 (1) Can be appointed as manager
 (2) Can not be appointed as he is above 30 years of age
 (3) Can not be appointed as he does not have 2 years work experience
@@ -1237,7 +1237,7 @@ Arrange the following Bhakti leaders according to their year of Birth.
 Q 129 | ih | Modern India & Freedom Struggle
 Which one of the following statements is not correct about Raja Ram Mohan Roy ?
 (1) He condemned the idol worship and Brahmanical rituals.
-(2) He propagated Monotheism and stated that religion and divine worship mere personal matters of an individual and unjustly controlled by Priests.
+(2) He propagated Monotheism and stated that religion and divine worship were mere personal matters of an individual and were unjustly controlled by Priests.
 (3) To support his arguments, he depended upon Vedic and Puranic Literature.
 (4) He wrote a pamphlet 'Anusthan' prescribing the mode of worship to be followed in the Samaj.
 = 3
