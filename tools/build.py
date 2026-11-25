@@ -8305,10 +8305,10 @@ MOCK_PACKS = {
                           'was solved again by a separate checker. Your score, accuracy and topic-wise analysis come after each paper '
                           '(the real exam cuts one-third of a mark for a wrong answer).'],
                    mocks=[m for i in range(1, 11) for m in (
-                       dict(id=f'bk-g1mk-{i}a', name=f'Test {i} · Paper I (General Studies)', group=f'Test {i}', qn=120, mins=120, live=(i <= 3),   # Test 1 on 22 Nov 2026; Tests 2-3 on 24 Nov 2026
+                       dict(id=f'bk-g1mk-{i}a', name=f'Test {i} · Paper I (General Studies)', group=f'Test {i}', qn=120, mins=120, live=(i <= 4),   # Test 1 on 22 Nov 2026; Tests 2-3 on 24 Nov 2026; Test 4 on 25 Nov 2026
                             parts=[('ih', 'History & Culture', ['ih']), ('pol', 'Polity, Social Justice & IR', ['pol']),
                                    ('eco', 'Indian & AP Economy', ['eco']), ('geo', 'Geography', ['geo'])]),
-                       dict(id=f'bk-g1mk-{i}b', name=f'Test {i} · Paper II (General Aptitude)', group=f'Test {i}', qn=120, mins=120, live=(i <= 3),
+                       dict(id=f'bk-g1mk-{i}b', name=f'Test {i} · Paper II (General Aptitude)', group=f'Test {i}', qn=120, mins=120, live=(i <= 4),
                             parts=[('men', 'Mental Ability & Aptitude', ['men', 'apt']), ('sci', 'Science & Technology', ['sci']),
                                    ('cur', 'Current Affairs', ['cur'])]))]),
   # Anil, 8 Nov 2026: "start group-2 prelims test series ... suggest a name, no of exams ... add few exams"; "add info from our existing
@@ -8328,7 +8328,7 @@ MOCK_PACKS = {
                           'November 2026), each checked against official and newspaper sources.',
                           'Every question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis '
                           'come after each mock. Mock 1 is free: register once and take it.'],
-                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 6), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026, Mock 4 on 15 Nov 2026, Mocks 5-6 on 24 Nov 2026
+                   mocks=[dict(id=f'bk-g2mk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 8), free=(i == 1),   # Mocks 1-3 on 8 Nov 2026, Mock 4 on 15 Nov 2026, Mocks 5-6 on 24 Nov 2026, Mocks 7-8 on 25 Nov 2026
                                parts=[('ih', 'Indian History', ['ih']), ('geo', 'Geography', ['geo']), ('soc', 'Indian Society', ['soc']),
                                       ('cur', 'Current Affairs', ['cur']), ('men', 'Mental Ability', ['men'])]) for i in range(1, 11)]),
   # Anil, 8 Nov 2026: SBI PO and IBPS SO — original Learn with Anil mocks (no previous papers exist to publish; see BANK_SUBJECTS).
