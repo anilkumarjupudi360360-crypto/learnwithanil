@@ -547,7 +547,7 @@ async function startFlow(id){
 }
 function needCode(){
   const box = $("#buy"); box.scrollIntoView({behavior:"smooth", block:"center"}); setTimeout(()=>$("#code").focus(), 350);
-  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Get the ₹" + (CONF.pay ? CONF.pay.price : 249) + " All-in-One Pass to open every test (or enter the access code from an earlier purchase).";
+  const m=$("#unlockMsg"); m.className="msg"; m.textContent="Get the ₹" + (CONF.pay ? CONF.pay.price : 149) + " All-in-One Pass to open every test (or enter the access code from an earlier purchase).";
 }
 
 /* ---------- exam ---------- */
@@ -809,7 +809,7 @@ $("#unlockForm").addEventListener("submit", async e=>{
   catch(err){ m.className="msg err"; m.textContent="That code is not right. Check it on your access card (letters and numbers only)."; }
 });
 
-/* ---------- the ₹249 All-in-One Pass opens the series (26 Oct 2026): the payments script gives the access code to a phone with a valid pass ---------- */
+/* ---------- the ₹149 All-in-One Pass opens the series (26 Oct 2026): the payments script gives the access code to a phone with a valid pass ---------- */
 function showPdfPass(){ const c = getStr(CKEY), el = $("#pdfPass"); if(el) el.innerHTML = c ? `PDF password: <b class="mono">${esc(c.replace(/^(BAHU)(\w{4})(\w{4})$/, "$1-$2-$3"))}</b> (type it with the hyphens)` : ""; }
 function device(){ try{ return localStorage.getItem("lwa-device") || ""; }catch(_){ return ""; } }
 async function passUnlock(manual){

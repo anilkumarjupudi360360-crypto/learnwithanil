@@ -497,14 +497,14 @@ async def main():
         if 'Gandiva Group-I' not in g1m or '?buy=mock' in g1m: errors.append('appsc-group-1/mock-test.html: should show the Gandiva Group-I series in the All-in-One Pass')
         for _m in ('bk-g1mk-1a', 'bk-g1mk-1b'):
             if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-group-1', 'mk'))): errors.append(f'appsc-group-1/mk: sealed {_m} missing')
-        # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹249 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
+        # one All-in-One Pass for everything (Anil, 26 Oct 2026; ₹149 since 16 Nov 2026, so ₹45 must not show either): no page sells a mock pack, combo, Bahubali or a book separately
         for dp, _, fs in os.walk(SITE):
             for f in fs:
                 rel_ = os.path.relpath(os.path.join(dp, f), SITE)
                 if not f.endswith('.html') or _re.search(r'(^|/)(q|papers|subjects)/', rel_): continue   # question text can mention ₹ amounts
                 t = open(os.path.join(dp, f), encoding='utf-8', errors='ignore').read()
                 t = _re.sub(r'<p class="why"[^>]*>.*?</p>', '', t, flags=_re.S)   # sample-question explanations can mention ₹ amounts (e.g. RPF SI arithmetic)
-                for bad in ('₹149 All-in-One', 'Pay ₹149', 'Subscribe ₹149', '₹150', '₹45 All-in-One', '₹45 once', 'Subscribe ₹45', 'Pay ₹45', '₹199', '₹250 for', 'for ₹250', '₹250 once', '?buy=mock', '?buy=combo', 'myinstamojo.com/product', 'bought separately', 'sold separately'):
+                for bad in ('₹150', '₹45 All-in-One', '₹45 once', 'Subscribe ₹45', 'Pay ₹45', '₹199', '₹250 for', 'for ₹250', '₹250 once', '?buy=mock', '?buy=combo', 'myinstamojo.com/product', 'bought separately', 'sold separately'):
                     if bad in t: errors.append(f'{rel_}: still sells something separately ({bad})'); break
         bks = os.path.join(SITE, 'books')
         for f in (os.listdir(bks) if os.path.isdir(bks) else []):
@@ -514,7 +514,7 @@ async def main():
         if not (await pg.evaluate('location.pathname')).endswith('/quiz/'): errors.append('?sec=ari did not open a sectional test')
         await pg.goto(URL + 'ts-police-si/?buy=mock'); await pg.wait_for_timeout(500)
         pdt = await pg.inner_text('#payDlg') if await pg.evaluate('!!document.querySelector("#payDlg[open]")') else ''
-        if 'All-in-One Pass' not in pdt or 'Mission Khaki' not in pdt or '₹249' not in pdt or '₹150' in pdt: errors.append('?buy=mock (old link) did not open the ₹249 All-in-One Pass checkout that lists Mission Khaki')
+        if 'All-in-One Pass' not in pdt or 'Mission Khaki' not in pdt or '₹149' not in pdt or '₹150' in pdt: errors.append('?buy=mock (old link) did not open the ₹149 All-in-One Pass checkout that lists Mission Khaki')
         # site icon: the files exist and the pages point to them
         for f in ('favicon.ico', 'icon-192.png', 'apple-touch-icon.png', 'icon-512.png'):
             if not os.path.isfile(os.path.join(SITE, f)): errors.append(f'missing {f}')

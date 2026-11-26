@@ -24,7 +24,7 @@ function css(){if(document.getElementById("lwa-sa-css"))return;var st=document.c
 function share(e,w,done){ev(w+"_share");if(navigator.share&&mob){e.preventDefault();navigator.share({title:"Learn with Anil",text:T,url:U}).then(function(){done&&done()},function(){})}}
 function show(why){if(document.getElementById("lwa-sa"))return;css();var c0=document.getElementById("lwa-sc");if(c0)c0.remove();
 var d=document.createElement("div");d.id="lwa-sa";d.setAttribute("role","dialog");d.setAttribute("aria-modal","true");d.setAttribute("aria-labelledby","lwa-sa-h");
-d.innerHTML='<div class="b"><button class="x" aria-label="Close">&times;</button><div class="ty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" width="100%" role="img" aria-label="Cartoon student with folded hands saying thank you very much"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#FF9F6B"/></linearGradient></defs><rect width="400" height="230" rx="14" fill="url(#bg)"/><g fill="#fff" opacity=".55"><circle cx="60" cy="60" r="5"/><circle cx="340" cy="50" r="4"/><circle cx="320" cy="150" r="6"/><circle cx="75" cy="160" r="4"/></g><g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"><path d="M130 70l-14-8"/><path d="M270 70l14-8"/><path d="M125 100h-16"/><path d="M275 100h16"/></g><path d="M140 230c4-44 28-64 60-64s56 20 60 64z" fill="#1846C7"/><path d="M185 168l15 18 15-18" fill="#fff"/><circle cx="200" cy="100" r="44" fill="#C98B5E"/><path d="M156 96c0-30 20-46 44-46s44 16 44 46c-8-14-22-22-44-22s-36 8-44 22z" fill="#2B1B12"/><circle cx="156" cy="104" r="7" fill="#C98B5E"/><circle cx="244" cy="104" r="7" fill="#C98B5E"/><g fill="none" stroke="#2B1B12" stroke-width="3"><circle cx="183" cy="100" r="11"/><circle cx="217" cy="100" r="11"/><path d="M194 100h12"/></g><path d="M178 101q5-5 10 0M212 101q5-5 10 0" stroke="#2B1B12" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M186 122q14 12 28 0" stroke="#7A2E1A" stroke-width="4" fill="#fff" stroke-linecap="round"/><circle cx="172" cy="118" r="5" fill="#E9967A" opacity=".6"/><circle cx="228" cy="118" r="5" fill="#E9967A" opacity=".6"/><path d="M199 150c-3 0-6 3-7 6l-9 34c-1 6 1 11 4 14l8 8h5z" fill="#D99B6C" stroke="#7A4A2A" stroke-width="2.5" stroke-linejoin="round"/><path d="M201 150c3 0 6 3 7 6l9 34c1 6-1 11-4 14l-8 8h-5z" fill="#E2A97C" stroke="#7A4A2A" stroke-width="2.5" stroke-linejoin="round"/><g font-family="Impact, \'Anton\', \'Arial Black\', sans-serif" font-weight="900" text-anchor="middle" fill="#fff" stroke="#000" stroke-width="5" paint-order="stroke" letter-spacing="1"><text x="200" y="38" font-size="27">SHARED WITH 3 FRIENDS?</text><text x="200" y="214" font-size="30">THANK YOU VERY MUCH 🙏</text></g></svg></div><h2 id="lwa-sa-h">A small request from Team Anil 🙏</h2><p>Every one of the <b>27,700+ previous-year questions</b> on this site was collected from real exam papers, checked and explained one by one. On top of that, we have written <b>16,200+ mock test questions</b> and <b>17 study books (2,400+ pages)</b>. Bringing all this to you takes <b>a lot of time, energy and money</b>.</p><p>We keep the All-in-One Pass at <b>just ₹249</b> so that every student can afford it. But <b>our website is new</b>, and Google doesn’t show it to many students yet. More students joining is what lets us <b>keep the price low</b> and keep adding new exams and mock tests.</p><p>If this site has genuinely helped you, please <b>share it with your 3 best friends</b> who are preparing for exams. Students helping students is how we grow. 💙</p><div class="r"><a class="w" target="_blank" rel="noopener">Share on WhatsApp</a><button class="c">Copy link</button><button class="s">Skip</button></div></div>';
+d.innerHTML='<div class="b"><button class="x" aria-label="Close">&times;</button><div class="ty"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" width="100%" role="img" aria-label="Cartoon student with folded hands saying thank you very much"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#FF9F6B"/></linearGradient></defs><rect width="400" height="230" rx="14" fill="url(#bg)"/><g fill="#fff" opacity=".55"><circle cx="60" cy="60" r="5"/><circle cx="340" cy="50" r="4"/><circle cx="320" cy="150" r="6"/><circle cx="75" cy="160" r="4"/></g><g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"><path d="M130 70l-14-8"/><path d="M270 70l14-8"/><path d="M125 100h-16"/><path d="M275 100h16"/></g><path d="M140 230c4-44 28-64 60-64s56 20 60 64z" fill="#1846C7"/><path d="M185 168l15 18 15-18" fill="#fff"/><circle cx="200" cy="100" r="44" fill="#C98B5E"/><path d="M156 96c0-30 20-46 44-46s44 16 44 46c-8-14-22-22-44-22s-36 8-44 22z" fill="#2B1B12"/><circle cx="156" cy="104" r="7" fill="#C98B5E"/><circle cx="244" cy="104" r="7" fill="#C98B5E"/><g fill="none" stroke="#2B1B12" stroke-width="3"><circle cx="183" cy="100" r="11"/><circle cx="217" cy="100" r="11"/><path d="M194 100h12"/></g><path d="M178 101q5-5 10 0M212 101q5-5 10 0" stroke="#2B1B12" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M186 122q14 12 28 0" stroke="#7A2E1A" stroke-width="4" fill="#fff" stroke-linecap="round"/><circle cx="172" cy="118" r="5" fill="#E9967A" opacity=".6"/><circle cx="228" cy="118" r="5" fill="#E9967A" opacity=".6"/><path d="M199 150c-3 0-6 3-7 6l-9 34c-1 6 1 11 4 14l8 8h5z" fill="#D99B6C" stroke="#7A4A2A" stroke-width="2.5" stroke-linejoin="round"/><path d="M201 150c3 0 6 3 7 6l9 34c1 6-1 11-4 14l-8 8h-5z" fill="#E2A97C" stroke="#7A4A2A" stroke-width="2.5" stroke-linejoin="round"/><g font-family="Impact, \'Anton\', \'Arial Black\', sans-serif" font-weight="900" text-anchor="middle" fill="#fff" stroke="#000" stroke-width="5" paint-order="stroke" letter-spacing="1"><text x="200" y="38" font-size="27">SHARED WITH 3 FRIENDS?</text><text x="200" y="214" font-size="30">THANK YOU VERY MUCH 🙏</text></g></svg></div><h2 id="lwa-sa-h">A small request from Team Anil 🙏</h2><p>Every one of the <b>27,700+ previous-year questions</b> on this site was collected from real exam papers, checked and explained one by one. On top of that, we have written <b>16,200+ mock test questions</b> and <b>17 study books (2,400+ pages)</b>. Bringing all this to you takes <b>a lot of time, energy and money</b>.</p><p>We keep the All-in-One Pass at <b>just ₹149</b> so that every student can afford it. But <b>our website is new</b>, and Google doesn’t show it to many students yet. Without more students, we would have to raise the price, and that <b>goes against our principles</b>.</p><p>If this site has genuinely helped you, please <b>share it with your 3 best friends</b> who are preparing for exams. Students helping students is how we grow. 💙</p><div class="r"><a class="w" target="_blank" rel="noopener">Share on WhatsApp</a><button class="c">Copy link</button><button class="s">Skip</button></div></div>';
 d.querySelector(".w").href=WA;document.body.appendChild(d);ev("share_ask_shown",why);
 function close(n){if(n)ev(n);d.remove();document.removeEventListener("keydown",k)}function k(e){if(e.key==="Escape")close("share_ask_skip")}
 document.addEventListener("keydown",k);d.addEventListener("click",function(e){if(e.target===d)close("share_ask_skip")});
@@ -1017,7 +1017,7 @@ button.mbtn{cursor:pointer;font-family:inherit}
       <button type="button" data-act="lang" data-l="bn" lang="bn" aria-pressed="false" hidden>বাংলা</button>
       <button type="button" class="lang-soon" data-act="langsoon" title="Coming soon: മലയാളം" aria-label="More languages coming soon: മലയാളം">+1</button>
     </div>
-    <button type="button" class="nav-sub" id="navSub" data-act="navsub" title="One ₹249 payment opens every PYQ, mock test and book on the site for 12 months" hidden>Subscribe ₹249</button>
+    <button type="button" class="nav-sub" id="navSub" data-act="navsub" title="One ₹149 payment opens every PYQ, mock test and book on the site for 12 months" hidden>Subscribe ₹149</button>
   </div>
 </header>
 
@@ -1029,8 +1029,8 @@ button.mbtn{cursor:pointer;font-family:inherit}
       <a class="crumb" href="/">← All exams</a>
       <p class="eyebrow">APPSC · Forest Range Officer · A.P. Forest Service · Screening &amp; Mains, 2019–2025</p>
       <h1>APPSC Forest Range Officer (FRO) previous question papers <em>with answers.</em></h1>
-      <p>1182 questions from 8 official papers, answered from APPSC's final keys and explained, in English and Telugu. Practise by topic, take timed tests and revise your mistakes, with one ₹249 All-in-One Pass for every exam on the site.</p>
-      <p class="hero-l2"><span lang="te">ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — స్క్రీనింగ్ టెస్ట్ 2019, 2025; మెయిన్స్ 2020, 2023 జనరల్ స్టడీస్ &amp; మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), జనరల్ ఫారెస్ట్రీ-1, 2 (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹249 ఆల్-ఇన్-వన్ పాస్.</span></p>
+      <p>1182 questions from 8 official papers, answered from APPSC's final keys and explained, in English and Telugu. Practise by topic, take timed tests and revise your mistakes, with one ₹149 All-in-One Pass for every exam on the site.</p>
+      <p class="hero-l2"><span lang="te">ఏపీపీఎస్సీ ఫారెస్ట్ రేంజ్ ఆఫీసర్ (FRO) పాత ప్రశ్నాపత్రాలు సమాధానాలతో — స్క్రీనింగ్ టెస్ట్ 2019, 2025; మెయిన్స్ 2020, 2023 జనరల్ స్టడీస్ &amp; మెంటల్ ఎబిలిటీ (తెలుగు, ఇంగ్లీష్), జనరల్ ఫారెస్ట్రీ-1, 2 (ఇంగ్లీష్); అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.</span></p>
       <p class="hero-aka">Forest Range Officer (FRO) in the A.P. Forest Service, Andhra Pradesh Forest Department, recruited by the Andhra Pradesh Public Service Commission.</p>
     </div>
     <a class="mentor" href="/appsc-forest-range-officer/about/" style="color:inherit;text-decoration:none">
@@ -1039,7 +1039,7 @@ button.mbtn{cursor:pointer;font-family:inherit}
     </a>
   </div><p class="hero-cr">Photo: <a href="https://commons.wikimedia.org/wiki/File:Nallamala_forest_view_01.jpg" target="_blank" rel="noopener">Nallamala forest</a>, Dubbala Divya, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener license">CC BY-SA 4.0</a></p></section>
 
-  <section class="wrap section"><div class="ecounts"><div class="ecount"><b>1,182</b><span>Previous-year questions (PYQs) with answers</span></div></div><div class="etiles"><a class="etile fx" href="/appsc-forest-range-officer/pyqs.html"><span class="etile-hd eh1"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/></svg></span><span class="etile-k">01 · Previous papers</span></span><b>PYQs with answers</b><span class="etile-p">1,182 questions from 8 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 ₹249 once · every exam, mock &amp; book · 12 months</span><span class="etile-btn">Open the PYQs →</span></a><a class="etile fx" href="/appsc-forest-range-officer/mocks/"><span class="etile-hd eh2"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4M12 2v3"/></svg></span><span class="etile-k">02 · Mock tests</span></span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span><span class="etile-btn">See the mock tests →</span></a><a class="etile fx" href="/appsc-forest-range-officer/sectionals/"><span class="etile-hd eh3"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><span class="etile-k">03 · Sectional tests</span></span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 22 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 With the All-in-One Pass</span><span class="etile-btn">Practise a subject →</span></a><a class="etile fx" href="/appsc-forest-range-officer/mistakes/"><span class="etile-hd eh4"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span><span class="etile-k">04 · My Mistakes</span></span><b>Your mistakes book</b><span class="etile-p">Every question you get wrong in this exam is saved here, subject by subject. Practise them again and again; a question leaves the list once you get it right twice in a row.</span><span class="etile-price" data-mis>Empty for now · it fills up as you practise</span><span class="etile-btn">Open My Mistakes →</span></a><a class="etile fx" href="/appsc-fro-notification-2026.html"><span class="etile-hd eh5"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span><span class="etile-k">05 · Notification</span></span><b>APPSC FRO notification</b><span class="etile-p">Posts, eligibility, age, important dates, fee, exam pattern and syllabus, with links to the official notice. Updated as news comes in.</span><span class="etile-price">Latest news on this exam</span><span class="etile-btn">Read the notification →</span></a><a class="etile fx" href="/appsc-forest-range-officer/notes/" data-v="notes"><span class="etile-hd eh6"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span><span class="etile-k">06 · Books</span></span><b>Books for APPSC FRO</b><span class="etile-p">Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.</span><span class="etile-price">Coming soon</span><span class="etile-btn">Open →</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Forest Range Officer written examination</b><span class="ec-src">Applications 16 October to 12 November 2026 (Notification 16/2026, extended); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div></section>
+  <section class="wrap section"><div class="ecounts"><div class="ecount"><b>1,182</b><span>Previous-year questions (PYQs) with answers</span></div></div><div class="etiles"><a class="etile fx" href="/appsc-forest-range-officer/pyqs.html"><span class="etile-hd eh1"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6"/><path d="m9 16 2 2 4-4"/></svg></span><span class="etile-k">01 · Previous papers</span></span><b>PYQs with answers</b><span class="etile-p">1,182 questions from 8 official papers, with answers and explanations, as quizzes and timed tests, and as PDFs to download. One pass for every exam.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 ₹149 once · every exam, mock &amp; book · 12 months</span><span class="etile-btn">Open the PYQs →</span></a><a class="etile fx" href="/appsc-forest-range-officer/mocks/"><span class="etile-hd eh2"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4M12 2v3"/></svg></span><span class="etile-k">02 · Mock tests</span></span><b>Mock test pack</b><span class="etile-p">Full-length mock tests in the exam pattern. Until the pack opens, take the real previous papers as timed mocks.</span><span class="etile-price">Upcoming</span><span class="etile-btn">See the mock tests →</span></a><a class="etile fx" href="/appsc-forest-range-officer/sectionals/"><span class="etile-hd eh3"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><span class="etile-k">03 · Sectional tests</span></span><b>Subject-wise tests</b><span class="etile-p">PYQ sectionals in 22 subjects. Practise one section at a time with a timer.</span><span class="etile-price" data-paidtxt="✓ Unlocked · your All-in-One Pass is active">🔒 With the All-in-One Pass</span><span class="etile-btn">Practise a subject →</span></a><a class="etile fx" href="/appsc-forest-range-officer/mistakes/"><span class="etile-hd eh4"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span><span class="etile-k">04 · My Mistakes</span></span><b>Your mistakes book</b><span class="etile-p">Every question you get wrong in this exam is saved here, subject by subject. Practise them again and again; a question leaves the list once you get it right twice in a row.</span><span class="etile-price" data-mis>Empty for now · it fills up as you practise</span><span class="etile-btn">Open My Mistakes →</span></a><a class="etile fx" href="/appsc-fro-notification-2026.html"><span class="etile-hd eh5"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span><span class="etile-k">05 · Notification</span></span><b>APPSC FRO notification</b><span class="etile-p">Posts, eligibility, age, important dates, fee, exam pattern and syllabus, with links to the official notice. Updated as news comes in.</span><span class="etile-price">Latest news on this exam</span><span class="etile-btn">Read the notification →</span></a><a class="etile fx" href="/appsc-forest-range-officer/notes/" data-v="notes"><span class="etile-hd eh6"><span class="etile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></span><span class="etile-k">06 · Books</span></span><b>Books for APPSC FRO</b><span class="etile-p">Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.</span><span class="etile-price">Coming soon</span><span class="etile-btn">Open →</span></a></div><div class="card eclock eclock-tba"><div class="ec-l"><span class="ec-k">Exam clock</span><b>APPSC Forest Range Officer written examination</b><span class="ec-src">Applications 16 October to 12 November 2026 (Notification 16/2026, extended); APPSC has not announced the exam date yet.</span></div><div class="ec-r"><span class="ec-tba">Date not announced yet</span></div></div></section>
 
   <section class="wrap section" id="daily-card" hidden></section>
 
@@ -1059,7 +1059,7 @@ button.mbtn{cursor:pointer;font-family:inherit}
 
   <section class="wrap section">
     <div class="section-title"><h2>Frequently asked questions</h2></div>
-    <div class="card faq"><details><summary>Where can I get APPSC Forest Range Officer previous question papers with answers?</summary><p>This page has 1,182 questions from 8 APPSC Forest Range Officer (FRO) papers: the 2025 Screening Test (Notification 11/2024), Paper I General Studies &amp; Mental Ability, General Forestry I and General Forestry II of the 2023 Mains (Notification 21/2022) and the 2020 Mains (Notification 10/2018), and the 2019 Screening Test. Every answer is from APPSC&#x27;s final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹249 All-in-One Pass for every exam.</p></details><details><summary>What is the APPSC FRO exam pattern?</summary><p>Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies &amp; Mental Ability, Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. Shortlisted candidates take a walking test (men 25 km, women 16 km in 4 hours), a medical examination and a Computer Proficiency Test. Online applications run from 16 October to 12 November 2026 (extended from 5 November).</p></details><details><summary>What is in the General Forestry syllabus?</summary><p>General Forestry I: renewable and non-renewable natural resources, plant sciences, biodiversity and its conservation, soil science and geology, water and watershed management, silviculture of AP species, agroforestry, social and community forestry. General Forestry II: ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management and economic zoology, forest economics, policy, laws and administration, forest inventory, mensuration and remote sensing, environmental science, survey and engineering, and first aid.</p></details><details><summary>Who can apply for APPSC FRO?</summary><p>A bachelor&#x27;s degree in agriculture, botany, chemistry, computer applications or science, engineering (agriculture, chemical, civil, computer, electrical, electronics or mechanical), environmental science, forestry, geology, horticulture, mathematics, physics, statistics, veterinary science or zoology; age 18 to 30 years as on 1 July 2026 with the usual relaxations; height at least 163 cm for men and 150 cm for women. Pay scale ₹48,440 – ₹1,37,220.</p></details><details><summary>Are the questions in Telugu?</summary><p>The 2023 Mains Paper I (General Studies &amp; Mental Ability) and Section 1 of the 2025 Screening Test are here in English and Telugu, as APPSC printed them. The General Forestry papers, the 2020 Mains GS paper and the 2019 Screening Test are printed in English only, so they are here in English.</p></details><details><summary>Which questions are left out?</summary><p>Questions that APPSC ignored or deleted for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial keys.</p></details><details><summary>How many previous-year questions and mock test questions does Learn with Anil have for APPSC FRO?</summary><p>1,182 previous-year questions (PYQs) with answers. All of it is included in the one ₹249 All-in-One Pass.</p></details></div>
+    <div class="card faq"><details><summary>Where can I get APPSC Forest Range Officer previous question papers with answers?</summary><p>This page has 1,182 questions from 8 APPSC Forest Range Officer (FRO) papers: the 2025 Screening Test (Notification 11/2024), Paper I General Studies &amp; Mental Ability, General Forestry I and General Forestry II of the 2023 Mains (Notification 21/2022) and the 2020 Mains (Notification 10/2018), and the 2019 Screening Test. Every answer is from APPSC&#x27;s final key, and each question has a short explanation. Practise each paper as a quiz or a timed mock test with one ₹149 All-in-One Pass for every exam.</p></details><details><summary>What is the APPSC FRO exam pattern?</summary><p>Notification 16/2026 (5 posts) has a qualifying test in General English and General Telugu (100 marks) and four objective papers of 150 marks each: Paper I General Studies &amp; Mental Ability, Paper II Mathematics (SSC standard), Paper III General Forestry I and Paper IV General Forestry II, 600 marks in all, computer-based, with one-third of a mark deducted for each wrong answer. Shortlisted candidates take a walking test (men 25 km, women 16 km in 4 hours), a medical examination and a Computer Proficiency Test. Online applications run from 16 October to 12 November 2026 (extended from 5 November).</p></details><details><summary>What is in the General Forestry syllabus?</summary><p>General Forestry I: renewable and non-renewable natural resources, plant sciences, biodiversity and its conservation, soil science and geology, water and watershed management, silviculture of AP species, agroforestry, social and community forestry. General Forestry II: ecosystems and wildlife, forest protection and fire, forest utilization and NTFPs, animal management and economic zoology, forest economics, policy, laws and administration, forest inventory, mensuration and remote sensing, environmental science, survey and engineering, and first aid.</p></details><details><summary>Who can apply for APPSC FRO?</summary><p>A bachelor&#x27;s degree in agriculture, botany, chemistry, computer applications or science, engineering (agriculture, chemical, civil, computer, electrical, electronics or mechanical), environmental science, forestry, geology, horticulture, mathematics, physics, statistics, veterinary science or zoology; age 18 to 30 years as on 1 July 2026 with the usual relaxations; height at least 163 cm for men and 150 cm for women. Pay scale ₹48,440 – ₹1,37,220.</p></details><details><summary>Are the questions in Telugu?</summary><p>The 2023 Mains Paper I (General Studies &amp; Mental Ability) and Section 1 of the 2025 Screening Test are here in English and Telugu, as APPSC printed them. The General Forestry papers, the 2020 Mains GS paper and the 2019 Screening Test are printed in English only, so they are here in English.</p></details><details><summary>Which questions are left out?</summary><p>Questions that APPSC ignored or deleted for all candidates are left out. Where APPSC accepted two options, both are shown as correct. The 2025 Mains (Notification 11/2024) is not here yet, because APPSC has published only its initial keys.</p></details><details><summary>How many previous-year questions and mock test questions does Learn with Anil have for APPSC FRO?</summary><p>1,182 previous-year questions (PYQs) with answers. All of it is included in the one ₹149 All-in-One Pass.</p></details></div>
   </section>
 </div>
 
@@ -1081,7 +1081,7 @@ button.mbtn{cursor:pointer;font-family:inherit}
 </footer>
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="data/ap-fro-a8b719e9f2.js"></script>
+<script src="data/ap-fro-b8c6da869b.js"></script>
 <script>
 (function(){
 "use strict";
@@ -1230,12 +1230,12 @@ function passOK(kind){
   const a = PASSES.all||{};
   // paid All-in-One Pass (old free-trial dates no longer count), or free days earned by inviting friends (bonus, 3 Nov 2026)
   const pyq = (live(a.pyq) && !!a.paid) || live(a.bonus);
-  return kind==="pyq" ? pyq : (pyq || live((PASSES[PAYC.exam]||{}).mock));   // since 26 Oct 2026 the ₹249 All-in-One Pass opens every mock series too
+  return kind==="pyq" ? pyq : (pyq || live((PASSES[PAYC.exam]||{}).mock));   // since 26 Oct 2026 the ₹149 All-in-One Pass opens every mock series too
 }
 // PDF booklets, study books and other downloads (kept for ever) need the paid pass; invite free days open everything else
 const paidOK = ()=> !PAYC || !PAYC.on || (live((PASSES.all||{}).pyq) && !!(PASSES.all||{}).paid);
 const bonusOnly = ()=> !paidOK() && live((PASSES.all||{}).bonus);
-function needPaid(){ if(paidOK()) return false; if(bonusOnly()) toast("PDF downloads need the ₹" + (PAYC ? PAYC.pyq.price : 249) + " All-in-One Pass. Your free days cover online practice and tests."); openPay("pyq"); return true; }
+function needPaid(){ if(paidOK()) return false; if(bonusOnly()) toast("PDF downloads need the ₹" + (PAYC ? PAYC.pyq.price : 149) + " All-in-One Pass. Your free days cover online practice and tests."); openPay("pyq"); return true; }
 /* Anil, 28 Oct 2026: TS Police papers are free to attempt (DATA.pay.freePyq): every paper, practice and the question bank, with
    the answers and the score. Explanations (sealed, see exLoad), mocks from Mock 2, PDFs and the study tools stay in the All-in-One Pass. */
 const FREEPYQ = !!(PAYC && PAYC.freePyq);
@@ -1304,7 +1304,7 @@ function gateOK(v){ const g = GATE[v]; return !g || (g==="pyq" ? pyqOpen() : any
 function vLocked(v){
   // a registered phone whose pass is still being looked up (new phone, or bought on another device): don't flash the pay screen
   if(ST.phone && PAYC && PAYC.on && PAYC.api && !UI.passChecked) return `<div class="wrap view"><div class="boot chk" role="status"><span class="spin" aria-hidden="true"></span><span>Checking your All-in-One Pass…</span></div></div>`;
-  const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 249, a = PASSES.all || {};
+  const pyq = GATE[v]==="pyq", price = PAYC ? PAYC.pyq.price : 149, a = PASSES.all || {};
   const name = {practice:"Topic-wise quiz", bank:"Question bank", mistakes:"My Mistakes", smart:"My Mistakes", bookmarks:"Bookmarks", heatmap:"Memory heatmap"}[v];
   const body = pyq
     ? `The ${name.toLowerCase()} is part of the All-in-One Pass: every previous paper of every exam on Learn with Anil, with answers and explanations, practice quizzes, timed tests and all study tools. ₹${price} for 12 months.`
@@ -1333,8 +1333,8 @@ function mockKinds(m){   // "10 Tier-I + 3 Tier-II"
   const c = {}; m.mocks.forEach(x=>{ const k = x.name.replace(/\s*Mock\s*\d+$/,""); c[k] = (c[k]||0) + 1; });
   return Object.entries(c).filter(([k])=>k).map(([k,n])=>n+" "+k).join(" + ");   // "" when every mock is just "Mock N"
 }
-function payInfo(kind){   // Anil, 26 Oct 2026: one ₹249 All-in-One Pass for everything; mock packs and the combo are no longer sold on their own
-  return {name: "All-in-One Pass · all exams", price: PAYC ? PAYC.pyq.price : 249, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 249} for all exams`,
+function payInfo(kind){   // Anil, 26 Oct 2026: one ₹149 All-in-One Pass for everything; mock packs and the combo are no longer sold on their own
+  return {name: "All-in-One Pass · all exams", price: PAYC ? PAYC.pyq.price : 149, valid: "Valid for 12 months from the day you pay", btn: `Pay ₹${PAYC ? PAYC.pyq.price : 149} for all exams`,
       what: [`One payment for the whole website: the previous papers of every exam on Learn with Anil (${PAYC.pyq.exams || "all exams"}) and every exam added later, not just ${DATA.examShort || "this exam"}.`,
              "Every answer and explanation, practice quizzes and timed tests, PYQ sectionals, topic-wise quizzes and My Mistakes practice",
              "Every mock test series on the site: Mission Khaki (TS SI and Constable), Mission CGL, the Bahubali Group-II Mains tests, and new series as they come",
@@ -1345,8 +1345,8 @@ function payInfo(kind){   // Anil, 26 Oct 2026: one ₹249 All-in-One Pass for e
    back, or Instamojo is still confirming), the checkout opens again with a note that stays on screen, a Try again
    button and a WhatsApp link, instead of a message that disappears after a few seconds. */
 const PAY_NOTE = {
-  joined: {cls:"good", title:"You are registered. One last step:", body:`Pay ₹${PAYC ? PAYC.pyq.price : 249} for the All-in-One Pass. It opens every previous paper of every exam on the site, every mock test series and the study books, for 12 months.`,
-           l2:{te:`నమోదు పూర్తయింది. ఇప్పుడు ₹${PAYC ? PAYC.pyq.price : 249} చెల్లించి All-in-One Pass పొందండి.`, hi:`पंजीकरण हो गया। अब ₹${PAYC ? PAYC.pyq.price : 249} देकर All-in-One Pass लें।`}},
+  joined: {cls:"good", title:"You are registered. One last step:", body:`Pay ₹${PAYC ? PAYC.pyq.price : 149} for the All-in-One Pass. It opens every previous paper of every exam on the site, every mock test series and the study books, for 12 months.`,
+           l2:{te:`నమోదు పూర్తయింది. ఇప్పుడు ₹${PAYC ? PAYC.pyq.price : 149} చెల్లించి All-in-One Pass పొందండి.`, hi:`पंजीकरण हो गया। अब ₹${PAYC ? PAYC.pyq.price : 149} देकर All-in-One Pass लें।`}},
   failed: {cls:"bad", title:"Your payment didn't go through", body:"The pass was not added. UPI payments sometimes fail the first time, so please try again. If money was taken from your account, message us on WhatsApp with your registered phone number.",
            l2:{te:"పేమెంట్ పూర్తి కాలేదు. దయచేసి మళ్లీ ప్రయత్నించండి.", hi:"भुगतान पूरा नहीं हुआ। कृपया फिर से कोशिश करें।"}},
   back:   {cls:"warn", title:"Your payment isn't finished", body:"You came back before paying. You can try again now; it takes less than a minute by UPI.",
@@ -1541,7 +1541,7 @@ async function paperPdf(pid, btn){
   finally{ if(btn){ btn.disabled = false; btn.textContent = label; } }
 }
 
-/* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹249 All-in-One Pass since 26 Oct 2026) */
+/* Mission Khaki and other mock packs: the questions are served by the payments script only to a phone with a valid pass (the ₹149 All-in-One Pass since 26 Oct 2026) */
 const PART_NAME = {ari:"Arithmetic", rea:"Reasoning & Mental Ability", gs:"General Studies"};
 // Load one mock's questions into QMAP (the payments script gives the questions, or the key to the sealed file on this site).
 // Used to start a mock, and by My Mistakes to bring back mock questions whose copy is not on this device (misLoad).
@@ -1739,7 +1739,7 @@ function navAcct(){
   // Anil, 22 Nov 2026: no "👤 <name>" page link in the top bar. Logged-out visitors still see Login; a logged-in student
   // reaches My account from the footer and the About page.
   const a = $("#navAcct"); if(a){ a.textContent = "Login"; a.hidden = !!ST.name; }
-  const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || paidOK(); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 249); }
+  const s = $("#navSub"); if(s){ s.hidden = !(PAYC && PAYC.on) || paidOK(); s.textContent = "Subscribe ₹" + (PAYC ? PAYC.pyq.price : 149); }
 }
 const fmtDayY = d=> d ? new Date(d + "T12:00:00+05:30").toLocaleDateString(undefined, {day:"numeric", month:"long", year:"numeric"}) : "";
 async function loadMe(){
@@ -1748,7 +1748,7 @@ async function loadMe(){
   UI.meBusy = false; if(current==="account") render();
 }
 function vAccount(){
-  const price = PAYC ? PAYC.pyq.price : 249;
+  const price = PAYC ? PAYC.pyq.price : 149;
   if(!ST.name) return `<div class="wrap view">${head("My account", "Log in to Learn with Anil", "")}${gBlock()}
     <div class="card pad"><p style="margin:0 0 10px">${GID ? "No Google account? Register" : "Register"} once with your name, phone number and email${otpOn() ? ": we email you a 6-digit code to log you in" : ""}.</p><a class="btn ${GID ? "btn-secondary" : "btn-primary"}" href="/appsc-forest-range-officer/join/">Register with phone &amp; email</a></div></div>`;
   if(ST.session && !UI.me && PAYC && PAYC.api) loadMe();
@@ -1999,7 +1999,7 @@ function whyBox(w, wt, l){   // the explanation in the reader's language, with t
 function whyHTML(q){
   if(!q.w && q.wx){   // a paid explanation that is not loaded yet (see exLoad)
     const ok = passOK("pyq"); if(ok) exLoad();
-    const msg = !ok ? `The explanation comes with the ₹${PAYC ? PAYC.pyq.price : 249} All-in-One Pass.` : EXS===3 ? "Could not load the explanation. Check your connection and open this question again." : "Loading the explanation…";
+    const msg = !ok ? `The explanation comes with the ₹${PAYC ? PAYC.pyq.price : 149} All-in-One Pass.` : EXS===3 ? "Could not load the explanation. Check your connection and open this question again." : "Loading the explanation…";
     return `<div class="why"><h4>Explanation</h4><p class="muted">${esc(msg)}</p></div>` + videoBtn(q);
   }
   return whyBox(q.w, q.wt, P.lang===L2.code ? L2.code : "en") + videoBtn(q);
@@ -2020,7 +2020,7 @@ function reviewCard(q, n, opts={}){
   const body = mcq ? optsStatic(q, chosen, reveal) : "";
   const ansBlock = hideAnswer
     ? (pyqOpen() ? `<details class="ans"><summary>Show answer &amp; explanation</summary>${answerBox(q)}${whyHTML(q)}</details>`
-       : `<p class="muted" style="margin-top:10px">Answer &amp; explanation: <button class="btn btn-secondary btn-sm" type="button" data-act="unlockpyq">Unlock with the All-in-One Pass: ₹${PAYC ? PAYC.pyq.price : 249} for all exams</button></p>`)
+       : `<p class="muted" style="margin-top:10px">Answer &amp; explanation: <button class="btn btn-secondary btn-sm" type="button" data-act="unlockpyq">Unlock with the All-in-One Pass: ₹${PAYC ? PAYC.pyq.price : 149} for all exams</button></p>`)
     : (mcq ? "" : answerBox(q)) + whyHTML(q);
   return `<article class="card qcard">
     <div class="qhead"><div class="qmeta">${n!=null?`<span class="qnum">Q${n}</span>`:""}${tags(q)}</div><div class="qacts">${chalBtn(q)}${bmBtn(q.id)}</div></div>
@@ -2043,16 +2043,16 @@ function langJoin(xs, L){ if(xs.length<2) return xs.join(""); if(L==="te") retur
 const hubLang = ()=> ["hi","te"].includes(P.lang) ? P.lang : "en";
 const HUBT = {
   h1:{en:'Previous year question papers for <em>every government exam.</em>', hi:'हर सरकारी परीक्षा के <em>पिछले वर्षों के प्रश्न पत्र।</em>', te:'ప్రతి ప్రభుత్వ పరీక్షకు <em>మునుపటి సంవత్సరాల ప్రశ్నపత్రాలు.</em>'},
-  lede:{en:'Real question papers with official answers and short explanations, in {L}. One ₹249 All-in-One Pass for every exam.',
-        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, {L} में। सभी परीक्षाओं के लिए एक ₹249 ऑल-इन-वन पास।',
-        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, {L}లో. అన్ని పరీక్షలకు ఒకే ₹249 ఆల్-ఇన్-వన్ పాస్.'},
+  lede:{en:'Real question papers with official answers and short explanations, in {L}. One ₹149 All-in-One Pass for every exam.',
+        hi:'असली प्रश्न पत्र, आधिकारिक उत्तर और संक्षिप्त व्याख्या के साथ, {L} में। सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
+        te:'అసలు ప్రశ్నపత్రాలు, అధికారిక సమాధానాలు, చిన్న వివరణలతో, {L}లో. అన్ని పరీక్షలకు ఒకే ₹149 ఆల్-ఇన్-వన్ పాస్.'},
   find:{en:'Find your exam', hi:'अपनी परीक्षा खोजें', te:'మీ పరీక్షను వెతకండి'},
   today:{en:"Today's question", hi:'आज का प्रश्न', te:'నేటి ప్రశ్న'},
   mentor:{en:'Faculty &amp; mentor · 2.5 years of UPSC, APPSC &amp; TGPSC teaching and mentorship', hi:'शिक्षक और मार्गदर्शक · UPSC, APPSC और TGPSC अध्यापन व मार्गदर्शन में 2.5 वर्ष', te:'అధ్యాపకులు, మెంటార్ · UPSC, APPSC, TGPSC బోధన, మెంటార్‌షిప్‌లో 2.5 సంవత్సరాలు'},
   f1:{en:'Previous-year questions', hi:'पिछले वर्षों के प्रश्न', te:'గత సంవత్సరాల ప్రశ్నలు'},
   f2:{en:'Government exams on the list', hi:'सूची में सरकारी परीक्षाएँ', te:'జాబితాలో ప్రభుత్వ పరీక్షలు'},
   f3:{en:'Languages: {D} · coming soon: {S}', hi:'भाषाएँ: {D} · जल्द: {S}', te:'భాషలు: {D} · త్వరలో: {S}'},
-  f4:{en:'One ₹249 pass for everything: every PYQ, mock test and book · 12 months', hi:'सब कुछ के लिए एक ₹249 पास: हर PYQ, मॉक टेस्ट और किताब · 12 महीने', te:'అన్నింటికీ ఒకే ₹249 పాస్: ప్రతి PYQ, మాక్ టెస్ట్, పుస్తకం · 12 నెలలు'},
+  f4:{en:'One ₹149 pass for everything: every PYQ, mock test and book · 12 months', hi:'सब कुछ के लिए एक ₹149 पास: हर PYQ, मॉक टेस्ट और किताब · 12 महीने', te:'అన్నింటికీ ఒకే ₹149 పాస్: ప్రతి PYQ, మాక్ టెస్ట్, పుస్తకం · 12 నెలలు'},
   f5:{en:'Mock test questions in our test series', hi:'हमारी टेस्ट सीरीज़ में मॉक टेस्ट प्रश्न', te:'మా టెస్ట్ సిరీస్‌లో మాక్ టెస్ట్ ప్రశ్నలు'},
   g1:{en:'1 lakh', hi:'1 लाख', te:'1 లక్ష'},
   g2:{en:'Our goal: 1,00,000 PYQs under one roof', hi:'हमारा लक्ष्य: 1,00,000 PYQs एक ही जगह', te:'మా లక్ష్యం: 1,00,000 PYQs ఒకే చోట'},
@@ -2100,9 +2100,9 @@ const HUBT = {
        hi:'केवल एक बार निःशुल्क पंजीकरण, कोई पासवर्ड याद रखने की ज़रूरत नहीं। आपका अभ्यास और गलतियाँ आपके अपने फ़ोन में सहेजी जाती हैं।',
        te:'ఒక్కసారి ఉచితంగా రిజిస్టర్ అవ్వండి, పాస్‌వర్డ్ గుర్తుంచుకోవాల్సిన పని లేదు. మీ ప్రాక్టీస్, తప్పులు మీ సొంత ఫోన్‌లోనే సేవ్ అవుతాయి.'},
   fundT:{en:'Support Learn with Anil', hi:'Learn with Anil का साथ दें', te:'Learn with Anil‌కు తోడ్పడండి'},
-  fundP:{en:'My goal: 1 lakh PYQs of various government exams under one roof, for ₹249. I am building this site alone, to be student-friendly and to democratise learning, and I need help from funders: your support, in turn, helps me help the students.',
-         hi:'मेरा लक्ष्य: विभिन्न सरकारी परीक्षाओं के 1 लाख PYQs एक ही जगह, सिर्फ़ ₹249 में। मैं यह साइट अकेले बना रहा हूँ, ताकि यह विद्यार्थियों के अनुकूल हो और शिक्षा सबके लिए सुलभ हो। मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
-         te:'నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష PYQs ఒకే చోట, కేవలం ₹249కే. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ సైట్‌ను నిర్మిస్తున్నాను. నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'},
+  fundP:{en:'My goal: 1 lakh PYQs of various government exams under one roof, for ₹149. I am building this site alone, to be student-friendly and to democratise learning, and I need help from funders: your support, in turn, helps me help the students.',
+         hi:'मेरा लक्ष्य: विभिन्न सरकारी परीक्षाओं के 1 लाख PYQs एक ही जगह, सिर्फ़ ₹149 में। मैं यह साइट अकेले बना रहा हूँ, ताकि यह विद्यार्थियों के अनुकूल हो और शिक्षा सबके लिए सुलभ हो। मुझे फंड देने वालों की मदद चाहिए: आपका सहयोग मुझे विद्यार्थियों की मदद करने में सहायता करता है।',
+         te:'నా లక్ష్యం: వివిధ ప్రభుత్వ పరీక్షల 1 లక్ష PYQs ఒకే చోట, కేవలం ₹149కే. విద్యార్థులకు అనుకూలంగా, అందరికీ అందుబాటులో ఉండే చదువు కోసం నేను ఒక్కడినే ఈ సైట్‌ను నిర్మిస్తున్నాను. నాకు నిధులు ఇచ్చేవారి సహాయం కావాలి: మీ సహాయం, నేను విద్యార్థులకు సహాయం చేయడానికి తోడ్పడుతుంది.'},
   fundB:{en:'Fund this project', hi:'इस परियोजना को सहयोग दें', te:'ఈ ప్రాజెక్ట్‌కు నిధులు ఇవ్వండి'},
 };
 const HT = (k, L)=> { const t = HUBT[k]; if(!t) return ""; L = L || hubLang(); const x = t[L] || t.en;
@@ -2357,7 +2357,7 @@ function vPapers(){
   };
   return `<div class="wrap view">
     ${head("Previous papers", esc(DATA.examSeo||DATA.exam||"APPSC Group-II")+" previous year question papers", esc(DATA.papersNote||""))}
-    ${PAPERS.some(p=>p.bk) ? `<p class="card" style="padding:12px 14px;background:var(--good-soft,#E8F6EE)"><b>📄 Every paper as a PDF:</b> ${PAPERS.every(p=>!p.bk||p.bk.orig) ? (PAPERS.some(p=>p.bk&&p.bk.orig===2) ? "the original question paper, as printed, with the official answers marked on it" : "the original question booklet, as printed, with the official answer key at the end") : "exam-booklet style with the official answer key and explanations"}. Tap <b>Download PDF</b> under any paper${passOK("pyq") ? "." : " (with the ₹" + (PAYC ? PAYC.pyq.price : 249) + " All-in-One Pass)."}</p>` : ""}
+    ${PAPERS.some(p=>p.bk) ? `<p class="card" style="padding:12px 14px;background:var(--good-soft,#E8F6EE)"><b>📄 Every paper as a PDF:</b> ${PAPERS.every(p=>!p.bk||p.bk.orig) ? (PAPERS.some(p=>p.bk&&p.bk.orig===2) ? "the original question paper, as printed, with the official answers marked on it" : "the original question booklet, as printed, with the official answer key at the end") : "exam-booklet style with the official answer key and explanations"}. Tap <b>Download PDF</b> under any paper${passOK("pyq") ? "." : " (with the ₹" + (PAYC ? PAYC.pyq.price : 149) + " All-in-One Pass)."}</p>` : ""}
     ${years.map(y=>`<section class="section"><div class="section-title"><h2>${y}</h2></div><div class="papers">${PAPERS.filter(p=>p.year===y).map(card).join("")}</div></section>`).join("")}
   </div>`;
 }
@@ -2640,7 +2640,7 @@ function fillHappy(){   // the score card is drawn once per result and shown as 
 function resultExtra(r){
   if(r.source==="daily") return `<section class="card daily" style="margin-top:14px"><div><p class="eyebrow">Daily 10 · done today ✓</p><h2>${r.streak ? `🔥 ${r.streak}-day streak` : "Well done"}</h2><p>Come back tomorrow for 10 new questions and keep your streak going.</p></div><button class="btn btn-good" type="button" data-act="dshare">Share on WhatsApp</button></section>`;
   if(r.source==="try" && r.tryPaper && PMAP[r.tryPaper]){ const p = PMAP[r.tryPaper];
-    return `<section class="card trycta"><p><b>You tried 10 questions of ${esc(p.short||p.title)}.</b> ${pyqOpen() ? "Attempt the full paper now." : `Register once and get the ₹${PAYC ? PAYC.pyq.price : 249} All-in-One Pass to attempt all ${p.count} questions, with explanations, and every other paper.`}</p><button class="btn btn-primary" type="button" data-act="paperpractice" data-paper="${p.id}">${pyqOpen() ? "Attempt the full paper" : "Unlock the full paper"}</button></section>`; }
+    return `<section class="card trycta"><p><b>You tried 10 questions of ${esc(p.short||p.title)}.</b> ${pyqOpen() ? "Attempt the full paper now." : `Register once and get the ₹${PAYC ? PAYC.pyq.price : 149} All-in-One Pass to attempt all ${p.count} questions, with explanations, and every other paper.`}</p><button class="btn btn-primary" type="button" data-act="paperpractice" data-paper="${p.id}">${pyqOpen() ? "Attempt the full paper" : "Unlock the full paper"}</button></section>`; }
   return "";
 }
 function vResult(){
@@ -2850,7 +2850,7 @@ function vHeatmap(){
 
 /* ---------- about ---------- */
 function vJoin(){
-  const p = UI.pending, s = ST, fresh = !s.name, pay = PAYC && PAYC.on && !UI.pendingMock, price = PAYC ? PAYC.pyq.price : 249;
+  const p = UI.pending, s = ST, fresh = !s.name, pay = PAYC && PAYC.on && !UI.pendingMock, price = PAYC ? PAYC.pyq.price : 149;
   const intro = p || fresh
     ? (pay ? `Registration is only once. Next you pay ₹${price} for the All-in-One Pass, which opens every previous paper of every exam on the site for 12 months.` : "Registration is only once, and it is free.")
     : "Your test scores are saved with these details, so Anil can follow your progress and help you.";
@@ -2886,7 +2886,7 @@ function urgentNote(item){
 function noteCard(b){
   const te = b.lang==="te";
   const name = b.product_en || `${b.title_en}: Crisp Notes 2026-27 (${b.medium_en})`;
-  const ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 249;
+  const ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 149;
   const buy = b.dl
     ? (ok ? `<button class="btn btn-primary btn-sm" type="button" data-act="bookdl" data-id="${esc(b.id)}">⬇ Download PDF</button>`
           : `<button class="btn btn-primary btn-sm" type="button" data-act="unlockpyq">🔒 Unlock · ₹${price}</button>`)
@@ -2916,7 +2916,7 @@ function vNotes(){
   if(!N.length){ const x = esc(DATA.examSeo||DATA.examShort||DATA.exam||"this exam");
     return `<div class="wrap view">${head("Study material", `Books for ${x}`, "Learn with Anil books for this exam are being written. They will come with the same All-in-One Pass, at no extra cost.")}
     <div class="card">${urgentNote(`the Learn with Anil books for ${DATA.examSeo||DATA.examShort||DATA.exam||"my exam"}`)}<div class="row"><a class="btn btn-secondary" href="/appsc-forest-range-officer/">← Back to ${x}</a></div></div></div>`; }
-  const price = PAYC ? PAYC.pyq.price : 249, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
+  const price = PAYC ? PAYC.pyq.price : 149, ok = passOK("pyq"), allDl = N.length && N.every(b=>b.dl);
   // each exam shows only its own books (Anil, 16 Nov 2026), so the chips filter by language only; but the start page (APPSC Group-II)
   // lists every book (Anil, 17 Nov 2026), its own first, each tagged "For <exam>" (b.forx), with a chip per exam
   const ALLB = N.some(b=>b.forx), exs = ALLB ? [...new Set(N.flatMap(b=>b.forx||[]))] : [];
@@ -2955,7 +2955,7 @@ function p5Card(){
     <div class="kit-buy"><a class="btn btn-primary" href="${p5Link()}" target="_blank" rel="noopener">${WA_ICON} Message Anil on WhatsApp</a></div></div></article>`;
 }
 function vMains(){
-  const K = DATA.mains||[], ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 249;
+  const K = DATA.mains||[], ok = passOK("pyq"), price = PAYC ? PAYC.pyq.price : 149;
   const card = b=>`<article class="card kit"><img class="kit-cover" src="${esc(b.cover)}" alt="Paper ${esc(b.paper)} cover" width="120" height="170" loading="lazy"><div style="min-width:0">
     <p class="eyebrow">Paper ${esc(b.paper)}</p><h3>${esc(b.name)}</h3>
     <div class="pills"><span class="pill blue">${b.n} ${esc(b.unit)}</span><span class="pill">${b.parts} syllabus parts</span><span class="pill good">${b.practice} practice</span></div>
@@ -3000,7 +3000,7 @@ function openSample(id){
 }
 
 function vAbout(){   // redesigned 22 Nov 2026 (Anil: "remove course coordinator ... only keep as faculty and mentor ... add some design to this page")
-  const ig = DATA.instagram, price = PAYC ? PAYC.pyq.price : 249;
+  const ig = DATA.instagram, price = PAYC ? PAYC.pyq.price : 149;
   const PH_IC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
   const ML_IC = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>';
   const me = ST.name
@@ -3218,55 +3218,55 @@ function scoreText(r){ const n=r.ids.length; return `🎯 I scored ${r.c}/${n} (
    every PYQ with explanations, practice and mocks, not the PDF downloads; with a paid pass the days go on its end. */
 const ASK = {
   en:{h:"🎁 Share Learn with Anil, get free days",
-      p:"Learn with Anil keeps its fees very low (₹249 opens everything), so we spend nothing on ads. This community grows when students like you tell their friends. Share your own link: when a friend registers with it, you get 3 days of the All-in-One Pass free, and when a friend buys the pass, you get 1 month free.",
+      p:"Learn with Anil keeps its fees very low (₹149 opens everything), so we spend nothing on ads. This community grows when students like you tell their friends. Share your own link: when a friend registers with it, you get 3 days of the All-in-One Pass free, and when a friend buys the pass, you get 1 month free.",
       r:"🙏 Did this test help you? Share it and get free days",
       rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. Share your own link: every friend who registers with it gives you 3 free days of the All-in-One Pass, and every friend who buys the pass gives you 1 month free.",
       reg:"Register (free) to get your own link and earn free days.",
       wa:"Share on WhatsApp", site:"Share the website", more:"Other apps", copy:"Copy link", later:"Not now", never:"Don't ask again",
       yours:"Or challenge your friends with your score:", score:"Send my score", card:"Score card (image)",
       thanks:"Thank you! 🙏 Your free days are added when your friend registers with your link.", copied:"Link copied. Paste it in any group or chat. Your free days are added when a friend registers with it. 🙏",
-      inv:"🎁 Invite friends, get free days", invp:"Your own link. When a friend registers with it you get <b>3 days</b> of the All-in-One Pass free (for up to 10 friends); when a friend buys the ₹249 pass you get <b>1 month</b> free. If you already have the pass, the days are added to its end.",
+      inv:"🎁 Invite friends, get free days", invp:"Your own link. When a friend registers with it you get <b>3 days</b> of the All-in-One Pass free (for up to 10 friends); when a friend buys the ₹149 pass you get <b>1 month</b> free. If you already have the pass, the days are added to its end.",
       stat:"Friends joined: {j} · Friends who bought the pass: {b} · Free days earned: {d}", load:"Getting your link…",
       gh:"🎉 Great score! Show your friends", gp:"Your score card is ready. Send it to your exam group and challenge your friends to beat it.",
       gr:" Every friend who registers with your link gives you 3 free days of the All-in-One Pass.", gbtn:"Share my score card", gsave:"Save the image"},
   te:{h:"🎁 Learn with Anil షేర్ చేయండి, ఉచిత రోజులు పొందండి",
-      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹249తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌ను షేర్ చేయండి: దానితో ఒక స్నేహితుడు రిజిస్టర్ అయితే మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, స్నేహితుడు పాస్ కొంటే మీకు 1 నెల ఉచితం.",
+      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹149తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌ను షేర్ చేయండి: దానితో ఒక స్నేహితుడు రిజిస్టర్ అయితే మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, స్నేహితుడు పాస్ కొంటే మీకు 1 నెల ఉచితం.",
       r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? షేర్ చేసి ఉచిత రోజులు పొందండి",
       rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. మీ సొంత లింక్‌తో రిజిస్టర్ అయ్యే ప్రతి స్నేహితుడికి మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం, పాస్ కొనే ప్రతి స్నేహితుడికి 1 నెల ఉచితం.",
       reg:"మీ సొంత లింక్, ఉచిత రోజుల కోసం ముందుగా (ఉచితంగా) రిజిస్టర్ అవ్వండి.",
       wa:"WhatsApp లో షేర్ చేయండి", site:"వెబ్‌సైట్ షేర్ చేయండి", more:"ఇతర యాప్స్", copy:"లింక్ కాపీ", later:"ఇప్పుడు కాదు", never:"మళ్లీ అడగవద్దు",
       yours:"లేదా మీ స్కోర్‌తో స్నేహితులకు ఛాలెంజ్ చేయండి:", score:"నా స్కోర్ పంపండి", card:"స్కోర్ కార్డ్ (ఇమేజ్)",
       thanks:"ధన్యవాదాలు! 🙏 మీ స్నేహితుడు మీ లింక్‌తో రిజిస్టర్ అయినప్పుడు మీ ఉచిత రోజులు జతవుతాయి.", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. స్నేహితుడు రిజిస్టర్ అయితే మీకు ఉచిత రోజులు. 🙏",
-      inv:"🎁 స్నేహితులను ఆహ్వానించండి, ఉచిత రోజులు పొందండి", invp:"ఇది మీ సొంత లింక్. దీనితో స్నేహితుడు రిజిస్టర్ అయితే మీకు <b>3 రోజులు</b> ఆల్-ఇన్-వన్ పాస్ ఉచితం (10 మంది స్నేహితుల వరకు); స్నేహితుడు ₹249 పాస్ కొంటే మీకు <b>1 నెల</b> ఉచితం. మీకు ఇప్పటికే పాస్ ఉంటే, ఈ రోజులు దాని చివర కలుస్తాయి.",
+      inv:"🎁 స్నేహితులను ఆహ్వానించండి, ఉచిత రోజులు పొందండి", invp:"ఇది మీ సొంత లింక్. దీనితో స్నేహితుడు రిజిస్టర్ అయితే మీకు <b>3 రోజులు</b> ఆల్-ఇన్-వన్ పాస్ ఉచితం (10 మంది స్నేహితుల వరకు); స్నేహితుడు ₹149 పాస్ కొంటే మీకు <b>1 నెల</b> ఉచితం. మీకు ఇప్పటికే పాస్ ఉంటే, ఈ రోజులు దాని చివర కలుస్తాయి.",
       stat:"చేరిన స్నేహితులు: {j} · పాస్ కొన్నవారు: {b} · మీకు వచ్చిన ఉచిత రోజులు: {d}", load:"మీ లింక్ తెస్తున్నాం…",
       gh:"🎉 మంచి స్కోర్! మీ స్నేహితులకు చూపించండి", gp:"మీ స్కోర్ కార్డ్ సిద్ధంగా ఉంది. మీ పరీక్ష గ్రూప్‌కి పంపి, దీన్ని దాటమని స్నేహితులకు ఛాలెంజ్ చేయండి.",
       gr:" మీ లింక్‌తో రిజిస్టర్ అయ్యే ప్రతి స్నేహితుడికి మీకు 3 రోజులు ఆల్-ఇన్-వన్ పాస్ ఉచితం.", gbtn:"నా స్కోర్ కార్డ్ షేర్ చేయండి", gsave:"ఇమేజ్ సేవ్ చేయండి"},
   hi:{h:"🎁 Learn with Anil शेयर कीजिए, मुफ़्त दिन पाइए",
-      p:"Learn with Anil की फ़ीस बहुत कम है (₹249 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं करते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अपना लिंक शेयर कीजिए: उससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और दोस्त पास ख़रीदे तो 1 महीना मुफ़्त।",
+      p:"Learn with Anil की फ़ीस बहुत कम है (₹149 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं करते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अपना लिंक शेयर कीजिए: उससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और दोस्त पास ख़रीदे तो 1 महीना मुफ़्त।",
       r:"🙏 यह टेस्ट काम आया? शेयर कीजिए और मुफ़्त दिन पाइए",
       rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। आपके लिंक से रजिस्टर करने वाले हर दोस्त पर आपको ऑल-इन-वन पास 3 दिन मुफ़्त, और पास ख़रीदने वाले हर दोस्त पर 1 महीना मुफ़्त।",
       reg:"अपना लिंक और मुफ़्त दिन पाने के लिए पहले (मुफ़्त) रजिस्टर कीजिए।",
       wa:"WhatsApp पर शेयर करें", site:"वेबसाइट शेयर करें", more:"दूसरे ऐप", copy:"लिंक कॉपी करें", later:"अभी नहीं", never:"दोबारा न पूछें",
       yours:"या अपने स्कोर से दोस्तों को चुनौती दें:", score:"मेरा स्कोर भेजें", card:"स्कोर कार्ड (इमेज)",
       thanks:"धन्यवाद! 🙏 आपका दोस्त आपके लिंक से रजिस्टर करेगा तो आपके मुफ़्त दिन जुड़ जाएँगे।", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। दोस्त रजिस्टर करे तो आपको मुफ़्त दिन। 🙏",
-      inv:"🎁 दोस्तों को बुलाइए, मुफ़्त दिन पाइए", invp:"यह आपका अपना लिंक है। इससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास <b>3 दिन</b> मुफ़्त (10 दोस्तों तक); दोस्त ₹249 का पास ख़रीदे तो <b>1 महीना</b> मुफ़्त। अगर आपके पास पहले से पास है, तो ये दिन उसके आख़िर में जुड़ जाते हैं।",
+      inv:"🎁 दोस्तों को बुलाइए, मुफ़्त दिन पाइए", invp:"यह आपका अपना लिंक है। इससे कोई दोस्त रजिस्टर करे तो आपको ऑल-इन-वन पास <b>3 दिन</b> मुफ़्त (10 दोस्तों तक); दोस्त ₹149 का पास ख़रीदे तो <b>1 महीना</b> मुफ़्त। अगर आपके पास पहले से पास है, तो ये दिन उसके आख़िर में जुड़ जाते हैं।",
       stat:"जुड़े दोस्त: {j} · पास ख़रीदने वाले: {b} · मिले मुफ़्त दिन: {d}", load:"आपका लिंक ला रहे हैं…",
       gh:"🎉 शानदार स्कोर! दोस्तों को दिखाइए", gp:"आपका स्कोर कार्ड तैयार है। इसे अपने परीक्षा ग्रुप में भेजिए और दोस्तों को इसे पार करने की चुनौती दीजिए।",
       gr:" आपके लिंक से रजिस्टर करने वाले हर दोस्त पर आपको ऑल-इन-वन पास 3 दिन मुफ़्त।", gbtn:"मेरा स्कोर कार्ड शेयर करें", gsave:"इमेज सेव करें"}
 };
 const ASK0 = {   // the same cards before invite rewards are switched on (DATA.pay.ref): a plain request, no promise of free days
   en:{h:"🙏 A small request from Anil",
-      p:"Learn with Anil keeps its fees very low (₹249 opens everything), so we cannot spend money on ads. This community grows only when students like you tell their friends. If the site helps you, please share it with one friend who is preparing. It is completely optional.",
+      p:"Learn with Anil keeps its fees very low (₹149 opens everything), so we cannot spend money on ads. This community grows only when students like you tell their friends. If the site helps you, please share it with one friend who is preparing. It is completely optional.",
       r:"🙏 Did this test help you? Help one more aspirant",
       rp:"We keep fees low and spend nothing on ads, so students sharing with friends is how this community grows. If this test was useful, please share the website with one friend who is preparing. Completely optional.",
       reg:"", thanks:"Thank you for helping this community grow! 🙏", copied:"Link copied. Paste it in any group or chat. Thank you! 🙏"},
   te:{h:"🙏 అనిల్ నుంచి ఒక చిన్న విన్నపం",
-      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹249తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు తమ స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. సైట్ మీకు ఉపయోగపడితే, ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
+      p:"Learn with Anil ఫీజు చాలా తక్కువ (₹149తో అన్నీ), అందుకే ప్రకటనలకు డబ్బు ఖర్చు పెట్టలేం. మీలాంటి విద్యార్థులు తమ స్నేహితులకు చెబితేనే ఈ కమ్యూనిటీ పెరుగుతుంది. సైట్ మీకు ఉపయోగపడితే, ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
       r:"🙏 ఈ టెస్ట్ ఉపయోగపడిందా? ఇంకో అభ్యర్థికి సహాయం చేయండి",
       rp:"ఫీజు తక్కువ, ప్రకటనలకు ఖర్చు లేదు. విద్యార్థులు స్నేహితులతో పంచుకోవడం వల్లే ఈ కమ్యూనిటీ పెరుగుతుంది. ఈ టెస్ట్ మీకు ఉపయోగపడితే, వెబ్‌సైట్‌ను ప్రిపేర్ అవుతున్న ఒక్క స్నేహితుడికైనా షేర్ చేయండి. ఇది పూర్తిగా మీ ఇష్టం.",
       reg:"", thanks:"ఈ కమ్యూనిటీని పెంచుతున్నందుకు ధన్యవాదాలు! 🙏", copied:"లింక్ కాపీ అయింది. ఏ గ్రూప్‌లో లేదా చాట్‌లోనైనా పేస్ట్ చేయండి. ధన్యవాదాలు! 🙏"},
   hi:{h:"🙏 अनिल की ओर से एक छोटा-सा अनुरोध",
-      p:"Learn with Anil की फ़ीस बहुत कम है (₹249 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं कर पाते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अगर साइट आपके काम आए, तो तैयारी कर रहे किसी एक दोस्त के साथ ज़रूर शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
+      p:"Learn with Anil की फ़ीस बहुत कम है (₹149 में सब कुछ), इसलिए हम विज्ञापनों पर पैसा खर्च नहीं कर पाते। आप जैसे छात्र अपने दोस्तों को बताते हैं, तभी यह समुदाय बढ़ता है। अगर साइट आपके काम आए, तो तैयारी कर रहे किसी एक दोस्त के साथ ज़रूर शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
       r:"🙏 यह टेस्ट काम आया? एक और अभ्यर्थी की मदद कीजिए",
       rp:"फ़ीस कम है और विज्ञापनों पर कोई खर्च नहीं, इसलिए छात्रों का दोस्तों से शेयर करना ही इस समुदाय को बढ़ाता है। अगर यह टेस्ट आपके काम आया, तो वेबसाइट किसी एक दोस्त के साथ शेयर करें। यह पूरी तरह आपकी मर्ज़ी है।",
       reg:"", thanks:"इस समुदाय को बढ़ाने में मदद के लिए धन्यवाद! 🙏", copied:"लिंक कॉपी हो गया। किसी भी ग्रुप या चैट में पेस्ट करें। धन्यवाद! 🙏"}
@@ -3320,9 +3320,9 @@ function shareSiteURL(via){ return withRef(`${DATA.site}${askOnHub()? "/" : (PB|
 function shareSiteText(via){
   const s = askOnHub()? "" : (DATA.examShort||""), ex = s && /^(Group|CAPF|EPFO)/.test(s) ? (DATA.board||"")+" "+s : s, u = shareSiteURL(via);
   const l = askLang();
-  if(l==="te") return `Learn with Anil చూడండి 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS పోలీస్, SSC, UPSC పరీక్షల అసలైన పాత ప్రశ్నలు, సమాధానాలు, వివరణలతో, ఇంగ్లీష్ & తెలుగులో. మాక్ టెస్టులు, స్టడీ మెటీరియల్ కూడా. ఒక్క ₹249 పాస్‌తో 12 నెలల పాటు అన్నీ.\n👉 ${u}`;
-  if(l==="hi") return `Learn with Anil देखिए 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS पुलिस, SSC और UPSC परीक्षाओं के असली पिछले वर्षों के प्रश्न, उत्तर और व्याख्या के साथ, अंग्रेज़ी और हिंदी/तेलुगु में। मॉक टेस्ट और स्टडी मटीरियल भी। ₹249 का एक पास, 12 महीने सब कुछ।\n👉 ${u}`;
-  return `Have a look at Learn with Anil 📚${ex? ` (${ex})` : ""}: real previous-year questions of APPSC, TGPSC, TS Police, SSC and UPSC exams with answers and explanations, in English and Telugu/Hindi, plus mock tests and study material. One ₹249 pass opens everything for 12 months.\n👉 ${u}`;
+  if(l==="te") return `Learn with Anil చూడండి 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS పోలీస్, SSC, UPSC పరీక్షల అసలైన పాత ప్రశ్నలు, సమాధానాలు, వివరణలతో, ఇంగ్లీష్ & తెలుగులో. మాక్ టెస్టులు, స్టడీ మెటీరియల్ కూడా. ఒక్క ₹149 పాస్‌తో 12 నెలల పాటు అన్నీ.\n👉 ${u}`;
+  if(l==="hi") return `Learn with Anil देखिए 📚${ex? ` (${ex})` : ""}: APPSC, TGPSC, TS पुलिस, SSC और UPSC परीक्षाओं के असली पिछले वर्षों के प्रश्न, उत्तर और व्याख्या के साथ, अंग्रेज़ी और हिंदी/तेलुगु में। मॉक टेस्ट और स्टडी मटीरियल भी। ₹149 का एक पास, 12 महीने सब कुछ।\n👉 ${u}`;
+  return `Have a look at Learn with Anil 📚${ex? ` (${ex})` : ""}: real previous-year questions of APPSC, TGPSC, TS Police, SSC and UPSC exams with answers and explanations, in English and Telugu/Hindi, plus mock tests and study material. One ₹149 pass opens everything for 12 months.\n👉 ${u}`;
 }
 const ASKKEY = "lwa-share-v1";
 function askGet(){ try{ return JSON.parse(localStorage.getItem(ASKKEY)||"{}") || {}; }catch(_){ return {}; } }
@@ -3606,7 +3606,7 @@ function start(data){
     if(sp.get("payment_request_id") || sp.get("cf_order")){ syncLang(); render(); payReturn(sp); return; }   // back from Instamojo or Cashfree
     setTimeout(payResume, 500);   // back from Instamojo by the back button, without paying
     const bk = sp.get("buy");   // ?buy=pyq|mock|combo: open the pass checkout
-    // old links with buy=mock or buy=combo open the ₹249 All-in-One Pass checkout too (26 Oct 2026)
+    // old links with buy=mock or buy=combo open the ₹149 All-in-One Pass checkout too (26 Oct 2026)
     if(bk==="pyq" || bk==="mock" || bk==="combo"){ history.replaceState(null, "", location.pathname); syncLang(); render(); openPay(bk); return; }
     const pd = sp.get("pdf");   // ?pdf=<paper id>: that paper's booklet PDF (All-in-One Pass), from the PYQs page
     if(pd && (DATA.pdfs||{})[pd]){ history.replaceState(null, "", location.pathname); syncLang(); if(PAPERS.some(p=>p.id===pd)) go("papers"); else render(); setTimeout(()=>paperPdf(pd), 300); return; }
