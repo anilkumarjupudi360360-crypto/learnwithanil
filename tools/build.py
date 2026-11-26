@@ -8209,12 +8209,13 @@ MOCK_PACKS = {
                   title='Mission Khaki – Constable: TS Police Constable Prelims Test Series',
                   summary='10 full-length TS Police Constable Prelims mock tests, 200 questions each (English 25, Arithmetic 25, Reasoning 25, General Studies 125), '
                           'in English and Telugu, with an explanation for every answer. Each mock\'s sections can also be taken on their own as sectional tests.',
-                  about=['New questions written for this series in the Constable Prelims pattern, at Intermediate level, not copied from coaching material or previous papers.',
+                  about=['New questions written for this series in the Constable Prelims pattern, at Intermediate level, not copied from coaching material or previous papers. '
+                         'From Mock 8, every question is modelled on a real TSLPRB Constable question (Prelims 2016–2022 and Final Written Exams), freshly written, and its explanation names that question.',
                          'Each mock: English 25 (in English only, as in the real exam), Arithmetic 25, Reasoning & Mental Ability 25 and General Studies 125 '
                          '(history, Telangana, science, geography, polity, economy, society and current affairs), 3 hours.',
                          'Every other question is in English and Telugu, with an explanation in both. Your score, accuracy and topic-wise analysis come after each mock.',
                          'Mock 1 is free: register once and take it. Writing the SI exam too? Mission Khaki (SI) is included in the same ₹249 All-in-One Pass.'],
-                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 7), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 23 Nov 2026 (Anil)
+                  mocks=[dict(id=f'mk-pc-{i}', name=f'Mock {i}', qn=200, mins=180, live=(i <= 9), free=(i == 1),   # Mock 2 added 1 Nov 2026, Mock 3 on 3 Nov 2026, Mock 4 on 8 Nov 2026, Mock 5 on 15 Nov 2026, Mocks 6-7 on 23 Nov 2026, Mocks 8-9 (PYQ-based) on 26 Nov 2026 (Anil)
                               parts=[('eng', 'English', ['eng']), ('ari', 'Arithmetic', ['ari']), ('rea', 'Reasoning', ['rea']),
                                      ('gs', 'General Studies', ['ih', 'tg', 'soc', 'sci', 'eco', 'geo', 'pol', 'cur'])]) for i in range(1, 11)]),
   # Anil, 22 Nov 2026: "use tg SI & constable questions to....start a test series for ap SI & Constable....and add questions from exiting
