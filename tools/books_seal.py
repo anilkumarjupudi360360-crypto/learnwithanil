@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Seal the paid study books (src/notes.json) so they can be downloaded only with the ₹149 All-in-One Pass.
+"""Seal the paid study books (src/notes.json) so they can be downloaded only with the ₹249 All-in-One Pass.
 
-Anil, 26 Oct 2026: "one ₹149 = everything" — the All-in-One Pass now includes every mock series and the books. The book PDFs are
+Anil, 26 Oct 2026: "one ₹249 = everything" — the All-in-One Pass now includes every mock series and the books. The book PDFs are
 paid content, so they are never committed in readable form. This script encrypts each one with its own random
 AES-256-GCM key (additional data = the key id "bk-<book id>", the same scheme as the sealed mocks) and writes only
 the encrypted file to src/books/. build.py copies src/books/*.bin to /books/ on the site (robots.txt keeps search

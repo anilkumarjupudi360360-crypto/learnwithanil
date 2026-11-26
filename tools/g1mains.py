@@ -4,7 +4,7 @@ Anil: "add group-1 PYQs mains questions and answers into website ... in group-1 
 tile add pyqs year wise and subject wise". Papers II, III and IV of the 2020, 2023 and 2025 Mains, 270 questions; Anil (1 Nov
 2026): "ok do for paper 5...and only questions for essay": Paper V (90 questions, with answers) and Paper I (27 essay topics,
 questions only, no model essays). The questions are public (crawlable pages); the model answers, written by Learn with Anil,
-are in the ₹149 All-in-One Pass, except the free ones: every answer of the 2020 papers and Q1(a) and Q1(b) of every other paper
+are in the ₹249 All-in-One Pass, except the free ones: every answer of the 2020 papers and Q1(a) and Q1(b) of every other paper
 (Anil, 2 Nov 2026: free oldest year as a sample to share; the paid answers are also written into the page behind the lock and
 marked as paid content for Google, isAccessibleForFree false + cssSelector .pw, so Google can read and rank them).
 

@@ -2,7 +2,7 @@
  * Learn with Anil — passes and payments (Google Apps Script; its data lives in the private "Learn with Anil – Passes" spreadsheet).
  *
  * Passes
- *  - PYQ Pass, shown on the site as the "All-in-One Pass" (₹149 since 16 Nov 2026, Anil: "ok rise to 149"; ₹45 from 26 Oct to
+ *  - PYQ Pass, shown on the site as the "All-in-One Pass" (₹249 since 26 Nov 2026, Anil: "increase the website rate to 249"; ₹149 from 16 Nov 2026, Anil: "ok rise to 149"; ₹45 from 26 Oct to
  *    16 Nov 2026): EVERYTHING on the website for 12 months from the day of payment (Anil, 26 Oct 2026: "one ₹45 =
  *    everything"): every previous paper of every exam (including exams added later), every mock test series
  *    (Mission Khaki SI and Constable, Mission CGL, Bahubali, and later series) and the study books. Stored with exam = 'all'.
@@ -45,8 +45,8 @@
  */
 
 const SITE = 'https://learnwithanil.in/';
-const PYQ = {price: 149, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
-// "Link my payment" accepts any genuine pass payment, including ₹45 ones made before the price went to ₹149 on 16 Nov 2026.
+const PYQ = {price: 249, months: 12, purpose: 'PYQ Pass - All Exams (1 yr)'};   // Instamojo allows 30 characters
+// "Link my payment" accepts any genuine pass payment, including ₹45 ones made before the price went to ₹149 on 16 Nov 2026 and ₹149 ones made before ₹249 on 26 Nov 2026.
 const PYQ_MIN_CLAIM = 45;
 const TRIAL_DAYS = 0;   // free trial switched off (Anil, 23 Oct 2026: every PYQ needs the paid pass). Was 3.
 const MOCKS = {   // exam id: that exam's mock series (old price and checkout name, last day an old mock pass is valid or months

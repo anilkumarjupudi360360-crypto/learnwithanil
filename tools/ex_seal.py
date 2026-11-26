@@ -3,7 +3,7 @@
 
 Every question, its options and its correct answer stay public (question, paper and subject pages, and the app data),
 and so do the explanations of the free sample (build.sample_ids: the first SAMPLE_N questions of each paper). The other
-explanations are what the ₹149 All-in-One Pass sells, but until now they were in the public app data file
+explanations are what the ₹249 All-in-One Pass sells, but until now they were in the public app data file
 (/<exam>/data/<key>-<hash>.js), readable by anyone who opened it. This script puts them, one bundle per exam, in a file
 encrypted with AES-256-GCM (additional data = the key id "bk-ex-<exam id>", the same scheme as the sealed books and
 booklets) and writes:
