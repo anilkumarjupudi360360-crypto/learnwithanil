@@ -8452,7 +8452,7 @@ MOCK_PACKS = {
                           'real exam (where a wrong answer costs ¼ mark, so practise skipping blind guesses).',
                           'Every question and every explanation is in Marathi and English. Your score, accuracy and topic-wise analysis come '
                           'after each mock.'],
-                   mocks=[dict(id=f'bk-mgcmk-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i <= 3),   # Mock 1 on 16 Nov 2026; Mocks 2-3 (PYQ-based) on 22 Nov 2026
+                   mocks=[dict(id=f'bk-mgcmk-{i}', name=f'Mock {i}', qn=100, mins=60, live=(i <= 5),   # Mock 1 on 16 Nov 2026; Mocks 2-3 (PYQ-based) on 22 Nov 2026; Mocks 4-5 on 26 Nov 2026
                                parts=[('his', 'History', ['his']), ('geo', 'Geography & Environment', ['geo']),
                                       ('pol', 'Indian Constitution & Polity', ['pol']), ('eco', 'Economy', ['eco']),
                                       ('sci', 'General Science', ['sci']), ('cur', 'Current Affairs', ['cur']),
