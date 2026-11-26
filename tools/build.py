@@ -8654,6 +8654,37 @@ MOCK_PACKS = {
                                         ('chs', 'Chassis & Transmission', ['chs']),
                                         ('thm', 'Thermodynamics, Mechanics & Materials', ['thm', 'mec', 'mfg', 'flu']),
                                         ('ele', 'Auto Electricals, Alternative Fuels & Testing', ['ael', 'emv', 'mva'])]) for i in range(1, 11)]),
+  # Anil, 26 Nov 2026 (21:32 IST): "pls start a test series for AP FRo and add one test". Notification 16/2026 has no screening test:
+  # one main exam (qualifying English & Telugu; Paper I GS & MA, II Mathematics, III General Forestry-I, IV General Forestry-II, 150 Qs /
+  # 150 min each, 1/3 negative). He chose "Both forestry papers" (each mock = GF-I + GF-II) and the name "Nallamala FRO". PYQ-based (his
+  # standing rule): every question is new but modelled on one APPSC FRO forestry question (Mains 2020/2023 GF-I & II, Screening 2025), same
+  # topic and format, a different fact; its explanation names that PYQ. GF-I layout nrs 1-20, pls 21-56, bdc 57-76, ssg 77-96, wsm 97-114,
+  # slv 115-150; GF-II ecw 1-18, fpt 19-32, fut 33-46, anm 47-76, fel 77-96, fim 97-118, ens 119-134, fse 135-150. 10 writer + 10
+  # independent blind-checker helper agents. Private source /home/claude/nlm; ids start with "bk-" (any paid All-in-One Pass holder; no
+  # payments-script change). Sealed files: src/appsc-fro-mocks/.
+  'appsc-fro': dict(id='bk-nlmk', name='Nallamala FRO', price=149, src='appsc-fro-mocks', dir='appsc-forest-range-officer', langs='English',
+                    title='Nallamala FRO – APPSC Forest Range Officer General Forestry-I & II Mock Test Series',
+                    summary='10 full-length mock tests for APPSC Forest Range Officer, each with Paper III General Forestry-I and Paper IV General Forestry-II '
+                            '(150 questions in 150 minutes each, as in the exam), with an explanation for every answer. Each part of the syllabus can also be '
+                            'taken on its own as a sectional test.',
+                    about=['Built on APPSC\'s own FRO forestry papers (Mains 2020 and 2023 General Forestry-I and II, and the forestry section of the 2025 '
+                           'Screening Test): every question is new, but each one tests the same topic in the same style as a question APPSC has asked, and its '
+                           'explanation names that previous question. The real papers themselves are on the previous-papers page, in the same pass.',
+                           'Notification 16/2026 has no screening test: one main examination of four papers. Each mock gives you both forestry papers. '
+                           'General Forestry-I: natural resources 20, plant sciences 36, biodiversity 20, soil science and geology 20, water and watershed '
+                           'management 18, silviculture and agroforestry 36. General Forestry-II: ecosystems and wildlife 18, forest protection 14, forest '
+                           'utilization 14, animal management and economic zoology 30, forest economics, policy and law 20, inventory, mensuration and remote '
+                           'sensing 22, environmental science 16, survey, engineering and first aid 16.',
+                           'Direct, fill-in-the-blank, match-the-list, statement and assertion–reason questions at degree level, in English as APPSC sets these '
+                           'papers, with Andhra Pradesh forest types, species and protected areas. Your score, accuracy and topic-wise analysis come after each '
+                           'paper. In the real exam a wrong answer costs one-third of a mark, so practise skipping blind guesses.'],
+                    mocks=[m for i in range(1, 11) for m in (
+                        dict(id=f'bk-nlmk-{i}a', name=f'Mock {i} · General Forestry-I', group=f'Mock {i}', qn=150, mins=150, live=(i == 1),   # Mock 1 on 26-27 Nov 2026
+                             parts=[('res', 'Natural Resources & Biodiversity', ['nrs', 'bdc']), ('pls', 'Plant Sciences', ['pls']),
+                                    ('soil', 'Soil, Geology & Watershed', ['ssg', 'wsm']), ('slv', 'Silviculture & Agroforestry', ['slv'])]),
+                        dict(id=f'bk-nlmk-{i}b', name=f'Mock {i} · General Forestry-II', group=f'Mock {i}', qn=150, mins=150, live=(i == 1),
+                             parts=[('wld', 'Ecosystems, Wildlife & Protection', ['ecw', 'fpt']), ('utl', 'Utilization, Animals & Zoology', ['fut', 'anm']),
+                                    ('law', 'Economics, Policy, Law & Mensuration', ['fel', 'fim']), ('env', 'Environment, Survey & First Aid', ['ens', 'fse'])]))]),
   # Anil, 22 Nov 2026: "pls start mock test series for gujarat exam...and 2 tests". Chose the name "Girnar CCE", new questions on GSSSB's
   # PYQ topics (his standing rule of 22 Nov 2026: mock questions must be based on the exam's PYQs: every question is modelled on a question
   # type of GSSSB's CCE 2024 papers on this site, with new numbers and content) and writer + independent blind-checker helper agents.

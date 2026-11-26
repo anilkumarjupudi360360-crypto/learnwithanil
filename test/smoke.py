@@ -487,6 +487,10 @@ async def main():
         amv = open(os.path.join(SITE, 'appsc-amvi', 'mock-test.html'), encoding='utf-8').read()   # Chakra AMVI (APPSC AMVI Paper II), live since 22 Nov 2026
         if 'Chakra AMVI' not in amv or '?buy=mock' in amv: errors.append('appsc-amvi/mock-test.html: should show the Chakra AMVI series in the All-in-One Pass')
         if not any(f.startswith('bk-amvimk-1-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-amvi', 'mk'))): errors.append('appsc-amvi/mk: sealed bk-amvimk-1 missing')
+        fro = open(os.path.join(SITE, 'appsc-forest-range-officer', 'mock-test.html'), encoding='utf-8').read()   # Nallamala FRO (APPSC FRO General Forestry I & II), live since 27 Nov 2026
+        if 'Nallamala FRO' not in fro or '?buy=mock' in fro: errors.append('appsc-forest-range-officer/mock-test.html: should show the Nallamala FRO series in the All-in-One Pass')
+        for _m in ('bk-nlmk-1a', 'bk-nlmk-1b'):
+            if not any(f.startswith(_m + '-') and f.endswith('.bin') for f in os.listdir(os.path.join(SITE, 'appsc-forest-range-officer', 'mk'))): errors.append(f'appsc-forest-range-officer/mk: sealed {_m} missing')
         for _d, _ids in (('ap-police-si', ('bk-apsimk-1a', 'bk-apsimk-1b')), ('ap-police-constable', ('bk-appcmk-1',))):   # Mission Khaki AP, live since 22 Nov 2026 (Mock 1 free)
             _t = open(os.path.join(SITE, _d, 'mock-test.html'), encoding='utf-8').read()
             if 'Mission Khaki AP' not in _t or '?buy=mock' in _t: errors.append(f'{_d}/mock-test.html: should show the Mission Khaki AP series in the All-in-One Pass')

@@ -524,6 +524,22 @@
    "key": "bk-appsc-fro-f2025s",
    "name": "LearnWithAnil-APPSC-FRO-Screening-Test-2025-Question-Paper.pdf",
    "pages": 36
+  },
+  "nlmk1a": {
+   "bytes": 493696,
+   "file": "appsc-fro-nlmk1a-0563968037.bin",
+   "key": "bk-appsc-fro-nlmk1a",
+   "mock": "bk-nlmk-1a",
+   "name": "LearnWithAnil-Nallamala-FRO-Mock-1-General-Forestry-I-Mock-Test.pdf",
+   "pages": 30
+  },
+  "nlmk1b": {
+   "bytes": 500933,
+   "file": "appsc-fro-nlmk1b-be794e008f.bin",
+   "key": "bk-appsc-fro-nlmk1b",
+   "mock": "bk-nlmk-1b",
+   "name": "LearnWithAnil-Nallamala-FRO-Mock-1-General-Forestry-II-Mock-Test.pdf",
+   "pages": 31
   }
  },
  "appsc-group-1": {
