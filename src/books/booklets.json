@@ -1891,6 +1891,14 @@
    "mock": "bk-epfomk-4",
    "name": "LearnWithAnil-Sankalpa-EPFO-Mock-4-Mock-Test.pdf",
    "pages": 82
+  },
+  "epfomk5": {
+   "bytes": 1604431,
+   "file": "upsc-epfo-epfomk5-5f97360bb4.bin",
+   "key": "bk-upsc-epfo-epfomk5",
+   "mock": "bk-epfomk-5",
+   "name": "LearnWithAnil-Sankalpa-EPFO-Mock-5-Mock-Test.pdf",
+   "pages": 79
   }
  },
  "upsssc-inter-level": {

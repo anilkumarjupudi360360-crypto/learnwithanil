@@ -8467,7 +8467,7 @@ MOCK_PACKS = {
                     # as three 50-question tests in their own box (extra=True: not counted as full-length mocks). Source /home/claude/epca/tools/tests.py.
                     tracks=[('full', 'Full-length mocks · 120 questions · 2 hours'), ('current-affairs', 'Current Affairs tests · 50 questions · 40 minutes')],
                     title='Sankalpa EPFO – UPSC EPFO APFC Mock Test Series 2026',
-                    summary='10 full-length UPSC EPFO APFC mock tests in the real Recruitment Test pattern, 120 questions in 2 hours, in English and Hindi, '
+                    summary='11 full-length UPSC EPFO APFC mock tests in the real Recruitment Test pattern, 120 questions in 2 hours, in English and Hindi, '
                             'with an explanation for every answer. Every subject can also be taken on its own as a sectional test.',
                     about=['Built on UPSC\'s own EPFO papers: from Mock 2 on, every question is modelled on a question UPSC actually asked in its EPFO '
                            'papers (2017–2025), on the same topic and in the same style (statement, "how many", match-the-list and chronology '
@@ -8483,12 +8483,12 @@ MOCK_PACKS = {
                            'Current Affairs tests: the 150 practice questions of our EPFO Current Affairs 2026 book (November 2025 to November 2026: '
                            'schemes, labour and social security, economy, international, reports, awards and sports, science and environment) as three '
                            'timed tests of 50 questions, in English, each chapter also as a short sectional.'],
-                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', track='full', qn=120, mins=120, live=(i <= 4),   # Mock 1 on 16 Nov 2026; Mocks 2-4 (PYQ-based, Anil 22 Nov 2026) from 22 Nov 2026
+                    mocks=[dict(id=f'bk-epfomk-{i}', name=f'Mock {i}', track='full', qn=120, mins=120, live=(i <= 5),   # Mock 1 on 16 Nov 2026; Mocks 2-4 (PYQ-based, Anil 22 Nov 2026) from 22 Nov 2026; Mock 5 on 26 Nov 2026 (Anil: 'make EPFO tests 14' -> 11 full mocks + 3 CA tests)
                                 parts=[('eng', 'General English', ['eng']), ('ih', 'History & Freedom Struggle', ['ih']),
                                        ('cur', 'Current Events', ['cur']), ('pol', 'Indian Polity', ['pol']), ('eco', 'Indian Economy', ['eco']),
                                        ('acc', 'Accounting Principles', ['acc']), ('lab', 'Industrial Relations & Labour Laws', ['lab']),
                                        ('ss', 'Social Security', ['ss']), ('sci', 'General Science & Computers', ['sci']),
-                                       ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 11)]
+                                       ('qa', 'Quantitative Aptitude', ['qa'])]) for i in range(1, 12)]
                          + [dict(id=f'bk-epfoca-{i}', name=f'Current Affairs Test {i}', group=f'Current Affairs Test {i}', track='current-affairs', extra=True,
                                  qn=50, mins=40, live=True,   # 17 Nov 2026
                                  parts=[('ca1', 'Schemes', ['cur'], ['Schemes & Development']), ('ca2', 'Labour & Social Security', ['cur'], ['Labour & Social Security News']), ('ca3', 'Economy', ['cur'], ['Economy News']), ('ca4', 'International', ['cur'], ['International']), ('ca5', 'Reports & Indices', ['cur'], ['Reports & Indices']), ('ca6', 'Awards, Sports & Persons', ['cur'], ['Awards, Sports & Persons']), ('ca7', 'Science, Defence & Environment', ['cur'], ['Science, Defence & Environment'])]) for i in range(1, 4)]),
