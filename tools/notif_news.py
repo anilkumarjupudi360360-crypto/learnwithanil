@@ -218,6 +218,46 @@ NEW = {
       ('Is there negative marking in UPSC CAPF?', 'Yes, one-third of the question\'s marks in Paper I (objective). Paper II is descriptive.'),
       ('Can women apply for UPSC CAPF AC?', 'Yes. Women are eligible and pay no fee.'),
     ]),
+  'upsc-cds-2027-notification.html': dict(
+    exam='upsc-cds', board='UPSC', site='upsc.gov.in', crumb='CDS (I) 2027 Notification',
+    title='UPSC CDS (I) 2027 Notification (2 December 2026), Exam Date 11 April 2027, Age Limit, Pattern & Previous Papers | Learn with Anil',
+    desc='UPSC CDS (I) 2027: notification scheduled for 2 December 2026, apply by 22 December, exam on Sunday 11 April 2027 with NDA & NA (I) (UPSC Calendar 2027). '
+         'Academies, age limits, fee, the three-paper pattern with negative marking, CDS (I) 2026 vacancies (451) and CDS previous year papers with answers.',
+    h1='UPSC CDS (I) 2027: exam on Sunday, 11 April 2027',
+    lede='UPSC\'s Calendar 2027 schedules the Combined Defence Services Examination (I) 2027 for Sunday, 11 April 2027, the same day as NDA & NA (I) 2027. '
+         'The notification is due on 2 December 2026, with applications until 22 December 2026. CDS (II) 2027 follows on 19 September 2027. Below: the dates, '
+         'eligibility, the pattern, the 2026 vacancies and the CDS previous papers.',
+    hi='UPSC CDS (I) 2027 परीक्षा: रविवार, 11 अप्रैल 2027। अधिसूचना 2 दिसंबर 2026 को, आवेदन 22 दिसंबर 2026 तक (UPSC कैलेंडर 2027)।',
+    pdf=UPSC_CAL, pdfname='UPSC Calendar of Examinations / Recruitment Tests 2027 (issued May 2026)',
+    more_src=[('https://www.businesstoday.in/education/exams/story/upsc-cse-2027-schedule-out-commission-releases-full-calendar-for-the-year-check-here-532625-2026-05-21', 'Business Today, UPSC 2027 calendar'),
+              ('https://www.outlookindia.com/education/upsc-cds-1-2026-notification-released-451-vacancies-deadline-december-30-2025', 'Outlook, CDS (I) 2026 (451 vacancies)')],
+    related=['upsc-capf-2027-notification.html', 'upsc-cse-2027-notification.html'],
+    sections=[
+      ('Important dates (UPSC Calendar 2027)', 'table', [
+        ('Notification', '2 December 2026 (scheduled)'), ('Last date to apply', '22 December 2026'), ('Written examination', 'Sunday, 11 April 2027'),
+        ('CDS (II) 2027', 'Notification 12 May 2027; exam 19 September 2027'), ('Apply at', 'upsconline.gov.in')]),
+      ('CDS (I) 2026 for reference', 'table', [
+        ('Notification', '10 December 2025'), ('Written examination', '12 April 2026'),
+        ('Vacancies', '451: IMA 100, INA 26, AFA 32, OTA 275 (men) and 18 (women)')]),
+      ('Who can apply (2026 rules; the 2027 notification will confirm)', 'list', [
+        'IMA and OTA: a bachelor\'s degree. INA: a degree in engineering. AFA: a degree with Physics and Mathematics at 10+2, or a bachelor\'s in engineering. Final-year students may apply.',
+        'Age: IMA and INA 19 to 24 years; AFA 20 to 24 years; OTA 19 to 25 years (exact birth-date windows are given in the notification).',
+        'IMA, INA and AFA: men only (unmarried for IMA and INA). OTA: unmarried men and women.',
+        'Fee ₹200; women, SC and ST candidates pay nothing.']),
+      ('Exam pattern', 'table+', (['Paper', 'Questions · marks', 'Time'], [
+        ('English', '120 · 100', '2 hours'), ('General Knowledge', '120 · 100', '2 hours'),
+        ('Elementary Mathematics (IMA, INA, AFA only)', '100 · 100', '2 hours'), ('SSB interview', 'IMA, INA, AFA 300 · OTA 200', '—')])),
+      ('', 'note', 'Negative marking: one-third of the marks of a question for each wrong answer. OTA candidates take only English and General Knowledge (200 marks).'),
+    ],
+    faqs=[
+      ('Is the UPSC CDS (I) 2027 notification out?', 'Not as of 27 November 2026. It is scheduled for 2 December 2026 in UPSC\'s Calendar 2027.'),
+      ('When is the UPSC CDS (I) 2027 exam?', 'Sunday, 11 April 2027, the same day as NDA & NA (I) 2027.'),
+      ('What is the last date to apply for CDS (I) 2027?', '22 December 2026 as per the calendar.'),
+      ('How many vacancies are there in CDS (I) 2027?', 'Not announced yet. CDS (I) 2026 had 451: IMA 100, INA 26, AFA 32, OTA 275 men and 18 women.'),
+      ('What is the age limit for UPSC CDS?', 'IMA and INA 19 to 24 years, AFA 20 to 24, OTA 19 to 25, counted from the birth-date window in each notification.'),
+      ('Is there negative marking in UPSC CDS?', 'Yes, one-third of the question\'s marks for each wrong answer, in all three papers.'),
+      ('Can women apply for UPSC CDS?', 'Yes, for the Officers\' Training Academy (OTA), and they pay no fee.'),
+    ]),
   'upsc-epfo-apfc-2026-notification.html': dict(
     exam='upsc-epfo', board='UPSC', site='upsc.gov.in', crumb='EPFO APFC 2026',
     title='UPSC EPFO APFC 2026: Exam on 20 December, 80 Posts, Admit Card, Pattern – and Is the EO/AO Notification Out? | Learn with Anil',

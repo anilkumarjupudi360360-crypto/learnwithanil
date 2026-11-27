@@ -1,0 +1,1276 @@
+# UPSC Combined Defence Services Examination (II) 2023: General Knowledge (Series A, booklet JNUP-B-GKL), held 3 September 2023.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, July 2024). Explanations by Learn with Anil.
+
+Q 1 | sci | Biology
+A person can see near objects clearly through his eyes but cannot see distant objects clearly. The possible reason(s) for this defect could be:
+1. Excessive curvature of the eye lens.
+2. The eye-ball has become too small.
+3. The focal length of the eye lens is too large.
+4. Elongation of the eye-ball.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 and 4 only
+(3) 1 and 4 only
+(4) 1 and 3 only
+= 3
+~ This is myopia (short-sightedness), caused by excessive curvature of the eye lens (too short a focal length) or elongation of the eyeball, so the image of distant objects forms in front of the retina. A too-small eyeball or a too-long focal length cause hypermetropia instead.
+
+Q 2 | sci | Physics
+Consider a journey by a car represented by the graph given below in three parts A, B and C. The speed of the car in these parts is vₐ, v_b and v_c, respectively:
+[Figure: distance (m) on the y-axis versus time (s) on the x-axis. The graph starts at O and has three straight segments: A, a moderately sloped segment; B, the steepest segment; C, an almost flat segment with the least slope.]
+Which one of the following is correct in this case?
+(1) vₐ < v_b < v_c
+(2) v_b > vₐ > v_c
+(3) vₐ = v_b = v_c
+(4) vₐ > v_b ; vₐ > v_c
+= 2
+~ On a distance–time graph, the slope gives the speed. Segment B is the steepest, A has a medium slope and C is nearly flat, so v_b > vₐ > v_c.
+
+Q 3 | sci | Physics
+A concave mirror of radius of curvature 50 cm is used to form an image of an object kept at a distance of 25 cm from the mirror on its principal axis. What will be the position of the image from the mirror?
+(1) At infinity
+(2) At 50 cm
+(3) At 25 cm
+(4) At 75 cm
+= 1
+~ The focal length is f = R/2 = 25 cm, so the object is at the focus. The reflected rays come out parallel and the image forms at infinity (1/v = 1/f − 1/u = 1/25 − 1/25 = 0).
+
+Q 4 | sci | Physics
+If the Moon is brought closer to the Earth such that its distance from the Earth becomes half of the original distance, then the gravitational force of attraction between the Earth and the Moon would:
+(1) reduce to half of its original value.
+(2) increase to two times of its original value.
+(3) remain the same as the original value.
+(4) increase to four times of its original value.
+= 4
+~ Gravitational force follows the inverse-square law, F = GMm/r². Halving r makes the force 1/(1/2)² = 4 times as large.
+
+Q 5 | sci | Physics
+Sonic boom is produced when a source of sound travels at a speed:
+(1) greater than the speed of sound.
+(2) greater than the speed of light.
+(3) lesser than the speed of sound.
+(4) equal to the speed of sound.
+= 1
+~ A body moving faster than sound (supersonic) produces shock waves, which are heard as a loud sonic boom. No material source can travel faster than light.
+
+Q 6 | sci | Chemistry
+Which one among the following are the correct symbols for the elements gold, tin and lead, respectively?
+(1) Ga, Sb, Pb
+(2) At, Sn, Le
+(3) Au, Sn, Pb
+(4) Au, Sb, Pb
+= 3
+~ The symbols come from the Latin names: gold is Au (aurum), tin is Sn (stannum) and lead is Pb (plumbum). Ga is gallium, Sb is antimony and At is astatine.
+
+Q 7 | sci | Science & Technology
+How much percentage of carbon dioxide is present in the atmosphere of Venus and Mars?
+(1) 45 – 47%
+(2) 52 – 55%
+(3) 74 – 77%
+(4) 95 – 97%
+= 4
+~ The atmospheres of both Venus (about 96.5% CO₂) and Mars (about 95% CO₂) are made up mostly of carbon dioxide, which puts both in the 95–97% range.
+
+Q 8 | sci | Chemistry
+Which among the following methods is used to separate the constituents present in a compound?
+(1) Electrochemical method
+(2) Heating method
+(3) Fractional distillation
+(4) Decomposition followed by ion exchange
+= 1
+~ The constituents of a compound are chemically combined, so only chemical methods such as electrolysis (an electrochemical method) can separate them. An example is water splitting into hydrogen and oxygen. Physical methods such as fractional distillation separate only the components of mixtures.
+
+Q 9 | sci | Chemistry
+During white-washing of walls, slaked lime reacts slowly with carbon dioxide in air to form a thin layer of calcium carbonate on the walls. Which of the following reactions represents this correctly?
+(1) CaO (s) + CO₂ (g) → CaCO₃ (s)
+(2) CaO (l) + CO₂ (g) → CaCO₃ (s)
+(3) Ca(OH)₂ (l) + CO₂ (l) → CaCO₃ (s) + H₂O (l)
+(4) Ca(OH)₂ (aq) + CO₂ (g) → CaCO₃ (s) + H₂O (l)
+= 4
+~ Slaked lime is calcium hydroxide, Ca(OH)₂, applied as an aqueous suspension. It reacts with gaseous CO₂ in the air to give solid CaCO₃ and water. CaO is quicklime, not slaked lime, and CO₂ in air is a gas, not a liquid.
+
+Q 10 | sci | Chemistry
+Which one of the following equations is the balanced chemical equation for the given reaction?
+Fe + H₂O → Fe₃O₄ + H₂
+(1) Fe + 4H₂O → Fe₃O₄ + H₂
+(2) 3Fe + H₂O → Fe₃O₄ + 2H₂
+(3) 3Fe + 4H₂O → Fe₃O₄ + 4H₂
+(4) 3Fe + 4H₂O → Fe₃O₄ + H₂
+= 3
+~ Balancing gives 3 Fe, 8 H and 4 O on each side: 3Fe + 4H₂O → Fe₃O₄ + 4H₂.
+
+Q 11 | sci | Biology
+The term Phyllotaxy refers to the pattern of:
+(1) arrangement of leaves.
+(2) branching in stem.
+(3) flower formation on branch.
+(4) arrangement of flowers.
+= 1
+~ Phyllotaxy is the pattern in which leaves are arranged on a stem or branch (alternate, opposite or whorled). The arrangement of flowers is called inflorescence.
+
+Q 12 | sci | Biology
+Chromosomes are composed of DNA and:
+(1) lipids
+(2) vitamins
+(3) proteins
+(4) carbohydrates
+= 3
+~ Chromosomes are made of chromatin, which is DNA wound around proteins, mainly histones.
+
+Q 13 | sci | Biology
+Bacteria have an undefined nuclear region which lacks a nuclear membrane and contains only DNA without proteins. Such a region is called:
+(1) Nucleosome
+(2) Nucleus
+(3) Nucleoprotein
+(4) Nucleoid
+= 4
+~ In prokaryotes such as bacteria, the naked DNA lies in an undefined region with no nuclear membrane, called the nucleoid. A nucleosome is a unit of DNA wrapped around histones in eukaryotes.
+
+Q 14 | sci | Biology
+In the following simplified diagram of a plant cell, five parts/organelles are marked from 1 to 5:
+[Figure: a plant cell with a thick outer boundary. Label 1 points to the outermost thick layer and label 2 to the thin layer just inside it. Label 3 points to a stack of folded membranes beside the nucleus. Label 4 points to a round body with a dot inside it. Label 5 points to the large central sac occupying much of the cell.]
+Which one of the following correctly represents the above parts/organelles?
+(1) 1 – cell membrane; 2 – cell wall; 3 – vacuole; 4 – endoplasmic reticulum; 5 – nucleus
+(2) 1 – cell wall; 2 – cell membrane; 3 – endoplasmic reticulum; 4 – vacuole; 5 – nucleus
+(3) 1 – cell wall; 2 – cell membrane; 3 – endoplasmic reticulum; 4 – nucleus; 5 – vacuole
+(4) 1 – cell wall; 2 – cell membrane; 3 – vacuole; 4 – endoplasmic reticulum; 5 – nucleus
+= 3
+~ In a plant cell, the outermost layer is the cell wall (1), with the cell membrane (2) just inside it. The folded membrane network is the endoplasmic reticulum (3), the round body with a nucleolus is the nucleus (4), and the large central sac is the vacuole (5).
+
+Q 15 | his | Medieval India
+Which one of the following is the language of the famous political treatise Amuktmalyada?
+(1) Sanskrit
+(2) Tamil
+(3) Kannada
+(4) Telugu
+= 4
+~ Amuktamalyada was written in Telugu by the Vijayanagara king Krishnadeva Raya. Besides its poetry, it contains his ideas on statecraft.
+
+Q 16 | his | Ancient India
+Which one of the following statements about the Shvetambara Sect of Jainism is not correct?
+(1) It refers to monks, who wear white clothes.
+(2) It refers to monks, who migrated to the south of Vindhyas in 4th century BCE.
+(3) They recognized the existence of canonical texts including the 12 Angas.
+(4) They believed that women can also attain salvation.
+= 2
+~ The monks who migrated south under Bhadrabahu during the famine of Chandragupta Maurya's time became the Digambaras. The Shvetambaras stayed in the north under Sthulabhadra. Shvetambaras wear white clothes, accept the Angas as canon and hold that women can attain salvation.
+
+Q 17 | his | Ancient India
+Where is the Vikramkhol Cave located?
+(1) Odisha
+(2) Bihar
+(3) Telangana
+(4) West Bengal
+= 1
+~ The Vikramkhol rock shelter, known for its ancient inscriptions and rock markings, is in Jharsuguda district of Odisha.
+
+Q 18 | his | Ancient India
+Consider the following statements regarding the 'Levallois Technique':
+1. It refers to making perforated Harappa pottery.
+2. It refers to making prehistoric flake tools.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ The Levallois technique is a Palaeolithic stone-knapping method. A core is prepared so that flakes of a set shape can be struck off it, so it is about flake tools. It has nothing to do with Harappan pottery.
+
+Q 19 | his | Ancient India
+Which of the following statements is/are correct?
+1. The Bakshali Manuscript written in the Gatha language (a refined version of old Prakrit) using the Sharada script deals with topics such as fractions, square roots, arithmetic and geometric progressions.
+2. In the field of geometry, Aryabhatta described the various properties of a circle giving a very accurate value for pi (π) correct to four decimal places at 3·1416.
+3. Sharangadhara Samhita is an important text on political system of ancient India.
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 1 and 3 only
+(3) 1 and 2 only
+(4) 2 only
+= 3
+~ The Bakhshali manuscript is a mathematical text in Sharada script, and Aryabhata gave π ≈ 3.1416, so statements 1 and 2 are correct. The Sharangadhara Samhita is an Ayurvedic (medical) text, not a work on politics.
+
+Q 20 | his | Modern India
+Which one of the following is not correct about the Indian Independence Act, 1947?
+(1) The Bill for the Indian Independence Act was introduced in Parliament on July 4 and received the Royal Assent on July 18, 1947.
+(2) Act of 1947 laid down the basic framework of the Indian Constitution.
+(3) The Act provided for the establishment of two independent Dominions to be known as India and Pakistan.
+(4) The Act empowered the Constituent Assembly of each Dominion to have unlimited power to frame and adopt any constitution.
+= 2
+~ The Indian Independence Act, 1947 created the two Dominions and gave their Constituent Assemblies full sovereign power to frame any constitution. It did not lay down the framework of the Constitution. That came largely from the Government of India Act, 1935 and was drafted by the Constituent Assembly.
+
+Q 21 | eco | Growth, Planning & National Income
+As per the Cabinet Resolution of 1st January, 2015, the NITI Aayog consists of:
+1. Prime Minister of India
+2. Governing Council comprising of Chief Minister of all the States and Lieutenant Governors of Union Territories
+3. Rural Development Minister
+4. Chief Executive Officer to be appointed by the Prime Minister
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 1, 2 and 4
+(3) 1 and 2 only
+(4) 3 and 4 only
+= 2
+~ Under the 2015 resolution, NITI Aayog has the Prime Minister as Chairperson, a Governing Council of Chief Ministers and UT Lieutenant Governors, and a CEO appointed by the Prime Minister. Union ministers sit as ex-officio or special invitee members nominated by the PM, but the Rural Development Minister is not named as a fixed member.
+
+Q 22 | pol | Union & State Government
+The executive is given an advance grant to meet temporary and running requirements of Government of India in the beginning of the new financial year until the demands are voted by the legislature. This is known as:
+(1) Vote of Credit
+(2) Vote on Account
+(3) Appropriation Bill
+(4) Advance Account
+= 2
+~ Under Article 116, a Vote on Account lets Lok Sabha grant money in advance for part of the year until the full budget is passed. A Vote of Credit is a grant for an unexpected demand whose full details cannot be given.
+
+Q 23 | cur | International
+Which of the following is/are United Nations Sustainable Development Goal(s)?
+1. Decent work and economic growth
+2. Peace, justice and strong institutions
+3. Responsible consumption and production
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 1, 2 and 3
+(3) 2 only
+(4) 1 and 3 only
+= 2
+~ All three are among the 17 SDGs: Goal 8 (Decent work and economic growth), Goal 12 (Responsible consumption and production) and Goal 16 (Peace, justice and strong institutions).
+
+Q 24 | geo | Physical Geography
+Consider the following statements on 'Fog':
+1. Fog is simply a cloud that forms close to the ground.
+2. Radiation fog is associated with radiation cooling of the land at night.
+3. Advection fog forms when moisture is blown over a cold surface and is chilled by contact.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Fog is a cloud at or near ground level. Radiation fog forms when the ground cools by radiation on clear nights, and advection fog forms when moist air moves over a colder surface and is chilled. All three statements are correct.
+
+Q 25 | geo | Physical Geography
+Which one of the following landforms is/are formed by wind erosion?
+(1) Cirque
+(2) Stack
+(3) Zeugen
+(4) Stack and Zeugen both
+= 3
+~ Zeugens are tabular ridges in deserts, formed when wind wears away soft rock lying under a hard rock cap. A cirque is a glacial landform and a stack is formed by sea waves.
+
+Q 26 | geo | Indian Geography
+Which one of the following crops is not cultivated under dryland farming?
+(1) Jowar
+(2) Ragi
+(3) Sugarcane
+(4) Groundnut
+= 3
+~ Dryland farming depends on rain in low-rainfall areas and grows hardy crops such as jowar, bajra, ragi, pulses and groundnut. Sugarcane needs a lot of water and is grown with irrigation or in wet areas.
+
+Q 27 | geo | World Geography
+Which one of the following forms of settlement develops around a lake?
+(1) Linear
+(2) Cross-shaped
+(3) Circular
+(4) Square
+= 3
+~ Settlements that grow around a lake or tank take a circular pattern. Linear settlements grow along roads, rivers or coasts, and cross-shaped ones grow at crossroads.
+
+Q 28 | geo | Environment & Ecology
+How can resources be classified on the basis of their origin?
+(1) Biotic and abiotic
+(2) Renewable and non-renewable
+(3) Individual and community
+(4) Potential and reserve
+= 1
+~ By origin, resources are biotic (from living things) or abiotic (from non-living things). Renewable/non-renewable is a split by exhaustibility, individual/community by ownership, and potential/reserve by status of development.
+
+Q 29 | geo | World Geography
+Which one among the following is the highest mountain in Africa?
+(1) Atlas Mountain
+(2) Mount Kilimanjaro
+(3) Mount Kenya
+(4) Mount Elgon
+= 2
+~ Mount Kilimanjaro in Tanzania (about 5,895 m) is Africa's highest peak. Mount Kenya (about 5,199 m) is the second highest.
+
+Q 30 | eco | Money, Banking & Inflation
+Which of the following action(s) by the Government would lead to contraction of money supply in the economy?
+1. Purchase of Treasury Bills by the central bank from public
+2. Sale of Treasury Bills by the central bank to public
+3. Sale of foreign exchange by the central bank
+4. Purchase of foreign exchange by the central bank
+Select the correct answer using the code given below:
+(1) 1 and 4 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 2 only
+= 3
+~ When the central bank sells T-bills or foreign exchange, it takes rupees out of the system and the money supply contracts. Buying T-bills or foreign exchange puts rupees into the economy and expands it.
+
+Q 31 | eco | Money, Banking & Inflation
+Which of the following are included in the definition of Narrow Money?
+1. Currency with the public
+2. Demand deposits
+3. 'Other' deposits with Reserve Bank of India
+4. Banker's deposits with Reserve Bank of India
+Select the correct answer using the code given below:
+(1) 1, 2 and 4
+(2) 1 and 2 only
+(3) 1, 2 and 3
+(4) 3 and 4 only
+= 3
+~ Narrow money (M1) = currency with the public + demand deposits with banks + 'other' deposits with the RBI. Bankers' deposits with the RBI are part of reserve money (M0), not M1.
+
+Q 32 | eco | Agriculture, Industry & Trade
+Which of the following is/are the effects of devaluation or depreciation of currency?
+1. It leads to increase in imports and decrease in exports.
+2. It leads to increase in exports and decrease in imports.
+3. It leads to increase in domestic inflation.
+4. It leads to decrease in domestic inflation.
+Select the correct answer using the code given below:
+(1) 1 and 3 only
+(2) 1 and 4 only
+(3) 2 and 3 only
+(4) 3 only
+= 3
+~ A weaker currency makes exports cheaper abroad and imports dearer at home, so exports rise and imports fall. Costlier imports, such as fuel, then push up domestic inflation.
+
+Q 33 | eco | Public Finance & Taxation
+Which one of the following taxes is not subsumed under the Goods and Services Tax in India?
+(1) Customs Duties
+(2) Central Excise Duties
+(3) Service Tax
+(4) Taxes on Petroleum and Petroleum Products
+= 4
+~ Crude petroleum, diesel, petrol, ATF and natural gas are kept outside GST for now, so central excise and state VAT still apply to them. Central excise duty (on most goods), service tax and the additional customs duties (CVD/SAD) were subsumed. Basic customs duty also remains outside GST, but the standard answer is petroleum taxes.
+
+Q 34 | sci | Physics
+The following diagram shows a pendulum at different positions. Which one of the following statement is true?
+[Figure: a pendulum hanging from a fixed support, shown at five positions P, Q, R, S, T. R is the lowest point, directly below the support (mean position). Q and S are a little higher on either side, and P and T are the highest positions at the two extremes.]
+(1) The pendulum has minimum potential energy at positions P and T.
+(2) The pendulum has minimum potential energy at positions Q and S.
+(3) The pendulum has minimum potential energy at position R.
+(4) The pendulum has same potential energy at all positions.
+= 3
+~ Potential energy depends on height (mgh). The bob is lowest at the mean position R, so its potential energy is least there (and its kinetic energy is greatest). Potential energy is greatest at the extremes P and T.
+
+Q 35 | sci | Physics
+In which of the following media is the speed of sound the maximum?
+(1) Glass
+(2) Stainless steel
+(3) Water
+(4) Oxygen
+= 2
+~ Sound travels fastest in stiff solids. In stainless steel it travels at about 5,960 m/s, compared with roughly 5,000–5,600 m/s in glass, about 1,500 m/s in water and about 316 m/s in oxygen.
+
+Q 36 | sci | Physics
+A charged particle moves through a magnetic field B with a velocity v. Which one of the following statements is true for the force (F) experienced by the particle?
+(1) F is maximum when v and B are parallel to each other.
+(2) F is maximum when v and B are anti-parallel to each other.
+(3) F is maximum when v and B are perpendicular to each other.
+(4) The force F is independent of the angle between v and B.
+= 3
+~ The magnetic force is F = qvB sin θ. It is greatest (qvB) when θ = 90°, i.e. v ⊥ B, and zero when v is parallel or anti-parallel to B.
+
+Q 37 | sci | Physics
+Which one of the following is the correct relation between Celsius and Fahrenheit temperature scales?
+(Symbols carry their usual meanings)
+(1) T_F = (10/3)T_C + 32
+(2) T_F = (5/9)T_C + 36
+(3) T_F = (9/5)T_C + 36
+(4) T_F = (9/5)T_C + 32
+= 4
+~ Water freezes at 0 °C = 32 °F and boils at 100 °C = 212 °F, so 100 Celsius degrees equal 180 Fahrenheit degrees. That gives T_F = (9/5)T_C + 32.
+
+Q 38 | sci | Physics
+Which one of the following statements is correct regarding the travel of a light beam from a rare to a dense medium?
+(1) A light beam travelling from a rare medium to a dense medium slows down and bends towards the normal.
+(2) A light beam travelling from a rare medium to a dense medium speeds up and bends towards the normal.
+(3) A light beam travelling from a rare medium to a dense medium slows down and bends away from the normal.
+(4) A light beam travelling from a rare medium to a dense medium speeds up and bends away from the normal.
+= 1
+~ Light travels more slowly in an optically denser medium (v = c/n). So a ray entering it from a rarer medium slows down and bends towards the normal.
+
+Q 39 | sci | Chemistry
+In which one of the following cases do both physical and chemical changes take place?
+(1) Burning of candle
+(2) Freezing of water
+(3) Cooking of food
+(4) Rusting of iron
+= 1
+~ When a candle burns, the wax melts and vaporises (physical changes), and the wax vapour burns to form CO₂ and water (a chemical change). Freezing is only physical, and rusting is only chemical.
+
+Q 40 | sci | Chemistry
+Which one of the following statements is correct about diamond and graphite?
+(1) Diamond and graphite have similar physical and chemical properties.
+(2) Diamond is hard but graphite is smooth and slippery.
+(3) Diamond and graphite are both non-conductors of electricity.
+(4) Both diamond and graphite have similar structures.
+= 2
+~ Diamond is a rigid 3-D network of carbon atoms and is very hard. Graphite has layers that slide over each other, making it soft and slippery. Graphite conducts electricity but diamond does not, and their structures and physical properties differ.
+
+Q 41 | sci | Chemistry
+Which one among the following substances is a compound?
+(1) Sugar
+(2) Air
+(3) Milk
+(4) Tea
+= 1
+~ Sugar (sucrose, C₁₂H₂₂O₁₁) is a compound with a fixed composition. Air, milk and tea are mixtures.
+
+Q 42 | sci | Chemistry
+What is the total number of naturally occurring elements?
+(1) 114
+(2) 94
+(3) 86
+(4) 82
+= 2
+~ Elements with atomic numbers 1 to 94 (up to plutonium) occur naturally, some only in trace amounts. The heavier elements are made artificially.
+
+Q 43 | sci | Chemistry
+Which one of the following statements regarding acids is not correct?
+(1) Hydrochloric acid is present in the gastric juice secreted by the stomach.
+(2) Acetic acid is the main constituent of vinegar.
+(3) Oxalic acid is found in tamarind paste.
+(4) Lemon and orange juices contain citric acid and ascorbic acid respectively.
+= 3
+~ Tamarind contains tartaric acid. Oxalic acid is found in tomatoes and spinach. The stomach secretes HCl and vinegar is dilute acetic acid.
+
+Q 44 | sci | Biology
+Which one of the following is the correct combination of organelles and their functions?
+(1) Mitochondria – Respiration; Chloroplast – Photosynthesis; Ribosome – Protein Synthesis; Rough endoplasmic reticulum – Transport of proteins
+(2) Mitochondria – Respiration; Chloroplast – Photosynthesis; Ribosome – Transport of proteins; Rough endoplasmic reticulum – Protein synthesis
+(3) Mitochondria – Respiration; Chloroplast – Protein synthesis; Ribosome – Photosynthesis; Rough endoplasmic reticulum – Transport of proteins
+(4) Mitochondria – Photosynthesis; Chloroplast – Respiration; Ribosome – Protein synthesis; Rough endoplasmic reticulum – Transport of proteins
+= 1
+~ Mitochondria carry out cellular respiration, chloroplasts carry out photosynthesis and ribosomes make proteins. The rough ER carries and transports the proteins made by its ribosomes.
+
+Q 45 | sci | Biology
+Cell wall is absent in which one of the following organisms?
+(1) Bacteria
+(2) Diatom
+(3) Mushroom
+(4) Tapeworm
+= 4
+~ A tapeworm is an animal (a flatworm), and animal cells have no cell wall. Bacteria have peptidoglycan walls, diatoms have silica walls and fungi such as mushrooms have chitin walls.
+
+Q 46 | sci | Biology
+Water goes up through xylem vessels in tall trees. The process in plants and properties of water that help in upward movement are:
+(1) Respiration and cohesion
+(2) Transpiration pull, cohesion and adhesion
+(3) Root pressure, cohesion and adhesion
+(4) Transpiration and adhesion
+= 2
+~ By the cohesion–tension theory, transpiration pull from the leaves draws up a continuous column of water. Cohesion between water molecules and adhesion to the xylem walls keep the column intact. Root pressure is too weak to lift water in tall trees.
+
+Q 47 | geo | Environment & Ecology
+Energy and nutrients flow from one trophic level to another in an ecosystem. Which one of the following statements correctly describes the direction of flow of energy and nutrients in an ecosystem?
+(1) Energy flow is cyclic and nutrient flow is unidirectional.
+(2) Energy flow is unidirectional and nutrient flow is cyclic.
+(3) Both energy and nutrient flow are unidirectional.
+(4) Both energy and nutrient flow are cyclic.
+= 2
+~ Energy enters as sunlight and is lost as heat at each trophic level, so it flows one way. Nutrients are returned to the environment by decomposers and reused through biogeochemical cycles.
+
+Q 48 | sci | Biology
+Which one of the following is a saprophyte?
+(1) Cuscuta
+(2) Rhizopus
+(3) Spirogyra
+(4) Grass
+= 2
+~ Rhizopus (bread mould) is a fungus that feeds on dead organic matter, which makes it a saprophyte. Cuscuta is a parasite, while Spirogyra and grass make their own food (autotrophs).
+
+Q 49 | sci | Biology
+In ovules of Angiosperms, which one of the following is not a haploid cell?
+(1) Nucellus
+(2) Synergid
+(3) Egg
+(4) Antipodal
+= 1
+~ The nucellus is diploid tissue of the parent plant, part of the ovule body. The egg, synergids and antipodals are cells of the embryo sac (female gametophyte), so they are haploid.
+
+Q 50 | his | Medieval India
+Arrange the following events associated with Shivaji in chronological order:
+1. Attack on Afzal Khan
+2. Capture of Torna
+3. Attack on Shaista Khan
+4. Annexation of Javli
+Select the correct answer using the code given below:
+(1) 2, 4, 1, 3
+(2) 4, 2, 1, 3
+(3) 1, 2, 3, 4
+(4) 3, 1, 2, 4
+= 1
+~ Shivaji captured Torna in about 1646, annexed Javli in 1656, killed Afzal Khan at Pratapgarh in 1659 and made his night raid on Shaista Khan at Pune in 1663.
+
+Q 51 | his | Modern India
+Who among the following is the author of the book 'The Indian Struggle 1920 – 1942'?
+(1) Vinayak Damodar Savarkar
+(2) Subhas Chandra Bose
+(3) Vallabhbhai Patel
+(4) Sarat Chandra Bose
+= 2
+~ Subhas Chandra Bose wrote 'The Indian Struggle'. The first part was published in 1935 and the full edition covers 1920–1942.
+
+Q 52 | his | Medieval India
+Who among the following is not a woman Nayanar saint?
+(1) Karaikkal Ammaiyar
+(2) Mangayarkkarasiyar
+(3) Andal
+(4) Isaignaniyar
+= 3
+~ Andal was a woman Alvar, a devotee of Vishnu, not a Nayanar (Shaiva saint). Karaikkal Ammaiyar, Mangayarkkarasiyar and Isaignaniyar are the three women among the 63 Nayanars.
+
+Q 53 | his | Ancient India
+Which one of the following pairs of terms and their meanings is not correctly matched?
+(1) Nagarakkani : Land owned by the nagaram
+(2) Nattar : Male serpent deity
+(3) Yupa : Sacrificial post
+(4) Viragal : 'Hero stone' in the Tamil Nadu area
+= 2
+~ In Chola-period usage, the Nattar were the assembly or leading people of a nadu (district), not a serpent deity. A yupa is a Vedic sacrificial post, a viragal is a hero stone and nagarakkani was land owned by the merchants' assembly (nagaram).
+
+Q 54 | his | Art & Culture
+Where is the famous Gupta period Deogarh Temple situated?
+(1) Uttar Pradesh
+(2) Madhya Pradesh
+(3) Chhattisgarh
+(4) Rajasthan
+= 1
+~ The Dashavatara temple at Deogarh, one of the earliest Gupta temples with a shikhara, is in Lalitpur district of Uttar Pradesh.
+
+Q 55 | his | Art & Culture
+Consider the following statements with reference to the Nataraj bronze sculpture of Chola period:
+1. Shiva is shown balancing himself on his right leg representing tirobhava.
+2. Shiva is shown raising his left leg in bhujangatrasita stance, representing kicking away the illusion from the devotee's mind.
+3. The main right hand holds the damaru, Shiva's favourite musical instrument.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ Shiva balances on his right leg, which presses down on the dwarf Apasmara (ignorance), and that leg is not tirobhava. Tirobhava is shown by the raised left leg in bhujangatrasita, kicking away illusion. The damaru is held in the upper right hand, while the main right hand shows abhaya mudra. Only statement 2 is correct.
+
+Q 56 | cur | International
+Which of the following statements about ASEAN are correct?
+1. The Chairmanship of ASEAN rotates annually based on the alphabetical order of the English names of Member States.
+2. The Chairmanship is decided by voting among the Member States.
+3. "One Vision, One Identity, One Community" is the ASEAN motto.
+4. 12th August is celebrated as ASEAN Day.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ Under the ASEAN Charter, the chairmanship rotates every year in alphabetical order of the members' English names, not by vote. The motto is "One Vision, One Identity, One Community". ASEAN Day is 8 August, the date of the 1967 Bangkok Declaration.
+
+Q 57 | eco | Schemes & Welfare
+Consider the following statements about the Public Distribution System:
+1. The Public Distribution System is operated under the joint responsibility of Centre and State/Union Territories.
+2. Food Corporation of India has assumed the responsibility for procurement, storage and transportation of food grains to the State Governments.
+3. Both Centre and State have the joint responsibility to identify eligible beneficiaries.
+4. Some States also distribute additional items of mass consumption through the PDS outlets such as pulses, edible oil, etc.
+Which of the statements given above are correct?
+(1) 2 and 3 only
+(2) 1, 2 and 4
+(3) 1 and 2 only
+(4) 3 and 4 only
+= 2
+~ PDS is run jointly by the Centre and the States/UTs. The Centre, through the FCI, procures, stores, moves and bulk-allocates grain. States handle distribution, identify the eligible families, issue ration cards and may add items such as pulses and edible oil. Statement 3 is wrong because identifying beneficiaries is the States' job.
+
+Q 58 | eco | Growth, Planning & National Income
+Which of the following concepts are considered as pillars of Human Development?
+1. Equity
+2. Sustainability
+3. Productivity
+4. Security
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 3 and 4 only
+(3) 1, 2 and 3 only
+(4) 1, 2, 3 and 4
+= 3
+~ Following Mahbub ul Haq, NCERT (Class 12 Geography) lists four pillars of human development: equity, sustainability, productivity and empowerment. Security is not one of them, so the answer is 1, 2 and 3 only.
+
+Q 59 | sci | Science & Technology
+Which one of the following pairs of events and years is not correctly matched?
+(1) Launch of the first communications satellite : 1962
+(2) Completion of a continuous around the world fibre-optic cable link : 1997
+(3) Creation of the SWIFT system for worldwide electronic interbank fund transfer : 1977
+(4) Introduction of the World Wide Web (www) : 1995
+= 4
+~ Tim Berners-Lee proposed the World Wide Web at CERN in 1989, and it was introduced and opened to the public in 1991, not 1995. Telstar 1 (1962), the FLAG round-the-world fibre-optic cable (1997) and the start of SWIFT operations (1977) are correctly matched.
+
+Q 60 | geo | Indian Geography
+Identify the type of soil on the basis of given characteristics:
+1. They contain a large proportion of sodium, potassium and magnesium, and thus, they are infertile.
+2. Their structure ranges from sandy to loamy.
+3. They are more widespread in western Gujarat, deltas of the eastern coast and in Sunderban areas of West Bengal.
+(1) Peaty soil
+(2) Laterite soil
+(3) Arid soil
+(4) Saline soil
+= 4
+~ Saline soils have a high proportion of sodium, potassium and magnesium salts, which makes them infertile, and they range from sandy to loamy. They occur in western Gujarat, the eastern coastal deltas and the Sundarbans (NCERT Class 11).
+
+Q 61 | geo | Indian Geography
+Which one among the following State capitals is closest to the Equator?
+(1) Hyderabad
+(2) Bhubaneswar
+(3) Panaji
+(4) Mumbai
+= 3
+~ Panaji lies at about 15.5°N, south of Hyderabad (about 17.4°N), Mumbai (about 19°N) and Bhubaneswar (about 20.3°N). Lowest latitude means closest to the Equator.
+
+Q 62 | cur | International
+Which is the only country in the world to officially proclaim the Gross National Happiness (GNH) as the measure of the country's progress?
+(1) Finland
+(2) Bhutan
+(3) Nepal
+(4) Switzerland
+= 2
+~ Bhutan's Fourth King, Jigme Singye Wangchuck, put forward Gross National Happiness, and Article 9 of Bhutan's 2008 Constitution makes it a goal of the state. Finland often tops the World Happiness Report, but it does not use GNH as its official measure of progress.
+
+Q 63 | geo | Physical Geography
+Consider the following statements about clouds:
+1. Two major forms of clouds are stratiform and cumuliform.
+2. According to the altitude, clouds are classified as high clouds, middle clouds and low clouds.
+3. Stratus, nimbostratus and stratocumulus are types of high clouds.
+4. Clouds having nimbo attached to their name produce precipitation.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 1, 2 and 4
+(3) 2 and 4 only
+(4) 1, 3 and 4
+= 2
+~ Clouds are broadly stratiform (layered) or cumuliform (heaped), and by height they are grouped as high, middle and low. The prefix "nimbo" or suffix "nimbus" means a rain-bearing cloud. Statement 3 is wrong because stratus, nimbostratus and stratocumulus are low clouds.
+
+Q 64 | eco | Public Finance & Taxation
+Which one of the following expenditures is subtracted from Fiscal Deficit to arrive at Primary Deficit?
+(1) Defence expenditure
+(2) Expenditure on subsidies
+(3) Interest payments
+(4) Pension
+= 3
+~ Primary deficit = Fiscal deficit − Interest payments. It shows how much the government borrows for current needs, leaving out interest on past debt.
+
+Q 65 | eco | Money, Banking & Inflation
+The Wholesale Price Inflation has increased in India during 2021 – 2022 due to which of the following factors?
+1. Sharp increase in international prices of crude oil
+2. Decrease in economic activity post-Covid
+3. Disruption of global supply chain
+4. High freight cost
+Select the correct answer using the code given below:
+(1) 2 and 3 only
+(2) 1, 3 and 4
+(3) 1 and 2 only
+(4) 1 and 4 only
+= 2
+~ The Economic Survey blamed the high WPI inflation of 2021-22 on costly crude oil and other imported inputs, disrupted global supply chains and high freight costs. Economic activity was recovering after Covid, not falling, and a fall in activity would lower inflation anyway, so statement 2 is wrong.
+
+Q 66 | eco | Money, Banking & Inflation
+What would be the impact on the economy if people start holding more currency in hand and less in deposits?
+(1) Money demand will increase
+(2) Money multiplier will decrease
+(3) Money multiplier will increase
+(4) Money demand will decrease
+= 2
+~ The money multiplier is (1 + cdr)/(cdr + rdr), where cdr is the currency–deposit ratio. A higher cdr leaves banks with fewer deposits to lend out again, so the multiplier falls.
+
+Q 67 | cur | Reports & Indices
+SDG India Index, developed by NITI Aayog, includes 17 SDGs for each State. Which one of the following is not included in that index?
+(1) Zero hunger
+(2) Reduced unemployment
+(3) Life below water
+(4) Responsible consumption and production
+= 2
+~ The index follows the 17 UN SDGs. Zero Hunger (SDG 2), Life Below Water (SDG 14) and Responsible Consumption and Production (SDG 12) are goals. No goal is called "Reduced unemployment"; the closest are SDG 8 (Decent Work and Economic Growth) and SDG 10 (Reduced Inequalities).
+
+Q 68 | eco | Agriculture, Industry & Trade
+Other things remaining constant, the market supply for a good increases if:
+1. its price increases.
+2. price of its factors of production decreases.
+3. price of other goods decreases.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 1
+~ By the law of supply, a higher price of the good raises the quantity supplied. Cheaper inputs lower the cost of production, so the supply curve shifts right. UPSC's key leaves out statement 3, although textbooks note that a fall in the price of a substitute-in-production can also raise supply.
+
+Q 69 | eco | Growth, Planning & National Income
+Consider the following statements regarding poverty in India:
+1. While determining poverty line in India, a minimum level of food requirement, clothing, footwear, fuel and light, educational and medical requirements, etc. are determined for subsistence.
+2. The accepted average calorie requirement in India is 2400 calories per person per day in rural areas and 2100 calories per person per day in urban areas.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ As NCERT explains, the poverty line is set by fixing a minimum level of food, clothing, footwear, fuel and light, education, medical care and so on, and then pricing it. The accepted calorie norm is 2400 kcal per person per day in rural areas and 2100 kcal in urban areas.
+
+Q 70 | his | Medieval India
+Which of the following statements is/are correct?
+1. Shivaji sent an ambassador to Bombay to negotiate an agreement with the English.
+2. His chief motive was to secure English aid against the Siddis of Danda-Rajpuri.
+3. He wanted a supply of grenades, mortars and other ammunition.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Shivaji sent envoys to the English at Bombay to agree terms. He wanted their help against the Siddis of Danda-Rajpuri (Janjira) and asked for war materials such as grenades and mortars. The English did not want to anger the Siddis or the Mughals, so the talks gave him little.
+
+Q 71 | his | Ancient India
+The famous Hathigumpha inscription of Kharavela mentions that in the eleventh year of his reign, Kharavela destroyed a confederacy of Tamil States, "Tramiradesa Sanghatam", which had long been a source of danger. How old was this confederacy of Tamil States at that time?
+(1) 110 years old
+(2) 111 years old
+(3) 112 years old
+(4) 113 years old
+= 4
+~ The Hathigumpha inscription at Udayagiri (Odisha) says that in his eleventh regnal year Kharavela broke up the confederacy of Tamil states (Tramiradesa-sanghatam). It describes this confederacy as having existed for 113 years.
+
+Q 72 | his | Medieval India
+Which of the following statements about the Vaishnava saint of Assam, Shankardeva, is/are correct?
+1. His teachings are often known as the Bhagavati dharma.
+2. He encouraged the establishment of satras or monasteries and namghars or prayer halls for the transmission of spiritual knowledge.
+3. His major compositions include the Kirtana-ghosha.
+Select the correct answer using the code given below:
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 3 only
+= 3
+~ NCERT says Sankaradeva's teachings are often called Bhagavati dharma because they rest on the Bhagavad Gita and the Bhagavata Purana. He set up satras (monasteries) and namghars (prayer halls), and his major works include the Kirtana-ghosha.
+
+Q 73 | his | Medieval India
+Abdur Razzaq, an ambassador of the ruler of Persia, was sent to Calicut in the fifteenth century. He was greatly impressed by the:
+(1) Fortifications of Calicut
+(2) Climatic conditions of the coastal town
+(3) High quality spices of the place
+(4) Musical traditions of the place
+= 1
+~ NCERT notes that Abdur Razzaq, the Persian ruler's envoy to Calicut in the fifteenth century, was greatly impressed by the fortifications he saw and described seven lines of forts. His account of the seven walls is best known for Vijayanagara.
+
+Q 74 | geo | Environment & Ecology
+Which of the following statements about the 'Race to Zero Campaign' is/are correct?
+1. One of the main objectives of the Race to Zero Campaign is to build momentum around the shift to a decarbonized economy.
+2. It is related to the theory of Zero-Sum Game.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Race to Zero is a UN-backed (UNFCCC) campaign launched in 2020. It gathers businesses, cities and investors behind net-zero emissions by 2050 to speed up the move to a decarbonised economy. It has nothing to do with the game-theory idea of a zero-sum game.
+
+Q 75 | geo | Environment & Ecology
+Which of the following statements about National Action Plan on Climate Change (NAPCC) with reference to India is/are correct?
+1. It emphasises that maintaining a high growth rate is essential for raising the living standards of the vast majority of the people of India and reducing their vulnerability to the impact of climate change.
+2. It was released in 2014.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The NAPCC says high economic growth is essential to raise living standards and reduce vulnerability to climate change. It was released by the Prime Minister's Council on Climate Change on 30 June 2008, not in 2014.
+
+Q 76 | eco | Agriculture, Industry & Trade
+What does India's "Blue growth" refer to?
+(1) Upgradation of Indian Air Force
+(2) Discouraging farmers from using pesticides
+(3) A long-term strategy to support sustainable growth in the marine and maritime sectors
+(4) Socio-economic empowerment of India's blue collar workers in the unorganized sector
+= 3
+~ Blue growth (the Blue Economy) is a long-term strategy for sustainable growth of ocean-based sectors such as fisheries, shipping, ports, coastal tourism and marine resources. The Blue Revolution scheme for fisheries is part of it.
+
+Q 77 | cur | Defence & Security
+Which of the following statements about 'Operation Sadbhavana' in Ladakh is/are correct?
+1. Indian Army undertakes welfare activities, such as running of Army Goodwill Schools in remote areas of Ladakh.
+2. It aims at building harmonious relationships between religious communities in Ladakh.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Operation Sadbhavana is the Indian Army's civic-action programme in Jammu & Kashmir and Ladakh. It runs Army Goodwill Schools, health camps, women's empowerment centres and infrastructure projects to win the trust of local people. Its aim is goodwill between the Army and civilians, not managing relations between religious communities.
+
+Q 78 | cur | International
+Which one of the following is not a permanent member of the UN Security Council?
+(1) France
+(2) China
+(3) Japan
+(4) United Kingdom
+= 3
+~ The five permanent members are the USA, the UK, France, Russia and China. Japan has served only as an elected non-permanent member and wants a permanent seat as part of the G4.
+
+Q 79 | geo | Physical Geography
+Consider the following statements about some planets in the solar system:
+1. Mercury has no atmosphere.
+2. Venus has two moons.
+3. There is no land on Jupiter.
+4. Rings of Saturn are composed of lumps of ice and dust.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 3 and 4 only
+(3) 1, 2 and 3
+(4) 1, 3 and 4
+= 4
+~ Mercury has practically no atmosphere (only a very thin exosphere). Jupiter is a gas giant with no solid surface, and Saturn's rings are made of pieces of ice, rock and dust. Statement 2 is wrong because Venus, like Mercury, has no moon.
+
+Q 80 | geo | Indian Geography
+Which one of the following passes is not located in Indian Himalayan region?
+(1) Zojila
+(2) Bolan
+(3) Shipkila
+(4) Lipulekh
+= 2
+~ The Bolan Pass is in the Toba Kakar/Brahui range of Balochistan in Pakistan and links Quetta with the Indus plains. Zojila (Ladakh), Shipki La (Himachal Pradesh) and Lipulekh (Uttarakhand) are Himalayan passes in India.
+
+Q 81 | geo | Indian Geography
+Which one of the following set of trees does not belong to Temperate Floral Zone of Himalaya?
+(1) Cashewnut and Magnolia
+(2) Oak and Maple
+(3) Rhododendrons
+(4) Birch and Laurels
+= 1
+~ The temperate (montane) forests of the Himalaya have oak, maple, chestnut, rhododendron, laurel, birch, deodar and other conifers. Cashew is a tropical tree grown on coastal lateritic soils, so this pair does not belong to the temperate zone.
+
+Q 82 | geo | World Geography
+Which one of the following statements about plantation agriculture is not correct?
+(1) Plantation farm estates are scientifically managed.
+(2) Plantation farming requires heavy capital outlay.
+(3) Plantation farm lands have mainly foreign ownership and local labour.
+(4) Plantation farmers rear the animals for sale.
+= 4
+~ Plantation agriculture grows a single cash crop such as tea, coffee, rubber or sugarcane on large estates. It needs heavy capital and scientific management, and in colonial times the estates were largely foreign-owned and worked by local labour. Rearing animals for sale is livestock ranching, not plantation farming.
+
+Q 83 | geo | World Geography
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Name of Shifting Cultivation)
+A. Roca
+B. Chena
+C. Masole
+D. Tamarai
+List II (Country)
+1. Sri Lanka
+2. Thailand
+3. Brazil
+4. Zaire
+Code:
+(1) A-2, B-4, C-1, D-3
+(2) A-2, B-1, C-4, D-3
+(3) A-3, B-4, C-1, D-2
+(4) A-3, B-1, C-4, D-2
+= 4
+~ Shifting cultivation has local names: Roca in Brazil, Chena in Sri Lanka, Masole in Zaire (DR Congo) and Tamarai in Thailand. So A-3, B-1, C-4, D-2.
+
+Q 84 | his | Ancient India
+Consider the following statements with reference to Paleolithic tools:
+1. Isampur was a well-known center of stone tool manufacture located in Gulbarga district of Karnataka and was situated along a small seasonal stream known as Kamta Halla.
+2. A Paleolithic blade is a flake tool, the length of which is more than twice its width.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Isampur, in the Hunsgi valley of the old Gulbarga district (now Yadgir), was a Lower Palaeolithic quarry-cum-factory site beside the seasonal Kamta Halla stream. A blade is defined as a flake whose length is at least twice its width.
+
+Q 85 | his | Medieval India
+Consider the following statements about science in medieval South India:
+1. The Katapayadi system of numerals, which was invented by Vararuchi of Kerala, the author of Chandra Vakyas, was used for calculating the position of Moon on any day of the year.
+2. Achyuta Pisharati (1550 – 1621) wrote Uparagakriyakrama, a text on eclipses.
+3. Ravi Varma of Mahodayapuram set up an observatory and is also said to have inaugurated the Kollam era.
+Which of the statements given above is/are correct?
+(1) 1 and 3 only
+(2) 3 only
+(3) 1 and 2 only
+(4) 1, 2 and 3
+= 4
+~ All three are standard facts of the Kerala school of astronomy. Vararuchi's Chandravakyas used the Katapayadi notation to give the Moon's position, and Achyuta Pisharati of the Kerala school wrote Uparagakriyakrama on eclipses. The Chera king (Sthanu) Ravi Varma of Mahodayapuram is credited with an observatory and with starting the Kollam era (825 CE).
+
+Q 86 | his | Ancient India
+Which of the following dynasties of South India issued their documents first in Prakrit and later in Sanskrit?
+(1) The Cholas of Tamil Nadu
+(2) The Pandyas of the post-Sangam Age
+(3) The Pallavas of Tondaimandalam
+(4) The Gangas of Kalinganagara
+= 3
+~ The early Pallava kings of Kanchi (Tondaimandalam) issued their copper-plate charters in Prakrit, such as the Mayidavolu and Hirahadagalli plates. Later Pallavas switched to Sanskrit, with Tamil added afterwards.
+
+Q 87 | his | Ancient India
+Who was the author of the Gwalior Prashasti of Mihira Bhoja?
+(1) Nagabhata
+(2) Vatsaraja
+(3) Baladitya
+(4) Kakkuka
+= 3
+~ The Gwalior (Sagar Tal) prashasti of the Gurjara-Pratihara king Mihira Bhoja was composed by the poet Baladitya. Nagabhata and Vatsaraja were earlier Pratihara kings, not authors of this inscription.
+
+Q 88 | his | Art & Culture
+The Sahajiya Cult, which can be traced back to 10th and 11th centuries, is usually associated with:
+(1) early Bhakti traditions
+(2) a kind of early Sufism
+(3) early Upanishadic philosophy
+(4) Buddhism
+= 4
+~ The Sahajiya cult began as Sahajayana, a late Tantric form of Buddhism in Bengal in the 10th–11th centuries, whose siddhas composed the Charyapadas. It later influenced the Vaishnava Sahajiyas.
+
+Q 89 | pol | Judiciary
+The landmark Supreme Court judgment in the case Subhash Sharma v. Union of India (1991) refers to which one of the following basic features of the Constitution of India?
+(1) Judicial Review
+(2) Rule of Law
+(3) Free and fair elections
+(4) Fundamental Rights
+= 1
+~ Subhash Sharma v. Union of India (1991) was about filling judges' posts and the primacy of the Chief Justice in appointments. It led to the Second Judges Case (1993) and rests on judicial independence and judicial review, which are basic features of the Constitution.
+
+Q 90 | pol | Federalism & Local Government
+Which of the following statements about the Panchayats in India, as per the Constitution of India is/are correct?
+1. There is a provision for reservation of seats for the Scheduled Castes and Scheduled Tribes.
+2. Panchayats are not authorised to collect taxes.
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Article 243D reserves seats in Panchayats for SCs and STs in proportion to their population. Statement 2 is wrong because Article 243H lets the State legislature authorise Panchayats to levy, collect and keep taxes, duties, tolls and fees.
+
+Q 91 | eco | Schemes & Welfare
+Which one of the following statements about Mission Indradhanush, launched by the Government of India in 2014, is correct?
+(1) It relates to provisions for Child Health Screening and Early Intervention Services.
+(2) It meets the diverse health needs of adolescents.
+(3) It aims to increase the full immunisation coverage for children.
+(4) Its objective is to achieve universal access to equitable, affordable, and quality healthcare services.
+= 3
+~ Mission Indradhanush was launched in December 2014 to raise full immunisation coverage of children (and pregnant women) to 90% and above. Child health screening is the RBSK scheme, and adolescent health is the RKSK scheme.
+
+Q 92 | pol | Constitution & Rights
+Which one of the following amendments to the Constitution of India has introduced reservations in education and in public employment for people from the Economically Weaker Sections (EWS) of society?
+(1) The Constitution (101st Amendment) Act
+(2) The Constitution (102nd Amendment) Act
+(3) The Constitution (122nd Amendment) Act
+(4) The Constitution (103rd Amendment) Act
+= 4
+~ The 103rd Amendment Act, 2019 added Articles 15(6) and 16(6), allowing up to 10% reservation for EWS in education and public jobs. The 101st Amendment introduced GST, and the 102nd gave the National Commission for Backward Classes constitutional status.
+
+Q 93 | pol | Constitution & Rights
+Which among the following Fundamental Rights is not suspended when an Emergency is declared?
+(1) Protection in respect of conviction for offences
+(2) Right to constitutional remedies
+(3) Right to move freely throughout the territory of India
+(4) Equality before law
+= 1
+~ Since the 44th Amendment (1978), Article 359 cannot be used to suspend the enforcement of Articles 20 (protection in respect of conviction for offences) and 21 during an Emergency. Article 19 freedoms, such as movement, are suspended automatically in a war or external-aggression Emergency, and the President may suspend enforcement of the other rights.
+
+Q 94 | pol | Union & State Government
+Any question pertaining to the disqualification of a member of the Lok Sabha on the ground of defection is decided by:
+(1) The President of India
+(2) The Speaker of the Lok Sabha
+(3) The Supreme Court of India
+(4) The concerned Political Party
+= 2
+~ Under paragraph 6 of the Tenth Schedule (anti-defection law), the Speaker of the Lok Sabha decides disqualification for defection. The Speaker's decision is open to judicial review (Kihoto Hollohan, 1992). Disqualification on other grounds is decided by the President under Article 103.
+
+Q 95 | cur | National
+Which one of the following statements about Indian Maritime University (IMU) is not correct?
+(1) It was established through an Act of Parliament as a Central University.
+(2) It was established primarily to support the Indian Navy.
+(3) It is located in Chennai.
+(4) It was established to extend the benefits of knowledge and skill for development of individuals and society by associating closely with local, regional and national issues of development.
+= 2
+~ IMU was created by the Indian Maritime University Act, 2008 as a central university with its headquarters in Chennai. It works under the Ministry of Ports, Shipping and Waterways and trains people for the merchant navy and the maritime sector, not for the Indian Navy.
+
+Q 96 | geo | World Geography
+Which of the following pairs is/are correctly matched?
+Plateau : Continent
+1. Abyssinian : Africa
+2. Patagonian : Australia
+3. Anatolian : Asia
+4. Iberian : North America
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 1 and 3 only
+(3) 2, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ The Abyssinian (Ethiopian) Plateau is in Africa and the Anatolian Plateau (Turkey) is in Asia. The Patagonian Plateau is in South America (Argentina) and the Iberian Plateau (Meseta) is in Europe (Spain).
+
+Q 97 | geo | Physical Geography
+Which of the following pairs of Isolines and its properties are correctly matched?
+1. Isonif : Snowfall
+2. Isohel : Sunshine
+3. Isohaline : Salinity
+4. Isohypse : Cloudiness
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 2, 3 and 4
+(3) 1 and 3 only
+(4) 1, 2 and 4
+= 1
+~ An isonif joins places with equal snowfall, an isohel places with equal sunshine and an isohaline places with equal salinity. An isohypse joins points of equal height (a contour); lines of equal cloudiness are isonephs.
+
+Q 98 | geo | Physical Geography
+Which of the following is the correct order of clouds in ascending order (lowest to highest) of height from surface?
+1. Cirrocumulus
+2. Nimbostratus
+3. Cirrus
+4. Altostratus
+Select the correct answer using the code given below:
+(1) 1, 2, 4, 3
+(2) 2, 4, 3, 1
+(3) 3, 2, 1, 4
+(4) 2, 4, 1, 3
+= 4
+~ Nimbostratus is a low cloud and altostratus is a middle cloud (about 2–7 km). Cirrocumulus and cirrus are high clouds, and the key places cirrus highest. So the order is nimbostratus, altostratus, cirrocumulus, cirrus.
+
+Q 99 | eco | Agriculture, Industry & Trade
+Which of the following pairs of revolution in agriculture sector and its production are correctly matched?
+1. Pink revolution : Shrimp production
+2. Yellow revolution : Oilseeds production
+3. Black revolution : Biodiesel production
+4. Golden revolution : Egg production
+Select the correct answer using the code given below:
+(1) 1, 2 and 3
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 2 and 4 only
+= 1
+~ The Pink revolution is linked with prawn/shrimp (and onion, meat) production, the Yellow revolution with oilseeds and the Black revolution with petroleum and biodiesel. The Golden revolution refers to horticulture and honey; egg production is the Silver revolution.
+
+Q 100 | pol | Constitutional & Statutory Bodies
+Which one among the following statements about National Highways Authority of India (NHAI) is not correct?
+(1) NHAI collects fees on the National Highway.
+(2) NHAI conducts training of Highway Engineers at entry level and in-service.
+(3) NHAI provides consultancy and construction services in India and abroad.
+(4) NHAI regulates and controls the plying of vehicles for its proper management.
+= 2
+~ Section 16 of the NHAI Act, 1988 lets NHAI collect fees on national highways, provide consultancy and construction services in India and abroad, and regulate and control the plying of vehicles. Entry-level and in-service training of highway engineers is done by the Indian Academy of Highway Engineers (IAHE), not NHAI.
+
+Q 101 | cur | National
+Which of the following statements about the National Centre for Good Governance (NCGG) are correct?
+1. NCGG was set up by the Sardar Vallabhbhai Patel National Police Academy.
+2. The National Institute of Administrative Research (NIAR) has been rechristened and subsumed into NCGG.
+3. NCGG is an apex-level autonomous body under the Ministry of Home Affairs.
+4. The Chairperson of the Governing Body of the NCGG is the Cabinet Secretary to the Government of India.
+Select the correct answer using the code given below:
+(1) 1, 2 and 4
+(2) 2 and 4 only
+(3) 1 and 3 only
+(4) 3 and 4 only
+= 2
+~ The Government of India set up NCGG in 2014 by renaming and absorbing the National Institute of Administrative Research (NIAR), part of LBSNAA Mussoorie. It is an autonomous institute under the Ministry of Personnel (DARPG), not the Home Ministry, and the Cabinet Secretary chairs its Governing Body.
+
+Q 102 | cur | National
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (International Yoga Day)
+A. 6th Edition
+B. 7th Edition
+C. 8th Edition
+D. 9th Edition
+List II (Theme)
+1. Yoga for well-being
+2. Yoga for health – Yoga at home
+3. Yoga for Vasudhaiva Kutumbakam
+4. Yoga for Humanity
+Code:
+(1) A-2, B-4, C-1, D-3
+(2) A-2, B-1, C-4, D-3
+(3) A-3, B-1, C-4, D-2
+(4) A-3, B-4, C-1, D-2
+= 2
+~ The 6th IDY (2020) theme was "Yoga for Health – Yoga at Home" and the 7th (2021) was "Yoga for Wellness/Well-being". The 8th (2022) was "Yoga for Humanity" and the 9th (2023) was "Yoga for Vasudhaiva Kutumbakam". So A-2, B-1, C-4, D-3.
+
+Q 103 | cur | Defence & Security
+The joint multinational maritime exercise named IBSAMAR is conducted by the Navies of which of the following countries?
+(1) India, Bangladesh, Sri Lanka and Maldives
+(2) India, Bangladesh and South Africa
+(3) India, Bangladesh, Sri Lanka and Mauritius
+(4) India, Brazil and South Africa
+= 4
+~ IBSAMAR is the IBSA maritime exercise between the navies of India, Brazil and South Africa. The 7th edition was held off Gqeberha, South Africa in 2022.
+
+Q 104 | cur | International
+In which one of the following cities is the Heliopolis Commonwealth War Grave Cemetery located?
+(1) Marseille
+(2) Washington D.C.
+(3) Cairo
+(4) Athens
+= 3
+~ The Heliopolis (Port Tewfik) Memorial and Heliopolis War Cemetery are in Cairo, Egypt. They honour Indian and other Commonwealth soldiers of the World Wars, and PM Modi visited in June 2023.
+
+Q 105 | cur | National
+Under which one of the following rivers has India's first underwater metro rail tunnel been constructed?
+(1) Yamuna
+(2) Ganga
+(3) Hooghly
+(4) Gomti
+= 3
+~ India's first underwater metro tunnel carries Kolkata Metro's East–West corridor under the Hooghly between Howrah and Esplanade. The trial run was in April 2023.
+
+Q 106 | cur | Sports
+Which among the following set of national teams participated in the South Asian Football Federation Championship – 2023?
+(1) Sri Lanka, India, Bangladesh
+(2) Lebanon, Kuwait, Pakistan
+(3) India, Pakistan, Myanmar
+(4) Nepal, Sri Lanka, Bhutan
+= 2
+~ The 2023 SAFF Championship in Bengaluru had invited teams Lebanon and Kuwait alongside SAFF members such as Pakistan, and India beat Kuwait in the final. Sri Lanka did not take part, and Myanmar is not a SAFF member, so the other sets are wrong.
+
+Q 107 | cur | National
+Which butterfly species was recently named the official butterfly of Jammu and Kashmir?
+(1) Noble's Helen
+(2) Kaisar-i-Hind
+(3) Blue Duke
+(4) Blue Pansy
+= 4
+~ In June 2023 the J&K State Wildlife Board named the Blue Pansy (Junonia orithya) the official butterfly of Jammu and Kashmir. Kaiser-i-Hind is the state butterfly of Arunachal Pradesh.
+
+Q 108 | cur | International
+Which company operated the ill-fated Titan submersible which recently imploded killing all five passengers while on a dive to visit the Titanic shipwreck under the waters of the North Atlantic?
+(1) Odyssey Marine Exploration
+(2) M.A.R.E. (Marine Adventure for Research and Education)
+(3) OceanGate Expeditions
+(4) Seafarer Exploration Corporation
+= 3
+~ The Titan submersible belonged to the US firm OceanGate Expeditions. It imploded in June 2023 on a dive to the Titanic wreck, killing all five on board, including CEO Stockton Rush.
+
+Q 109 | cur | National
+Which among the following is India's longest road tunnel?
+(1) Atal Tunnel
+(2) Kuthiran Tunnel
+(3) Dr. Syama Prasad Mookerjee Tunnel
+(4) Banihal Qazigund Road Tunnel
+= 3
+~ At the time of the exam, the Dr. Syama Prasad Mookerjee (Chenani–Nashri) Tunnel in J&K, about 9.28 km long, was India's longest road tunnel. The Atal Tunnel (about 9.02 km) is the longest highway tunnel above 10,000 ft, and Banihal–Qazigund is about 8.45 km.
+
+Q 110 | cur | Awards & Personalities
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Padma Vibhushan/Padma Bhushan Awardee, 2023)
+A. Dilip Mahalanabis (posthumous)
+B. Sudha Murthy
+C. S.M. Krishna
+D. S.L. Bhyrappa
+List II (Category)
+1. Literature & Education
+2. Public Affairs
+3. Social Work
+4. Medicine
+Code:
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-2, C-3, D-1
+(3) A-1, B-2, C-3, D-4
+(4) A-1, B-3, C-2, D-4
+= 1
+~ In 2023 ORS pioneer Dilip Mahalanabis received the Padma Vibhushan (posthumously) for Medicine, and S.M. Krishna received it for Public Affairs. Sudha Murty received the Padma Bhushan for Social Work and novelist S.L. Bhyrappa for Literature & Education. So A-4, B-3, C-2, D-1.
+
+Q 111 | his | Art & Culture
+Match List I with List II and select the correct answer using the code given below the Lists:
+List I (Festivals of North East India)
+A. Hornbill Festival
+B. Chapchar Kut
+C. Nongkrem Dance Festival
+D. Saga Dawa
+List II (State)
+1. Meghalaya
+2. Sikkim
+3. Nagaland
+4. Mizoram
+Code:
+(1) A-2, B-4, C-1, D-3
+(2) A-3, B-1, C-4, D-2
+(3) A-3, B-4, C-1, D-2
+(4) A-2, B-1, C-4, D-3
+= 3
+~ The Hornbill Festival is held in Nagaland, Chapchar Kut in Mizoram and the Nongkrem dance by the Khasis of Meghalaya. Saga Dawa is a Buddhist festival of Sikkim. So A-3, B-4, C-1, D-2.
+
+Q 112 | cur | Defence & Security
+From which one of the following countries has India procured the S-400 Triumf air defence missile system?
+(1) United Kingdom
+(2) U.S.A.
+(3) France
+(4) Russia
+= 4
+~ The S-400 Triumf is a Russian long-range surface-to-air missile system. India signed a deal for five squadrons with Russia in 2018 and deliveries began in 2021.
+
+Q 113 | cur | Sports
+Abhinav Bindra is the winner of the first ever individual Olympic gold medal for India. He won gold in which shooting event and in which Olympic Games?
+(1) 10 meter air pistol, London
+(2) 10 meter air rifle, London
+(3) 10 meter air rifle, Beijing
+(4) 10 meter air pistol, Beijing
+= 3
+~ Abhinav Bindra won the men's 10 m air rifle at the 2008 Beijing Olympics, India's first individual Olympic gold medal.
+
+Q 114 | cur | National
+Cheetahs were recently re-introduced to India from Africa. From which language is the name 'Cheetah' derived?
+(1) Swahili
+(2) Afrikaans
+(3) Somali
+(4) Sanskrit
+= 4
+~ "Cheetah" comes from the Hindi chītā, which derives from the Sanskrit chitraka, meaning "spotted" or "speckled". Under Project Cheetah, cheetahs from Namibia and South Africa were released in Kuno National Park from 2022.
+
+Q 115 | geo | Environment & Ecology
+A new species of pit-viper was discovered in 2019 and named after the State in which it was found. Identify the State from among the following:
+(1) Kerala
+(2) Arunachal Pradesh
+(3) Andaman and Nicobar Islands
+(4) Assam
+= 2
+~ The Arunachal pit viper (Trimeresurus arunachalensis) was described in 2019 from West Kameng district and named after Arunachal Pradesh. It was the first new pit viper reported from India in decades.
+
+Q 116 | cur | Sports
+Who among the following set of players from India have either won or secured the runner-up position in the All England Badminton Tournament?
+(1) Prakash Padukone, P.V. Sindhu, Parupalli Kashyap
+(2) Pullela Gopichand, Saina Nehwal, Lakshya Sen
+(3) Prakash Padukone, Pullela Gopichand, Srikanth Kidambi
+(4) Lakshya Sen, Saina Nehwal, P.V. Sindhu
+= 2
+~ Pullela Gopichand won the All England title in 2001. Saina Nehwal was women's singles runner-up in 2015 and Lakshya Sen was men's singles runner-up in 2022. Every other set has someone who never reached an All England singles final (Sindhu, Kashyap or Srikanth).
+
+Q 117 | cur | International
+Who among the following leaders recently won the election to the office of the President of Turkey?
+(1) Recep Tayyip Erdoğan
+(2) Kemal Kiliçdaroğlu
+(3) Ahmet Necdet Sezer
+(4) Abdullah Gül
+= 1
+~ Recep Tayyip Erdoğan beat opposition candidate Kemal Kılıçdaroğlu in the run-off of May 2023 to win another term as President of Türkiye. Sezer and Gül are former presidents.
+
+Q 118 | cur | Awards & Personalities
+Georgi Gospodinov Georgiev won the International Booker Prize, 2023 for the darkly comic novel by the name:
+(1) The Promise
+(2) Shuggie Bain
+(3) Time Shelter
+(4) Girl, Woman, Other
+= 3
+~ Bulgarian author Georgi Gospodinov and translator Angela Rodel won the 2023 International Booker Prize for "Time Shelter". The Promise (Damon Galgut, 2021), Shuggie Bain (Douglas Stuart, 2020) and Girl, Woman, Other (Bernardine Evaristo, co-winner 2019) won the Booker Prize.
+
+Q 119 | cur | Awards & Personalities
+The Grand Order of the Chain of the Yellow Star is the highest civilian honour of which among the following countries?
+(1) Fiji
+(2) Papua New Guinea
+(3) Egypt
+(4) Suriname
+= 4
+~ The Grand Order of the Chain of the Yellow Star is Suriname's highest civilian honour. President Droupadi Murmu received it during her visit to Suriname in June 2023.
+
+Q 120 | cur | National
+Which one among the following correctly represents the theme on which the interiors of the new Parliament Building is based?
+(Lok Sabha : Rajya Sabha)
+(1) Lotus : Banyan
+(2) Peacock : Lotus
+(3) Peacock : Banyan
+(4) Lotus : Peacock
+= 2
+~ The new Parliament building opened in May 2023. Its Lok Sabha chamber follows the theme of the peacock (national bird) and its Rajya Sabha chamber the lotus (national flower). The banyan (national tree) stands in the central courtyard.

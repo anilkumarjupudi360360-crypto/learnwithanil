@@ -146,7 +146,8 @@
    "cat": "upsc",
    "b": "UPSC",
    "t": "CDS",
-   "n": "Combined Defence Services"
+   "n": "Combined Defence Services",
+   "live": "upsc-cds/"
   },
   {
    "id": "upsc-nda",

@@ -1,0 +1,1057 @@
+# UPSC Combined Defence Services Examination (II) 2023: Elementary Mathematics (Series A, booklet JNUP-T-EMT), held 3 September 2023.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, July 2024). Explanations by Learn with Anil.
+
+Q 1 | alg | Equations & Expressions
+If a² − bc = α, b² − ac = β, c² − ab = γ, then what is (aα + bβ + cγ)/((a + b + c)(α + β + γ)) equal to?
+(1) a + b − c
+(2) a − b + c
+(3) −a + b + c
+(4) 1
+= 4
+~ aα + bβ + cγ = a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca), and α + β + γ = a² + b² + c² − ab − bc − ca. So the ratio is exactly 1.
+
+Q 2 | alg | Polynomials & Quadratics
+If (x − 1)³ is a factor of x⁴ + αx³ + βx² + γx − 1, then the other factor will be:
+(1) x + 1
+(2) x − 3
+(3) x + 2
+(4) x
+= 1
+~ The other factor is linear, say (x + k). Comparing constant terms, (−1)³·k = −1, so k = 1. Check: (x − 1)³(x + 1) = x⁴ − 2x³ + 2x − 1.
+
+Q 3 | ari | Number System
+A 2-digit number is such that the sum of the number and the number obtained by reversing the order of the digits of the number is 55. Further, the difference of the given number and the number obtained by reversing the order of the digits of the number is 45. What is the product of the digits?
+(1) 5
+(2) 2
+(3) 1
+(4) 0
+= 4
+~ 11(a + b) = 55 gives a + b = 5, and 9(a − b) = 45 gives a − b = 5. So a = 5, b = 0 (the number is 50) and the product of the digits is 0.
+
+Q 4 | ari | Ratio, Time & Work
+If A and B can finish a work in 10 days, B and C can finish the same work in 12 days, C and A can finish the same work in 15 days; then in how many days can A, B and C together finish half of the work?
+(1) 8 days
+(2) 5 days
+(3) 4 days
+(4) 3 days
+= 3
+~ 2(A + B + C) = 1/10 + 1/12 + 1/15 = 1/4, so A + B + C = 1/8 of the work per day. The whole work takes 8 days, so half takes 4 days.
+
+Q 5 | ari | Percentage, Profit & Interest
+A person borrowed ₹ 10,000 at 12% rate of interest per annum compounded quarterly for a period of 9 months. What is the interest paid by him to settle his account after 9 months?
+(1) ₹ 927·27
+(2) ₹ 947·47
+(3) ₹ 967·67
+(4) ₹ 987·87
+= 1
+~ The rate is 3% per quarter for 3 quarters. Interest = 10000(1.03³ − 1) = 10000 × 0.092727 = ₹ 927.27.
+
+Q 6 | trg | Ratios & Identities
+For what relation between a and b is the equation sin θ = (a + b)/(2√ab) possible?
+(1) a = b
+(2) a ≤ b
+(3) a ≥ b
+(4) a > b
+= 1
+~ By AM ≥ GM, (a + b)/(2√ab) ≥ 1. Since sin θ ≤ 1, the equation is possible only when the two are equal, i.e. when a = b.
+
+Q 7 | ari | Ratio, Time & Work
+Three persons A, B and C together can do a piece of work in 36 days. A and B together can do five times as much work as C alone; B and C together can do as much work as A alone. If A and C together can do n times as much work as B alone, then what is the value of n?
+(1) 1·5
+(2) 2
+(3) 2·5
+(4) 3
+= 2
+~ Daily rates: A + B + C = 1/36. Since A + B = 5C, 6C = 1/36, so C = 1/216. Since B + C = A, 2A = 1/36, so A = 1/72 = 3/216. Then B = 6/216 − 3/216 − 1/216 = 2/216, so A + C = 4/216 = 2B and n = 2.
+
+Q 8 | alg | Equations & Expressions
+If 2a/3 = 4b/5 = 3c/4, then what is the value of (18/a)√(a² + c² − b²)?
+(1) 3√5
+(2) √355
+(3) √375
+(4) 3√15
+= 2
+~ Set each ratio equal to k: a = 3k/2, b = 5k/4, c = 4k/3. Then a² + c² − b² = k²(81 + 64 − 56.25)/36 = 355k²/144, so (18/a)·(√355·k/12) = (12/k)(√355·k/12) = √355.
+
+Q 9 | sts | Statistics & Data
+The sum of deviations of n numbers from 10 and 20 are a, b respectively. If b/a = −4, then what is the mean of these n numbers?
+(1) 12
+(2) 14
+(3) 16
+(4) 18
+= 1
+~ a = Σx − 10n and b = Σx − 20n = a − 10n. From b = −4a we get 5a = 10n, so a = 2n. The mean is 10 + a/n = 12.
+
+Q 10 | sts | Statistics & Data
+If the median of observations
+12, 1, 8, 54, 61, 28, 45, 35, 21, 17
+is M, then what is the value of 2M + 5?
+(1) 12
+(2) 28
+(3) 52
+(4) 54
+= 4
+~ In order: 1, 8, 12, 17, 21, 28, 35, 45, 54, 61. There are 10 values, so M = (21 + 28)/2 = 24.5 and 2M + 5 = 54.
+
+Q 11 | alg | Polynomials & Quadratics
+How many real roots does the equation √(x + 9) = x − 3 have?
+(1) Onle one
+(2) Only two
+(3) Only three
+(4) None
+= 1
+~ Squaring gives x + 9 = x² − 6x + 9, so x(x − 7) = 0. The right side must be ≥ 0, so x = 0 is rejected (√9 ≠ −3). Only x = 7 works.
+
+Q 12 | alg | Equations & Expressions
+If x = 97 + 56√3, then what is the value of ⁴√x + 1/⁴√x?
+(1) 7
+(2) 6
+(3) 5
+(4) 4
+= 4
+~ 97 + 56√3 = (7 + 4√3)² = (2 + √3)⁴, so ⁴√x = 2 + √3 and 1/⁴√x = 2 − √3. Their sum is 4.
+
+Q 13 | ari | Number System
+Let L be the LCM and H be the HCF of two given numbers. L and H are in the ratio 3 : 2. If the sum of the two numbers is 45, then what is the product of the numbers?
+(1) 243
+(2) 486
+(3) 504
+(4) Cannot be determined due to insufficient data
+= 2
+~ The keyed value 486 = 27 × 18 comes from the pair 27 and 18, whose sum is 45 and which are themselves in the ratio 3 : 2. Note: UPSC's key gives (2); by standard sources the answer appears to be (4), because the HCF always divides the LCM, so L : H must be a whole number and can never be 3 : 2. The data is inconsistent (27 and 18 actually have L = 54 and H = 9).
+
+Q 14 | ari | Speed & Distance
+A man walks at an average speed of 3 km/hr from his home and reaches office 40 minutes early. If he walks at an average speed of 2 km/hr, he would reach office 40 minutes late. What is the distance between his home and office?
+(1) 6 km
+(2) 8 km
+(3) 10 km
+(4) 12 km
+= 2
+~ The two walking times differ by 80 minutes: d/2 − d/3 = 4/3 h, so d/6 = 4/3 and d = 8 km.
+
+Q 15 | alg | Equations & Expressions
+If 3ˣ⁻¹ + 3³⁻ˣ = 6, then what is 2ˣ⁻¹ + 2³⁻ˣ equal to?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 1
+~ Let t = 3ˣ⁻¹. Then 3³⁻ˣ = 9/t, so t + 9/t = 6, which gives (t − 3)² = 0 and t = 3, so x = 2. Hence 2¹ + 2¹ = 4.
+
+Q 16 | alg | Equations & Expressions
+If x(a − b + ab/(a − b)) = y(a + b − ab/(a + b)) and x + y = 2a³, then what is x − y equal to?
+(1) −2b³
+(2) −2ab³
+(3) 2b³
+(4) 2ab³
+= 1
+~ The left bracket is (a² − ab + b²)/(a − b) and the right bracket is (a² + ab + b²)/(a + b). So x/y = (a³ − b³)/(a³ + b³). With x + y = 2a³ this gives x = a³ − b³ and y = a³ + b³, so x − y = −2b³.
+
+Q 17 | alg | Polynomials & Quadratics
+Which one of the following is a factor of 3√3x³ + 2√2y³ − 18xy + 6√6?
+(1) √3x + √2y − √3
+(2) √3x + √2y − √6
+(3) 3x² + 2y² − √18x − √12y − √6xy + 6
+(4) 3x² + 2y² + √18x + √12y − √6xy + 6
+= 3
+~ With p = √3x, q = √2y, r = √6 we have 3pqr = 18xy, so the expression is p³ + q³ + r³ − 3pqr = (p + q + r)(p² + q² + r² − pq − qr − rp). The second factor is 3x² + 2y² + 6 − √6xy − √12y − √18x (checked numerically).
+
+Q 18 | alg | Sets, Logarithms & Inequalities
+What is number of digits in the expansion of 125¹⁰⁰? (Given log₁₀ 2 = 0·301)
+(1) 69
+(2) 70
+(3) 209
+(4) 210
+= 4
+~ log 125¹⁰⁰ = 300 log 5 = 300(1 − 0.301) = 209.7. The number of digits is the integer part plus 1, which is 210.
+
+Q 19 | alg | Polynomials & Quadratics
+What is the HCF of
+acx³ + bcx² + adx² + acdx + bdx + bcd and
+adx³ + acx² + bdx² + bcx + acdx + bcd
+if HCF (c, d) = 1, c ≠ d?
+(1) bx + c
+(2) cx + d
+(3) ax + d
+(4) ax + b
+= 4
+~ The first expression is (ax + b)(cx² + dx + cd) and the second is (ax + b)(dx² + cx + cd). The remaining quadratic factors have no common factor when c ≠ d, so the HCF is ax + b.
+
+Q 20 | alg | Polynomials & Quadratics
+If xⁿ − pyⁿ + qzⁿ is divisible by x² + abyz − bzx − axy, then what is p/aⁿ − q/bⁿ equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 3
+~ The divisor factors as (x − ay)(x − bz). Setting x = ay gives (aⁿ − p)yⁿ + qzⁿ = 0, so p = aⁿ and q = 0. Setting x = bz gives (bⁿ + q)zⁿ − pyⁿ = 0, so p = 0 and q = −bⁿ. Either way, p/aⁿ − q/bⁿ = 1.
+
+Q 21 | ari | Ratio, Time & Work
+Consider the following statements:
+1. If (a + b) is directly proportional to (a − b), then (a² + b²) is directly proportional to ab.
+2. If a is directly proportional to b, then (a² − b²) is directly proportional to ab.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ In 1, a + b = k(a − b) gives a = mb for a constant m, so (a² + b²)/ab = (m² + 1)/m, which is constant. In 2, a = kb gives (a² − b²)/ab = (k² − 1)/k, which is also constant. So both statements are true.
+
+Q 22 | alg | Equations & Expressions
+If (3a + 6b + c + 2d) × (3a − 6b − c + 2d) = (3a − 6b + c − 2d) × (3a + 6b − c − 2d), then which one of the following is correct?
+(1) ab = cd
+(2) ac = bd
+(3) ad = bc
+(4) ad + bc = 0
+= 3
+~ LHS = (3a + 2d)² − (6b + c)² and RHS = (3a − 2d)² − (6b − c)². LHS − RHS = 24ad − 24bc = 0, so ad = bc.
+
+Q 23 | trg | Ratios & Identities
+If 3 sin θ + 5 cos θ = 5, then what is the value of 5 sin θ − 3 cos θ equal to?
+(1) 5
+(2) −3
+(3) −2
+(4) 0
+= 2
+~ (3 sin θ + 5 cos θ)² + (5 sin θ − 3 cos θ)² = 34, so (5 sin θ − 3 cos θ)² = 9 and the value is ±3. Of these, only −3 is offered (it occurs at θ = 0).
+
+Q 24 | alg | Equations & Expressions
+The combined age of a man and his wife is 6 times the combined age of their children. Two years ago their combined age was 10 times the combined age of their children; and six years later their combined age will be 3 times the combined age of their children. How many children do they have if each child is at least 2 years old?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 2
+~ Let the parents' total be M, the children's total C and the number of children n. Then M = 6C, M − 4 = 10(C − 2n) and M + 12 = 3(C + 6n). This gives 4C = 20n − 4 and 3C = 18n − 12, so n = 3 (C = 14, M = 84).
+
+Q 25 | trg | Ratios & Identities
+What is 3 (sin x − cos x)⁴ + 6 (sin x + cos x)² + 4 (sin x)⁶ + 4 (cos x)⁶ equal to?
+(1) 9
+(2) 11
+(3) 13
+(4) 15
+= 3
+~ With s = sin x cos x: 3(1 − 2s)² + 6(1 + 2s) + 4(1 − 3s²) = 3 − 12s + 12s² + 6 + 12s + 4 − 12s² = 13.
+
+Q 26 | trg | Ratios & Identities
+What is the value of sin θ + cos θ, if θ satisfies the equation cot² θ − (√3 + 1) cot θ + √3 = 0; 0 < θ < π/4?
+(1) √2
+(2) 2
+(3) (√3 + 1)/2
+(4) (√3 − 1)/2
+= 3
+~ (cot θ − 1)(cot θ − √3) = 0. For 0 < θ < π/4, cot θ > 1, so cot θ = √3 and θ = π/6. Then sin θ + cos θ = 1/2 + √3/2 = (√3 + 1)/2.
+
+Q 27 | trg | Ratios & Identities
+Which one of the following is a value of θ, if θ satisfies the equation tan 2θ tan 4θ − 1 = 0; 0 < θ < π/2?
+(1) π/12
+(2) π/15
+(3) π/6
+(4) π/5
+= 1
+~ tan 2θ tan 4θ = 1 means tan 2θ = cot 4θ, so 2θ + 4θ = π/2 and θ = π/12. Check: tan(π/6)·tan(π/3) = 1.
+
+Q 28 | trg | Ratios & Identities
+If tan x = (sin θ + cos θ)/(sin θ − cos θ), π/4 < θ < π/2, then what is √2 sin x equal to?
+(1) sin θ + cos θ
+(2) sin θ − cos θ
+(3) (sin θ + cos θ)/2
+(4) (sin θ − cos θ)/2
+= 1
+~ sin² x = tan² x/(1 + tan² x) = (sin θ + cos θ)²/2, since (s + c)² + (s − c)² = 2. Taking the positive root (tan x > 0 here), √2 sin x = sin θ + cos θ.
+
+Q 29 | trg | Ratios & Identities
+How many values of θ will satisfy the equation (sin² θ − 4 sin θ + 3) (4 − cos² θ + 4 sin θ) = 0, where 0 < θ < π/2?
+(1) None
+(2) Only one
+(3) Onle two
+(4) Only three
+= 1
+~ The first factor is (sin θ − 1)(sin θ − 3), so sin θ = 1 or 3. The second factor is sin² θ + 4 sin θ + 3 = (sin θ + 1)(sin θ + 3), so sin θ = −1 or −3. None of these is possible for 0 < θ < π/2, where 0 < sin θ < 1.
+
+Q 30 | trg | Ratios & Identities
+If x sin³ θ + y cos³ θ = sin θ cos θ and x sin θ − y cos θ = 0, for every θ ∈ (0, π/2), then what is x² + y² equal to?
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 2
+~ From the second equation, x = k cos θ and y = k sin θ. The first then becomes k sin θ cos θ(sin² θ + cos² θ) = sin θ cos θ, so k = 1 and x² + y² = k² = 1.
+
+Q 31 | trg | Heights & Distances
+Passage: A flagstaff stands on the top of a vertical tower. The angle of elevation of the top of the flagstaff from a certain place on the same horizontal level with the base of the tower is found to be α. Advancing a distance d towards the tower in the same horizontal plane, the angle of elevation of the top of the flagstaff is observed to be β and that of the top of the tower is observed to be γ. Let H be the height of the top of the flagstaff from the base of the tower and h be the height of the tower.
+
+Which one of the following is correct?
+(1) H tan γ − h tan β = 0
+(2) h tan γ − H tan β = 0
+(3) H tan γ − h tan α = 0
+(4) h tan γ − H tan α = 0
+= 1
+~ From the second point at distance D from the tower, tan β = H/D and tan γ = h/D. So D = H/tan β = h/tan γ, which gives H tan γ = h tan β.
+
+Q 32 | trg | Heights & Distances
+Passage: A flagstaff stands on the top of a vertical tower. The angle of elevation of the top of the flagstaff from a certain place on the same horizontal level with the base of the tower is found to be α. Advancing a distance d towards the tower in the same horizontal plane, the angle of elevation of the top of the flagstaff is observed to be β and that of the top of the tower is observed to be γ. Let H be the height of the top of the flagstaff from the base of the tower and h be the height of the tower.
+
+Which one of the following is correct?
+(1) d = H(cot α − cot β)/2
+(2) d = H(tan α − tan β)/2
+(3) d = H (cot α − cot β)
+(4) d = H (tan α − tan β)
+= 3
+~ The two observation points are H cot α and H cot β from the tower. So d = H cot α − H cot β = H(cot α − cot β).
+
+Q 33 | trg | Heights & Distances
+Passage: AB is a straight road leading to the foot P of a tower of height h. Q is at distance x from P and R is at a distance y from Q (R is farther from P than Q; R, Q are on the same side). The angle of elevation of the top of the tower at Q is twice of that at R. (Use the formula tan 2θ = 2 tan θ/(1 − tan² θ))
+
+Which one of the following is correct?
+(1) x = y
+(2) x < y
+(3) x > y
+(4) Cannot be concluded due to insufficient data
+= 2
+~ Let T be the top of the tower and let the angle at R be θ. The exterior angle at Q is 2θ, so ∠QTR = θ and triangle QTR is isosceles with QT = QR = y. QT is the hypotenuse of right triangle TPQ, so y = QT > QP = x.
+
+Q 34 | trg | Heights & Distances
+Passage: AB is a straight road leading to the foot P of a tower of height h. Q is at distance x from P and R is at a distance y from Q (R is farther from P than Q; R, Q are on the same side). The angle of elevation of the top of the tower at Q is twice of that at R. (Use the formula tan 2θ = 2 tan θ/(1 − tan² θ))
+
+Which one of the following is correct?
+(1) h² = x² − y²
+(2) h² = x² + y²
+(3) h² = 2 (y² − x²)
+(4) h² = y² − x²
+= 4
+~ From Q 33, QT = y. In right triangle TPQ, y² = x² + h², so h² = y² − x².
+
+Q 35 | gm | Circles & Quadrilaterals
+Passage: Two parallel chords AB and CD of a circle are of lengths 60 cm and 80 cm respectively. They are on the same side of the centre O and 10 cm apart.
+
+What is the diameter of the circle?
+(1) 120 cm
+(2) 110 cm
+(3) 100 cm
+(4) 90 cm
+= 3
+~ The half-chords are 30 and 40, and the chords are on the same side of O, so √(r² − 900) − √(r² − 1600) = 10. This gives r = 50 (distances 40 and 30), so the diameter is 100 cm.
+
+Q 36 | gm | Circles & Quadrilaterals
+Passage: Two parallel chords AB and CD of a circle are of lengths 60 cm and 80 cm respectively. They are on the same side of the centre O and 10 cm apart.
+
+If the chord AB subtends an angle α and chord CD subtends an angle β at the centre O, then what is the value of tan(β/2) − tan(α/2)?
+(1) 3/4
+(2) 5/12
+(3) 1/2
+(4) 7/12
+= 4
+~ AB is 40 cm from O, so tan(α/2) = 30/40 = 3/4. CD is 30 cm from O, so tan(β/2) = 40/30 = 4/3. The difference is 4/3 − 3/4 = 7/12.
+
+Q 37 | alg | Equations & Expressions
+Passage: Let p = x⁴ − y²z², q = y⁴ − z²x², r = z⁴ − x²y².
+
+What is px² + qy² + rz² equal to?
+(1) (x² + y² + z²) (p + q + r)
+(2) −(x² + y² + z²) (p + q + r)
+(3) (y² + z² − x²) (r − q − p)
+(4) (x² + y² − z²) (p − q − r)
+= 1
+~ Put a = x², b = y², c = z². Then px² + qy² + rz² = a³ + b³ + c³ − 3abc = (a + b + c)(a² + b² + c² − ab − bc − ca), and p + q + r is exactly the second factor. So the expression equals (x² + y² + z²)(p + q + r) (verified numerically).
+
+Q 38 | alg | Equations & Expressions
+Passage: Let p = x⁴ − y²z², q = y⁴ − z²x², r = z⁴ − x²y².
+
+What is x² (px² + qy² + rz²) + qr − p² equal to?
+(1) 0
+(2) 1
+(3) p + q + r
+(4) x² + y² + z²
+= 1
+~ With a = x², b = y², c = z²: qr − p² = (b² − ca)(c² − ab) − (a² − bc)² = a(a³ + b³ + c³ − 3abc) = −x²(px² + qy² + rz²). So the whole expression is 0 (numerically checked).
+
+Q 39 | gm | Mensuration
+Passage: A right conical cap just covers two spheres placed one above the other on a table such that it touches both the spheres. Let r be the radius of the smaller sphere and R be the radius of the bigger sphere. Let 2θ be the vertical angle of the cone.
+
+What is the height of the cone?
+(1) 2r²/(R − r)
+(2) 2R²/(R − r)
+(3) 2(r² + R²)/(R − r)
+(4) (r² + R²)/(R − r)
+= 2
+~ The spheres touch each other and the cone, so sin θ = (R − r)/(R + r). The centre of the big sphere is at height R and lies R/sin θ below the apex. So height = R + R(R + r)/(R − r) = 2R²/(R − r).
+
+Q 40 | gm | Mensuration
+Passage: A right conical cap just covers two spheres placed one above the other on a table such that it touches both the spheres. Let r be the radius of the smaller sphere and R be the radius of the bigger sphere. Let 2θ be the vertical angle of the cone.
+
+What is the radius of the base of the cone?
+(1) 2r² tan θ/(R − r)
+(2) 2R² tan θ/(R − r)
+(3) 2(r² + R²) tan θ/(R − r)
+(4) (r² + R²) tan θ/(R − r)
+= 2
+~ The base radius is the height × tan θ, where θ is the semi-vertical angle. Using the height from Q 39, it is 2R² tan θ/(R − r).
+
+Q 41 | gm | Circles & Quadrilaterals
+Passage: A line segment AB is bisected at C and semi-circles S₁, S₂ and S₃ are drawn respectively on AB, AC and CB as diameters such that they all lie on same side of AB. A circle S is drawn touching internally S₁ and externally S₂ and S₃.
+
+If r is the radius of S and R is the radius of S₂, then which one of the following is correct?
+(1) R = 3r
+(2) R = 2r
+(3) 3R = 4r
+(4) 2R = 3r
+= 4
+~ Take C as the origin. S₁ has radius 2R, and S₂, S₃ have centres (∓R, 0). Let S have centre (0, k) with k = 2R − r. Tangency to S₂ gives R² + (2R − r)² = (R + r)², so 4R² = 6Rr and 2R = 3r.
+
+Q 42 | gm | Circles & Quadrilaterals
+Passage: A line segment AB is bisected at C and semi-circles S₁, S₂ and S₃ are drawn respectively on AB, AC and CB as diameters such that they all lie on same side of AB. A circle S is drawn touching internally S₁ and externally S₂ and S₃.
+
+If m is the area of the circle S and n is the area of semi-circle S₁, then which one of the following is correct?
+(1) 9m = 2n
+(2) 9m = 4n
+(3) 3m = 2n
+(4) 7m = 3n
+= 1
+~ From Q 41, r = 2R/3, so m = 4πR²/9. The semicircle S₁ has radius 2R, so n = π(2R)²/2 = 2πR². Then m/n = 2/9, i.e. 9m = 2n.
+
+Q 43 | alg | Equations & Expressions
+Passage: Let (x − a)(x − b)/((x − ma)(x − mb)) = (x + a)(x + b)/((x + ma)(x + mb)); m, a, b > 0.
+
+What is (x² + ab)/(x² + m²ab) equal to?
+(1) −1/m²
+(2) 1/m²
+(3) 2/m
+(4) 1/m
+= 4
+~ Let u = x² + ab, v = x² + m²ab and s = a + b. Cross-multiplying gives (u − sx)(v + msx) = (u + sx)(v − msx), so mu = v, i.e. u/v = 1/m.
+
+Q 44 | alg | Equations & Expressions
+Passage: Let (x − a)(x − b)/((x − ma)(x − mb)) = (x + a)(x + b)/((x + ma)(x + mb)); m, a, b > 0.
+
+What is x equal to?
+(1) ±√mab
+(2) ±√ab
+(3) ±√2mab
+(4) ±√2ab
+= 1
+~ From Q 43, m(x² + ab) = x² + m²ab, so (m − 1)x² = mab(m − 1). This gives x² = mab and x = ±√(mab) (checked numerically with sample values).
+
+Q 45 | alg | Equations & Expressions
+Passage: The total monthly electricity bill for a house consists of the sum of two parts, one part is proportional to number of rooms and the other part is proportional to number of units consumed. ₹ 400 is the monthly electricity bill for a house with 8 rooms and consuming 240 units and ₹ 320 is the monthly electricity bill for a house with 6 rooms and consuming 200 units.
+
+What is the monthly electricity bill for a house with m rooms and consuming n units?
+(1) ₹ (40 m + n)
+(2) ₹ (20 m + n)
+(3) ₹ (40 m + n)/2
+(4) ₹ (30 m + n)/2
+= 2
+~ Let the bill be u per room plus v per unit. Then 8u + 240v = 400 and 6u + 200v = 320, which give u = 20 and v = 1. So the bill is ₹ (20m + n).
+
+Q 46 | alg | Equations & Expressions
+Passage: The total monthly electricity bill for a house consists of the sum of two parts, one part is proportional to number of rooms and the other part is proportional to number of units consumed. ₹ 400 is the monthly electricity bill for a house with 8 rooms and consuming 240 units and ₹ 320 is the monthly electricity bill for a house with 6 rooms and consuming 200 units.
+
+What is the monthly electricity bill for a house with 7 rooms consuming 300 units?
+(1) ₹ 500
+(2) ₹ 440
+(3) ₹ 340
+(4) ₹ 300
+= 2
+~ 20 × 7 + 300 = ₹ 440.
+
+Q 47 | sts | Statistics & Data
+Passage: A grouped frequency distribution is given below:
+[Table — Weekly wages in Rupees (₹) : Numbers of workers — 2050–2550 : 5; 2550–3050 : 10; 3050–3550 : k; 3550–4050 : 8; 4050–4550 : 2; 4550–5050 : 10]
+
+If average weekly wages earned by a worker is ₹ 3,520, then what is the value of k?
+(1) 10
+(2) 12
+(3) 15
+(4) 20
+= 3
+~ Using mid-values 2300, 2800, …, 4800: (5·2300 + 10·2800 + 3300k + 8·3800 + 2·4300 + 10·4800)/(35 + k) = 3520. This gives 126500 + 3300k = 123200 + 3520k, so 220k = 3300 and k = 15.
+
+Q 48 | sts | Statistics & Data
+Passage: A grouped frequency distribution is given below:
+[Table — Weekly wages in Rupees (₹) : Numbers of workers — 2050–2550 : 5; 2550–3050 : 10; 3050–3550 : k; 3550–4050 : 8; 4050–4550 : 2; 4550–5050 : 10]
+
+What is the median (approximate value) of the distribution?
+(1) ₹ 3,263
+(2) ₹ 3,383
+(3) ₹ 3,413
+(4) ₹ 3,483
+= 2
+~ N = 50 and N/2 = 25. The cumulative frequencies are 5, 15, 30, so the median class is 3050–3550. Median = 3050 + (25 − 15)/15 × 500 ≈ ₹ 3,383.
+
+Q 49 | alg | Polynomials & Quadratics
+Passage: A quadratic equation is given by (a + b + c) x² − (2a + 2b) x + (a + b − c) = 0; where a, b and c are real and distinct.
+
+What are the roots of the equation?
+(1) 1, (a + b − c)/(a + b + c)
+(2) 1, (a − b + c)/(a + b + c)
+(3) −1, (−a − b + c)/(a + b + c)
+(4) −1, (a + b − c)/(a + b + c)
+= 1
+~ The coefficients add to zero, (a + b + c) − (2a + 2b) + (a + b − c) = 0, so x = 1 is a root. The other root is product/1 = (a + b − c)/(a + b + c).
+
+Q 50 | alg | Polynomials & Quadratics
+Passage: A quadratic equation is given by (a + b + c) x² − (2a + 2b) x + (a + b − c) = 0; where a, b and c are real and distinct.
+
+Consider the following statements:
+1. One of the roots of the equation is always less than 1 if a, b and c are all positive.
+2. One of the roots of the equation is always negative if a, b and c are all negative.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Statement 1 is true: for c > 0, (a + b − c)/(a + b + c) < 1. Statement 2 is false: a = b = −5, c = −1 gives roots 1 and 9/11, both positive.
+
+Q 51 | gm | Mensuration
+What is the radius of the sphere passing through the corners of the cuboid with edges 8 cm, 12 cm and 24 cm?
+(1) 10·5 cm
+(2) 14 cm
+(3) 21 cm
+(4) 28 cm
+= 2
+~ The sphere through all eight corners has the cuboid's body diagonal as its diameter. Diagonal = √(8² + 12² + 24²) = √784 = 28 cm, so the radius is 14 cm.
+
+Q 52 | gm | Mensuration
+A lamp shade is in the shape of a part of a cone and its top and bottom ends are circles whose circumferences are respectively 30 cm and 40 cm. The perpendicular distance between the ends is 6 cm. If the cone were to be completed, then how far would its vertex be from the top end?
+(1) 20 cm
+(2) 18 cm
+(3) 12 cm
+(4) 9 cm
+= 2
+~ Radii are proportional to circumferences (30 : 40). By similar triangles, h/(h + 6) = 30/40, so 40h = 30h + 180 and h = 18 cm.
+
+Q 53 | ari | Percentage, Profit & Interest
+A sum of money at 20% rate of compound interest per annum becomes more than 100 times in n years. What is the least value of n? (Use log₁₀ 2 = 0·301, log₁₀ 3 = 0·477)
+(1) 23
+(2) 24
+(3) 25
+(4) 26
+= 4
+~ We need (1·2)ⁿ > 100, i.e. n·log 1·2 > 2. log 1·2 = 2(0·301) + 0·477 − 1 = 0·079, so n > 2/0·079 ≈ 25·3; the least whole n is 26.
+
+Q 54 | gm | Mensuration
+The corners of an equilateral triangular plate were cut in such a manner that it forms a regular hexagonal plate. What is the ratio of the area of the triangular plate to the area of the hexagonal plate?
+(1) 2 : 1
+(2) 3 : 2
+(3) 4 : 3
+(4) 5 : 3
+= 2
+~ Trisect each side (triangle side 3a) and cut off three small equilateral triangles of side a. The big triangle contains 9 small-triangle areas and the hexagon keeps 9 − 3 = 6, so the ratio is 9 : 6 = 3 : 2.
+
+Q 55 | gm | Circles & Quadrilaterals
+Two equal arcs of different circles C₁ and C₂ subtend angles of 60° and 75° respectively, at the centres. What is the ratio of the radius of C₁ to the radius of C₂?
+(1) 4 : 5
+(2) 5 : 4
+(3) 1 : 1
+(4) 3 : 2
+= 2
+~ Arc length = rθ, so r₁·60° = r₂·75°. Hence r₁ : r₂ = 75 : 60 = 5 : 4.
+
+Q 56 | gm | Lines, Angles & Triangles
+ABC is a triangle with sides AB = 41 cm, BC = 28 cm and CA = 15 cm. If D, E and F are the mid-points of AB, BC and CA respectively, then what is the area of the triangle DEF?
+(1) 63 square cm
+(2) 45 square cm
+(3) 31·5 square cm
+(4) 22·5 square cm
+= 3
+~ By Heron's formula, s = 42 and area(ABC) = √(42 × 1 × 14 × 27) = 126 cm². The medial triangle DEF has one-quarter of this area: 126/4 = 31·5 cm².
+
+Q 57 | gm | Mensuration
+A triangle has sides 13 cm, 14 cm and 15 cm long. What is the length of the smallest altitude of the triangle?
+(1) 11 cm
+(2) 11·2 cm
+(3) 12 cm
+(4) 12·2 cm
+= 2
+~ By Heron's formula, s = 21 and the area = √(21 × 8 × 7 × 6) = 84 cm². The smallest altitude falls on the longest side: 2 × 84/15 = 11·2 cm.
+
+Q 58 | gm | Mensuration
+The circumference of a circle exceeds the diameter by 16·8 cm. What is the diameter of the circle? (Take π = 22/7)
+(1) 6·24 cm
+(2) 6·42 cm
+(3) 7·64 cm
+(4) 7·84 cm
+= 4
+~ πd − d = 16·8, so (15/7)d = 16·8 and d = 16·8 × 7/15 = 7·84 cm.
+
+Q 59 | gm | Lines, Angles & Triangles
+The hypotenuse AC of a right-angled ABC is 3√5 cm. If AB is doubled and BC is tripled such that ABC remains a right-angled triangle, the hypotenuse becomes 15 cm. What is AB + BC equal to?
+(1) 10 cm
+(2) 9 cm
+(3) 2√5 cm
+(4) 8 cm
+= 2
+~ AB² + BC² = 45 and 4AB² + 9BC² = 225. Subtracting 4 × the first equation gives 5BC² = 45, so BC = 3 and AB = 6. Therefore AB + BC = 9 cm.
+
+Q 60 | gm | Circles & Quadrilaterals
+What is the area of the region between two concentric circles if the chord of the outer circle of length 14 cm is a tangent of the inner circle? (Take π = 22/7)
+(1) 125 square cm
+(2) 132 square cm
+(3) 144 square cm
+(4) 154 square cm
+= 4
+~ The tangent chord is bisected at the point of contact, so R² − r² = 7² = 49. The area of the ring is π(R² − r²) = (22/7) × 49 = 154 cm².
+
+Q 61 | gm | Circles & Quadrilaterals
+A pendulum swings through an angle of 9° and its end describes an arc of length 14·3 cm. What is the length of the pendulum? (Take π = 22/7)
+(1) 88 cm
+(2) 91 cm
+(3) 95 cm
+(4) 98 cm
+= 2
+~ Arc length = r × θ (in radians). Here 9° = π/20, so r = 14·3 × 20/π = 14·3 × 20 × 7/22 = 91 cm.
+
+Q 62 | gm | Circles & Quadrilaterals
+The arch of a bridge is in the form of an arc of a circle. If the span of the bridge is 40 m and height in the middle is 8 m, then what is the radius of curvature of the bridge?
+(1) 25 m
+(2) 27 m
+(3) 29 m
+(4) 31 m
+= 3
+~ The half-chord is 20 m and the rise is 8 m, so r² = 20² + (r − 8)². This gives 16r = 464, so r = 29 m.
+
+Q 63 | gm | Lines, Angles & Triangles
+If a, b and c are the sides of a right-angled triangle, where a > b > c, then what is the value of the expression
+(a + b + c) (a + b − c) (a − b + c) (a − b − c)?
+(1) 4b²c²
+(2) −4b²c²
+(3) −2a²b²
+(4) −4a²b²
+= 2
+~ Since a is the hypotenuse, a² = b² + c². Then (a+b+c)(a−b−c) = a² − (b+c)² = −2bc and (a+b−c)(a−b+c) = a² − (b−c)² = 2bc. Their product is −4b²c².
+
+Q 64 | ari | Ratio, Time & Work
+The cube root of x varies inversely as the square root of y. x = 8 when y = 3. What is the value of x when y = ∛3?
+(1) 18
+(2) 21
+(3) 24
+(4) 27
+= 3
+~ ∛x·√y is constant, and it equals 2√3. When y = ∛3, √y = 3^(1/6), so ∛x = 2·3^(1/2 − 1/6) = 2·3^(1/3). Cubing gives x = 8 × 3 = 24.
+
+Q 65 | gm | Mensuration
+Three solid lead spheres of diameters 6 cm, 8 cm and 10 cm are melted together and recast as a solid sphere. What is the percentage diminution of the surface area as compared to the sum of the surface areas of the three spheres?
+(1) 25%
+(2) 26%
+(3) 27%
+(4) 28%
+= 4
+~ With radii 3, 4 and 5: R³ = 27 + 64 + 125 = 216, so R = 6. Surface areas are proportional to r², so they compare as 9 + 16 + 25 = 50 against 36. The decrease is 14/50 = 28%.
+
+Q 66 | gm | Mensuration
+A solid sphere of radius 3 cm is melted to form a hollow cylinder of height 4 cm and external diameter 10 cm. What is the thickness of the cylinder?
+(1) 0·42 cm
+(2) 0·46 cm
+(3) 0·50 cm
+(4) 1·00 cm
+= 4
+~ The volume is (4/3)π(27) = 36π = π(5² − r²) × 4. So 25 − r² = 9 and the inner radius r = 4 cm. The thickness is 5 − 4 = 1 cm.
+
+Q 67 | ari | Averages & Mixtures
+Three glasses P, Q and R have capacities in the ratio 1 : 2 : 3. All these glasses are completely filled with mixtures of milk and water. The ratio of milk to water in P is 1 : 2, in Q it is 2 : 3 and in R it is 3 : 1. If the content of all three glasses are put into a bigger container, what will be the ratio of milk to water in the container?
+(1) 203 : 117
+(2) 203 : 157
+(3) 172 : 91
+(4) 165 : 88
+= 2
+~ Milk = 1(1/3) + 2(2/5) + 3(3/4) = 203/60 out of a total of 6 = 360/60. Water = 157/60, so the ratio is 203 : 157.
+
+Q 68 | alg | Polynomials & Quadratics
+What is the LCM of x⁴ + x²y² + y⁴, x³ + y³, x³ − y³?
+(1) (x² − y²) (x⁴ + x²y² + y⁴)²
+(2) (x² − y²) (x⁴ + 2x²y² + y⁴)
+(3) (x⁶ − y⁶)
+(4) (x⁶ + y⁶)
+= 3
+~ x⁴ + x²y² + y⁴ = (x² + xy + y²)(x² − xy + y²), x³ + y³ = (x + y)(x² − xy + y²) and x³ − y³ = (x − y)(x² + xy + y²). The LCM is (x² − y²)(x⁴ + x²y² + y⁴) = x⁶ − y⁶.
+
+Q 69 | alg | Equations & Expressions
+What is (x² − y² − z² − 2yz)/(x² + y² − z² + 2xy) + (x² − y² − z² − 2yz)/(x² − y² + z² − 2xz) equal to?
+(1) x/(x + y − z)
+(2) (y + z)/(x + y − z)
+(3) 2x/(x + y − z)
+(4) (2y + 2z)/(x + y − z)
+= 3
+~ The numerator is x² − (y + z)² = (x − y − z)(x + y + z). The first denominator is (x + y)² − z² = (x + y − z)(x + y + z) and the second is (x − z)² − y² = (x − y − z)(x + y − z). So the terms are (x − y − z)/(x + y − z) + (x + y + z)/(x + y − z) = 2x/(x + y − z).
+
+Q 70 | trg | Ratios & Identities
+If tan A + cot A = 2, where 0 < A < 90°, then what is the value of tan² A + tan³ A + tan⁴ A + .... + tanⁿ A?
+(1) 1
+(2) n − 2
+(3) n − 1
+(4) n
+= 3
+~ t + 1/t = 2 gives (t − 1)² = 0, so tan A = 1. The sum has n − 1 terms (powers 2 to n), each equal to 1, giving n − 1.
+
+Q 71 | trg | Ratios & Identities
+Which of the following is/are identity/identities?
+1. (sin³ θ + cos³ θ)/(sin θ + cos θ) + sin θ cos θ = 1; 0 < θ < π/2
+2. 1 − sin⁶ θ = cos² θ (cos⁴ θ + 3 sin² θ)
+Select the correct answer using the code given below:
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1: (sin³ θ + cos³ θ)/(sin θ + cos θ) = 1 − sin θ cos θ, so adding sin θ cos θ gives 1. 2: 1 − sin⁶ θ = cos² θ(1 + sin² θ + sin⁴ θ), and cos⁴ θ + 3sin² θ = (1 − sin² θ)² + 3sin² θ = 1 + sin² θ + sin⁴ θ. Both are identities.
+
+Q 72 | trg | Ratios & Identities
+If 7 sin⁴ θ + 9 cos⁴ θ + 42 sin² θ = 16, 0 < θ < π/2, then what is tan θ equal to?
+(1) 1
+(2) √2
+(3) √3
+(4) 1/√3
+= 4
+~ Put u = sin² θ: 7u² + 9(1 − u)² + 42u = 16, which gives 16u² + 24u − 7 = 0 = (4u − 1)(4u + 7). So sin² θ = 1/4, θ = 30° and tan θ = 1/√3.
+
+Q 73 | gm | Mensuration
+An isosceles triangle has its base length 2a and its height is h. On each side of the triangle a square is drawn external to the triangle. What is the area of the figure thus formed?
+(1) 6a² + 2h² + 2ah
+(2) 6a² + 2h² + ah
+(3) 4a² + 2h² + ah
+(4) 6a² + h² + ah
+= 2
+~ The triangle's area is ah. The square on the base is 4a², and each equal side is √(a² + h²), so each of those squares is a² + h². Total = ah + 4a² + 2(a² + h²) = 6a² + 2h² + ah.
+
+Q 74 | alg | Equations & Expressions
+If p = a²/((b − a) (c − a)), q = b²/((c − b) (a − b)), r = c²/((a − c) (b − c)), then what is (p + q + r)² equal to?
+(1) 9
+(2) 4
+(3) 1
+(4) 0
+= 3
+~ p + q + r = Σ a²/((a − b)(a − c)), and by the standard cyclic identity (Lagrange interpolation of x²) this sum is 1. A python check with random a, b, c also gives 1, so (p + q + r)² = 1.
+
+Q 75 | alg | Polynomials & Quadratics
+Which one of the following is a factor of a² − b² − c² + 2bc + a + b − c?
+(1) a + b + c + 1
+(2) a − b − c + 1
+(3) a + b + c − 1
+(4) a − b + c + 1
+= 4
+~ a² − (b − c)² + (a + b − c) = (a + b − c)(a − b + c) + (a + b − c) = (a + b − c)(a − b + c + 1).
+
+Q 76 | alg | Polynomials & Quadratics
+Let α and β be the roots of the equation 1/(x + a + b) = 1/x + 1/a + 1/b; a ≠ 0, b ≠ 0, x ≠ 0.
+Which one of the following is a quadratic equation whose roots are α² and β²?
+(1) x² + (a² + b²) x + a²b² = 0
+(2) x² − (a² + b²) x + a²b² = 0
+(3) x² − (a² + b²) x − a²b² = 0
+(4) x² + (a² + b²) x − a²b² = 0
+= 2
+~ 1/(x + a + b) − 1/x = −(a + b)/(x(x + a + b)) = (a + b)/ab, so x² + (a + b)x + ab = 0 and the roots are −a and −b. Their squares a² and b² satisfy x² − (a² + b²)x + a²b² = 0.
+
+Q 77 | alg | Equations & Expressions
+If x = 6/(7 − 6/(7 − 6/(7 − 6/(7 − x)))); x > 1, then what is the value of x² − 3x + 2 equal to?
+(1) 0
+(2) 1
+(3) 18
+(4) 20
+= 4
+~ The nested fraction applies f(x) = 6/(7 − x) four times, and it has the same fixed points as f: x = 6/(7 − x), i.e. x² − 7x + 6 = 0, so x = 1 or 6. With x > 1, x = 6 and x² − 3x + 2 = 36 − 18 + 2 = 20.
+
+Q 78 | ari | Speed & Distance
+A train completely overtakes two persons, walking in the same direction with speeds 3 km/hr and 4 km/hr in 9 seconds and 75/8 seconds respectively. What is the length of the train?
+(1) 60 m
+(2) 62·5 m
+(3) 55 m
+(4) 67·5 m
+= 2
+~ The length is the same in both cases: (v − 3) × 9 = (v − 4) × 75/8, which gives v = 28 km/hr. Length = 25 × (5/18) × 9 = 62·5 m.
+
+Q 79 | ari | Percentage, Profit & Interest
+A person bought an article and sold it at a profit of 20%. Had he bought it at 20% less, what would have been the profit percentage if the selling price had been the same?
+(1) 25%
+(2) 40%
+(3) 50%
+(4) 60%
+= 3
+~ With CP = 100 the SP is 120. The new CP is 80, so the profit is 40/80 = 50%.
+
+Q 80 | alg | Equations & Expressions
+If 2s = a + b + c, then what is s² + (s − a)(s − b) + (s − b)(s − c) + (s − c)(s − a) equal to?
+(1) (a + b + c)²
+(2) ab + bc + ca
+(3) 2 (ab + bc + ca)
+(4) 3 (ab + bc + ca)
+= 2
+~ Expanding: s² + 3s² − 2s(a + b + c) + (ab + bc + ca) = 4s² − 4s² + (ab + bc + ca) = ab + bc + ca.
+
+Q 81 | gm | Mensuration
+A sphere of radius 5 cm is dropped in a right circular cylindrical vessel partly filled with water. The radius of the cylindrical vessel is 10 cm. If the sphere is completely submerged in water, by how much will the level of water rise in the cylindrical vessel?
+(1) 5/3 cm
+(2) 5/2 cm
+(3) 1 cm
+(4) 5/6 cm
+= 1
+~ The water displaced equals the sphere's volume: (4/3)π(125) = π(10²)h, so h = 500/300 = 5/3 cm.
+
+Q 82 | gm | Circles & Quadrilaterals
+Consider the following statements:
+1. The angle in a sector greater than a semi-circle is less than a right angle.
+2. If two sides of a pair of opposite sides of a cyclic quadrilateral are equal, then its diagonals are also equal.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 2 is true: a cyclic quadrilateral with one pair of opposite sides equal is an isosceles trapezium, so its diagonals are equal. The standard theorem in 1 is about a segment (the angle in a major segment is acute), not a sector, and the key treats statement 1 as worded with "sector" as incorrect.
+
+Q 83 | alg | Equations & Expressions
+If a, b, c, x, y, z are real numbers such that (a + b + c)² − 3 (ab + bc + ca) + 3 (x² + y² + z²) = 0, then which one of the following is correct?
+(1) a = b = c, x = y = z ≠ 0
+(2) a = b = c = 0, x = y = z = 1
+(3) a = b = c, x = y = z = 0
+(4) a ≠ b ≠ c, x = y = z = 0
+= 3
+~ (a + b + c)² − 3(ab + bc + ca) = a² + b² + c² − ab − bc − ca = ½[(a − b)² + (b − c)² + (c − a)²] ≥ 0. A sum of non-negative terms is zero only if each is zero, so a = b = c and x = y = z = 0.
+
+Q 84 | gm | Lines, Angles & Triangles
+In a triangle ABC, angle B = 90° and p is the length of the perpendicular from B to AC. If BC = 10 cm and AC = 12 cm, then what is the value of p?
+(1) 5√11/3
+(2) 10√11/3
+(3) 40/√61
+(4) 12/25
+= 1
+~ AB = √(144 − 100) = 2√11. Then p = AB·BC/AC = 2√11 × 10/12 = 5√11/3.
+
+Q 85 | ari | Averages & Mixtures
+The mean of p, q, r, s and t is 280. If the mean of p, r and t is 240, what is the mean of q and s?
+(1) 310
+(2) 320
+(3) 330
+(4) 340
+= 4
+~ q + s = 5 × 280 − 3 × 240 = 1400 − 720 = 680, so their mean is 340.
+
+Q 86 | ari | Averages & Mixtures
+Passage: A, B, C, D, E, F and G are cousins. D is thrice as old as A. Further, C is as many years younger to B, as G to E and E to D. The average age of D and G is 16 years; the average age of A and E is 11 years; the average age of B and C is also 11 years. B and C have equal weight. A's weight is 10 kg less than that of B; D is 4 kg heavier than E; E is 4 kg heavier than F; F is 4 kg heavier than G. Further, D has age-weight ratio of 9 : 20, where age is in years and weight in kg; A has age-weight ratio of 2 : 5. Moreover, none of them is more than 40 kg.
+
+What is D's age (in years)?
+(1) 15
+(2) 16
+(3) 17
+(4) 18
+= 4
+~ Let the common gap be k: E = D − k and G = D − 2k. D + G = 32 gives D − k = 16, so E = 16. Then A = 22 − 16 = 6 and D = 3A = 18.
+
+Q 87 | ari | Averages & Mixtures
+Passage: A, B, C, D, E, F and G are cousins. D is thrice as old as A. Further, C is as many years younger to B, as G to E and E to D. The average age of D and G is 16 years; the average age of A and E is 11 years; the average age of B and C is also 11 years. B and C have equal weight. A's weight is 10 kg less than that of B; D is 4 kg heavier than E; E is 4 kg heavier than F; F is 4 kg heavier than G. Further, D has age-weight ratio of 9 : 20, where age is in years and weight in kg; A has age-weight ratio of 2 : 5. Moreover, none of them is more than 40 kg.
+
+What is the average age (in years) of B, C, D, E and G?
+(1) 12
+(2) 13
+(3) 14
+(4) 15
+= 3
+~ The gap is k = D − E = 2, so G = 14. With B + C = 22 and B − C = 2, B = 12 and C = 10. Average = (12 + 10 + 18 + 16 + 14)/5 = 70/5 = 14.
+
+Q 88 | ari | Averages & Mixtures
+Passage: A, B, C, D, E, F and G are cousins. D is thrice as old as A. Further, C is as many years younger to B, as G to E and E to D. The average age of D and G is 16 years; the average age of A and E is 11 years; the average age of B and C is also 11 years. B and C have equal weight. A's weight is 10 kg less than that of B; D is 4 kg heavier than E; E is 4 kg heavier than F; F is 4 kg heavier than G. Further, D has age-weight ratio of 9 : 20, where age is in years and weight in kg; A has age-weight ratio of 2 : 5. Moreover, none of them is more than 40 kg.
+
+What is the difference between the weights (in kg) of G and C?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 2
+~ D's weight = 18 × 20/9 = 40 kg, so E = 36, F = 32 and G = 28. A's weight = 6 × 5/2 = 15 kg, so B = C = 25 kg. The difference is 28 − 25 = 3 kg.
+
+Q 89 | ari | Averages & Mixtures
+Passage: A, B, C, D, E, F and G are cousins. D is thrice as old as A. Further, C is as many years younger to B, as G to E and E to D. The average age of D and G is 16 years; the average age of A and E is 11 years; the average age of B and C is also 11 years. B and C have equal weight. A's weight is 10 kg less than that of B; D is 4 kg heavier than E; E is 4 kg heavier than F; F is 4 kg heavier than G. Further, D has age-weight ratio of 9 : 20, where age is in years and weight in kg; A has age-weight ratio of 2 : 5. Moreover, none of them is more than 40 kg.
+
+What is the average weight (in kg) of A, B, C, D, E, F and G?
+(1) 201/7
+(2) 197/7
+(3) 30
+(4) 32
+= 1
+~ The weights are 15, 25, 25, 40, 36, 32 and 28 kg, which total 201. The average is 201/7.
+
+Q 90 | ari | Averages & Mixtures
+Passage: A, B, C, D, E, F and G are cousins. D is thrice as old as A. Further, C is as many years younger to B, as G to E and E to D. The average age of D and G is 16 years; the average age of A and E is 11 years; the average age of B and C is also 11 years. B and C have equal weight. A's weight is 10 kg less than that of B; D is 4 kg heavier than E; E is 4 kg heavier than F; F is 4 kg heavier than G. Further, D has age-weight ratio of 9 : 20, where age is in years and weight in kg; A has age-weight ratio of 2 : 5. Moreover, none of them is more than 40 kg.
+
+Consider the following statements:
+1. The age of F cannot be determined due to insufficient data.
+2. The average weight of D and F is equal to weight of E.
+3. The weight difference is maximum for D and A.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ 1: no condition fixes F's age. 2: (40 + 32)/2 = 36 = E's weight. 3: D (40 kg, heaviest) and A (15 kg, lightest) differ by the most, 25 kg. All three are true.
+
+Q 91 | alg | Sets, Logarithms & Inequalities
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: Is m > n if m, n are real numbers?
+Statement-I: m = (1 − p) (p² + p + 1) and n = (p + 1) (p² − p + 1)
+Statement-II: m = pn
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ From I, m = 1 − p³ and n = 1 + p³, so m > n only if p < 0, and p is unknown. Adding II: 1 − p³ = p(1 + p³) gives (p² + 1)(p² + p − 1) = 0, so p = (−1 ± √5)/2. p ≈ 0·618 gives m < n but p ≈ −1·618 gives m > n, so even both statements together are not enough.
+
+Q 92 | alg | Polynomials & Quadratics
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the other root of the quadratic equation with real coefficients if one of the roots is (−4 − √10)/2?
+Statement-I: The product of the roots is −(3/2)(3 + √10).
+Statement-II: The sum of roots of quadratic equation is −1.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 2
+~ II alone: the other root = −1 − (−4 − √10)/2 = (2 + √10)/2. I alone: the other root = product ÷ known root = 3(3 + √10)/(4 + √10) = (2 + √10)/2. Either statement alone works. Because the coefficients are only real, not rational, the conjugate root cannot be assumed.
+
+Q 93 | ari | Number System
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the 3-digit number which is divisible by 10?
+Statement-I: If the digits in hundred's place and ten's place of the number are interchanged, the resulting number is diminished by 180.
+Statement-II: If the digit in hundred's place is halved and digit in ten's place and unit place of the number are interchanged, the resulting number is diminished by 336.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ Write the number as 100a + 10b (unit digit 0). I gives 90(a − b) = 180, so a − b = 2: 200, 310, …, 970, which is not unique. Together with II the number is 640. Note: UPSC's key gives (3); by direct calculation the answer appears to be (1), because II alone gives (100a + 10b) − (50a + b) = 50a + 9b = 336, and a python search over all digits gives only a = 6, b = 4 (640).
+
+Q 94 | alg | Equations & Expressions
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: Are x, y, z equal, where x, y, z are real numbers?
+Statement-I: x² + y² + z² − xy − yz − zx = 0
+Statement-II: x³ + y³ + z³ − 3xyz = 0
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ I equals ½[(x − y)² + (y − z)² + (z − x)²] = 0, which forces x = y = z. II factors as (x + y + z)(x² + y² + z² − xy − yz − zx) = 0, which also holds when x + y + z = 0 with unequal values (e.g. 1, −1, 0). So only I works.
+
+Q 95 | alg | Equations & Expressions
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the ratio x : y : z equal to if x, y, z ≠ 0?
+Statement-I: (x + z)/y = z/x
+Statement-II: (z − y)/x = x/z
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ Each statement alone is one equation in the ratios, which is not enough. Together, x² + xz = yz and z² − yz = x² give z² − xz − 2x² = 0, so z = 2x (z = −x would force y = 0). Then y = 3x/2, so x : y : z = 2 : 3 : 4.
+
+Q 96 | ari | Number System
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the sum of two natural numbers?
+Statement-I: LCM of the two numbers is 144.
+Statement-II: One of the numbers is 72.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ Even together, the other number can be 16, 48 or 144, since LCM(72, n) = 144 for each. The sum is therefore not unique.
+
+Q 97 | ari | Averages & Mixtures
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: Is average of the largest and the smallest of 4 given numbers greater than the average of the 4 numbers?
+Statement-I: The difference between the largest and the second largest numbers is less than the difference between the second smallest and the smallest of the numbers.
+Statement-II: The difference between the largest and the smallest numbers is greater than the difference between the second largest and the second smallest of the numbers.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ With a ≤ b ≤ c ≤ d, the question asks whether a + d > b + c. I says d − c < b − a, i.e. a + d < b + c, so the answer is "No". II (d − a > c − b) is always true and decides nothing. Only I works.
+
+Q 98 | alg | Sets, Logarithms & Inequalities
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: Is (a − b + c) > (a + b − c), where a, b and c are real numbers?
+Statement-I: b is negative.
+Statement-II: c is negative.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ The inequality reduces to c > b. Knowing only that b and c are both negative does not tell which is larger, so even both statements together are not enough.
+
+Q 99 | alg | Equations & Expressions
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the cost of 15 pens, 21 pencils and 18 note books?
+Statement-I: The cost of 7 pens, 6 pencils and 5 note books is ₹ 200.
+Statement-II: The cost of 3 pens, 8 pencils and 7 note books is ₹ 210.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ (15, 21, 18) = 1·5 × (7, 6, 5) + 1·5 × (3, 8, 7), so the cost = 1·5 × (200 + 210) = ₹ 615. This needs both statements; neither alone is enough.
+
+Q 100 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next ten (10) items that follow:
+Mark option (a) if the question can be answered by using one of the statements alone, but cannot be answered using the other statement alone.
+Mark option (b) if the question can be answered by using either statement alone.
+Mark option (c) if the question can be answered by using both the statements together, but cannot be answered using either statement alone.
+Mark option (d) if the question cannot be answered even by using both the statements together.
+
+Question: What is the area of the triangle inscribed in a semi-circle with the diameter as the base?
+Statement-I: The diameter of semi-circle is 20 cm.
+Statement-II: Two shorter sides of the triangle are 12 cm and 16 cm.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ The angle in a semicircle is 90°, so with II the legs are 12 and 16 and the area is ½ × 12 × 16 = 96 cm². I alone fixes only the hypotenuse, not the shape, so it is not enough.
