@@ -1,0 +1,1337 @@
+# UPSC Combined Defence Services Examination (I) 2026: General Knowledge (Series A), held 12 April 2026.
+# Source: the official UPSC question paper; answers from UPSC's provisional answer key (16 April 2026). Explanations by Learn with Anil.
+# Dropped by UPSC: 12
+
+Q 1 | sci | Biology
+The central cytoplasmic region of a prokaryotic cell containing nucleic acids is called :
+(1) Nucleus
+(2) Nucleoid
+(3) Nucleolus
+(4) Plastid
+= 2
+~ Prokaryotes have no nuclear membrane; their genetic material (a single circular DNA) lies in an undefined region of the cytoplasm called the nucleoid. The nucleolus is a structure inside the true nucleus of eukaryotes.
+
+Q 2 | sci | Biology
+Nearly all infants benefit from milk, but most adults cannot properly digest milk. If an elderly person can still digest milk, his body is producing enough of which enzyme ?
+(1) Cellulase
+(2) Amylase
+(3) Pectase
+(4) Lactase
+= 4
+~ Lactase breaks down lactose (milk sugar) into glucose and galactose. Its production usually falls after childhood, causing lactose intolerance; a person who still digests milk continues to make enough lactase.
+
+Q 3 | sci | Biology
+The antibiotic penicillin can kill invading bacteria without harming human cells because it targets bacterial :
+(1) Cell wall
+(2) Plasma membrane
+(3) Ribosome
+(4) Chromosome
+= 1
+~ Penicillin blocks the synthesis of the peptidoglycan cell wall of bacteria. Human (animal) cells have no cell wall, so they are not affected.
+
+Q 4 | sci | Biology
+A researcher is studying different types of cells. In which cell type will he/she encounter the highest number of lysosomes ?
+(1) Pancreatic cell
+(2) Ovarian cell
+(3) Muscle cell in the thigh of a runner
+(4) White blood cell
+= 4
+~ Lysosomes contain digestive (hydrolytic) enzymes, so they are most numerous in phagocytic white blood cells such as neutrophils and macrophages, which engulf and digest microbes. Pancreatic cells are rich in RER/secretory vesicles and muscle cells in mitochondria.
+
+Q 5 | sci | Biology
+Which one of the following is not a function of the pigment carotenoid ?
+(1) Responsible for yellow-orange hues of autumnal leaves
+(2) Protecting chlorophyll from photo-oxidation
+(3) Photoprotective role in our eyes
+(4) Reaction centre in the pigment system
+= 4
+~ The reaction centre of a photosystem is a special chlorophyll a molecule (P680/P700); carotenoids are only accessory pigments that pass energy to it. Carotenoids do give autumn leaves their yellow-orange colour, protect chlorophyll from photo-oxidation, and (as lutein/zeaxanthin) protect the retina.
+
+Q 6 | sci | Biology
+A world chess champion has curly hair, attached earlobes and freckles. Which one of the following traits is not likely to be passed on to his/her offsprings ?
+(1) Chess skills
+(2) Curly hair
+(3) Attached earlobes
+(4) Freckles
+= 1
+~ Chess skill is an acquired trait developed by learning and practice; it is not coded in the genes and so is not inherited. Curly hair, attached earlobes and freckles are genetically inherited traits.
+
+Q 7 | sci | Biology
+In humans, which chamber of the heart receives oxygen-rich blood from the lungs first ?
+(1) Left atrium
+(2) Right atrium
+(3) Left ventricle
+(4) Right ventricle
+= 1
+~ Oxygenated blood from the lungs returns through the pulmonary veins into the left atrium, then passes to the left ventricle, which pumps it to the body. The right atrium receives deoxygenated blood from the body.
+
+Q 8 | sci | Biology
+Consider the following statements with reference to manure and organic farming :
+1. Vermicompost is rich in organic matter and nutrients.
+2. Biofertilizers and bio-pesticides are not used in organic farming.
+3. Crop rotation is beneficial in controlling insects, pests and weeds.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ Vermicompost (compost made with earthworms) is rich in organic matter and nutrients, and crop rotation breaks pest and weed cycles. Statement 2 is wrong: organic farming relies on biofertilizers and bio-pesticides in place of chemical ones.
+
+Q 9 | sci | Biology
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Structure / Organelle)
+A. Mitochondria
+B. Cytoskeleton
+C. Smooth ER
+D. Vacuoles
+List-II (Function)
+1. Maintenance of cell shape
+2. Detoxification in liver cells
+3. Storage of chemicals and cell enlargement
+4. Cellular respiration
+Codes :
+(1) A-4, B-2, C-1, D-3
+(2) A-4, B-1, C-2, D-3
+(3) A-3, B-1, C-2, D-4
+(4) A-3, B-2, C-1, D-4
+= 2
+~ Mitochondria are the site of cellular (aerobic) respiration; the cytoskeleton maintains cell shape; smooth ER detoxifies drugs and poisons in liver cells; vacuoles store substances and help in cell enlargement (turgor). So A-4, B-1, C-2, D-3.
+
+Q 10 | sci | Biology
+Which one among the following pairs of diseases and their types is not correctly matched ?
+(1) Polio – Viral disease
+(2) Athlete's foot – Fungal disease
+(3) Dengue fever – Non-viral disease
+(4) Whooping cough – Bacterial disease
+= 3
+~ Dengue is a viral disease caused by the dengue virus (a flavivirus) spread by Aedes mosquitoes, so calling it non-viral is wrong. Polio is viral, athlete's foot fungal (ringworm of the foot) and whooping cough bacterial (Bordetella pertussis).
+
+Q 11 | sci | Physics
+Which one of the following statements qualitatively explains the second law of motion ?
+(1) The rate of change of angular momentum of a body is equal to the applied force.
+(2) The rate of change of displacement of a body is directly proportional to the applied force.
+(3) The rate of change of acceleration of a body is directly proportional to the applied force.
+(4) The rate of change of momentum of a body is equal to the applied force.
+= 4
+~ Newton's second law says the rate of change of momentum of a body is proportional to (in SI units, equal to) the applied force: F = dp/dt. Rate of change of angular momentum equals torque, not force.
+
+Q 13 | sci | Physics
+Which one among the following has the least coefficient of thermal conductivity ?
+(1) H₂
+(2) H₂O
+(3) Cu
+(4) Al
+= 1
+~ Gases are poor conductors of heat. Hydrogen gas has k ≈ 0·18 W m⁻¹ K⁻¹, while water has ≈ 0·6, aluminium ≈ 237 and copper ≈ 400 W m⁻¹ K⁻¹. So H₂ has the lowest value.
+
+Q 14 | sci | Science & Technology
+Which one among the following generation computers used microprocessors in their hardware technology ?
+(1) Second Generation
+(2) Third Generation
+(3) Fourth Generation
+(4) Fifth Generation
+= 3
+~ Fourth-generation computers (from about 1971) were built around the microprocessor (VLSI chips such as the Intel 4004). Second-generation computers used transistors and third-generation computers used integrated circuits.
+
+Q 15 | sci | Physics
+An X-ray beam can be deflected by :
+(1) An electric field
+(2) A magnetic field
+(3) An electric as well as a magnetic field
+(4) Neither an electric field nor a magnetic field
+= 4
+~ X-rays are electromagnetic waves (photons) with no electric charge, so neither electric nor magnetic fields deflect them. Charged beams such as cathode rays can be deflected.
+
+Q 16 | sci | Physics
+An object is placed at a distance of 15 cm in front of a concave mirror with a radius of curvature of 20 cm. Which one among the following statements is correct for the image formed ?
+(1) The image is 30 cm from the mirror on the same side as the object.
+(2) The image is formed at a distance of 30 cm behind the mirror.
+(3) The image is 60 cm from the mirror on the same side as the object.
+(4) The image is formed at a distance of 60 cm behind the mirror.
+= 1
+~ f = R/2 = −10 cm and u = −15 cm. 1/v = 1/f − 1/u = −1/10 + 1/15 = −1/30, so v = −30 cm. The negative sign means a real image 30 cm in front of the mirror, on the same side as the object.
+
+Q 17 | sci | Physics
+Which one among the following statements regarding the electrical resistivity of a conducting wire is correct ?
+(1) The resistivity of the conductor increases if the length of the wire is increased.
+(2) The resistivity of the conductor decreases if the length of the wire is increased.
+(3) The resistivity of the conductor remains the same if the length of the wire is changed.
+(4) The resistivity of the conductor increases if the cross-sectional area of the wire is increased.
+= 3
+~ Resistivity is a property of the material, which depends on the material and temperature but not on the wire's dimensions. Resistance R = ρL/A changes with length and area, but ρ does not.
+
+Q 18 | sci | Physics
+Which one among the following statements related to electric cells is correct ?
+(1) A primary cell is rechargeable.
+(2) A secondary cell can be used only once.
+(3) The emf of a battery is the power provided by the battery per unit current.
+(4) The unit of emf is Joule.
+= 3
+~ Power delivered by a source is P = εI, so ε = P/I, the power per unit current (equivalently, the work done per unit charge). The unit of emf is the volt (J/C), not the joule. It is secondary cells that are rechargeable, not primary cells.
+
+Q 19 | sci | Physics
+An object is launched horizontally from a height of 45 m above the ground with a speed of 10 m/s. The time at which the object will hit the ground is : (Take g = 10 m/s²)
+(1) 6 s
+(2) 4 s
+(3) 3 s
+(4) 2 s
+= 3
+~ The initial vertical velocity is zero, so h = ½gt² gives 45 = 5t², t² = 9 and t = 3 s. The horizontal speed does not affect the time of fall.
+
+Q 20 | sci | Physics
+Consider the following statements regarding waves :
+1. If the particles of a medium move along the direction of motion of the wave, the wave is called a longitudinal wave.
+2. If the particles of a medium move perpendicular to the direction of motion of the wave, the wave is called a transverse wave.
+3. Transverse waves may involve change in the shape of the medium, whereas longitudinal waves involve change in the density of the medium.
+Which of the statements given above is/are correct ?
+(1) 1 and 2 only
+(2) 1 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Statements 1 and 2 are the standard definitions. Transverse waves involve shearing (change of shape), so they need a medium with rigidity; longitudinal waves involve compressions and rarefactions, which are changes in density. All three are correct.
+
+Q 21 | sci | Chemistry
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Symbol of Element)
+A. Sm
+B. Cs
+C. Os
+D. Np
+List-II (Group of Element)
+1. Transition Elements
+2. Alkali Metals
+3. Actinoid Elements
+4. Lanthanoid Elements
+Codes :
+(1) A-4, B-2, C-1, D-3
+(2) A-4, B-1, C-2, D-3
+(3) A-3, B-1, C-2, D-4
+(4) A-3, B-2, C-1, D-4
+= 1
+~ Samarium (Sm, Z = 62) is a lanthanoid; caesium (Cs) is an alkali metal; osmium (Os) is a 5d transition element; neptunium (Np, Z = 93) is an actinoid. So A-4, B-2, C-1, D-3.
+
+Q 22 | sci | Chemistry
+Consider the following statements regarding matter :
+1. Elements cannot be broken down into simpler substances.
+2. A compound has variable composition and can be broken down into elements.
+3. The solution of sulphur in carbon disulphide is an example of a homogeneous mixture.
+Which of the statements given above is/are not correct ?
+(1) 2 only
+(2) 1 and 3
+(3) 3 only
+(4) 1 and 2
+= 1
+~ A compound has a fixed composition by mass, so statement 2 is wrong. An element cannot be broken into simpler substances by chemical means, and sulphur dissolved in CS₂ is a uniform solution, which is a homogeneous mixture.
+
+Q 23 | sci | Chemistry
+Consider the following statements :
+1. Concentrated H₂SO₄ is used as a dehydrating agent in esterification reaction.
+2. The hydrophilic part of soap is oil and it dissolves in water.
+3. Nickel is used as a catalyst in converting vegetable oil into fat.
+Which of the statements given above are correct ?
+(1) 1, 2, 3 and 4
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1 and 3 only
+= 4
+~ In esterification, concentrated H₂SO₄ acts as a catalyst and a dehydrating agent. Vegetable oils are hydrogenated to fats using a nickel catalyst. Statement 2 is wrong: the hydrophilic part of soap is the ionic carboxylate head, while the long hydrocarbon tail is hydrophobic and dissolves in oil.
+
+Q 24 | sci | Chemistry
+Which one among the following pairs is not correctly matched ?
+(1) Nitrogen : Three unpaired electrons
+(2) Carbon : Tetravalent
+(3) Chlorine : Two stable isotopic forms
+(4) Helium : Diatomic gas
+= 4
+~ Helium is a noble gas that exists as single atoms, so it is monatomic, not diatomic. Nitrogen (2s² 2p³) has three unpaired electrons, carbon is tetravalent, and chlorine has two stable isotopes, ³⁵Cl and ³⁷Cl.
+
+Q 25 | sci | Chemistry
+Consider the following statements :
+1. Packaged foods are purged with nitrogen gas in order to prevent their oxidation.
+2. Tooth decay starts when pH of the mouth is lower than 5·5.
+3. The reactivity of metals decreases in the order : Mg > Fe > Zn.
+Which of the statements given above is/are not correct ?
+(1) 2 and 3
+(2) 1 and 3
+(3) 1 and 2
+(4) 3 only
+= 4
+~ Statements 1 and 2 are NCERT facts: nitrogen flushing stops food going rancid, and enamel starts to corrode below pH 5·5. Statement 3 is wrong because zinc is more reactive than iron; the correct order is Mg > Zn > Fe.
+
+Q 26 | sci | Chemistry
+Which one among the following pairs of compound and chemical formula is not correctly matched ?
+(1) Bleaching powder : CaOCl₂
+(2) Soda ash : Na₂CO₃
+(3) Baking powder : NaHCl₂
+(4) Plaster of Paris : 2CaSO₄.H₂O
+= 3
+~ Baking powder is sodium hydrogencarbonate (NaHCO₃) mixed with a mild edible acid such as tartaric acid; "NaHCl₂" is not a real compound. The other three formulas are correct: Plaster of Paris is CaSO₄·½H₂O, written as 2CaSO₄·H₂O.
+
+Q 27 | sci | Chemistry
+Consider the following statements :
+1. The temporary hardness in water is due to the presence of bicarbonates of calcium.
+2. The permanent hardness in water is due to the presence of soluble chlorides and sulphates of calcium and magnesium.
+3. The permanent hardness in water is removed by adding Na₂CO₃ to water.
+Which of the statements given above are correct ?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Temporary hardness is caused by hydrogencarbonates (bicarbonates) of calcium and magnesium, and permanent hardness by their soluble chlorides and sulphates. Washing soda (Na₂CO₃) removes permanent hardness by precipitating CaCO₃ and MgCO₃. So all three statements are correct.
+
+Q 28 | sci | Chemistry
+Which one among the following statements regarding micelles is not correct ?
+(1) Soap molecules are sodium or potassium salts of long-chain carboxylic acids.
+(2) Micelles precipitate out of solution because of ion-ion repulsion.
+(3) Grease gets collected in the centre of the micelle.
+(4) Soap micelles scatter light.
+= 2
+~ The ionic heads on a micelle's surface repel one another, so the micelles stay dispersed as a colloid and do not come together and precipitate. Grease is trapped in the hydrophobic centre, and because micelles are colloid-sized they scatter light (Tyndall effect), which is why soap solution looks cloudy.
+
+Q 29 | sci | Chemistry
+Consider the following statements regarding bases and alkalis :
+1. All bases dissolve in water.
+2. Bases which are soluble in water are called alkalis.
+3. An alkali is soapy to touch, bitter and corrosive.
+4. Addition of water to an alkali generates heat.
+Which of the statements given above are correct ?
+(1) 1, 2, 3 and 4
+(2) 2, 3 and 4 only
+(3) 1 and 2 only
+(4) 3 and 4 only
+= 2
+~ Not all bases dissolve in water (for example, Cu(OH)₂ and Fe(OH)₃ do not), so statement 1 is wrong. Water-soluble bases are called alkalis. Alkalis taste bitter, feel soapy and are corrosive, and dissolving or diluting a base such as NaOH in water is strongly exothermic.
+
+Q 30 | sci | Chemistry
+Which of the following statements relating to the Modern Periodic Table is/are correct ?
+1. The atomic radius increases on moving from left to right across a period.
+2. Germanium, Tellurium, and Copper are transition metals.
+3. The two isotopes of Chlorine occupy the same position in the periodic table.
+4. The metallic property of Ca, Ba, Be and Sr follows the order : Be < Ca < Sr < Ba.
+Select the answer using the codes given below :
+(1) 3 only
+(2) 1 and 4
+(3) 2 and 3
+(4) 3 and 4
+= 4
+~ Atomic radius decreases across a period as nuclear charge rises, so statement 1 is wrong. Germanium and tellurium are metalloids, not transition metals, so statement 2 is wrong. Isotopes have the same atomic number and so share one position. Metallic character increases down group 2: Be < Ca < Sr < Ba.
+
+Q 31 | sci | Science & Technology
+Which of the following computer languages is/are assembly language(s) ?
+1. Python
+2. Java
+3. x86
+4. MIPS
+Select the answer using the codes given below :
+(1) 1 only
+(2) 2 and 3 only
+(3) 3 and 4 only
+(4) 1, 3 and 4
+= 3
+~ x86 and MIPS are processor architectures, and each has its own assembly language of low-level mnemonic instructions. Python and Java are high-level programming languages.
+
+Q 32 | sci | Science & Technology
+Which one of the following is not a characteristic of flash memory ?
+(1) It is an ultraviolet erasable programmable ROM.
+(2) It is an electrically erasable programmable ROM.
+(3) It retains data without power.
+(4) It is a non-volatile memory.
+= 1
+~ Flash memory is a type of EEPROM that is erased electrically, in blocks. It is non-volatile, so it keeps data without power. Erasing with ultraviolet light is a feature of the older EPROM, not flash memory.
+
+Q 33 | sci | Science & Technology
+Which one of the following statements is not correct with regard to the UNIX operating system ?
+(1) It is written in C.
+(2) It is portable to a variety of computers.
+(3) It is a multi-user operating system.
+(4) It cannot be time-shared by several users.
+= 4
+~ UNIX is a multi-user, multitasking, time-sharing operating system: many users can share the same machine at once. It was rewritten in C, which made it portable across many kinds of hardware.
+
+Q 34 | sci | Science & Technology
+In MP3 compression scheme, 60 minutes of music can be stored in about :
+(1) 600 MB
+(2) 200 MB
+(3) 50 MB
+(4) 10 MB
+= 3
+~ At the common MP3 bit rate of 128 kbps, 3600 s × 128,000 bit/s ÷ 8 ≈ 57·6 MB, which is about 50 MB. The same music as uncompressed CD audio would take about 600 MB.
+
+Q 35 | sci | Science & Technology
+Code Division Multiple Access (CDMA) technology is primarily used in :
+(1) Mobile phone communication
+(2) X-ray
+(3) Artificial Intelligence
+(4) Colour Xerox
+= 1
+~ CDMA is a channel-access method in which many users share the same frequency band, each identified by a unique code. It was the basis of 2G/3G mobile phone networks such as cdmaOne and CDMA2000.
+
+Q 36 | eco | Public Finance & Taxation
+Which one of the following items comprises the major portion of Revenue Expenditure in Budget 2025 – 26 of the Union Government of India ?
+(1) Pension
+(2) Interest Payments
+(3) Road Transport and Highways
+(4) Defence Services
+= 2
+~ Interest payments, budgeted at about ₹12·8 lakh crore in 2025–26, are the largest single item of the Union government's revenue expenditure, much more than pensions or defence. Most of the road transport allocation is capital expenditure.
+
+Q 37 | eco | Schemes & Welfare
+Consider the following statements with respect to Pradhan Mantri Fasal Bima Yojana (PMFBY) :
+1. PMFBY provides risk insurance to farmers against crop damage due to non-preventable natural risks.
+2. PMFBY provides risk coverage of ₹ 2 lakh in case of death of the insured.
+3. PMFBY ensures flow of credit to the agriculture sector.
+4. PMFBY provides risk coverage of ₹ 2 lakh for complete disability of the insured.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 and 3
+(3) 1 and 3
+(4) 1 and 4
+= 3
+~ PMFBY insures crops against yield loss from non-preventable natural risks, and one of its stated objectives is to ensure the flow of credit to agriculture. The ₹2 lakh cover for death or total disability is a feature of the Pradhan Mantri Suraksha Bima Yojana, an accident insurance scheme, not of PMFBY.
+
+Q 38 | eco | Growth, Planning & National Income
+Which of the following statements with respect to the Gender Inequality Index (GII) is/are correct ?
+1. GII reflects gender-based disadvantage in work participation, property and income dimensions.
+2. GII reflects gender-based disadvantage in reproductive health, empowerment and the labour market dimensions.
+3. The value of GII ranges from 0 to 1, with a GII of 0 indicating women and men faring equally in all dimensions.
+Select the answer using the codes given below :
+(1) 1 only
+(2) 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 3
+~ UNDP's GII measures inequality in three dimensions: reproductive health, empowerment and the labour market. It ranges from 0 (women and men fare equally) to 1 (one sex fares as poorly as possible in every dimension). Property and income are not its dimensions.
+
+Q 39 | eco | Growth, Planning & National Income
+The Multidimensional Poverty Index (MPI) is measured by :
+(1) Measuring each person's overlapping deprivations across the indicators in the health, education and standard of living dimensions
+(2) Measuring each person's separate efficiencies across the indicators in the wealth, income and standard of living dimensions
+(3) Measuring each person's poverty on the indicators of health, happiness and ownership of vehicles
+(4) Measuring inequalities and deprivations in respect of wealth, income and standard of living dimensions
+= 1
+~ The global MPI (UNDP–OPHI) records each person's overlapping deprivations across 10 indicators in three equally weighted dimensions: health, education and standard of living. A person deprived in at least one-third of the weighted indicators counts as multidimensionally poor.
+
+Q 40 | eco | Money, Banking & Inflation
+The financial instruments that generate proceeds for investment in environmentally sustainable and climate-suitable projects are called as :
+(1) Green Bonds
+(2) Carbon Bonds
+(3) Climate Credit Bonds
+(4) Social Impact Bonds
+= 1
+~ Green bonds are debt instruments whose proceeds may be used only for environmentally sustainable and climate-friendly projects such as renewable energy. India has issued Sovereign Green Bonds since 2023. Social impact bonds pay out according to social outcomes.
+
+Q 41 | eco | Agriculture, Industry & Trade
+Which one among the following sectors is included in the list of the Sunrise Sectors in India ?
+(1) Manufacturing Sector
+(2) Food Processing Sector
+(3) Textile Sector
+(4) Services Sector
+= 2
+~ The Government of India calls food processing a "sunrise sector" because it is expected to grow fast and link farmers to markets. Manufacturing, textiles and services are broad, long-established sectors rather than emerging sunrise industries. The other options are broad sectors rather than a named sunrise sector, which makes (2) the most defensible choice.
+
+Q 42 | cur | International
+Which of the following countries were the founding members of the South Asian Association for Regional Cooperation (SAARC), established in 1985 ?
+1. India
+2. Nepal
+3. Maldives
+4. Afghanistan
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 1, 2 and 3 only
+(3) 3 and 4 only
+(4) 1, 2, 3 and 4
+= 2
+~ SAARC was founded at Dhaka in December 1985 by seven countries: Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan and Sri Lanka. Afghanistan joined later, as the eighth member, in 2007.
+
+Q 43 | eco | Agriculture, Industry & Trade
+The Government of India has announced a 6-year Mission for Aatmanirbharta (Self-reliance) in Pulses with a special focus to ensure 100 percent procurement at MSP of :
+(1) Urad, Soyabean and Masoor
+(2) Tur, Urad and Masoor
+(3) Masoor, Chana and Tur
+(4) Moong, Tur and Soyabean
+= 2
+~ The Union Budget 2025–26 announced a six-year Mission for Aatmanirbharta in Pulses focusing on Tur (Arhar), Urad and Masoor. Central agencies (NAFED and NCCF) will procure 100% of these three pulses at MSP for four years.
+
+Q 44 | eco | Growth, Planning & National Income
+Which one among the following statements correctly defines the Infant Mortality Rate (IMR) ?
+(1) IMR is the average number of infants born to a woman over her lifetime.
+(2) IMR is the average number of infants born in a year per 1000 deaths before attaining one year of age.
+(3) IMR is the number of deaths of infants under one year old per 1000 live births in a year.
+(4) IMR is the number of deaths of infants under one year of age per year.
+= 3
+~ IMR is the number of deaths of infants under one year of age per 1000 live births in a given year. Option (1) describes the fertility rate, and option (4) is a raw count, not a rate.
+
+Q 45 | pol | Union & State Government
+Which one of the following indexes is used to assess the state of governance across the States and UTs ?
+(1) Sustainable Governance Index
+(2) E-Governance Index
+(3) Urban Governance Index
+(4) Good Governance Index
+= 4
+~ The Good Governance Index, launched in 2019 by the Department of Administrative Reforms and Public Grievances (DARPG), ranks States and UTs on the state of governance across sectors such as agriculture, health, economic governance and justice.
+
+Q 46 | his | Modern India
+Swami Vivekananda's speech in the World Parliament of Religions at Chicago in 1893 opened with which of the following words ?
+(1) Sisters and brothers of America
+(2) Dear citizens of the world
+(3) Brothers and sisters of the world
+(4) Esteemed brothers and sisters
+= 1
+~ On 11 September 1893, Vivekananda began his address at the Parliament of the World's Religions in Chicago with "Sisters and Brothers of America", and the audience gave him a standing ovation.
+
+Q 47 | his | Modern India
+Who among the following was called by Gandhiji as his Rajya Guru in May, 1915 ?
+(1) Bal Gangadhar Tilak
+(2) Gopal Krishna Gokhale
+(3) G.G. Agarkar
+(4) Dadabhai Naoroji
+= 2
+~ Gandhi regarded Gopal Krishna Gokhale as his political guru (Rajya Guru). On Gokhale's advice, Gandhi spent his first year back in India (1915) travelling round the country before taking part in politics.
+
+Q 48 | his | Modern India
+With reference to the Swadeshi Movement, consider the following statements :
+1. The Swadeshi Movement had its genesis in the Anti-Partition movement, which was started to oppose the British decision to partition Bengal.
+2. Aurobindo Ghosh was in favour of extending the movement to the rest of India and carrying it beyond the programme of just Swadeshi and Boycott to a full-fledged political mass struggle.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The Swadeshi Movement grew out of the agitation against the 1905 Partition of Bengal. Extremists such as Aurobindo Ghosh, Tilak and Bipin Chandra Pal wanted to take it beyond Bengal and turn it into a mass struggle for swaraj, beyond boycott alone.
+
+Q 49 | his | Ancient India
+With reference to the Junagadh inscription of Rudradaman, consider the following statements :
+1. The script of this inscription is Kharosthi and the language is Prakrit.
+2. The inscription records the restoration of a reservoir called Sudarshana Lake.
+3. It is an undated inscription.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) 1 and 2 only
+(4) 1, 2 and 3
+= 2
+~ The Junagadh (Girnar) inscription of Rudradaman I is the first long inscription in chaste Sanskrit and is written in Brahmi script. It records the repair of the Sudarshana lake, which was built under the Mauryas, and it is dated to year 72 of the Saka era (c. 150 CE). So only statement 2 is correct.
+
+Q 50 | his | Ancient India
+The Bower Manuscript is known for being a valuable source on which one of the following subjects in ancient India ?
+(1) Medicine
+(2) Mathematics
+(3) Astronomy
+(4) Chemistry
+= 1
+~ The Bower Manuscript, a birch-bark text from Kucha in Central Asia written in Gupta Brahmi script (c. 5th–6th century CE), is best known for its medical treatises such as the Navanitaka. It is among the oldest surviving manuscripts on Ayurveda. Do not confuse it with the Bakhshali Manuscript, which is the famous one on mathematics.
+
+Q 51 | his | Modern India
+Who among the following was the only Indian member to be present when the Vernacular Press Bill came up before the Legislative Council ?
+(1) Jotendra Mohan Tagore
+(2) Peary Mohan Mukherjea
+(3) Dinshaw Petit
+(4) Dadabhai Naoroji
+= 1
+~ Lytton's Vernacular Press Bill was passed in a single sitting on 14 March 1878. The only Indian member of the Imperial Legislative Council present was Maharaja Jotendra (Jotindra) Mohan Tagore, who supported it.
+
+Q 52 | his | Art & Culture
+With reference to the Ranigumpha Cave (Odisha), consider the following statements :
+1. Ranigumpha Cave is plain and contains no murals or sculptures.
+2. Ranigumpha Cave is two-storeyed.
+3. Ranigumpha Cave consists of an oval courtyard.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ Rani Gumpha (Cave 1, Udayagiri) is a double-storeyed Jaina cave whose cells are built round three sides of a rectangular courtyard (quadrangle), not an oval one. It is also the most richly carved cave of the complex, with sculptured friezes, so statement 1 is wrong too.
+
+Q 53 | his | Ancient India
+The Mesolithic site of Bagor is one of the most well-documented sites. It is located in :
+(1) Rajasthan
+(2) Madhya Pradesh
+(3) Haryana
+(4) Punjab
+= 1
+~ Bagor is a Mesolithic site on the Kothari river in Bhilwara district, Rajasthan. It is one of the largest and best-documented Mesolithic sites in India, and it shows early evidence of animal domestication.
+
+Q 54 | his | Ancient India
+Extensive pit-dwellings have been identified at the two Neolithic sites of :
+(1) Piklihal and Maski
+(2) Chirand and Tekkalkota
+(3) Kodekal and Hallur
+(4) Burzahom and Gufkral
+= 4
+~ The Kashmir Neolithic sites of Burzahom and Gufkral are known for pit-dwellings (dwelling pits) dug into the loess to protect against the cold. Burzahom also shows the practice of burying dogs with their masters.
+
+Q 55 | his | Ancient India
+The Chalcolithic Ahar Culture has been identified in which of the following river systems ?
+(1) Sarayu and Ganga river systems
+(2) Krishna and Tungabhadra river systems
+(3) Banas and Berach river systems
+(4) Brahmaputra and Meghna river systems
+= 3
+~ The Ahar (Ahar–Banas) culture of south-east Rajasthan is found in the valleys of the Banas and its tributary the Berach, with type-sites at Ahar (Udaipur), Balathal and Gilund.
+
+Q 56 | his | Ancient India
+Which one of the following is a Neolithic site ?
+(1) Bhimbetka
+(2) Utnur
+(3) Adamgarh
+(4) Birbhanpur
+= 2
+~ Utnur in Telangana is a South Indian Neolithic "ash mound" site, where cattle pens were burnt. Bhimbetka is known mainly for Palaeolithic–Mesolithic rock shelters, and Adamgarh and Birbhanpur are Mesolithic sites.
+
+Q 57 | his | Ancient India
+During the period 100 BCE – 200 CE, valuable evidence of India's maritime trade links has been identified from which of the following sites on the Coromandel Coast ?
+(1) Arikamedu
+(2) Tamralipti
+(3) Bharukachcha
+(4) Muchiri
+= 1
+~ Arikamedu, near Puducherry on the Coromandel Coast, has yielded Roman amphorae, Arretine ware and beads, which show Indo-Roman trade. Tamralipti was in Bengal, Bharukachcha (Broach) on the west coast, and Muchiri (Muziris) on the Malabar coast.
+
+Q 58 | his | Ancient India
+Consider the following statements about the Gupta administrative system :
+1. The Gupta kings assumed imperial titles such as Maharajadhiraja, Parama-bhattaraka and Parameshvara.
+2. The Gupta kings also connected themselves with the Gods through epithets such as Parama-daivata and Parama-bhagavata.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Gupta rulers took grand titles such as Maharajadhiraja, Parama-bhattaraka and Parameshvara. They also used religious epithets such as Parama-daivata and Parama-bhagavata (devout worshipper of Vishnu/Bhagavata) to suggest that they were close to the gods.
+
+Q 59 | his | Medieval India
+Who was the author of the book of travels, called Rihla, written in Arabic, providing extremely rich and interesting details about India ?
+(1) Al-Biruni
+(2) Ibn Battuta
+(3) François Bernier
+(4) Nizamuddin Ahmad
+= 2
+~ The Moroccan traveller Ibn Battuta wrote the Rihla in Arabic. He came to India in the 14th century during the reign of Muhammad bin Tughlaq. Al-Biruni wrote Kitab-ul-Hind, and Bernier wrote Travels in the Mughal Empire.
+
+Q 60 | his | Medieval India
+The twelfth century witnessed the emergence of a new movement in Karnataka, led by Basavanna (1106-68 CE) who was a minister in the court of a Kalachuri ruler. His followers were known as :
+(1) Virashaivas
+(2) Pushtimargis
+(3) Avadhoots
+(4) Nathpanthis
+= 1
+~ Basavanna's followers, devotees of Shiva, were called Virashaivas (heroes of Shiva) or Lingayats (wearers of the linga). Pushtimarg was founded by Vallabhacharya.
+
+Q 61 | his | World History
+With reference to the Industrial Revolution, consider the following statements :
+1. The Industrial Revolution saw the replacement of handicrafts by power-driven machinery.
+2. The industrialised countries became dependent upon other countries for the supply of raw materials necessary for their industries.
+3. Large-scale production started with the help of machinery in factories.
+Which of the statements given above are correct ?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The Industrial Revolution replaced hand-made goods with machine production in factories, which led to large-scale output. The industrial countries then needed raw materials such as cotton from other lands, which drove the search for colonies. All three statements are correct.
+
+Q 62 | his | Ancient India
+Which of the pairs of Ashokan inscription and location is/are correctly matched ?
+1. Jaugada : Karnataka
+2. Bahapur : New Delhi
+3. Rajula-Mandagiri : Andhra Pradesh
+Select the answer using the codes given below :
+(1) 1 only
+(2) 1, 2 and 3
+(3) 3 only
+(4) 2 and 3 only
+= 4
+~ Jaugada (Ganjam district), which has a separate Kalinga rock edict, is in Odisha, not Karnataka. The Bahapur minor rock edict is in New Delhi, and Rajula-Mandagiri (Kurnool district) is in Andhra Pradesh, so only pairs 2 and 3 are correct.
+
+Q 63 | his | Ancient India
+With reference to the Indo-Roman trade in ancient India, the term 'aurei' refers to :
+(1) Perfume
+(2) Wine
+(3) Black Pepper
+(4) Coins
+= 4
+~ Aurei (singular aureus) were Roman gold coins. Large hoards of them have been found in south India, which shows how much Rome paid for Indian pepper, spices and textiles.
+
+Q 64 | his | Art & Culture
+Basohli, a bold and intense style of miniature painting, is associated with which one of the following regions of India ?
+(1) Bihar
+(2) Chhattisgarh
+(3) Madhya Pradesh
+(4) Himachal Pradesh
+= 4
+~ Basohli was the earliest school of Pahari painting, known for bold colours and intense expressions. It grew up in the Pahari hill states of the western Himalaya. Basohli town itself is now in Kathua district of Jammu & Kashmir, but among the options only Himachal Pradesh lies in this Pahari region.
+
+Q 65 | his | Ancient India
+Which of the following factors was/were responsible for the rise of Magadha as the most powerful Mahajanapada during the 6th century BCE ?
+1. Region of productive agriculture
+2. Accessibility to iron-mines
+3. Availability of elephants in the region
+Select the answer using the codes given below :
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The NCERT (Themes in Indian History) gives all three reasons. Magadha had fertile, well-watered land in the Ganga valley and nearby iron mines (in present-day Jharkhand) for tools and weapons, and elephants from its forests served in the army.
+
+Q 66 | geo | Physical Geography
+Which of the following pairs of theories about origin of the Earth and their propounders is/are correctly matched ?
+1. Gaseous Hypothesis : Kant
+2. Binary Star Hypothesis : Russell
+3. Planetesimal Hypothesis : Chamberlin
+Select the answer using the codes given below :
+(1) 1 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Immanuel Kant proposed the gaseous (nebular) hypothesis in 1755, H.N. Russell put forward the binary star hypothesis, and Chamberlin (with Moulton) gave the planetesimal hypothesis. All three pairs are correctly matched.
+
+Q 67 | geo | Physical Geography
+Which one among the following statements regarding igneous rock is correct ?
+(1) When magma cools deep in the Earth's interior, it results in the formation of fine-grained igneous rocks.
+(2) Basalt is a type of intrusive igneous rock.
+(3) Most of the minerals of igneous rocks are silicates.
+(4) Extrusive igneous rocks often undergo lithification.
+= 3
+~ Most minerals in igneous rocks, such as feldspar, quartz, mica and pyroxene, are silicates. Magma that cools slowly at depth forms coarse-grained rocks, not fine-grained ones. Basalt is extrusive, and lithification is a process of sedimentary rocks.
+
+Q 68 | geo | Physical Geography
+Consider the following statements regarding metamorphic rocks :
+1. Ortho-metamorphic rocks are formed from igneous rocks.
+2. Intense heat of the intruding magmas results in metamorphism of the surrounding rocks, a process known as dynamic metamorphism.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ Ortho-metamorphic rocks form from igneous rocks, while para-metamorphic rocks form from sedimentary rocks. When the heat of intruding magma alters the surrounding rock, the process is thermal (contact) metamorphism. Dynamic metamorphism is caused by pressure and stress.
+
+Q 69 | geo | Physical Geography
+Consider the following statements regarding Volcanic Cones :
+1. During volcanic eruptions, acid lava cones are formed by highly viscous lavas.
+2. Viscous lavas have high mobility and can travel for long distances.
+3. Acid lavas result in the formation of high cones with steep slopes.
+4. Composite cones are the highest volcanic cones.
+Which of the statements given above are correct ?
+(1) 1 and 2 only
+(2) 2, 3 and 4 only
+(3) 1, 3 and 4 only
+(4) 1, 2, 3 and 4
+= 3
+~ Acid lava is rich in silica and very viscous. It does not flow far, so it solidifies near the vent and builds high, steep-sided cones. Statement 2 is wrong because viscous lava moves slowly. Composite cones (stratovolcanoes), built of alternating layers of lava and ash, are the highest volcanic cones.
+
+Q 70 | geo | Physical Geography
+Consider the following statements about Mechanical Weathering :
+1. More compact and highly consolidated rocks are least affected by freeze-thaw weathering.
+2. Shattering of rocks is more common in hot deserts.
+3. Crystalline rocks are often prone to exfoliation.
+Which of the statements given above is/are correct ?
+(1) 1 and 2 only
+(2) 1 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Compact, non-porous rocks have few cracks for water to enter, so frost (freeze-thaw) action affects them least. In hot deserts the large day-night temperature range makes rocks expand and contract until they shatter. Crystalline rocks such as granite tend to peel off in curved sheets (exfoliation).
+
+Q 71 | geo | Physical Geography
+Consider the following statements about the causes of ground surface inversion of temperature :
+1. Ground surface inversion is also termed as radiation inversion.
+2. The existence of negative lapse rate results in surface inversion.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ On long, clear, calm nights the ground loses heat quickly by radiation and cools the air touching it, so this inversion is called radiation inversion. When temperature rises with height (a negative lapse rate) instead of falling, the result is an inversion layer near the surface.
+
+Q 72 | geo | Indian Geography
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Forest type)
+A. Tropical Moist Forest
+B. Littoral and Swamp Forest
+C. Tropical Thorn Forest
+D. Alpine Forest
+List-II (Specie)
+1. Kail
+2. Khair
+3. Sonneratia
+4. Rosewood
+Codes :
+(1) A-4, B-3, C-2, D-1
+(2) A-4, B-2, C-3, D-1
+(3) A-1, B-2, C-3, D-4
+(4) A-1, B-3, C-2, D-4
+= 1
+~ Rosewood is a tree of tropical moist (evergreen/deciduous) forests, and Sonneratia is a mangrove of littoral and swamp forests. Khair (Acacia catechu) grows in dry thorn forests, and Kail (blue pine) grows in the high Himalayan forests just below the alpine zone. So the match is A-4, B-3, C-2, D-1.
+
+Q 73 | geo | Indian Geography
+Consider the following statements regarding the Northwestern Himalayas :
+1. Karewa formations in Kashmir consist of thick deposits of glacial clay and other materials embedded with moraines.
+2. Pangong Tso and Tso Moriri in Ladakh are freshwater lakes.
+3. River Jhelum exhibits meanders in the Kashmir Valley.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The NCERT (India: Physical Environment) describes Karewas as thick deposits of glacial clay embedded with moraines. It also says the Jhelum flows in its youth stage yet forms meanders in the Kashmir Valley. Pangong Tso and Tso Moriri are salt-water lakes; Dal and Wular are the freshwater lakes.
+
+Q 74 | geo | Indian Geography
+Consider the following statements about the types of drought in India :
+1. A meteorological drought occurs when the mean annual rainfall is less than 75%.
+2. Agricultural drought arises out of extreme moisture stress.
+3. Soil moisture drought is related to meteorological drought.
+Which of the statements given above are correct ?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The IMD treats rainfall below 75% of the normal (a shortfall of more than 25%) as meteorological drought. Agricultural drought, also called soil-moisture drought, is caused by severe moisture stress in crops. It follows from a long shortage of rain, so it is linked to meteorological drought. Statement 3 is loosely worded, but all three statements are taken as correct.
+
+Q 75 | geo | Environment & Ecology
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Forest Research Institute)
+A. Tropical Forest Research Institute
+B. Rain Forest Research Institute
+C. Himalayan Forest Research Institute
+D. Forest Research Centre for Eco-Rehabilitation
+List-II (Location)
+1. Prayagraj
+2. Jorhat
+3. Jabalpur
+4. Shimla
+Codes :
+(1) A-1, B-2, C-4, D-3
+(2) A-1, B-4, C-2, D-3
+(3) A-3, B-2, C-4, D-1
+(4) A-3, B-4, C-2, D-1
+= 3
+~ These ICFRE institutes are located as follows: Tropical Forest Research Institute at Jabalpur, Rain Forest Research Institute at Jorhat, Himalayan Forest Research Institute at Shimla, and Forest Research Centre for Eco-Rehabilitation at Prayagraj.
+
+Q 76 | geo | Indian Geography
+Which of the following statements about the Black Soils of India is/are correct ?
+1. Black Soils cover most of the Deccan Plateau.
+2. Also known as 'Regur', they are generally clayey, deep and impermeable.
+3. Since they are impermeable, rainfed crops do not grow well in Black Soils.
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 2 only
+(3) 1, 2 and 3
+(4) 3 only
+= 1
+~ The NCERT says black soil (regur) covers most of the Deccan Plateau and is clayey, deep and impermeable. Because it holds moisture for a long time, it suits rainfed crops such as cotton, so statement 3 is wrong.
+
+Q 77 | geo | Indian Geography
+Which one of the following rivers is also known by the name of "Dihang" in Northeast India ?
+(1) Dikhow
+(2) Brahmaputra
+(3) Subansiri
+(4) Teesta
+= 2
+~ The Brahmaputra (Tsangpo in Tibet) enters Arunachal Pradesh as the Siang or Dihang. It is called the Brahmaputra after the Dibang and Lohit join it.
+
+Q 78 | geo | Indian Geography
+'Shipki La', a high altitude pass in the Himalayas, is located in :
+(1) Chumbi Valley
+(2) Brahmaputra Valley
+(3) Satluj Valley
+(4) Teesta Valley
+= 3
+~ Shipki La is in Kinnaur district of Himachal Pradesh. Here the Satluj enters India from Tibet, and the pass is a trade route between India and Tibet.
+
+Q 79 | geo | Physical Geography
+During chemical weathering, when minerals in feldspar change to kaolinite clays, the process is termed as :
+(1) Carbonation
+(2) Chelation
+(3) Hydration
+(4) Oxidation
+= 3
+~ Feldspar breaks down to kaolinite (china clay) when it reacts with water. Strictly this reaction is hydrolysis, which is not an option, so hydration (the chemical addition of water) is the closest answer. Carbonation is the action of carbonic acid, mainly on limestone.
+
+Q 80 | geo | Environment & Ecology
+Which one among the following pairs of National Parks and locations is not correctly matched ?
+(1) Ranthambore : Rajasthan
+(2) Gir : Gujarat
+(3) Nandankanan : Odisha
+(4) Keibul Lamjao : Arunachal Pradesh
+= 4
+~ Keibul Lamjao, the world's only floating national park (on Loktak Lake, home of the sangai deer), is in Manipur, not Arunachal Pradesh. The other three pairs are correct.
+
+Q 81 | eco | Agriculture, Industry & Trade
+Which one among the following is the first and the oldest Government-owned coal mining company in India ?
+(1) Neyveli Lignite Corporation Limited
+(2) Eastern Coalfields Limited
+(3) Singareni Collieries Company Limited
+(4) Mahanadi Coalfields Limited
+= 3
+~ Singareni Collieries Company Limited (Telangana) was set up in 1920 and became government-owned under the Nizam's state. It is India's oldest government coal company. NLC was formed in 1956, and Eastern and Mahanadi Coalfields are later subsidiaries of Coal India.
+
+Q 82 | geo | Physical Geography
+Consider the following statements regarding ocean currents :
+1. Difference in water density is the main cause for the formation of ocean currents.
+2. Density of water depends on temperature, salinity and pressure.
+3. As a rule, ocean waters move from areas of higher density to areas of lower density as a current.
+Which of the statements given above is/are correct ?
+(1) 1 and 2 only
+(2) 1 only
+(3) 1, 2 and 3
+(4) 2 and 3 only
+= 1
+~ Differences in density, caused by temperature and salinity, drive the thermohaline circulation of the oceans. Density depends on temperature, salinity and pressure. Statement 3 is wrong because surface water generally flows from areas of lower density (warm, light water) towards areas of higher density, where the denser water sinks. Statement 1 is debatable because winds are the main force behind surface currents, but it is still accepted as correct.
+
+Q 83 | geo | Physical Geography
+Consider the following statements about the Sargasso Sea :
+1. It is the only sea without a land boundary.
+2. The Sargasso Sea records the lowest salinity in the Atlantic Ocean.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The Sargasso Sea in the North Atlantic is bounded by ocean currents (the Gulf Stream, North Atlantic, Canary and North Equatorial currents), not by land. Because of high evaporation and little rain, it has the highest salinity in the Atlantic, not the lowest.
+
+Q 84 | geo | Physical Geography
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Type of Tide)
+A. Spring Tides
+B. Neap Tides
+C. Apogean Tides
+D. Equinoctial Spring Tides
+List-II (Characteristic)
+1. Low tides caused when the Sun, Earth and Moon are in the position of quadrature
+2. Occur when the Moon is the farthest from the Earth
+3. Tides recurring at an interval of six months
+4. Very high tides caused when the Sun, Moon and Earth are almost in the same line
+Codes :
+(1) A-3, B-1, C-2, D-4
+(2) A-3, B-2, C-1, D-4
+(3) A-4, B-2, C-1, D-3
+(4) A-4, B-1, C-2, D-3
+= 4
+~ Spring tides are very high tides that occur when the Sun, Moon and Earth are in a line, and neap tides are low tides at quadrature. Apogean tides occur when the Moon is at apogee (farthest from Earth). Equinoctial spring tides come at the equinoxes, so they recur about every six months.
+
+Q 85 | geo | Indian Geography
+Which of the following pairs of major sea ports of India and their characteristics are correctly matched ?
+1. Deendayal Port : Tidal Port
+2. Jawaharlal Nehru Port : Landlocked Port
+3. V.O. Chidambaranar Port : Artificial Deep-Sea Harbour
+4. Paradip Port : Natural Shallow Water Port
+Select the answer using the code given below :
+(1) 1 and 3 only
+(2) 2 and 4 only
+(3) 1, 2 and 3 only
+(4) 1, 2, 3 and 4
+= 1
+~ Deendayal (Kandla) is a tidal port, and V.O. Chidambaranar (Tuticorin) is an artificial deep-sea harbour protected by breakwaters. Visakhapatnam is the landlocked port, not JNPT. Paradip has a deep harbour that can take very large vessels, so it is not a shallow-water port.
+
+Q 86 | cur | Defence & Security
+Consider the following statements about the position of the Chief of Defence Staff :
+1. He is the Head of the Department of Military Affairs within the Ministry of Defence.
+2. He is the Permanent Chairman of the Chiefs of Staff Committee.
+3. He does not exercise any military command over the three Service Chiefs.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The CDS post was created in 2019. The CDS heads the Department of Military Affairs (as Secretary) and is the Permanent Chairman of the Chiefs of Staff Committee. He does not exercise any military command, including over the three Service Chiefs.
+
+Q 87 | cur | Defence & Security
+Match List-I with List-II and select the answer using the codes given below the Lists :
+List-I (Name of the Institution)
+A. Indian Military Academy
+B. National Defence Academy
+C. National Defence College
+D. Officers Training Academy
+List-II (Type of Training)
+1. Training cadets for Short Service Commission
+2. Training the persons joining the Army as officers
+3. Training cadets of three services of Defence forces before inducting them into respective pre-commissioning training academies
+4. Training of selected senior officers of the armed forces and civil service officers
+Codes :
+(1) A-1, B-3, C-4, D-2
+(2) A-1, B-4, C-3, D-2
+(3) A-2, B-3, C-4, D-1
+(4) A-2, B-4, C-3, D-1
+= 3
+~ IMA Dehradun trains those joining the Army as permanent commissioned officers. NDA Khadakwasla trains cadets of all three services before they go to their own academies. NDC New Delhi trains senior defence and civil service officers in strategy, and OTA Chennai trains Short Service Commission cadets.
+
+Q 88 | eco | Schemes & Welfare
+Which of the following statements about 'Saansad Adarsh Gram Yojana' (SAGY) is/are correct ?
+1. It comes under the Ministry of Parliamentary Affairs, Government of India.
+2. It was launched in 2014 on the birth anniversary of Jayaprakash Narayan.
+3. Mahatma Gandhi's vision of Gram Swaraj is the inspiration behind this scheme.
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 1 only
+= 2
+~ SAGY was launched on 11 October 2014, the birth anniversary of Jayaprakash Narayan, to make model villages based on Gandhiji's idea of Gram Swaraj. It is run by the Ministry of Rural Development, not Parliamentary Affairs.
+
+Q 89 | pol | Union & State Government
+Consider the following former Presidents of India :
+1. Dr. Sarvepalli Radhakrishnan
+2. Dr. Zakir Hussain
+3. Neelam Sanjiva Reddy
+How many of the above Presidents has/have also served as Vice-President of India ?
+(1) None
+(2) 1
+(3) 2
+(4) 3
+= 3
+~ Radhakrishnan (Vice-President 1952–62) and Zakir Hussain (1962–67) were both Vice-Presidents before becoming President. Neelam Sanjiva Reddy was Lok Sabha Speaker but never Vice-President. So two of them served as Vice-President.
+
+Q 90 | pol | Constitution & Rights
+Which one among the following statements regarding the Fundamental Rights of the Constitution of India is not correct ?
+(1) They provide for equality of opportunity in matters of public employment.
+(2) They guarantee freedom of conscience and free profession, practice and propagation of religion.
+(3) They prohibit discrimination on the grounds only of religion, race and caste.
+(4) They are legally enforceable.
+= 3
+~ Article 15 bars discrimination on grounds only of religion, race, caste, sex or place of birth, so a list of only three grounds is incomplete. Articles 16 and 25 cover options (1) and (2), and Fundamental Rights can be enforced in court under Articles 32 and 226.
+
+Q 91 | pol | Constitution & Rights
+Consider the following statements regarding the amendment procedure under Article 368 of the Constitution of India :
+1. Constitutional amendment bills can be introduced in either House of the Parliament.
+2. Constitutional amendment bills should be passed in each House by a majority of the total membership of that House and by a majority of not less than two-thirds of the members of that House present and voting.
+3. All Constitutional amendment bills must be ratified by the Legislature of not less than one-half of the States.
+Which of the statements given above is/are correct ?
+(1) 1 and 2 only
+(2) 1 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 1
+~ Under Article 368 an amendment bill may be introduced in either House and needs a special majority in each House. Ratification by half the State legislatures is needed only for bills that change federal provisions, not for all amendments.
+
+Q 92 | pol | Judiciary
+Consider the following statements regarding the qualifications of a person for appointment as a Judge of the Supreme Court of India :
+1. The person has to be, for at least five years, a Judge of a High Court or of two or more such Courts in succession.
+2. The person has to be, for at least ten years, an advocate of a High Court or of two or more such Courts in succession.
+3. The person is, in the opinion of the Chief Justice of India, a distinguished jurist.
+Which of the statements given above is/are correct ?
+(1) 1, 2 and 3
+(2) 3 only
+(3) 1 and 2 only
+(4) 1 and 3 only
+= 3
+~ Article 124(3) requires a citizen who has been a High Court judge for 5 years, a High Court advocate for 10 years, or a distinguished jurist. Whether someone is a distinguished jurist is decided in the opinion of the President, not the Chief Justice of India.
+
+Q 93 | pol | Federalism & Local Government
+Which one among the following pairs of Article and Provision with reference to the Constitution of India is not correctly matched ?
+(1) Article 243A : Gram Sabha
+(2) Article 243B : Constitution of Panchayats
+(3) Article 243C : Composition of Panchayats
+(4) Article 243D : Election to the Panchayats
+= 4
+~ Article 243D deals with reservation of seats in Panchayats. Elections to Panchayats are covered by Article 243K (State Election Commission).
+
+Q 94 | cur | International
+Consider the following statements with regard to the UN Peacekeeping Operation :
+1. The power to authorize a Peacekeeping Operation is exclusively vested with the General Assembly.
+2. UN Peacekeeping Operations are deployed with the consent of the main parties to the conflict.
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Peacekeeping missions are normally authorised by the UN Security Council, not exclusively by the General Assembly. Consent of the main parties is one of the three basic principles of peacekeeping, together with impartiality and non-use of force except in self-defence.
+
+Q 95 | pol | Federalism & Local Government
+Which one among the following items is not included in the State List of the Constitution of India ?
+(1) Public Order
+(2) Economic and Social Planning
+(3) Land
+(4) Local Government
+= 2
+~ Economic and social planning is Entry 20 of the Concurrent List. Public order, land and local government are all State List subjects.
+
+Q 96 | pol | Federalism & Local Government
+Which one among the following pairs of Articles of the Constitution of India and special provisions given therein is not correctly matched ?
+(1) Article 371A : Special provision with respect to the State of Nagaland
+(2) Article 371B : Special provision with respect to the State of Assam
+(3) Article 371C : Special provision with respect to the State of Manipur
+(4) Article 371D : Special provision with respect to the State of Sikkim
+= 4
+~ Article 371D contains special provisions for Andhra Pradesh (and Telangana). The special provisions for Sikkim are in Article 371F.
+
+Q 97 | cur | Defence & Security
+Which of the following are administered under the Ministry of Defence, Government of India ?
+1. Territorial Army
+2. Hydrographic surveys and preparation of navigational charts
+3. National Cadet Corps
+4. All matters relating to Coast Guard Organization
+Select the answer using the codes given below :
+(1) 1, 2, 3 and 4
+(2) 1, 3 and 4 only
+(3) 2 and 4 only
+(4) 1 and 3 only
+= 1
+~ The Allocation of Business Rules give the Department of Defence all four subjects: the Territorial Army, the NCC, hydrographic surveys and navigational charts (done by the Navy's hydrographic office), and the Coast Guard Organisation.
+
+Q 98 | pol | Union & State Government
+Consider the following statements about the powers of the Governor of a State :
+1. The Governor has the power to appoint the Advocate-General.
+2. Advocate-General holds office during the pleasure of the Governor.
+3. The members of the State Public Service Commission are appointed by the Governor.
+4. The members of the State Public Service Commission can be removed by the President of India on the report of the Governor.
+Which of the statements given above are correct ?
+(1) 1, 2, 3 and 4
+(2) 1, 3 and 4 only
+(3) 2 and 4 only
+(4) 1, 2 and 3 only
+= 4
+~ Under Article 165 the Governor appoints the Advocate-General, who holds office during the Governor's pleasure. Under Article 316 the Governor appoints SPSC members. They can be removed only by the President, and for misbehaviour only after an inquiry by the Supreme Court (Article 317), not on the Governor's report.
+
+Q 99 | cur | International
+Which one of the following statements about BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral, Technical and Economic Cooperation) is not correct ?
+(1) Bangladesh, Bhutan, India, Myanmar, Nepal, Pakistan, Sri Lanka and Thailand are member-states of BIMSTEC.
+(2) Its secretariat is located in Dhaka.
+(3) India is the lead country of its security sector.
+(4) Thailand is the lead country of its connectivity sector.
+= 1
+~ BIMSTEC has seven members: Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka and Thailand. Pakistan is not a member. Its secretariat is in Dhaka, and under the 2022 restructuring India leads the security pillar and Thailand leads connectivity.
+
+Q 100 | his | Modern India
+Which one of the following statements is not correct ?
+(1) Chaudhary Charan Singh founded Bharatiya Kranti Dal.
+(2) Jagjivan Ram was a member of the Constituent Assembly.
+(3) Morarji Desai was the Prime Minister of India from 1977 to 1980.
+(4) Jayaprakash Narayan was the founder General Secretary of the Congress Socialist Party.
+= 3
+~ Morarji Desai was Prime Minister from March 1977 to July 1979, when Charan Singh replaced him. The other statements are correct: Charan Singh formed the BKD in 1967, Jagjivan Ram sat in the Constituent Assembly, and JP was the first General Secretary of the CSP (1934).
+
+Q 101 | pol | Constitution & Rights
+Which one of the following Acts is correctly paired with the year of its enactment ?
+(1) The Consumer Protection Act : 2012
+(2) The Right to Information Act : 2004
+(3) The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest Rights) Act : 2006
+(4) The Protection of Children from Sexual Offences Act : 2010
+= 3
+~ The Forest Rights Act was passed in 2006. The Consumer Protection Act dates from 1986 (replaced in 2019), the RTI Act from 2005 and the POCSO Act from 2012.
+
+Q 102 | pol | Constitutional & Statutory Bodies
+Which of the following statements related to the National Commission for Backward Classes is/are correct ?
+1. It is a constitutional body.
+2. The National Commission for Backward Classes Act, 1993 has been repealed.
+3. The Secretary, Ministry of Social Justice and Empowerment, Government of India heads the Commission.
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 1 only
+= 1
+~ The 102nd Amendment (2018) inserted Article 338B and made the NCBC a constitutional body. The NCBC Act, 1993 was repealed in the same year. The Commission is headed by a Chairperson appointed by the President, not by a ministry Secretary.
+
+Q 103 | pol | Constitution & Rights
+Which of the following acts/behaviour shall amount to 'sexual harassment' as per the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 ?
+1. Verbal remarks of sexual nature
+2. Non-verbal conduct of sexual nature
+3. Physical conduct of sexual nature
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 3 only
+= 3
+~ Section 2(n) of the Act defines sexual harassment to include physical contact and advances, sexually coloured remarks, showing pornography, and "any other unwelcome physical, verbal or non-verbal conduct of sexual nature". So all three are covered.
+
+Q 104 | geo | Indian Geography
+Which among the following tribes inhabit the Andaman and Nicobar Islands ?
+1. Onge
+2. Jarawas
+3. Sentinelese
+Select the answer using the codes given below :
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 1 and 3 only
+= 3
+~ The Onge (Little Andaman), Jarawa (South and Middle Andaman) and Sentinelese (North Sentinel Island) are all Negrito tribes of the Andaman Islands. Together with the Great Andamanese and Shompen they are Particularly Vulnerable Tribal Groups.
+
+Q 105 | pol | Union & State Government
+Arrange the following dignitaries in the correct sequence with respect to their rank precedence, as per the 'Table of Precedence' approved by the President of India :
+1. Chief Justice of India
+2. Governors within their respective states
+3. Former Presidents
+4. Deputy Prime Minister
+Select the answer using the codes given below :
+(1) 1, 3, 4, 2
+(2) 2, 3, 4, 1
+(3) 1, 2, 4, 3
+(4) 2, 3, 1, 4
+= 2
+~ In the Table of Precedence, Governors within their states are at No. 4, former Presidents at No. 5, the Deputy Prime Minister at No. 5A and the Chief Justice of India at No. 6. So the order is 2, 3, 4, 1.
+
+Q 106 | sci | Science & Technology
+Which of the following statements about the 'SMART VILLAGE' project, launched by the Council of Scientific and Industrial Research (CSIR) is/are correct ?
+1. This is a pilot project, which focuses on the integrated village development.
+2. The distinctive aspect of this project is that CSIR is following the guiding principle of 'Land to Lab' in improving the condition of villages through indigenous technologies.
+Select the answer using the codes given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ CSIR's Smart Village mission (coordinated by CSIR-CBRI) is a pilot in six villages from different climatic zones, for all-round integrated village development. It takes laboratory technologies to the field on the principle of 'Lab to Land', not 'Land to Lab'.
+
+Q 107 | eco | Agriculture, Industry & Trade
+Which of the following measures has/have been undertaken by the Government of India for supporting the cotton exporters and the textile sector ?
+1. Credit Guarantee Scheme for Exporters (CGSE)
+2. RBI Trade Relief 2025
+3. Rebate of State and Central Taxes and Levies (RoSCTL) for cotton and cotton-based products
+Select the answer using the codes given below :
+(1) 1, 2 and 3
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 2 only
+= 1
+~ After the 2025 US tariffs, the government cited the Credit Guarantee Scheme for Exporters (Rs 20,000 crore of collateral-free credit) and the RBI's 2025 trade relief measures as support for textile exporters. It also continued RoSCTL, which refunds embedded taxes on textile exports. Note that RoSCTL officially covers apparel/garments and made-ups, many of which are cotton-based.
+
+Q 108 | eco | Schemes & Welfare
+Which of the following statements about Government programmes/schemes is/are correct ?
+1. Skill Training of Rural Youth (STRY) is a programme meant for improving skills of the rural youth in different thematic areas of agriculture.
+2. Deendayal Antyodaya Yojana – National Rural Livelihoods Mission (DAY – NRLM) focuses on creating income generation opportunities for Self-Help Group (SHG) women.
+3. Start-up Village Entrepreneurship Programme (SVEP) is meant for creating an enabling rural business development ecosystem for supporting all women except for those engaged with Self-Help Groups (SHGs).
+Select the answer using the codes given below :
+(1) 1, 2 and 3
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 3 only
+= 2
+~ STRY trains rural youth in agriculture and allied areas, and DAY-NRLM builds livelihoods for women through SHGs. SVEP is a sub-scheme of DAY-NRLM that supports rural entrepreneurs, including SHG members, so it does not exclude SHG women.
+
+Q 109 | eco | Schemes & Welfare
+Which one of the following schemes is not meant for the development of agriculture sector in India ?
+(1) Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)
+(2) Modified Interest Subvention Scheme (MISS)
+(3) PM SVANidhi
+(4) National Food Security and Nutrition Mission
+= 3
+~ PM SVANidhi gives collateral-free working-capital loans to urban street vendors and is run by the Ministry of Housing and Urban Affairs. PM-KMY (pension for small farmers), MISS (cheap short-term crop loans) and NFSNM are farm-sector schemes.
+
+Q 110 | cur | National
+Which of the following statements is/are not correct ?
+1. The 3rd WHO Global Summit on Traditional Medicine was held in New Delhi in December 2025.
+2. The theme for the 11th International Yoga Day 2025 was 'Yoga for One Earth, One Health'.
+Select the answer using the codes given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The New Delhi summit (17–19 December 2025) was the 2nd WHO Global Summit on Traditional Medicine; the 1st was in Gandhinagar in August 2023. The theme of the 11th International Day of Yoga (21 June 2025) was indeed 'Yoga for One Earth, One Health'.
+
+Q 111 | cur | National
+Which one of the following statements about the bridges of India is not correct ?
+(1) Atal Setu, also known as the Mumbai Trans Harbour Link, is India's longest sea bridge.
+(2) The Chenab bridge is the world's highest railway arch bridge.
+(3) The Bhupen Hazarika Setu is built over the Lohit river.
+(4) The New Pamban bridge is an arch bridge.
+= 4
+~ The New Pamban bridge (Rameswaram, opened 2025) is India's first vertical-lift railway sea bridge, not an arch bridge. Atal Setu (21.8 km) is India's longest sea bridge, the Chenab bridge (359 m above the river) is the world's highest railway arch bridge, and the Dhola–Sadiya Bhupen Hazarika Setu crosses the Lohit.
+
+Q 112 | cur | National
+Which of the following statements about India's Green Energy target is/are correct ?
+1. ONGC Green has set a plan to achieve 10 GW of green energy capacity by 2030.
+2. ONGC Green and IIM Nagpur have signed a Memorandum of Understanding (MoU), which aims at contributing to India's broader goal of achieving net zero emissions by 2050.
+Select the answer using the codes given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ ONGC Green, a subsidiary of ONGC, targets 10 GW of renewable capacity by 2030. The ONGC Green–IIM Nagpur MoU on energy-transition research does exist, but India's net-zero target is 2070 (announced at COP26), not 2050.
+
+Q 113 | cur | National
+In which one of the following cities of India was the PESA (Panchayats (Extension to Scheduled Areas)) Mahotsav 2025 held ?
+(1) Visakhapatnam
+(2) Kochi
+(3) Ranchi
+(4) Raipur
+= 1
+~ The Ministry of Panchayati Raj held the two-day PESA Mahotsav in Visakhapatnam, Andhra Pradesh, on 23–24 December 2025, to mark PESA Day (24 December).
+
+Q 114 | cur | National
+The Sujalam Bharat App, launched in December 2025, aims at :
+(1) Monitoring irrigation facilities being provided to farmers
+(2) Achieving the goal of cleaning river water
+(3) Resolving the grievances related to drinking water-supply in the NCT of Delhi
+(4) Transforming rural drinking water governance
+= 4
+~ The Ministry of Jal Shakti launched the Sujalam Bharat App under the Jal Jeevan Mission. It gives each village a 'Sujal Gaon ID' and tracks rural drinking-water schemes in real time, with the aim of transforming rural drinking-water governance.
+
+Q 115 | cur | Defence & Security
+Operation Sagar Bandhu was launched by India to provide Search & Rescue and Humanitarian Assistance & Disaster Relief (HADR) support to which one of the following countries ?
+(1) Thailand
+(2) Sri Lanka
+(3) Indonesia
+(4) Vietnam
+= 2
+~ India launched Operation Sagar Bandhu in late November 2025 after Cyclone Ditwah caused floods and landslides in Sri Lanka. The Navy, Air Force and NDRF were sent with relief material and rescue teams.
+
+Q 116 | cur | International
+India and New Zealand have signed a Free Trade Agreement (FTA) in December 2025. In which of the following areas has cooperation under the FTA been agreed upon between the two countries ?
+1. AYUSH
+2. Audio-Visual tourism
+3. Traditional knowledge system
+4. Horticulture
+Select the answer using the codes given below :
+(1) 1, 2, 3 and 4
+(2) 2 and 4 only
+(3) 1 and 3 only
+(4) 1, 3 and 4 only
+= 4
+~ Under the India–New Zealand FTA, concluded in December 2025, the two countries agreed to cooperate in AYUSH, traditional knowledge systems and horticulture (for example, centres of excellence for apples, kiwifruit and honey). The key treats "Audio-Visual tourism" as not a separate agreed area, so it gives 1, 3 and 4 only. Note: UPSC's provisional key gives (4); by standard sources the answer appears to be (1) because PIB's release of 22 December 2025 lists "AYUSH, culture, fisheries, audio visual tourism, forestry, horticulture and traditional knowledge systems" as agreed areas of cooperation.
+
+Q 117 | eco | Schemes & Welfare
+Which one of the following statements is correct about the PM-MITRA scheme ?
+(1) Its goal is to develop at least one energy park, in every state of India.
+(2) It aims at developing integrated textile parks in India.
+(3) Its goal is to open employment parks in every district of India.
+(4) It aims at opening agro parks in India.
+= 2
+~ PM MITRA (PM Mega Integrated Textile Region and Apparel) parks are large integrated textile parks covering the whole chain from fibre to fashion. Seven parks have been approved, in Tamil Nadu, Telangana, Gujarat, Karnataka, Madhya Pradesh, Uttar Pradesh and Maharashtra.
+
+Q 118 | cur | Sports
+Who, amongst the following, was not a part of the Indian Squash team that won the first ever World Cup title at the SDAT Squash World Cup 2025 ?
+(1) Joshna Chinnappa
+(2) Anahat Singh
+(3) Abhay Singh
+(4) Arjun Erigaisi
+= 4
+~ India's title-winning team at the Squash World Cup in Chennai (December 2025) was Joshna Chinnappa, Anahat Singh, Abhay Singh and Velavan Senthilkumar. Arjun Erigaisi is a chess grandmaster.
+
+Q 119 | cur | Defence & Security
+Defence Research and Development Organization (DRDO) and Rashtriya Raksha University (RRU) have signed a Memorandum of Understanding (MoU) in December 2025. Which of the following statements is/are correct in the context of this MoU ?
+1. This MoU aims to foster collaboration in the areas of training and technology support for defence and internal security.
+2. RRU is an institution of eminence under the Ministry of Education, Government of India.
+Select the answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The DRDO–RRU MoU covers training, research and technology support for defence and internal security. Rashtriya Raksha University (Gandhinagar) is an Institution of National Importance under the Ministry of Home Affairs, not an institution of eminence under the Ministry of Education.
+
+Q 120 | cur | Sports
+Who among the following has recently scripted history by becoming the first Indian cricketer to secure 100 wickets and 1000 runs in T20 Internationals ?
+(1) Hardik Pandya
+(2) Ravindra Jadeja
+(3) Axar Patel
+(4) Washington Sundar
+= 1
+~ In December 2025, against South Africa, Hardik Pandya became the first Indian to complete the double of 1,000 runs and 100 wickets in men's T20 Internationals.

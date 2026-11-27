@@ -1,0 +1,1000 @@
+# UPSC Combined Defence Services Examination (II) 2026: Elementary Mathematics (Series A), held 13 September 2026.
+# Source: the official UPSC question paper. UPSC's provisional key could not be obtained: answers worked out by Learn with Anil and compared with coaching institutes' published keys. Explanations by Learn with Anil.
+
+Q 1 | ari | Number System
+Two positive integers x and y are in the ratio 17 : 19. If the LCM of the two numbers is 1615, then what is (x + y) equal to?
+(1) 36
+(2) 180
+(3) 360
+(4) Cannot be determined due to insufficient data
+= 2
+~ Let x = 17k and y = 19k; since 17 and 19 are co-prime, LCM = 323k = 1615, so k = 5. Then x + y = 36k = 180.
+
+Q 2 | alg | Equations & Expressions
+If p/q = q/r = r/s = k, then what is (p³ + q³ + r³)/(q³ + r³ + s³) equal to?
+(1) p/s
+(2) r/q
+(3) s/p
+(4) q/r
+= 1
+~ Each term of the numerator is k times the matching term of the denominator (p = kq, q = kr, r = ks), so the ratio is k³. Also p/s = (p/q)(q/r)(r/s) = k³, so the answer is p/s.
+
+Q 3 | alg | Polynomials & Quadratics
+If x² − 4x + 3 is a factor of x⁴ + px² + q, then what is (p − q) equal to?
+(1) −19
+(2) −17
+(3) 17
+(4) 19
+= 1
+~ x² − 4x + 3 = (x − 1)(x − 3), so x = 1 and x = 3 are zeros: 1 + p + q = 0 and 81 + 9p + q = 0. Subtracting gives 8p = −80, so p = −10, q = 9 and p − q = −19.
+
+Q 4 | alg | Polynomials & Quadratics
+Suppose p and q are positive integers where q is not a perfect square. If 1/(p + √q) is a root of a quadratic equation having integer coefficients, then which of the following statements is/are correct?
+I. The sum of the roots is 2p times the product of the roots.
+II. The sum of the reciprocals of the roots is equal to 2p.
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ The roots are (p − √q)/(p² − q) and its conjugate (p + √q)/(p² − q), so sum = 2p/(p² − q) and product = 1/(p² − q); sum = 2p × product (I true). The reciprocals of the roots are p + √q and p − √q, whose sum is 2p (II true).
+
+Q 5 | alg | Equations & Expressions
+If 1/(2b + 2c) + 1/(2c + 2a) = 1/(a + b), then what is a² + b² + c² equal to?
+(1) 9c²
+(2) 4c²
+(3) 3c²
+(4) 2c²
+= 3
+~ Clearing denominators: (a + b)(c + a) + (a + b)(b + c) = 2(b + c)(c + a), i.e. (a + b)² + 2c(a + b) = 2c² + 2ab + 2c(a + b), which gives a² + b² = 2c². Hence a² + b² + c² = 3c².
+
+Q 6 | ari | Speed & Distance
+A train completely crossed two persons X and Y moving in the same direction as the train in 8 seconds and 8·1 seconds respectively. X is walking at a uniform speed of 3 km/hr and Y is walking at a uniform speed of 4 km/hr. What is the speed of the train?
+(1) 81 km/hr
+(2) 82 km/hr
+(3) 83 km/hr
+(4) 84 km/hr
+= 4
+~ The train's length is the same in both cases: (v − 3) × 8 = (v − 4) × 8·1, so 8v − 24 = 8·1v − 32·4, giving 0·1v = 8·4 and v = 84 km/hr.
+
+Q 7 | ari | Number System
+A number is formed by three digits, each less by unity than the digit that follows it. If 15 is added to the number, then the sum is 30 times the sum of the digits of the number. What is the product of the digits of the number?
+(1) 6
+(2) 24
+(3) 60
+(4) 120
+= 3
+~ With digits a, a + 1, a + 2 the number is 111a + 12, so 111a + 27 = 30(3a + 3), giving 21a = 63 and a = 3. The number is 345 and the product of its digits is 3 × 4 × 5 = 60.
+
+Q 8 | alg | Sets, Logarithms & Inequalities
+Consider the following statements in respect of common logarithms:
+I. The logarithm of a number greater than 100 but less than 1000 lies between 2 and 3.
+II. The logarithm of a positive number less than unity is negative.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ log₁₀ is increasing, so 100 < x < 1000 gives 2 < log x < 3 (I true). For 0 < x < 1, log x < log 1 = 0 (II true).
+
+Q 9 | alg | Sets, Logarithms & Inequalities
+What is the number of zeros immediately after the decimal point in (0·5)¹⁰⁰⁰?
+(Given that log₁₀ 2 = 0·30103)
+(1) 300
+(2) 301
+(3) 302
+(4) 303
+= 2
+~ log₁₀(0·5)¹⁰⁰⁰ = −1000 × 0·30103 = −301·03, so (0·5)¹⁰⁰⁰ ≈ 9·33 × 10⁻³⁰², i.e. 0·000…0933 with 301 zeros right after the decimal point.
+
+Q 10 | alg | Equations & Expressions
+If x = 11 + 2√30, then what is the value of x^(1/2) + x^(−1/2)?
+(1) 2√2
+(2) 2√3
+(3) 2√5
+(4) 2√6
+= 4
+~ x = 6 + 5 + 2√30 = (√6 + √5)², so √x = √6 + √5 and 1/√x = √6 − √5 (since 6 − 5 = 1). Their sum is 2√6.
+
+Q 11 | alg | Equations & Expressions
+If 1/(x + k) + 1/(x + 2k) + 1/(x + 5k) = 1/k, then what is the solution of the equation?
+(1) k/3
+(2) k/2
+(3) 2k/3
+(4) k
+= 4
+~ Put x = k: 1/(2k) + 1/(3k) + 1/(6k) = (3 + 2 + 1)/(6k) = 1/k, so x = k satisfies the equation. (The other two roots, −(2 ± √2)k, are not among the options.)
+
+Q 12 | alg | Polynomials & Quadratics
+Consider the polynomial
+p(x) = x⁵ + 2x⁴ + x³ − x² − 2x − 1:
+I. x² + 2x + 1 is a factor of p(x).
+II. x² + x + 1 divides p(x).
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ p(x) = x³(x² + 2x + 1) − (x² + 2x + 1) = (x + 1)²(x³ − 1) = (x + 1)²(x − 1)(x² + x + 1). So both (x + 1)² = x² + 2x + 1 and x² + x + 1 divide p(x).
+
+Q 13 | alg | Polynomials & Quadratics
+If 5 is a root of the equation x² + px − 55 = 0 and the quadratic equation x² + px + k = 0 has equal roots, then what is the value of k?
+(1) 3
+(2) 6
+(3) 9
+(4) 12
+= 3
+~ 25 + 5p − 55 = 0 gives p = 6. Equal roots of x² + 6x + k = 0 need 36 − 4k = 0, so k = 9.
+
+Q 14 | ari | Speed & Distance
+Had I walked 0·5 km/hr faster, I would have taken 8 minutes less to walk 2 km. What is my original speed?
+(1) 2·5 km/hr
+(2) 2·75 km/hr
+(3) 3 km/hr
+(4) 3·25 km/hr
+= 1
+~ 2/v − 2/(v + 0·5) = 8/60 hr. With v = 2·5: 2/2·5 − 2/3 = 0·8 − 0·667 = 0·133 hr = 8 minutes. (Equivalently v² + 0·5v − 7·5 = 0, so v = 2·5.)
+
+Q 15 | alg | Polynomials & Quadratics
+If the roots of the equation x² + mx + n = 0 are increased by the same quantity k, then they become the roots of the equation x² + nx + m = 0. What is the value of (m + n)?
+(1) −4
+(2) −2
+(3) 2
+(4) 4
+= 1
+~ Sum: −m + 2k = −n, so k = (m − n)/2. Product: n − mk + k² = m, i.e. k² − mk − 2k = 0, so k = m + 2 (k ≠ 0). Then (m − n)/2 = m + 2, giving m + n = −4.
+
+Q 16 | alg | Polynomials & Quadratics
+If α and β are the roots of the equation 2x² − 2(n + 1)x + (n² + n + 1) = 0, then what is (2α³ + 2β³) equal to?
+(1) n³ − 1
+(2) 1 − n³
+(3) −(n³ + 1)
+(4) −(2n³ + 1)
+= 3
+~ α + β = n + 1 and αβ = (n² + n + 1)/2. So 2(α³ + β³) = 2(n + 1)³ − 3(n + 1)(n² + n + 1) = (n + 1)(−n² + n − 1) = −(n³ + 1).
+
+Q 17 | ari | Number System
+The product of two numbers is 1050. The quotient when the larger number is divided by the smaller number is 4 and the remainder is 10. What is the sum of the two numbers?
+(1) 70
+(2) 75
+(3) 80
+(4) 85
+= 4
+~ Larger = 4S + 10, so S(4S + 10) = 1050, i.e. 2S² + 5S − 525 = 0, giving S = 15 and larger = 70. Sum = 85.
+
+Q 18 | alg | Polynomials & Quadratics
+What is the HCF of x³ + x²y − 10xy² + 8y³ and x³ + x²y − 4xy² − 4y³?
+(1) (x − y)
+(2) (x − 2y)
+(3) (x + 2y)
+(4) (x + 4y)
+= 2
+~ x³ + x²y − 10xy² + 8y³ = (x − y)(x − 2y)(x + 4y) and x³ + x²y − 4xy² − 4y³ = (x + y)(x − 2y)(x + 2y). The only common factor is (x − 2y).
+
+Q 19 | alg | Equations & Expressions
+What is (√2 + √3 + √5)(√2 + √3 − √5)(√2 − √3 + √5)(−√2 + √3 + √5) equal to?
+(1) 60
+(2) 40
+(3) 24
+(4) 12
+= 3
+~ First pair: (√2 + √3)² − 5 = 2√6. Second pair: 5 − (√2 − √3)² = 2√6. Product = 2√6 × 2√6 = 24.
+
+Q 20 | alg | Polynomials & Quadratics
+The LCM and HCF of two polynomials p(x) and q(x) are (x + k)² (x² − 7x + 6) and (x + k) respectively. If [x³ + (2k − 1)x² + k(k − 2)x − k²] is one of the polynomials, then which of the following statements is/are correct?
+I. The other polynomial is (x + k) (x − 6) where k ≠ −6.
+II. (x + k) cannot be the HCF if k = −6.
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ The given polynomial is (x + k)²(x − 1), so the other = LCM × HCF ÷ it = (x + k)³(x − 1)(x − 6)/[(x + k)²(x − 1)] = (x + k)(x − 6) (I true). If k = −6 both polynomials would contain (x − 6)², so their HCF would be (x − 6)², not (x + k) (II true).
+
+Q 21 | ari | Percentage, Profit & Interest
+A shopkeeper sold his goods at the cost price. By using false weights, he gained 11(1/9)%. What weight did he use for 1 kg?
+(1) 960 gm
+(2) 950 gm
+(3) 925 gm
+(4) 900 gm
+= 4
+~ Gain% = (1000 − w)/w × 100 = 100/9, so (1000 − w)/w = 1/9 and w = 900 gm.
+
+Q 22 | alg | Polynomials & Quadratics
+If the roots of the equation px² − 40x + 96 = 0 are even integers, then what is the value of p?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ With p = 4 the equation is 4(x² − 10x + 24) = 0, whose roots 4 and 6 are even integers. For p = 1, 2, 3 the discriminant 1600 − 384p (= 1216, 832, 448) is not a perfect square, so the roots are not even rational. Note: SSBCrack's key gives (2) (marked "under review"); but for p = 2 the roots of 2x² − 40x + 96 = 0 are 10 ± 2√13, not integers, so (4) is correct.
+
+Q 23 | ari | Number System
+A number N consists of two digits. The digit in the tens place is 3 times the digit in the units place. The digits are reversed and the resulting number is denoted by R. If N × R = 3627, then what is the product of the digits of the number N?
+(1) 27
+(2) 18
+(3) 12
+(4) 3
+= 1
+~ With units digit u, N = 31u and R = 13u, so 403u² = 3627, giving u = 3. N = 93 and the product of its digits is 9 × 3 = 27.
+
+Q 24 | ari | Speed & Distance
+A boatman can row to a place (Y) at a distance of 24 km from the starting point (X) and back in 14 hours. If he can row 4 km with the stream in the same time as 3 km against it, what is the speed of the stream?
+(1) 0·5 km/hr
+(2) 1 km/hr
+(3) 2 km/hr
+(4) 2·5 km/hr
+= 1
+~ Downstream and upstream speeds are 4t and 3t: 24/(4t) + 24/(3t) = 14 gives 14/t = 14, t = 1. So the speeds are 4 and 3 km/hr and the stream's speed = (4 − 3)/2 = 0·5 km/hr.
+
+Q 25 | ari | Averages & Mixtures
+An alloy (X) of gold and silver is taken in the ratio 1 : 2 and another alloy (Y) of gold and silver is taken in the ratio 2 : 3. How many parts of X and Y must be taken to obtain a new alloy Z consisting of gold and silver in the ratio 4 : 7?
+(1) 5 : 6
+(2) 2 : 1
+(3) 3 : 5
+(4) 6 : 5
+= 4
+~ Gold fractions: X = 1/3, Y = 2/5, Z = 4/11. By alligation X : Y = (2/5 − 4/11) : (4/11 − 1/3) = 2/55 : 1/33 = 6 : 5.
+
+Q 26 | ari | Number System
+N is a 3-digit number. The middle digit of N is equal to the sum of the other two digits and the sum of the digits is 10. How many such numbers (N) can be possible?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 3
+~ a + b + c = 10 with b = a + c gives b = 5 and a + c = 5 with a ≥ 1: 154, 253, 352, 451, 550. So 5 numbers.
+
+Q 27 | ari | Percentage, Profit & Interest
+The ratio of the cost price of two articles X and Y is 1 : 2. A businessman earns a profit of p% by selling X and a loss of 3p% by selling Y. If he loses 20% in this transaction, then what is the value of p?
+(1) 6%
+(2) 8%
+(3) 10%
+(4) 12%
+= 4
+~ Take costs 100 and 200. Net = p − 6p = −5p, which is a 20% loss on 300, i.e. −60. So p = 12.
+
+Q 28 | ari | Percentage, Profit & Interest
+A sum of money at the rate of 5% per annum compounded annually becomes n times in 100 years. What is the value of n?
+(Given log₁₀ 2 = 0·301, log₁₀ 3 = 0·477 and log₁₀ 7 = 0·845)
+(1) 98
+(2) 99
+(3) 100
+(4) More than 100
+= 4
+~ n = (1·05)¹⁰⁰, so log n = 100(log 3 + log 5 + log 7 − 2) = 100(0·477 + 0·699 + 0·845 − 2) = 2·1. Thus n ≈ 10²·¹ ≈ 126 (exactly about 131·5), which is more than 100.
+
+Q 29 | ari | Ratio, Time & Work
+A variable y is directly proportional to a variable quantity xⁿ. Given that when x = 2, y = 20·8 and when x = 3, y = 105·3. Which one of the following is the constant of proportionality if it is greater than 1?
+(1) 1·1
+(2) 1·3
+(3) 2
+(4) 4
+= 2
+~ 105·3/20·8 = 81/16 = (3/2)⁴, so n = 4. Then the constant = 20·8/2⁴ = 1·3.
+
+Q 30 | alg | Equations & Expressions
+If x = 3 − 3^(1/3) − 3^(2/3), then what is x(x − 3)(x − 6) equal to?
+(1) −12
+(2) −9
+(3) 0
+(4) 12
+= 1
+~ Let a = 3^(1/3) and y = x − 3 = −(a + a²). Then y³ = −(a³ + 3a⁴ + 3a⁵ + a⁶) = −(12 + 9(a + a²)) = −12 + 9y. So x(x − 3)(x − 6) = (y + 3)y(y − 3) = y³ − 9y = −12.
+
+Q 31 | alg | Sets, Logarithms & Inequalities
+Consider the following statements:
+I. The set of all birds living on the Earth is an infinite set.
+II. The set of all real numbers between 0 and 10 is a finite set.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ The birds on the Earth, though very many, are finite in number, so I is wrong. There are infinitely many real numbers between 0 and 10, so II is wrong.
+
+Q 32 | alg | Sets, Logarithms & Inequalities
+Consider the following sets:
+I. The set of even prime numbers
+II. {x ∈ ℝ : x³ + 1 = 0}
+III. {n ∈ ℤ : n² < 1}
+How many of the above are null sets?
+(1) None
+(2) One
+(3) Two
+(4) All the three
+= 1
+~ I = {2}, II = {−1} and III = {0}. Each has one element, so none of them is a null set.
+
+Q 33 | alg | Sets, Logarithms & Inequalities
+Consider the following statements:
+I. If A is a subset of U and U is the Universal set, then the complement of the set A is also a subset of U.
+II. The complement of a Universal set is a singleton set.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ A′ = U − A is always a subset of U (I true). The complement of U is the empty set φ, which has no elements, so it is not a singleton (II false).
+
+Q 34 | alg | Equations & Expressions
+What should be added to (x² − 1)/(x² + 1) to get (2x³ + 3x² − 1)/[(x + 2)(x² + 1)]?
+(1) (x² − 1)/[(x + 2)(x² + 1)]
+(2) (x² + 2)/[(x + 2)(x² + 1)]
+(3) (x + 1)/(x + 2)
+(4) (x − 1)/(x + 2)
+= 3
+~ Required = [2x³ + 3x² − 1 − (x² − 1)(x + 2)]/[(x + 2)(x² + 1)] = (x³ + x² + x + 1)/[(x + 2)(x² + 1)] = (x + 1)(x² + 1)/[(x + 2)(x² + 1)] = (x + 1)/(x + 2).
+
+Q 35 | alg | Equations & Expressions
+If x + y + z = 0, then what is x(y + z)² + y(z + x)² + z(x + y)² equal to?
+(1) xyz
+(2) 2xyz
+(3) 3xyz
+(4) 6xyz
+= 3
+~ y + z = −x etc., so the expression = x³ + y³ + z³, which equals 3xyz when x + y + z = 0.
+
+Q 36 | trg | Ratios & Identities
+If tan 6θ . tan 3θ = 1, where 0 < θ < 30°, then what is θ equal to?
+(1) 5°
+(2) 10°
+(3) 15°
+(4) No such value exists
+= 2
+~ tan 6θ = cot 3θ = tan(90° − 3θ), so 6θ = 90° − 3θ and θ = 10° (check: tan 60° × tan 30° = 1).
+
+Q 37 | trg | Ratios & Identities
+If (1 − tan x)/(1 + tan x) = 1 − 2 tan x/(1 + tan² x), 0 ≤ x < π/2, x ≠ π/4, then what is (sin x + cos x) equal to?
+(1) 1/2
+(2) 3/4
+(3) 1
+(4) √2
+= 3
+~ LHS = (cos x − sin x)/(cos x + sin x) and RHS = 1 − sin 2x = (cos x − sin x)². Since x ≠ π/4, cancel (cos x − sin x): (cos x − sin x)(cos x + sin x) = 1, i.e. cos 2x = 1, so x = 0 and sin x + cos x = 1.
+
+Q 38 | trg | Ratios & Identities
+If cos² x + cos⁴ x = 1, where 0 < x < π/2, then what is (sin² x + sin³ x) + (sin³ x + sin⁴ x) equal to?
+(1) (21 + 12√3)/16
+(2) (3 + 2√2)/4
+(3) 9/8
+(4) 1
+= 4
+~ cos⁴ x = 1 − cos² x = sin² x, so sin x = cos² x. The expression = (sin x + sin² x)² = (cos² x + cos⁴ x)² = 1² = 1.
+
+Q 39 | trg | Ratios & Identities
+If sin⁴ x + cos⁴ x = 1, where 0 ≤ x ≤ π/2, then what is sin x . cos x equal to?
+(1) 0
+(2) 1/2
+(3) 3/4
+(4) 1
+= 1
+~ sin⁴ x + cos⁴ x = (sin² x + cos² x)² − 2 sin² x cos² x = 1 − 2 sin² x cos² x. Setting this equal to 1 gives sin x cos x = 0 (x = 0 or π/2).
+
+Q 40 | trg | Ratios & Identities
+If 3 cos θ + 4 sin θ = 4, where 0 ≤ θ < π/2, then what is 4 cos θ + 3 sin θ equal to?
+(1) 117/25
+(2) 3
+(3) 107/25
+(4) 4
+= 1
+~ Substituting sin θ = (4 − 3 cos θ)/4 into sin² θ + cos² θ = 1 gives 25cos² θ − 24 cos θ = 0, so cos θ = 24/25 (cos θ = 0 would need θ = π/2, which is excluded) and sin θ = 7/25. Then 4 cos θ + 3 sin θ = (96 + 21)/25 = 117/25.
+
+Q 41 | trg | Ratios & Identities
+If cot θ + cos θ = m, cot θ − cos θ = n, where 0 < θ < π/2, then what is (m² − n²)/√(mn) equal to?
+(1) 1
+(2) 2
+(3) 2√2
+(4) 4
+= 4
+~ m² − n² = 4 cot θ cos θ and mn = cot² θ − cos² θ = cos² θ (cosec² θ − 1) = cos² θ cot² θ, so √(mn) = cot θ cos θ. The ratio is 4.
+
+Q 42 | trg | Ratios & Identities
+If 1/(cosec θ + cot θ) − 1/sin θ = p, then what is 1/sin θ − 1/(cosec θ − cot θ) equal to?
+(1) −p
+(2) −1/p
+(3) p
+(4) 1/p
+= 3
+~ Since cosec² θ − cot² θ = 1, 1/(cosec θ + cot θ) = cosec θ − cot θ, so p = −cot θ. Likewise 1/(cosec θ − cot θ) = cosec θ + cot θ, so the required expression = cosec θ − (cosec θ + cot θ) = −cot θ = p.
+
+Q 43 | trg | Ratios & Identities
+If 8 sin θ − cos θ = 4, where π/6 < θ < π/3, then what is sin θ equal to?
+(1) 3/5
+(2) 5/13
+(3) 4/5
+(4) 12/13
+= 1
+~ cos θ = 8 sin θ − 4; squaring into sin² θ + cos² θ = 1 gives 65 sin² θ − 64 sin θ + 15 = 0, so sin θ = 3/5 or 5/13. Only sin θ = 3/5 (θ ≈ 36·9°) lies in (30°, 60°); check: 8(3/5) − 4/5 = 4.
+
+Q 44 | trg | Heights & Distances
+A person walking along a straight road observes that at two consecutive kilometer-stones the angles of elevation of a hill in front of him are 30° and 60° respectively. What is the height of the hill?
+(1) 3√3 km
+(2) 2√3 km
+(3) √3 km
+(4) √3/2 km
+= 4
+~ If the nearer stone is x km from the foot, h = x√3 and h = (x + 1)/√3, so 3x = x + 1, x = 1/2 and h = √3/2 km.
+
+Q 45 | trg | Heights & Distances
+A tower subtends an angle α at a point P on the same level as the foot of the tower. Q is a point vertically above P and PQ = h. If the angle of depression of the foot of the tower measured from Q is β, then what is the height of the tower?
+(1) h tan α tan β
+(2) h cot α tan β
+(3) h tan α cot β
+(4) h cot α cot β
+= 3
+~ Let d be the distance from P to the foot. From Q, tan β = h/d, so d = h cot β. From P, the tower's height H = d tan α = h tan α cot β.
+
+Q 46 | trg | Ratios & Identities
+If 5 sin θ + 12 cos θ = 13, where 0 < θ < π/2, then what is tan θ + cot θ equal to?
+(1) 194/65
+(2) 169/60
+(3) 313/156
+(4) 371/120
+= 2
+~ 5 sin θ + 12 cos θ = 13 sin(θ + φ) with tan φ = 12/5, so its maximum 13 is reached when sin θ = 5/13 and cos θ = 12/13. Then tan θ + cot θ = 5/12 + 12/5 = 169/60.
+
+Q 47 | trg | Ratios & Identities
+What is the ratio of the greatest value of sin² x + 2 (where 0 ≤ x ≤ π/2) to its least value?
+(1) 2
+(2) 3/2
+(3) 2
+(4) 1/2
+= 2
+~ On [0, π/2], sin² x runs from 0 to 1, so sin² x + 2 runs from 2 to 3. Ratio = 3/2. (Options (a) and (c) are both printed as 2 in the booklet.)
+
+Q 48 | trg | Ratios & Identities
+If A + B + C = π (A, B, C > 0) and the angle C is obtuse, then which of the following is/are correct?
+I. sin A . sin B < 1
+II. tan A . tan B > 1
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ A and B are acute with A + B < 90°, so sin A, sin B < 1 and I holds. Since tan(A + B) = (tan A + tan B)/(1 − tan A tan B) > 0, we get tan A tan B < 1, so II is false.
+
+Q 49 | trg | Ratios & Identities
+If (cos 35° + cos 55°) = p, then what is sin 35° . cos 35° equal to?
+(1) (1 − p²)/2
+(2) (p² − 1)/2
+(3) (1 + p²)/2
+(4) (p − 1)/2
+= 2
+~ cos 55° = sin 35°, so p = cos 35° + sin 35° and p² = 1 + 2 sin 35° cos 35°. Hence sin 35° cos 35° = (p² − 1)/2.
+
+Q 50 | trg | Ratios & Identities
+If p = sec θ + tan θ and q = cosec θ − cot θ, then what is (p − q − pq) equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 3
+~ p = (1 + s)/c and q = (1 − c)/s (s = sin θ, c = cos θ). Then p − q − pq = [s + s² − c + c² − (1 + s)(1 − c)]/(sc) = sc/(sc) = 1.
+
+Q 51 | gm | Circles & Quadrilaterals
+In a cyclic quadrilateral ABCD, ∠A = (4x + 3)°, ∠B = (3y + 9)°, ∠C = (4y − 3)°, ∠D = (5x − 10)°. What is ∠A + ∠B equal to?
+(1) 200°
+(2) 190°
+(3) 180°
+(4) 170°
+= 4
+~ Opposite angles of a cyclic quadrilateral add to 180°: A + C gives 4x + 4y = 180, i.e. x + y = 45, and B + D gives 5x + 3y = 181. Solving, x = 23 and y = 22, so ∠A = 95° and ∠B = 75°, and ∠A + ∠B = 170°.
+
+Q 52 | gm | Circles & Quadrilaterals
+The area of a rhombus is 720 cm² and the sum of its diagonals is 98 cm. What is the perimeter of the rhombus?
+(1) 160 cm
+(2) 164 cm
+(3) 168 cm
+(4) 172 cm
+= 2
+~ d₁d₂ = 2 × 720 = 1440 and d₁ + d₂ = 98, so d₁² + d₂² = 98² − 2 × 1440 = 6724. Side = √6724/2 = 82/2 = 41 cm, so the perimeter is 4 × 41 = 164 cm.
+
+Q 53 | gm | Mensuration
+A chord of a circle makes an angle of 90° at the centre of the circle. If the area of the major segment is k times the area of the minor segment, then what is the value of k? (Take π = 22/7)
+(1) 8
+(2) 9
+(3) 10
+(4) 11
+= 3
+~ Minor segment = r²(π/4 − 1/2) = r²(11/14 − 7/14) = 2r²/7. Major segment = πr² − 2r²/7 = 20r²/7, so k = (20/7)/(2/7) = 10.
+
+Q 54 | gm | Lines, Angles & Triangles
+ABC is a triangle in which (AB + BC) exceeds CA by 10 cm, (BC + CA) exceeds AB by 8 cm and (CA + AB) exceeds BC by 72 cm. What is the area of the triangle?
+(1) 196 cm²
+(2) 180 cm²
+(3) 172 cm²
+(4) 160 cm²
+= 2
+~ Adding the three conditions gives AB + BC + CA = 90, so s = 45 and s − CA = 5, s − AB = 4, s − BC = 36 (sides BC = 9, CA = 40, AB = 41, a right triangle). Heron: √(45 × 5 × 4 × 36) = √32400 = 180 cm² (check: ½ × 9 × 40 = 180).
+
+Q 55 | gm | Mensuration
+A reservoir is in the form of a cuboid. Its length is 30 m. If 24 kL of water is removed from the reservoir, the water level goes down by 20 cm. What is the width of the reservoir?
+(1) 4 m
+(2) 3·5 m
+(3) 3 m
+(4) 2·5 m
+= 1
+~ 24 kL = 24 m³ = 30 × w × 0·2, so w = 24/6 = 4 m.
+
+Q 56 | gm | Mensuration
+A well is dug with a diameter of 3·5 m and 16 m depth. The earth soil so excavated is spread in the form of a right circular cone of radius 7 m. What is the height of the cone?
+(1) 1·5 m
+(2) 2 m
+(3) 2·5 m
+(4) 3 m
+= 4
+~ Equating volumes: π(1·75)² × 16 = (1/3)π(7)² h, so h = 3 × 3·0625 × 16/49 = 3 m.
+
+Q 57 | gm | Circles & Quadrilaterals
+The chord of a circle is 20 cm and the height of the minor segment is 5 cm. What is the diameter of the circle?
+(1) 24 cm
+(2) 25 cm
+(3) 26 cm
+(4) 30 cm
+= 2
+~ The distance from the centre to the chord is r − 5, and half the chord is 10, so (r − 5)² + 10² = r², giving 10r = 125, r = 12·5 cm and diameter 25 cm.
+
+Q 58 | gm | Mensuration
+On a circular metal plate of uniform thickness, 16 holes, each of diameter 2 cm, are made. If the plate thereby has lost one-ninth of its original weight, then what is the diameter of the plate?
+(1) 12 cm
+(2) 15 cm
+(3) 21 cm
+(4) 24 cm
+= 4
+~ With uniform thickness, weight is proportional to area: 16 × π(1)² = (1/9)πR², so R² = 144, R = 12 cm and the diameter is 24 cm.
+
+Q 59 | gm | Mensuration
+A square of side length 4 cm has its corners cut away in such a manner so as to form a regular octagon. What is the length of the side of the octagon? (Take √2 = 1·41)
+(1) 1·00 cm
+(2) 1·64 cm
+(3) 1·68 cm
+(4) 1·72 cm
+= 2
+~ If x is cut along each edge at every corner, the octagon side is x√2 and x√2 + 2x = 4, so the side = 4/(1 + √2) = 4(√2 − 1) = 4 × 0·41 = 1·64 cm.
+
+Q 60 | gm | Mensuration
+A tall cylindrical reservoir kept vertically is 20 m in diameter. Water is poured into it at the rate of 264 m³ per hour. What is the rate at which the water level rises in the reservoir per minute? (Take π = 22/7)
+(1) 1·0 cm
+(2) 1·2 cm
+(3) 1·4 cm
+(4) 14 cm
+= 3
+~ Base area = (22/7) × 10² = 2200/7 m², so the level rises 264 × 7/2200 = 0·84 m = 84 cm per hour, i.e. 84/60 = 1·4 cm per minute.
+
+Q 61 | gm | Circles & Quadrilaterals
+A Question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: ABCD is a rhombus of side 10 cm. What is the sum of the squares of the diagonals of the rhombus?
+Statement I: AC : BD = 3 : 4.
+Statement II: AC = 6 cm.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using both the Statements.
+= 4
+~ The diagonals of a rhombus bisect each other at right angles, so AC² + BD² = 4 × (side)² = 4 × 100 = 400 cm² whatever the diagonals are; no statement is needed.
+
+Q 62 | gm | Circles & Quadrilaterals
+A Question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: The diagonal of a rectangle ABCD (AB > BC) is 5√2 cm. What is its perimeter?
+Statement I: Length AB is an integer.
+Statement II: Length BC is an integer.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using both the Statements.
+= 3
+~ AB² + BC² = 50 with AB > BC. Statement I alone allows AB = 6 or 7 (BC = √14 or 1); Statement II alone allows BC = 1, 2, 3 or 4. Together, the only integer pair is AB = 7, BC = 1, giving perimeter 16 cm.
+
+Q 63 | gm | Lines, Angles & Triangles
+A Question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: ABC is a triangle right-angled at A and AD is perpendicular to BC. If AD = 7·2 cm, then what is BD × CD equal to?
+Statement I: AB : AC = 3 : 4.
+Statement II: BC = 15 cm.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using both the Statements.
+= 4
+~ In a right triangle the altitude to the hypotenuse satisfies AD² = BD × CD, so BD × CD = 7·2² = 51·84 cm² without using either statement.
+
+Q 64 | gm | Circles & Quadrilaterals
+A Question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: ABCD is a quadrilateral with AB = 6 cm, BC = 8 cm, CD = 4√5 cm, DA = 2√5 cm and inscribed in a circle. What is the diameter of the circle?
+Statement I: The area of the quadrilateral is 44 cm².
+Statement II: ∠ABC = 90°.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using both the Statements.
+= 4
+~ A cyclic quadrilateral is fixed by its four sides. By the cosine rule, AC² = 36 + 64 − 96 cos B = 80 + 20 + 80 cos B (since cos D = −cos B), so cos B = 0, ∠B = 90° and AC = 10 cm is the diameter; no statement is needed.
+
+Q 65 | gm | Circles & Quadrilaterals
+A Question is given followed by two Statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: ABC is a triangle inscribed in a semi-circle such that AC coincides with the diameter of the semi-circle. Let P be any point on the arc of the semi-circle. What is AP² + CP² + AC² equal to?
+Statement I: The radius of the circle is 5 cm.
+Statement II: AB = 6 cm and BC = 8 cm.
+Which one of the following is correct in respect of the above Question and Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone.
+(2) The Question can be answered by using either Statement alone.
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone.
+(4) The Question can be answered even without using both the Statements.
+= 2
+~ ∠APC = 90° (angle in a semicircle), so the required sum is 2AC². Statement I gives AC = 10; Statement II gives AC = √(36 + 64) = 10 (∠B = 90°). Either alone gives 200 cm².
+
+Q 66 | gm | Mensuration
+A thin metallic sheet, 1·92 m² in area, is cut into two equal pieces. One piece is used to make a hollow cube of volume P (in m³) and the other is used to make a hollow cuboid of volume Q (in m³) with dimensions in the ratio 4 : 2 : 1. If no sheet is wasted, which one of the following is correct?
+(1) 343Q² = 216P²
+(2) 343Q² = 225P²
+(3) 49Q² = 64P²
+(4) 49Q² = 25P²
+= 1
+~ Each piece is 0·96 m². Cube: 6a² = 0·96, a = 0·4, P = 0·064. Cuboid 4k, 2k, k: 2(8 + 4 + 2)k² = 28k² = 0·96, Q = 8k³ ≈ 0·05079. Then 343Q² = 0·884736 = 216P², i.e. Q/P = 6√6/(7√7).
+
+Q 67 | gm | Lines, Angles & Triangles
+ABC is a triangle such that ∠ABC = 120°. If BD is the bisector of ∠B that meets AC at D, then what is the ratio of the area of Δ ABD to the area of Δ CBD?
+(1) AB : BC
+(2) BC : AB
+(3) AB² : BC²
+(4) 1 : 1
+= 1
+~ The two triangles have the same height from B, so their areas are in the ratio AD : DC, which by the angle bisector theorem equals AB : BC.
+
+Q 68 | gm | Lines, Angles & Triangles
+Consider the following statements:
+I. The areas of two similar triangles are in the ratio of the squares of the corresponding medians.
+II. The areas of two similar triangles are in the ratio of the squares of the corresponding heights.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ In similar triangles all corresponding linear measures (sides, medians, altitudes, angle bisectors) are in the same ratio, and areas are in the square of that ratio, so both statements are true.
+
+Q 69 | gm | Lines, Angles & Triangles
+If two similar scalene triangles ABC and PQR have the same area, then which of the following is/are correct?
+I. Both the triangles are congruent.
+II. Both the triangles have equal perimeters.
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Equal areas mean the square of the similarity ratio is 1, so the ratio is 1: the triangles are congruent and hence have equal perimeters.
+
+Q 70 | gm | Lines, Angles & Triangles
+In a triangle ABC, AB = 8 cm and D and E are points on AB and AC respectively such that DE is parallel to BC. If BC = 5DE, then what is AD × BD equal to?
+(1) 10 cm²
+(2) 10·24 cm²
+(3) 10·56 cm²
+(4) 12 cm²
+= 2
+~ Triangles ADE and ABC are similar, so AD/AB = DE/BC = 1/5, giving AD = 1·6 cm and BD = 6·4 cm; AD × BD = 10·24 cm².
+
+Q 71 | gm | Mensuration
+How many square metres of canvas (approximately) will be required to make a conical tent 3 m high so that a man 2 m tall may stand anywhere within a radius of 1 m from its centre without stooping?
+(1) 36 m²
+(2) 40 m²
+(3) 44 m²
+(4) 48 m²
+= 2
+~ At height 2 m the cone's radius must be 1 m; by similar triangles R × (3 − 2)/3 = 1, so R = 3 m. Slant height = √(9 + 9) = 3√2 m, so canvas = πRl = 9√2 π ≈ 39·99 ≈ 40 m².
+
+Q 72 | gm | Circles & Quadrilaterals
+PQRS is a square. M is a point on PS such that PM : MS = 2 : 1 and N is a point on SR such that SN : NR = 1 : 2. If the area of triangle MQN is 10 square units, then what is the perimeter of the square?
+(1) 24 units
+(2) 28 units
+(3) 32 units
+(4) 36 units
+= 1
+~ With side a, S = (0, 0), P = (0, a), Q = (a, a), R = (a, 0): M = (0, a/3), N = (a/3, 0). Area MQN = ½|a(−a/3) − (2a/3)(a/3)| = 5a²/18 = 10, so a = 6 and the perimeter is 24 units.
+
+Q 73 | gm | Mensuration
+A cubical wooden block of length 10 cm is sliced to produce a cross-section of maximum area. What is the area of the cross-section?
+(1) 100 cm²
+(2) 100√2 cm²
+(3) 100√3 cm²
+(4) 200 cm²
+= 2
+~ The largest plane section of a cube is the rectangle through two opposite edges, measuring 10 × 10√2, so its area is 100√2 ≈ 141·4 cm² (larger than the regular hexagonal section, ≈ 129·9 cm²).
+
+Q 74 | gm | Lines, Angles & Triangles
+In a triangle ABC, AD is the bisector of angle A that meets BC at D. If AB = 21 cm, DC = 20 cm and AB : AC = 3 : 4, then what is AC² − BD² equal to?
+(1) 441
+(2) 559
+(3) 588
+(4) 784
+= 2
+~ AC = 21 × 4/3 = 28 cm, and by the angle bisector theorem BD : DC = 3 : 4, so BD = 15 cm. AC² − BD² = 784 − 225 = 559.
+
+Q 75 | gm | Lines, Angles & Triangles
+A square of maximum area is inscribed in an equilateral triangle. If the side of the triangle is equal to (6 + 4√3) cm, then what is the area of the square?
+(1) 36 cm²
+(2) 27 cm²
+(3) 21 cm²
+(4) 18 cm²
+= 1
+~ For a square standing on one side of an equilateral triangle of side a, its side is s = a√3/(2 + √3). Here s = (6√3 + 12)/(2 + √3) = 6 cm, so the area is 36 cm².
+
+Q 76 | gm | Mensuration
+A room is L m long, B m wide and H m high. Further, L > B > H and L, B and H are integers. The length of the longest pole that can be placed in the room is 17 m and the length of the longest pole that can be placed on the floor is 15 m. What is the volume of the room?
+(1) 432 m³
+(2) 864 m³
+(3) 1296 m³
+(4) Cannot be determined due to insufficient data
+= 2
+~ L² + B² + H² = 289 and L² + B² = 225, so H = 8. The only integers with L > B > 8 and L² + B² = 225 are L = 12, B = 9, so the volume is 12 × 9 × 8 = 864 m³.
+
+Q 77 | gm | Mensuration
+A spherical metal ball is molten and made into n smaller identical spheres. In this process, the surface area of the smaller balls increases by 900%. What is the value of n?
+(1) 729
+(2) 900
+(3) 1000
+(4) Cannot be determined due to insufficient data
+= 3
+~ With volume conserved, each small radius is R/n^(1/3), so the total surface area becomes n^(1/3) times the original. A 900% increase means 10 times, so n^(1/3) = 10 and n = 1000.
+
+Q 78 | gm | Circles & Quadrilaterals
+ABCD is a parallelogram with ∠ABC = 150° and the sides have integer values. If the area of the parallelogram is 17·5 cm², then consider the following statements:
+I. It is possible to have a perimeter equal to 24 cm.
+II. It is possible to have a perimeter equal to 72 cm.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ Area = ab sin 150° = ab/2 = 17·5, so ab = 35. The integer pairs are 5, 7 (perimeter 24 cm) and 1, 35 (perimeter 72 cm), so both are possible.
+
+Q 79 | gm | Mensuration
+N number of cubes each of side length equal to 10 cm are joined end to end in a row. If the total surface area of the resulting cuboid is 3800 cm², then what is the value of N?
+(1) 8
+(2) 9
+(3) 10
+(4) 12
+= 2
+~ The cuboid is 10 × 10 × 10N, with surface area 2(100 + 100N + 100N) = 200 + 400N = 3800, so N = 9.
+
+Q 80 | gm | Circles & Quadrilaterals
+In a quadrilateral ABCD, ∠ABC = 90° and ∠ACD = 90°. Let AB = p units, BC = q units, AC = r units, CD = s units, AD = t units, where p < q < r < s < t < 15. If p, q, r, s and t are integers, then what is the area of the quadrilateral?
+(1) 24 square units
+(2) 36 square units
+(3) 48 square units
+(4) Cannot be determined due to insufficient data
+= 2
+~ We need p² + q² = r² and r² + s² = t² with all values below 15; a search finds only 3, 4, 5 and 5, 12, 13. Area = ½ × 3 × 4 + ½ × 5 × 12 = 6 + 30 = 36 square units.
+
+Q 81 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: The centre O of a circle inside a triangle ABC is at a distance of 13 cm from each of the vertices of the triangle. The diameter of the circle is 10 cm and the circle touches only two sides of the triangle, AB and AC.
+
+If x is the perimeter, in cm, of the triangle, then which one of the following is correct?
+(1) 63 cm < x < 65 cm
+(2) 65 cm < x < 67 cm
+(3) 67 cm < x < 69 cm
+(4) 69 cm < x < 71 cm
+= 2
+~ O is the circumcentre (R = 13) and is 5 cm from AB and AC, so AB = AC = 2√(13² − 5²) = 24 cm. With sin(A/2) = 5/13, sin A = 120/169 and BC = 2R sin A = 240/13 ≈ 18·46 cm, so x ≈ 48 + 18·46 = 66·46 cm.
+
+Q 82 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: The centre O of a circle inside a triangle ABC is at a distance of 13 cm from each of the vertices of the triangle. The diameter of the circle is 10 cm and the circle touches only two sides of the triangle, AB and AC.
+
+If y is the area in cm² of the triangle, then which one of the following is correct?
+(1) 190 cm² < y < 200 cm²
+(2) 200 cm² < y < 210 cm²
+(3) 210 cm² < y < 220 cm²
+(4) 220 cm² < y < 230 cm²
+= 2
+~ AB = AC = 24 cm and sin A = 2 × (5/13) × (12/13) = 120/169, so y = ½ × 24 × 24 × 120/169 = 34560/169 ≈ 204·5 cm².
+
+Q 83 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: The centre O of a circle inside a triangle ABC is at a distance of 13 cm from each of the vertices of the triangle. The diameter of the circle is 10 cm and the circle touches only two sides of the triangle, AB and AC.
+
+Consider the following statements:
+I. ∠ABC lies between 60° and 90°.
+II. If z is the distance in cm from the centre O of the circle to the midpoint of BC, then 7 cm < z < 8 cm.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ ∠A = 2 sin⁻¹(5/13) ≈ 45·24°, so in the isosceles triangle ∠B = (180° − 45·24°)/2 ≈ 67·38°, and I is true. The distance from the circumcentre to BC is R cos A = 13 × 119/169 ≈ 9·15 cm, so II is false.
+
+Q 84 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: A circle with centre O passes through the vertex A of an equilateral triangle ABC and touches BC at its midpoint M. The circle cuts AB at D and AC at E.
+
+What is AD : DB equal to?
+(1) 2 : 1
+(2) 3 : 2
+(3) 3 : 1
+(4) 4 : 3
+= 3
+~ The centre lies on the perpendicular to BC at M, i.e. on AM, so AM is a diameter and ∠ADM = 90°. Then DB = BM cos 60° = a/4 for side a, so AD = 3a/4 and AD : DB = 3 : 1.
+
+Q 85 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: A circle with centre O passes through the vertex A of an equilateral triangle ABC and touches BC at its midpoint M. The circle cuts AB at D and AC at E.
+
+If x is the area of the circle and y is the area of the triangle such that z = (x/y)², then which one of the following is correct?
+(1) 0·5 < z < 1
+(2) 1 < z < 1·5
+(3) 1·5 < z < 2
+(4) z > 2
+= 3
+~ The radius is AM/2 = √3a/4, so x = 3πa²/16 and y = √3a²/4. Then x/y = √3π/4 ≈ 1·360, so z = 3π²/16 ≈ 1·85.
+
+Q 86 | gm | Circles & Quadrilaterals
+Passage: For the next three (03) items that follow: A circle with centre O passes through the vertex A of an equilateral triangle ABC and touches BC at its midpoint M. The circle cuts AB at D and AC at E.
+
+What is the ratio of the area of the triangle ADO to the area of the quadrilateral BDOM?
+(1) 3 : 5
+(2) 4 : 5
+(3) 3 : 3
+(4) 2 : 3
+= 1
+~ Let T be the area of ABC. Area ABM = T/2 and, since AD = (3/4)AB, area ADM = 3T/8; O is the midpoint of AM, so area ADO = 3T/16. Then BDOM = T/2 − 3T/16 = 5T/16, giving the ratio 3 : 5.
+
+Q 87 | gm | Lines, Angles & Triangles
+Passage: For the next two (02) items that follow: ABC is an equilateral triangle. BP is perpendicular to AC, PR is perpendicular to AB, and PQ is perpendicular to BC.
+
+What is the ratio of AB² : BP² : PR²?
+(1) 4 : 3 : 1
+(2) 16 : 12 : 3
+(3) 16 : 12 : 5
+(4) 5 : 4 : 3
+= 2
+~ For side a, P is the midpoint of AC, so BP = √3a/2 and PR = AP sin 60° = √3a/4. The squares are a², 3a²/4 and 3a²/16, in the ratio 16 : 12 : 3.
+
+Q 88 | gm | Lines, Angles & Triangles
+Passage: For the next two (02) items that follow: ABC is an equilateral triangle. BP is perpendicular to AC, PR is perpendicular to AB, and PQ is perpendicular to BC.
+
+What is the ratio of the area of Δ PRB to the area of Δ PQC?
+(1) 1 : 1
+(2) 2 : 1
+(3) 3 : 1
+(4) 3 : 2
+= 3
+~ PR = PQ = √3a/4, while AR = CQ = (a/2) cos 60° = a/4, so BR = 3a/4 and QC = a/4. Both triangles are right-angled with equal heights, so their areas are in the ratio BR : QC = 3 : 1.
+
+Q 89 | gm | Lines, Angles & Triangles
+Passage: For the next two (02) items that follow: PQR is a triangle such that QP = QR = 15 cm and PR = 18 cm. PN, QM and RT are the altitudes of the triangle which intersect at O.
+
+What is QT : QO equal to?
+(1) 3 : 4
+(2) 4 : 5
+(3) 3 : 5
+(4) 1 : 2
+= 2
+~ M is the midpoint of PR, so QM = √(15² − 9²) = 12 and cos Q = (225 + 225 − 324)/450 = 7/25. QT = QR cos Q = 15 × 7/25 = 4·2 cm and QO = 2R cos Q, with R = 15²/(2 × 12) = 75/8, so QO = 5·25 cm; QT : QO = 4·2 : 5·25 = 4 : 5.
+
+Q 90 | gm | Lines, Angles & Triangles
+Passage: For the next two (02) items that follow: PQR is a triangle such that QP = QR = 15 cm and PR = 18 cm. PN, QM and RT are the altitudes of the triangle which intersect at O.
+
+What is the ratio of QO to OM?
+(1) 11 : 9
+(2) 11 : 8
+(3) 25 : 27
+(4) 7 : 9
+= 4
+~ QO = 5·25 cm (previous item) and QM = 12 cm, so OM = 6·75 cm. (Check: OM = PM tan∠OPM = 9 × 9/12 = 6·75.) QO : OM = 5·25 : 6·75 = 7 : 9.
+
+Q 91 | sts | Statistics & Data
+If the mean of a set of 7 observations is 10 and the mean of a set of 3 observations is 5, then what is the combined mean?
+(1) 9
+(2) 8·5
+(3) 6·5
+(4) 5·5
+= 2
+~ Combined mean = (7 × 10 + 3 × 5)/10 = 85/10 = 8·5.
+
+Q 92 | ari | Averages & Mixtures
+The average weekly wages of male employees in a company is ₹ 4,200 and that of females is ₹ 3,200. If the average weekly wage of all employees is ₹ 4,000, then what is the ratio of male to female employees?
+(1) 3 : 2
+(2) 5 : 3
+(3) 4 : 1
+(4) 3 : 5
+= 3
+~ By alligation, male : female = (4000 − 3200) : (4200 − 4000) = 800 : 200 = 4 : 1.
+
+Q 93 | sts | Statistics & Data
+Consider the observations x, x + 4, 30, 33, 74, 78, 49, 52, 98, 85. If the median of the data is 67, then what is the value of x?
+(1) 66
+(2) 65
+(3) 63
+(4) Cannot be determined due to insufficient data
+= 2
+~ Arranged in order, the other values are 30, 33, 49, 52, 74, 78, 85, 98. A median of 67 lies between 52 and 74, so x and x + 4 must be the 5th and 6th values: (x + x + 4)/2 = 67 gives x = 65 (and 69 < 74 checks).
+
+Q 94 | ari | Speed & Distance
+A cyclist pedals from her house to her office at a speed of 3 kmph and back from the office to her house at 6 kmph. What is the average speed?
+(1) 5 kmph
+(2) 4·5 kmph
+(3) 4 kmph
+(4) 3·5 kmph
+= 3
+~ For equal distances the average speed is the harmonic mean: 2 × 3 × 6/(3 + 6) = 36/9 = 4 kmph.
+
+Q 95 | sts | Statistics & Data
+If the heights (in cm) of 9 students of a class are 150, 165, 145, 149, 150, 147, 152, 144 and 148, then what is the algebraic sum of the heights measured from their arithmetic mean?
+(1) −5
+(2) 0
+(3) 5
+(4) 150
+= 2
+~ The sum of deviations from the arithmetic mean is always zero (here the mean is 1350/9 = 150).
+
+Q 96 | sts | Statistics & Data
+Consider the following grouped data:
+Class: 0 – 10, 10 – 20, 20 – 30, 30 – 40, 40 – 50
+Frequency: 4, 8, 15, 10, 3
+What is the mode of the above distribution?
+(1) 25·83
+(2) 25·43
+(3) 25·00
+(4) 24·73
+= 1
+~ The modal class is 20 – 30, so Mode = 20 + (15 − 8)/(2 × 15 − 8 − 10) × 10 = 20 + 70/12 ≈ 25·83.
+
+Q 97 | sts | Statistics & Data
+If the mean of 15 observations, namely x₁, x₂, x₃, ..., x₁₅ is 2·5, then what is the value of Σᵢ₌₁¹⁵ [5(4xᵢ + 1)]?
+(1) 400
+(2) 525
+(3) 625
+(4) 825
+= 4
+~ Σxᵢ = 15 × 2·5 = 37·5, so Σ5(4xᵢ + 1) = 20 × 37·5 + 5 × 15 = 750 + 75 = 825.
+
+Q 98 | sts | Statistics & Data
+Consider the following discrete grouped data:
+x: 12, 14, 10, 16, 18
+f: 6, 8, 10, 9, 3
+What is the arithmetic mean of the above distribution?
+(1) 13·69
+(2) 13·39
+(3) 13·19
+(4) 13·09
+= 2
+~ Σfx = 72 + 112 + 100 + 144 + 54 = 482 and Σf = 36, so the mean = 482/36 ≈ 13·39.
+
+Q 99 | sts | Statistics & Data
+Consider the following incomplete frequency distribution with a total frequency of 100:
+Class: 0 – 10, 10 – 20, 20 – 30, 30 – 40
+Frequency: 10, x, 20, y
+If the mean of the frequency distribution is 25, then what are the missing frequencies?
+(1) x = 15, y = 55
+(2) x = 50, y = 20
+(3) x = 20, y = 45
+(4) x = 25, y = 45
+= 4
+~ x + y = 70, and using mid-points 5, 15, 25, 35: 50 + 15x + 500 + 35y = 2500, so 15x + 35y = 1950. Solving gives y = 45 and x = 25.
+
+Q 100 | sts | Statistics & Data
+The following data gives the investment in different categories by a governmental organization:
+Sr. No. 1: Science, Technology and Environment: ₹ 7,200 crores
+Sr. No. 2: Transport and Communication: ₹ 3,000 crores
+Sr. No. 3: Rural Development: ₹ 1,500 crores
+Sr. No. 4: Industry and Minerals: ₹ 3,800 crores
+Sr. No. 5: Agricultural Services: ₹ 2,500 crores
+Which of the following statements is/are correct?
+I. The percentage investment in the 'Science, Technology and Environment' category is 40%.
+II. The angle (in degrees) for 'Agricultural Services' in a pie diagram is 50°.
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ The total is ₹ 18,000 crores. 7200/18000 = 40%, and 2500/18000 × 360° = 50°, so both statements are true.

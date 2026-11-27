@@ -201,6 +201,30 @@ CAPF_SUBJECTS = [
 # ---------- UPSC CDS (Combined Defence Services): English, General Knowledge, Elementary Mathematics (27 Nov 2026) ----------
 # Work files: /home/claude/cdsnda (transcribed from UPSC's booklets, Series A; answers from UPSC's official keys). English only.
 CDS_PAPERS = [
+  dict(id='cds26b-eng', file='cds-2-2026-english.txt', year=2026, stage='CDS (II) 2026 · English', short='CDS II 2026 · English',
+       title='UPSC CDS (II) 2026 English', notif='Answers by Learn with Anil (UPSC key not published)', held='13 September 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2026-english-question-paper-with-answers',
+       blurb='English: grammar, vocabulary, sentence ordering, fill in the blanks and comprehension (120 questions, 100 marks).'),
+  dict(id='cds26b-gk', file='cds-2-2026-general-knowledge.txt', year=2026, stage='CDS (II) 2026 · General Knowledge', short='CDS II 2026 · GK',
+       title='UPSC CDS (II) 2026 General Knowledge', notif='Answers by Learn with Anil (UPSC key not published)', held='13 September 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2026-general-knowledge-question-paper-with-answers',
+       blurb='General Knowledge: history, geography, polity, economy, general science and current affairs (120 questions, 100 marks).'),
+  dict(id='cds26b-mat', file='cds-2-2026-elementary-mathematics.txt', year=2026, stage='CDS (II) 2026 · Elementary Mathematics', short='CDS II 2026 · Maths',
+       title='UPSC CDS (II) 2026 Elementary Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='13 September 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2026-elementary-mathematics-question-paper-with-answers',
+       blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
+  dict(id='cds26a-eng', file='cds-1-2026-english.txt', year=2026, stage='CDS (I) 2026 · English', short='CDS I 2026 · English',
+       title='UPSC CDS (I) 2026 English', notif='Series A · provisional key', held='12 April 2026', key="UPSC's provisional answer key",
+       fmt='mcq', slug='upsc-cds-1-2026-english-question-paper-with-answers',
+       blurb='English: grammar, vocabulary, sentence ordering, fill in the blanks and comprehension (120 questions, 100 marks).'),
+  dict(id='cds26a-gk', file='cds-1-2026-general-knowledge.txt', year=2026, stage='CDS (I) 2026 · General Knowledge', short='CDS I 2026 · GK',
+       title='UPSC CDS (I) 2026 General Knowledge', notif='Series A · provisional key', held='12 April 2026', key="UPSC's provisional answer key",
+       fmt='mcq', slug='upsc-cds-1-2026-general-knowledge-question-paper-with-answers',
+       blurb='General Knowledge: history, geography, polity, economy, general science and current affairs (120 questions, 100 marks).'),
+  dict(id='cds26a-mat', file='cds-1-2026-elementary-mathematics.txt', year=2026, stage='CDS (I) 2026 · Elementary Mathematics', short='CDS I 2026 · Maths',
+       title='UPSC CDS (I) 2026 Elementary Mathematics', notif='Series A · provisional key', held='12 April 2026', key="UPSC's provisional answer key",
+       fmt='mcq', slug='upsc-cds-1-2026-elementary-mathematics-question-paper-with-answers',
+       blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
   dict(id='cds25a-eng', file='cds-1-2025-english.txt', year=2025, stage='CDS (I) 2025 · English', short='CDS I 2025 · English',
        title='UPSC CDS (I) 2025 English', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
        fmt='mcq', slug='upsc-cds-1-2025-english-question-paper-with-answers',
@@ -281,6 +305,30 @@ CDS_SUBJECTS = [
 # ---------- UPSC NDA & NA (National Defence Academy and Naval Academy): Mathematics and General Ability Test (27 Nov 2026) ----------
 # Work files: /home/claude/cdsnda (transcribed from UPSC's booklets, Series A; answers from UPSC's official keys). English only.
 NDA_PAPERS = [
+  dict(id='nda26b-mat', file='nda-2-2026-mathematics.txt', year=2026, stage='NDA & NA (II) 2026 · Mathematics', short='NDA II 2026 · Maths',
+       title='UPSC NDA & NA (II) 2026 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='13 September 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2026-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda26b-gat', file='nda-2-2026-general-ability-test.txt', year=2026, stage='NDA & NA (II) 2026 · General Ability Test', short='NDA II 2026 · GAT',
+       title='UPSC NDA & NA (II) 2026 General Ability Test', notif='Answers by Learn with Anil (UPSC key not published)', held='13 September 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2026-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
+  dict(id='nda26a-mat', file='nda-1-2026-mathematics.txt', year=2026, stage='NDA & NA (I) 2026 · Mathematics', short='NDA I 2026 · Maths',
+       title='UPSC NDA & NA (I) 2026 Mathematics', notif='Answers by Learn with Anil (UPSC key not obtainable)', held='12 April 2026', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-1-2026-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda26a-gat', file='nda-1-2026-general-ability-test.txt', year=2026, stage='NDA & NA (I) 2026 · General Ability Test', short='NDA I 2026 · GAT',
+       title='UPSC NDA & NA (I) 2026 General Ability Test', notif='Series A · provisional key', held='12 April 2026', key="UPSC's provisional answer key",
+       fmt='mcq', slug='upsc-nda-1-2026-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
+  dict(id='nda25b-mat', file='nda-2-2025-mathematics.txt', year=2025, stage='NDA & NA (II) 2025 · Mathematics', short='NDA II 2025 · Maths',
+       title='UPSC NDA & NA (II) 2025 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='14 September 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2025-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda25b-gat', file='nda-2-2025-general-ability-test.txt', year=2025, stage='NDA & NA (II) 2025 · General Ability Test', short='NDA II 2025 · GAT',
+       title='UPSC NDA & NA (II) 2025 General Ability Test', notif='Answers by Learn with Anil (UPSC key not published)', held='14 September 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2025-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
   dict(id='nda25a-mat', file='nda-1-2025-mathematics.txt', year=2025, stage='NDA & NA (I) 2025 · Mathematics', short='NDA I 2025 · Maths',
        title='UPSC NDA & NA (I) 2025 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
        fmt='mcq', slug='upsc-nda-1-2025-mathematics-question-paper-with-answers',
@@ -5293,7 +5341,8 @@ def defence_text(src, papers):
     return dict(sits='; '.join(sits), n=len(have), years=yrs, nokey=nokey,
                 keynote=("Answers come from UPSC's official answer key for the Series A booklet wherever UPSC has published one"
                          + (f" ({', '.join(l for l in [x.split(' · ')[0] for x in sits] if l not in nokey)})" if nokey else '')
-                         + (f". UPSC has not yet published its key for {', '.join(nokey)}: those answers were worked out and checked one by one by Learn with Anil, and doubtful ones are marked in the explanation" if nokey else '')
+                         + (f". UPSC has not yet published its key for {', '.join(nokey)}: those answers were worked out and checked one by one by Learn with Anil (for the 2025–26 papers also compared with coaching institutes' published keys), and doubtful ones are marked in the explanation" if nokey else '')
+                         + (f". For {', '.join(sorted({p['stage'].split(' · ')[0] for p in papers if p['id'] in have and 'provisional' in p['key']}))} the answers follow UPSC's provisional answer key, published a few days after the exam; UPSC's final key can differ for a few questions" if any('provisional' in p['key'] for p in papers if p['id'] in have) else '')
                          + ". Questions UPSC dropped are left out."))
 
 
