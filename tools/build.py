@@ -8924,6 +8924,52 @@ MOCK_PACKS = {
                         dict(id=f'bk-nlmk-{i}b', name=f'Mock {i} · General Forestry-II', group=f'Mock {i}', qn=150, mins=150, live=(i == 1),
                              parts=[('wld', 'Ecosystems, Wildlife & Protection', ['ecw', 'fpt']), ('utl', 'Utilization, Animals & Zoology', ['fut', 'anm']),
                                     ('law', 'Economics, Policy, Law & Mensuration', ['fel', 'fim']), ('env', 'Environment, Survey & First Aid', ['ens', 'fse'])]))]),
+  # Anil, 27 Nov 2026: "ok start test series for each exam and upload a test...name the test series also" (UPSC CDS and NDA & NA).
+  # Names chosen by Claude: "Shaurya CDS" and "Parakram NDA". New questions, each modelled on a UPSC CDS/NDA question on this site
+  # (Anil's PYQ rule), writer + independent blind-checker agents. Private source /home/claude/dfm; ids start with "bk-" (any paid All-in-One
+  # Pass holder). CDS: English 120 Q, GK 120 Q, Elementary Maths 100 Q, 2 hours each. NDA: Mathematics 120 Q and GAT 150 Q, 2½ hours each.
+  'upsc-cds': dict(id='bk-srcds', name='Shaurya CDS', price=149, src='upsc-cds-mocks', dir='upsc-cds', langs='English',
+                    title='Shaurya CDS – UPSC CDS Mock Test Series (English, GK & Elementary Maths)',
+                    summary='10 full-length UPSC CDS mock tests, each with the three papers of the exam: English (120 questions), General Knowledge '
+                            '(120) and Elementary Mathematics (100), 2 hours each, with an explanation for every answer. Each part can also be taken '
+                            'on its own as a sectional test.',
+                    about=['Built on UPSC\'s own CDS papers (2023 to 2025, on the previous-papers page in the same pass): every question is new, but '
+                           'each one tests the same topic in the same style as a question UPSC has asked, and its explanation names that question.',
+                           'The papers follow UPSC\'s order and mix: English with synonyms, idioms, spotting errors, sentence ordering, cloze and '
+                           'comprehension; General Knowledge with history, geography, polity, economy, science and current affairs including defence; '
+                           'Elementary Mathematics with arithmetic, algebra, geometry, mensuration, trigonometry and statistics. OTA candidates can '
+                           'take just English and GK.',
+                           'A wrong answer costs one-third of the marks in the real exam, so practise skipping blind guesses. Your score, accuracy '
+                           'and topic-wise analysis come after each paper.'],
+                    mocks=[m for i in range(1, 11) for m in (
+                        dict(id=f'bk-srcds-{i}a', name=f'Mock {i} · English', group=f'Mock {i}', qn=120, mins=120, live=(i == 1),   # Mock 1 on 27 Nov 2026
+                             parts=[('eng', 'English', ['eng'])]),
+                        dict(id=f'bk-srcds-{i}b', name=f'Mock {i} · General Knowledge', group=f'Mock {i}', qn=120, mins=120, live=(i == 1),
+                             parts=[('hg', 'History & Geography', ['his', 'geo']), ('pe', 'Polity & Economy', ['pol', 'eco']),
+                                    ('sci', 'General Science', ['sci']), ('cur', 'Current Affairs & Defence', ['cur'])]),
+                        dict(id=f'bk-srcds-{i}c', name=f'Mock {i} · Elementary Mathematics', group=f'Mock {i}', qn=100, mins=120, live=(i == 1),
+                             parts=[('ari', 'Arithmetic & Statistics', ['ari', 'sts']), ('alg', 'Algebra', ['alg']),
+                                    ('gmt', 'Geometry, Mensuration & Trigonometry', ['gm', 'trg'])]))]),
+  'upsc-nda': dict(id='bk-prnda', name='Parakram NDA', price=149, src='upsc-nda-mocks', dir='upsc-nda', langs='English',
+                    title='Parakram NDA – UPSC NDA & NA Mock Test Series (Mathematics & GAT)',
+                    summary='10 full-length UPSC NDA & NA mock tests, each with both papers of the exam: Mathematics (120 questions) and the General '
+                            'Ability Test (150 questions: English 50, General Knowledge 100), 2½ hours each, with an explanation for every answer. '
+                            'Each part can also be taken on its own as a sectional test.',
+                    about=['Built on UPSC\'s own NDA papers (2023 to 2025, on the previous-papers page in the same pass): every question is new, but '
+                           'each one tests the same topic in the same style as a question UPSC has asked, and its explanation names that question; '
+                           'every maths answer is worked out step by step.',
+                           'Mathematics follows UPSC\'s order: algebra, matrices and determinants, trigonometry, analytical geometry, calculus, '
+                           'vectors, statistics and probability, with the "next two items" sets. The GAT has Part A English and Part B physics, '
+                           'chemistry, biology, history, geography, polity and current events.',
+                           'A wrong answer costs one-third of the marks in the real exam, so practise skipping blind guesses. Your score, accuracy '
+                           'and topic-wise analysis come after each paper.'],
+                    mocks=[m for i in range(1, 11) for m in (
+                        dict(id=f'bk-prnda-{i}a', name=f'Mock {i} · Mathematics', group=f'Mock {i}', qn=120, mins=150, live=(i == 1),   # Mock 1 on 27 Nov 2026
+                             parts=[('alg', 'Algebra, Matrices & Trigonometry', ['alg', 'mat', 'trg']), ('cal', 'Analytical Geometry & Calculus', ['ag', 'cal']),
+                                    ('vsp', 'Vectors, Statistics & Probability', ['vec', 'sp'])]),
+                        dict(id=f'bk-prnda-{i}b', name=f'Mock {i} · General Ability Test', group=f'Mock {i}', qn=150, mins=150, live=(i == 1),
+                             parts=[('eng', 'Part A · English', ['eng']), ('sci', 'Physics, Chemistry & Biology', ['phy', 'chm', 'bio']),
+                                    ('sst', 'History, Geography, Polity & Current Events', ['his', 'geo', 'pol', 'cur'])]))]),
   # Anil, 22 Nov 2026: "pls start mock test series for gujarat exam...and 2 tests". Chose the name "Girnar CCE", new questions on GSSSB's
   # PYQ topics (his standing rule of 22 Nov 2026: mock questions must be based on the exam's PYQs: every question is modelled on a question
   # type of GSSSB's CCE 2024 papers on this site, with new numbers and content) and writer + independent blind-checker helper agents.

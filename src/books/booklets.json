@@ -1883,6 +1883,32 @@
    "pages": 34
   }
  },
+ "upsc-cds": {
+  "srcds1a": {
+   "bytes": 380558,
+   "file": "upsc-cds-srcds1a-53bfc005aa.bin",
+   "key": "bk-upsc-cds-srcds1a",
+   "mock": "bk-srcds-1a",
+   "name": "LearnWithAnil-Shaurya-CDS-Mock-1-English-Mock-Test.pdf",
+   "pages": 25
+  },
+  "srcds1b": {
+   "bytes": 420242,
+   "file": "upsc-cds-srcds1b-1d29fa0cdc.bin",
+   "key": "bk-upsc-cds-srcds1b",
+   "mock": "bk-srcds-1b",
+   "name": "LearnWithAnil-Shaurya-CDS-Mock-1-General-Knowledge-Mock-Test.pdf",
+   "pages": 24
+  },
+  "srcds1c": {
+   "bytes": 329372,
+   "file": "upsc-cds-srcds1c-fb5300ea16.bin",
+   "key": "bk-upsc-cds-srcds1c",
+   "mock": "bk-srcds-1c",
+   "name": "LearnWithAnil-Shaurya-CDS-Mock-1-Elementary-Mathematics-Mock-Test.pdf",
+   "pages": 16
+  }
+ },
  "upsc-epfo": {
   "epfoca1": {
    "bytes": 261869,
@@ -1947,6 +1973,24 @@
    "mock": "bk-epfomk-5",
    "name": "LearnWithAnil-Sankalpa-EPFO-Mock-5-Mock-Test.pdf",
    "pages": 79
+  }
+ },
+ "upsc-nda": {
+  "prnda1a": {
+   "bytes": 382763,
+   "file": "upsc-nda-prnda1a-ec13524399.bin",
+   "key": "bk-upsc-nda-prnda1a",
+   "mock": "bk-prnda-1a",
+   "name": "LearnWithAnil-Parakram-NDA-Mock-1-Mathematics-Mock-Test.pdf",
+   "pages": 18
+  },
+  "prnda1b": {
+   "bytes": 469645,
+   "file": "upsc-nda-prnda1b-2b331fef07.bin",
+   "key": "bk-upsc-nda-prnda1b",
+   "mock": "bk-prnda-1b",
+   "name": "LearnWithAnil-Parakram-NDA-Mock-1-General-Ability-Test-Mock-Test.pdf",
+   "pages": 28
   }
  },
  "upsssc-inter-level": {
