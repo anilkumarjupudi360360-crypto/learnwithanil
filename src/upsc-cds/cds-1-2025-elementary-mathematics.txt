@@ -1,0 +1,1040 @@
+# UPSC Combined Defence Services Examination (I) 2025: Elementary Mathematics, held 13 April 2025.
+# Source: the official UPSC question paper. UPSC has not published its answer key: answers worked out and checked by Learn with Anil. Explanations by Learn with Anil.
+
+Q 1 | alg | Polynomials & Quadratics
+A real number M is squared to give the value N. What is the minimum value of (M + N)?
+(1) −0·25
+(2) −0·50
+(3) 0
+(4) 0·25
+= 1
+~ M + N = M² + M = (M + 1/2)² − 1/4, which is least when M = −1/2. So the minimum value is −1/4 = −0·25.
+
+Q 2 | ari | Number System
+What is the sum of all 3-digit numbers that give a remainder of 5 when they are divided by 50?
+(1) 9005
+(2) 9540
+(3) 9600
+(4) 9640
+= 2
+~ The numbers are 105, 155, …, 955: an AP of 18 terms. Sum = 18 × (105 + 955)/2 = 9 × 1060 = 9540.
+
+Q 3 | ari | Averages & Mixtures
+If the average of 64, 69, 72, 75, x lies between 62 and 76 (excluding 62 and 76), then what is the number of possible integer values of x?
+(1) 68
+(2) 69
+(3) 70
+(4) 71
+= 2
+~ 62 < (280 + x)/5 < 76 gives 310 < 280 + x < 380, i.e. 30 < x < 100. The integers 31 to 99 give 69 values.
+
+Q 4 | alg | Equations & Expressions
+Let x, y, z be variables such that (x + y + z) = k, where k is a constant. If (x + z − y) × (x − z + y) is proportional to yz, then (y + z − x) is proportional to:
+(1) x
+(2) y
+(3) yz
+(4) xz
+= 3
+~ (x + z − y)(x − z + y) = (k − 2y)(k − 2z) = k(k − 2y − 2z) + 4yz = k(x − y − z) + 4yz. If this equals c·yz, then k(y + z − x) = (4 − c)yz, so (y + z − x) is proportional to yz.
+
+Q 5 | ari | Number System
+Let p be the remainder when 7⁸⁴ is divided by 342 and q be the remainder when 7⁸⁴ is divided by 344. What is (p − q) equal to?
+(1) 0
+(2) 1
+(3) 2
+(4) 6
+= 1
+~ 7³ = 343 = 342 + 1 = 344 − 1. So 7⁸⁴ = (343)²⁸ ≡ 1²⁸ = 1 (mod 342) and ≡ (−1)²⁸ = 1 (mod 344). Hence p = q = 1 and p − q = 0.
+
+Q 6 | ari | Number System
+N is the smallest 5-digit number which when divided by 2, 2², 2³, 2⁴, …, 2ⁿ leaves a remainder 1. What is the value of n?
+(1) 12
+(2) 13
+(3) 14
+(4) 15
+= 3
+~ N − 1 must be a multiple of 2ⁿ. Taking N = 2ⁿ + 1 as the smallest 5-digit such number gives 2¹⁴ + 1 = 16385 (2¹³ + 1 = 8193 has only 4 digits), so n = 14. Strictly, n = 13 also leads to N = 16385, so the question is loosely framed; 14 is the intended answer. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 7 | ari | Number System
+What is the minimum value of p for which 1/532900 + p²/266450 + p⁴/523900 is an integer?
+(1) 729
+(2) 243
+(3) 27
+(4) 1
+= 3
+~ 532900 = 730² and 266450 = 532900/2, so with the last denominator read as 532900 the sum is (1 + 2p² + p⁴)/730² = ((p² + 1)/730)². The least p with p² + 1 divisible by 730 is p = 27 (27² + 1 = 730), giving the integer 1. The last denominator printed as 523900 appears to be a misprint for 532900; as printed, none of the options gives an integer. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 8 | alg | Polynomials & Quadratics
+If α and β are the roots of the equation x + a + b = abx/(ab + ax + bx), then what is (αβ + α + β) equal to?
+(1) ab + a + b
+(2) ab − a − b
+(3) a + b − ab
+(4) −(ab + a + b)
+= 2
+~ Cross-multiplying, (x + a + b)(ab + (a + b)x) = abx simplifies to (a + b)[x² + (a + b)x + ab] = 0, so x² + (a + b)x + ab = 0. Then α + β = −(a + b) and αβ = ab, giving αβ + α + β = ab − a − b.
+
+Q 9 | ari | Number System
+Consider a 2-digit number N. Let P be the product of the digits of the number. If P is added to square of the digit in the tens place of N, we get 84. If P is added to the square of the digit in the unit place of N, we get 60. What is the value of P + N?
+(1) 100
+(2) 110
+(3) 115
+(4) 120
+= 2
+~ With digits a (tens) and b (units): a² + ab = 84 and b² + ab = 60. Adding gives (a + b)² = 144, so a + b = 12, a = 84/12 = 7 and b = 5. Then N = 75, P = 35 and P + N = 110.
+
+Q 10 | ari | Averages & Mixtures
+A mixture of 100 L contains kerosene and turpentine oil in the ratio 3 : 2. What is the minimum quantity of kerosene in litres (whole number) that should be mixed in the mixture so that the resulting mixture has 20% of kerosene?
+(1) 10 L
+(2) 20 L
+(3) 25 L
+(4) Not possible
+= 4
+~ The mixture already has 60 L of kerosene, which is 60%. Adding more kerosene can only raise this share, so it can never fall to 20%.
+
+Q 11 | gm | Lines, Angles & Triangles
+A lamp is kept on a vertical pole. The height of the top of the lamp above the ground is 5√3/2 m. The perpendicular distances of the bottom of the pole from two adjacent walls meeting perpendicularly are 0·7 m and 2·4 m. What is the distance of the top of the lamp from the corner point of the walls on the ground?
+(1) 3 m
+(2) 5 m
+(3) 6 m
+(4) 7 m
+= 2
+~ The foot of the pole is √(0·7² + 2·4²) = 2·5 m from the corner. The distance to the top of the lamp is √(2·5² + (5√3/2)²) = √(6·25 + 18·75) = √25 = 5 m.
+
+Q 12 | gm | Circles & Quadrilaterals
+C is the centre of a circle of radius 20 cm. AB is a chord of length 32 cm. E is a point on AB such that CE = 13 cm. What is AE × EB equal to?
+(1) 231 square cm
+(2) 256 square cm
+(3) 272 square cm
+(4) 297 square cm
+= 1
+~ By the power of a point, AE × EB = r² − CE² = 400 − 169 = 231. As a check, C is 12 cm from AB, so E is 5 cm from the midpoint and AE × EB = (16 − 5)(16 + 5) = 231.
+
+Q 13 | gm | Circles & Quadrilaterals
+The inside of a bowl is part of a sphere. When water is put into the bowl to a depth d, the water surface becomes a circle of radius 2d. What is the radius of the sphere?
+(1) 2·5d
+(2) 2·75d
+(3) 3d
+(4) 3·25d
+= 1
+~ The centre of the sphere is at a height r − d above the water surface, so r² = (2d)² + (r − d)². This gives 2rd = 5d², so r = 2·5d.
+
+Q 14 | gm | Lines, Angles & Triangles
+In a triangle ABC, AB = 2 cm, BC = 4 cm and AC = 3 cm. The bisector of angle A meets BC at D and the bisector of angle B meets AD at E. What is AE : ED equal to?
+(1) 5 : 4
+(2) 5 : 3
+(3) 4 : 3
+(4) 3 : 2
+= 1
+~ BD = BC × AB/(AB + AC) = 4 × 2/5 = 1·6 cm. In triangle ABD, BE bisects angle B, so AE : ED = AB : BD = 2 : 1·6 = 5 : 4.
+
+Q 15 | gm | Lines, Angles & Triangles
+In a triangle ABC, the bisector of angle A cuts BC at D. If AB + AC = 10 cm and BD : DC = 3 : 1, then what is the length of AC?
+(1) 2·5 cm
+(2) 6 cm
+(3) 7·5 cm
+(4) 8 cm
+= 1
+~ By the angle bisector theorem, AB : AC = BD : DC = 3 : 1. So AC = 10 × 1/4 = 2·5 cm.
+
+Q 16 | gm | Mensuration
+In a triangle ABC, AB + BC = 7·1 cm, BC + CA = 12·1 cm and CA + AB = 7·2 cm. What is the area of the triangle?
+(1) 3 square cm
+(2) 32 square cm
+(3) 33 square cm
+(4) 3·3 square cm
+= 4
+~ Adding the three gives AB + BC + CA = 13·2, so CA = 6·1, AB = 1·1 and BC = 6·0. With s = 6·6, Heron's formula gives area = √(6·6 × 5·5 × 0·6 × 0·5) = √10·89 = 3·3 sq cm.
+
+Q 17 | gm | Mensuration
+The adjacent sides of a parallelogram are 10 cm and 8 cm and the angle between them is 150°. What is the area of the parallelogram?
+(1) 40√3 square cm
+(2) 40 square cm
+(3) 20√3 square cm
+(4) 20 square cm
+= 2
+~ Area = ab sin θ = 10 × 8 × sin 150° = 80 × 1/2 = 40 sq cm.
+
+Q 18 | gm | Lines, Angles & Triangles
+The measure of an angle formed by the bisectors of the angles A and C of the triangle ABC is 130°. What is the measure of the angle B?
+(1) 65°
+(2) 75°
+(3) 80°
+(4) 85°
+= 3
+~ The internal bisectors of A and C meet at an angle of 90° + B/2. So 90° + B/2 = 130°, which gives B = 80°.
+
+Q 19 | alg | Sets, Logarithms & Inequalities
+What is log₁₀ 2000 + log₁₀ 400 + 4 log₁₀ 25 + 5 log₁₀ 20 equal to?
+(1) 10
+(2) 16
+(3) 18
+(4) 20
+= 3
+~ The sum is log₁₀(2000 × 400 × 25⁴ × 20⁵) = log₁₀(8 × 10⁵ × 1·25 × 10¹²) = log₁₀ 10¹⁸ = 18.
+
+Q 20 | alg | Sets, Logarithms & Inequalities
+If log₁₀(100001 − 4ˣ)/(5 − x) = 1, then what is x equal to?
+(1) 0
+(2) 1
+(3) 10
+(4) 100
+= 1
+~ The equation means 100001 − 4ˣ = 10⁵⁻ˣ. At x = 0 both sides equal 100000, so x = 0. For x = 10 or 100, 100001 − 4ˣ is negative, so the log is not defined.
+
+Q 21 | trg | Ratios & Identities
+If 2 sin⁴ α + 2 cos⁴ α − 1 = 0, where 0 ≤ α < π/2, then what is sin 2α + cos 2α equal to?
+(1) 0
+(2) 1
+(3) (√3 + 1)/2
+(4) (√3 − 1)/2
+= 2
+~ Let s = sin²α. Then 2s² + 2(1 − s)² − 1 = 4s² − 4s + 1 = (2s − 1)² = 0, so sin²α = 1/2 and α = π/4. Hence sin 2α + cos 2α = 1 + 0 = 1.
+
+Q 22 | trg | Ratios & Identities
+Consider the following:
+I. 1 − sin⁶ α = cos² α (cos⁴ α − 3 cos² α + 3)
+II. cos⁸ α − sin⁸ α = 2 sin² α (1 − cos⁴ α + sin² α cos² α)
+Which of the above is/are identities?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ With c = cos²α, 1 − sin⁶α = 1 − (1 − c)³ = c(c² − 3c + 3), so I is an identity. But cos⁸α − sin⁸α = (cos²α − sin²α)(1 − 2 sin²α cos²α), and the given right side of II differs from it (e.g. at α = 0 the left side is 1 and the right side is 0), so II is not an identity.
+
+Q 23 | trg | Ratios & Identities
+If p = 1/(cosec θ + cot θ) and q = cosec θ, then what is p² − 2pq equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 1
+~ Since cosec²θ − cot²θ = 1, p = cosec θ − cot θ. Then p² − 2pq = (p − q)² − q² = cot²θ − cosec²θ = −1.
+
+Q 24 | trg | Ratios & Identities
+Consider the following statements:
+I. (cosec α − sec α) is always positive in the first quadrant.
+II. (tan α − cot α) is always negative in the first quadrant.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ Both expressions change sign at α = 45°. For α > 45°, cosec α < sec α, so I fails. For α > 45°, tan α > cot α, so II fails. Neither statement is always true.
+
+Q 25 | trg | Heights & Distances
+A tower subtends an angle 60° at a point A on the same level as the foot of the tower. B is a point vertically above A and AB = h. The angle of depression of the foot of the tower, measured from B is 30°. What is the height of the tower?
+(1) 2h
+(2) 2·5h
+(3) 3h
+(4) 3·5h
+= 3
+~ Let d be the distance of A from the foot. From B, tan 30° = h/d, so d = h√3. From A, the height H = d tan 60° = h√3 × √3 = 3h.
+
+Q 26 | trg | Ratios & Identities
+What is sin θ/(1 − cot θ) + cos θ/(1 − tan θ) (θ ≠ π/4) equal to?
+(1) sin θ + cos θ
+(2) sin θ − cos θ
+(3) cos θ − sin θ
+(4) −(sin θ + cos θ)
+= 1
+~ The expression is sin²θ/(sin θ − cos θ) + cos²θ/(cos θ − sin θ) = (sin²θ − cos²θ)/(sin θ − cos θ) = sin θ + cos θ.
+
+Q 27 | gm | Mensuration
+The length of an arc of a circle of radius 4 cm is π cm. What is the magnitude of the angle subtended by the arc at the centre?
+(1) π
+(2) π/2
+(3) π/3
+(4) π/4
+= 4
+~ The angle is arc/radius = π/4 radian.
+
+Q 28 | trg | Ratios & Identities
+If cot² θ − 3√3 cot θ + 6 = 0, where π/6 ≤ θ < π/2, then what is a value of sin θ + cos 2θ?
+(1) 0
+(2) 1
+(3) √3
+(4) 1 + √2
+= 2
+~ cot θ = (3√3 ± √3)/2 = 2√3 or √3. For π/6 ≤ θ < π/2, cot θ ≤ √3, so cot θ = √3 and θ = π/6. Then sin 30° + cos 60° = 1/2 + 1/2 = 1.
+
+Q 29 | trg | Ratios & Identities
+Which of the following equations is/are possible?
+I. sin² θ = (x + y)²/4xy, where x, y are positive unequal real quantities.
+II. sin θ + cos θ = x + 1/x, where x is a positive real quantity.
+Select the correct answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ For unequal positive x, y, (x + y)² > 4xy, so the right side of I exceeds 1, which sin²θ cannot be. In II, x + 1/x ≥ 2 but sin θ + cos θ ≤ √2, so II is also impossible.
+
+Q 30 | trg | Ratios & Identities
+If m² (sin θ − 1) + n² (sin θ + 1) = 0, where 0 < θ < π/2, then what is (m² + n²) cos θ − (m² − n²) cot θ equal to?
+(1) 4mn
+(2) 2mn
+(3) 1
+(4) 0
+= 4
+~ The condition gives sin θ = (m² − n²)/(m² + n²). So (m² − n²) cot θ = (m² + n²) sin θ cot θ = (m² + n²) cos θ, and the expression is 0.
+
+Q 31 | trg | Ratios & Identities
+If sin α + cos α = √2, where 0 < α < π/2, then what is sin³ α − cos³ α equal to?
+(1) 1
+(2) 1/2
+(3) 1/4
+(4) 0
+= 4
+~ sin α + cos α = √2 sin(α + 45°) = √2 forces α = 45°. Then sin α = cos α, so sin³α − cos³α = 0.
+
+Q 32 | trg | Ratios & Identities
+What is (1 + cot α − cosec α) (1 + tan α + sec α) equal to?
+(1) 1/2
+(2) 1
+(3) 2
+(4) 4
+= 3
+~ Writing both brackets with sin and cos gives (sin α + cos α − 1)(sin α + cos α + 1)/(sin α cos α) = ((sin α + cos α)² − 1)/(sin α cos α) = 2 sin α cos α/(sin α cos α) = 2.
+
+Q 33 | trg | Ratios & Identities
+If tan θ = (sin α − cos α)/(sin α + cos α), where θ and α (α ≠ π/4) are acute angles, then what is √2 sin θ equal to?
+(1) sin α − cos α
+(2) sin α + cos α
+(3) cos α − sin α
+(4) ±(sin α − cos α)
+= 1
+~ Dividing by cos α gives tan θ = (tan α − 1)/(1 + tan α) = tan(α − 45°), so θ = α − 45°. Then √2 sin θ = √2(sin α cos 45° − cos α sin 45°) = sin α − cos α.
+
+Q 34 | trg | Ratios & Identities
+For how many values of α does the expression (sin α + 2) (sin α + 4) (sin α − 2) (sin α − 4) become zero?
+(1) No value
+(2) One
+(3) Two
+(4) Four
+= 1
+~ The product is zero only if sin α = ±2 or ±4. But −1 ≤ sin α ≤ 1, so no value of α makes it zero.
+
+Q 35 | trg | Ratios & Identities
+What is the value of x, where 0 ≤ x < 30°, satisfying tan 3x tan 6x = 1?
+(1) 0°
+(2) 10°
+(3) 12°
+(4) 15°
+= 2
+~ tan A tan B = 1 with A, B acute means A + B = 90°. So 3x + 6x = 90°, giving x = 10° (tan 30° × tan 60° = 1).
+
+Q 36 | alg | Equations & Expressions
+What is (a − b)²/((b − c)(c − a)) + (b − c)²/((c − a)(a − b)) + (c − a)²/((a − b)(b − c)) − 3 equal to, where a ≠ b ≠ c?
+(1) 0
+(2) 3
+(3) a + b + c
+(4) 3(a − b)(b − c)(c − a)
+= 1
+~ Over the common denominator (a − b)(b − c)(c − a), the first three terms give [(a − b)³ + (b − c)³ + (c − a)³]/[(a − b)(b − c)(c − a)]. The three differences add to 0, so the sum of cubes is 3(a − b)(b − c)(c − a). The terms therefore add to 3, and 3 − 3 = 0.
+
+Q 37 | ari | Number System
+Given that (100 × 99 × 98 × … × 3 × 2 × 1)/100ⁿ is an integer. What is the largest value of n for which this is true?
+(1) 20
+(2) 21
+(3) 24
+(4) None of the above
+= 4
+~ 100! contains ⌊100/5⌋ + ⌊100/25⌋ = 24 fives (and plenty of twos), so the largest power of 10 is 10²⁴ = 100¹². So n = 12, which is not among the first three options.
+
+Q 38 | gm | Lines, Angles & Triangles
+A man starting from a place P went x metre (x > 120 m) East before turning South. He went 40 m straight before turning to West. He went 60 m to reach a place Q. From Q he went 200 m North and reached a place R. If PR = 200 m, then what is x equal to?
+(1) 150 m
+(2) 180 m
+(3) 200 m
+(4) 240 m
+= 2
+~ Taking P as the origin, R is at (x − 60) m East and 200 − 40 = 160 m North. So (x − 60)² + 160² = 200², which gives x − 60 = 120 and x = 180 m.
+
+Q 39 | alg | Equations & Expressions
+If x² + y² + z² = 3, where x, y and z are integers, then how many values can (xy + yz + zx) have?
+(1) One
+(2) Two
+(3) Three
+(4) Four
+= 2
+~ Each of x, y, z must be ±1, so x + y + z is ±1 or ±3. Then xy + yz + zx = ((x + y + z)² − 3)/2 is −1 or 3, which is two values.
+
+Q 40 | alg | Equations & Expressions
+If x, y, z are real numbers such that x + y + z = 10 and xy + yz + zx = 18, then what is the value of x³ + y³ + z³ − 3xyz?
+(1) 400
+(2) 440
+(3) 460
+(4) 500
+= 3
+~ x³ + y³ + z³ − 3xyz = (x + y + z)[(x + y + z)² − 3(xy + yz + zx)] = 10 × (100 − 54) = 460.
+
+Q 41 | ari | Number System
+What is √(17 − 4√15) + √(8 − 2√15) equal to?
+(1) √3
+(2) 2√3
+(3) 2(√5 − √3)
+(4) 2(√5 + √3)
+= 1
+~ 17 − 4√15 = (2√3 − √5)² and 8 − 2√15 = (√5 − √3)². So the sum is (2√3 − √5) + (√5 − √3) = √3.
+
+Q 42 | alg | Equations & Expressions
+What is the maximum value of the sum of the numbers 36, 33, 30, 27, 24, …?
+(1) 240
+(2) 237
+(3) 234
+(4) 231
+= 3
+~ The sum grows only while the terms are positive: 36 + 33 + … + 3 = 3(12 + 11 + … + 1) = 3 × 78 = 234. After that the terms are 0 or negative.
+
+Q 43 | ari | Number System
+There are two natural numbers m and n (m > n). When m is divided by 12, it leaves a remainder 4. When n is divided by 12, it leaves a remainder 6. Which of the following statements is/are correct?
+I. The remainder when (m + n) is divided by 12 is 10.
+II. The remainder when (m − n) is divided by 12 is 10.
+Select the correct answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ m + n ≡ 4 + 6 = 10 (mod 12). Also m − n ≡ 4 − 6 = −2 ≡ 10 (mod 12), and since m − n > 0 its remainder is 10. Both statements are correct.
+
+Q 44 | alg | Equations & Expressions
+If (x + y) : (y + z) : (z + x) = 3 : 5 : 6 and x + y + z = 14, then what is x² + y² + z² equal to?
+(1) 81
+(2) 84
+(3) 87
+(4) 90
+= 2
+~ The three sums add to 2(x + y + z) = 28 = 14k, so k = 2: x + y = 6, y + z = 10, z + x = 12. This gives x = 4, y = 2, z = 8, and x² + y² + z² = 16 + 4 + 64 = 84.
+
+Q 45 | ari | Ratio, Time & Work
+The ratio of sum of two numbers to their difference is 5 : 1. What is the ratio of the sum of their squares to the difference of their squares?
+(1) 13 : 5
+(2) 25 : 1
+(3) 9 : 4
+(4) 16 : 1
+= 1
+~ Take a + b = 5 and a − b = 1, so a = 3 and b = 2. Then (a² + b²) : (a² − b²) = 13 : 5.
+
+Q 46 | ari | Speed & Distance
+Travelling at 3/5th of his usual speed, a man is late by 20 minutes. What is the usual time if he travels with his usual speed?
+(1) 25 minutes
+(2) 30 minutes
+(3) 32 minutes
+(4) 35 minutes
+= 2
+~ At 3/5 of the speed the time becomes 5T/3, so the delay is 2T/3 = 20 minutes. This gives T = 30 minutes.
+
+Q 47 | ari | Number System
+What is the remainder when 2ᵖ − 1 is divided by p, where p > 5 is a prime number?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ By Fermat's little theorem, 2ᵖ ≡ 2 (mod p), so 2ᵖ − 1 ≡ 1 (mod p). For example, 2⁷ − 1 = 127 = 18 × 7 + 1.
+
+Q 48 | ari | Number System
+What is the number of factors of 24³ − 16³ − 8³?
+(1) 33
+(2) 30
+(3) 28
+(4) 24
+= 1
+~ Since 24 + (−16) + (−8) = 0, the sum of cubes is 3 × 24 × (−16) × (−8) = 9216 = 2¹⁰ × 3². The number of factors is (10 + 1)(2 + 1) = 33.
+
+Q 49 | ari | Percentage, Profit & Interest
+What is the least number of complete years in which a sum of money put out at 20% compound interest (compounded annually) will be more than doubled?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 3
+~ 1·2³ = 1·728 < 2 but 1·2⁴ = 2·0736 > 2. So 4 years are needed.
+
+Q 50 | ari | Speed & Distance
+A train of certain length takes time t to pass completely through a station of length x. The same train with same speed takes time 2t to pass completely through another station of length y. What is the time taken by the train to pass completely through a station of length (x + y)?
+(1) (2yt + xt)/(y − x)
+(2) (yt + xt)/(y − x)
+(3) (3yt − xt)/(2y − x)
+(4) (2yt − xt)/(y − x)
+= 4
+~ With train length L and speed v: L + x = vt and L + y = 2vt. So v = (y − x)/t and L = y − 2x. The time for (x + y) is (L + x + y)/v = (2y − x)t/(y − x) = (2yt − xt)/(y − x).
+
+Q 51 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A frustum of a right cone has a top of diameter 2k, bottom of diameter 2·5k and height k.
+
+What is the whole surface area of the frustum?
+(1) 39πk²/8
+(2) 41πk²/8
+(3) 43πk²/8
+(4) 45πk²/8
+= 1
+~ Radii are k and 1·25k, so slant height l = √(k² + 0·25²k²) = (√17/4)k. Whole surface = π(r₁ + r₂)l + π(r₁² + r₂²) = πk²(41 + 9√17)/16 ≈ 4·882πk² ≈ 39·05πk²/8, which is closest to 39πk²/8 (no option is exact). (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 52 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A frustum of a right cone has a top of diameter 2k, bottom of diameter 2·5k and height k.
+
+What is the volume of the frustum?
+(1) 61πk³/48
+(2) 59πk³/48
+(3) 57πk³/48
+(4) 53πk³/48
+= 1
+~ V = (πh/3)(r₁² + r₂² + r₁r₂) = (πk/3)(k² + 1·5625k² + 1·25k²) = (πk³/3)(61/16) = 61πk³/48.
+
+Q 53 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at B. The perimeter of the triangle is 24 cm and the difference between the sum of the perpendicular sides and the hypotenuse is 4 cm.
+
+What is the area of the triangle ABC?
+(1) 18 square cm
+(2) 24 square cm
+(3) 36 square cm
+(4) 48 square cm
+= 2
+~ a + b + c = 24 and a + b − c = 4 give c = 10, a + b = 14. Then 2ab = 14² − 10² = 96, so ab = 48 and area = ab/2 = 24 square cm (sides 6, 8, 10).
+
+Q 54 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at B. The perimeter of the triangle is 24 cm and the difference between the sum of the perpendicular sides and the hypotenuse is 4 cm.
+
+A circle is inscribed in the triangle. What is its radius?
+(1) 1 cm
+(2) 1·5 cm
+(3) 2 cm
+(4) 2·5 cm
+= 3
+~ For a right triangle the inradius r = (a + b − c)/2 = 4/2 = 2 cm (check: area/s = 24/12 = 2).
+
+Q 55 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next two (02) items that follow: A circle M of radius 8 cm touches externally with another circle N of radius 16 cm. Let P, Q be the points where the common tangent touches the circles M and N respectively.
+
+What is the length of the common tangent PQ?
+(1) 16 cm
+(2) 16√2 cm
+(3) 24 cm
+(4) 24√2 cm
+= 2
+~ Distance between centres = 8 + 16 = 24 cm, so the direct common tangent PQ = √(24² − (16 − 8)²) = √512 = 16√2 cm.
+
+Q 56 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next two (02) items that follow: A circle M of radius 8 cm touches externally with another circle N of radius 16 cm. Let P, Q be the points where the common tangent touches the circles M and N respectively.
+
+If U, V are the centres of the circles M and N respectively, then what is the area of the quadrilateral formed by the points P, Q, V and U?
+(1) 192√2 square cm
+(2) 192 square cm
+(3) 96√2 square cm
+(4) 96 square cm
+= 1
+~ UP and VQ are both perpendicular to PQ, so PQVU is a right trapezium with parallel sides 8 and 16 and height PQ = 16√2: area = ½(8 + 16)(16√2) = 192√2 square cm.
+
+Q 57 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: The perimeter of a triangle ABC is 105 cm. The altitudes AD, BE and CF are in the ratio 3 : 5 : 6.
+
+What is AB : BC : CA equal to?
+(1) 10 : 6 : 5
+(2) 5 : 10 : 6
+(3) 6 : 5 : 3
+(4) 3 : 5 : 6
+= 2
+~ Each side is inversely proportional to its altitude: BC : CA : AB = 1/3 : 1/5 : 1/6 = 10 : 6 : 5, so AB : BC : CA = 5 : 10 : 6.
+
+Q 58 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: The perimeter of a triangle ABC is 105 cm. The altitudes AD, BE and CF are in the ratio 3 : 5 : 6.
+
+What is the approximate area of the triangle ABC?
+(1) 175 square cm
+(2) 190 square cm
+(3) 205 square cm
+(4) 285 square cm
+= 4
+~ 105/21 = 5, so AB = 25, BC = 50, CA = 30 and s = 52·5. Heron: area = √(52·5 × 2·5 × 22·5 × 27·5) ≈ 284·98 ≈ 285 square cm.
+
+Q 59 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A pot is made from a hollow sphere of inner radius 20 cm by cutting its upper portion horizontally. The height of the pot is 30 cm.
+
+What is the inner radius of the circular opening of the pot so formed?
+(1) 10√2 cm
+(2) 15 cm
+(3) 10√3 cm
+(4) 12 cm
+= 3
+~ The cut is 30 − 20 = 10 cm above the centre, so the opening radius is √(20² − 10²) = √300 = 10√3 cm.
+
+Q 60 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A pot is made from a hollow sphere of inner radius 20 cm by cutting its upper portion horizontally. The height of the pot is 30 cm.
+
+What is the angle made by the line joining the centre of the sphere and any point on the rim of the circular opening with a vertical line passing through the centre?
+(1) π/3
+(2) π/4
+(3) π/6
+(4) π/12
+= 1
+~ The line to the rim has length 20 and vertical component 10, so cos θ = 10/20 = 1/2 and θ = π/3 (equivalently tan θ = 10√3/10 = √3).
+
+Q 61 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A hall is of length l, breadth b and height h. The maximum distance between any two points (say P and Q) inside the hall is 14 m, whereas the maximum distance between two points (say P and R) on the floor is 6√5 m.
+
+What is h equal to?
+(1) 3·5 m
+(2) 4 m
+(3) 4·5 m
+(4) 5 m
+= 2
+~ The room diagonal gives l² + b² + h² = 196 and the floor diagonal gives l² + b² = 180, so h² = 16 and h = 4 m.
+
+Q 62 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: A hall is of length l, breadth b and height h. The maximum distance between any two points (say P and Q) inside the hall is 14 m, whereas the maximum distance between two points (say P and R) on the floor is 6√5 m.
+
+If α is the angle between the line joining P and Q, and the line joining P and R, then what is cos α equal to?
+(1) 2√5/7
+(2) 3√5/7
+(3) 1/3
+(4) 2/3
+= 2
+~ PQ (room diagonal, 14 m) projects onto the floor diagonal PR (6√5 m), so cos α = 6√5/14 = 3√5/7.
+
+Q 63 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The sides of an open box are 0·5 cm thick and bottom is 1 cm thick. The internal length, breadth and depth are respectively 14 cm, 10 cm and 8 cm. It is completely filled with water.
+
+If the material weighs 2000 kg per cubic metre, then what is the weight of the material used in the construction of the box?
+(1) 360 gm
+(2) 365 gm
+(3) 720 gm
+(4) 730 gm
+= 4
+~ External size = 15 × 11 × 9 = 1485 cm³; internal = 14 × 10 × 8 = 1120 cm³; material = 365 cm³. At 2000 kg/m³ = 2 g/cm³, weight = 730 g.
+
+Q 64 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The sides of an open box are 0·5 cm thick and bottom is 1 cm thick. The internal length, breadth and depth are respectively 14 cm, 10 cm and 8 cm. It is completely filled with water.
+
+If water weighs 1000 kg per cubic metre, then what is the weight of the box with water?
+(1) 1·850 kg
+(2) 1·900 kg
+(3) 2·050 kg
+(4) 2·100 kg
+= 1
+~ Water = 1120 cm³ × 1 g/cm³ = 1120 g; box = 730 g; total = 1850 g = 1·850 kg.
+
+Q 65 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at A. Further, AB = 8 cm, BC = 10 cm. D is the point on BC such that AD is perpendicular to BC.
+
+What is AD equal to?
+(1) 4·8 cm
+(2) 5·0 cm
+(3) 5·2 cm
+(4) 5·4 cm
+= 1
+~ AC = √(100 − 64) = 6 cm. AD = AB × AC/BC = 48/10 = 4·8 cm.
+
+Q 66 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at A. Further, AB = 8 cm, BC = 10 cm. D is the point on BC such that AD is perpendicular to BC.
+
+What is ratio of area of triangle ADC to area of triangle ADB?
+(1) 7 : 15
+(2) 9 : 16
+(3) 2 : 3
+(4) 3 : 4
+= 2
+~ Triangles ADC and ADB share height AD, so their areas are as DC : DB = AC²/BC : AB²/BC = 36 : 64 = 9 : 16.
+
+Q 67 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The annual rainfall at a place is 40 cm. The weight of water is 1 metric tonne per cubic meter.
+
+What is the volume of rainfall in cubic meter per hectare?
+(1) 40
+(2) 400
+(3) 4000
+(4) 40000
+= 3
+~ 1 hectare = 10000 m², and 40 cm = 0·4 m, so volume = 10000 × 0·4 = 4000 m³.
+
+Q 68 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The annual rainfall at a place is 40 cm. The weight of water is 1 metric tonne per cubic meter.
+
+What is the weight of water (in metric tonnes) of annual rainfall falling there on a hectare of land?
+(1) 40
+(2) 400
+(3) 4000
+(4) 40000
+= 3
+~ 4000 m³ of water at 1 tonne per m³ weighs 4000 metric tonnes.
+
+Q 69 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The angle at the vertex of a conical body is 120°.
+
+What is the ratio of the radius of the conical body to its slant height?
+(1) 1 : 2
+(2) √3 : 1
+(3) √3 : 2
+(4) √2 : 1
+= 3
+~ The semi-vertical angle is 60°, so r/l = sin 60° = √3/2, i.e. √3 : 2.
+
+Q 70 | gm | Mensuration
+Passage: Consider the following for the next two (02) items that follow: The angle at the vertex of a conical body is 120°.
+
+If the sum of slant height, height and radius is (9 + 3√3) cm, then what is the volume of the cone?
+(1) 27π cubic cm
+(2) 18√3 π cubic cm
+(3) 24π cubic cm
+(4) 27√3 π cubic cm
+= 1
+~ With semi-vertical angle 60°, l = 2h and r = √3h, so h(3 + √3) = 9 + 3√3 gives h = 3, r = 3√3. V = (1/3)π(27)(3) = 27π cubic cm.
+
+Q 71 | ari | Percentage, Profit & Interest
+A person sells article X for ₹ 34,500 and makes a profit of 15%. He sells article Y at a loss of 10%. He neither loses nor gains on the whole because of these two transactions. What is the selling price of article Y?
+(1) ₹ 40,000
+(2) ₹ 40,500
+(3) ₹ 41,000
+(4) ₹ 51,500
+= 2
+~ CP of X = 34500/1·15 = 30000, so profit = 4500. The loss on Y must also be 4500 = 10% of its CP, so CP of Y = 45000 and SP = 45000 × 0·9 = ₹ 40,500.
+
+Q 72 | ari | Percentage, Profit & Interest
+100 quintals is what percent of 10 metric tonnes?
+(1) 1%
+(2) 10%
+(3) 100%
+(4) 1000%
+= 3
+~ 1 quintal = 100 kg, so 100 quintals = 10000 kg = 10 metric tonnes, which is 100% of 10 tonnes.
+
+Q 73 | gm | Lines, Angles & Triangles
+A circle is inscribed in an equilateral triangle. The radius of the circle is 2 cm. What is the area of the triangle?
+(1) 12√3 square cm
+(2) 12 square cm
+(3) 9√3 square cm
+(4) 9 square cm
+= 1
+~ In an equilateral triangle r = a/(2√3), so a = 4√3 cm and area = (√3/4)(48) = 12√3 square cm.
+
+Q 74 | gm | Lines, Angles & Triangles
+The sides of a triangle are k, 1·5k and 2·25k. What is the sum of the squares of its medians?
+(1) 359k²/64
+(2) 379k²/64
+(3) 389k²/64
+(4) 399k²/64
+= 4
+~ Sum of squares of medians = (3/4)(sum of squares of sides) = (3/4)(1 + 2·25 + 5·0625)k² = (3/4)(133/16)k² = 399k²/64.
+
+Q 75 | alg | Equations & Expressions
+If 2s = a + b + c, then what is
+s (s − a) (s − b) (s − c) [1/(s − a) + 1/(s − b) + 1/(s − c) − 1/s]
+equal to?
+(1) abc
+(2) 2abc
+(3) 4abc
+(4) ab + bc + ca
+= 1
+~ Expanding gives s(s − b)(s − c) + s(s − a)(s − c) + s(s − a)(s − b) − (s − a)(s − b)(s − c), which simplifies to abc (checked numerically for random a, b, c; e.g. a = b = c = 2, s = 3: 3·1·1·1·(3 − 1/3) = 8 = abc).
+
+Q 76 | ari | Percentage, Profit & Interest
+How much will ₹ 10,000 amount to in one year's time at 4% rate of interest per annum if the interest is compounded once in every three months? (take approximate value)
+(1) ₹ 10,406
+(2) ₹ 10,416
+(3) ₹ 10,426
+(4) ₹ 10,436
+= 1
+~ Quarterly rate = 1%, 4 periods: 10000 × 1·01⁴ = 10406·04 ≈ ₹ 10,406.
+
+Q 77 | alg | Polynomials & Quadratics
+If p = 0·09̄ (9 recurring), then what is the value of 70p² + 43p − 5?
+(1) −1
+(2) 0
+(3) 1
+(4) 10
+= 2
+~ 0·0999… = 0·1, so 70(0·01) + 43(0·1) − 5 = 0·7 + 4·3 − 5 = 0.
+
+Q 78 | ari | Number System
+What is the remainder when 2¹⁰¹ is divided by 101?
+(1) 1
+(2) 2
+(3) 5
+(4) 7
+= 2
+~ 101 is prime, so by Fermat's little theorem 2¹⁰⁰ ≡ 1 (mod 101) and 2¹⁰¹ ≡ 2.
+
+Q 79 | alg | Polynomials & Quadratics
+If p (≠ 0) and q (≠ 0) are the roots of the equation x² + px + q = 0, then what is p² + q² equal to?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 4
+~ Product of roots pq = q gives p = 1; sum p + q = −p gives q = −2. So p² + q² = 1 + 4 = 5.
+
+Q 80 | alg | Polynomials & Quadratics
+The equations x² + px + q = 0 and x² + qx + p = 0 (p ≠ q) have a common root. What is the value of (p + q)?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 1
+~ Subtracting, (p − q)x − (p − q) = 0, so the common root is x = 1. Then 1 + p + q = 0, so p + q = −1.
+
+Q 81 | alg | Polynomials & Quadratics
+If x² − 5x + 4 is a factor of x⁴ − px² + q, then what are the values of p and q respectively?
+(1) 17, 16
+(2) 16, 17
+(3) 15, 16
+(4) 16, 15
+= 1
+~ x² − 5x + 4 = (x − 1)(x − 4), so x = 1 and x = 4 are roots: 1 − p + q = 0 and 256 − 16p + q = 0. Subtracting gives 15p = 255, so p = 17 and q = 16.
+
+Q 82 | alg | Polynomials & Quadratics
+If two quadratic equations px² + px + 4 = 0 and x² + qx + q = 0 have a common root 2, then what is p + q equal to?
+(1) −3
+(2) −2
+(3) 0
+(4) 3
+= 2
+~ Putting x = 2: 6p + 4 = 0 gives p = −2/3, and 4 + 3q = 0 gives q = −4/3. So p + q = −2.
+
+Q 83 | alg | Polynomials & Quadratics
+What is the HCF of the polynomials x⁸ + x⁴ + 1 and x⁴ + x² + 1?
+(1) 1
+(2) x⁴ − x² + 1
+(3) x⁴ + x² + 1
+(4) x⁴ − x² − 1
+= 3
+~ x⁸ + x⁴ + 1 = (x⁴ + 1)² − x⁴ = (x⁴ + x² + 1)(x⁴ − x² + 1), so x⁴ + x² + 1 divides it and is the HCF.
+
+Q 84 | gm | Circles & Quadrilaterals
+An arc AB of a circle subtends an angle x radian at the centre O. If the area of the sector AOB is equal to half of the square of length of arc AB, then what is x equal to?
+(1) 1/4
+(2) 1/2
+(3) 1
+(4) 2
+= 3
+~ Sector area = r²x/2 and arc = rx, so r²x/2 = (rx)²/2 gives x = 1.
+
+Q 85 | ari | Number System
+Consider the following statements in respect of prime numbers p and q:
+I. Their LCM is always an odd number.
+II. Sum of their LCM and HCF is always an even number.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 4
+~ If p = 2, q = 3 the LCM is 6 (even), so I fails; and LCM + HCF = 6 + 1 = 7 (odd), so II also fails.
+
+Q 86 | sts | Statistics & Data
+Passage: Consider the following for the next five (05) items that follow: The frequency distribution of 205 observations on X is given below:
+X: 3, 5, 6, 7
+Frequency: f, f + 2, f − 3, f + 6
+
+What is the value of f?
+(1) 50
+(2) 60
+(3) 70
+(4) 80
+= 1
+~ Total frequency 4f + 5 = 205, so f = 50 (frequencies 50, 52, 47, 56).
+
+Q 87 | sts | Statistics & Data
+Passage: Consider the following for the next five (05) items that follow: The frequency distribution of 205 observations on X is given below:
+X: 3, 5, 6, 7
+Frequency: f, f + 2, f − 3, f + 6
+
+What is the median of the frequency distribution?
+(1) 3
+(2) 5
+(3) 6
+(4) It cannot be determined from the given data
+= 3
+~ Cumulative frequencies are 50, 102, 149, 205. The median is the 103rd observation, which falls in X = 6.
+
+Q 88 | sts | Statistics & Data
+Passage: Consider the following for the next five (05) items that follow: The frequency distribution of 205 observations on X is given below:
+X: 3, 5, 6, 7
+Frequency: f, f + 2, f − 3, f + 6
+
+What is the mode of the frequency distribution?
+(1) 5
+(2) 6
+(3) 7
+(4) It cannot be determined from the given data
+= 3
+~ The highest frequency is f + 6 = 56, at X = 7, so the mode is 7.
+
+Q 89 | sts | Statistics & Data
+Passage: Consider the following for the next five (05) items that follow: The frequency distribution of 205 observations on X is given below:
+X: 3, 5, 6, 7
+Frequency: f, f + 2, f − 3, f + 6
+
+What is the most appropriate graphical representation of the given frequency distribution of X?
+(1) Bar diagram
+(2) Histogram
+(3) Frequency polygon
+(4) Pie Chart
+= 1
+~ X takes a few discrete values (ungrouped data), so a bar diagram is appropriate; histograms and frequency polygons are for continuous class intervals.
+
+Q 90 | sts | Statistics & Data
+Passage: Consider the following for the next five (05) items that follow: The frequency distribution of 205 observations on X is given below:
+X: 3, 5, 6, 7
+Frequency: f, f + 2, f − 3, f + 6
+
+What is the mean of the frequency distribution?
+(1) 3·29
+(2) 4·29
+(3) 5·29
+(4) 6·29
+= 3
+~ Mean = (3·50 + 5·52 + 6·47 + 7·56)/205 = 1084/205 ≈ 5·29.
+
+Q 91 | sts | Statistics & Data
+Passage: Consider the following for the next two (02) items that follow: The frequency distribution of marks obtained by students in an English examination is given below:
+Marks obtained — Number of Students
+Below 40 — 50
+Below 50 — 125
+Below 60 — 210
+Below 70 — 315
+Below 80 — 350
+
+What is the number of students who scored between 60 and 70 marks?
+(1) 105
+(2) 110
+(3) 205
+(4) 210
+= 1
+~ Students in 60–70 = (below 70) − (below 60) = 315 − 210 = 105.
+
+Q 92 | sts | Statistics & Data
+Passage: Consider the following for the next two (02) items that follow: The frequency distribution of marks obtained by students in an English examination is given below:
+Marks obtained — Number of Students
+Below 40 — 50
+Below 50 — 125
+Below 60 — 210
+Below 70 — 315
+Below 80 — 350
+
+What is the number of students who scored more than 50 marks?
+(1) 100
+(2) 125
+(3) 200
+(4) 225
+= 4
+~ Total = 350 and 125 scored below 50, so 350 − 125 = 225 scored 50 or more (the class 50–60 onwards).
+
+Q 93 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Circulation figures (in thousands) of different newspapers (A, B, C, D, E) for five years are given below:
+Year — A, B, C, D, E
+2019 — 20, 10, 15, 8, 20
+2020 — 12, 12, 18, 12, 12
+2021 — 24, 14, 17, 14, 15
+2022 — 26, 10, 16, 15, 9
+2023 — 22, 16, 14, 16, 11
+
+In which of the given years was the circulation of the newspaper D close to its average circulation over all the years?
+(1) 2020 and 2021
+(2) 2022 and 2023
+(3) 2022 only
+(4) 2020 only
+= 1
+~ D's average = (8 + 12 + 14 + 15 + 16)/5 = 13; the closest values are 12 (2020) and 14 (2021), each 1 away.
+
+Q 94 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Circulation figures (in thousands) of different newspapers (A, B, C, D, E) for five years are given below:
+Year — A, B, C, D, E
+2019 — 20, 10, 15, 8, 20
+2020 — 12, 12, 18, 12, 12
+2021 — 24, 14, 17, 14, 15
+2022 — 26, 10, 16, 15, 9
+2023 — 22, 16, 14, 16, 11
+
+In which of the years from 2019 to 2022 was the circulation of the newspaper D close to the average circulation of all the newspapers in that year?
+(1) 2019
+(2) 2020
+(3) 2021
+(4) 2022
+= 4
+~ Yearly averages: 2019 = 14·6 (D 8), 2020 = 13·2 (D 12), 2021 = 16·8 (D 14), 2022 = 15·2 (D 15). The gap is smallest (0·2) in 2022.
+
+Q 95 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Circulation figures (in thousands) of different newspapers (A, B, C, D, E) for five years are given below:
+Year — A, B, C, D, E
+2019 — 20, 10, 15, 8, 20
+2020 — 12, 12, 18, 12, 12
+2021 — 24, 14, 17, 14, 15
+2022 — 26, 10, 16, 15, 9
+2023 — 22, 16, 14, 16, 11
+
+How many cases are there in which average of the circulation for an individual newspaper was more than the average of the circulation of all the newspapers?
+(1) One
+(2) Two
+(3) Three
+(4) Four
+= 2
+~ Five-year averages: A 20·8, B 12·4, C 16, D 13, E 13·4; overall average = 378/25 = 15·12. Only A and C exceed it, so two cases.
+
+Q 96 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Study the following Pie Charts:
+[Chart-I: Number of houses: 1,20,000 — Pucca 110°, Kutcha 40°, Semi Pucca 210°.]
+[Chart-II: Population: 21,00,000 — Living in pucca houses 60°, Living in semi pucca houses 210°, Houseless 20°, Living in kutcha houses 70°.]
+[Chart-III: Number of families: 3,60,000 — Living in pucca houses 70°, Living in semi pucca houses 85°, Houseless 20°, Living in kutcha houses 185°.]
+
+On an average, how many persons live in every pucca house?
+(1) 8
+(2) 8·54
+(3) 9·54
+(4) 7·54
+= 3
+~ Persons in pucca houses = 2100000 × 60/360 = 350000; pucca houses = 120000 × 110/360 ≈ 36667. Average = 350000/36667 ≈ 9·54.
+
+Q 97 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Study the following Pie Charts:
+[Chart-I: Number of houses: 1,20,000 — Pucca 110°, Kutcha 40°, Semi Pucca 210°.]
+[Chart-II: Population: 21,00,000 — Living in pucca houses 60°, Living in semi pucca houses 210°, Houseless 20°, Living in kutcha houses 70°.]
+[Chart-III: Number of families: 3,60,000 — Living in pucca houses 70°, Living in semi pucca houses 85°, Houseless 20°, Living in kutcha houses 185°.]
+
+If 5000 more Kutcha houses are built, then what will be approximate change in angle for Kutcha houses in Pie Chart-I?
+(1) 11°
+(2) 13°
+(3) 15°
+(4) 23°
+= 2
+~ Kutcha houses = 120000 × 40/360 ≈ 13333; after adding 5000 they are 18333 of 125000, an angle of 18333/125000 × 360 ≈ 52·8°, a change of about 12·8° ≈ 13°.
+
+Q 98 | sts | Statistics & Data
+Passage: Consider the following for the next three (03) items that follow: Study the following Pie Charts:
+[Chart-I: Number of houses: 1,20,000 — Pucca 110°, Kutcha 40°, Semi Pucca 210°.]
+[Chart-II: Population: 21,00,000 — Living in pucca houses 60°, Living in semi pucca houses 210°, Houseless 20°, Living in kutcha houses 70°.]
+[Chart-III: Number of families: 3,60,000 — Living in pucca houses 70°, Living in semi pucca houses 85°, Houseless 20°, Living in kutcha houses 185°.]
+
+If 300 families from the "Houseless" category shift into Kutcha houses, what will be the average number of families in every Kutcha house?
+(1) 15
+(2) 13·9
+(3) 12·9
+(4) 10·5
+= 2
+~ Families in kutcha houses = 360000 × 185/360 = 185000; plus 300 = 185300. Divided by 13333 kutcha houses ≈ 13·9.
+
+Q 99 | sts | Statistics & Data
+Marks obtained by 60 students in a test (Maximum Marks-100) are given below:
+60, 82, 63, 40, 88, 80, 24, 60, 09, 58, 44, 74
+57, 60, 63, 30, 31, 64, 00, 62, 37, 54, 10, 99
+35, 83, 58, 33, 92, 43, 66, 41, 78, 72, 32, 33
+65, 11, 60, 17, 53, 93, 57, 03, 29, 31, 82, 50
+63, 15, 41, 55, 72, 42, 32, 23, 30, 48, 67, 34
+What is the percentage (approximate) of students getting marks higher than or equal to 60 but less than 80?
+(1) 25·0
+(2) 26·7
+(3) 28·3
+(4) 30·0
+= 2
+~ Counting marks in [60, 80) gives 16 students (60 ×4, 63 ×3, 62, 64, 65, 66, 67, 72 ×2, 74, 78), so 16/60 × 100 ≈ 26·7%.
+
+Q 100 | sts | Statistics & Data
+The arithmetic mean of 100 observations was 50. Later on, it was found that two observations were misread as 82 and 6 instead of 182 and 56. What is the value of the corrected mean?
+(1) 50·1
+(2) 51·5
+(3) 52·3
+(4) 53·4
+= 2
+~ Original total = 5000; correction = (182 + 56) − (82 + 6) = 150, so the corrected mean = 5150/100 = 51·5.

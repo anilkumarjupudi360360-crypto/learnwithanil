@@ -1,0 +1,993 @@
+# UPSC Combined Defence Services Examination (II) 2024: Elementary Mathematics, held 1 September 2024.
+# Source: the official UPSC question paper. UPSC has not published its answer key: answers worked out and checked by Learn with Anil. Explanations by Learn with Anil.
+
+Q 1 | alg | Polynomials & Quadratics
+A real number x is such that the sum of the number and four times its square is the least. What is that number?
+(1) −0·625
+(2) −0·125
+(3) 0·125
+(4) 1
+= 2
+~ f(x) = 4x² + x is a upward parabola with minimum at x = −b/(2a) = −1/8 = −0·125 (minimum value −1/16).
+
+Q 2 | ari | Number System
+The difference of the square of two natural numbers m and n (m > n) is 72. How many pairs of natural numbers will satisfy?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 1
+~ (m − n)(m + n) = 72 needs both factors of the same parity, i.e. both even: 2×36, 4×18, 6×12. These give (m, n) = (19, 17), (11, 7), (9, 3), so 3 pairs.
+
+Q 3 | ari | Number System
+Let N be a 5-digit number. When N is divided by 6, 12, 15, 24 it leaves respectively 2, 8, 11, 20 as remainders. What is the greatest value of N?
+(1) 99960
+(2) 99956
+(3) 99950
+(4) 99946
+= 2
+~ In each case divisor − remainder = 4, so N + 4 is a multiple of LCM(6, 12, 15, 24) = 120. The largest 5-digit multiple of 120 is 99960, so N = 99956.
+
+Q 4 | ari | Number System
+What is the remainder when 111²²² + 222³³³ + 333⁴⁴⁴ is divided by 5?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 4
+~ Mod 5: 111 ≡ 1, so 1²²² = 1; 222 ≡ 2 and 2⁴ ≡ 1, 333 = 4·83 + 1 so 2³³³ ≡ 2; 333 ≡ 3 and 444 is a multiple of 4, so 3⁴⁴⁴ ≡ 1. Sum ≡ 1 + 2 + 1 = 4.
+
+Q 5 | ari | Number System
+What are the last three digits in the multiplication of
+4321012345 × 98766789?
+(1) 1, 0, 5
+(2) 2, 0, 5
+(3) 2, 1, 5
+(4) 3, 0, 5
+= 2
+~ Only the last three digits matter: 345 × 789 = 272205, which ends in 205.
+
+Q 6 | alg | Equations & Expressions
+p varies directly as (x² + y² + z²). When x = 1, y = 2, z = 3, then p = 70. What is the value of p when x = −1, y = 1, z = 5?
+(1) 100
+(2) 125
+(3) 135
+(4) 140
+= 3
+~ p = k(x² + y² + z²): 70 = 14k gives k = 5. Then p = 5 × (1 + 1 + 25) = 135.
+
+Q 7 | ari | Number System
+Let N be the least positive multiple of 11 that leaves a remainder of 5 when divided by 6, 12, 15, 18. Which one of the following is correct?
+(1) 900 < N < 1000
+(2) 1000 < N < 1100
+(3) 1100 < N < 1200
+(4) 1200 < N < 1300
+= 4
+~ N = 180k + 5 (LCM of 6, 12, 15, 18 is 180). 180k + 5 ≡ 4k + 5 (mod 11) = 0 first at k = 7, so N = 1265, which lies between 1200 and 1300.
+
+Q 8 | ari | Number System
+What is 1/(√10 + √9) + 1/(√11 + √10) + 1/(√12 + √11) + ... + 1/(√196 + √195) equal to?
+(1) 17
+(2) 14
+(3) 11
+(4) 10
+= 3
+~ Rationalising, 1/(√(k+1) + √k) = √(k+1) − √k, so the sum telescopes to √196 − √9 = 14 − 3 = 11.
+
+Q 9 | ari | Speed & Distance
+Train X crosses a man standing on the platform in 24 seconds and train Y crosses a man standing on the platform in 18 seconds. They cross each other while running in opposite directions in 20 seconds. What is the ratio of speed of X to speed of Y?
+(1) 1 : 2
+(2) 2 : 3
+(3) 1 : 3
+(4) 3 : 4
+= 1
+~ Lengths are 24x and 18y, so 24x + 18y = 20(x + y), giving 4x = 2y, i.e. x : y = 1 : 2.
+
+Q 10 | alg | Polynomials & Quadratics
+Let p, q be the roots of the equation x² + mx − n = 0 and m, n be the roots of the equation x² + px − q = 0 (m, n, p, q are non-zero numbers). Which of the following statements is/are correct?
+I. m(m + n) = −1
+II. p + q = 1
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ p + q = −m, pq = −n, m + n = −p, mn = −q. The two sum relations give q = n; then pq = −n gives p = −1 and mn = −n gives m = −1, so q = n = 2. Hence m(m + n) = −1 × 1 = −1 and p + q = 1; both hold.
+
+Q 11 | trg | Ratios & Identities
+What is the maximum value of 8sinθ − 4sin²θ?
+(1) 3
+(2) 4
+(3) 8
+(4) 12
+= 2
+~ 8s − 4s² = 4 − 4(s − 1)², with s = sinθ ∈ [−1, 1]; the maximum 4 occurs at sinθ = 1.
+
+Q 12 | trg | Ratios & Identities
+What is (1 + tanα tanβ)² + (tanα − tanβ)² equal to?
+(1) tan²α tan²β
+(2) sec²α sec²β
+(3) tan²α cot²β
+(4) sec²α tan²β
+= 2
+~ Expanding, the cross terms cancel: 1 + tan²α tan²β + tan²α + tan²β = (1 + tan²α)(1 + tan²β) = sec²α sec²β.
+
+Q 13 | trg | Ratios & Identities
+Consider the following statements:
+I. tan50° − cot50° is positive
+II. cot25° − tan25° is negative
+Which of the statements is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ tan50° > 1 > cot50°, so I is true. tan25° < 1 < cot25°, so cot25° − tan25° is positive and II is false.
+
+Q 14 | trg | Ratios & Identities
+If 0 ≤ (α − β) ≤ (α + β) ≤ π/2, tan(α + β) = √3 and tan(α − β) = 1/√3, then what is tanα·cot2β equal to?
+(1) 1
+(2) √2
+(3) √3
+(4) 1/√3
+= 3
+~ α + β = 60° and α − β = 30°, so α = 45°, β = 15°. tan45° · cot30° = 1 × √3 = √3.
+
+Q 15 | trg | Ratios & Identities
+What is the value of sin²θ cos²θ (sec²θ + cosec²θ) equal to?
+(1) 0
+(2) 1
+(3) 2
+(4) 4
+= 2
+~ sec²θ + cosec²θ = (sin²θ + cos²θ)/(sin²θ cos²θ) = 1/(sin²θ cos²θ), so the product is 1.
+
+Q 16 | trg | Ratios & Identities
+If 64^(sin²θ) + 64^(cos²θ) = 16 where 0 ≤ θ ≤ π/2, then what is the value of tanθ + cotθ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ Let t = 64^(sin²θ); then t + 64/t = 16, so (t − 8)² = 0 and t = 8, giving sin²θ = 1/2, θ = 45°. tanθ + cotθ = 1 + 1 = 2.
+
+Q 17 | trg | Ratios & Identities
+If cosecθ − cotθ = m and secθ − tanθ = n, then what is cosecθ + secθ equal to?
+(1) (1/2)(m + n + 1/m + 1/n)
+(2) (m + n + 1/m + 1/n)
+(3) (1/2)(m + n − 1/m − 1/n)
+(4) (m + n − 1/m − 1/n)
+= 1
+~ Since cosec²θ − cot²θ = 1, cosecθ + cotθ = 1/m, so cosecθ = (m + 1/m)/2; similarly secθ = (n + 1/n)/2. Adding gives (1/2)(m + n + 1/m + 1/n).
+
+Q 18 | trg | Heights & Distances
+From a point X on a bridge across a river, the angles of depression of two points P and Q on the banks on opposite side of the river are α and β respectively. If the point X is at a height h above the surface of the river, what is the width of the river if α and β are complementary?
+(1) 2h(tanα + cotα)
+(2) H tanα·tanβ
+(3) h cotα·cotβ
+(4) h secα·cosecα
+= 4
+~ Width = h cotα + h cotβ = h(cotα + tanα) since β = 90° − α. And cotα + tanα = 1/(sinα cosα), so width = h secα·cosecα.
+
+Q 19 | gm | Lines, Angles & Triangles
+In a triangle ABC, ∠ABC = 60° and AD is the altitude. If AB = 6 cm and BC = 8 cm, then what is the area of the triangle?
+(1) 12 square cm
+(2) 12√3 square cm
+(3) 24 square cm
+(4) 24√3 square cm
+= 2
+~ AD = AB sin60° = 3√3 cm, so area = (1/2) × 8 × 3√3 = 12√3 cm².
+
+Q 20 | alg | Polynomials & Quadratics
+If p and q are the roots of the equation x² − sin²θ x − cos²θ = 0, then what is the minimum value of p² + q²?
+(1) 1/2
+(2) 1
+(3) 3/2
+(4) 2
+= 2
+~ p + q = sin²θ, pq = −cos²θ. With s = sin²θ ∈ [0, 1], p² + q² = s² + 2(1 − s) = (s − 1)² + 1, whose minimum is 1 at s = 1.
+
+Q 21 | sts | Statistics & Data
+The arithmetic mean of n numbers is M. If the sum of first (n − 1) terms is k, then what is the nth number?
+(1) M − k
+(2) nM − k
+(3) n(M − k)
+(4) M − nk
+= 2
+~ The total of all n numbers is nM, so the nth number is nM − k.
+
+Q 22 | sts | Statistics & Data
+What is the geometric mean of 3, 9, 27, 81, 243, 729, 2187?
+(1) 81
+(2) 105
+(3) 144
+(4) 243
+= 1
+~ The product is 3^(1+2+…+7) = 3²⁸, and its 7th root is 3⁴ = 81.
+
+Q 23 | sts | Statistics & Data
+A person purchases one kg of tea powder from each of the four places A, B, C, D at the rate of ₹ 1000 per 1 kg, 2 kg, 4 kg, 5 kg. If on an average he purchased x kg of tea powder per ₹ 1000, then what is the approximate value of x?
+(1) 1·95
+(2) 2·00
+(3) 2·05
+(4) 2·10
+= 3
+~ He spends 1000(1 + 1/2 + 1/4 + 1/5) = ₹ 1950 for 4 kg, so x = 4/1·95 ≈ 2·05 kg per ₹ 1000 (the harmonic mean of 1, 2, 4, 5).
+
+Q 24 | ari | Number System
+What is the sum of the largest and the smallest 4-digit numbers made by using single digit prime numbers (without repetition)?
+(1) 7887
+(2) 7997
+(3) 8998
+(4) 9889
+= 4
+~ The single-digit primes are 2, 3, 5, 7. Largest = 7532, smallest = 2357, sum = 9889.
+
+Q 25 | ari | Number System
+What is the remainder when 3²⁵⁵ is divided by 28?
+(1) 1
+(2) 11
+(3) 24
+(4) 27
+= 4
+~ 3³ = 27 ≡ −1 (mod 28), so 3²⁵⁵ = (3³)⁸⁵ ≡ (−1)⁸⁵ = −1 ≡ 27.
+
+Q 26 | ari | Number System
+What is the value of x (0 ≤ x ≤ 8) if (100⁹⁷ + 100⁵⁴ + x + 1) leaves a remainder 0 when divided by 9?
+(1) 8
+(2) 6
+(3) 4
+(4) 1
+= 2
+~ 100 ≡ 1 (mod 9), so the expression ≡ 1 + 1 + x + 1 = x + 3, which is divisible by 9 for x = 6.
+
+Q 27 | gm | Lines, Angles & Triangles
+In a triangle ABC, D is a point on BC. If AB·DC = AC·BD, ∠BAD = α and ∠CAD = β then which one of the following is correct?
+(1) α = β
+(2) α = 2β
+(3) 2α = β
+(4) 2α = 3β
+= 1
+~ AB/AC = BD/DC, so by the converse of the angle bisector theorem AD bisects ∠A, giving α = β.
+
+Q 28 | ari | Number System
+Let N = 12345678AB be a 10-digit number, where A, B are digits. If N is divisible by 9, then which of the following statements is/are correct?
+I. (A + B) is divisible by 9
+II. If A is odd, then B is odd
+Select the answer using the code given below:
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ The digit sum is 36 + A + B, so A + B must be a multiple of 9: I is true. II is false: A = 1, B = 8 gives a valid N with B even.
+
+Q 29 | alg | Equations & Expressions
+If x³ + 1/x³ = 65/8 and y³ + 1/y³ = 730/27, then which one of the following is a value of xy?
+(1) 3
+(2) 6
+(3) 8
+(4) 9
+= 2
+~ 65/8 = 8 + 1/8 gives x = 2 or 1/2; 730/27 = 27 + 1/27 gives y = 3 or 1/3. Possible xy are 6, 2/3, 3/2, 1/6, and only 6 is offered.
+
+Q 30 | ari | Number System
+If 11x + 5y is a prime number where x, y are natural numbers then what is the minimum value of (x + y)?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 3
+~ x + y = 2: 16; x + y = 3: 21, 27; x + y = 4: 26, 32, 38 — none prime. x + y = 5 with x = 1, y = 4 gives 31, a prime, so the minimum is 5.
+
+Q 31 | ari | Number System
+A 4-digit number N has exactly 15 distinct divisors. What is the total number of distinct divisors of N²?
+(1) 16
+(2) 30
+(3) 45
+(4) 225
+= 3
+~ 15 divisors means N = p¹⁴ (too large, 2¹⁴ = 16384) or N = p⁴q² (e.g. 1936 = 2⁴·11²). Then N² = p⁸q⁴ has 9 × 5 = 45 divisors.
+
+Q 32 | gm | Lines, Angles & Triangles
+If p, q and r are the lengths (in cm) of the sides of a right-angled triangle, then (p − q − r)(q − r − p)(r − p − q) is always
+(1) Positive only
+(2) Negative only
+(3) Non-positive only
+(4) Non-negative only
+= 2
+~ By the triangle inequality each side is less than the sum of the other two, so all three factors are negative and their product is negative (e.g. 3, 4, 5 gives (−6)(−4)(−2) = −48).
+
+Q 33 | alg | Sets, Logarithms & Inequalities
+What is the minimum value of (a⁸ + a⁴ + 1)(b⁸ + b⁴ + 1)/(a⁴b⁴), where a > 0, b > 0?
+(1) 1
+(2) 4
+(3) 9
+(4) 16
+= 3
+~ The expression is (a⁴ + 1 + 1/a⁴)(b⁴ + 1 + 1/b⁴); by AM ≥ GM each bracket is at least 3 (equality at a = b = 1), so the minimum is 9.
+
+Q 34 | alg | Sets, Logarithms & Inequalities
+In a class containing 200 students, n students prefer both tea and coffee; 2n students prefer coffee, 3n students prefer tea; 4n students prefer neither tea nor coffee. What is the value of n?
+(1) 20
+(2) 25
+(3) 30
+(4) 35
+= 2
+~ n(C ∪ T) = 2n + 3n − n = 4n; adding those who prefer neither, 4n + 4n = 200, so n = 25.
+
+Q 35 | trg | Ratios & Identities
+Let ABC be a triangle with area 36 square cm. If AB = 9 cm, BC = 12 cm and ∠ABC = θ, then what is cosθ equal to?
+(1) √5/3
+(2) √5/4
+(3) 1/3
+(4) 2/3
+= 1
+~ (1/2) × 9 × 12 × sinθ = 36 gives sinθ = 2/3, so cosθ = √(1 − 4/9) = √5/3 (taking θ acute).
+
+Q 36 | ari | Number System
+Let n be a natural number. The HCF of n, n + 10 is 10. If the LCM is x (a 2-digit number), then how many values of x are possible?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) More than three
+= 2
+~ n = 10k, n + 10 = 10(k + 1), and LCM = 10k(k + 1) = 20, 60, 120, … Only 20 and 60 are 2-digit, so two values.
+
+Q 37 | alg | Polynomials & Quadratics
+What is HCF of a⁴ + 2a³ + 3a² + 2a + 1 and a⁶ − 2a³ + 1?
+(1) a³ + 3a² + 2a + 1
+(2) a³ + a² + a + 1
+(3) (a² + a + 1)²
+(4) (a² − a + 1)²
+= 3
+~ a⁴ + 2a³ + 3a² + 2a + 1 = (a² + a + 1)², and a⁶ − 2a³ + 1 = (a³ − 1)² = (a − 1)²(a² + a + 1)². The HCF is (a² + a + 1)².
+
+Q 38 | alg | Polynomials & Quadratics
+If the roots of the equation x² − (k − 2)x + (k + 1) = 0 are equal, then what are the values of k?
+(1) 0, 4
+(2) 0, 8
+(3) 4, 4
+(4) 2, 6
+= 2
+~ Discriminant (k − 2)² − 4(k + 1) = k² − 8k = 0, so k = 0 or 8.
+
+Q 39 | trg | Ratios & Identities
+What is ((cosθ − sinθ + 1)/(cosθ + sinθ − 1))(cotθ − cosecθ) equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 1
+~ Dividing by sinθ, (cosθ − sinθ + 1)/(cosθ + sinθ − 1) = cosecθ + cotθ (standard identity). Then (cosecθ + cotθ)(cotθ − cosecθ) = cot²θ − cosec²θ = −1 (checked numerically).
+
+Q 40 | trg | Ratios & Identities
+What is (sinθ − 2sin³θ)/(2cos³θ − cosθ) equal to?
+(1) sin²θ
+(2) cos²θ
+(3) cotθ
+(4) tanθ
+= 4
+~ Numerator = sinθ(1 − 2sin²θ) = sinθ cos2θ; denominator = cosθ(2cos²θ − 1) = cosθ cos2θ. The ratio is tanθ.
+
+Q 41 | sts | Statistics & Data
+The mean weight of 150 students in a class is 60 kg. The mean weight of boys in the class is 70 kg and that of girls is 55 kg. What is the ratio of number of boys to number of girls?
+(1) 1 : 2
+(2) 1 : 1
+(3) 2 : 1
+(4) 2 : 3
+= 1
+~ 70b + 55g = 60(b + g) gives 10b = 5g, so b : g = 1 : 2 (50 boys, 100 girls).
+
+Q 42 | ari | Speed & Distance
+Two towers A and B of height 23 m and 11 m respectively, stand 9 m apart. A straight rod is joined to the two tops of the towers. A monkey sitting on the top of A, climbs the rod to reach the top of B. If the monkey takes 5 minutes to reach the other end, what is the average speed of the monkey?
+(1) 10 m/min
+(2) 5 m/min
+(3) 10 cm/sec
+(4) 5 cm/sec
+= 4
+~ Rod length = √(9² + 12²) = 15 m. Speed = 15/5 = 3 m/min = 300 cm/60 s = 5 cm/sec.
+
+Q 43 | gm | Mensuration
+A spherical wooden ball of radius r is to be divided into eight identical parts by cutting by planes passing through the same diameter. What is the surface area of each final piece?
+(1) πr²/3
+(2) 3πr²/2
+(3) 2πr²/3
+(4) 4πr²/3
+= 2
+~ Each piece is a wedge with 1/8 of the curved surface, 4πr²/8 = πr²/2, plus two flat semicircular faces of πr²/2 each. Total = πr²/2 + πr² = 3πr²/2.
+
+Q 44 | gm | Mensuration
+A trolley with two wheels one metre apart is moved clockwise on the circular track around a ground with radius 50 m (described by right wheel). If the size of each wheel is of 1 foot radius and the right wheel turns 1000 times, how many times will the other wheel turn?
+(1) 1010
+(2) 1015
+(3) 1020
+(4) 1025
+= 3
+~ Moving clockwise, the right wheel is on the inner circle (radius 50 m) and the left wheel on the outer circle (radius 51 m). Turns are proportional to path length: 1000 × 51/50 = 1020.
+
+Q 45 | ari | Number System
+What is the remainder when 70 × 71 × 72 × 73 × 74 × 75 × 76 × 77 × 78 × 79 is divided by 1000?
+(1) 3
+(2) 2
+(3) 1
+(4) 0
+= 4
+~ 70 × 75 supplies 5³ and 72 supplies 2³, so the product is divisible by 10³ = 1000. The remainder is 0.
+
+Q 46 | trg | Heights & Distances
+A vertical pole of length 80 m is situated on the horizontal plane. The base of the pole is at P. There are two points A and B such that P, A, B are on the same straight line. Let the angles of elevation of top of the pole from A and B be α and β (α > β) respectively. If PA = 64 m and AB = 36 m, then what is (α + β) equal to?
+(1) 60°
+(2) 90°
+(3) 120°
+(4) 135°
+= 2
+~ Since α > β, B is farther: PB = 64 + 36 = 100 m. tanα = 80/64 = 5/4 and tanβ = 80/100 = 4/5, so tanα·tanβ = 1 and α + β = 90°.
+
+Q 47 | alg | Polynomials & Quadratics
+Let k be a positive integer. What is the quotient when x^(8k+3) + x^(8k+6) + x^(8k+9) + x^(8k+12) is divided by (1 + x³)(1 + x⁶)?
+(1) x^(8k)
+(2) x^(8k+1)
+(3) x^(8k+2)
+(4) x^(8k+3)
+= 4
+~ The dividend is x^(8k+3)(1 + x³ + x⁶ + x⁹) = x^(8k+3)(1 + x³)(1 + x⁶), so the quotient is x^(8k+3).
+
+Q 48 | gm | Mensuration
+A square is drawn inside a square of side 14 cm in such a way that the corners of the inner square coincide with the mid points of the sides of the outer square. What is the area lying between the two squares?
+(1) 98 square cm
+(2) 56 square cm
+(3) 49 square cm
+(4) 24·5 square cm
+= 1
+~ The inner square has half the area of the outer one: 196/2 = 98 cm². The area between them is 196 − 98 = 98 cm².
+
+Q 49 | gm | Mensuration
+The base of a right-angled triangle is 4/3 times the height of triangle. If the area of the triangle is 54 square cm, then what is the perimeter of the triangle?
+(1) 30 cm
+(2) 32 cm
+(3) 36 cm
+(4) 40 cm
+= 3
+~ (1/2) × (4h/3) × h = 54 gives h² = 81, h = 9 and base = 12; hypotenuse = 15. Perimeter = 9 + 12 + 15 = 36 cm.
+
+Q 50 | gm | Mensuration
+What is the area of a triangle having sides 4, 4 and 6 units?
+(1) 3√7 square unit
+(2) 8 square unit
+(3) 7 square unit
+(4) 7√3 square unit
+= 1
+~ By Heron's formula, s = 7 and area = √(7 × 3 × 3 × 1) = 3√7 square units.
+
+Q 51 | trg | Heights & Distances
+Passage: Consider the following for the next three (03) items that follow: Let ABC be a triangle right-angled at B. Let P be the point on BC such that BP = PC. If AB = 10 cm, ∠BAP = 45° and ∠CAP = θ (use tan(α + β) = (tan α + tan β)/(1 − tan α tan β)).
+
+What is tan θ equal to?
+(1) 1/2
+(2) 1/3
+(3) 1/4
+(4) 1/5
+= 2
+~ ∠BAP = 45° gives BP = AB = 10 cm, so BC = 20 cm and tan∠BAC = 20/10 = 2. Then tan(45° + θ) = 2 gives (1 + tan θ)/(1 − tan θ) = 2, so tan θ = 1/3.
+
+Q 52 | trg | Ratios & Identities
+Passage: Consider the following for the next three (03) items that follow: Let ABC be a triangle right-angled at B. Let P be the point on BC such that BP = PC. If AB = 10 cm, ∠BAP = 45° and ∠CAP = θ (use tan(α + β) = (tan α + tan β)/(1 − tan α tan β)).
+
+If ∠ACP = γ, then what is tan γ equal to?
+(1) 1/2
+(2) 1/3
+(3) 2/3
+(4) 1
+= 1
+~ ∠ACP is the same angle as ∠ACB, so tan γ = AB/BC = 10/20 = 1/2.
+
+Q 53 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next three (03) items that follow: Let ABC be a triangle right-angled at B. Let P be the point on BC such that BP = PC. If AB = 10 cm, ∠BAP = 45° and ∠CAP = θ (use tan(α + β) = (tan α + tan β)/(1 − tan α tan β)).
+
+Consider the following statements:
+I. The line segment AP divides the area of the triangle ABC into two equal parts
+II. The perimeter of the triangle APC is more than 46 cm
+III. The area of the triangle APC is 50 square cm
+Which of the statements given above are correct?
+(1) I and II only
+(2) II and III only
+(3) I and III only
+(4) I, II and III
+= 4
+~ AP is a median, so it halves the area (I true). AP = 10√2 ≈ 14·14, PC = 10, AC = √500 ≈ 22·36, so the perimeter ≈ 46·5 cm > 46 (II true). Area APC = ½ × 10 × 10 = 50 cm² (III true).
+
+Q 54 | sts | Statistics & Data
+Passage: Consider the following for the next two (02) items that follow: A frequency distribution is as follows:
+Marks: 18-26, 27-35, 36-44, 45-53, 54-62, 63-71, 72-80
+Number of students: 5, 7, 10, 15, 8, 3, 2
+
+What is the median of the distribution?
+(1) 44·9
+(2) 45·5
+(3) 45·9
+(4) 46·3
+= 4
+~ Class boundaries are 17·5–26·5, 26·5–35·5, … (width 9); N = 50, N/2 = 25 and cumulative frequencies are 5, 12, 22, 37, so the median class is 44·5–53·5. Median = 44·5 + (25 − 22)/15 × 9 = 44·5 + 1·8 = 46·3.
+
+Q 55 | sts | Statistics & Data
+Passage: Consider the following for the next two (02) items that follow: A frequency distribution is as follows:
+Marks: 18-26, 27-35, 36-44, 45-53, 54-62, 63-71, 72-80
+Number of students: 5, 7, 10, 15, 8, 3, 2
+
+What is the mode of the distribution?
+(1) 47·25
+(2) 47·75
+(3) 48·25
+(4) 48·75
+= 3
+~ The modal class is 44·5–53·5 (f = 15, f₀ = 10, f₂ = 8). Mode = 44·5 + (15 − 10)/(2×15 − 10 − 8) × 9 = 44·5 + 3·75 = 48·25.
+
+Q 56 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at B. Given that AC − AB = 2 cm and BC = 16 cm.
+
+If ∠BAC = θ then what is sin θ + cos θ equal to?
+(1) 1
+(2) 71/65
+(3) 73/65
+(4) 79/65
+= 4
+~ AC² − AB² = 16² = 256 and AC − AB = 2, so AC + AB = 128, giving AC = 65 and AB = 63. sin θ + cos θ = BC/AC + AB/AC = 16/65 + 63/65 = 79/65.
+
+Q 57 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: ABC is a triangle right-angled at B. Given that AC − AB = 2 cm and BC = 16 cm.
+
+If BD is the perpendicular on the side AC, then what is the length of BD?
+(1) 1008/65 cm
+(2) 756/65 cm
+(3) 168/7 cm
+(4) 165/7 cm
+= 1
+~ The altitude to the hypotenuse is BD = AB × BC / AC = 63 × 16/65 = 1008/65 cm.
+
+Q 58 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next three (03) items that follow: Let MN be a chord of length 16 cm of a circle with centre at O and radius 10 cm. The tangents at M and N intersect at a point P. Further, OP intersects MN perpendicularly at Q.
+
+What is OQ equal to?
+(1) 5 cm
+(2) 6 cm
+(3) 7 cm
+(4) 8 cm
+= 2
+~ Q is the midpoint of MN, so MQ = 8 cm and OQ = √(10² − 8²) = 6 cm.
+
+Q 59 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next three (03) items that follow: Let MN be a chord of length 16 cm of a circle with centre at O and radius 10 cm. The tangents at M and N intersect at a point P. Further, OP intersects MN perpendicularly at Q.
+
+What is PM equal to?
+(1) 10 cm
+(2) 12 cm
+(3) 40/3 cm
+(4) 50/3 cm
+= 3
+~ In right triangle OMP (right angle at M), OM² = OQ × OP, so OP = 100/6 = 50/3 cm. PM = √(OP² − OM²) = √(2500/9 − 900/9) = 40/3 cm.
+
+Q 60 | gm | Mensuration
+Passage: Consider the following for the next three (03) items that follow: Let MN be a chord of length 16 cm of a circle with centre at O and radius 10 cm. The tangents at M and N intersect at a point P. Further, OP intersects MN perpendicularly at Q.
+
+What is the area of triangle OMN?
+(1) 36 square cm
+(2) 40 square cm
+(3) 45 square cm
+(4) 48 square cm
+= 4
+~ Area = ½ × MN × OQ = ½ × 16 × 6 = 48 cm².
+
+Q 61 | alg | Polynomials & Quadratics
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: What is the integral value of k for which the expression 4x² − kx + 1 is positive?
+Statement-I: k < −2
+Statement-II: k > −4
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 3
+~ 4x² − kx + 1 > 0 for all x needs discriminant k² − 16 < 0, i.e. −4 < k < 4. Either statement alone leaves many integers, but together −4 < k < −2 gives the single integer k = −3.
+
+Q 62 | ari | Ratio, Time & Work
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: In how many days can A, B and C together finish the work?
+Statement-I: A and B together can finish the work in 24 days
+Statement-II: B and C together can finish the work in 36 days
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 4
+~ The two statements give A + B = 1/24 and B + C = 1/36 per day: two equations in three unknowns, so A + B + C cannot be found (a C + A rate would also be needed).
+
+Q 63 | alg | Polynomials & Quadratics
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: Can we have a common solution which is prime?
+Statement-I: x² − 26x + 133 = 0
+Statement-II: x² − 44x + 475 = 0
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 3
+~ x² − 26x + 133 = (x − 7)(x − 19) and x² − 44x + 475 = (x − 19)(x − 25). A "common" solution needs both equations; together they share x = 19, which is prime.
+
+Q 64 | ari | Number System
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: Is 327ⁿ + 173ⁿ divisible by 500?
+Statement-I: n is odd natural number
+Statement-II: n is a positive integer
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question can be answered even without using any of the Statements
+= 1
+~ For odd n, aⁿ + bⁿ is divisible by a + b = 327 + 173 = 500, so Statement I settles it. Statement II alone does not: for even n (e.g. n = 2, remainder 358) it is not divisible.
+
+Q 65 | ari | Percentage, Profit & Interest
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: If the price of petrol goes up by 20%, by what percentage should the consumption be reduced so that the expenditure remains the same?
+Statement-I: Price of petrol per litre was Rs. 90
+Statement-II: Consumption was 24 litre before price hike
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question can be answered even without using any of the Statements
+= 4
+~ Reduction = 20/(100 + 20) × 100 = 16⅔%, whatever the price or consumption, so no statement is needed.
+
+Q 66 | ari | Ratio, Time & Work
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: The ratio of P's salary to Q's salary is 6 : 5. How much is P's expenditure?
+Statement-I: The ratio of P's saving to Q's saving is 3 : 2
+Statement-II: The ratio of P's expenditure to Q's expenditure is 1 : 1
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 3
+~ With salaries 6x and 5x and equal expenditure e, (6x − e)/(5x − e) = 3/2 gives e = 3x, i.e. P spends half of his salary; neither statement alone fixes e. No rupee amount is given anywhere, so the answer is only relative to the salary; if an amount in rupees is meant, (4) would apply. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 67 | ari | Averages & Mixtures
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: The largest of five different integers is 8 and least is 2. What is the average of these integers?
+Statement-I: The sum of all the 5 integers is a multiple of 5
+Statement-II: The number of odd integers is odd
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 1
+~ The middle three are distinct numbers from 3–7, so the total is 22 to 28; the only multiple of 5 is 25, giving average 5 (Statement I suffices). Statement II allows totals 23, 25 or 27, so it alone is not enough.
+
+Q 68 | ari | Number System
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: There are three different weights. All the weights are integers and their sum is a prime number. What are the weights?
+Statement-I: One of the weights is twice the another weight
+Statement-II: One of the weights is thrice the another weight
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 3
+~ Each statement alone allows many sets (e.g. 1, 2, 4 or 1, 2, 8). Using both, the only possible pattern with a prime sum is 2t, 3t, 6t (sum 11t), which forces t = 1: the weights are 2, 3 and 6 (sum 11).
+
+Q 69 | ari | Percentage, Profit & Interest
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: What is the amount at the end of 10 years?
+Statement-I: The principal amount is ₹1,00,000
+Statement-II: Rate of interest is 10% per annum
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 4
+~ Even with principal and rate, the amount depends on whether the interest is simple (₹2,00,000) or compound (about ₹2,59,374), and this is not stated. If simple interest is assumed, (3) would apply. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 70 | ari | Number System
+A question is given followed by two statements I and II. Consider the Question and the Statements and mark the correct option.
+Question: Is p² + pq + q² odd where p, q are integers?
+Statement-I: p + q is even
+Statement-II: pq is odd
+Which one of the following is correct in respect of the above Question and the Statements?
+(1) The Question can be answered by using one of the Statements alone, but cannot be answered using the other Statement alone
+(2) The Question can be answered by using either Statement alone
+(3) The Question can be answered by using both the Statements together, but cannot be answered using either Statement alone
+(4) The Question cannot be answered even by using both the Statements together
+= 1
+~ pq odd means both p and q are odd, so p² + pq + q² is odd + odd + odd = odd (Statement II suffices). p + q even allows both even (expression even) or both odd (expression odd), so Statement I alone does not decide.
+
+Q 71 | ari | Percentage, Profit & Interest
+The total population of an area is 10,000 out of which males and females are equal in number. Out of the total population 30% are Newspaper readers. Out of the total newspaper readers, one-third read English Newspaper. Out of the total English Newspaper readers, 20% are females. What is the number of males who do not read English Newspaper?
+(1) 800
+(2) 2100
+(3) 4200
+(4) Cannot be determined due to insufficient data
+= 3
+~ Readers = 3000, English readers = 1000, of whom 800 are males. Males = 5000, so males not reading an English newspaper = 5000 − 800 = 4200.
+
+Q 72 | gm | Mensuration
+What is the maximum area of a rectangle, in square cm, whose perimeter is 400 cm?
+(1) 100
+(2) 200
+(3) 1000
+(4) 10,000
+= 4
+~ For a fixed perimeter the area is greatest for a square: side 100 cm, area 10,000 cm².
+
+Q 73 | ari | Number System
+What is the remainder if we divide 3¹⁰ by 7?
+(1) 0
+(2) 1
+(3) 2
+(4) 4
+= 4
+~ 3⁶ ≡ 1 (mod 7), so 3¹⁰ ≡ 3⁴ = 81 ≡ 4 (mod 7). (Check: 59049 = 7 × 8435 + 4.)
+
+Q 74 | ari | Percentage, Profit & Interest
+What is the square root of 64%?
+(1) 0·08%
+(2) 0·8%
+(3) 8%
+(4) 80%
+= 4
+~ 64% = 0·64 and √0·64 = 0·8 = 80%.
+
+Q 75 | ari | Number System
+The difference of 10³¹ − 5 and 10³⁰ + p is divisible by 3 where p is a digit. How many values of p are possible?
+(1) 4
+(2) 3
+(3) 2
+(4) 1
+= 2
+~ Since 10ᵏ ≡ 1 (mod 3), the difference ≡ 1 − 5 − 1 − p = −5 − p (mod 3), which is 0 when p ≡ 1 (mod 3): p = 1, 4, 7, i.e. 3 values.
+
+Q 76 | ari | Number System
+Consider the following statements:
+I. 61 divides 107¹⁰⁰ − 76¹⁰⁰
+II. 100 divides 67⁵ + 33⁵
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ For an even power, aⁿ − bⁿ is divisible by a + b = 183 = 3 × 61, so I is true. For an odd power, aⁿ + bⁿ is divisible by a + b = 100, so II is true.
+
+Q 77 | ari | Averages & Mixtures
+The average of the temperatures recorded at noontime from Monday to Sunday is 31°C. If the lowest temperature recorded is 30°C, then what is the maximum of temperature that is possible to record at noontime on any one of the days
+(1) 34°C
+(2) 35°C
+(3) 36°C
+(4) 37°C
+= 4
+~ The total is 7 × 31 = 217. The maximum is largest when the other six days are all at the lowest, 30°C: 217 − 180 = 37°C.
+
+Q 78 | alg | Equations & Expressions
+If (x + 1/(yz)) − (y + 1/(zx)) = (y + 1/(zx)) − (z + 1/(xy)) and x + z ≠ 2y, then what is xyz equal to?
+(1) −3
+(2) −1
+(3) 1
+(4) 3
+= 2
+~ Multiply through by xyz: the condition becomes (x − y)(1 + 1/(xyz)) = (y − z)(1 + 1/(xyz)), i.e. (x − 2y + z)(1 + 1/(xyz)) = 0. Since x + z ≠ 2y, 1 + 1/(xyz) = 0, so xyz = −1.
+
+Q 79 | alg | Polynomials & Quadratics
+Consider the following statements in respect of p = n(n + 1)(n + 2)(n + 3) + 1, where n is a natural number:
+I. p is always odd
+II. p is a perfect square
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ n(n + 3)·(n + 1)(n + 2) + 1 = (n² + 3n)(n² + 3n + 2) + 1 = (n² + 3n + 1)², a perfect square. The product of consecutive numbers is even, so p is odd (e.g. 25, 121, 361).
+
+Q 80 | ari | Averages & Mixtures
+What is the difference between the average of first 50 even natural numbers and the average of first 50 odd natural numbers?
+(1) 0
+(2) 0·5
+(3) 1
+(4) 2
+= 3
+~ Average of 2, 4, …, 100 is 51 and average of 1, 3, …, 99 is 50, so the difference is 1.
+
+Q 81 | ari | Percentage, Profit & Interest
+Three amounts x, y, z are such that y is the compound interest on x; and z is the compound interest on y. The rate of interest per annum and the time period in years are same. Which one of the following is correct?
+(1) x² = yz
+(2) y² = zx
+(3) z² = xy
+(4) x = yz
+= 2
+~ With k = (1 + r/100)ᵗ − 1, y = kx and z = ky, so x, y, z are in G.P. and y² = xz.
+
+Q 82 | gm | Mensuration
+There are n concentric squares. The area of the innermost square is 1 unit and the distance between corresponding corners of any two consecutive squares is 1 unit. Consider the following statements:
+I. The diagonal of the nth square is 2n + √2 − 2
+II. The area included between nth square and (n − 1)th square is independent of n
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ The innermost diagonal is √2 and each step adds 1 at both ends of the diagonal, so dₙ = √2 + 2(n − 1) = 2n + √2 − 2 (I true). The area between squares is (dₙ² − dₙ₋₁²)/2 = dₙ + dₙ₋₁, which grows with n (II false).
+
+Q 83 | gm | Circles & Quadrilaterals
+In a rectangle ABCD, AC is one of the diagonals. If AC + AB = 3AD and AC − AD = 4 units, then what is the area of the triangle?
+(1) 24 square unit
+(2) 36 square unit
+(3) 48 square unit
+(4) 72 square unit
+= 1
+~ With AD = b: AC = b + 4 and AB = 2b − 4. Pythagoras gives (b + 4)² = (2b − 4)² + b², so b = 6, AB = 8, AC = 10. Triangle ABC (cut off by the diagonal) has area ½ × 8 × 6 = 24 square units; the whole rectangle would be 48.
+
+Q 84 | gm | Circles & Quadrilaterals
+The area of the circle circumscribing three identical circles touching each other is π(2 + √3)²/3 square cm. What is the radius of one of the smaller circles?
+(1) 0·5 cm
+(2) 1 cm
+(3) 1·5 cm
+(4) √3 cm
+= 2
+~ The centres form an equilateral triangle of side 2r with circumradius 2r/√3, so R = r + 2r/√3 = r(2 + √3)/√3. Then πR² = πr²(2 + √3)²/3, which matches the given value when r = 1 cm.
+
+Q 85 | gm | Lines, Angles & Triangles
+In a triangle ABC, AB = 21 cm, BC = 20 cm and CA = 13 cm. A perpendicular CD is drawn upon the longest side. What is the area of the triangle BCD?
+(1) 96 square cm
+(2) 84 square cm
+(3) 80 square cm
+(4) 72 square cm
+= 1
+~ By Heron's formula (s = 27), area ABC = √(27 × 6 × 7 × 14) = 126 cm², so CD = 2 × 126/21 = 12 cm. Then BD = √(20² − 12²) = 16 cm and area BCD = ½ × 16 × 12 = 96 cm².
+
+Q 86 | ari | Averages & Mixtures
+There are two containers A and B. In container A, the ratio of milk and water is 1 : 3 and in container B, the ratio of milk and water is m : n. If the mixture in the containers A and B are mixed in the ratio 2 : 3 to get 20 litres of a mixture having milk and water in the ratio 3 : 7, then what is the value of m/n?
+(1) 1/2
+(2) 2/3
+(3) 3/4
+(4) 4/5
+= 1
+~ 8 L from A gives 2 L milk and 12 L from B must give the rest of the 6 L milk, i.e. 4 L. So B is 4 : 8 milk to water and m/n = 1/2.
+
+Q 87 | gm | Mensuration
+A cone, a hemisphere and a cylinder stand on equal base of radius r and have the same height. If the sum of volumes of cone, the hemisphere and the cylinder is equal to volume of a sphere of radius R, then what is R³/r³ equal to?
+(1) 1·25
+(2) 1·5
+(3) 2
+(4) 2·5
+= 2
+~ The common height is r (the hemisphere's), so the volumes are πr³/3 + 2πr³/3 + πr³ = 2πr³. Setting (4/3)πR³ = 2πr³ gives R³/r³ = 1·5.
+
+Q 88 | alg | Polynomials & Quadratics
+If x³ + px² + qx + r is an integer for all integral values of x, then consider the following statements:
+I. p must be an integer
+II. q must be an integer
+III. r must be an integer
+Which of the statements given above is/are correct?
+(1) I and II only
+(2) III only
+(3) I, II and III
+(4) None of the statements is correct
+= 2
+~ Putting x = 0 shows r must be an integer. p and q need not be: with p = q = ½, x²/2 + x/2 = x(x + 1)/2 is always an integer.
+
+Q 89 | ari | Number System
+XYZ is a 3-digit number, where X, Y, Z are distinct non-zero digits. The difference between the two 3-digit numbers XYZ and YXZ is 90. How many possible values exist for the sum (X + Y)?
+(1) 9
+(2) 8
+(3) 7
+(4) 6
+= 2
+~ XYZ − YXZ = 90(X − Y) = 90, so X and Y are consecutive digits. X + Y = 2Y + 1 can then be 3, 5, 7, …, 17, which is 8 values (a distinct non-zero Z is always possible).
+
+Q 90 | ari | Speed & Distance
+How many times does the minute hand of a clock coincide with the second hand between 2·01 pm and 4·01 pm on the same day?
+(1) 121
+(2) 120
+(3) 119
+(4) None of the above
+= 4
+~ The second hand gains 354° per minute on the minute hand, so they coincide every 60/59 min (at t = 60k/59 min after 2:00). For 1 < t < 121 this gives k = 1 to 118, which is 118 times, so none of 121, 120 or 119 is right.
+
+Q 91 | ari | Number System
+What is the HCF of 2³⁶ − 1 and 2⁴⁵ − 1?
+(1) 1023
+(2) 512
+(3) 511
+(4) 255
+= 3
+~ HCF(2ᵃ − 1, 2ᵇ − 1) = 2^HCF(a, b) − 1 = 2⁹ − 1 = 511.
+
+Q 92 | gm | Mensuration
+The section of a solid right circular cone by a plane containing vertex and perpendicular to base is an equilateral triangle of side 14 cm. What is the volume of the cone? (π = 22/7)
+(1) 1078√3 cubic cm
+(2) 1078/√3 cubic cm
+(3) 539√3 cubic cm
+(4) 539/√3 cubic cm
+= 2
+~ The cone has r = 7 cm and h = 7√3 cm. V = ⅓ × 22/7 × 49 × 7√3 = 1078√3/3 = 1078/√3 cm³ (≈ 622·4).
+
+Q 93 | gm | Mensuration
+Three identical cones each with base radius 3 cm are placed on their bases so that each is touching the other two. There will be one and only circle that would pass through each of the vertices of the cones. What is the area of the circle?
+(1) 3π square cm
+(2) 6π square cm
+(3) 9π square cm
+(4) 12π square cm
+= 4
+~ The vertices lie directly above the base centres, which form an equilateral triangle of side 6 cm. Its circumradius is 6/√3 = 2√3 cm, so the area is π(2√3)² = 12π cm².
+
+Q 94 | gm | Circles & Quadrilaterals
+A circle is inscribed in a triangle ABC right-angled at B. If AB = 5 cm and BC = 12 cm, then what is the radius of the circle?
+(1) 1 cm
+(2) 1·5 cm
+(3) 2 cm
+(4) 2·5 cm
+= 3
+~ The hypotenuse AC is 13 cm, and for a right triangle r = (AB + BC − AC)/2 = (5 + 12 − 13)/2 = 2 cm (check: area/s = 30/15 = 2).
+
+Q 95 | gm | Lines, Angles & Triangles
+The ratio of sum of interior angles to sum of exterior angles of a regular polygon of n sides is 7/2. What is the measure of an interior angle of polygon?
+(1) 110°
+(2) 120°
+(3) 130°
+(4) 140°
+= 4
+~ (n − 2) × 180°/360° = 7/2 gives n = 9, so each interior angle is 180° − 360°/9 = 140°.
+
+Q 96 | ari | Number System
+The number 199 can be written as m² − n², where m, n are natural numbers (m > n). What is the value of mn?
+(1) 9900
+(2) 9800
+(3) 9701
+(4) Cannot be uniquely determined
+= 1
+~ 199 is prime, so (m − n)(m + n) = 1 × 199, giving m = 100 and n = 99. Then mn = 9900.
+
+Q 97 | ari | Number System
+How many numbers of the form 2ⁿ − 1 and less than 2000 are prime?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 2
+~ The primes of this form below 2000 are 3, 7, 31 and 127 (n = 2, 3, 5, 7). The next candidate, 2¹¹ − 1 = 2047, is too big (and equals 23 × 89), so there are 4.
+
+Q 98 | alg | Sets, Logarithms & Inequalities
+In a class of 160 students, each of them opt at least one language from among English, Hindi and Sanskrit. It is found that 130 students opt English, 120 students Hindi and 110 Sanskrit. If the students opt either only one language or all three languages, then what is the number of students who study all three languages?
+(1) 40
+(2) 60
+(3) 80
+(4) 100
+= 4
+~ If x students take exactly one language and y take all three, then x + y = 160 and x + 3y = 130 + 120 + 110 = 360. So 2y = 200 and y = 100.
+
+Q 99 | ari | Number System
+Let S = 5ᵃ + 7ᵇ + 11ᶜ + 13ᵈ, where a, b, c and d are natural numbers. What is the number of distinct remainders of S when it is divided by 10?
+(1) 1
+(2) 4
+(3) 5
+(4) More than 5
+= 3
+~ Last digits: 5ᵃ → 5, 11ᶜ → 1, 7ᵇ → 7, 9, 3, 1 and 13ᵈ → 3, 9, 7, 1. So S ≡ 6 + (odd + odd) (mod 10), which gives the remainders 0, 2, 4, 6, 8: 5 distinct values (checked by brute force).
+
+Q 100 | trg | Ratios & Identities
+In a right triangle ABC, ∠A = 90° and AD is perpendicular to BC. If ∠CAD = 60° and BC = 6 cm, then what is AB equal to?
+(1) 3 cm
+(2) 4 cm
+(3) 5 cm
+(4) 6 cm
+= 1
+~ In triangle ADC, ∠C = 90° − 60° = 30°. So AB = BC sin C = 6 × ½ = 3 cm.

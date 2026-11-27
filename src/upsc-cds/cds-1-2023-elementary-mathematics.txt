@@ -1,0 +1,1069 @@
+# UPSC Combined Defence Services Examination (I) 2023: Elementary Mathematics (Series A, booklet JNBY-D-MTK), held 16 April 2023.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, February 2024). Explanations by Learn with Anil.
+
+Q 1 | ari | Number System
+What is the largest number which divides both 2³⁵ − 1 and 2⁹¹ − 1?
+(1) 34
+(2) 90
+(3) 127
+(4) 129
+= 3
+~ gcd(2ᵐ − 1, 2ⁿ − 1) = 2^gcd(m, n) − 1. Here gcd(35, 91) = 7, so the HCF is 2⁷ − 1 = 127.
+
+Q 2 | ari | Number System
+What is the largest power of 10 that divides the product 29 × 28 × 27 × . . . 2 × 1?
+(1) 4
+(2) 5
+(3) 6
+(4) 7
+= 3
+~ The product is 29!, and the power of 10 is fixed by the number of 5s: ⌊29/5⌋ + ⌊29/25⌋ = 5 + 1 = 6. There are plenty of 2s, so 10⁶ is the largest power.
+
+Q 3 | ari | Number System
+What is the remainder when 65⁹⁹ is divided by 11?
+(1) 0
+(2) 5
+(3) 9
+(4) 10
+= 4
+~ 65 = 66 − 1 ≡ −1 (mod 11), so 65⁹⁹ ≡ (−1)⁹⁹ = −1 ≡ 10 (mod 11).
+
+Q 4 | alg | Polynomials & Quadratics
+If the roots of the equation x² − bx + c = 5 differ by 5, then which one of the following is correct?
+(1) b² = 4c + 5
+(2) c² = 4b − 5
+(3) b² + c² = 5
+(4) b² − c² = 5
+= 1
+~ The equation is x² − bx + (c − 5) = 0, so (difference of roots)² = b² − 4(c − 5) = 25. This gives b² − 4c + 20 = 25, i.e. b² = 4c + 5.
+
+Q 5 | alg | Sets, Logarithms & Inequalities
+In a party of 150 persons, 75 persons take tea, 60 persons take coffee and 50 persons take milk. 15 of them take both tea and coffee, but no one taking milk takes tea. If each person in the party takes at least one drink, then what is the number of persons taking milk only?
+(1) 50
+(2) 40
+(3) 30
+(4) 20
+= 3
+~ Since nobody takes both milk and tea, 150 = 75 + 60 + 50 − 15 − n(coffee ∩ milk), so n(coffee ∩ milk) = 20. Milk only = 50 − 20 = 30.
+
+Q 6 | ari | Ratio, Time & Work
+A, B, C, D and E enter into a business. They invest money in the ratio 2 : 3 : 4 : 5 : 6. However, the time invested by them is in the ratio 6 : 5 : 4 : 3 : 2. If the profit distributed is directly proportional to time and money invested, then who receives the highest amount of profit?
+(1) C
+(2) Both B and D
+(3) Both C and D
+(4) All get equal profit
+= 1
+~ Profit shares are money × time: 2×6 = 12, 3×5 = 15, 4×4 = 16, 5×3 = 15, 6×2 = 12. C has the largest product (16).
+
+Q 7 | ari | Number System
+Consider the following numbers:
+1. 437
+2. 797
+3. 1073
+How many of the above numbers are prime?
+(1) Only one
+(2) Only two
+(3) All three
+(4) None
+= 1
+~ 437 = 19 × 23 and 1073 = 29 × 37 are composite. 797 has no prime factor up to √797 ≈ 28.2, so it is prime. Only one number is prime.
+
+Q 8 | ari | Ratio, Time & Work
+A can do a certain work at twice the speed of B. Further, B can do the same work at 1·5 times the speed of C. All of them together can finish the work in 12 days. In how many days can C alone finish the work?
+(1) 36 days
+(2) 45 days
+(3) 60 days
+(4) 66 days
+= 4
+~ If C's rate is c, then B's rate is 1·5c and A's is 3c, so together they do 5·5c = 1/12 of the work per day. That gives c = 1/66, so C alone takes 66 days.
+
+Q 9 | ari | Number System
+The sum of digits of a 2-digit number is 12. When the digits are reversed, the number becomes greater by eighteen. What is the difference between the digits in the number?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ For the number 10a + b, reversing gives 9(b − a) = 18, so b − a = 2. With a + b = 12 the number is 57, and the digits differ by 2.
+
+Q 10 | ari | Speed & Distance
+The time taken by a train to cross a man travelling in another train is 10 seconds, when the other train is travelling in the opposite direction. However, it takes 20 seconds, if both the trains are travelling in the same direction. The length of the first train is 200 m and that of the second train is 150 m. What is the speed of the first train?
+(1) 60 km/hr
+(2) 56 km/hr
+(3) 54 km/hr
+(4) 52 km/hr
+= 3
+~ To pass a man, the first train covers only its own 200 m: u + v = 200/10 = 20 m/s and u − v = 200/20 = 10 m/s. So u = 15 m/s = 54 km/hr. The 150 m length of the second train plays no part.
+
+Q 11 | alg | Equations & Expressions
+If a, b, c, d, e and f satisfy 2a = 3b = 6c = 9d = 12e = 18f, then what is the value of (a + b)/(c + d + e + f)?
+(1) 4/7
+(2) 2
+(3) 5/2
+(4) 9/2
+= 2
+~ Set each expression equal to 36: a = 18, b = 12, c = 6, d = 4, e = 3, f = 2. So (a + b)/(c + d + e + f) = 30/15 = 2.
+
+Q 12 | alg | Polynomials & Quadratics
+If a, b, c are non-zero real numbers such that a + b + c = 0, then what are the roots of the equation ax² + bx + c = 0?
+(1) 2, 1 + (c/a)
+(2) 1, a/c
+(3) 1, c/a
+(4) 2, (c/a) − 1
+= 3
+~ Since a + b + c = 0, x = 1 is a root. The product of the roots is c/a, so the other root is c/a.
+
+Q 13 | ari | Percentage, Profit & Interest
+Twelve percent of bananas bought by a fruit vendor got lost during transportation. On selling the remaining bananas, the vendor's overall profit turned out to be 4%. If the vendor had not lost any bananas and had sold them at the price of the remaining bananas, what would have been his profit percentage?
+(1) 8 1/9 %
+(2) 9 1/11 %
+(3) 18 2/11 %
+(4) None of the above
+= 3
+~ Say 100 bananas cost ₹100. Selling the 88 left brings in ₹104, so the price is 104/88 per banana. Selling all 100 at that price brings in ₹1300/11 ≈ 118·18, a profit of 18 2/11 %.
+
+Q 14 | alg | Equations & Expressions
+If the positive square root of (5 + 3√2)(5 − 3√2) is α, then what is the positive square root of 8 + 2α?
+(1) 2 + √3
+(2) 3 − √2
+(3) √7 − 1
+(4) √7 + 1
+= 4
+~ (5 + 3√2)(5 − 3√2) = 25 − 18 = 7, so α = √7. Then 8 + 2√7 = (√7 + 1)², and its positive square root is √7 + 1.
+
+Q 15 | ari | Number System
+When every even power of every odd integer (greater than 1) is divided by 8, what is the remainder?
+(1) 3
+(2) 2
+(3) 1
+(4) The remainder is not necessarily 1.
+= 3
+~ Every odd square has the form (2k + 1)² = 4k(k + 1) + 1, and k(k + 1) is even, so it is ≡ 1 (mod 8). Any even power is a power of an odd square, so it is also ≡ 1 (mod 8).
+
+Q 16 | ari | Number System
+Consider the following statements:
+1. If n is a natural number, then the number n(n² + 2)/3 is also a natural number.
+2. If m is an odd integer, then the number (m⁴ + 4m² + 11)/16 is an integer.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ n(n² + 2) = n(n² − 1) + 3n = (n − 1)n(n + 1) + 3n, which is divisible by 3. For odd m, m⁴ + 4m² + 11 = (m² − 1)(m² + 5) + 16, and m² − 1 and m² + 5 are both even, with one of them divisible by 8, so the expression is divisible by 16. Python confirms both statements.
+
+Q 17 | ari | Number System
+It is given that 5 does not divide n − 1, n and n + 1, where n is a positive integer. Which one of the following is correct?
+(1) 5 divides (n² + 1)
+(2) 5 divides (n² − 1)
+(3) 5 divides (n² + n)
+(4) 5 divides (n² − n)
+= 1
+~ The condition leaves n ≡ 2 or 3 (mod 5), so n² ≡ 4 ≡ −1 (mod 5). That makes 5 a divisor of n² + 1.
+
+Q 18 | ari | Number System
+What is the largest 5-digit number, which leaves remainder 7, when divided by 18 as well as by 11?
+(1) 99981
+(2) 99988
+(3) 99997
+(4) 99999
+= 3
+~ The number must be 7 more than a multiple of LCM(18, 11) = 198. The largest such 5-digit number is 198 × 505 + 7 = 99990 + 7 = 99997.
+
+Q 19 | ari | Percentage, Profit & Interest
+In a business dealing, A owes B ₹ 20,000 payable after 5 years, whereas B owes A ₹ 12,000 payable after 4 years. They want to settle it now at the rate of 5% simple interest. Who gives how much money in this settlement?
+(1) Both are at par
+(2) B gives ₹ 6,000 to A
+(3) A gives ₹ 6,000 to B
+(4) A gives ₹ 4,000 to B
+= 3
+~ Present values at 5% simple interest: A's debt is 20000/1·25 = ₹16,000 and B's debt is 12000/1·20 = ₹10,000. So A pays B the difference, ₹6,000.
+
+Q 20 | ari | Averages & Mixtures
+Average marks in Mathematics of Section A comprising 30 students is 65 and that of Section B comprising 35 students is 70. What are the average marks (approximately) of both the sections if it was detected later that an entry of 47 marks was wrongly made as 74?
+(1) 67·28
+(2) 67·58
+(3) 68·11
+(4) 68·63
+= 1
+~ Correct total = 30 × 65 + 35 × 70 − (74 − 47) = 4400 − 27 = 4373. The average is 4373/65 ≈ 67·28.
+
+Q 21 | alg | Polynomials & Quadratics
+If α and β are the roots of the equation x² − 7x + 1 = 0, then what is the value of α⁴ + β⁴?
+(1) 2207
+(2) 2247
+(3) 2317
+(4) 2337
+= 1
+~ α² + β² = 7² − 2·1 = 47, so α⁴ + β⁴ = 47² − 2(αβ)² = 2209 − 2 = 2207.
+
+Q 22 | ari | Number System
+Consider the following statements in respect of all factors of 360:
+1. The number of factors is 24.
+2. The sum of all factors is 1170.
+Which of the above statements is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 360 = 2³ × 3² × 5, so it has (3 + 1)(2 + 1)(1 + 1) = 24 factors. Their sum is (1 + 2 + 4 + 8)(1 + 3 + 9)(1 + 5) = 15 × 13 × 6 = 1170, so both statements are true.
+
+Q 23 | ari | Number System
+Consider a 6-digit number of the form XYXYXY. The number is divisible by:
+(1) 3 and 7 only
+(2) 7 and 13 only
+(3) 3, 13 and 37 only
+(4) 3, 7, 13 and 37
+= 4
+~ XYXYXY = (10X + Y) × 10101, and 10101 = 3 × 7 × 13 × 37. So the number is divisible by all four of 3, 7, 13 and 37.
+
+Q 24 | ari | Number System
+What is the HCF of 3²⁹ − 9 and 3³⁸ − 9?
+(1) 3⁹ − 1
+(2) 3¹¹ − 1
+(3) 3¹¹ − 3
+(4) 3¹¹ − 9
+= 4
+~ The numbers are 9(3²⁷ − 1) and 9(3³⁶ − 1), and gcd(3²⁷ − 1, 3³⁶ − 1) = 3^gcd(27, 36) − 1 = 3⁹ − 1. So the HCF is 9(3⁹ − 1) = 3¹¹ − 9, which Python confirms.
+
+Q 25 | alg | Equations & Expressions
+If x = √(4√(4√(4√(4 . . . ))))), then what is the value of x?
+(1) 2
+(2) 4
+(3) 8
+(4) 16
+= 2
+~ The expression repeats inside itself, so x = √(4x). Then x² = 4x, and since x > 0, x = 4.
+
+Q 26 | ari | Number System
+Let m and n be natural numbers. What is the minimum value of (m + n) such that 33m + 22n is divisible by 121?
+(1) 3
+(2) 4
+(3) 5
+(4) 10
+= 2
+~ 33m + 22n = 11(3m + 2n), so 3m + 2n must be a multiple of 11. The smallest case is m = 3, n = 1 (3m + 2n = 11), giving m + n = 4. No pair with m + n = 2 or 3 works.
+
+Q 27 | ari | Number System
+The product of two numbers is 2160 and their HCF is 12. If the sum of the squares of the two numbers is 4896, then what is the mean of the two numbers?
+(1) 24
+(2) 36
+(3) 48
+(4) 96
+= 3
+~ (a + b)² = 4896 + 2 × 2160 = 9216, so a + b = 96 and the mean is 48. The numbers are 36 and 60, whose HCF is indeed 12.
+
+Q 28 | alg | Equations & Expressions
+The age of Q exceeds the age of P by 3 years. The age of R is twice the age of P and the age of Q is twice the age of S. Further, the age difference of R and S is 30 years. What is the sum of the ages of P and Q?
+(1) 35 years
+(2) 38 years
+(3) 39 years
+(4) 45 years
+= 4
+~ Q = P + 3, R = 2P and S = (P + 3)/2. From 2P − (P + 3)/2 = 30 we get P = 21 and Q = 24, so P + Q = 45 years.
+
+Q 29 | gm | Lines, Angles & Triangles
+If a, b and c are the sides of a triangle ABC, then √a + √b − √c is always:
+(1) Negative
+(2) Positive
+(3) Non-negative
+(4) Non-positive
+= 2
+~ (√a + √b)² = a + b + 2√(ab) > a + b > c by the triangle inequality. So √a + √b > √c, and the expression is always positive.
+
+Q 30 | ari | Number System
+There are four bells which ring at an interval of 15 minutes, 25 minutes, 35 minutes and 45 minutes respectively. If all of them ring at 9 A.M., how many more times will they ring together in the next 72 hours?
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 3
+~ LCM(15, 25, 35, 45) = 3² × 5² × 7 = 1575 minutes = 26·25 hours. Since ⌊72/26·25⌋ = 2, they ring together 2 more times.
+
+Q 31 | ari | Number System
+Let a, b, c and d be four positive integers such that a + b + c + d = 200. If S = (−1)ᵃ + (−1)ᵇ + (−1)ᶜ + (−1)ᵈ, then what is the number of possible values of S?
+(1) One
+(2) Two
+(3) Three
+(4) Four
+= 3
+~ The sum 200 is even, so an even number (0, 2 or 4) of a, b, c, d are odd. That gives S = 4, 0 or −4, so there are three possible values.
+
+Q 32 | ari | Number System
+The number 97³⁰ − 14³⁰ is divisible by:
+(1) 37 but not 83
+(2) 83 but not 37
+(3) Both 37 and 83
+(4) Neither 37 nor 83
+= 3
+~ aⁿ − bⁿ is divisible by a − b = 83, and for even n also by a + b = 111 = 3 × 37. So the number is divisible by both 37 and 83.
+
+Q 33 | alg | Sets, Logarithms & Inequalities
+Consider the following statements:
+1. log₁₀ 50 is a rational number.
+2. log₁₀₀ 10 is an irrational number.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 4
+~ log₁₀ 50 = p/q would mean 50^q = 10^p, which is impossible because the powers of 2 and 5 cannot match, so it is irrational. log₁₀₀ 10 = 1/2 is rational. Both statements are false.
+
+Q 34 | ari | Ratio, Time & Work
+If 17 women and 24 men can do a piece of work in 5 days and 12 women and 23 men can do it in 6 days, then which one of the following is correct?
+(1) Efficiency of 13 women = Efficiency of 18 men
+(2) Efficiency of 11 women = Efficiency of 16 men
+(3) Efficiency of 13 women = Efficiency of 17 men
+(4) Efficiency of 11 women = Efficiency of 15 men
+= 1
+~ Both groups do the same total work: 5(17w + 24m) = 6(12w + 23m), so 85w + 120m = 72w + 138m. This gives 13w = 18m.
+
+Q 35 | ari | Ratio, Time & Work
+Three taps A, B and C together can fill a tank in 6 hours. Tap C alone can fill the tank in 12 hours. To fill the tank, when it is empty, all the three taps are started together. After working t hours, tap C is closed and the tank is filled in 8 more hours. What is t equal to?
+(1) 1
+(2) 2
+(3) 4
+(4) 6
+= 2
+~ A + B fill 1/6 − 1/12 = 1/12 of the tank per hour. Then t/6 + 8/12 = 1, which gives t = 2.
+
+Q 36 | ari | Ratio, Time & Work
+A, B and C can complete a work in x, 1·5x and 2x days respectively. If they complete the work together, in what ratio should they be paid?
+(1) 2 : 3 : 4
+(2) 6 : 4 : 3
+(3) 3 : 2 : 1
+(4) 4 : 3 : 2
+= 2
+~ Pay is in proportion to work rate: 1/x : 1/(1·5x) : 1/(2x) = 1 : 2/3 : 1/2 = 6 : 4 : 3.
+
+Q 37 | ari | Number System
+Consider the following statements:
+1. n³ − n is divisible by 6.
+2. n⁵ − n is divisible by 5.
+3. n⁵ − 5n³ + 4n is divisible by 120.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ n³ − n is a product of 3 consecutive integers, so it is divisible by 6. n⁵ − n is divisible by 5 by Fermat's little theorem. n⁵ − 5n³ + 4n = (n − 2)(n − 1)n(n + 1)(n + 2) is a product of 5 consecutive integers, so it is divisible by 5! = 120. All three are true.
+
+Q 38 | ari | Number System
+What is the last digit of the sum S = 9²⁷ + 27⁹?
+(1) 3
+(2) 6
+(3) 7
+(4) 9
+= 2
+~ 9 raised to an odd power ends in 9. Powers of 7 end in a cycle of 7, 9, 3, 1, so 27⁹ ends in 7. 9 + 7 = 16, so S ends in 6.
+
+Q 39 | alg | Equations & Expressions
+If x = (√3 + 1)/(√3 − 1) and y = (√3 − 1)/(√3 + 1), then what is the value x³ − y³?
+(1) 60
+(2) 45√3
+(3) 30√3
+(4) 90
+= 3
+~ x = 2 + √3 and y = 2 − √3, so x − y = 2√3 and xy = 1. Then x³ − y³ = (x − y)³ + 3xy(x − y) = 24√3 + 6√3 = 30√3.
+
+Q 40 | ari | Speed & Distance
+The speed of a boat in still water is 15 km/hr. If it can travel 42 km downstream and 28 km upstream in the same time, then what is the speed of the stream?
+(1) 2·5 km/hr
+(2) 3 km/hr
+(3) 4·5 km/hr
+(4) 6 km/hr
+= 2
+~ 42/(15 + v) = 28/(15 − v) gives 3(15 − v) = 2(15 + v), so v = 3 km/hr.
+
+Q 41 | ari | Percentage, Profit & Interest
+What is the difference between simple interest and compound interest on ₹ 10,000 for two years at 20% per annum compounded half-yearly?
+(1) ₹ 842
+(2) ₹ 756
+(3) ₹ 641
+(4) ₹ 542
+= 3
+~ SI = 10000 × 0·2 × 2 = ₹4000. Compounding half-yearly means 4 periods at 10%: CI = 10000(1·1⁴ − 1) = ₹4641. The difference is ₹641.
+
+Q 42 | alg | Polynomials & Quadratics
+Consider the following statements in respect of the polynomial a(b − c)(x − b)(x − c) + b(c − a)(x − c)(x − a) + c(a − b)(x − a)(x − b):
+1. The coefficient of x² is 0.
+2. The coefficient of x is (a − b)(b − c)(c − a).
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ The x² coefficient is a(b − c) + b(c − a) + c(a − b) = 0. The x coefficient works out to −(a − b)(b − c)(c − a); for example, a, b, c = 2, 5, 11 gives −162, not +162. So only statement 1 is true.
+
+Q 43 | alg | Polynomials & Quadratics
+Consider the following statements in respect of the polynomial 1 − x − xⁿ + xⁿ⁺¹, where n is a natural number:
+1. It is divisible by 1 − 2x + x².
+2. It is divisible by 1 − xⁿ.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ 1 − x − xⁿ + xⁿ⁺¹ = (1 − x)(1 − xⁿ). Since (1 − x) also divides 1 − xⁿ, the polynomial is divisible by (1 − x)² = 1 − 2x + x². So both statements are true.
+
+Q 44 | alg | Polynomials & Quadratics
+For what values of m, is mx² + mx + 8x + 9 a perfect square?
+(1) 1, 4
+(2) 4, 9
+(3) 9, 16
+(4) 4, 16
+= 4
+~ mx² + (m + 8)x + 9 is a perfect square when its discriminant is 0: (m + 8)² = 36m. This gives m² − 20m + 64 = 0, so m = 4 or 16.
+
+Q 45 | alg | Equations & Expressions
+If x = a + b + (a − b)²/(4a + 4b) and y = (a + b)/4 + ab/(a + b), then what is the value of (x − a)² − (y − b)²?
+(1) a²
+(2) b²
+(3) ab
+(4) a²b²
+= 2
+~ x − a = (a² + 2ab + 5b²)/(4(a + b)) and y − b = (a² + 2ab − 3b²)/(4(a + b)). Their difference is 2b²/(a + b) and their sum is (a + b)/2, so the expression equals b². For example, a = 3, b = 7 gives 49 = b².
+
+Q 46 | trg | Ratios & Identities
+Consider the following:
+1. cos⁴θ − sin⁴θ = 2 tan θ/(1 − tan²θ), 0 < θ < π/2
+2. cosec θ + cot θ = 1/(cosec θ − cot θ), 0 < θ < π/2
+3. cos²θ − sin²θ = (1 − tan²θ)/(1 + tan²θ), 0 < θ < π/2
+Which of the above equations are identities?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ cos⁴θ − sin⁴θ = cos 2θ, but 2 tan θ/(1 − tan²θ) = tan 2θ, so 1 is not an identity. Statement 2 follows from cosec²θ − cot²θ = 1. Statement 3 holds because both sides equal cos 2θ.
+
+Q 47 | trg | Ratios & Identities
+If sin θ = 12/13, then what is the value of (tan θ + sec θ)²(cosec θ − cot θ)⁻², 0 < θ < π/2?
+(1) 121/4
+(2) 169/9
+(3) 196/9
+(4) 225/4
+= 4
+~ With cos θ = 5/13: tan θ + sec θ = 12/5 + 13/5 = 5 and cosec θ − cot θ = 13/12 − 5/12 = 2/3. The value is 5² ÷ (2/3)² = 225/4.
+
+Q 48 | trg | Ratios & Identities
+If tan⁸θ + cot⁸θ = m, then what is the value of tan θ + cot θ?
+(1) √(√(m + 2) + 2)
+(2) √(√(√(m + 4) + 2))
+(3) √(√(√(m + 2) + 2) + 2)
+(4) √(√(√(m + 4) + 2) + 2)
+= 3
+~ Since tan θ · cot θ = 1, each step back uses (t + 1/t)² = t² + 1/t² + 2. So tan⁴θ + cot⁴θ = √(m + 2), then tan²θ + cot²θ = √(√(m + 2) + 2), and tan θ + cot θ = √(√(√(m + 2) + 2) + 2).
+
+Q 49 | trg | Ratios & Identities
+What is the minimum value of 6 − 4 sin θ, 0 ≤ θ ≤ π/2?
+(1) 1
+(2) 2
+(3) 4
+(4) 6
+= 2
+~ The expression is smallest when sin θ is largest (sin θ = 1 at θ = π/2), giving 6 − 4 = 2.
+
+Q 50 | trg | Ratios & Identities
+What is the value of x that satisfies 4 cos²30° + 2x sin 30° − cot²30° − 6 tan 15° tan 75° = 0?
+(1) 1
+(2) 2
+(3) 3
+(4) 6
+= 4
+~ 4 cos²30° = 3, 2x sin 30° = x, cot²30° = 3 and tan 15° tan 75° = 1. So 3 + x − 3 − 6 = 0, which gives x = 6.
+
+Q 51 | trg | Ratios & Identities
+What is the value of (cos² 32° + cos² 58°)/(sec² 50° − cot² 40°) + 4 tan 13° tan 37° tan 53° tan 77°?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 4
+~ cos² 58° = sin² 32°, so the numerator is 1; cot 40° = tan 50°, so the denominator is sec² 50° − tan² 50° = 1. Also tan 13° tan 77° = tan 37° tan 53° = 1, so the value is 1 + 4 = 5.
+
+Q 52 | trg | Ratios & Identities
+What is the value of
+(1 + cot² θ) (1 + cos θ) (1 − cos θ) − (1 + tan² θ) (1 + sin θ) (1 − sin θ)?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ The first product is cosec² θ · sin² θ = 1 and the second is sec² θ · cos² θ = 1, so the difference is 1 − 1 = 0.
+
+Q 53 | trg | Ratios & Identities
+If 2 cos² θ + sin θ − 2 = 0, 0 < θ ≤ π/2, then what is the value of θ?
+(1) π/6
+(2) π/4
+(3) π/3
+(4) π/2
+= 1
+~ Writing cos² θ = 1 − sin² θ gives sin θ (1 − 2 sin θ) = 0. Since θ > 0, sin θ = 1/2, so θ = π/6.
+
+Q 54 | trg | Heights & Distances
+A person on the top of a vertical tower observes a car moving at a uniform speed coming directly towards it. If it takes 6 minutes for the angle of depression to change from 30° to 45°, and further t minutes to reach the tower, which one of the following is correct?
+(1) 7·7 < t < 8
+(2) 8 < t < 8·3
+(3) 8·3 < t < 8·6
+(4) 8·6 < t < 8·9
+= 2
+~ For a tower of height H, the car is at distance H√3 at 30° and at H at 45°. It covers (√3 − 1)H in 6 min, so the last H takes t = 6/(√3 − 1) = 3(√3 + 1) ≈ 8·196 min.
+
+Q 55 | trg | Heights & Distances
+A woman is standing on the deck of a ship, which is h (in metres) above water level. She observes the angle of elevation of the top of a tower as 60° and the angle of depression of the base of the tower as 30°. What is the height of the tower?
+(1) 2h
+(2) 3h
+(3) 4h
+(4) 5h
+= 3
+~ From the 30° depression, the horizontal distance is d = h/tan 30° = h√3. The part of the tower above her eye level is d tan 60° = h√3 × √3 = 3h, so the height is h + 3h = 4h.
+
+Q 56 | gm | Lines, Angles & Triangles
+Let ABC be a right-angled triangle with sides 5 cm, 12 cm and 13 cm. If p is the length of the perpendicular drawn from vertex A on the hypotenuse BC, then what is the value of 13p?
+(1) 24
+(2) 48
+(3) 60
+(4) 90
+= 3
+~ Twice the area = 5 × 12 = 13 × p, so 13p = 60.
+
+Q 57 | gm | Circles & Quadrilaterals
+OABC is a rhombus whose three vertices lie on a circle with centre at O. If the area of the rhombus is 32√3 square cm, then what is the radius of the circle?
+(1) 4 cm
+(2) 6 cm
+(3) 8 cm
+(4) 16 cm
+= 3
+~ OA = OB = OC = r and AB = OA, so triangles OAB and OBC are equilateral. The area is 2 × (√3/4)r² = (√3/2)r² = 32√3, so r² = 64 and r = 8 cm.
+
+Q 58 | gm | Mensuration
+The surface area of a cube is increased by 25%. If p is the percentage increase in its length, then which one of the following is correct?
+(1) 16 < p < 18
+(2) 14 < p < 16
+(3) 12 < p < 14
+(4) 10 < p < 12
+= 4
+~ Surface area varies as the square of the side, so (1 + p/100)² = 1·25. That gives 1 + p/100 = √1·25 ≈ 1·118, so p ≈ 11·8.
+
+Q 59 | gm | Mensuration
+A solid cube is cut into two cuboids of equal volume. What is the ratio of total surface area of the given cube to that of one of the cuboids?
+(1) 2 : 1
+(2) 3 : 2
+(3) 4 : 3
+(4) 5 : 3
+= 2
+~ For a cube of side a the TSA is 6a². Each cuboid is a × a × a/2, with TSA 2(a² + a²/2 + a²/2) = 4a². The ratio is 6 : 4 = 3 : 2.
+
+Q 60 | gm | Mensuration
+The length of a diagonal of a cuboid is 11 cm. The surface area is 240 square cm. What is the sum of its length, breadth and height?
+(1) 16 cm
+(2) 17 cm
+(3) 18 cm
+(4) 19 cm
+= 4
+~ (l + b + h)² = (l² + b² + h²) + 2(lb + bh + hl) = 121 + 240 = 361, so l + b + h = 19 cm.
+
+Q 61 | gm | Mensuration
+What is the area of the circle (approximately) inscribed in a triangle with side lengths 12 cm, 16 cm and 20 cm?
+(1) 48 square cm
+(2) 50 square cm
+(3) 52 square cm
+(4) 54 square cm
+= 2
+~ The triangle is right-angled (12² + 16² = 20²), so its area is 96 and its semi-perimeter is 24. The inradius is r = 96/24 = 4, so the circle's area is 16π ≈ 50·3 cm².
+
+Q 62 | gm | Mensuration
+Two times the total surface area of a solid right circular cylinder is three times its curved surface area. If h is the height and r is the radius of the base of the cylinder, then which one of the following is correct?
+(1) h = r
+(2) h = 2r
+(3) 2h = 3r
+(4) 3h = 4r
+= 2
+~ 2(2πrh + 2πr²) = 3(2πrh) gives 4rh + 4r² = 6rh, so 4r² = 2rh and h = 2r.
+
+Q 63 | ari | Number System
+A floor of a big hall has dimensions 30 m 60 cm and 23 m 40 cm. It is to be paved with square tiles of same size. What is the minimum number of tiles required?
+(1) 30
+(2) 36
+(3) 169
+(4) 221
+= 4
+~ The largest tile side is HCF(3060, 2340) = 180 cm. That needs (3060/180) × (2340/180) = 17 × 13 = 221 tiles.
+
+Q 64 | ari | Speed & Distance
+How long will a man take to walk around the boundary of a square field of area 25 hectares at the rate of 5 km/hr?
+(1) 36 minutes
+(2) 30 minutes
+(3) 24 minutes
+(4) 18 minutes
+= 3
+~ 25 ha = 250000 m², so the side is 500 m and the perimeter is 2 km. Time = 2/5 h = 24 minutes.
+
+Q 65 | gm | Circles & Quadrilaterals
+Let x be the area of a square inscribed in a circle of radius r and y be the area of an equilateral triangle inscribed in the same circle. Which one of the following is correct?
+(1) 9x² = 16y²
+(2) 27x² = 64y²
+(3) 36x² = 49y²
+(4) 16x² = 21y²
+= 2
+~ The square's diagonal is 2r, so x = 2r². The triangle's side is r√3, so y = (3√3/4)r². Then x/y = 8/(3√3), so x²/y² = 64/27, i.e. 27x² = 64y².
+
+Q 66 | ari | Percentage, Profit & Interest
+If the length of a rectangle is increased by 66 2/3 %, then by what percent should the width of the rectangle be decreased in order to maintain the same area?
+(1) 50%
+(2) 45%
+(3) 40%
+(4) 35%
+= 3
+~ The length becomes 5/3 times, so the width must become 3/5 times to keep the area the same. That is a decrease of 2/5 = 40%.
+
+Q 67 | gm | Mensuration
+What is the maximum area that can be covered by three non-intersecting circles drawn inside a rectangle of sides 8 cm and 12 cm?
+(1) 16π square cm
+(2) 18π square cm
+(3) 20π square cm
+(4) 24π square cm
+= 4
+~ The largest circle fits the 8 cm width (radius 4) and uses an 8 × 8 part. The remaining 8 × 4 strip holds two circles of radius 2, so the area is 16π + 4π + 4π = 24π cm². These circles do not overlap the big one: the distance between centres is √(6² + 2²) ≈ 6·32 > 6.
+
+Q 68 | trg | Heights & Distances
+ABCD is a square field with AB = x. A vertical pole OP of height 2x stands at the centre O of the square field. If ∠APO = θ, then what is cot θ equal to?
+(1) √2
+(2) 2
+(3) 2√2
+(4) 3√2
+= 3
+~ OA is half the diagonal, x/√2. In right triangle AOP (right angle at O), cot θ = OP/OA = 2x ÷ (x/√2) = 2√2.
+
+Q 69 | gm | Mensuration
+A solid iron ball is melted and 64 smaller solid balls of equal size are made using the entire volume of iron. What is the ratio of the surface area of the larger ball to the sum of the surface areas of all the smaller balls?
+(1) 0·25
+(2) 0·5
+(3) 0·75
+(4) 1
+= 1
+~ R³ = 64r³, so R = 4r. The ratio is 4π(4r)² : 64 × 4πr² = 16 : 64 = 0·25.
+
+Q 70 | gm | Lines, Angles & Triangles
+A triangle ABC has been divided into four smaller triangles P, Q, R, S whose perimeters are 16 cm, 12 cm, 4 cm and 12 cm respectively. P, R and S contain the vertices A, B and C respectively. What is the perimeter of the triangle ABC?
+(1) 18 cm
+(2) 20 cm
+(3) 22 cm
+(4) 24 cm
+= 2
+~ The corner triangles P, R and S together use every part of ABC's sides once, plus each side of the inner triangle Q once. So P + R + S = perimeter(ABC) + perimeter(Q), and perimeter(ABC) = 16 + 4 + 12 − 12 = 20 cm.
+
+Q 71 | ari | Number System
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: What is the value of X?
+Statement I: The given number is divisible by 9.
+Statement II: X > 5.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ Divisibility by 25 forces Y5 = 25 or 75, so Y = 2 or 7. I: the digit sum 21 + X + Y must be a multiple of 9, giving (X, Y) = (4, 2) or (8, 7), so X is not unique. II alone allows X = 6 to 9. Together, X = 8.
+
+Q 72 | alg | Polynomials & Quadratics
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: What are the unique values of a, b and c if 2 is a root of the equation ax² + bx + c = 0?
+Statement I: Ratio of c to a is 1.
+Statement II: Ratio of b to a is (−5/2).
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ Both statements give only ratios, so the equation becomes a(x² − (5/2)x + 1) = 0, which does have 2 as a root. But any non-zero a works, so unique values of a, b and c cannot be found.
+
+Q 73 | alg | Sets, Logarithms & Inequalities
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: Is m > n, where m, n are non-zero numbers?
+Statement I: m/n > 1.
+Statement II: m > 2n.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ If n > 0, I gives m > n, but if n < 0 it gives m < n. Both statements hold for m = 3, n = 1 (m > n) and for m = −1·5, n = −1 (since −1·5 > −2, yet m < n). So the question cannot be answered.
+
+Q 74 | gm | Circles & Quadrilaterals
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: Can a circle be drawn through the points A, B and C?
+Statement I: AB = 5 cm, BC = 5 cm, CA = 6 cm.
+Statement II: AB = 3 cm, BC = 4 cm, CA = 7 cm.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 2
+~ A circle passes through three points exactly when they are not collinear. I: 5, 5, 6 form a genuine triangle, so yes. II: 3 + 4 = 7, so the points are collinear and the answer is no. Either statement alone answers the question.
+
+Q 75 | ari | Number System
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+x and y are consecutive odd integers.
+Question: Can the value of (x + y) be determined uniquely?
+Statement I: (x + y)⁴ = 256.
+Statement II: (x + y)³ < 16.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 3
+~ I gives x + y = ±4, which is not unique. II allows any x + y ≤ 2, such as 0, −4 or −8. Together, x + y = −4 (x = −3, y = −1).
+
+Q 76 | ari | Number System
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: Is p² + q² + q odd, where p, q are positive integers?
+Statement I: 2p + q is odd.
+Statement II: q − 2p is odd.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 4
+~ q² + q = q(q + 1) is always even, so p² + q² + q is odd exactly when p is odd. Both statements only tell us that q is odd and say nothing about p, so the question cannot be answered.
+
+Q 77 | gm | Circles & Quadrilaterals
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: What is the area of the circle C?
+Statement I: An arc of length 7 cm subtends an angle 30° at the centre of C.
+Statement II: A chord of length 10 cm subtends an angle 90° at the centre of C.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 2
+~ I: r × π/6 = 7 gives r = 42/π, which fixes the area. II: the chord is r√2 = 10, so r = 5√2 and the area is 50π. Each statement alone is sufficient.
+
+Q 78 | gm | Lines, Angles & Triangles
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+Question: Is triangle Δ right angled?
+Statement I: The length of the line segment joining the mid-points of two sides of Δ is half of the third side of Δ.
+Statement II: The angles of Δ are in the ratio 1 : 2 : 3.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ I is the mid-point theorem, which is true of every triangle, so it tells us nothing. II gives angles 30°, 60°, 90°, so Δ is right-angled. Only II answers the question.
+
+Q 79 | gm | Lines, Angles & Triangles
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+The lengths of two longer sides of the triangle Δ are 25 cm and 24 cm.
+Question: What is the length of the shortest side?
+Statement I: The angles of Δ are in the ratio 1 : 2 : 3.
+Statement II: The length of the perpendicular drawn on the longest side of Δ from its opposite vertex is 6·72 cm.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 1
+~ II: area = ½ × 25 × 6·72 = 84 = ½ × 24 × 25 × sin C, so sin C = 0·28 and cos C = 0·96. Then the shortest side² = 24² + 25² − 2·24·25·0·96 = 49, giving 7 cm (a 7-24-25 right triangle). I (a 30-60-90 triangle needs sides in ratio 1 : √3 : 2) does not fit sides 24 and 25, so it does not give the answer, and only II works.
+
+Q 80 | gm | Circles & Quadrilaterals
+Passage: For the next ten (10) items that follow: Each item contains a Question followed by two Statements. Answer each item using the following instructions:
+(a) Choose this option if the Question can be answered by one of the Statements alone but not by the other.
+(b) Choose this option if the Question can be answered by either Statement alone.
+(c) Choose this option if the Question can be answered by using both the Statements together, but cannot be answered by using either Statement alone.
+(d) Choose this option if the Question cannot be answered even by using both Statements together.
+A number 277XY5 (where X, Y are digits) is divisible by 25.
+
+A chord PQ of the circle C divides it into two segments such that 3 times the area of the major segment is 4 times the area of the minor segment.
+Question: What is the radius of C?
+Statement I: Area of the minor segment is 66 square cm.
+Statement II: Area of the major segment is 88 square cm.
+(1) (a)
+(2) (b)
+(3) (c)
+(4) (d)
+= 2
+~ Major : minor = 4 : 3, so either statement gives both segments (66 and 88). The circle's area is then 154 = (22/7)r², so r = 7 cm. Either statement alone works.
+
+Q 81 | sts | Statistics & Data
+Passage: Consider the following data for the next two (02) items that follow:
+Class: 0 – 30, 30 – 60, 60 – 90, 90 – 120
+Frequency: 4, 5, 7, 4
+
+What is the mode of the distribution?
+(1) 60
+(2) 72
+(3) 75
+(4) 80
+= 2
+~ The modal class is 60 – 90 (f = 7). Mode = 60 + 30 × (7 − 5)/(2·7 − 5 − 4) = 60 + 30 × 2/5 = 72.
+
+Q 82 | sts | Statistics & Data
+Passage: Consider the following data for the next two (02) items that follow:
+Class: 0 – 30, 30 – 60, 60 – 90, 90 – 120
+Frequency: 4, 5, 7, 4
+
+If the median (P) and mode (Q) satisfy the relation 7(Q − P) = 9R, then what is the value of R?
+(1) 6
+(2) 5
+(3) 3
+(4) 1
+= 1
+~ N/2 = 10 falls in the 60 – 90 class (cf before it = 9), so P = 60 + 30 × (10 − 9)/7 = 450/7. With Q = 72, we get Q − P = 54/7, so 9R = 54 and R = 6.
+
+Q 83 | sts | Statistics & Data
+Passage: Consider the following data for the next two (02) items that follow:
+Class: 40 – 50, 50 – 60, 60 – 70, 70 – 80
+Frequency: 4, 3, 1, 2
+
+What is the mean of the distribution?
+(1) 51
+(2) 52
+(3) 54
+(4) 56
+= 4
+~ The mid-values are 45, 55, 65 and 75. Mean = (45·4 + 55·3 + 65·1 + 75·2)/10 = 560/10 = 56.
+
+Q 84 | sts | Statistics & Data
+Passage: Consider the following data for the next two (02) items that follow:
+Class: 40 – 50, 50 – 60, 60 – 70, 70 – 80
+Frequency: 4, 3, 1, 2
+
+If M is the median, then what is the value of 3M?
+(1) 53 1/3
+(2) 60
+(3) 160
+(4) 180
+= 3
+~ N/2 = 5 falls in the 50 – 60 class (cf before it = 4, f = 3). So M = 50 + 10 × (5 − 4)/3 = 160/3, and 3M = 160.
+
+Q 85 | gm | Mensuration
+The plinth of a house has an area of 200 square metres. It is rectangular in shape and its length and breadth are in the ratio 2 : 1. The owner of the house extends the terrace by 1 m on each side. What is the percentage of area that has increased in the terrace relative to the plinth?
+(1) 40%
+(2) 32%
+(3) 20%
+(4) 15·5%
+= 2
+~ 2b × b = 200 gives a plinth of 20 m × 10 m. Extending 1 m on every side makes the terrace 22 × 12 = 264 m², an increase of 64/200 = 32%.
+
+Q 86 | gm | Mensuration
+A square sheet of side length 44 cm is rolled along one of its sides to form a cylinder by making opposite edges just to touch each other. What is the volume of the cylinder? (Take π = 22/7)
+(1) 6776 cubic cm
+(2) 6248 cubic cm
+(3) 5896 cubic cm
+(4) 5680 cubic cm
+= 1
+~ The circumference is 2πr = 44, so r = 7 cm, and h = 44 cm. V = (22/7) × 49 × 44 = 6776 cm³.
+
+Q 87 | gm | Mensuration
+The volume of a cuboid is 3600 cubic cm. The areas of two adjacent faces are 225 square cm and 144 square cm. What is the area of the other adjacent face?
+(1) 400 square cm
+(2) 360 square cm
+(3) 320 square cm
+(4) 300 square cm
+= 1
+~ (lb)(bh)(hl) = (lbh)², so the third face = 3600²/(225 × 144) = 12960000/32400 = 400 cm².
+
+Q 88 | gm | Lines, Angles & Triangles
+The perimeter and the area of a right-angled triangle are 36 cm and 54 square cm respectively. What is the length of the hypotenuse?
+(1) 12 cm
+(2) 14 cm
+(3) 15 cm
+(4) 16 cm
+= 3
+~ Here a + b = 36 − c and ab = 108. Squaring the first gives (36 − c)² = c² + 2·108, so 1296 − 72c = 216 and c = 15 cm (a 9-12-15 triangle).
+
+Q 89 | alg | Sets, Logarithms & Inequalities
+Let X = {x | x = 2 + 4k, where k = 0, 1, 2, 3, ... 24}. Let S be a subset of X such that the sum of no two elements of S is 100. What is the maximum possible number of elements in S?
+(1) 10
+(2) 11
+(3) 12
+(4) 13
+= 4
+~ X = {2, 6, ..., 98} has 25 elements. They form 12 pairs adding to 100 (2 + 98, ..., 46 + 54), plus 50 on its own. Taking one from each pair plus 50 gives at most 12 + 1 = 13 elements.
+
+Q 90 | gm | Mensuration
+The perimeter of a sector of a circle of radius 5·2 cm is 16·4 cm. What is the area of the sector?
+(1) 15·6 square cm
+(2) 15 square cm
+(3) 14·4 square cm
+(4) 14·1 square cm
+= 1
+~ The arc length is 16·4 − 2 × 5·2 = 6 cm. Area = ½ × arc × r = ½ × 6 × 5·2 = 15·6 cm².
+
+Q 91 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next three (03) items that follow: In the triangle ABC, AB = 6 cm, BC = 8 cm and AC = 10 cm. The perpendicular dropped from B meets the side AC at D. A circle of radius BD (with centre B) cuts AB and BC at P and Q respectively as shown in the figure.
+[Figure: triangle ABC with the right angle at B, AB vertical (A at the top) and BC horizontal (C to the right). BD is perpendicular to the hypotenuse AC, with a right-angle mark at D. A circle centred at B with radius BD touches AC at D and cuts AB at P (between A and B) and BC at Q (between B and C).]
+
+What is the length of QC?
+(1) 4·4 cm
+(2) 4·2 cm
+(3) 3·6 cm
+(4) 3·2 cm
+= 4
+~ 6² + 8² = 10², so ∠B = 90°. BD = (6 × 8)/10 = 4·8 cm = BQ, so QC = 8 − 4·8 = 3·2 cm.
+
+Q 92 | trg | Ratios & Identities
+Passage: Consider the following for the next three (03) items that follow: In the triangle ABC, AB = 6 cm, BC = 8 cm and AC = 10 cm. The perpendicular dropped from B meets the side AC at D. A circle of radius BD (with centre B) cuts AB and BC at P and Q respectively as shown in the figure.
+[Figure: triangle ABC with the right angle at B, AB vertical (A at the top) and BC horizontal (C to the right). BD is perpendicular to the hypotenuse AC, with a right-angle mark at D. A circle centred at B with radius BD touches AC at D and cuts AB at P (between A and B) and BC at Q (between B and C).]
+
+If ∠ABD = θ, then what is sin θ equal to?
+(1) 0·4
+(2) 0·5
+(3) 0·6
+(4) 0·8
+= 3
+~ In right triangle ADB, AD = AB²/AC = 36/10 = 3·6. So sin θ = AD/AB = 3·6/6 = 0·6 (equivalently ∠ABD = ∠C and sin C = 6/10).
+
+Q 93 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next three (03) items that follow: In the triangle ABC, AB = 6 cm, BC = 8 cm and AC = 10 cm. The perpendicular dropped from B meets the side AC at D. A circle of radius BD (with centre B) cuts AB and BC at P and Q respectively as shown in the figure.
+[Figure: triangle ABC with the right angle at B, AB vertical (A at the top) and BC horizontal (C to the right). BD is perpendicular to the hypotenuse AC, with a right-angle mark at D. A circle centred at B with radius BD touches AC at D and cuts AB at P (between A and B) and BC at Q (between B and C).]
+
+What is the radius of the circle?
+(1) 5 cm
+(2) 4·8 cm
+(3) 4·4 cm
+(4) 4 cm
+= 2
+~ The radius is BD, the altitude to the hypotenuse: AB × BC/AC = 48/10 = 4·8 cm.
+
+Q 94 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next three (03) items that follow: In the figure given below, a circle is inscribed in a square PQRS. A rectangle at the corner P that measures 4 cm × 2 cm and a square at the corner R are drawn.
+[Figure: square PQRS with P at bottom-left, Q at bottom-right, R at top-right and S at top-left, with a circle inscribed in it. At corner P is a rectangle 4 cm along PQ and 2 cm along PS; its corner opposite P lies on the circle. At corner R is a small square whose corner opposite R lies on the circle. The shaded region is the area near corner P between the circle and the sides PS and PQ, excluding the 4 × 2 rectangle.]
+
+What is the area of the circle?
+(1) 100π square cm
+(2) 96π square cm
+(3) 50π square cm
+(4) 48π square cm
+= 1
+~ Place P at the origin so the centre is (r, r). The rectangle's corner (4, 2) lies on the circle: (r − 4)² + (r − 2)² = r², so r² − 12r + 20 = 0 and r = 10 (r = 2 is too small). The area is 100π cm².
+
+Q 95 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next three (03) items that follow: In the figure given below, a circle is inscribed in a square PQRS. A rectangle at the corner P that measures 4 cm × 2 cm and a square at the corner R are drawn.
+[Figure: square PQRS with P at bottom-left, Q at bottom-right, R at top-right and S at top-left, with a circle inscribed in it. At corner P is a rectangle 4 cm along PQ and 2 cm along PS; its corner opposite P lies on the circle. At corner R is a small square whose corner opposite R lies on the circle. The shaded region is the area near corner P between the circle and the sides PS and PQ, excluding the 4 × 2 rectangle.]
+
+What is the area of the smaller square?
+(1) 50 (3 − √2) square cm
+(2) 25 (3 − 2√2) square cm
+(3) 25 (3 + 2√2) square cm
+(4) 50 (3 − 2√2) square cm
+= 4
+~ The inner corner of the square of side s at R is (r − s)√2 from the centre, and this equals r = 10. So s = 10 − 5√2, and s² = 150 − 100√2 = 50(3 − 2√2) cm².
+
+Q 96 | gm | Mensuration
+Passage: Consider the following for the next three (03) items that follow: In the figure given below, a circle is inscribed in a square PQRS. A rectangle at the corner P that measures 4 cm × 2 cm and a square at the corner R are drawn.
+[Figure: square PQRS with P at bottom-left, Q at bottom-right, R at top-right and S at top-left, with a circle inscribed in it. At corner P is a rectangle 4 cm along PQ and 2 cm along PS; its corner opposite P lies on the circle. At corner R is a small square whose corner opposite R lies on the circle. The shaded region is the area near corner P between the circle and the sides PS and PQ, excluding the 4 × 2 rectangle.]
+
+What is the area of the shaded region?
+(1) (96 − 25π) square cm
+(2) (92 − 25π) square cm
+(3) (96 − 16π) square cm
+(4) (92 − 16π) square cm
+= 2
+~ The corner region outside the circle at P is (20² − 100π)/4 = 100 − 25π. Removing the 4 × 2 rectangle leaves 92 − 25π cm².
+
+Q 97 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next two (02) items that follow: In the following figure, a rectangle ABCD is inscribed in a circle of radius r. Given ∠DAE = 30° and ∠ACD = 30°.
+[Figure: a circle with inscribed rectangle ABCD; D top-left, C top-right, B bottom-right, A bottom-left. Diagonal AC is drawn, with ∠ACD = 30° marked at C. A point E on side DC is joined to A, with ∠DAE = 30° marked at A.]
+
+What is the ratio of the area of the circle to the area of the rectangle?
+(1) π/√2
+(2) π/√3
+(3) 2π/√3
+(4) 3π/√2
+= 2
+~ The diagonal AC = 2r. With ∠ACD = 30°, AD = 2r sin 30° = r and DC = 2r cos 30° = r√3, so the rectangle's area is √3 r². The ratio is πr² : √3 r² = π/√3.
+
+Q 98 | gm | Lines, Angles & Triangles
+Passage: Consider the following for the next two (02) items that follow: In the following figure, a rectangle ABCD is inscribed in a circle of radius r. Given ∠DAE = 30° and ∠ACD = 30°.
+[Figure: a circle with inscribed rectangle ABCD; D top-left, C top-right, B bottom-right, A bottom-left. Diagonal AC is drawn, with ∠ACD = 30° marked at C. A point E on side DC is joined to A, with ∠DAE = 30° marked at A.]
+
+What is the area of Δ AEC?
+(1) r²/√3
+(2) r²/(2√3)
+(3) r²/(3√3)
+(4) 2r²/√3
+= 1
+~ DE = AD tan 30° = r/√3, so EC = r√3 − r/√3 = 2r/√3. With height AD = r, the area is ½ × (2r/√3) × r = r²/√3.
+
+Q 99 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next two (02) items that follow: In the following figure, a triangle ABC is inscribed in a circle with centre at O. Let ∠POA = x° and ∠OQB = y°. Further, OB = BQ.
+[Figure: a circle with centre O; P is on the circle on the left. The line PO is extended beyond the circle to an external point Q on the right. A is on the upper-left arc and C on the lower arc; the line AQ cuts the circle at B. OA and OB are drawn, and triangle ABC is drawn with AC and BC. x° is ∠POA at O and y° is ∠OQB at Q.]
+
+What is the relation between x and y?
+(1) x = y
+(2) 2x = 3y
+(3) x = 3y
+(4) 3x = 4y
+= 3
+~ OB = BQ gives ∠BOQ = y, so the exterior angle ∠OBA = 2y, and ∠OAB = 2y (since OA = OB). In triangle AOQ the exterior angle at O is x = ∠OAQ + ∠OQA = 2y + y = 3y.
+
+Q 100 | gm | Circles & Quadrilaterals
+Passage: Consider the following for the next two (02) items that follow: In the following figure, a triangle ABC is inscribed in a circle with centre at O. Let ∠POA = x° and ∠OQB = y°. Further, OB = BQ.
+[Figure: a circle with centre O; P is on the circle on the left. The line PO is extended beyond the circle to an external point Q on the right. A is on the upper-left arc and C on the lower arc; the line AQ cuts the circle at B. OA and OB are drawn, and triangle ABC is drawn with AC and BC. x° is ∠POA at O and y° is ∠OQB at Q.]
+
+If y = 15, then what is ∠ACB equal to?
+(1) 30°
+(2) 40°
+(3) 45°
+(4) 60°
+= 4
+~ ∠OAB = ∠OBA = 2y = 30°, so ∠AOB = 120°. The inscribed angle ∠ACB is half of that, 60°.

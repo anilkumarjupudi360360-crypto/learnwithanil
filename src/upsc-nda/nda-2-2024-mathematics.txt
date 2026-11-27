@@ -1,0 +1,1207 @@
+# UPSC National Defence Academy and Naval Academy Examination (II) 2024: Mathematics, held 1 September 2024.
+# Source: the official UPSC question paper. UPSC has not published its answer key: answers worked out and checked by Learn with Anil. Explanations by Learn with Anil.
+
+Q 1 | mat | Matrices
+Let X be a matrix of order 3×3, Y be a matrix of order 2×3 and Z be a matrix of order 3×2. Which of the following statements are correct?
+I. (ZY)X is defined and is a square matrix of order 3.
+II. Y(XZ) is defined and is a square matrix of order 2.
+III. X(YZ) is not defined.
+Select the answer using the code given below.
+(1) I and II only
+(2) II and III only
+(3) I and III only
+(4) I, II and III
+= 4
+~ ZY is (3×2)(2×3) = 3×3, so (ZY)X is 3×3; XZ is 3×2, so Y(XZ) is (2×3)(3×2) = 2×2; YZ is 2×2 and X is 3×3, so X(YZ) is not defined. All three are correct.
+
+Q 2 | alg | Sets, Relations & Functions
+Consider the following statements :
+I. The set of all irrational numbers between √12 and √15 is an infinite set.
+II. The set of all odd integers less than 1000 is a finite set.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 1
+~ Between any two distinct reals there are infinitely many irrationals, so I is true. Odd integers less than 1000 include all negative odd integers (…, −3, −1, 1, …, 999), so the set is infinite and II is false.
+
+Q 3 | alg | Permutations & Combinations
+How many 4-digit numbers are there having all digits as odd?
+(1) 625
+(2) 400
+(3) 196
+(4) 120
+= 1
+~ Each of the 4 places can be any of 1, 3, 5, 7, 9 (repetition allowed, and 0 is not odd so no leading-zero issue): 5⁴ = 625 (confirmed by counting in python).
+
+Q 4 | alg | Complex Numbers
+If ω ≠ 1 is a cube root of unity, then what is (1 + ω − ω²)¹⁰⁰ + (1 − ω + ω²)¹⁰⁰ equal to?
+(1) 2¹⁰⁰ω²
+(2) 2¹⁰⁰ω
+(3) 2¹⁰⁰
+(4) −2¹⁰⁰
+= 4
+~ 1 + ω − ω² = −2ω² and 1 − ω + ω² = −2ω, so the sum is 2¹⁰⁰(ω²⁰⁰ + ω¹⁰⁰) = 2¹⁰⁰(ω² + ω) = −2¹⁰⁰.
+
+Q 5 | mat | Matrices
+Let A and B be two square matrices of same order. If AB is a null matrix, then which one of the following is correct?
+(1) Both A and B are null matrices
+(2) Either A or B is a null matrix
+(3) B is a null matrix if A is a non-singular matrix
+(4) Both A and B are singular matrices
+= 3
+~ If A is non-singular, multiply AB = O on the left by A⁻¹ to get B = O. Options (1), (2) fail because two non-zero matrices can have a zero product, and (4) fails when A is invertible and B = O.
+
+Q 6 | alg | Binomial Theorem
+In the expansion of (1 + x)ᵖ (1 + x)^q, if the coefficient of x³ is 35, then what is the value of (p + q)?
+(1) 5
+(2) 6
+(3) 7
+(4) 8
+= 3
+~ (1 + x)ᵖ(1 + x)^q = (1 + x)^(p+q), so the coefficient of x³ is C(p+q, 3) = 35, which gives p + q = 7 (C(7, 3) = 35).
+
+Q 7 | alg | Sequences & Series
+If p times the pth term of an AP is equal to q times the qth term (p ≠ q), then what is the (p + q)th term equal to?
+(1) 0
+(2) p + q
+(3) pq
+(4) pq(p + q)
+= 1
+~ p[a + (p−1)d] = q[a + (q−1)d] gives (p − q)[a + (p + q − 1)d] = 0; since p ≠ q, a + (p + q − 1)d = 0, which is exactly the (p + q)th term.
+
+Q 8 | alg | Sequences & Series
+Let p = ln(x), q = ln(x³) and r = ln(x⁵), where x > 1. Which of the following statements is/are correct?
+I. p, q and r are in AP.
+II. p, q and r can never be in GP.
+Select the answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ p, q, r = ln x, 3 ln x, 5 ln x, which are in AP. For a GP we would need q² = pr, i.e. 9(ln x)² = 5(ln x)², impossible since ln x ≠ 0 for x > 1; so both statements hold.
+
+Q 9 | alg | Complex Numbers
+If Z = (1/3) × determinant [[i, 2i, 1], [2i, 3i, 2], [3, 1, 3]] = x + iy; i = √(−1), then what is modulus of Z equal to?
+(1) 1
+(2) √2
+(3) 2
+(4) √3
+= 2
+~ Expanding, the determinant equals 3 + 3i, so Z = 1 + i and |Z| = √2 (checked numerically in python).
+
+Q 10 | alg | Complex Numbers
+What is the value of the sum Σ (n = 1 to 20) (iⁿ⁻¹ + iⁿ + iⁿ⁺¹), where i = √(−1)?
+(1) −2i
+(2) 0
+(3) 1
+(4) 2i
+= 2
+~ Each of Σiⁿ⁻¹, Σiⁿ, Σiⁿ⁺¹ over 20 consecutive powers is a sum of 5 complete cycles (1 + i − 1 − i = 0), so the total is 0.
+
+Q 11 | alg | Sequences & Series
+Let x > 1, y > 1, z > 1 be in GP. Then 1/(1 + ln x), 1/(1 + ln y), 1/(1 + ln z) are
+(1) in AP
+(2) in GP
+(3) in HP
+(4) neither in AP nor in GP nor in HP
+= 3
+~ y² = xz gives 2 ln y = ln x + ln z, so ln x, ln y, ln z (and hence 1 + ln x, 1 + ln y, 1 + ln z) are in AP; their reciprocals are therefore in HP.
+
+Q 12 | mat | Determinants
+If ω = −1/2 + i√3/2, then what is determinant [[1 + ω, 1 + ω², ω + ω²], [1, ω, ω²], [1/ω, 1/ω², 1]] equal to?
+(1) 0
+(2) ω
+(3) ω²
+(4) 1 − ω²
+= 1
+~ Using 1 + ω + ω² = 0, row 1 is (−ω², −ω, −1); using 1/ω = ω² and 1/ω² = ω, row 3 is (ω², ω, 1). So row 1 = −(row 3) and the determinant is 0 (python gives 0).
+
+Q 13 | alg | Sequences & Series
+If the sum of the first n terms of a series is n(2n + 1), then what is the nth term?
+(1) 4n − 1
+(2) 4n
+(3) 4n + 1
+(4) 4n + 3
+= 1
+~ Tₙ = Sₙ − Sₙ₋₁ = (2n² + n) − (2(n−1)² + (n−1)) = 4n − 1 (check: T₁ = S₁ = 3).
+
+Q 14 | alg | Permutations & Combinations
+In how many ways can the letters of the word INDIA be permutated such that in each combination, vowels should occupy odd positions?
+(1) 3
+(2) 6
+(3) 9
+(4) 12
+= 2
+~ The vowels I, I, A fill the odd positions 1, 3, 5 in 3!/2! = 3 ways and N, D fill positions 2, 4 in 2! = 2 ways: 3 × 2 = 6 (confirmed by listing in python).
+
+Q 15 | alg | Permutations & Combinations
+The letters of the word EQUATION are arranged in such a way that all vowels as well as consonants are together. How many such arrangements are there?
+(1) 240
+(2) 720
+(3) 1440
+(4) 1620
+= 3
+~ Vowels E, U, A, I, O form one block (5! ways) and consonants Q, T, N another (3! ways); the two blocks can be ordered in 2! ways: 2 × 120 × 6 = 1440.
+
+Q 16 | alg | Quadratic Equations & Inequalities
+If n is a root of the equation x² + px + m = 0 and m is a root of the equation x² + px + n = 0, where m ≠ n, then what is the value of p + m + n?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 3
+~ n² + pn + m = 0 and m² + pm + n = 0; subtracting gives (n − m)(n + m + p − 1) = 0, and since m ≠ n, p + m + n = 1.
+
+Q 17 | alg | Permutations & Combinations
+In how many ways can a student choose (n − 2) courses out of n courses if 2 courses are compulsory (n > 4)?
+(1) (n − 3)(n − 4)
+(2) (n − 1)(n − 2)
+(3) (n − 3)(n − 4)/2
+(4) (n − 2)(n − 3)/2
+= 4
+~ The 2 compulsory courses are taken, so (n − 4) more are chosen from the remaining (n − 2): C(n−2, n−4) = C(n−2, 2) = (n − 2)(n − 3)/2.
+
+Q 18 | mat | Determinants
+If Dₙ = determinant [[n, 20, 30], [n², 40, 50], [n³, 60, 70]], then what is the value of Σ (n = 1 to 4) Dₙ ?
+(1) −10000
+(2) −10
+(3) 10
+(4) 10000
+= 1
+~ Only the first column depends on n, so the sum is the determinant with first column (Σn, Σn², Σn³) = (10, 30, 100): det [[10, 20, 30], [30, 40, 50], [100, 60, 70]] = −10000 (checked in python).
+
+Q 19 | mat | Matrices
+Consider the following in respect of the matrices P = [[0, c, −b], [−c, 0, a], [b, −a, 0]] and Q = [[a², ab, ac], [ab, b², bc], [ac, bc, c²]]
+I. PQ is a null matrix.
+II. QP is an identity matrix of order 3.
+III. PQ = QP
+Which of the above is/are correct?
+(1) I only
+(2) II only
+(3) I and III
+(4) II and III
+= 3
+~ Q = vvᵀ with v = (a, b, c), and Pv = (cb − bc, −ca + ac, ab − ab) = 0, so PQ = (Pv)vᵀ = O; also QP = v(Pᵀv)ᵀ = −v(Pv)ᵀ = O. Hence PQ = QP = O, and II is false.
+
+Q 20 | mat | Determinants
+If P is a skew-symmetric matrix of order 3, then what is det(P) equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 3
+= 2
+~ det(P) = det(Pᵀ) = det(−P) = (−1)³ det(P) = −det(P), so det(P) = 0 for any odd-order skew-symmetric matrix.
+
+Q 21 | trg | Inverse Trigonometric Functions
+If 4 sin⁻¹x + cos⁻¹x = π, then what is sin⁻¹x + 4 cos⁻¹x equal to?
+(1) π/2
+(2) π
+(3) 3π/2
+(4) 2π
+= 3
+~ With sin⁻¹x + cos⁻¹x = π/2, the given equation gives 3 sin⁻¹x = π/2, so sin⁻¹x = π/6 and cos⁻¹x = π/3. Then π/6 + 4π/3 = 3π/2.
+
+Q 22 | trg | Inverse Trigonometric Functions
+What is cot²(sec⁻¹2) + tan²(cosec⁻¹3) equal to?
+(1) 11/12
+(2) 11/24
+(3) 7/24
+(4) 1/24
+= 2
+~ cot²θ = 1/(sec²θ − 1) = 1/3 for sec θ = 2, and tan²φ = 1/(cosec²φ − 1) = 1/8 for cosec φ = 3. Sum = 1/3 + 1/8 = 11/24.
+
+Q 23 | trg | Properties of Triangles
+In a triangle ABC, a/cos A = b/cos B = c/cos C. What is the area of the triangle if a = 6 cm?
+(1) 9√3 square cm
+(2) 12 square cm
+(3) 18√3 square cm
+(4) 24 square cm
+= 1
+~ By the sine rule a = k sin A etc., so tan A = tan B = tan C and the triangle is equilateral. Area = (√3/4) × 6² = 9√3 cm².
+
+Q 24 | trg | Ratios & Identities
+The roots of the equation 7x² − 6x + 1 = 0 are tan α and tan β, where 2α and 2β are the angles of a triangle. Which one of the following is correct?
+(1) The triangle is equilateral
+(2) The triangle is isosceles but not right-angled
+(3) The triangle is right-angled
+(4) The triangle is right-angled isosceles
+= 3
+~ tan(α + β) = (6/7)/(1 − 1/7) = 1, so α + β = 45° and 2α + 2β = 90°; the third angle is 90°. The roots are distinct (discriminant 8 > 0), so 2α ≠ 2β (about 64.5° and 25.5°) and the triangle is not isosceles.
+
+Q 25 | trg | Properties of Triangles
+In a triangle ABC, ∠A = 75° and ∠B = 45°. What is 2a − b equal to?
+(1) c
+(2) √2c
+(3) 2c
+(4) 2√2c
+= 2
+~ C = 60°. By the sine rule (2a − b)/c = (2 sin 75° − sin 45°)/sin 60° = (√6/2)/(√3/2) = √2, so 2a − b = √2c.
+
+Q 26 | trg | Ratios & Identities
+What is the number of solutions of the equation cot 2x · cot 3x = 1 for 0 < x < π?
+(1) Only one
+(2) Only two
+(3) Only five
+(4) More than five
+= 3
+~ cot 2x cot 3x = 1 gives cos 2x cos 3x − sin 2x sin 3x = 0, i.e. cos 5x = 0, so x = π/10, 3π/10, π/2, 7π/10, 9π/10 (five values), which is the intended answer. Strictly, at x = π/2 cot 2x = cot π is undefined, so only four values actually satisfy the equation (checked in python) and no option is exactly right. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 27 | trg | Ratios & Identities
+What is the general solution of cos¹⁰⁰x − sin¹⁰⁰x = 1? (where n is an integer)
+(1) nπ
+(2) (2n + 1)π
+(3) 2nπ
+(4) (2n + 1)π/2
+= 1
+~ cos¹⁰⁰x = 1 + sin¹⁰⁰x ≥ 1, but cos¹⁰⁰x ≤ 1, so sin x = 0 and cos²x = 1, giving x = nπ.
+
+Q 28 | trg | Properties of Triangles
+In a triangle ABC, tan A + tan B + tan C = k. What is the value of cot A cot B cot C?
+(1) 0·5k
+(2) 1/k
+(3) 3/k
+(4) 1/k³
+= 2
+~ In a triangle A + B + C = π, so tan A + tan B + tan C = tan A tan B tan C = k; hence cot A cot B cot C = 1/k.
+
+Q 29 | trg | Ratios & Identities
+What is sin 12° sin 48° equal to?
+(1) (√5 − 1)/4
+(2) (√5 + 1)/4
+(3) (√5 − 1)/8
+(4) (√5 + 1)/8
+= 3
+~ sin 12° sin 48° = ½[cos 36° − cos 60°] = ½[(√5 + 1)/4 − ½] = (√5 − 1)/8 ≈ 0.1545 (matches python).
+
+Q 30 | trg | Ratios & Identities
+What is (cos 17° − sin 17°)/(cos 17° + sin 17°) equal to?
+(1) tan 34°
+(2) cot 34°
+(3) tan 62°
+(4) cot 62°
+= 4
+~ Dividing by cos 17°: (1 − tan 17°)/(1 + tan 17°) = tan(45° − 17°) = tan 28° = cot 62°.
+
+Q 31 | trg | Ratios & Identities
+Consider the following numbers :
+I. tan 22·5°
+II. cot 22·5°
+III. tan 22·5° − cot 22·5°
+How many of the above are irrational numbers?
+(1) None
+(2) Only one
+(3) Only two
+(4) All three
+= 3
+~ tan 22.5° = √2 − 1 and cot 22.5° = √2 + 1 are irrational, but their difference is (√2 − 1) − (√2 + 1) = −2, which is rational. So only two.
+
+Q 32 | trg | Ratios & Identities
+If x/cos θ = y/cos(2π/3 − θ) = z/cos(2π/3 + θ), then what is x + y + z equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 3
+= 2
+~ x + y + z = k[cos θ + cos(2π/3 − θ) + cos(2π/3 + θ)] = k[cos θ + 2 cos(2π/3) cos θ] = k[cos θ − cos θ] = 0.
+
+Q 33 | trg | Ratios & Identities
+If p tan(θ − 30°) = q tan(θ + 120°), then what is (p + q)/(p − q) equal to?
+(1) sin 2θ
+(2) cos 2θ
+(3) 2 sin 2θ
+(4) 2 cos 2θ
+= 4
+~ p/q = tan(θ + 120°)/tan(θ − 30°), so (p + q)/(p − q) = sin(2θ + 90°)/sin 150° = cos 2θ/(1/2) = 2 cos 2θ (verified numerically).
+
+Q 34 | alg | Sets, Relations & Functions
+Let P and Q be two non-void relations on a set A. Which of the following statements are correct?
+I. P and Q are reflexive ⇒ P ∩ Q is reflexive.
+II. P and Q are symmetric ⇒ P ∪ Q is symmetric.
+III. P and Q are transitive ⇒ P ∩ Q is transitive.
+Select the answer using the code given below.
+(1) I and II only
+(2) II and III only
+(3) I and III only
+(4) I, II and III
+= 4
+~ Every (a, a) lies in both P and Q, so in P ∩ Q; if (a, b) ∈ P ∪ Q then (b, a) is in the same relation, so in P ∪ Q; and if (a, b), (b, c) ∈ P ∩ Q, transitivity of each gives (a, c) ∈ P ∩ Q. All three hold.
+
+Q 35 | alg | Sets, Relations & Functions
+If A and B are two non-empty sets having 10 elements in common, then how many elements do A × B and B × A have in common?
+(1) 10
+(2) 20
+(3) 40
+(4) 100
+= 4
+~ (A × B) ∩ (B × A) = (A ∩ B) × (A ∩ B), which has 10 × 10 = 100 elements.
+
+Q 36 | alg | Binomial Theorem
+What is the remainder when 7ⁿ − 6n is divided by 36 for n = 100?
+(1) 0
+(2) 1
+(3) 2
+(4) 6
+= 2
+~ 7ⁿ = (1 + 6)ⁿ = 1 + 6n + 36(…), so 7ⁿ − 6n leaves remainder 1 on division by 36 (python: (7¹⁰⁰ − 600) mod 36 = 1).
+
+Q 37 | ag | Circles & Conics
+What is the maximum number of possible points of intersection of four straight lines and a circle (intersection is between lines as well as circle and lines)?
+(1) 6
+(2) 10
+(3) 14
+(4) 16
+= 3
+~ Four lines meet pairwise in at most C(4, 2) = 6 points, and each line cuts the circle in at most 2 points (4 × 2 = 8), giving 6 + 8 = 14.
+
+Q 38 | alg | Sequences & Series
+In an AP, the ratio of the sum of the first p terms to the sum of the first q terms is p² : q². Which one of the following is correct?
+(1) The first term is equal to the common difference
+(2) The first term is equal to twice the common difference
+(3) The common difference is equal to twice the first term
+(4) The first term is equal to square of the common difference
+= 3
+~ [2a + (p−1)d]/[2a + (q−1)d] = p/q for all p, q gives (2a − d)(q − p) = 0, so d = 2a.
+
+Q 39 | alg | Quadratic Equations & Inequalities
+What is the number of real roots of the equation (x − 1)² + (x − 3)² + (x − 5)² = 0?
+(1) None
+(2) Only one
+(3) Only two
+(4) Three
+= 1
+~ A sum of real squares is zero only if each is zero, but x cannot equal 1, 3 and 5 at once, so there is no real root.
+
+Q 40 | alg | Sets, Relations & Functions
+In a class of 240 students, 180 passed in English, 130 passed in Hindi and 150 passed in Sanskrit. Further, 60 passed in only one subject, 110 passed in only two subjects and 10 passed in none of the subjects. How many passed in all three subjects?
+(1) 60
+(2) 55
+(3) 40
+(4) 35
+= 1
+~ Students passing at least one subject = 240 − 10 = 230 = 60 + 110 + t, so t = 60. Check: 60 + 2 × 110 + 3 × 60 = 460 = 180 + 130 + 150.
+
+Q 41 | alg | Complex Numbers
+Passage: Let Z₁ and Z₂ be any two complex numbers such that Z₁² + Z₂² + Z₁Z₂ = 0.
+
+What is the value of |Z₁/Z₂|?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ Dividing by Z₂² gives t² + t + 1 = 0 with t = Z₁/Z₂, so t = ω or ω² (complex cube roots of unity) and |Z₁/Z₂| = 1.
+
+Q 42 | alg | Complex Numbers
+Passage: Let Z₁ and Z₂ be any two complex numbers such that Z₁² + Z₂² + Z₁Z₂ = 0.
+
+What is the value of 1/2 + Re(Z₁/Z₂)?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ Z₁/Z₂ = ω or ω² = −1/2 ± i√3/2, whose real part is −1/2; so 1/2 + (−1/2) = 0.
+
+Q 43 | alg | Sequences & Series
+Passage: The product of 5 consecutive terms of an AP is 229635. The first, second and fifth terms are in GP.
+
+What is the common difference?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 4
+~ Take the terms a − 2d, a − d, a, a + d, a + 2d. (a − d)² = (a − 2d)(a + 2d) gives a = 5d/2; then the terms are d/2, 3d/2, 5d/2, 7d/2, 9d/2 with product 945d⁵/32 = 229635, so d⁵ = 7776 and d = 6 (terms 3, 9, 15, 21, 27).
+
+Q 44 | alg | Sequences & Series
+Passage: The product of 5 consecutive terms of an AP is 229635. The first, second and fifth terms are in GP.
+
+What is the sum of all five terms?
+(1) 60
+(2) 65
+(3) 75
+(4) 80
+= 3
+~ The terms are 3, 9, 15, 21, 27, whose sum is 5 × 15 = 75.
+
+Q 45 | alg | Binomial Theorem
+Passage: Let (8 + 3√7)²⁰ = U + V and (8 − 3√7)²⁰ = W, where U is an integer and 0 < V < 1.
+
+What is V + W equal to?
+(1) 8
+(2) 4
+(3) 2
+(4) 1
+= 4
+~ (8 + 3√7)²⁰ + (8 − 3√7)²⁰ is an integer (odd powers of √7 cancel), so V + W is an integer; as 0 < V < 1 and 0 < W < 1 (since 0 < 8 − 3√7 < 1), V + W = 1.
+
+Q 46 | alg | Binomial Theorem
+Passage: Let (8 + 3√7)²⁰ = U + V and (8 − 3√7)²⁰ = W, where U is an integer and 0 < V < 1.
+
+What is the value of (U + V)W?
+(1) 1/2
+(2) 1
+(3) 3/2
+(4) 2
+= 2
+~ (U + V)W = [(8 + 3√7)(8 − 3√7)]²⁰ = (64 − 63)²⁰ = 1.
+
+Q 47 | alg | Quadratic Equations & Inequalities
+Passage: The roots of the quadratic equation a²(b² − c²)x² + b²(c² − a²)x + c²(a² − b²) = 0 are equal (a² ≠ b² ≠ c²).
+
+Which one of the following statements is correct?
+(1) a², b², c² are in AP.
+(2) a², b², c² are in GP.
+(3) a², b², c² are in HP.
+(4) a², b², c² are neither in AP nor in GP nor in HP.
+= 3
+~ The coefficients add up to 0, so x = 1 is a root; equal roots means both roots are 1, so product c²(a² − b²)/[a²(b² − c²)] = 1. This simplifies to b² = 2a²c²/(a² + c²), so a², b², c² are in HP.
+
+Q 48 | alg | Quadratic Equations & Inequalities
+Passage: The roots of the quadratic equation a²(b² − c²)x² + b²(c² − a²)x + c²(a² − b²) = 0 are equal (a² ≠ b² ≠ c²).
+
+Which one of the following is a root of the equation?
+(1) b²(c² − a²)/(a²(c² − b²))
+(2) b²(c² − a²)/(a²(b² − c²))
+(3) b²(c² − a²)/(2a²(c² − b²))
+(4) b²(c² − a²)/(2a²(b² − c²))
+= 3
+~ Each root equals half the sum of roots: −b²(c² − a²)/(2a²(b² − c²)) = b²(c² − a²)/(2a²(c² − b²)), which equals 1 (checked numerically with a² = 2, c² = 5).
+
+Q 49 | mat | Matrices
+Passage: Let A = [[3, −3, 4], [2, −3, 4], [0, −1, 1]].
+
+What is A(adj A) equal to?
+(1) [[5, 0, 0], [0, 5, 0], [0, 0, 5]]
+(2) [[2, 0, 0], [0, 2, 0], [0, 0, 2]]
+(3) [[1/2, 0, 0], [0, 1/2, 0], [0, 0, 1/2]]
+(4) [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+= 4
+~ A(adj A) = |A| I, and |A| = 3(−3 + 4) + 3(2 − 0) + 4(−2 − 0) = 3 + 6 − 8 = 1, so A(adj A) = I.
+
+Q 50 | mat | Matrices
+Passage: Let A = [[3, −3, 4], [2, −3, 4], [0, −1, 1]].
+
+What is A⁻¹ equal to?
+(1) [[1, −1, 0], [−2, 3, −4], [−2, 3, −3]]
+(2) [[1/2, −1/2, 0], [−1, 3/2, −2], [−1, 3/2, −3/2]]
+(3) [[2, −2, 0], [−4, 6, −8], [−4, 6, −6]]
+(4) [[1/5, −1/5, 0], [−2/5, 3/5, −4/5], [−2/5, 3/5, −3/5]]
+= 1
+~ Since |A| = 1, A⁻¹ = adj A = [[1, −1, 0], [−2, 3, −4], [−2, 3, −3]] (confirmed with numpy).
+
+Q 51 | vec | Vectors
+What is 3α + 2β equal to if (2î + 6ĵ + 27k̂) × (î + αĵ + βk̂) is a null vector?
+(1) 36
+(2) 33
+(3) 30
+(4) 27
+= 1
+~ The cross product is zero only if the vectors are parallel: 1/2 = α/6 = β/27, so α = 3 and β = 27/2. Then 3α + 2β = 9 + 27 = 36.
+
+Q 52 | vec | Vectors
+For what value of the angle between the vectors a⃗ and b⃗ is the quantity |a⃗ × b⃗| + √3|a⃗ · b⃗| maximum?
+(1) 0°
+(2) 30°
+(3) 45°
+(4) 60°
+= 2
+~ For 0 ≤ θ ≤ 90° the quantity is |a||b|(sin θ + √3 cos θ) = 2|a||b| sin(θ + 60°), which is maximum when θ + 60° = 90°, i.e. θ = 30° (confirmed numerically).
+
+Q 53 | vec | Vectors
+Let θ be the angle between two unit vectors a⃗ and b⃗. If a⃗ + 2b⃗ is perpendicular to 5a⃗ − 4b⃗, then what is cos θ + cos 2θ equal to?
+(1) 0
+(2) 1/2
+(3) 1
+(4) (√3 + 1)/2
+= 1
+~ (a + 2b)·(5a − 4b) = 5 + 6 cos θ − 8 = 0 gives cos θ = 1/2, so θ = 60° and cos θ + cos 2θ = 1/2 − 1/2 = 0.
+
+Q 54 | vec | Vectors
+Let ABCDEF be a regular hexagon. If AD⃗ = m BC⃗ and CF⃗ = n AB⃗, then what is mn equal to?
+(1) −4
+(2) −2
+(3) 2
+(4) 4
+= 1
+~ In a regular hexagon the long diagonal AD is parallel to BC and twice as long, so m = 2; CF is parallel to AB but in the opposite direction and twice as long, so n = −2. mn = −4 (checked with coordinates).
+
+Q 55 | vec | Vectors
+The vectors a⃗, b⃗ and c⃗ are of the same length. If taken pairwise, they form equal angles. If a⃗ = î + ĵ and b⃗ = ĵ + k̂, then what can c⃗ be equal to?
+I. î + k̂
+II. (−î + 4ĵ − k̂)/3
+Select the correct answer using the code given below.
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ We need |c|² = 2 and a·c = b·c = a·b = 1. For î + k̂: a·c = 1, b·c = 1, |c|² = 2. For (−1, 4, −1)/3: a·c = 3/3 = 1, b·c = 1, |c|² = 18/9 = 2. Both work.
+
+Q 56 | ag | Straight Lines
+The diagonals of a quadrilateral ABCD are along the lines x − 2y = 1 and 4x + 2y = 3. The quadrilateral ABCD may be a
+(1) rectangle
+(2) cyclic quadrilateral
+(3) parallelogram
+(4) rhombus
+= 4
+~ The slopes are 1/2 and −2, whose product is −1, so the diagonals are perpendicular; a quadrilateral with perpendicular diagonals is characteristically a rhombus (a general rectangle or parallelogram does not have perpendicular diagonals). Strictly, special cases such as a square, or a cyclic quadrilateral with perpendicular diagonals, also fit, but rhombus is the intended answer. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 57 | ag | Circles & Conics
+The foci of the ellipse 4x² + 9y² = 1 are at Q and R. If P(x, y) is any point on the ellipse, then what is PQ + PR equal to?
+(1) 2
+(2) 1
+(3) 2/3
+(4) 1/3
+= 2
+~ x²/(1/4) + y²/(1/9) = 1, so the semi-major axis is a = 1/2. The sum of focal distances of any point on an ellipse is 2a = 1.
+
+Q 58 | ag | Straight Lines
+If P(2, 4), Q(8, 12), R(10, 14) and S(x, y) are vertices of a parallelogram, then what is (x + y) equal to?
+(1) 8
+(2) 10
+(3) 12
+(4) 14
+= 2
+~ In parallelogram PQRS the diagonals bisect each other, so P + R = Q + S: S = (2 + 10 − 8, 4 + 14 − 12) = (4, 6) and x + y = 10.
+
+Q 59 | ag | Circles & Conics
+The equation of a circle is (x² − 4x + 3) + (y² − 6y + 8) = 0
+Which of the following statements are correct?
+I. The end points of a diameter of the circle are at (1, 2) and (3, 4).
+II. The end points of a diameter of the circle are at (1, 4) and (3, 2).
+III. The end points of a diameter of the circle are at (2, 4) and (4, 2).
+Select the answer using the code given below.
+(1) I and II only
+(2) II and III only
+(3) I and III only
+(4) I, II and III
+= 1
+~ The circle has centre (2, 3) and radius √2. (1, 2), (3, 4) and (1, 4), (3, 2) all lie on it and each pair has midpoint (2, 3), so both are diameters. (2, 4) and (4, 2) have midpoint (3, 3) and do not even lie on the circle (python check).
+
+Q 60 | ag | Circles & Conics
+Consider the points P(4k, 4k) and Q(4k, −4k) lying on the parabola y² = 4kx. If the vertex is A, then what is ∠PAQ equal to?
+(1) 60°
+(2) 90°
+(3) 120°
+(4) 135°
+= 2
+~ A is the origin, and AP⃗·AQ⃗ = 16k² − 16k² = 0, so ∠PAQ = 90°.
+
+Q 61 | ag | Circles & Conics
+Passage: Consider the following for the two (02) items that follow: A triangle ABC is inscribed in the circle x² + y² = 100. B and C have coordinates (6, 8) and (−8, 6) respectively.
+
+What is ∠BAC equal to?
+(1) π/2
+(2) π/3 or 2π/3
+(3) π/4 or 3π/4
+(4) π/6 or 5π/6
+= 3
+~ OB·OC = (6)(−8) + (8)(6) = 0, so the central angle BOC = π/2. The inscribed angle BAC is half of it, π/4, if A lies on the major arc, and π − π/4 = 3π/4 if A lies on the minor arc.
+
+Q 62 | ag | Circles & Conics
+Passage: Consider the following for the two (02) items that follow: A triangle ABC is inscribed in the circle x² + y² = 100. B and C have coordinates (6, 8) and (−8, 6) respectively.
+
+What are the coordinates of A?
+(1) (−6, 8)
+(2) (−6, −8)
+(3) (5√2, 5√2)
+(4) Cannot be determined due to insufficient data
+= 4
+~ Any point on the circle other than B and C gives a valid triangle ABC, so the data do not fix A.
+
+Q 63 | ag | Straight Lines
+Passage: Consider the following for the two (02) items that follow: ABCD is an isosceles trapezium and AB is parallel to DC. Let A(2, 3), B(4, 3), C(5, 1) be the vertices.
+
+What are the coordinates of vertex D?
+(1) (2, 1)
+(2) (1, 2)
+(3) (1, 1)
+(4) (3, 1)
+= 3
+~ AB is horizontal (y = 3), so DC lies on y = 1. For an isosceles trapezium, D is the mirror image of C in the axis of symmetry x = 3 (the midpoint of AB), so D = (1, 1).
+
+Q 64 | ag | Straight Lines
+Passage: Consider the following for the two (02) items that follow: ABCD is an isosceles trapezium and AB is parallel to DC. Let A(2, 3), B(4, 3), C(5, 1) be the vertices.
+
+What is the point of intersection of the diagonals of the trapezium?
+(1) (3, 7/2)
+(2) (3, 7/3)
+(3) (7/2, 2)
+(4) (5/2, 2)
+= 2
+~ By symmetry the diagonals meet on x = 3. AC runs from (2, 3) to (5, 1); at x = 3 its parameter is 1/3, so y = 3 − 2/3 = 7/3. The point is (3, 7/3).
+
+Q 65 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let 2x² + 2y² + 2z² + 3x + 3y + 3z − 6 = 0 be a sphere.
+
+What is the diameter of the sphere?
+(1) 5√3/4
+(2) 5√3/2
+(3) 3√5/4
+(4) 3√5/2
+= 2
+~ Dividing by 2 gives x² + y² + z² + (3/2)(x + y + z) − 3 = 0, with centre (−3/4, −3/4, −3/4) and r² = 27/16 + 3 = 75/16. So r = 5√3/4 and the diameter is 5√3/2.
+
+Q 66 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let 2x² + 2y² + 2z² + 3x + 3y + 3z − 6 = 0 be a sphere.
+
+The centre of the sphere lies on the plane
+(1) 2x + 2y + 2z − 3 = 0
+(2) 4x + 4y + 4z − 3 = 0
+(3) 4x + 8y + 8z − 15 = 0
+(4) 4x + 8y + 8z + 15 = 0
+= 4
+~ At the centre (−3/4, −3/4, −3/4): 4x + 8y + 8z + 15 = −3 − 6 − 6 + 15 = 0. None of the other planes is satisfied.
+
+Q 67 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let S be the line of intersection of two planes x + y + z = 1 and 2x + 3y − 4z = 8.
+
+Which of the following are the direction ratios of S?
+(1) ⟨−7, −6, 1⟩
+(2) ⟨−7, 6, 1⟩
+(3) ⟨−6, 5, 1⟩
+(4) ⟨6, 5, 1⟩
+= 2
+~ The direction is the cross product of the normals: (1, 1, 1) × (2, 3, −4) = (−4 − 3, 2 + 4, 3 − 2) = (−7, 6, 1).
+
+Q 68 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let S be the line of intersection of two planes x + y + z = 1 and 2x + 3y − 4z = 8.
+
+If ⟨l, m, n⟩ are direction cosines of S, then what is the value of 43(l² − m² − n²)?
+(1) 6
+(2) 5
+(3) 4
+(4) 1
+= 1
+~ The direction cosines are (−7, 6, 1)/√86. So l² − m² − n² = (49 − 36 − 1)/86 = 12/86 and 43 × 12/86 = 6.
+
+Q 69 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let L: x + y + z + 4 = 0 = 2x − y − z + 8 be a line and P: x + 2y + 3z + 1 = 0 be a plane.
+
+What are the direction ratios of the line?
+(1) ⟨2, 1, −1⟩
+(2) ⟨0, −1, 2⟩
+(3) ⟨0, 1, −1⟩
+(4) ⟨2, 3, −3⟩
+= 3
+~ (1, 1, 1) × (2, −1, −1) = (−1 + 1, 2 + 1, −1 − 2) = (0, 3, −3), which is proportional to ⟨0, 1, −1⟩.
+
+Q 70 | ag | 3D Geometry
+Passage: Consider the following for the two (02) items that follow: Let L: x + y + z + 4 = 0 = 2x − y − z + 8 be a line and P: x + 2y + 3z + 1 = 0 be a plane.
+
+What is the point of intersection of L and P?
+(1) (4, 3, −3)
+(2) (4, −3, 3)
+(3) (−4, −3, −3)
+(4) (−4, −3, 3)
+= 4
+~ Solve x + y + z = −4, 2x − y − z = −8 and x + 2y + 3z = −1. Adding the first two gives 3x = −12, so x = −4. Then y + z = 0 and 2y + 3z = 3, so z = 3 and y = −3. The point is (−4, −3, 3).
+
+Q 71 | alg | Sets, Relations & Functions
+Let z = [y] and y = [x] − x, where [·] is the greatest integer function. If x is not an integer but positive, then what is the value of z?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 1
+~ For non-integer x, y = [x] − x = −{x} lies strictly between −1 and 0, so z = [y] = −1.
+
+Q 72 | alg | Sets, Relations & Functions
+If f(x) = 4x + 1 and g(x) = kx + 2 such that f ∘ g(x) = g ∘ f(x), then what is the value of k?
+(1) 7
+(2) 5
+(3) 4
+(4) 3
+= 1
+~ f(g(x)) = 4kx + 9 and g(f(x)) = 4kx + k + 2. Setting them equal gives k + 2 = 9, so k = 7.
+
+Q 73 | cal | Differentiation & Applications
+What is the minimum value of the function f(x) = log₁₀(x² + 2x + 11)?
+(1) 0
+(2) 1
+(3) 2
+(4) 10
+= 2
+~ x² + 2x + 11 = (x + 1)² + 10 has minimum value 10 (at x = −1). Since log is increasing, the minimum of f is log₁₀10 = 1.
+
+Q 74 | cal | Limits, Continuity & Differentiability
+Which one of the following is correct regarding lim(x→3) |x − 3|/(x − 3)?
+(1) Limit exists and is equal to 1
+(2) Limit exists and is equal to 0
+(3) Limit exists and is equal to −1
+(4) Limit does not exist
+= 4
+~ The right-hand limit is 1 and the left-hand limit is −1. They differ, so the limit does not exist.
+
+Q 75 | trg | Ratios & Identities
+What is the maximum value of a cos x + b sin x + c?
+(1) √(a² + b² + c)
+(2) √(a² + b²) + c
+(3) √(a² + b²) − c
+(4) √(a² + b²)
+= 2
+~ a cos x + b sin x ranges over [−√(a² + b²), √(a² + b²)], so the maximum of the whole expression is √(a² + b²) + c.
+
+Q 76 | alg | Sequences & Series
+If f(2x) = 4x² + 1, then for how many real values of x will f(2x) be the GM of f(x) and f(4x)?
+(1) Four
+(2) Two
+(3) One
+(4) None
+= 3
+~ f(t) = t² + 1, so we need (4x² + 1)² = (x² + 1)(16x² + 1). This gives 16x⁴ + 8x² + 1 = 16x⁴ + 17x² + 1, so 9x² = 0 and x = 0 is the only value.
+
+Q 77 | alg | Quadratic Equations & Inequalities
+If f(x) = [x]² − 30[x] + 221 = 0, where [x] is the greatest integer function, then what is the sum of all integer solutions?
+(1) 13
+(2) 17
+(3) 27
+(4) 30
+= 4
+~ [x]² − 30[x] + 221 = ([x] − 13)([x] − 17) = 0, so [x] = 13 or 17. The integer solutions are 13 and 17, and their sum is 30.
+
+Q 78 | alg | Quadratic Equations & Inequalities
+If f(x) = 9x − 8√x such that g(x) = f(x) − 1, then which one of the following is correct?
+(1) g(x) = 0 has no real roots
+(2) g(x) = 0 has only one real root which is an integer
+(3) g(x) = 0 has two real roots which are integers
+(4) g(x) = 0 has only one real root which is not an integer
+= 2
+~ Put t = √x ≥ 0. Then 9t² − 8t − 1 = (t − 1)(9t + 1) = 0, so t = 1 (t = −1/9 is rejected). The only root is x = 1, an integer.
+
+Q 79 | cal | Limits, Continuity & Differentiability
+What is lim(θ→π/2) (sec θ − tan θ) equal to?
+(1) −1
+(2) 0
+(3) 1/2
+(4) 1
+= 2
+~ sec θ − tan θ = (1 − sin θ)/cos θ = cos θ/(1 + sin θ), which tends to 0/2 = 0.
+
+Q 80 | alg | Sets, Relations & Functions
+Let f(x) f(y) = f(xy) for all real x, y. If f(2) = 4, then what is the value of f(1/2)?
+(1) 1/4
+(2) 1/2
+(3) 1
+(4) 4
+= 1
+~ Putting x = 2, y = 1 gives f(1) = 1. Then f(2) f(1/2) = f(1) = 1, so f(1/2) = 1/4.
+
+Q 81 | alg | Sets, Relations & Functions
+Passage: Consider the following for the two (02) items that follow: Let f ∘ g(x) = cos² √x and g ∘ f(x) = |cos x|.
+
+Which one of the following is f(x)?
+(1) cos x
+(2) cos x²
+(3) cos² x
+(4) cos|x|
+= 3
+~ Take f(x) = cos² x and g(x) = √x. Then f(g(x)) = cos² √x and g(f(x)) = √(cos² x) = |cos x|, as required.
+
+Q 82 | alg | Sets, Relations & Functions
+Passage: Consider the following for the two (02) items that follow: Let f ∘ g(x) = cos² √x and g ∘ f(x) = |cos x|.
+
+Which one of the following is g(x)?
+(1) √x
+(2) |x|
+(3) x²
+(4) x|x|
+= 1
+~ With f(x) = cos² x, g(x) = √x gives g(f(x)) = √(cos² x) = |cos x| and f(g(x)) = cos² √x.
+
+Q 83 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the two (02) items that follow: Let f(x) = [x]² − [x²].
+
+What is f(0·999) + f(1·001) equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ f(0·999) = 0 − [0·998] = 0 and f(1·001) = 1 − [1·002] = 1 − 1 = 0. The sum is 0.
+
+Q 84 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the two (02) items that follow: Let f(x) = [x]² − [x²].
+
+Consider the following statements :
+I. f(x) is continuous at x = 0.
+II. f(x) is continuous at x = 1.
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 2
+~ Just left of 0, f = (−1)² − 0 = 1, but f(0) = 0, so f is discontinuous at 0. Near x = 1, f = 0 on both sides and f(1) = 1 − 1 = 0, so f is continuous at 1.
+
+Q 85 | cal | Differentiation & Applications
+Passage: Consider the following for the two (02) items that follow: Let f(x) = cos 2x + x on [−π/2, π/2].
+
+What is the greatest value of f(x)?
+(1) √3/2 − π/12
+(2) √3/2 + π/12
+(3) √3/2 + π/9
+(4) √3/2 + π/6
+= 2
+~ f′(x) = 1 − 2 sin 2x = 0 gives x = π/12 or 5π/12. f(π/12) = √3/2 + π/12 ≈ 1·128, which beats f(5π/12) ≈ 0·443, f(π/2) ≈ 0·571 and f(−π/2) ≈ −2·571.
+
+Q 86 | cal | Differentiation & Applications
+Passage: Consider the following for the two (02) items that follow: Let f(x) = cos 2x + x on [−π/2, π/2].
+
+What is the least value of f(x)?
+(1) −(1 + π/2)
+(2) −(1/2 + π/2)
+(3) −(1 + π/4)
+(4) −2(1/2 − π/4)
+= 1
+~ Comparing the critical values with the endpoints, the least value is f(−π/2) = cos(−π) − π/2 = −(1 + π/2).
+
+Q 87 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: The area bounded by the parabola y² = kx and the line x = k, where k > 0, is 4/3 square units.
+
+What is the value of k?
+(1) 1/2
+(2) 1
+(3) √2
+(4) 2
+= 2
+~ Area = 2∫₀ᵏ √(kx) dx = 2√k · (2/3)k^(3/2) = 4k²/3. Setting this equal to 4/3 gives k = 1.
+
+Q 88 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: The area bounded by the parabola y² = kx and the line x = k, where k > 0, is 4/3 square units.
+
+What is the area of the parabola bounded by the latus rectum?
+(1) 1/6 square unit
+(2) 2/3 square unit
+(3) 1 square unit
+(4) 4/3 square units
+= 1
+~ With k = 1 the parabola is y² = x and its latus rectum is x = 1/4. Area = 2∫₀^(1/4) √x dx = (4/3)(1/4)^(3/2) = 1/6.
+
+Q 89 | cal | Differential Equations
+Passage: Consider the following for the two (02) items that follow: Let y dx + (x − y³) dy = 0 be a differential equation.
+
+What are the order and degree respectively of the differential equation?
+(1) 1 and 1
+(2) 1 and 2
+(3) 2 and 1
+(4) 1 and 3
+= 1
+~ The equation can be written as dx/dy = (y³ − x)/y. It has only first derivatives, raised to the power 1, so the order is 1 and the degree is 1.
+
+Q 90 | cal | Differential Equations
+Passage: Consider the following for the two (02) items that follow: Let y dx + (x − y³) dy = 0 be a differential equation.
+
+What is the solution of the differential equation?
+(1) y⁴ + 2x = c
+(2) y⁴ + 3x = c
+(3) 2xy⁴ + x = c
+(4) 4xy − y⁴ = c
+= 4
+~ y dx + x dy = y³ dy, that is d(xy) = y³ dy. Integrating gives xy = y⁴/4 + c′, so 4xy − y⁴ = c.
+
+Q 91 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let f(x) = |x² − x − 2|.
+
+What is ∫₀² f(x) dx equal to?
+(1) 0
+(2) 1
+(3) 5/3
+(4) 10/3
+= 4
+~ x² − x − 2 = (x − 2)(x + 1) ≤ 0 on [0, 2], so the integral is ∫₀² (2 + x − x²) dx = 4 + 2 − 8/3 = 10/3.
+
+Q 92 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let f(x) = |x² − x − 2|.
+
+What is ∫₁³ f(x) dx equal to?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 2
+~ ∫₁² (2 + x − x²) dx = 7/6 and ∫₂³ (x² − x − 2) dx = 11/6, so the total is 3.
+
+Q 93 | alg | Sets, Relations & Functions
+Passage: Consider the following for the two (02) items that follow: Let f(t) = ln(t + √(1 + t²)) and g(t) = tan(f(t)).
+Consider the following statements :
+I. f(t) is an odd function.
+II. g(t) is an odd function.
+
+Which of the statements given above is/are correct?
+(1) I only
+(2) II only
+(3) Both I and II
+(4) Neither I nor II
+= 3
+~ f(−t) = ln(√(1 + t²) − t) = ln(1/(t + √(1 + t²))) = −f(t), so f is odd. Then g(−t) = tan(−f(t)) = −g(t), so g is odd too.
+
+Q 94 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let f(t) = ln(t + √(1 + t²)) and g(t) = tan(f(t)).
+Consider the following statements :
+I. f(t) is an odd function.
+II. g(t) is an odd function.
+
+What is ∫₋π^π g(t) dt equal to?
+(1) −1
+(2) 0
+(3) 1/2
+(4) 1
+= 2
+~ g is odd, so its integral over the symmetric interval [−π, π] is 0. Strictly, tan(f(t)) is undefined at t = ±sinh(π/2) ≈ ±2·30, which lie inside the interval, but the intended answer is 0 by the odd-function property. (Answer by Learn with Anil; UPSC has not published its key.)
+
+Q 95 | cal | Differentiation & Applications
+Passage: Consider the following for the two (02) items that follow: Let f : (−1, 1) → R be a differentiable function with f(0) = −1 and f′(0) = 1. Let h(x) = f(2f(x) + 2) and g(x) = (h(x))².
+
+What is h′(0) equal to?
+(1) −2
+(2) −1
+(3) 0
+(4) 2
+= 4
+~ h′(x) = f′(2f(x) + 2) · 2f′(x). At x = 0, 2f(0) + 2 = 0, so h′(0) = f′(0) · 2f′(0) = 1 · 2 = 2.
+
+Q 96 | cal | Differentiation & Applications
+Passage: Consider the following for the two (02) items that follow: Let f : (−1, 1) → R be a differentiable function with f(0) = −1 and f′(0) = 1. Let h(x) = f(2f(x) + 2) and g(x) = (h(x))².
+
+What is g′(0) equal to?
+(1) −4
+(2) −2
+(3) 0
+(4) 4
+= 1
+~ g′(x) = 2h(x)h′(x). Here h(0) = f(0) = −1 and h′(0) = 2, so g′(0) = 2(−1)(2) = −4.
+
+Q 97 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let I = ∫₀^(π/2) f(x)/g(x) dx, where f(x) = sin x and g(x) = sin x + cos x + 1.
+
+What is ∫₀^(π/2) dx/g(x) equal to?
+(1) ln2/2
+(2) ln2/4
+(3) ln2
+(4) 2ln2
+= 3
+~ With t = tan(x/2), 1 + sin x + cos x = 2(1 + t)/(1 + t²) and dx = 2dt/(1 + t²). The integral becomes ∫₀¹ dt/(1 + t) = ln 2.
+
+Q 98 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let I = ∫₀^(π/2) f(x)/g(x) dx, where f(x) = sin x and g(x) = sin x + cos x + 1.
+
+What is I equal to?
+(1) π/4 + ln2
+(2) π/4 − ln2
+(3) π/4 − ln2/2
+(4) π/4 + ln2/2
+= 3
+~ Replacing x by π/2 − x shows that I equals the same integral with cos x in the numerator. Adding the two gives 2I = ∫(sin x + cos x)/(1 + sin x + cos x) dx = π/2 − ln 2, so I = π/4 − (ln 2)/2.
+
+Q 99 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let 2∫ (x² − 1)/√(x² + 1) dx = U(x) V(x) − 3 ln{U(x) + V(x)} + c
+
+What is |U²(x) − V²(x)| equal to?
+(1) 0
+(2) 1
+(3) 2
+(4) 3
+= 2
+~ Write (x² − 1)/√(x² + 1) = √(x² + 1) − 2/√(x² + 1). Integrating, 2∫ = x√(x² + 1) + ln(x + √(x² + 1)) − 4 ln(x + √(x² + 1)) = x√(x² + 1) − 3 ln(x + √(x² + 1)). So U = x and V = √(x² + 1), giving |U² − V²| = 1.
+
+Q 100 | cal | Integration & Area
+Passage: Consider the following for the two (02) items that follow: Let 2∫ (x² − 1)/√(x² + 1) dx = U(x) V(x) − 3 ln{U(x) + V(x)} + c
+
+What is U(x) V(x) equal to?
+(1) √(x² + x⁴)
+(2) √(x + x³)
+(3) √(x² + x⁴)/2
+(4) 2√(x² + x⁴)
+= 1
+~ U V = x√(x² + 1) = √(x² + x⁴), taking x ≥ 0 as intended.
+
+Q 101 | sp | Statistics
+Let x − 3y + 4 = 0 and 2x − 7y + 8 = 0 be two lines of regression computed from some bivariate data. If b_yx and b_xy are regression coefficients of lines of regression of y on x and x on y respectively, then what is the value of b_xy + 7b_yx?
+(1) −2
+(2) 1
+(3) 2
+(4) 5
+= 4
+~ Taking the first line as y on x would give b_yx = 1/3 and b_xy = 7/2, with product 7/6 > 1, which is impossible. So y on x is 2x − 7y + 8 = 0 (b_yx = 2/7) and x on y is x = 3y − 4 (b_xy = 3), with product 6/7. Then b_xy + 7b_yx = 3 + 2 = 5.
+
+Q 102 | sp | Statistics
+The mean of n observations
+1, 4, 9, 16, ..., n²
+is 130. What is the value of n?
+(1) 18
+(2) 19
+(3) 20
+(4) 21
+= 2
+~ The mean is n(n + 1)(2n + 1)/(6n) = (n + 1)(2n + 1)/6 = 130, so (n + 1)(2n + 1) = 780 = 20 × 39, giving n = 19.
+
+Q 103 | sp | Probability
+Three distinct natural numbers are chosen at random from 1 to 10. What is the probability that they are consecutive?
+(1) 1/12
+(2) 3/40
+(3) 1/15
+(4) 7/120
+= 3
+~ There are 8 consecutive triples (1-2-3 up to 8-9-10) out of C(10, 3) = 120 possible choices, so the probability is 8/120 = 1/15.
+
+Q 104 | sp | Probability
+A, B, C are three mutually exclusive and exhaustive events associated with a random experiment. If 3P(B) = 4P(A) and 3P(C) = 2P(B), then what is P(A) equal to?
+(1) 7/29
+(2) 8/29
+(3) 9/29
+(4) 10/29
+= 3
+~ P(B) = (4/3)P(A) and P(C) = (2/3)P(B) = (8/9)P(A). The three must add to 1: P(A)(1 + 4/3 + 8/9) = (29/9)P(A) = 1, so P(A) = 9/29.
+
+Q 105 | sp | Probability
+A die has two faces with number 4, three faces with number 5 and one face with number 6. If the die is rolled once, then what is the probability of getting 4 or 5?
+(1) 1/3
+(2) 2/3
+(3) 5/6
+(4) 1/2
+= 3
+~ Five of the six faces show 4 or 5, so the probability is 5/6.
+
+Q 106 | sp | Probability
+A box contains 2 black, 4 yellow and 6 white balls. Three balls are drawn in succession with replacement. What is the probability that all three are of the same colour?
+(1) 1/6
+(2) 1/36
+(3) 1/12
+(4) 5/12
+= 1
+~ (2/12)³ + (4/12)³ + (6/12)³ = 1/216 + 8/216 + 27/216 = 36/216 = 1/6.
+
+Q 107 | sp | Probability
+A can hit a target 5 times in 6 shots, B can hit 4 times in 5 shots and C can hit 3 times in 4 shots. What is the probability that A and C may hit but B may lose?
+(1) 1/8
+(2) 1/6
+(3) 1/4
+(4) 1/3
+= 1
+~ P(A hits) × P(B misses) × P(C hits) = (5/6)(1/5)(3/4) = 1/8.
+
+Q 108 | sp | Probability
+The letters of the word ZOOLOGY are arranged in all possible ways. What is the probability that the consonants and vowels occur alternatively?
+(1) 6/35
+(2) 3/35
+(3) 2/35
+(4) 1/35
+= 4
+~ The word has 4 consonants (Z, L, G, Y) and 3 vowels (O, O, O), giving 7!/3! = 840 arrangements in all. To alternate, the pattern must be C V C V C V C, which can be filled in 4! × 1 = 24 ways. The probability is 24/840 = 1/35.
+
+Q 109 | sp | Probability
+A natural number x is chosen at random from the first 100 natural numbers. What is the probability that x² + x > 50?
+(1) 93/100
+(2) 47/50
+(3) 24/25
+(4) 23/25
+= 2
+~ 6² + 6 = 42 < 50 but 7² + 7 = 56 > 50, so x = 7, 8, …, 100 work. That is 94 values, and 94/100 = 47/50.
+
+Q 110 | sp | Statistics
+What is the mean deviation of the first 10 natural numbers?
+(1) 2
+(2) 2·5
+(3) 3
+(4) 3·5
+= 2
+~ The mean is 5·5. The sum of |xᵢ − 5·5| is 2(0·5 + 1·5 + 2·5 + 3·5 + 4·5) = 25, so the mean deviation is 25/10 = 2·5.
+
+Q 111 | sp | Statistics
+Let Σ(i=1 to 9) xᵢ² = 855. If M is the mean and σ is the standard deviation of x₁, x₂, ..., x₉, then what is the value of M² + σ²?
+(1) 100
+(2) 95
+(3) 90
+(4) 85
+= 2
+~ σ² = Σxᵢ²/n − M², so M² + σ² = Σxᵢ²/n = 855/9 = 95.
+
+Q 112 | sp | Statistics
+The mean of the series x₁, x₂, ..., xₙ is x̄. If xₙ is replaced by k, then what is the new mean?
+(1) x̄ − xₙ + k
+(2) (nx̄ − x̄ + k)/n
+(3) (x̄ − xₙ − k)/n
+(4) (nx̄ − xₙ + k)/n
+= 4
+~ The original sum is nx̄. Replacing xₙ by k makes the sum nx̄ − xₙ + k, so the new mean is (nx̄ − xₙ + k)/n.
+
+Q 113 | sp | Probability
+A fair coin is tossed till two heads occur in succession. What is the probability that the number of tosses required is less than 6?
+(1) 5/64
+(2) 15/32
+(3) 31/64
+(4) 19/32
+= 4
+~ This is the probability that HH appears within the first 5 tosses. Counting the 32 sequences of length 5 gives 19 that contain HH (equivalently 1/4 + 1/8 + 2/16 + 3/32), so the probability is 19/32.
+
+Q 114 | sp | Probability
+Urn A contains 2 white and 2 black balls while urn B contains 3 white and 2 black balls. One ball is transferred from urn A to urn B and then a ball is drawn out of urn B. What is the probability that the ball is white?
+(1) 11/20
+(2) 7/12
+(3) 3/5
+(4) 1
+= 2
+~ If a white ball is transferred (probability 1/2), urn B has 4 white out of 6; if a black ball is transferred, it has 3 white out of 6. P(white) = (1/2)(4/6) + (1/2)(3/6) = 7/12.
+
+Q 115 | sp | Probability
+For two events A and B, P(A) = P(A|B) = 0·25 and P(B|A) = 0·5. Which of the following are correct?
+I. A and B are independent.
+II. P(Aᶜ ∪ Bᶜ) = 0·875
+III. P(Aᶜ ∩ Bᶜ) = 0·375
+Select the answer using the code given below.
+(1) I and II only
+(2) II and III only
+(3) I and III only
+(4) I, II and III
+= 4
+~ P(A|B) = P(A), so A and B are independent, with P(B) = 0·5 and P(A ∩ B) = 0·125. Then P(Aᶜ ∪ Bᶜ) = 1 − 0·125 = 0·875 and P(Aᶜ ∩ Bᶜ) = 0·75 × 0·5 = 0·375.
+
+Q 116 | sp | Probability
+Two perfect dice are thrown. What is the probability that the sum of the numbers on the faces is neither 9 nor 10?
+(1) 1/36
+(2) 5/36
+(3) 7/36
+(4) 29/36
+= 4
+~ A sum of 9 occurs in 4 ways and a sum of 10 in 3 ways, so P(9 or 10) = 7/36 and the required probability is 29/36.
+
+Q 117 | sp | Probability
+The occurrence of a disease in an industry is such that the workers have 20% chance of suffering from it. What is the probability that out of 6 workers chosen at random, 4 or more will suffer from the disease?
+(1) 53/3125
+(2) 63/3125
+(3) 73/3125
+(4) 83/3125
+= 1
+~ This is binomial with n = 6 and p = 1/5. P(X ≥ 4) = [15·4² + 6·4 + 1]/5⁶ = (240 + 24 + 1)/15625 = 265/15625 = 53/3125.
+
+Q 118 | sp | Probability
+Three perfect dice are rolled. Under the condition that no two show the same face, what is the probability that one of the faces shown is an ace (one)?
+(1) 5/9
+(2) 2/3
+(3) 1/3
+(4) 1/2
+= 4
+~ There are 6·5·4 = 120 outcomes with all faces different. Of these, 5·4·3 = 60 contain no ace, so P(an ace) = 1 − 60/120 = 1/2.
+
+Q 119 | sp | Probability
+Three perfect dice D₁, D₂ and D₃ are rolled. Let x, y and z represent the numbers on D₁, D₂ and D₃ respectively. What is the number of possible outcomes such that x < y < z?
+(1) 20
+(2) 18
+(3) 14
+(4) 10
+= 1
+~ Each choice of 3 distinct numbers from 1–6 gives exactly one increasing arrangement, so the count is C(6, 3) = 20.
+
+Q 120 | sp | Probability
+In a binomial distribution, if the mean is 6 and the standard deviation is √2, then what are the values of the parameters n and p respectively?
+(1) 18 and 1/3
+(2) 9 and 1/3
+(3) 18 and 2/3
+(4) 9 and 2/3
+= 4
+~ np = 6 and npq = 2, so q = 1/3 and p = 2/3. Then n = 6/(2/3) = 9.

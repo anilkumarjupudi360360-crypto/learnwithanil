@@ -1,0 +1,1192 @@
+# UPSC Combined Defence Services Examination (I) 2023: General Knowledge (Series A, booklet JNBY-D-GNL), held 16 April 2023.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, February 2024). Explanations by Learn with Anil.
+# Dropped by UPSC: 76
+
+Q 1 | sci | Biology
+A sprinter feels cramps and pain in the thigh muscles after a run. This is due to accumulation of
+(1) lactic acid
+(2) CO₂
+(3) pyruvic acid
+(4) ethanol
+= 1
+~ During intense exercise muscles run short of oxygen and respire anaerobically, converting pyruvic acid into lactic acid; its build-up causes muscle cramps and pain. Ethanol is formed in anaerobic respiration of yeast, not human muscle.
+
+Q 2 | sci | Biology
+A leaf was plucked from a plant on a sunny day and kept for 2 minutes in boiling water. It was subsequently immersed in boiling alcohol and treated with iodine solution. What will be the final colour of the leaf after the test?
+(1) Colourless
+(2) Green
+(3) Blue
+(4) White
+= 3
+~ A leaf from a sunlit plant has made starch by photosynthesis. Boiling alcohol removes the chlorophyll, and iodine then turns the starch blue-black.
+
+Q 3 | sci | Biology
+If the red blood cells (RBCs) of human blood are isolated and are diluted in normal saline (an isotonic solution to blood), what will happen to the RBCs?
+(1) The RBCs will swell
+(2) The RBCs will swell and burst
+(3) The RBCs will shrink
+(4) No change in the diameters of the RBCs
+= 4
+~ In an isotonic solution there is no net movement of water into or out of the cell, so RBCs keep their size. They would swell and burst in a hypotonic solution and shrink in a hypertonic one.
+
+Q 4 | sci | Biology
+Which one of the following statements regarding bile secreted by liver is not correct?
+(1) Bile contains enzymes for digestion of lipids.
+(2) Bile facilitates emulsification of fats.
+(3) Bile neutralizes the acidic pH of the food coming from stomach.
+(4) Bile makes the pH of the food alkaline and facilitates action of pancreatic enzymes.
+= 1
+~ Bile contains no digestive enzymes; its bile salts only emulsify fats, and its alkalinity neutralizes the acidic food from the stomach. Fats are digested by lipase from the pancreas.
+
+Q 5 | sci | Biology
+The blood pressure of a normal human being is found to be 120/80 mmHg. These 'numbers' represent the blood pressure at
+(1) ventricular contraction and ventricular relaxation, respectively
+(2) ventricular relaxation and ventricular contraction, respectively
+(3) auricular contraction and auricular relaxation, respectively
+(4) ventricular contraction and auricular contraction, respectively
+= 1
+~ 120 mmHg is the systolic pressure, when the ventricles contract. 80 mmHg is the diastolic pressure, when the ventricles relax.
+
+Q 6 | sci | Physics
+A person burned a firecracker in front of a cliff and heard its echo 5 s after it burst. The distance of the cliff from the person, if the speed of the sound is 340 m/s, is close to
+(1) 1700 m
+(2) 170 m
+(3) 85 m
+(4) 850 m
+= 4
+~ The sound travels to the cliff and back, so 2d = 340 × 5 = 1700 m, which gives d = 850 m.
+
+Q 7 | sci | Physics
+Consider the following statements about the microphone and the speaker of a mobile phone :
+1. The microphone converts sound to a mechanical signal.
+2. The microphone converts sound to an electrical signal.
+3. The speaker converts a mechanical signal to sound.
+4. The speaker converts an electrical signal to sound.
+Which of the statements given above are correct?
+(1) 1 and 3
+(2) 1 and 4
+(3) 2 and 3
+(4) 2 and 4
+= 4
+~ A microphone is a transducer that turns sound vibrations into an electrical signal. A speaker does the reverse and turns an electrical signal back into sound.
+
+Q 8 | sci | Physics
+A 100 W electric bulb is used for 10 hours a day. How many units of electrical energy are consumed by the bulb in 3 days? (1 unit = 1 kWh)
+(1) 3·00
+(2) 1·08
+(3) 2·16
+(4) 0·33
+= 1
+~ Energy = 0.1 kW × 10 h/day × 3 days = 3 kWh = 3 units.
+
+Q 9 | sci | Physics
+The area under the velocity-time graph for a particle moving in a straight line with uniform acceleration gives
+(1) its average velocity
+(2) its net displacement
+(3) the distance travelled by it
+(4) its average speed
+= 2
+~ The area under a velocity-time graph equals the displacement, with areas below the time axis counted as negative. Distance would need the area under the speed-time graph, with all parts counted as positive.
+
+Q 10 | sci | Physics
+The power of a lens of focal length 10 cm is
+(1) 0·1 dioptre
+(2) 1 dioptre
+(3) 10 dioptre
+(4) 100 dioptre
+= 3
+~ P = 1/f (in metres) = 1/0.1 = 10 dioptre.
+
+Q 11 | sci | Chemistry
+Consider the following statements regarding burning of magnesium ribbon in air :
+1. White powder of MgO is formed.
+2. It is an example of combustion reaction.
+3. Heat and light are produced.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 1 and 3 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Magnesium burns in air with a dazzling white flame (2Mg + O₂ → 2MgO), giving off heat and light and leaving white magnesium oxide powder. This is a combustion reaction, so all three statements are correct.
+
+Q 12 | sci | Chemistry
+Which of the following statements with regard to the reaction given below are correct?
+CaO(s) + H₂O(l) → Ca(OH)₂ (aq) + Heat
+1. Quicklime is used for white-washing of walls.
+2. The solution of slaked lime is used for whitewashing of walls.
+3. CaO reacts slowly with CO₂ in air to form a thin layer of CaCO₃ on walls.
+4. Calcium hydroxide called 'slaked lime' is an inorganic compound.
+Select the correct answer using the code given below.
+(1) 1 and 4 only
+(2) 2 and 4
+(3) 2 and 3
+(4) 1, 3 and 4
+= 2
+~ Walls are whitewashed with a solution of slaked lime, Ca(OH)₂, which is an inorganic compound. The shiny CaCO₃ layer forms when Ca(OH)₂ (not CaO) reacts slowly with CO₂ in the air, so statements 1 and 3 are wrong.
+
+Q 13 | sci | Chemistry
+Which of the following statements with regard to heating of lead nitrate powder over a flame are correct?
+1. Brown fumes of NO are released.
+2. Colourless O₂ gas is released.
+3. It is an example of oxidation reaction.
+4. It is an example of thermal decomposition used for the production of NO₂ gas.
+Select the correct answer using the code given below.
+(1) 1 and 2
+(2) 2, 3 and 4
+(3) 1, 3 and 4
+(4) 2 and 4 only
+= 4
+~ 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂ on heating. The brown fumes are NO₂, not NO, and colourless O₂ is also released. The reaction is classified as thermal decomposition, and it is used to make NO₂.
+
+Q 14 | sci | Chemistry
+Which one of the following is not an oxidation reaction?
+(1) Rusting of iron
+(2) Opening of soda bottle
+(3) Rancidity
+(4) Combustion
+= 2
+~ Opening a soda bottle only lets dissolved CO₂ escape as the pressure drops, which is a physical change. Rusting, rancidity and combustion all involve reaction with oxygen.
+
+Q 15 | geo | Indian Geography
+Consider the following clues about a State of India :
+1. It is known as 'land of red river and blue hills'.
+2. It contains three of the six physiographic divisions of India.
+3. It covers about 2·39 percent of total areas of the country.
+Identify the State on the basis of the given clues.
+(1) Karnataka
+(2) Andhra Pradesh
+(3) Assam
+(4) Chhattisgarh
+= 3
+~ Assam is called the "land of red river (the Brahmaputra) and blue hills". It covers about 78,438 km², roughly 2.39% of India's area, and includes parts of the Himalayan/north-eastern hills, the plains and the Peninsular plateau (Karbi Anglong).
+
+Q 16 | geo | Indian Geography
+Which of the following sets of States shares boundary with Telangana?
+(1) Odisha, Andhra Pradesh, Karnataka, Maharashtra
+(2) Chhattisgarh, Andhra Pradesh, Karnataka, Madhya Pradesh
+(3) Odisha, Andhra Pradesh, Karnataka, Madhya Pradesh
+(4) Chhattisgarh, Andhra Pradesh, Karnataka, Maharashtra
+= 4
+~ Telangana is bordered by Maharashtra to the north and north-west, Chhattisgarh to the north-east, Karnataka to the west and Andhra Pradesh to the south and east. It does not border Madhya Pradesh.
+
+Q 17 | geo | Indian Geography
+Rani told her friends that last year she did boating in four different lakes, namely, Loktak, Barapani, Kolleru and Pulicat. Which of the following States did she visit?
+(1) Manipur, Meghalaya, Kerala, Tamil Nadu
+(2) Manipur, Meghalaya, Andhra Pradesh, Tamil Nadu
+(3) Mizoram, Assam, Kerala, Tamil Nadu
+(4) Mizoram, Assam, Andhra Pradesh, Tamil Nadu
+= 2
+~ Loktak is in Manipur, Barapani (Umiam) is in Meghalaya, Kolleru is in Andhra Pradesh, and Pulicat lies on the Andhra Pradesh–Tamil Nadu border.
+
+Q 18 | geo | Indian Geography
+According to the Census 2011, which of the following statements is/are correct?
+1. A person who can only read but cannot write, is not literate.
+2. A person aged seven years and above, who can both read and write with understanding in any language is treated as literate.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Census 2011 treats a person aged 7 or above who can both read and write with understanding in any language as literate. Someone who can only read but cannot write is not counted as literate.
+
+Q 19 | geo | Indian Geography
+The Tropic of Cancer passes through how many coastal and landlocked States of India, respectively?
+(1) 1 and 7
+(2) 2 and 6
+(3) 2 and 5
+(4) 3 and 5
+= 2
+~ The Tropic of Cancer crosses eight states. Two are coastal (Gujarat and West Bengal) and six are landlocked (Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, Tripura and Mizoram).
+
+Q 20 | eco | Money, Banking & Inflation
+Which one of the following situations can lead to inflation?
+(1) Rapid growth of aggregate demand outweighing supply
+(2) Sluggish growth of aggregate demand
+(3) Reduction in the money supply
+(4) Higher levels of unemployment
+= 1
+~ When aggregate demand grows faster than supply, too much money chases too few goods and prices rise (demand-pull inflation). The other three situations lower prices rather than raise them.
+
+Q 21 | eco | Money, Banking & Inflation
+Which of the following policies help to raise interest rate unambiguously and thereby lead to appreciation of currency?
+(1) Expansionary fiscal and monetary policy
+(2) Contractionary fiscal and monetary policy
+(3) Contractionary fiscal policy and expansionary monetary policy
+(4) Contractionary monetary policy and expansionary fiscal policy
+= 4
+~ Tight monetary policy (less money supply) and expansionary fiscal policy (more government borrowing and demand) both push interest rates up. Higher rates draw in foreign capital, so the currency appreciates. In the other combinations the two effects cancel or both lower rates.
+
+Q 22 | eco | Public Finance & Taxation
+The contraction of private investment spending due to deficit spending by the Government is called
+(1) crowding out
+(2) crowding in
+(3) pump priming
+(4) dumping
+= 1
+~ When the government borrows to cover a deficit, interest rates rise and private investment falls. This is called crowding out. Crowding in is the opposite effect, where public spending encourages private investment.
+
+Q 23 | eco | Growth, Planning & National Income
+Which among the following is/are the objective/objectives of the NITI Aayog?
+1. Imposing policies on the States/UTs
+2. Allocation of funds at National and State levels
+3. Design strategies and long-term policies and programme frameworks
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1, 2 and 3
+(4) 3 only
+= 4
+~ NITI Aayog is a think tank that follows cooperative federalism. It designs strategic and long-term policy and programme frameworks, but it does not impose policies on States or allocate funds as the old Planning Commission did.
+
+Q 24 | eco | Growth, Planning & National Income
+The computation of poverty in terms of Monthly Per Capita Consumption Expenditure (MPCE) based on the Mixed Reference Period was recommended by the
+(1) Lakdawala Committee
+(2) Tendulkar Committee
+(3) Dandekar Committee
+(4) Alagh Committee
+= 2
+~ The Suresh Tendulkar Committee (2009) moved away from calorie-based poverty lines. It measured poverty by MPCE using the Mixed Reference Period (MRP) instead of the earlier Uniform Reference Period.
+
+Q 25 | eco | Schemes & Welfare
+Which of the following is/are the sub-mission/sub-missions of the National Skill Development Mission (NSDM)?
+1. Institutional training
+2. Overseas employment
+3. Leveraging of public infrastructure
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) 1, 2 and 3
+(4) 2 and 3 only
+= 3
+~ NSDM (2015) has seven sub-missions. They are institutional training, infrastructure, convergence, trainers, overseas employment, sustainable livelihoods and leveraging public infrastructure, so all three listed are sub-missions.
+
+Q 26 | eco | Schemes & Welfare
+Which of the following strategies is/are adopted for implementing the POSHAN Abhiyaan?
+1. Inter-sectoral convergence for better service delivery
+2. Use of technology (ICT) for real-time growth monitoring of women and children
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ POSHAN Abhiyaan (2018) relies on convergence across ministries and schemes. It also uses ICT tools such as the Poshan Tracker for real-time growth monitoring of children and women, along with behaviour change (Jan Andolan).
+
+Q 27 | pol | Judiciary
+Which of the following conditions is/are necessary for the issue of a writ of certiorari in India?
+1. There should be a tribunal or an officer having legal authority to determine questions affecting rights of subjects and having a duty to act judicially.
+2. Such tribunal or officer has acted without jurisdiction.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Certiorari is issued by a higher court to quash an order of a lower court, tribunal or quasi-judicial authority that has legal power to decide rights and a duty to act judicially. It is issued when that body has acted without or in excess of jurisdiction, or with an error of law.
+
+Q 28 | pol | Judiciary
+Who among the following Chief Justices of India ordered the constitution of a Special Bench called 'Social Justice Bench'?
+(1) Justice H. L. Dattu
+(2) Justice K. G. Balakrishnan
+(3) Justice R. M. Lodha
+(4) Justice Y. K. Sabharwal
+= 1
+~ In December 2014, CJI H. L. Dattu set up a Social Justice Bench in the Supreme Court to hear cases on social issues, such as those involving women, children and the poor.
+
+Q 29 | his | Modern India
+Who among the following is the author of the book, Bandi Jivan?
+(1) Rash Behari Bose
+(2) Veer Savarkar
+(3) Aruna Asaf Ali
+(4) Sachindranath Sanyal
+= 4
+~ Revolutionary Sachindranath Sanyal, a founder of the Hindustan Republican Association, wrote 'Bandi Jivan' about his life in prison. It inspired many young revolutionaries.
+
+Q 30 | his | Modern India
+In the election held in 1937, in which two provinces was the Indian National Congress not able to emerge as the single largest party?
+(1) Punjab and Sind
+(2) Assam and North-West Frontier Province
+(3) Punjab and Assam
+(4) Assam and Madras
+= 1
+~ In the 1937 provincial elections, the Unionist Party won in Punjab and local parties dominated Sind, so Congress was not the largest party in either. In Assam and NWFP, Congress was the largest party and later formed ministries.
+
+Q 31 | his | Modern India
+Consider the following statements :
+After forming the Indian National Army, Subhas Chandra Bose
+1. recruited a large number of soldiers from the Indian Prisoners of War in Japanese camp
+2. introduced a women's detachment named after the Rani of Jhansi
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ The INA was built largely from Indian prisoners of war held by the Japanese, along with Indian civilians in South-East Asia. Bose also raised an all-women unit, the Rani of Jhansi Regiment, led by Lakshmi Swaminathan (Captain Lakshmi Sahgal).
+
+Q 32 | his | Medieval India
+Which one of the following pairs denoting various forms of 'Bhakti' is not correctly matched?
+(1) Saguna : Belief in Gods with attributes
+(2) Nirguna : Belief in Gods without attributes
+(3) Alvars : Believed in devotion of Shakti
+(4) Nayanars : Believed in devotion of Shiva
+= 3
+~ The Alvars were Tamil saints devoted to Vishnu, not Shakti. The Nayanars were devoted to Shiva, and saguna and nirguna bhakti are worship of God with and without attributes.
+
+Q 33 | geo | Indian Geography
+Which two rivers flow in the region between Gulbarga and Vijayanagara Hampi?
+(1) Narmada and Godavari
+(2) Mahanadi and Godavari
+(3) Kaveri and Periyar
+(4) Krishna and Tungabhadra
+= 4
+~ Between Gulbarga (Kalaburagi) and Hampi lies the Raichur doab, the land between the Krishna and Tungabhadra rivers. Hampi itself stands on the bank of the Tungabhadra.
+
+Q 34 | cur | Defence & Security
+Which one of the following is the only paramilitary force with a dual control structure?
+(1) Central Reserve Police Force
+(2) Assam Rifles
+(3) Indo-Tibetan Border Police
+(4) Central Industrial Security Force
+= 2
+~ Assam Rifles is under dual control. Administrative control rests with the Ministry of Home Affairs, while operational control rests with the Indian Army under the Ministry of Defence. CRPF, ITBP and CISF are under the MHA alone.
+
+Q 35 | his | Medieval India
+Which one of the following is an ethnic community of Assam?
+(1) Bhil
+(2) Gond
+(3) Ahom
+(4) Adi
+= 3
+~ The Ahoms came from the Tai people and ruled Assam from the 13th century to the 19th century, and they are an ethnic community of Assam. The Bhils and Gonds belong to central and western India, and the Adi are a tribe of Arunachal Pradesh.
+
+Q 36 | cur | Sports
+The Chevrons is the name of the cricket team of which one of the following countries?
+(1) Australia
+(2) The Netherlands
+(3) Ireland
+(4) Zimbabwe
+= 4
+~ Zimbabwe's national cricket team is nicknamed "The Chevrons". Australia's men's team is the Baggy Greens, and the Netherlands team is the Flying Dutchmen.
+
+Q 37 | geo | Environment & Ecology
+Cheetahs, brought from Namibia, were introduced in India to which one of the following National Parks?
+(1) Kaziranga National Park
+(2) Keoladeo Ghana National Park
+(3) Keibul Lamjao National Park
+(4) Kuno National Park
+= 4
+~ On 17 September 2022, eight cheetahs from Namibia were released into Kuno National Park in Madhya Pradesh under Project Cheetah.
+
+Q 38 | cur | Awards & Personalities
+Who among the following is not a recipient of the Nobel Prize in Physics in 2022?
+(1) Alain Aspect
+(2) John F. Clauser
+(3) Klaus Hasselmann
+(4) Anton Zeilinger
+= 3
+~ The 2022 Physics Nobel went to Alain Aspect, John F. Clauser and Anton Zeilinger for experiments with entangled photons. Klaus Hasselmann shared the 2021 Physics Nobel for climate modelling.
+
+Q 39 | sci | Biology
+Reflex arcs are evolved in animals for quick and efficient responses. Which one of the following sequences correctly represents a reflex arc?
+(1) Receptor—Sensory neuron—Relay neuron in spinal cord—Brain—Motor neuron—Effector
+(2) Receptor—Sensory neuron—Brain—Relay neuron in spinal cord—Motor neuron—Effector
+(3) Receptor—Motor neuron—Relay neuron in spinal cord—Sensory neuron—Effector
+(4) Receptor—Motor neuron—Brain—Sensory neuron—Effector
+= 1
+~ In a reflex arc the impulse goes from the receptor through the sensory neuron to the relay neuron in the spinal cord, then through the motor neuron to the effector. The spinal cord also passes the information on to the brain. Only option (1) has the sensory-before-motor order with the relay neuron in the spinal cord; the other options put the brain or the motor neuron in the wrong place.
+
+Q 40 | sci | Biology
+Which one of the following is essential for thyroid gland to make thyroxin?
+(1) NaCl
+(2) KCl
+(3) Cholesterol
+(4) Iodine
+= 4
+~ Thyroxine is an iodine-containing hormone, so the thyroid needs iodine to make it. A lack of iodine causes goitre, which is why iodised salt is promoted.
+
+Q 41 | sci | Biology
+In plant cells, RNA is present in
+(1) cytoplasm only
+(2) nuclei and cytoplasm only
+(3) nuclei, cytoplasm, mitochondria, chloroplast and endoplasmic reticulum
+(4) nuclei, cytoplasm, mitochondria, chloroplast and ribosomes
+= 4
+~ RNA is made in the nucleus and works in the cytoplasm. Mitochondria and chloroplasts have their own DNA, RNA and ribosomes, and ribosomes are themselves made largely of rRNA.
+
+Q 42 | sci | Biology
+In grasses, intercalary meristem is usually located at
+(1) root tip
+(2) lateral sides of stem
+(3) base of leaves
+(4) shoot tip
+= 3
+~ Intercalary meristem lies at the base of leaves or internodes in grasses, which lets grass regrow after grazing or mowing. Root and shoot tips have apical meristem, and the sides of the stem have lateral meristem.
+
+Q 43 | sci | Biology
+Xylem is a type of complex tissue in plants for upward conduction of water. Which one of the following xylem tissues consists of living cells?
+(1) Tracheid
+(2) Vessel
+(3) Xylem parenchyma
+(4) Xylem fibre
+= 3
+~ Xylem parenchyma is the only living component of xylem, and it stores food and helps in lateral conduction. Tracheids, vessels and xylem fibres are dead at maturity.
+
+Q 44 | sci | Physics
+Three resistors of resistances 11 Ω, 22 Ω and 33 Ω are connected in parallel. Their equivalent resistance is equal to
+(1) 66 Ω
+(2) 22 Ω
+(3) 12 Ω
+(4) 6 Ω
+= 4
+~ 1/R = 1/11 + 1/22 + 1/33 = (6 + 3 + 2)/66 = 11/66, so R = 6 Ω.
+
+Q 45 | sci | Physics
+The r.m.s. potential difference between the red live wire and black neutral wire in Indian domestic electric supply is
+(1) 160 V
+(2) 220 V
+(3) 300 V
+(4) 410 V
+= 2
+~ Indian domestic supply is 220 V (rms) AC at 50 Hz between the live and neutral wires. The peak value is about 220 × √2 ≈ 311 V.
+
+Q 46 | sci | Physics
+The hydrogen bomb and the uranium bomb are based, respectively on
+(1) nuclear fusion and fission
+(2) fission and thermonuclear fusion
+(3) geothermal fission and fusion
+(4) geothermal fusion and fission
+= 1
+~ A hydrogen bomb releases energy by fusing light hydrogen isotopes (thermonuclear fusion). A uranium (atom) bomb releases energy by the fission of U-235 nuclei.
+
+Q 47 | sci | Physics
+Sound and light waves are
+(1) respectively longitudinal and transverse in air
+(2) respectively transverse and longitudinal in air
+(3) both longitudinal in air
+(4) both transverse in air
+= 1
+~ In air, sound travels as compressions and rarefactions, so it is a longitudinal wave. Light is an electromagnetic wave whose fields oscillate perpendicular to its direction of travel, so it is transverse.
+
+Q 48 | sci | Physics
+A car moving with a speed of 12 m/s is subjected to brakes which produces a deceleration of 6 m/s². The car takes 2 s to stop after the application of brakes. What is the distance covered by the car after the application of brakes?
+(1) 12 m
+(2) 24 m
+(3) 36 m
+(4) 48 m
+= 1
+~ s = ut − ½at² = 12 × 2 − ½ × 6 × 2² = 24 − 12 = 12 m. As a check, v² = u² − 2as gives s = 144/12 = 12 m.
+
+Q 49 | sci | Chemistry
+What is the chemical composition of a soda-acid type fire extinguisher?
+(1) Solution of sodium hydrogen carbonate and sulfuric acid
+(2) Solution of sodium carbonate and sulfuric acid
+(3) Solution of carbon dioxide and sulfuric acid
+(4) Solution of sodium chloride and sulfuric acid
+= 1
+~ A soda-acid extinguisher holds a sodium hydrogen carbonate (baking soda) solution and a separate bottle of sulfuric acid. When they mix they release CO₂, which forces the liquid out onto the fire.
+
+Q 50 | sci | Chemistry
+Consider the following statements :
+While diluting concentrated nitric acid solution
+1. the concentration of [H₃O⁺] ions/volume increases
+2. water must be added slowly to concentrated acid
+3. acid must be added slowly to water
+Which of the statements given above is/are correct?
+(1) 1, 2 and 3
+(2) 1 and 2 only
+(3) 3 only
+(4) 2 and 3 only
+= 3
+~ Diluting an acid lowers the H₃O⁺ concentration per unit volume. Because the process is strongly exothermic, acid must be added slowly to water, never water to acid, to avoid splashing.
+
+Q 51 | sci | Chemistry
+Which one of the following is the correct order of pH for the given substances?
+(1) Coffee < Lemon juice < Milk of magnesia < Blood
+(2) Milk of magnesia < Blood < Coffee < Lemon juice
+(3) Lemon juice < Blood < Coffee < Milk of magnesia
+(4) Lemon juice < Coffee < Blood < Milk of magnesia
+= 4
+~ Approximate pH values are lemon juice about 2.2, black coffee about 5, blood about 7.4 and milk of magnesia about 10. Arranged from lowest to highest, this gives option (4).
+
+Q 52 | sci | Chemistry
+Which one of the following is not true for anodizing process?
+(1) It makes aluminium corrosion resistant.
+(2) Metals like aluminium, titanium and magnesium can be anodized.
+(3) Clean aluminium article is the anode and oxygen gas is evolved at the cathode.
+(4) It is used in aircraft industry.
+= 3
+~ In anodizing, the aluminium article is the anode, and oxygen is released at the anode, where it thickens the protective oxide layer. Hydrogen, not oxygen, is evolved at the cathode, so statement (3) is false.
+
+Q 53 | sci | Chemistry
+Naphthalene burns with a yellow sooty flame. This is because
+(1) carbon to hydrogen ratio is low
+(2) there is incomplete combustion
+(3) there is excess supply of air
+(4) of presence of impurities of nitrogen and sulfur
+= 2
+~ Naphthalene (C₁₀H₈) is an unsaturated aromatic compound with a high carbon content. It does not burn completely, and unburnt carbon particles make the flame yellow and sooty.
+
+Q 54 | sci | Chemistry
+Which of the following statements are true for the reaction of Fe₂O₃ with aluminium?
+1. It is known as the 'thermite reaction'.
+2. The heat evolved is used for welding purpose.
+3. Aluminium metal acts as an oxidizing agent.
+4. Molten Fe and Al are formed at the end of the reaction.
+Select the correct answer using the code given below.
+(1) 1 and 2
+(2) 1 and 3
+(3) 2 and 4
+(4) 1 and 4
+= 1
+~ Fe₂O₃ + 2Al → 2Fe + Al₂O₃ + heat is the thermite reaction, and its heat is used to weld railway tracks. Aluminium is the reducing agent, and the products are molten iron and Al₂O₃, not Al.
+
+Q 55 | geo | World Geography
+Vicky told his friends about his visit to Stewart Island, Bay of Plenty and Hawke Bay. Which country did Vicky visit?
+(1) Canada
+(2) Australia
+(3) New Zealand
+(4) Ireland
+= 3
+~ All three are in New Zealand. Stewart Island lies south of the South Island, and the Bay of Plenty and Hawke Bay are on the coast of the North Island.
+
+Q 56 | his | Art & Culture
+Manav is planning to visit all UNESCO World Heritage Sites in Delhi. He will be visiting
+(1) Red Fort, Qutab Minar, Jama Masjid
+(2) Red Fort, India Gate, Qutab Minar
+(3) Red Fort, Qutab Minar, Humayun Tomb
+(4) Red Fort, Humayun Tomb, India Gate
+= 3
+~ Delhi has three UNESCO World Heritage Sites: the Red Fort Complex, the Qutb Minar and its Monuments, and Humayun's Tomb. Jama Masjid and India Gate are not on the list.
+
+Q 57 | geo | Indian Geography
+What will be the correct sequence of cities on the bank of river Ganga if someone moves from west to east?
+(1) Prayagraj, Kanpur, Bhagalpur, Patna
+(2) Prayagraj, Kanpur, Patna, Bhagalpur
+(3) Kanpur, Prayagraj, Bhagalpur, Patna
+(4) Kanpur, Prayagraj, Patna, Bhagalpur
+= 4
+~ Going downstream (west to east), the Ganga passes Kanpur, then Prayagraj (where the Yamuna joins), then Patna in Bihar and then Bhagalpur in eastern Bihar.
+
+Q 58 | geo | Indian Geography
+Which one among the following States has the longest extension in north-south direction?
+(1) Jharkhand
+(2) Telangana
+(3) Odisha
+(4) Chhattisgarh
+= 4
+~ Chhattisgarh is long and narrow and stretches about 700 km from north to south. This is more than the north-south extent of Jharkhand, Telangana or Odisha.
+
+Q 59 | cur | National
+Match List-I with List-II and select the correct answer using the code given below the Lists :
+List-I (Day)
+A. World Wetlands Day
+B. International Tiger Day
+C. World Water Day
+D. International Mother Earth Day
+List-II (Date)
+1. 29 July
+2. 22 April
+3. 2 February
+4. 22 March
+Code :
+(1) A-3, B-4, C-1, D-2
+(2) A-3, B-1, C-4, D-2
+(3) A-2, B-1, C-4, D-3
+(4) A-2, B-4, C-1, D-3
+= 2
+~ World Wetlands Day is on 2 February (the date of the Ramsar Convention, 1971) and International Tiger Day is on 29 July. World Water Day is on 22 March and International Mother Earth Day is on 22 April.
+
+Q 60 | cur | Reports & Indices
+Which one of the following States/UTs is not among the top five in the Performance Grading Index (PGI), published by the Ministry of Education for the year 2020-2021?
+(1) Kerala
+(2) Punjab
+(3) NCT of Delhi
+(4) Chandigarh
+= 3
+~ In PGI 2020-21, Kerala, Punjab, Maharashtra and Chandigarh were among the top scorers, in the second-highest grade (Level II), since no State/UT reached Level I. The NCT of Delhi was not among the top performers.
+
+Q 61 | cur | Awards & Personalities
+Consider the following statements and identify the actress :
+She is a renowned film actress, director and producer, and an accomplished Indian classical dancer. She was conferred the Padma Shri in 1992 and has served as the Head of Central Board for Film Certification from 1998 to 2001. In recognition to her exemplary lifetime contribution to Indian Cinema, she was honoured with the prestigious Dadasaheb Phalke Award.
+(1) Vyjayanthimala
+(2) Waheeda Rehman
+(3) Mala Sinha
+(4) Asha Parekh
+= 4
+~ Asha Parekh received the Padma Shri in 1992, was the first woman to chair the Central Board of Film Certification (1998–2001), and was given the Dadasaheb Phalke Award for 2020 (announced in 2022). Waheeda Rehman got the Phalke Award later, for 2021, and never headed the CBFC.
+
+Q 62 | cur | International
+Which one of the following is the venue of the UN 2023 Water Conference?
+(1) Washington, DC
+(2) New York
+(3) San Diego
+(4) New Delhi
+= 2
+~ The UN 2023 Water Conference was held at UN Headquarters in New York in March 2023, co-hosted by Tajikistan and the Netherlands. It was the first UN conference on water since 1977.
+
+Q 63 | cur | Awards & Personalities
+Which of the following statements is/are correct?
+1. Tomb of Sand, written by Geetanjali Shree, is the first book originally written in any Indian language to win the International Booker Prize.
+2. Tomb of Sand is the first novel translated from Hindi to be given the International Booker Prize.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Geetanjali Shree's Hindi novel "Ret Samadhi", translated by Daisy Rockwell as "Tomb of Sand", won the International Booker Prize in 2022. It was the first book written in any Indian language, and the first translated from Hindi, to win it, so both statements are correct.
+
+Q 64 | cur | Defence & Security
+The eighth edition of the Exercise Garuda Shakti, a bilateral military-to-military exercise, was conducted recently between the special forces of India and
+(1) Japan
+(2) Indonesia
+(3) Bhutan
+(4) Myanmar
+= 2
+~ Garuda Shakti is the joint special forces exercise of the Indian Army and the Indonesian Army; its eighth edition was held in Indonesia in late 2022. Do not confuse it with Garuda, the India–France air force exercise.
+
+Q 65 | eco | Money, Banking & Inflation
+Which one of the following is a measure that can be used by the Government for combatting inflation?
+(1) Increasing the non-planned expenditure on defence, police, etc.
+(2) Providing more subsidies on exports
+(3) Increasing the rate of interest on savings and fixed deposits
+(4) Reduction in the cash reserve ratio (CRR)
+= 3
+~ Higher interest rates on savings and fixed deposits encourage people to save and spend less, which reduces demand and pulls inflation down. More government spending, export subsidies and a lower CRR all add money or demand to the economy, so they would push prices up.
+
+Q 66 | eco | Money, Banking & Inflation
+The sustained decrease in the general price level is called as
+(1) deflation
+(2) stagflation
+(3) devaluation
+(4) recession
+= 1
+~ Deflation is a sustained fall in the general price level, the opposite of inflation. Stagflation is inflation combined with stagnant growth, and devaluation is an official cut in a currency's external value.
+
+Q 67 | eco | Schemes & Welfare
+Which one of the following indicators is included in the National Multidimensional Poverty Index (MPI)?
+(1) Years of schooling
+(2) Literacy rate
+(3) Life expectancy
+(4) Per capita income
+= 1
+~ NITI Aayog's National MPI covers health, education and standard of living through 12 indicators, and years of schooling and school attendance are its education indicators. Life expectancy and per capita income belong to the Human Development Index, not the MPI.
+
+Q 68 | eco | Growth, Planning & National Income
+The unemployment that occurs due to changes in the technology or in the demand for particular products is called
+(1) frictional unemployment
+(2) structural unemployment
+(3) cyclical unemployment
+(4) disguised unemployment
+= 2
+~ Structural unemployment comes from a mismatch between workers' skills and the jobs available, caused by changes in technology or in the pattern of demand. Frictional unemployment is short-term job switching, and cyclical unemployment follows business-cycle downturns.
+
+Q 69 | eco | Schemes & Welfare
+Which of the following is/are the objective/objectives of the Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)?
+1. Correcting regional imbalances in the availability of tertiary health care services
+2. Providing universal access to public health services and universal immunization
+3. Augmenting facilities for quality medical education in the country
+Select the correct answer using the code given below.
+(1) 1 and 3 only
+(2) 2 and 3 only
+(3) 1 only
+(4) 1, 2 and 3
+= 1
+~ PMSSY, launched in 2003, aims to correct regional imbalances in affordable tertiary healthcare and to improve medical education, by setting up new AIIMS and upgrading government medical colleges. Universal immunization is handled by other programmes, such as the Universal Immunization Programme and the National Health Mission.
+
+Q 70 | his | Modern India
+Who among the following political leaders suggested the dissolution of the Indian National Congress as a political organization and its replacement by a Lok Sevak Sangh?
+(1) Vallabhbhai Patel
+(2) Dr. B. R. Ambedkar
+(3) M. K. Gandhi
+(4) Jawaharlal Nehru
+= 3
+~ In his last draft constitution for the Congress, written in January 1948 and called his "last will and testament", Gandhi proposed that once independence was won, the Congress should be dissolved as a political body and turned into a Lok Sevak Sangh devoted to constructive social work.
+
+Q 71 | cur | Defence & Security
+India is the first country in the world to deploy an all-woman contingent to a UN Peacekeeping Mission. In which country did this mission operate?
+(1) Liberia
+(2) Sudan
+(3) Burundi
+(4) Croatia
+= 1
+~ In 2007 India sent the world's first all-female Formed Police Unit, drawn from the CRPF, to the UN Mission in Liberia (UNMIL), where it served until 2016.
+
+Q 72 | eco | Schemes & Welfare
+Which one among the following is not a part of the SWAYAM programme?
+(1) Video lectures
+(2) Classroom lectures
+(3) Online discussion forum for clearing doubts
+(4) Specially prepared material that can be downloaded/printed
+= 2
+~ SWAYAM is the Government of India's online learning platform. Its four parts, or "quadrants", are video lectures, reading material that can be downloaded or printed, self-assessment tests and quizzes, and an online discussion forum for clearing doubts. Physical classroom lectures are not part of it.
+
+Q 73 | pol | Union & State Government
+Which one among the following Departments/Authorities is not under the Ministry of Home Affairs?
+(1) The Department of States
+(2) The Department of Official Language
+(3) The National Authority Chemical Weapons Convention
+(4) The Department of Jammu, Kashmir and Ladakh Affairs
+= 3
+~ The National Authority, Chemical Weapons Convention (NACWC) is India's liaison body with the OPCW, and it works under the Cabinet Secretariat. The Departments of States, of Official Language, and of Jammu, Kashmir and Ladakh Affairs are all part of the Ministry of Home Affairs.
+
+Q 74 | pol | Federalism & Local Government
+Who among the following is given discretionary powers under the Fifth Schedule of the Constitution of India to set up a Tribes Advisory Council in a State which has Scheduled Tribes but not Scheduled Areas?
+(1) The Governor of the concerned State
+(2) The President of India
+(3) The Inter-State Council
+(4) The Parliament of India
+= 2
+~ Under Paragraph 4 of the Fifth Schedule, every State with Scheduled Areas must have a Tribes Advisory Council. A State that has Scheduled Tribes but no Scheduled Areas must set one up if the President so directs.
+
+Q 75 | pol | Federalism & Local Government
+Which of the following States/UTs are included in the Northern Zonal Council?
+(1) Uttarakhand, Uttar Pradesh, Haryana, Punjab, Jammu and Kashmir
+(2) Haryana, Punjab, Himachal Pradesh, Rajasthan and NCT of Delhi
+(3) Uttar Pradesh, Uttarakhand, Punjab, Haryana and Rajasthan
+(4) Uttarakhand, Uttar Pradesh, Himachal Pradesh, Punjab and Haryana
+= 2
+~ Under the States Reorganisation Act, 1956, the Northern Zonal Council has Haryana, Himachal Pradesh, Punjab and Rajasthan, plus Delhi, Chandigarh, Jammu & Kashmir and Ladakh. Uttar Pradesh and Uttarakhand are in the Central Zonal Council, so every other option is wrong.
+
+Q 77 | his | Ancient India
+Who among the following were referred to as the 'Theris' in ancient India?
+(1) Respected women
+(2) Elder nuns in Buddhism
+(3) Women denied the Bhikkhuni status
+(4) Women expelled from the Buddhist Sangha
+= 2
+~ "Theri" is Pali for an elder nun, or bhikkhuni, of the Buddhist Sangha. Their verses are collected in the Therigatha, part of the Khuddaka Nikaya of the Sutta Pitaka.
+
+Q 78 | his | Modern India
+Which member of the Servants of India Society founded the Seva Samiti at Allahabad in 1914?
+(1) Shri Ram Bajpai
+(2) Hriday Nath Kunzru
+(3) S. G. Vaze
+(4) Srinivas Shastri
+= 2
+~ Hriday Nath Kunzru of the Servants of India Society founded the Seva Samiti at Allahabad in 1914, to organise social service and relief work. Shri Ram Bajpai later started the Seva Samiti Boy Scouts Association in 1914.
+
+Q 79 | his | Modern India
+The First Anglo-Maratha War was concluded by which one of the following?
+(1) The Treaty of Surat
+(2) The Treaty of Purandar
+(3) The Convention of Wadgaon
+(4) The Treaty of Salbai
+= 4
+~ The First Anglo-Maratha War (1775–82) ended with the Treaty of Salbai in 1782. The Treaty of Surat (1775) started the war, Purandar (1776) was an interim treaty, and the Convention of Wadgaon (1779) was a humiliating British surrender in the middle of the war.
+
+Q 80 | his | Modern India
+Name the battle in which the Travancore King defeated the Dutch in 1741.
+(1) The Battle of Porto Novo
+(2) The Battle of Colachel
+(3) The Battle of Pollilore
+(4) The Battle of Changanassery
+= 2
+~ Marthanda Varma of Travancore defeated the Dutch East India Company at the Battle of Colachel in 1741, ending Dutch ambitions in Kerala. Porto Novo and Pollilur were battles of the Second Anglo-Mysore War.
+
+Q 81 | his | Modern India
+In which one of the following revolts did the Koya and Konda tribal chiefs rise against the local overlord from a Mansabdar family?
+(1) The Rampa Rebellion, 1879–1880
+(2) The Gudem Uprising, 1886
+(3) The Rampa Rebellion, 1922–1924
+(4) The Telangana Armed Struggle, 1946–1951
+= 1
+~ In the Rampa rebellion of 1879–80, Koya and Konda Dora hill tribes in the Godavari Agency rose against the local mansabdar and the British, who backed him, over oppressive rule and new restrictions on forests and toddy. The 1922–24 Rampa rebellion, led by Alluri Sitarama Raju, was against the British administration itself.
+
+Q 82 | cur | Sports
+Which country won the FIFA World Cup (Men) for maximum number of times?
+(1) Argentina
+(2) Brazil
+(3) France
+(4) Spain
+= 2
+~ Brazil has won the men's FIFA World Cup five times (1958, 1962, 1970, 1994, 2002), more than any other country. Argentina has won three, the latest in 2022.
+
+Q 83 | cur | Awards & Personalities
+Who among the following is the author of the famous novel, City of Joy?
+(1) Larry Collins
+(2) Dominique Lapierre
+(3) Rudyard Kipling
+(4) Mark Tully
+= 2
+~ "The City of Joy" (1985), set in a Kolkata slum, was written by the French author Dominique Lapierre, who died in December 2022. Larry Collins co-wrote "Freedom at Midnight" with him, but City of Joy was Lapierre's alone.
+
+Q 84 | cur | Awards & Personalities
+Who among the following is honoured with the UN Environment Programme's 2022 Champions of the Earth Award in the Entrepreneurial Vision category?
+(1) Ela Bhatt
+(2) Amit Dasgupta
+(3) Purnima Devi Barman
+(4) Vanshika Parmar
+= 3
+~ Assamese wildlife biologist Purnima Devi Barman won UNEP's 2022 Champions of the Earth award in the Entrepreneurial Vision category. Her "Hargila Army" of women protects the endangered greater adjutant stork.
+
+Q 85 | cur | International
+The theme of India's G20 Presidency 'Vasudhaiva Kutumbakam' or 'One Earth-One Family-One Future' is drawn from the
+(1) Maha Purana
+(2) Maha Upanishad
+(3) Rig Veda
+(4) Smriti
+= 2
+~ The phrase "Vasudhaiva Kutumbakam" ("the world is one family") comes from the Maha Upanishad. India used it as the theme of its 2023 G20 Presidency.
+
+Q 86 | cur | Defence & Security
+The 16th edition of Indo-Nepal annual joint training exercise in jungle warfare and counterterrorism operations was held in December 2022 at Nepal Army Battle School, Saljhandi. What is the name of this exercise?
+(1) Sampriti
+(2) Mitra Shakti
+(3) Yudh Abhyas
+(4) Surya Kiran
+= 4
+~ Surya Kiran is the annual India–Nepal army exercise; its 16th edition was held at Saljhandi, Nepal, in December 2022. Sampriti is with Bangladesh, Mitra Shakti with Sri Lanka and Yudh Abhyas with the USA.
+
+Q 87 | geo | Physical Geography
+If it is 10:00 a.m. at Greenwich Mean Time (GMT), then what will be the time at 90° E longitude?
+(1) 5:00 a.m.
+(2) 4:00 a.m.
+(3) 3:00 p.m.
+(4) 4:00 p.m.
+= 4
+~ The Earth turns 15° of longitude per hour, so 90° E is 90/15 = 6 hours ahead of GMT. 10:00 a.m. + 6 hours = 4:00 p.m.
+
+Q 88 | sci | Science & Technology
+Which of the following groups of planets is termed as 'gas planets' as they are composed primarily of lighter ices, liquids and gases?
+(1) Mars, Jupiter, Neptune, Uranus
+(2) Jupiter, Uranus, Neptune, Saturn
+(3) Saturn, Mars, Jupiter, Neptune
+(4) Neptune, Saturn, Mars, Uranus
+= 2
+~ The outer, or Jovian, planets are Jupiter, Saturn, Uranus and Neptune. They are made mainly of hydrogen, helium, ices and liquids. Mars is a rocky terrestrial planet, which rules out every other option.
+
+Q 89 | geo | Indian Geography
+Consider the following characteristics of a soil type :
+1. These soils consist of various proportions of sand, silt and clay.
+2. These soils contain adequate proportions of potash, phosphoric acid and lime.
+3. These soils can be further classified on the basis of their age.
+Identify the type of soil on the basis of the given characteristics.
+(1) Alluvial
+(2) Laterite
+(3) Arid
+(4) Black
+= 1
+~ Alluvial soils are river deposits containing different proportions of sand, silt and clay, and they are generally rich in potash, phosphoric acid and lime. By age they are divided into old alluvium (bangar) and new alluvium (khadar).
+
+Q 90 | sci | Physics
+Consider the following statements and identify the correct answer using the code given below :
+1. In a thermal power station, fuels such as oil, coal or natural gas are used to generate electricity.
+2. Fuels are burned to heat water and turn it into steam, which goes through a turbine, which spins and turns, generating electricity.
+Code :
+(1) Statement 1 is correct but statement 2 is not correct
+(2) Statement 2 is correct but statement 1 is not correct
+(3) Both the statements are correct and statement 2 explains statement 1
+(4) Both the statements are correct but statement 2 does not explain statement 1
+= 3
+~ A thermal power station burns coal, oil or gas to boil water. The high-pressure steam spins a turbine connected to a generator, which produces electricity. So statement 2 describes how the fuel in statement 1 actually produces the electricity.
+
+Q 91 | geo | Indian Geography
+Indus river basin is extended up to
+(1) Ladakh, Jammu and Kashmir, Himachal Pradesh, Punjab
+(2) Ladakh, Jammu and Kashmir, Punjab, Haryana
+(3) Ladakh, Jammu and Kashmir, Punjab, Haryana, Rajasthan
+(4) Ladakh, Jammu and Kashmir, Himachal Pradesh, Punjab, Haryana, Rajasthan
+= 4
+~ In India the Indus basin, with tributaries such as the Jhelum, Chenab, Ravi, Beas and Sutlej, covers Ladakh, Jammu & Kashmir, Himachal Pradesh, Punjab, and parts of Haryana, Rajasthan and Chandigarh. Only option (4) has all of them.
+
+Q 92 | pol | Constitutional & Statutory Bodies
+Which one of the following statements about the Solicitor General of India (SGI) is not correct?
+(1) The SGI is the Government's chief legal advisor.
+(2) The SGI is the secondary law officer of the country.
+(3) The post of the SGI is a constitutional post.
+(4) The SGI is appointed by the Appointments Committee of the Cabinet.
+= 1
+~ UPSC's key accepts both (a) and (c). The Attorney General (Article 76), not the SGI, is the Government's chief legal adviser. The SGI is the second law officer, below the AG, and the post is statutory, not constitutional: it is created under the Law Officers (Conditions of Service) Rules, 1987, and filled by the Appointments Committee of the Cabinet.
+
+Q 93 | pol | Union & State Government
+Which one of the following committees does not have members from the Rajya Sabha?
+(1) The Public Accounts Committee
+(2) The Committee on Public Undertakings
+(3) The Estimates Committee
+(4) The Committee on the Welfare of Scheduled Castes and Scheduled Tribes
+= 3
+~ All 30 members of the Estimates Committee come from the Lok Sabha. The Public Accounts Committee and the Committee on Public Undertakings each have 15 Lok Sabha and 7 Rajya Sabha members. The Committee on the Welfare of SCs and STs has 20 Lok Sabha and 10 Rajya Sabha members.
+
+Q 94 | pol | Union & State Government
+Which one of the following statements about the election of the President of India is not correct?
+(1) A Union Minister shall not be eligible for election as the President.
+(2) The President is elected by the elected members of the Parliament and the Legislative Assemblies of States and Union Territories.
+(3) The Electoral College does not include elected members of the Legislative Councils.
+(4) The system of proportional representation by means of single transferable vote is followed.
+= 1
+~ The Explanation to Article 58 says a Union or State Minister is not treated as holding an office of profit, so a Union Minister can be elected President. The electoral college under Articles 54–55 is the elected MPs and the elected MLAs of the States, including Delhi and Puducherry. MLCs are not part of it, and voting is by proportional representation through the single transferable vote.
+
+Q 95 | pol | Constitution & Rights
+The Citizenship Act, 1955 deals with the determination of citizenship on or after
+(1) 26th January, 1950
+(2) 26th November, 1949
+(3) 15th August, 1947
+(4) 14th August, 1947
+= 1
+~ Articles 5–11 of the Constitution decided who was a citizen when the Constitution began on 26 January 1950. The Citizenship Act, 1955 covers acquiring and losing citizenship after that date, by birth, descent, registration, naturalisation or incorporation of territory.
+
+Q 96 | eco | Schemes & Welfare
+According to the National Multidimensional Poverty Index (MPI) constructed by the NITI Aayog, a household is considered deprived if
+1. a single member of the household is identified as under-nourished
+2. the body mass index of a woman member, between 15 years and 49 years of age, is below 18·5 kg/m²
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ On the MPI's nutrition indicator, a household counts as deprived if any one of its members is undernourished. For women aged 15–49, undernourishment means a body mass index below 18.5 kg/m², so both statements are correct.
+
+Q 97 | his | Medieval India
+The titles of 'Rayagajakesari' and 'Dayagajakesari' were associated with which one of the following dynasties?
+(1) Kakatiya
+(2) Vijayanagara
+(3) Gajapati
+(4) Rashtrakuta
+= 1
+~ "Rayagajakesari" ("a lion to the elephants that are kings") was a title of the Kakatiya rulers of Warangal and appears on their coins and inscriptions. "Dayagajakesari" is a similar title from the same dynasty.
+
+Q 98 | his | Art & Culture
+Name the location of the musical inscription containing groups of musical notes arranged for the benefit of his pupils by a king in the seventh or eighth century CE.
+(1) Ennayiram
+(2) Uttaramerur
+(3) Siyyamangalam
+(4) Kudumiyamalai
+= 4
+~ The rock inscription at Kudumiyamalai, in Pudukkottai district of Tamil Nadu, records groups of musical notes set down by a king for his students, and is dated to the 7th–8th century CE. Uttaramerur is known instead for its Chola inscriptions on village assemblies.
+
+Q 99 | his | Modern India
+In the context of eighteenth century India, what was 'Dastak'?
+(1) Signature
+(2) Land document
+(3) Trade permit
+(4) Tax on textiles
+= 3
+~ A dastak was a free pass or trade permit. Under Farrukhsiyar's 1717 farman it let the English East India Company carry goods without paying duties, and its misuse by Company servants for private trade led to conflict with Siraj-ud-Daulah and Mir Qasim.
+
+Q 100 | his | Modern India
+Which one of the following was primarily associated with 'Dadni' system?
+(1) Textile production
+(2) Warfare
+(3) Payment to officials
+(4) Revenue collection
+= 1
+~ Under the dadni system, the European companies, through merchant agents, advanced money to weavers to produce textiles, which were then delivered at fixed prices. Over time it left weavers tied to the Company.
+
+Q 101 | his | Ancient India
+Consider the following statements about Kanaganahalli archaeological site :
+1. It is situated on the bank of Bhima river.
+2. The remains of the Kanaganahalli Stupa can be dated between 1st and 3rd centuries CE.
+3. Emperor Ashoka's image was found at the site.
+Which of the statements given above are correct?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ Kanaganahalli, near Sannati in Kalaburagi district of Karnataka, lies on the Bhima river. Its Buddhist stupa dates mainly from the 1st to 3rd centuries CE, in the Satavahana period. A sculpted panel there shows a king labelled "Raya Asoko", one of the very few portraits of Ashoka, so all three statements are correct.
+
+Q 102 | geo | Physical Geography
+Which of the following statements about volcanoes are correct?
+1. The strength of a volcano is measured by the Volcanic Explosive Index.
+2. Iceland and Philippines were created by volcanic activity.
+3. Volcanic soils are rich, deep and fertile and allow intensive agriculture to take place.
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ The Volcanic Explosivity Index (VEI) rates eruptions on a 0–8 scale. Iceland formed on the Mid-Atlantic Ridge, and the Philippine islands are volcanic island arcs. Weathered lava and ash produce deep, fertile soils, as in Java, so all three statements are correct.
+
+Q 103 | geo | Physical Geography
+Consider the following characteristics of a cloud type :
+1. They are born through convection.
+2. Only cloud type that can produce hail, thunder and lightning.
+3. They are large cauliflower-shaped towers, often 'anvil tops'.
+Identify the type of cloud on the basis of the given characteristics.
+(1) Stratocumulus
+(2) Cumulonimbus
+(3) Cirrocumulus
+(4) Nimbostratus
+= 2
+~ Cumulonimbus clouds grow from strong convection into tall, cauliflower-like towers whose tops spread out into an anvil shape. They are the thunderstorm clouds that bring hail, thunder and lightning. Nimbostratus gives steady rain but no thunder.
+
+Q 104 | geo | Physical Geography
+Meena wants to show diagrammatically how two sets of data, namely, population size and number of services are related to each other. Which one of the following will be the most suitable for the presentation?
+(1) Pie chart
+(2) Scatter graph
+(3) Bar chart
+(4) Triangular graph
+= 2
+~ A scatter graph plots one variable against another, here population size against number of services, so it shows whether and how strongly the two are related. Pie and bar charts compare parts or categories, and a triangular graph is for three components that add up to 100%.
+
+Q 105 | geo | Indian Geography
+Which one of the following Indian States has the longest coastline?
+(1) Tamil Nadu
+(2) Gujarat
+(3) Maharashtra
+(4) Andhra Pradesh
+= 2
+~ Gujarat has the longest coastline of any Indian State, about 1,600 km, thanks to the Gulfs of Kachchh and Khambhat and the Kathiawar peninsula. Andhra Pradesh comes second among the mainland States.
+
+Q 106 | geo | Indian Geography
+Which of the following statements is/are correct?
+1. Visakhapatnam Port is a land-locked harbour.
+2. Deendayal Port is a tidal port.
+Select the correct answer using the code given below.
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ Visakhapatnam is India's deepest landlocked and well-protected harbour. Deendayal Port (formerly Kandla), at the head of the Gulf of Kachchh, is a tidal port, so both statements are correct.
+
+Q 107 | geo | Environment & Ecology
+There is an increase in forest cover area of India between 2011 and 2021. However, there is a decrease in forest cover area of India during the same period in
+(1) very dense forest (canopy density of more than 70 percent)
+(2) moderately dense forest (canopy density between 40–70 percent)
+(3) open forest (canopy density between 10–20 percent)
+(4) Both (b) and (c)
+= 2
+~ The India State of Forest Reports show total forest cover rising between 2011 and 2021, with very dense and open forest both growing. Moderately dense forest shrank over the same period. (Open forest is actually defined as 10–40% canopy density.)
+
+Q 108 | eco | Schemes & Welfare
+Consider the following statements concerning the National Education Policy, 2020 :
+1. At least 50 percent of the learners through school and higher education system to get exposure to vocational education by 2025.
+2. Secondary schools should collaborate with ITIs, Polytechnics and local industries.
+3. Vocational education to be exclusively provided by NGOs.
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 1 and 2 only
+(3) 2 and 3 only
+(4) 1, 2 and 3
+= 2
+~ NEP 2020 aims for at least 50% of learners to be exposed to vocational education through school and higher education by 2025, and asks secondary schools to work with ITIs, polytechnics and local industry. It brings vocational education into mainstream schools and colleges rather than leaving it to NGOs alone, so statement 3 is wrong.
+
+Q 109 | eco | Schemes & Welfare
+Which of the following sets of States is at the bottom of the Composite SDG India Index, 2020–2021 as per the NITI Aayog?
+(1) Assam, Jharkhand, Bihar
+(2) Uttar Pradesh, Jharkhand, Bihar
+(3) Uttar Pradesh, Bihar, Assam
+(4) Odisha, Bihar, Jharkhand
+= 1
+~ In NITI Aayog's SDG India Index 2020–21, the lowest composite scores went to Bihar (52), Jharkhand (56) and Assam (57). Kerala ranked first.
+
+Q 110 | pol | Constitution & Rights
+Which one of the following is not a part of Article 51 of the Constitution of India?
+(1) Promote international peace and security
+(2) Maintain just and honourable relations between nations
+(3) Use of UN peacekeeping force for resolution of international disputes
+(4) Encourage settlement of international disputes by arbitration
+= 3
+~ Article 51, a Directive Principle, asks the State to promote international peace and security, maintain just and honourable relations between nations, foster respect for international law and treaty obligations, and encourage settlement of international disputes by arbitration. It says nothing about UN peacekeeping forces.
+
+Q 111 | his | World History
+Who among the following was not in the core leadership of the Non-Aligned Movement (NAM) in its formative phase?
+(1) Kwame Nkrumah
+(2) Gamal Abdel Nasser
+(3) Jawaharlal Nehru
+(4) Fidel Castro
+= 4
+~ NAM's founding leaders at the 1961 Belgrade summit were Nehru (India), Nasser (Egypt), Tito (Yugoslavia), Sukarno (Indonesia) and Nkrumah (Ghana). Fidel Castro's Cuba joined, and Castro chaired NAM in 1979, but he was not one of its founding leaders.
+
+Q 112 | his | Medieval India
+In respect to Balutedars, which of the statements given below are correct?
+1. They were village servants and artisans.
+2. They were employed by individual peasant family.
+3. They existed in the Medieval Deccan and Maharashtra.
+Select the correct answer using the code given below.
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 3
+~ Under the baluta system of the medieval Deccan and Maharashtra, balutedars were hereditary village artisans and servants, such as carpenters, potters and barbers. The village community as a whole kept them, paying them a share of the harvest; individual peasant families did not employ them, so statement 2 is wrong.
+
+Q 113 | his | Modern India
+Which one of the following Viceroys was the first to officially shift his Council to Simla in summer season?
+(1) John Lawrence
+(2) Lord Dalhousie
+(3) Lord Mayo
+(4) William Bentinck
+= 1
+~ In 1864, under Viceroy Sir John Lawrence, Simla was officially made the summer capital, and the Viceroy's Council began moving there every summer. Earlier Governors-General had visited Simla, but not as the formal seat of government.
+
+Q 114 | his | Art & Culture
+Who among the following is the author of Maze Vidyapeeth, the famous poem about the life of working class of Bombay?
+(1) Narayan Surve
+(2) Amol Palekar
+(3) Bhalchandra Nemade
+(4) Narendra Jadhav
+= 1
+~ "Maze Vidyapeeth" ("My University") is a well-known Marathi poem, and the title of a 1966 collection, by Narayan Surve. Surve was a poet of Bombay's mill workers and working class. Bhalchandra Nemade is a Marathi novelist, and Amol Palekar is an actor.
+
+Q 115 | his | Modern India
+Who among the following founded the Hindu Dharma Sabha in the 19th century?
+(1) Radhakanta Deb
+(2) Ram Mohan Roy
+(3) Dwarkanath Tagore
+(4) Keshab Chandra Sen
+= 1
+~ Radhakanta Deb, a conservative leader in Calcutta, founded the Dharma Sabha in 1830 to oppose Bentinck's 1829 ban on sati, which Ram Mohan Roy had campaigned for.
+
+Q 116 | cur | International
+The resolution adopted by the United Nations General Assembly on 3 March, 2021 decided to celebrate the year 2023 as the International Year of
+(1) Basic Sciences for Sustainable Development
+(2) Glass
+(3) Millets
+(4) Camelids
+= 3
+~ On 3 March 2021 the UN General Assembly adopted an India-sponsored resolution declaring 2023 the International Year of Millets. Basic Sciences for Sustainable Development and Glass were the themes for 2022, and Camelids for 2024.
+
+Q 117 | cur | Sports
+Karthik Meiyappan, who secured hat-trick in the ICC Men's T20 World Cup, 2022, represents
+(1) Zimbabwe
+(2) United Arab Emirates
+(3) Sri Lanka
+(4) Namibia
+= 2
+~ Karthik Meiyappan, a leg-spinner born in Chennai, plays for the UAE. He took a hat-trick against Sri Lanka at Geelong in the 2022 T20 World Cup.
+
+Q 118 | cur | International
+Which one of the following statements about the Wassenaar Arrangement is not correct?
+(1) There are 42 participating nations in the Arrangement.
+(2) It is formed primarily as a nuclear weapon overseer.
+(3) India is the current Chairman of the Arrangement.
+(4) India joined the Arrangement in the year 2017.
+= 2
+~ The Wassenaar Arrangement is an export-control regime for conventional arms and dual-use goods and technologies, not a nuclear watchdog; nuclear exports are covered by the Nuclear Suppliers Group. India became its 42nd participating state in December 2017 and held the chair of its Plenary in 2023.
+
+Q 119 | cur | Sports
+Who among the following is known as 'Payyoli Express'?
+(1) Hima Das
+(2) Dutee Chand
+(3) P. T. Usha
+(4) Shiny Abraham
+= 3
+~ Sprinter P. T. Usha, from Payyoli in Kerala, is nicknamed the "Payyoli Express". In 2022 she became the first woman president of the Indian Olympic Association. Hima Das is known as the "Dhing Express".
+
+Q 120 | cur | Awards & Personalities
+Match List-I with List-II relating to Sahitya Akademi Award Winners, 2022 and select the correct answer using the code given below the Lists :
+List-I (Title and Genre)
+A. Bhool Satya (Short Stories)
+B. Tumadi Ke Shabd (Poetry)
+C. Chhe Roopak (Drama)
+D. Alekhun Amba (Play)
+List-II (Author)
+1. Kamal Ranga
+2. Veena Gupta
+3. Badri Narayan
+4. Manoj Kumar Goswami
+Code :
+(1) A-1, B-2, C-3, D-4
+(2) A-1, B-3, C-2, D-4
+(3) A-4, B-3, C-2, D-1
+(4) A-4, B-2, C-3, D-1
+= 3
+~ Sahitya Akademi Awards 2022: Manoj Kumar Goswami won for "Bhool Satya" (Assamese short stories), Badri Narayan for "Tumadi Ke Shabd" (Hindi poetry), Veena Gupta for "Chhe Roopak" (Dogri drama) and Kamal Ranga for "Alekhun Amba" (Rajasthani play).

@@ -201,6 +201,30 @@ CAPF_SUBJECTS = [
 # ---------- UPSC CDS (Combined Defence Services): English, General Knowledge, Elementary Mathematics (27 Nov 2026) ----------
 # Work files: /home/claude/cdsnda (transcribed from UPSC's booklets, Series A; answers from UPSC's official keys). English only.
 CDS_PAPERS = [
+  dict(id='cds25a-eng', file='cds-1-2025-english.txt', year=2025, stage='CDS (I) 2025 · English', short='CDS I 2025 · English',
+       title='UPSC CDS (I) 2025 English', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-1-2025-english-question-paper-with-answers',
+       blurb='English: grammar, vocabulary, sentence ordering, fill in the blanks and comprehension (120 questions, 100 marks).'),
+  dict(id='cds25a-gk', file='cds-1-2025-general-knowledge.txt', year=2025, stage='CDS (I) 2025 · General Knowledge', short='CDS I 2025 · GK',
+       title='UPSC CDS (I) 2025 General Knowledge', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-1-2025-general-knowledge-question-paper-with-answers',
+       blurb='General Knowledge: history, geography, polity, economy, general science and current affairs (120 questions, 100 marks).'),
+  dict(id='cds25a-mat', file='cds-1-2025-elementary-mathematics.txt', year=2025, stage='CDS (I) 2025 · Elementary Mathematics', short='CDS I 2025 · Maths',
+       title='UPSC CDS (I) 2025 Elementary Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-1-2025-elementary-mathematics-question-paper-with-answers',
+       blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
+  dict(id='cds24b-eng', file='cds-2-2024-english.txt', year=2024, stage='CDS (II) 2024 · English', short='CDS II 2024 · English',
+       title='UPSC CDS (II) 2024 English', notif='Answers by Learn with Anil (UPSC key not published)', held='1 September 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2024-english-question-paper-with-answers',
+       blurb='English: grammar, vocabulary, sentence ordering, fill in the blanks and comprehension (120 questions, 100 marks).'),
+  dict(id='cds24b-gk', file='cds-2-2024-general-knowledge.txt', year=2024, stage='CDS (II) 2024 · General Knowledge', short='CDS II 2024 · GK',
+       title='UPSC CDS (II) 2024 General Knowledge', notif='Answers by Learn with Anil (UPSC key not published)', held='1 September 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2024-general-knowledge-question-paper-with-answers',
+       blurb='General Knowledge: history, geography, polity, economy, general science and current affairs (120 questions, 100 marks).'),
+  dict(id='cds24b-mat', file='cds-2-2024-elementary-mathematics.txt', year=2024, stage='CDS (II) 2024 · Elementary Mathematics', short='CDS II 2024 · Maths',
+       title='UPSC CDS (II) 2024 Elementary Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='1 September 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-cds-2-2024-elementary-mathematics-question-paper-with-answers',
+       blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
   dict(id='cds24a-eng', file='cds-1-2024-english.txt', year=2024, stage='CDS (I) 2024 · English', short='CDS I 2024 · English',
        title='UPSC CDS (I) 2024 English', notif='Series A · official key', held='21 April 2024', key="UPSC's official answer key",
        fmt='mcq', slug='upsc-cds-1-2024-english-question-paper-with-answers',
@@ -225,6 +249,18 @@ CDS_PAPERS = [
        title='UPSC CDS (II) 2023 Elementary Mathematics', notif='Series A · official key', held='3 September 2023', key="UPSC's official answer key",
        fmt='mcq', slug='upsc-cds-2-2023-elementary-mathematics-question-paper-with-answers',
        blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
+  dict(id='cds23a-eng', file='cds-1-2023-english.txt', year=2023, stage='CDS (I) 2023 · English', short='CDS I 2023 · English',
+       title='UPSC CDS (I) 2023 English', notif='Series A · official key', held='16 April 2023', key="UPSC's official answer key",
+       fmt='mcq', slug='upsc-cds-1-2023-english-question-paper-with-answers',
+       blurb='English: grammar, vocabulary, sentence ordering, fill in the blanks and comprehension (120 questions, 100 marks).'),
+  dict(id='cds23a-gk', file='cds-1-2023-general-knowledge.txt', year=2023, stage='CDS (I) 2023 · General Knowledge', short='CDS I 2023 · GK',
+       title='UPSC CDS (I) 2023 General Knowledge', notif='Series A · official key', held='16 April 2023', key="UPSC's official answer key",
+       fmt='mcq', slug='upsc-cds-1-2023-general-knowledge-question-paper-with-answers',
+       blurb='General Knowledge: history, geography, polity, economy, general science and current affairs (120 questions, 100 marks).'),
+  dict(id='cds23a-mat', file='cds-1-2023-elementary-mathematics.txt', year=2023, stage='CDS (I) 2023 · Elementary Mathematics', short='CDS I 2023 · Maths',
+       title='UPSC CDS (I) 2023 Elementary Mathematics', notif='Series A · official key', held='16 April 2023', key="UPSC's official answer key",
+       fmt='mcq', slug='upsc-cds-1-2023-elementary-mathematics-question-paper-with-answers',
+       blurb='Elementary Mathematics: arithmetic, algebra, geometry, mensuration, trigonometry and statistics (100 questions, 100 marks).'),
 ]
 
 CDS_SUBJECTS = [
@@ -245,6 +281,30 @@ CDS_SUBJECTS = [
 # ---------- UPSC NDA & NA (National Defence Academy and Naval Academy): Mathematics and General Ability Test (27 Nov 2026) ----------
 # Work files: /home/claude/cdsnda (transcribed from UPSC's booklets, Series A; answers from UPSC's official keys). English only.
 NDA_PAPERS = [
+  dict(id='nda25a-mat', file='nda-1-2025-mathematics.txt', year=2025, stage='NDA & NA (I) 2025 · Mathematics', short='NDA I 2025 · Maths',
+       title='UPSC NDA & NA (I) 2025 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-1-2025-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda25a-gat', file='nda-1-2025-general-ability-test.txt', year=2025, stage='NDA & NA (I) 2025 · General Ability Test', short='NDA I 2025 · GAT',
+       title='UPSC NDA & NA (I) 2025 General Ability Test', notif='Answers by Learn with Anil (UPSC key not published)', held='13 April 2025', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-1-2025-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
+  dict(id='nda24b-mat', file='nda-2-2024-mathematics.txt', year=2024, stage='NDA & NA (II) 2024 · Mathematics', short='NDA II 2024 · Maths',
+       title='UPSC NDA & NA (II) 2024 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='1 September 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2024-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda24b-gat', file='nda-2-2024-general-ability-test.txt', year=2024, stage='NDA & NA (II) 2024 · General Ability Test', short='NDA II 2024 · GAT',
+       title='UPSC NDA & NA (II) 2024 General Ability Test', notif='Answers by Learn with Anil (UPSC key not published)', held='1 September 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-2-2024-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
+  dict(id='nda24a-mat', file='nda-1-2024-mathematics.txt', year=2024, stage='NDA & NA (I) 2024 · Mathematics', short='NDA I 2024 · Maths',
+       title='UPSC NDA & NA (I) 2024 Mathematics', notif='Answers by Learn with Anil (UPSC key not published)', held='21 April 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-1-2024-mathematics-question-paper-with-answers',
+       blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda24a-gat', file='nda-1-2024-general-ability-test.txt', year=2024, stage='NDA & NA (I) 2024 · General Ability Test', short='NDA I 2024 · GAT',
+       title='UPSC NDA & NA (I) 2024 General Ability Test', notif='Answers by Learn with Anil (UPSC key not published)', held='21 April 2024', key='answers worked out and checked by Learn with Anil (UPSC has not published its key)',
+       fmt='mcq', slug='upsc-nda-1-2024-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
   dict(id='nda23b-mat', file='nda-2-2023-mathematics.txt', year=2023, stage='NDA & NA (II) 2023 · Mathematics', short='NDA II 2023 · Maths',
        title='UPSC NDA & NA (II) 2023 Mathematics', notif='Series A · official key', held='3 September 2023', key="UPSC's official answer key",
        fmt='mcq', slug='upsc-nda-2-2023-mathematics-question-paper-with-answers',
@@ -257,6 +317,10 @@ NDA_PAPERS = [
        title='UPSC NDA & NA (I) 2023 Mathematics', notif='Series A · official key', held='16 April 2023', key="UPSC's official answer key",
        fmt='mcq', slug='upsc-nda-1-2023-mathematics-question-paper-with-answers',
        blurb='Mathematics: algebra, matrices, trigonometry, analytical geometry, calculus, vectors, statistics and probability (120 questions, 300 marks).'),
+  dict(id='nda23a-gat', file='nda-1-2023-general-ability-test.txt', year=2023, stage='NDA & NA (I) 2023 · General Ability Test', short='NDA I 2023 · GAT',
+       title='UPSC NDA & NA (I) 2023 General Ability Test', notif='Series A · official key', held='16 April 2023', key="UPSC's official answer key",
+       fmt='mcq', slug='upsc-nda-1-2023-general-ability-test-question-paper-with-answers',
+       blurb='General Ability Test: Part A English and Part B General Knowledge: physics, chemistry, biology, history, geography, polity and current events (150 questions, 600 marks).'),
 ]
 
 NDA_SUBJECTS = [
@@ -3163,28 +3227,28 @@ def exam_confs():
            papers_note="2026: UPSC's provisional answer key, published three days after the exam; the final key may differ for a few questions. 2025: UPSC's key could not be found, so the answers were compiled by Learn with Anil from three published keys and checked one by one. 2024: UPSC's official answer key (Series A). Questions UPSC dropped are left out. Every question is in English and Hindi, as printed in the booklet."),
       dict(id='upsc-cds', dir='upsc-cds', src='upsc-cds', key='upsc-cds', name='UPSC CDS', short='CDS', seo='UPSC CDS',
            slugp='upsc-cds', papers=CDS_PAPERS, subjects=CDS_SUBJECTS, faq=FAQ_CDS, board='UPSC', l2=L2_HI, pb='/upsc-cds/',
-           keyname="UPSC's official answer keys", keyshort="UPSC's official answer keys",
-           title='UPSC CDS Previous Year Question Papers with Answers (2023–2024): English, GK & Maths | Learn with Anil',
+           keyname="UPSC's official answer keys", keyshort="UPSC's official answer keys (latest papers: answers by Learn with Anil, as UPSC's key is not out yet)",
+           title=f"UPSC CDS Previous Year Question Papers with Answers ({cds_text()['years']}): English, GK & Maths | Learn with Anil",
            h1='UPSC CDS previous year question papers <em>with answers.</em>',
-           aka='Also known as the Combined Defence Services Examination (IMA, INA, AFA and OTA). PYQs of English, General Knowledge and Elementary Mathematics, subject-wise, with UPSC\'s official answer key.',
+           aka='Also known as the Combined Defence Services Examination (IMA, INA, AFA and OTA). PYQs of English, General Knowledge and Elementary Mathematics, subject-wise, with answers.',
            l2line='यूपीएससी सीडीएस (संयुक्त रक्षा सेवा) परीक्षा के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
-           desc=lambda t: (f"UPSC CDS (Combined Defence Services) previous year question papers with UPSC's official answer keys and explanations: {cds_text()['sits']}. "
+           desc=lambda t: (f"UPSC CDS (Combined Defence Services) previous year question papers with answers and explanations: {cds_text()['sits']}. "
                            f"{t:,} questions on English, history, geography, polity, economy, science, current affairs and elementary mathematics; "
                            f"subject-wise practice and timed mock tests with the ₹149 All-in-One Pass."),
-           eyebrow='UPSC · Combined Defence Services · 2023–2024',
-           papers_note="Every answer comes from UPSC's official answer key for the Series A booklet. Questions UPSC dropped are left out. Questions are in English, as printed in the booklets."),
+           eyebrow=f"UPSC · Combined Defence Services · {cds_text()['years']}",
+           papers_note=cds_text()['keynote'] + " Questions are in English, as printed in the booklets."),
       dict(id='upsc-nda', dir='upsc-nda', src='upsc-nda', key='upsc-nda', name='UPSC NDA & NA', short='NDA', seo='UPSC NDA',
            slugp='upsc-nda', papers=NDA_PAPERS, subjects=NDA_SUBJECTS, faq=FAQ_NDA, board='UPSC', l2=L2_HI, pb='/upsc-nda/',
-           keyname="UPSC's official answer keys", keyshort="UPSC's official answer keys",
-           title='UPSC NDA Previous Year Question Papers with Answers (2023): Maths & GAT | Learn with Anil',
+           keyname="UPSC's official answer keys", keyshort="UPSC's official answer keys (latest papers: answers by Learn with Anil, as UPSC's key is not out yet)",
+           title=f"UPSC NDA Previous Year Question Papers with Answers ({nda_text()['years']}): Maths & GAT | Learn with Anil",
            h1='UPSC NDA previous year question papers <em>with answers.</em>',
-           aka='Also known as the National Defence Academy and Naval Academy Examination (NDA & NA). PYQs of Mathematics and the General Ability Test, subject-wise, with UPSC\'s official answer key.',
+           aka='Also known as the National Defence Academy and Naval Academy Examination (NDA & NA). PYQs of Mathematics and the General Ability Test, subject-wise, with answers.',
            l2line='यूपीएससी एनडीए और एनए परीक्षा के पिछले वर्षों के प्रश्न पत्र, आधिकारिक उत्तर कुंजी सहित; सभी परीक्षाओं के लिए एक ₹149 ऑल-इन-वन पास।',
-           desc=lambda t: (f"UPSC NDA & NA previous year question papers with UPSC's official answer keys and explanations: NDA (II) 2023 Mathematics and General Ability Test, NDA (I) 2023 Mathematics. "
+           desc=lambda t: (f"UPSC NDA & NA previous year question papers with answers and explanations: {nda_text()['sits']}. "
                            f"{t:,} questions on algebra, trigonometry, calculus, vectors, probability, English, physics, chemistry, biology, history, geography and current events; "
                            f"subject-wise practice and timed mock tests with the ₹149 All-in-One Pass."),
-           eyebrow='UPSC · National Defence Academy &amp; Naval Academy · 2023',
-           papers_note="Every answer comes from UPSC's official answer key for the Series A booklet. Questions UPSC dropped are left out. Questions are in English, as printed in the booklets."),
+           eyebrow=f"UPSC · National Defence Academy &amp; Naval Academy · {nda_text()['years']}",
+           papers_note=nda_text()['keynote'] + " Questions are in English, as printed in the booklets."),
       dict(id='upsc-epfo', dir='upsc-epfo', src='upsc-epfo', key='upsc-epfo', name=('UPSC EPFO (APFC, EO/AO, PA)' if E.get('pa') else 'UPSC EPFO (APFC, EO/AO)'), short='EPFO', seo=('UPSC EPFO' if E['eo'] else 'UPSC EPFO APFC'),
            slugp='upsc-epfo', papers=EPFO_PAPERS, subjects=EPFO_SUBJECTS, faq=FAQ_EPFO, board='UPSC', l2=L2_HI, pb='/upsc-epfo/',
            keyname="UPSC's official answer key", keyshort=("UPSC's official answer keys (" + E['nokeyy'] + ": answers by Learn with Anil, as UPSC has published no key)" if E['nokey'] else "UPSC's official answer keys"),
@@ -5209,20 +5273,43 @@ def FAQ_G1(total, npapers):
     ]
 
 
+def defence_text(src, papers):
+    """Wording for the CDS and NDA pages that depends on which papers are on the site (27 Nov 2026)."""
+    have = set(have_src(src, papers))
+    names = {'eng': 'English', 'gk': 'General Knowledge', 'mat': 'Mathematics' if src == 'upsc-nda' else 'Elementary Mathematics', 'gat': 'General Ability Test'}
+    sits, nokey, years, seen = [], [], set(), []
+    for p in papers:
+        if p['id'] not in have: continue
+        tag = p['id'].split('-')[0]
+        if tag not in seen: seen.append(tag)
+    for tag in seen:
+        ps = [p for p in papers if p['id'].split('-')[0] == tag and p['id'] in have]
+        label = ps[0]['stage'].split(' · ')[0]
+        ws = [names[p['id'].split('-')[1]] for p in ps]
+        sits.append(f"{label} ({', '.join(ws[:-1]) + ' and ' + ws[-1] if len(ws) > 1 else ws[0]})")
+        years.add(ps[0]['year'])
+        if 'Learn with Anil' in ps[0]['key']: nokey.append(label)
+    yrs = f"{min(years)}–{max(years)}" if len(years) > 1 else str(min(years)) if years else ''
+    return dict(sits='; '.join(sits), n=len(have), years=yrs, nokey=nokey,
+                keynote=("Answers come from UPSC's official answer key for the Series A booklet wherever UPSC has published one"
+                         + (f" ({', '.join(l for l in [x.split(' · ')[0] for x in sits] if l not in nokey)})" if nokey else '')
+                         + (f". UPSC has not yet published its key for {', '.join(nokey)}: those answers were worked out and checked one by one by Learn with Anil, and doubtful ones are marked in the explanation" if nokey else '')
+                         + ". Questions UPSC dropped are left out."))
+
+
 def cds_text():
-    """Wording for the CDS page that depends on which papers are on the site (27 Nov 2026)."""
-    have = set(have_src('upsc-cds', CDS_PAPERS))
-    sits = []
-    for tag, name in (('cds24a', 'CDS (I) 2024'), ('cds23b', 'CDS (II) 2023')):
-        ps = [w for k, w in (('eng', 'English'), ('gk', 'General Knowledge'), ('mat', 'Elementary Mathematics')) if f'{tag}-{k}' in have]
-        if ps: sits.append(f"{name} ({', '.join(ps[:-1]) + ' and ' + ps[-1] if len(ps) > 1 else ps[0]})")
-    return dict(sits='; '.join(sits), n=len(have))
+    return defence_text('upsc-cds', CDS_PAPERS)
+
+
+def nda_text():
+    return defence_text('upsc-nda', NDA_PAPERS)
 
 
 def FAQ_NDA(total, npapers):
+    C = nda_text()
     return [
       ('Where can I get UPSC NDA previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} UPSC NDA & NA papers (Mathematics and the General Ability Test), typed from UPSC\'s official question booklets (Series A). Every question has UPSC\'s official answer and a short explanation; maths answers show the working. You can practise each paper as a quiz or a timed test, or pick subjects such as Calculus, Physics or History, with one ₹149 All-in-One Pass for every exam.'),
+       f'This page has {total} questions from {npapers} UPSC NDA & NA papers: {C["sits"]}, typed from UPSC\'s official question booklets. Every question has its answer and a short explanation; maths answers show the working. You can practise each paper as a quiz or a timed test, or pick subjects such as Calculus, Physics or History, with one ₹149 All-in-One Pass for every exam.'),
       ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
        'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('What is the UPSC NDA exam pattern?',
@@ -5230,7 +5317,7 @@ def FAQ_NDA(total, npapers):
       ('When is NDA & NA (I) 2027?',
        'UPSC\'s calendar puts the NDA & NA (I) 2027 notification on 2 December 2026, with applications till 22 December 2026, and the exam on Sunday, 11 April 2027, the same day as CDS (I) 2027. Check upsc.gov.in for the official notice.'),
       ('Are the answers on this site official?',
-       'Yes. Every answer comes from UPSC\'s official answer key for the Series A booklet, which UPSC publishes after the final result. Questions UPSC dropped are left out. Where an answer in UPSC\'s key looks doubtful, the explanation says so but keeps UPSC\'s answer. The explanations are written by Learn with Anil.'),
+       C['keynote'] + ' UPSC publishes its key only after the final result, so the latest papers have no official key yet. Where an answer in UPSC\'s key looks doubtful, the explanation says so but keeps UPSC\'s answer. The explanations are written by Learn with Anil.'),
       ('Is the NDA paper available in Hindi here?',
        'Not yet. UPSC prints the papers in English and Hindi (Part A English is in English only); this site has the English version of each question for now.'),
       ('Do I need to register?',
@@ -5242,7 +5329,7 @@ def FAQ_CDS(total, npapers):
     C = cds_text()
     return [
       ('Where can I get UPSC CDS previous year question papers with answers?',
-       f'This page has {total} questions from {npapers} UPSC CDS papers: {C["sits"]}, typed from UPSC\'s official question booklets (Series A). Every question has UPSC\'s official answer and a short explanation. You can practise each paper as a quiz or a timed test, or pick subjects such as English, History or Arithmetic, with one ₹149 All-in-One Pass for every exam.'),
+       f'This page has {total} questions from {npapers} UPSC CDS papers: {C["sits"]}, typed from UPSC\'s official question booklets. Every question has its answer and a short explanation. You can practise each paper as a quiz or a timed test, or pick subjects such as English, History or Arithmetic, with one ₹149 All-in-One Pass for every exam.'),
       ('What does it cost, and what does the ₹149 All-in-One Pass cover?',
        'One plan: the ₹149 All-in-One Pass, for 12 months. It opens everything on the website: every previous paper of every exam, including exams added later, with answers, explanations, quizzes, timed tests and all study tools, plus every mock test series and the study books. Without a plan you can see the question of the day, the correct answer to every question on the paper pages, and the explanations of the first 10 questions of each paper.'),
       ('What is the UPSC CDS exam pattern?',
@@ -5250,7 +5337,7 @@ def FAQ_CDS(total, npapers):
       ('When is CDS (I) 2027?',
        'UPSC\'s calendar puts the CDS (I) 2027 notification on 2 December 2026, with applications till 22 December 2026, and the exam on Sunday, 11 April 2027, the same day as NDA & NA (I) 2027. Check upsc.gov.in for the official notice.'),
       ('Are the answers on this site official?',
-       'Yes. Every answer comes from UPSC\'s official answer key for the Series A booklet, which UPSC publishes after the final result. Questions UPSC dropped are left out. Where an answer in UPSC\'s key looks doubtful by standard sources, the explanation says so but keeps UPSC\'s answer. The explanations are written by Learn with Anil.'),
+       C['keynote'] + ' UPSC publishes its key only after the final result, so the latest papers have no official key yet. Where an answer in UPSC\'s key looks doubtful by standard sources, the explanation says so but keeps UPSC\'s answer. The explanations are written by Learn with Anil.'),
       ('Is the CDS paper available in Hindi here?',
        'Not yet. The English paper is printed in English only; for General Knowledge and Elementary Mathematics, this site has the English version of each question for now.'),
       ('Do I need to register?',
