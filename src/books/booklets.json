@@ -1116,6 +1116,22 @@
    "key": "bk-karnataka-gpstr-g22g",
    "name": "LearnWithAnil-GPSTR-2022-Paper-1-General-Studies-Question-Paper.pdf",
    "pages": 26
+  },
+  "gpsmk1": {
+   "bytes": 540359,
+   "file": "karnataka-gpstr-gpsmk1-8beb0c1ef6.bin",
+   "key": "bk-karnataka-gpstr-gpsmk1",
+   "mock": "bk-gpsmk-1",
+   "name": "LearnWithAnil-Shikshaka-GPSTR-Mock-1-Mock-Test.pdf",
+   "pages": 22
+  },
+  "gpsmk2": {
+   "bytes": 549741,
+   "file": "karnataka-gpstr-gpsmk2-cd7b3a1f8b.bin",
+   "key": "bk-karnataka-gpstr-gpsmk2",
+   "mock": "bk-gpsmk-2",
+   "name": "LearnWithAnil-Shikshaka-GPSTR-Mock-2-Mock-Test.pdf",
+   "pages": 23
   }
  },
  "karnataka-police-constable": {
@@ -1573,6 +1589,24 @@
    "key": "bk-tgpsc-group-2-g24p4",
    "name": "LearnWithAnil-TGPSC-Group-2-Paper-4-2024-Telangana-Movement-State-Formation-Question-Paper.pdf",
    "pages": 51
+  }
+ },
+ "tgpsc-hmwssb-manager": {
+  "hmmk1": {
+   "bytes": 752012,
+   "file": "tgpsc-hmwssb-manager-hmmk1-3011ec617c.bin",
+   "key": "bk-tgpsc-hmwssb-manager-hmmk1",
+   "mock": "bk-hmmk-1",
+   "name": "LearnWithAnil-Jaladhara-HMWSSB-Mock-1-Mock-Test.pdf",
+   "pages": 36
+  },
+  "hmmk2": {
+   "bytes": 757364,
+   "file": "tgpsc-hmwssb-manager-hmmk2-0404ea94b7.bin",
+   "key": "bk-tgpsc-hmwssb-manager-hmmk2",
+   "mock": "bk-hmmk-2",
+   "name": "LearnWithAnil-Jaladhara-HMWSSB-Mock-2-Mock-Test.pdf",
+   "pages": 35
   }
  },
  "tnpsc-group-4": {

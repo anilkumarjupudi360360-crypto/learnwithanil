@@ -9063,6 +9063,42 @@ MOCK_PACKS = {
                           mocks=[dict(id=f'bk-ukmk-{i}', name=f'Mock {i}', qn=150, mins=120, live=(i <= UKM_LIVE),
                                       parts=[('ukg', 'Uttarakhand GK', ['ukg']), ('gs', 'General Studies', ['his', 'pol', 'geo', 'eco', 'sci']),
                                              ('cur', 'Current Affairs', ['cur']), ('apt', 'General Aptitude', ['apt'])]) for i in range(1, 11)]),
+  # Anil, 28 Nov 2026 (00:10 IST): "Karnataka GPSTR...add next 2 tests for it....TGPSC HMWSSB Manager..add 2 test." First mocks for both exams.
+  # New questions on the pattern of the GPSTR 2022 Paper-1 and HMWSSB Manager 2015 Paper 1; writers + independent checkers; private source /home/claude/mk2.
+  'karnataka-gpstr': dict(id='bk-gpsmk', name='Shikshaka GPSTR', price=149, src='karnataka-gpstr-mocks', dir='karnataka-gpstr', langs='Kannada &amp; English',
+                          title='Shikshaka GPSTR – Karnataka Teacher Recruitment 2026 Paper-1 Mock Test Series (Kannada & English)',
+                          summary='10 full-length Paper-1 General mock tests for Karnataka Teacher Recruitment 2026 (GPSTR / GPT and other cadres), '
+                                  '100 questions in 2 hours as in the 2026 rules, in Kannada and English, with an explanation for every answer. '
+                                  'Every section can also be taken on its own as a sectional test.',
+                          about=['New questions written by Learn with Anil for this series, in the question types and level of the GPSTR 2022 Paper-1 '
+                                 'General Studies (on the previous-papers page, in the same pass).',
+                                 'The 2026 rules give Paper-1 General 100 questions in 2 hours. Each mock keeps the section mix of the 2022 paper scaled to 100: '
+                                 'General Kannada 17, General English 17, General Knowledge & Current Affairs 12, Mental Ability 5, Educational Psychology, '
+                                 'Child Development & Pedagogy 33, Health & Value Education 10 and Computer Literacy 6. Current affairs cover November 2025 onwards.',
+                                 'General Kannada is in Kannada only and General English in English only, as the department prints them; every other question is '
+                                 'in Kannada and English, and every answer has an explanation in both. You need 35% in each paper. Your score, accuracy and '
+                                 'topic-wise analysis come after each mock.'],
+                          mocks=[dict(id=f'bk-gpsmk-{i}', name=f'Mock {i}', qn=100, mins=120, live=(i <= 2),   # Mocks 1-2 on 28 Nov 2026
+                                      parts=[('kan', 'General Kannada', ['kan']), ('eng', 'General English', ['eng']),
+                                             ('gk', 'General Knowledge & Mental Ability', ['gk', 'apt']),
+                                             ('psy', 'Educational Psychology & Pedagogy', ['psy']),
+                                             ('hve', 'Health, Value Education & Computers', ['hve', 'cmp'])]) for i in range(1, 11)]),
+  'tgpsc-hmwssb-manager': dict(id='bk-hmmk', name='Jaladhara HMWSSB', price=149, src='tgpsc-hmwssb-manager-mocks', dir='tgpsc-hmwssb-manager', langs='English &amp; Telugu',
+                          title='Jaladhara HMWSSB – TGPSC HMWSSB Manager Paper 1 General Studies Mock Test Series (Telugu & English)',
+                          summary='10 full-length Paper 1 General Studies mock tests for TGPSC Manager (Engineering), HMWSSB, 150 questions in 150 minutes, '
+                                  'in Telugu and English, with an explanation for every answer. Paper 1 is common to Civil, CSE and ECE candidates. '
+                                  'Every section can also be taken on its own as a sectional test.',
+                          about=['New questions written by Learn with Anil for this series, in the question types and level of the HMWSSB Manager 2015 '
+                                 'Paper 1 (on the previous-papers page, in the same pass): direct, statement-based, match-the-following, assertion–reason and chronology.',
+                                 'Each mock keeps the weightage of the 2015 paper: Telangana history, culture, movement and schemes 29, Modern India 11, Polity 16, '
+                                 'Economy 8, Geography 25, General Science 15, Environment 2, Current Affairs 14, English 15 and Reasoning & Data Interpretation 15: '
+                                 '150 questions, 150 marks, 150 minutes. Current affairs cover November 2025 onwards.',
+                                 'Every question is in Telugu and English except the English section, which is in English only; every answer has an explanation '
+                                 'in both. Your score, accuracy and topic-wise analysis come after each mock.'],
+                          mocks=[dict(id=f'bk-hmmk-{i}', name=f'Mock {i}', qn=150, mins=150, live=(i <= 2),   # Mocks 1-2 on 28 Nov 2026
+                                      parts=[('tg', 'Telangana', ['tg']), ('ih', 'History & Polity', ['ih', 'pol']), ('eco', 'Economy', ['eco']),
+                                             ('geo', 'Geography & Environment', ['geo', 'env']), ('sci', 'General Science', ['sci']),
+                                             ('cur', 'Current Affairs', ['cur']), ('eng', 'English', ['eng']), ('rea', 'Reasoning', ['rea'])]) for i in range(1, 11)]),
 }
 # SI + Constable together (the payments script records one mock pass for each exam)
 COMBO = dict(price=199, exams=('ts-police-si', 'ts-police-constable'), name='Mission Khaki SI + Constable combo',
