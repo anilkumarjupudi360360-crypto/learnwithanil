@@ -154,7 +154,8 @@
    "cat": "upsc",
    "b": "UPSC",
    "t": "NDA & NA",
-   "n": "National Defence Academy"
+   "n": "National Defence Academy",
+   "live": "upsc-nda/"
   },
   {
    "id": "upsc-capf",

@@ -1,0 +1,1253 @@
+# UPSC National Defence Academy and Naval Academy Examination (I) 2023: Mathematics (Series A, booklet ASGT-B-GNL), held 16 April 2023.
+# Source: the official UPSC question paper; answers from UPSC's official answer key (upsc.gov.in, November 2023). Explanations by Learn with Anil.
+# Dropped by UPSC: 3, 13, 81, 117
+
+Q 1 | alg | Complex Numbers
+If ω is a non-real cube root of 1, then what is the value of |(1 − ω)/(ω + ω²)| ?
+(1) √3
+(2) √2
+(3) 1
+(4) 4/√3
+= 1
+~ Since 1 + ω + ω² = 0, ω + ω² = −1, so the denominator has modulus 1. |1 − ω| = |1 − (−1/2 + i√3/2)| = |3/2 − i√3/2| = √(9/4 + 3/4) = √3.
+
+Q 2 | alg | Permutations & Combinations
+What is the number of 6-digit numbers that can be formed only by using 0, 1, 2, 3, 4 and 5 (each once); and divisible by 6 ?
+(1) 96
+(2) 120
+(3) 192
+(4) 312
+= 4
+~ Digit sum 15 is divisible by 3, so every such number is divisible by 3; it only needs to be even. Last digit 0: 5! = 120; last digit 2 or 4: 2 × (4 × 4!) = 192; total 120 + 192 = 312.
+
+Q 4 | mat | Determinants
+Let A be a matrix of order 3×3 and |A| = 4. If |2 adj(3A)| = 2^α 3^β, then what is the value of (α + β) ?
+(1) 12
+(2) 13
+(3) 17
+(4) 24
+= 2
+~ |3A| = 3³ × 4 = 108, |adj(3A)| = |3A|² = 108² = 2⁴·3⁶, and |2 adj(3A)| = 2³ × 2⁴·3⁶ = 2⁷·3⁶. So α + β = 7 + 6 = 13.
+
+Q 5 | alg | Complex Numbers
+If α and β are the distinct roots of equation x² − x + 1 = 0, then what is the value of |(α¹⁰⁰ + β¹⁰⁰)/(α¹⁰⁰ − β¹⁰⁰)| ?
+(1) √3
+(2) √2
+(3) 1
+(4) 1/√3
+= 4
+~ The roots are e^(±iπ/3). So α¹⁰⁰ + β¹⁰⁰ = 2cos(100π/3) = 2cos(4π/3) = −1 and α¹⁰⁰ − β¹⁰⁰ = 2i sin(4π/3) = −i√3. The ratio has modulus 1/√3.
+
+Q 6 | mat | Matrices
+Let A and B be symmetric matrices of same order, then which one of the following is correct regarding (AB − BA) ?
+1. Its diagonal entries are equal but nonzero
+2. The sum of its non-diagonal entries is zero
+Select the correct answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ (AB − BA)ᵀ = BA − AB, so AB − BA is skew-symmetric. Its diagonal entries are all zero, so statement 1 is false. Its off-diagonal entries come in pairs aᵢⱼ = −aⱼᵢ, so they add up to zero.
+
+Q 7 | mat | Matrices
+Consider the following statements in respect of square matrices A, B, C each of same order n :
+1. AB = AC ⇒ B = C if A is non-singular
+2. If BX = CX for every column matrix X having n rows then B = C
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ If A is non-singular, multiplying AB = AC by A⁻¹ gives B = C. If BX = CX for every X, take X as each unit column vector eⱼ: then every column of B equals the matching column of C, so B = C.
+
+Q 8 | mat | Determinants
+The system of linear equations x + 2y + z = 4, 2x + 4y + 2z = 8 and 3x + 6y + 3z = 10 has
+(1) a unique solution
+(2) infinite many solutions
+(3) no solution
+(4) exactly three solutions
+= 3
+~ The first equation gives x + 2y + z = 4, so 3x + 6y + 3z = 12. This contradicts 3x + 6y + 3z = 10, so the system is inconsistent. In rank terms, rank of the coefficient matrix is 1 and rank of the augmented matrix is 2.
+
+Q 9 | mat | Matrices
+Let AX = B be a system of 3 linear equations with 3-unknowns. Let X₁ and X₂ be its two distinct solutions. If the combination aX₁ + bX₂ is a solution of AX = B; where a, b are real numbers, then which one of the following is correct ?
+(1) a = b
+(2) a + b = 1
+(3) a + b = 0
+(4) a − b = 1
+= 2
+~ A(aX₁ + bX₂) = aB + bB = (a + b)B. For this to equal B (with B ≠ 0), we need a + b = 1.
+
+Q 10 | mat | Determinants
+What is the sum of the roots of the equation |[[0, x − a, x − b], [0, 0, x − c], [x + b, x + c, 1]]| = 0 ?
+(1) a + b + c
+(2) a − b + c
+(3) a + b − c
+(4) a − b − c
+= 2
+~ Expand along the first column: the determinant is (x + b)[(x − a)(x − c) − 0] = (x + b)(x − a)(x − c). The roots are −b, a and c, so their sum is a − b + c.
+
+Q 11 | alg | Quadratic Equations & Inequalities
+If 2 − i√3 where i = √−1 is a root of the equation x² + ax + b = 0, then what is the value of (a + b) ?
+(1) −11
+(2) −3
+(3) 0
+(4) 3
+= 4
+~ With real coefficients, the other root is 2 + i√3. Sum of roots = 4 = −a, so a = −4. Product = 4 + 3 = 7 = b, so a + b = 3.
+
+Q 12 | alg | Complex Numbers
+If z = (1 + i√3)/(1 − i√3) where i = √−1, then what is the argument of z ?
+(1) π/3
+(2) 2π/3
+(3) 4π/3
+(4) 5π/6
+= 2
+~ arg z = arg(1 + i√3) − arg(1 − i√3) = π/3 − (−π/3) = 2π/3. Directly, z = −1/2 + i√3/2.
+
+Q 14 | alg | Binary Numbers & Logarithms
+If logₓa, aˣ and log_b x are in GP, then what is x equal to ?
+(1) logₐ(log_b a)
+(2) log_b(logₐ b)
+(3) logₐ(log_b a)/2
+(4) log_b(logₐ b)/2
+= 3
+~ GP condition: (aˣ)² = logₓa · log_b x = log_b a. So a²ˣ = log_b a, giving 2x = logₐ(log_b a) and x = logₐ(log_b a)/2.
+
+Q 15 | alg | Sequences & Series
+If 2^(1/c), 2^(b/ac), 2^(1/a) are in GP, then which one of the following is correct ?
+(1) a, b, c are in AP
+(2) a, b, c are in GP
+(3) a, b, c are in HP
+(4) ab, bc, ca are in AP
+= 1
+~ The exponents of a GP of powers of 2 must be in AP: 2b/(ac) = 1/c + 1/a = (a + c)/(ac). So 2b = a + c, which means a, b, c are in AP.
+
+Q 16 | alg | Sequences & Series
+The first and the second terms of an AP are 5/2 and 23/12 respectively. If nᵗʰ term is the largest negative term, what is the value of n ?
+(1) 5
+(2) 6
+(3) 7
+(4) 8
+= 2
+~ d = 23/12 − 30/12 = −7/12. The terms decrease: T₅ = 1/6 and T₆ = 5/2 − 35/12 = −5/12. So the first negative term, T₆, is the largest negative term, and n = 6.
+
+Q 17 | alg | Quadratic Equations & Inequalities
+For how many integral values of k, the equation x² − 4x + k = 0, where k is an integer has real roots and both of them lie in the interval (0, 5) ?
+(1) 3
+(2) 4
+(3) 5
+(4) 6
+= 2
+~ Real roots need 16 − 4k ≥ 0, so k ≤ 4. Both roots in (0, 5) need f(0) = k > 0 and f(5) = 5 + k > 0, with the vertex at x = 2 already inside the interval. So k = 1, 2, 3, 4: four values.
+
+Q 18 | alg | Sequences & Series
+In an AP, the first term is x and the sum of the first n terms is zero. What is the sum of next m terms ?
+(1) mx(m + n)/(n − 1)
+(2) mx(m + n)/(1 − n)
+(3) nx(m + n)/(m − 1)
+(4) nx(m + n)/(1 − m)
+= 2
+~ Sₙ = 0 gives 2x + (n − 1)d = 0, so d = −2x/(n − 1). The required sum is S₍ₘ₊ₙ₎ − Sₙ = ((m + n)/2)[2x − 2x(m + n − 1)/(n − 1)] = −mx(m + n)/(n − 1) = mx(m + n)/(1 − n).
+
+Q 19 | alg | Permutations & Combinations
+Consider the following statements :
+1. (25)! + 1 is divisible by 26
+2. (6)! + 1 is divisible by 7
+Which of the above statements is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ 26 = 2 × 13 divides 25!, so 25! + 1 leaves remainder 1 when divided by 26. 6! + 1 = 721 = 7 × 103, as Wilson's theorem predicts for the prime 7.
+
+Q 20 | alg | Complex Numbers
+If z is a complex number such that (z − 1)/(z + 1) is purely imaginary, then what is |z| equal to ?
+(1) 1/2
+(2) 2/3
+(3) 1
+(4) 2
+= 3
+~ Let z = x + iy. The real part of (z − 1)/(z + 1) is (x² + y² − 1)/|z + 1|², so purely imaginary means x² + y² = 1 and |z| = 1. Check: z = 0.6 + 0.8i gives 0.5i.
+
+Q 21 | alg | Quadratic Equations & Inequalities
+How many real numbers satisfy the equation |x − 4| + |x − 7| = 15 ?
+(1) Only one
+(2) Only two
+(3) Only three
+(4) Infinitely many
+= 2
+~ Between 4 and 7 the sum is always 3, so there are no solutions there. For x ≥ 7: 2x − 11 = 15 gives x = 13. For x ≤ 4: 11 − 2x = 15 gives x = −2. That makes two solutions.
+
+Q 22 | alg | Sets, Relations & Functions
+A mapping f : A → B defined as f(x) = (2x + 3)/(3x + 5), x ∈ A. If f is to be onto, then what are A and B equal to ?
+(1) A = R∖{−5/3} and B = R∖{−2/3}
+(2) A = R and B = R∖{−5/3}
+(3) A = R∖{−3/2} and B = R∖{0}
+(4) A = R∖{−5/3} and B = R∖{2/3}
+= 4
+~ The function is undefined at x = −5/3, so A = R∖{−5/3}. Solving y = (2x + 3)/(3x + 5) gives x = (3 − 5y)/(3y − 2). Every y except 2/3 is attained, so the range is R∖{2/3} and B must equal it.
+
+Q 23 | alg | Quadratic Equations & Inequalities
+α and β are distinct real roots of the quadratic equation x² + ax + b = 0. Which of the following statements is/are sufficient to find α ?
+1. α + β = 0, α² + β² = 2
+2. αβ² = −1, a = 0
+Select the correct answer using the code given below :
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 2
+~ Statement 1 gives roots ±1 but does not say which one is α. Statement 2: a = 0 means β = −α, so αβ² = α³ = −1 and α = −1 uniquely.
+
+Q 24 | alg | Binomial Theorem
+If the sixth term in the binomial expansion of (x^(−8/3) + x² log₁₀x)⁸ is 5600, then what is the value of x ?
+(1) 6
+(2) 8
+(3) 9
+(4) 10
+= 4
+~ T₆ = ⁸C₅ (x^(−8/3))³ (x² log₁₀x)⁵ = 56 · x⁻⁸ · x¹⁰ (log₁₀x)⁵ = 56x²(log₁₀x)⁵. Setting this to 5600 gives x²(log₁₀x)⁵ = 100, which x = 10 satisfies (100 × 1 = 100).
+
+Q 25 | alg | Binomial Theorem
+How many terms are there in the expansion of (3x − y)⁴(x + 3y)⁴ ?
+(1) 9
+(2) 12
+(3) 15
+(4) 17
+= 1
+~ The product is [(3x − y)(x + 3y)]⁴ = (3x² + 8xy − 3y²)⁴. This is homogeneous of degree 8, so it has 9 terms x⁸, x⁷y, …, y⁸, and none of the coefficients vanish (81, 864, 3132, 3552, −2330, …).
+
+Q 26 | alg | Sequences & Series
+p, q, r and s are in AP such that p + s = 8 and qr = 15. What is the difference between largest and smallest numbers ?
+(1) 6
+(2) 5
+(3) 4
+(4) 3
+= 1
+~ In an AP, q + r = p + s = 8. With qr = 15, q and r are 3 and 5, so the common difference is ±2. The terms are 1, 3, 5, 7, and the difference between the largest and smallest is 7 − 1 = 6.
+
+Q 27 | alg | Permutations & Combinations
+Consider the following statements for a fixed natural number n :
+1. C(n, r) is greatest if n = 2r
+2. C(n, r) is greatest if n = 2r − 1 and n = 2r + 1
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ For even n, ⁿCᵣ is greatest at r = n/2, that is n = 2r. For odd n, it is greatest at r = (n ± 1)/2, that is n = 2r − 1 or n = 2r + 1.
+
+Q 28 | alg | Permutations & Combinations
+m parallel lines cut n parallel lines giving rise to 60 parallelograms. What is the value of (m + n) ?
+(1) 6
+(2) 7
+(3) 8
+(4) 9
+= 4
+~ The number of parallelograms is ᵐC₂ × ⁿC₂ = 60. Among the triangular numbers (1, 3, 6, 10, 15, …), only 6 × 10 = 60 works, so {m, n} = {4, 5} and m + n = 9.
+
+Q 29 | alg | Permutations & Combinations
+Let x be the number of permutations of the word 'PERMUTATIONS' and y be the number of permutations of the word 'COMBINATIONS'. Which one of the following is correct ?
+(1) x = y
+(2) y = 2x
+(3) x = 4y
+(4) y = 4x
+= 3
+~ PERMUTATIONS has 12 letters with T repeated, so x = 12!/2!. COMBINATIONS has 12 letters with O, I and N each repeated, so y = 12!/(2!2!2!) = 12!/8. Hence x = 4y.
+
+Q 30 | alg | Permutations & Combinations
+5-digit numbers are formed using the digits 0, 1, 2, 4, 5 without repetition. What is the percentage of numbers which are greater than 50,000 ?
+(1) 20%
+(2) 25%
+(3) 100/3 %
+(4) 110/3 %
+= 2
+~ Total = 4 × 4! = 96, since the first digit cannot be 0. Numbers greater than 50,000 must start with 5, giving 4! = 24. 24/96 = 25%.
+
+Q 31 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow : Let sinβ be the GM of sinα and cosα; tanγ be the AM of sinα and cosα.
+
+What is cos2β equal to ?
+(1) (cosα − sinα)²
+(2) (cosα + sinα)²
+(3) (cosα − sinα)³
+(4) (cosα − sinα)²/2
+= 1
+~ sin²β = sinα cosα, so cos2β = 1 − 2sin²β = 1 − 2sinα cosα = (cosα − sinα)².
+
+Q 32 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow : Let sinβ be the GM of sinα and cosα; tanγ be the AM of sinα and cosα.
+
+What is the value of sec2γ ?
+(1) (3 − sin2α)/(5 + 2sin2α)
+(2) (5 + sin2α)/(3 − sin2α)
+(3) (3 − 2sin2α)/(4 + sin2α)
+(4) (3 − sin2α)/(4 + 3sin2α)
+= 2
+~ tan²γ = (sinα + cosα)²/4 = (1 + sin2α)/4. Then sec2γ = (1 + tan²γ)/(1 − tan²γ) = (4 + 1 + sin2α)/(4 − 1 − sin2α) = (5 + sin2α)/(3 − sin2α).
+
+Q 33 | trg | Heights & Distances
+Passage: Consider the following for the next two (02) items that follow : A flagstaff 20 m long standing on a pillar 10 m high subtends an angle tan⁻¹(0·5) at a point P on the ground. Let θ be the angle subtended by the pillar at this point P.
+If x is the distance of P from bottom of the pillar, then consider the following statements :
+
+1. x can take two values which are in the ratio 1 : 3
+2. x can be equal to height of the flagstaff
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ tan(φ − θ) = 1/2 with tanφ = 30/x and tanθ = 10/x gives (20/x)/(1 + 300/x²) = 1/2, so x² − 40x + 300 = 0 and x = 10 or 30 (ratio 1 : 3). x = 20, the flagstaff's height, is not a root.
+
+Q 34 | trg | Heights & Distances
+Passage: Consider the following for the next two (02) items that follow : A flagstaff 20 m long standing on a pillar 10 m high subtends an angle tan⁻¹(0·5) at a point P on the ground. Let θ be the angle subtended by the pillar at this point P.
+If x is the distance of P from bottom of the pillar, then consider the following statements :
+
+What is a possible value of tanθ ?
+(1) 3/4
+(2) 2/3
+(3) 1/3
+(4) 1/4
+= 3
+~ tanθ = 10/x with x = 10 or 30, so tanθ = 1 or 1/3. Of these, only 1/3 is among the options.
+
+Q 35 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow : The perimeter of a triangle ABC is 6 times the AM of sine of angles of the triangle. Further BC = √3 and CA = 1.
+
+What is the perimeter of the triangle ?
+(1) √3 + 1
+(2) √3 + 2
+(3) √3 + 3
+(4) 2√3 + 1
+= 3
+~ a + b + c = 2(sinA + sinB + sinC) = (a + b + c)/R, so R = 1 and a = 2sinA. sinA = √3/2 and sinB = 1/2, so B = 30°. Taking A = 60° gives C = 90° and c = 2, for a perimeter of 3 + √3. (The obtuse case A = 120° would give c = 1 and perimeter 2 + √3; the key takes the right-angled case.)
+
+Q 36 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow : The perimeter of a triangle ABC is 6 times the AM of sine of angles of the triangle. Further BC = √3 and CA = 1.
+
+Consider the following statements :
+1. ABC is right angled triangle
+2. The angles of the triangle are in AP
+Which of the statements given above is/are correct ?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 3
+~ With A = 60°, B = 30° and C = 90° (sides √3, 1, 2), the triangle is right angled. The angles 30°, 60°, 90° are in AP with common difference 30°.
+
+Q 37 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow : Let x = (sin²A + sinA + 1)/sinA where 0 < A ≤ π/2.
+
+What is the minimum value of x ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ x = sinA + 1/sinA + 1. For 0 < sinA ≤ 1, sinA + 1/sinA ≥ 2 (AM–GM), with equality at sinA = 1. So the minimum of x is 3.
+
+Q 38 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow : Let x = (sin²A + sinA + 1)/sinA where 0 < A ≤ π/2.
+
+At what value of A does x attain the minimum value ?
+(1) π/6
+(2) π/4
+(3) π/3
+(4) π/2
+= 4
+~ The minimum occurs when sinA = 1, that is A = π/2. Since t + 1/t is decreasing on (0, 1], the minimum is at the endpoint.
+
+Q 39 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow : In the triangle ABC, a² + b² + c² = ac + √3bc
+
+What is the nature of the triangle ?
+(1) Equilateral
+(2) Isosceles
+(3) Right angled triangle
+(4) Scalene but not right angled
+= 3
+~ Rewrite as (a − c/2)² + (b − √3c/2)² = 0, so a = c/2 and b = √3c/2. Then a² + b² = c²/4 + 3c²/4 = c², so the triangle is right angled at C (a 30°–60°–90° triangle).
+
+Q 40 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow : In the triangle ABC, a² + b² + c² = ac + √3bc
+
+If c = 8, what is the area of the triangle ?
+(1) 4√3
+(2) 6√3
+(3) 8√3
+(4) 12√3
+= 3
+~ a = 4 and b = 4√3 are the legs about the right angle, so the area is (1/2)(4)(4√3) = 8√3.
+
+Q 41 | cal | Differentiation & Applications
+Passage: Consider the following for the next two (02) items that follow :
+Consider the function f(x) = |x − 2| + |3 − x| + |4 − x|, where x ∈ R.
+
+At what value of x does the function attain minimum value ?
+(1) 2
+(2) 3
+(3) 4
+(4) 0
+= 2
+~ A sum of distances |x − 2| + |x − 3| + |x − 4| is least at the median point x = 3. Check: f(2) = 3, f(3) = 2, f(4) = 3.
+
+Q 42 | cal | Differentiation & Applications
+Passage: Consider the following for the next two (02) items that follow :
+Consider the function f(x) = |x − 2| + |3 − x| + |4 − x|, where x ∈ R.
+
+What is the minimum value of the function ?
+(1) 2
+(2) 3
+(3) 4
+(4) 0
+= 1
+~ The minimum occurs at x = 3, where f(3) = |1| + |0| + |−1| = 2.
+
+Q 43 | alg | Permutations & Combinations
+Passage: Consider the following for the next two (02) items that follow :
+Consider the sum S = 0! + 1! + 2! + 3! + 4! + .... + 100!
+
+If the sum S is divided by 8, what is the remainder ?
+(1) 0
+(2) 1
+(3) 2
+(4) Cannot be determined
+= 3
+~ Every k! with k ≥ 4 is divisible by 8 (4! = 24), so S ≡ 0! + 1! + 2! + 3! = 1 + 1 + 2 + 6 = 10 ≡ 2 (mod 8).
+
+Q 44 | alg | Permutations & Combinations
+Passage: Consider the following for the next two (02) items that follow :
+Consider the sum S = 0! + 1! + 2! + 3! + 4! + .... + 100!
+
+If the sum S is divided by 60, what is the remainder ?
+(1) 1
+(2) 3
+(3) 17
+(4) 34
+= 4
+~ Every k! with k ≥ 5 is divisible by 60 (5! = 120), so S ≡ 1 + 1 + 2 + 6 + 24 = 34 (mod 60).
+
+Q 45 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow :
+In a triangle PQR, P is the largest angle and cos P = 1/3. Further the in-circle of the triangle touches the sides PQ, QR and RP at N, L and M respectively such that the lengths PN, QL and RM are n, n + 2, n + 4 respectively where n is an integer.
+
+What is the value of n ?
+(1) 4
+(2) 6
+(3) 8
+(4) 10
+= 3
+~ Equal tangents give PQ = 2n + 2, RP = 2n + 4 and QR = 2n + 6 (opposite P). cos P = [(2n+2)² + (2n+4)² − (2n+6)²] / [2(2n+2)(2n+4)] = 1/3 simplifies to n² − 2n − 48 = 0, so n = 8.
+
+Q 46 | trg | Properties of Triangles
+Passage: Consider the following for the next two (02) items that follow :
+In a triangle PQR, P is the largest angle and cos P = 1/3. Further the in-circle of the triangle touches the sides PQ, QR and RP at N, L and M respectively such that the lengths PN, QL and RM are n, n + 2, n + 4 respectively where n is an integer.
+
+What is the length of the smallest side ?
+(1) 12
+(2) 14
+(3) 16
+(4) 18
+= 4
+~ With n = 8 the sides are PQ = 18, RP = 20, QR = 22, so the smallest side is 18.
+
+Q 47 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Given that sin x + cos x + tan x + cot x + sec x + cosec x = 7
+
+The given equation can be reduced to
+(1) sin² 2x − 44 sin 2x + 36 = 0
+(2) sin² 2x + 44 sin 2x − 36 = 0
+(3) sin² 2x − 22 sin 2x + 18 = 0
+(4) sin² 2x + 22 sin 2x − 18 = 0
+= 1
+~ Let t = sin 2x and u = sin x + cos x, so u² = 1 + t and sin x cos x = t/2. The equation becomes u + 2/t + 2u/t = 7, i.e. u(t + 2) = 7t − 2. Squaring: (1 + t)(t + 2)² = (7t − 2)², which gives t³ − 44t² + 36t = 0, i.e. t² − 44t + 36 = 0.
+
+Q 48 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Given that sin x + cos x + tan x + cot x + sec x + cosec x = 7
+
+If sin 2x = a − b√c, where a and b are natural numbers and c is prime number, then what is the value of a − b + 2c ?
+(1) 0
+(2) 14
+(3) 21
+(4) 28
+= 4
+~ t² − 44t + 36 = 0 gives t = 22 ± 8√7; only 22 − 8√7 ≈ 0·834 can be a sine. So a = 22, b = 8, c = 7 and a − b + 2c = 22 − 8 + 14 = 28.
+
+Q 49 | alg | Quadratic Equations & Inequalities
+Passage: Consider the following for the next two (02) items that follow :
+A quadratic equation is given by (3 + 2√2)x² − (4 + 2√3)x + (8 + 4√3) = 0
+
+What is the HM of the roots of the equation ?
+(1) 2
+(2) 4
+(3) 2√2
+(4) 2√3
+= 2
+~ HM = 2αβ/(α + β) = 2(c/a)/(−b/a) = 2(8 + 4√3)/(4 + 2√3) = 2 × 2 = 4.
+
+Q 50 | alg | Quadratic Equations & Inequalities
+Passage: Consider the following for the next two (02) items that follow :
+A quadratic equation is given by (3 + 2√2)x² − (4 + 2√3)x + (8 + 4√3) = 0
+
+What is the GM of the roots of the equation ?
+(1) √2(√6 − √3 + √2 − 1)
+(2) √2(√6 + √3 − √2 − 1)
+(3) (√6 − √3 + √2 − 1)
+(4) (√6 + √3 + √2 − 1)
+= 1
+~ GM = √(αβ) = √[(8 + 4√3)/(3 + 2√2)] = (√6 + √2)/(√2 + 1) = (√6 + √2)(√2 − 1) = √2(√6 − √3 + √2 − 1) ≈ 1·600.
+
+Q 51 | mat | Determinants
+Passage: Consider the following for the next two (02) items that follow :
+Let Δ(a, b, c, α) = [[a, b, aα + b], [b, c, bα + c], [aα + b, bα + c, 0]] (a determinant).
+
+If Δ(a, b, c, α) = 0 for every α > 0, then which one of the following is correct ?
+(1) a, b, c are in AP
+(2) a, b, c are in GP
+(3) a, 2b, c are in AP
+(4) a, 2b, c are in GP
+= 2
+~ Applying C₃ → C₃ − αC₁ − C₂ gives Δ = (b² − ac)(aα² + 2bα + c). For this to vanish for every α > 0 we need b² = ac, i.e. a, b, c in GP.
+
+Q 52 | mat | Determinants
+Passage: Consider the following for the next two (02) items that follow :
+Let Δ(a, b, c, α) = [[a, b, aα + b], [b, c, bα + c], [aα + b, bα + c, 0]] (a determinant).
+
+If Δ(7, 4, 2, α) = 0, then α is a root of which one of the following equations ?
+(1) 7x² + 4x + 2 = 0
+(2) 7x² − 4x + 2 = 0
+(3) 7x² + 8x + 2 = 0
+(4) 7x² − 8x + 2 = 0
+= 3
+~ Δ = (b² − ac)(aα² + 2bα + c) = (16 − 14)(7α² + 8α + 2). Since 16 − 14 ≠ 0, α satisfies 7x² + 8x + 2 = 0.
+
+Q 53 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Given that m(θ) = cot²θ + n²tan²θ + 2n, where n is a fixed positive real number.
+
+What is the least value of m(θ) ?
+(1) n
+(2) 2n
+(3) 3n
+(4) 4n
+= 4
+~ By AM ≥ GM, cot²θ + n²tan²θ ≥ 2√(n²) = 2n, so m(θ) ≥ 2n + 2n = 4n (numerically confirmed for n = 1, 2, 5).
+
+Q 54 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Given that m(θ) = cot²θ + n²tan²θ + 2n, where n is a fixed positive real number.
+
+Under what condition does m attain the least value ?
+(1) n = tan²θ
+(2) n = cot²θ
+(3) n = sin²θ
+(4) n = cos²θ
+= 2
+~ Equality in AM ≥ GM needs cot²θ = n²tan²θ, i.e. cot⁴θ = n², so n = cot²θ.
+
+Q 55 | ag | Straight Lines
+Passage: Consider the following for the next two (02) items that follow :
+A quadrilateral is formed by the lines x = 0, y = 0, x + y = 1 and 6x + y = 3.
+
+What is the equation of diagonal through origin ?
+(1) 3x + y = 0
+(2) 2x + 3y = 0
+(3) 3x − 2y = 0
+(4) 3x + 2y = 0
+= 3
+~ The vertices are (0, 0), (1/2, 0), (2/5, 3/5) [where x + y = 1 meets 6x + y = 3] and (0, 1). The diagonal from (0, 0) to (2/5, 3/5) is y = (3/2)x, i.e. 3x − 2y = 0.
+
+Q 56 | ag | Straight Lines
+Passage: Consider the following for the next two (02) items that follow :
+A quadrilateral is formed by the lines x = 0, y = 0, x + y = 1 and 6x + y = 3.
+
+What is the equation of other diagonal ?
+(1) x + 2y − 1 = 0
+(2) x − 2y − 1 = 0
+(3) 2x + y + 1 = 0
+(4) 2x + y − 1 = 0
+= 4
+~ The other diagonal joins (1/2, 0) and (0, 1): x/(1/2) + y/1 = 1, i.e. 2x + y − 1 = 0.
+
+Q 57 | ag | Circles & Conics
+Passage: Consider the following for the next two (02) items that follow :
+P(x, y) is any point on the ellipse x² + 4y² = 1. Let E, F be the foci of the ellipse.
+
+What is PE + PF equal to ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ x²/1 + y²/(1/4) = 1 has a = 1, and for any point on an ellipse the sum of focal distances is 2a = 2.
+
+Q 58 | ag | Circles & Conics
+Passage: Consider the following for the next two (02) items that follow :
+P(x, y) is any point on the ellipse x² + 4y² = 1. Let E, F be the foci of the ellipse.
+
+Consider the following points :
+1. (√3/2, 0)
+2. (√3/2, 1/4)
+3. (√3/2, −1/4)
+Which of the above points lie on latus rectum of ellipse ?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 4
+~ e² = 1 − b²/a² = 3/4, so a focus is (√3/2, 0) and the latus rectum there runs from y = −b²/a = −1/4 to y = 1/4. All three points (the focus and both ends) lie on it.
+
+Q 59 | ag | Circles & Conics
+Passage: Consider the following for the next two (02) items that follow :
+The line y = x partitions the circle (x − a)² + y² = a² in two segments.
+
+What is the area of minor segment ?
+(1) (π − 2)a²/4
+(2) (π − 1)a²/4
+(3) (π − 2)a²/2
+(4) (π − 1)a²/2
+= 1
+~ y = x cuts the circle at (0, 0) and (a, a), which subtend a right angle at the centre (a, 0). Minor segment = (1/2)a²(π/2 − 1) = (π − 2)a²/4.
+
+Q 60 | ag | Circles & Conics
+Passage: Consider the following for the next two (02) items that follow :
+The line y = x partitions the circle (x − a)² + y² = a² in two segments.
+
+What is the area of major segment ?
+(1) (3π − 2)a²/4
+(2) (3π + 2)a²/4
+(3) (3π − 2)a²/2
+(4) (3π + 2)a²/2
+= 2
+~ Major segment = πa² − (π − 2)a²/4 = (4π − π + 2)a²/4 = (3π + 2)a²/4.
+
+Q 61 | ag | 3D Geometry
+Passage: Consider the following for the next two (02) items that follow :
+Let A(1, −1, 2) and B(2, 1, −1) be the end points of the diameter of the sphere x² + y² + z² + 2ux + 2vy + 2wz − 1 = 0.
+
+What is u + v + w equal to ?
+(1) −2
+(2) −1
+(3) 1
+(4) 2
+= 1
+~ The centre (−u, −v, −w) is the midpoint of AB, (3/2, 0, 1/2). So u = −3/2, v = 0, w = −1/2 and u + v + w = −2.
+
+Q 62 | ag | 3D Geometry
+Passage: Consider the following for the next two (02) items that follow :
+Let A(1, −1, 2) and B(2, 1, −1) be the end points of the diameter of the sphere x² + y² + z² + 2ux + 2vy + 2wz − 1 = 0.
+
+If P(x, y, z) is any point on the sphere, then what is PA² + PB² equal to ?
+(1) 15
+(2) 14
+(3) 13
+(4) 6·5
+= 2
+~ AB is a diameter, so the angle APB is 90° and PA² + PB² = AB² = 1² + 2² + (−3)² = 14.
+
+Q 63 | ag | 3D Geometry
+Passage: Consider the following for the next two (02) items that follow :
+Consider two lines whose direction ratios are (2, −1, 2) and (k, 3, 5). They are inclined at an angle π/4.
+
+What is the value of k ?
+(1) 4
+(2) 2
+(3) 1
+(4) −1
+= 1
+~ cos(π/4) = (2k − 3 + 10)/(3√(k² + 34)) gives 2(2k + 7)² = 9(k² + 34), i.e. k² − 56k + 208 = 0, so k = 4 (or 52); among the options k = 4. Check: the angle between (2, −1, 2) and (4, 3, 5) is 45°.
+
+Q 64 | ag | 3D Geometry
+Passage: Consider the following for the next two (02) items that follow :
+Consider two lines whose direction ratios are (2, −1, 2) and (k, 3, 5). They are inclined at an angle π/4.
+
+What are the direction ratios of a line which is perpendicular to both the lines ?
+(1) (1, 2, 10)
+(2) (−1, −2, 10)
+(3) (11, 12, −10)
+(4) (11, 2, −10)
+= 4
+~ The cross product (2, −1, 2) × (4, 3, 5) = (−11, −2, 10), which is proportional to (11, 2, −10).
+
+Q 65 | vec | Vectors
+Passage: Consider the following for the next two (02) items that follow :
+Let a⃗ = 3î + 3ĵ + 3k̂ and c⃗ = ĵ − k̂. Let b⃗ be such that a⃗·b⃗ = 27 and a⃗ × b⃗ = 9c⃗
+
+What is b⃗ equal to ?
+(1) 3î + 4ĵ + 2k̂
+(2) 5î + 2ĵ + 2k̂
+(3) 5î − 2ĵ + 6k̂
+(4) 3î + 3ĵ + 4k̂
+= 2
+~ For b⃗ = 5î + 2ĵ + 2k̂: a⃗·b⃗ = 15 + 6 + 6 = 27 and a⃗ × b⃗ = (0, 9, −9) = 9c⃗. Option (1) also gives a dot product of 27, but its cross product is (−6, 3, 3).
+
+Q 66 | vec | Vectors
+Passage: Consider the following for the next two (02) items that follow :
+Let a⃗ = 3î + 3ĵ + 3k̂ and c⃗ = ĵ − k̂. Let b⃗ be such that a⃗·b⃗ = 27 and a⃗ × b⃗ = 9c⃗
+
+What is the angle between (a⃗ + b⃗) and c⃗ ?
+(1) π/2
+(2) π/3
+(3) π/4
+(4) π/6
+= 1
+~ a⃗ + b⃗ = 8î + 5ĵ + 5k̂, and (8, 5, 5)·(0, 1, −1) = 0, so the angle is π/2.
+
+Q 67 | vec | Vectors
+Passage: Consider the following for the next two (02) items that follow :
+Let a vector a⃗ = 4î − 8ĵ + k̂ make angles α, β, γ with the positive directions of x, y, z axes respectively.
+
+What is cos α equal to ?
+(1) 1/3
+(2) 4/9
+(3) 5/9
+(4) 2/3
+= 2
+~ |a⃗| = √(16 + 64 + 1) = 9, so cos α = 4/9.
+
+Q 68 | vec | Vectors
+Passage: Consider the following for the next two (02) items that follow :
+Let a vector a⃗ = 4î − 8ĵ + k̂ make angles α, β, γ with the positive directions of x, y, z axes respectively.
+
+What is cos 2β + cos 2γ equal to ?
+(1) −32/81
+(2) −16/81
+(3) 16/81
+(4) 32/81
+= 1
+~ cos β = −8/9 and cos γ = 1/9, so cos 2β + cos 2γ = 2(64/81 + 1/81) − 2 = 130/81 − 162/81 = −32/81.
+
+Q 69 | ag | 3D Geometry
+Passage: Consider the following for the next two (02) items that follow :
+The position vectors of two points A and B are î − ĵ and ĵ + k̂ respectively.
+Consider the following points :
+
+1. (−1, −3, 1)
+2. (−1, 3, 2)
+3. (−2, 5, 3)
+Which of the above points lie on the line joining A and B ?
+(1) 1 and 2 only
+(2) 2 and 3 only
+(3) 1 and 3 only
+(4) 1, 2 and 3
+= 2
+~ The line is (1, −1, 0) + t(−1, 2, 1). t = 2 gives (−1, 3, 2) and t = 3 gives (−2, 5, 3). Point 1 would need t = 2 from x but t = −1 from y, so it is not on the line.
+
+Q 70 | vec | Vectors
+Passage: Consider the following for the next two (02) items that follow :
+The position vectors of two points A and B are î − ĵ and ĵ + k̂ respectively.
+Consider the following points :
+
+What is the magnitude of AB⃗ ?
+(1) 2
+(2) 3
+(3) √6
+(4) √3
+= 3
+~ AB⃗ = (ĵ + k̂) − (î − ĵ) = −î + 2ĵ + k̂, so |AB⃗| = √(1 + 4 + 1) = √6.
+
+Q 71 | cal | Integration & Area
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = Pe^x + Qe^(2x) + Re^(3x), where P, Q, R are real numbers. Further f(0) = 6, f′(ln 3) = 282 and ∫₀^(ln 2) f(x) dx = 11
+
+What is the value of Q ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 2
+~ The conditions give P + Q + R = 6, 3P + 18Q + 81R = 282 and P + (3/2)Q + (7/3)R = 11. Solving: P = 1, Q = 2, R = 3.
+
+Q 72 | cal | Integration & Area
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = Pe^x + Qe^(2x) + Re^(3x), where P, Q, R are real numbers. Further f(0) = 6, f′(ln 3) = 282 and ∫₀^(ln 2) f(x) dx = 11
+
+What is the value of R ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 3
+~ From the same three equations (P + Q + R = 6, 3P + 18Q + 81R = 282, P + 1·5Q + 7R/3 = 11), R = 3.
+
+Q 73 | cal | Differentiation & Applications
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = Pe^x + Qe^(2x) + Re^(3x), where P, Q, R are real numbers. Further f(0) = 6, f′(ln 3) = 282 and ∫₀^(ln 2) f(x) dx = 11
+
+What is f′(0) equal to ?
+(1) 18
+(2) 16
+(3) 15
+(4) 14
+= 4
+~ f′(x) = Pe^x + 2Qe^(2x) + 3Re^(3x), so f′(0) = P + 2Q + 3R = 1 + 4 + 9 = 14.
+
+Q 74 | cal | Differential Equations
+Passage: Consider the following for the next two (02) items that follow :
+Suppose E is the differential equation representing family of curves y² = 2cx + 2c√c where c is a positive parameter.
+
+What is the order of the differential equation ?
+(1) 1
+(2) 2
+(3) 3
+(4) 4
+= 1
+~ There is one arbitrary constant, so one differentiation removes it: 2yy′ = 2c gives c = yy′. The equation is of order 1.
+
+Q 75 | cal | Differential Equations
+Passage: Consider the following for the next two (02) items that follow :
+Suppose E is the differential equation representing family of curves y² = 2cx + 2c√c where c is a positive parameter.
+
+What is the degree of the differential equation ?
+(1) 2
+(2) 3
+(3) 4
+(4) Degree does not exist
+= 2
+~ Putting c = yy′ gives y² − 2xyy′ = 2(yy′)^(3/2). Squaring removes the radical: (y² − 2xyy′)² = 4y³(y′)³. The highest power of y′ is 3, so the degree is 3.
+
+Q 76 | mat | Determinants
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = [[cos x, x, 1], [2 sin x, x², 2x], [tan x, x, 1]] (a determinant).
+
+What is f(0) equal to ?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ At x = 0 the second row is (0, 0, 0), so f(0) = 0.
+
+Q 77 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = [[cos x, x, 1], [2 sin x, x², 2x], [tan x, x, 1]] (a determinant).
+
+What is lim (x→0) f(x)/x equal to ?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ Expanding the determinant gives f(x) = x²(tan x − cos x). So f(x)/x = x(tan x − cos x) → 0 × (0 − 1) = 0.
+
+Q 78 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the next three (03) items that follow :
+Let f(x) = [[cos x, x, 1], [2 sin x, x², 2x], [tan x, x, 1]] (a determinant).
+
+What is lim (x→0) f(x)/x² equal to ?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 1
+~ f(x)/x² = tan x − cos x → 0 − 1 = −1 (numerically −0·9999 at x = 10⁻⁴).
+
+Q 79 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Let f(x) = sin[π²]x + cos[−π²]x where [.] is a greatest integer function
+
+What is f(π/2) equal to ?
+(1) −1
+(2) 0
+(3) 1
+(4) 2
+= 2
+~ π² ≈ 9·87, so [π²] = 9 and [−π²] = −10, which gives f(x) = sin 9x + cos 10x. f(π/2) = sin(9π/2) + cos 5π = 1 − 1 = 0.
+
+Q 80 | trg | Ratios & Identities
+Passage: Consider the following for the next two (02) items that follow :
+Let f(x) = sin[π²]x + cos[−π²]x where [.] is a greatest integer function
+
+What is f(π/4) equal to ?
+(1) −1/√2
+(2) −1
+(3) 1
+(4) 1/√2
+= 4
+~ f(π/4) = sin(9π/4) + cos(10π/4) = sin(π/4) + cos(5π/2) = 1/√2 + 0 = 1/√2.
+
+Q 82 | cal | Integration & Area
+Passage: Consider the following for the next three (03) items that follow:
+Let I₁ = ∫₀^π x/(1 + cos²x) dx and I₂ = ∫₀^π 1/(1 + sin²x) dx
+
+What is the value of 8I₁²?
+(1) π
+(2) π²
+(3) π³
+(4) π⁴
+= 4
+~ Substituting x → π − x (cos²x is unchanged), I₁ = (π/2)∫₀^π dx/(1 + cos²x) = (π/2)(π/√2) = π²/(2√2). Hence 8I₁² = 8·π⁴/8 = π⁴.
+
+Q 83 | cal | Integration & Area
+Passage: Consider the following for the next three (03) items that follow:
+Let I₁ = ∫₀^π x/(1 + cos²x) dx and I₂ = ∫₀^π 1/(1 + sin²x) dx
+
+What is the value of I₂?
+(1) π/√2
+(2) π/(2√2)
+(3) 3π/(2√2)
+(4) π/(4√2)
+= 1
+~ I₂ = 2∫₀^(π/2) dx/(1 + sin²x) = 2∫₀^∞ dt/(1 + 2t²) (t = tan x) = 2·(1/√2)(π/2) = π/√2 ≈ 2·2214 (checked numerically).
+
+Q 84 | cal | Integration & Area
+Passage: Consider the following for the next two (02) items that follow:
+Let I = ∫ₐᵇ (|x|/x) dx, a < b
+
+What is I equal to when a < 0 < b?
+(1) a + b
+(2) a − b
+(3) b − a
+(4) (a + b)/2
+= 1
+~ |x|/x = −1 for x < 0 and +1 for x > 0, so I = ∫ₐ⁰(−1)dx + ∫₀ᵇ 1 dx = a + b (e.g. a = −3, b = 5 gives 2).
+
+Q 85 | cal | Integration & Area
+Passage: Consider the following for the next two (02) items that follow:
+Let I = ∫ₐᵇ (|x|/x) dx, a < b
+
+What is I equal to when a < b < 0?
+(1) a + b
+(2) a − b
+(3) b − a
+(4) (a + b)/2
+= 2
+~ On [a, b] with both negative, |x|/x = −1, so I = −(b − a) = a − b.
+
+Q 86 | cal | Differentiation & Applications
+Passage: Consider the following for the next three (03) items that follow:
+Let f(x) = |ln x|, x ≠ 1
+
+What is the derivative of f(x) at x = 0·5?
+(1) −2
+(2) −1
+(3) 1
+(4) 2
+= 1
+~ For 0 < x < 1, ln x < 0, so f(x) = −ln x and f′(x) = −1/x = −1/0·5 = −2.
+
+Q 87 | cal | Differentiation & Applications
+Passage: Consider the following for the next three (03) items that follow:
+Let f(x) = |ln x|, x ≠ 1
+
+What is the derivative of f(x) at x = 2?
+(1) −1/2
+(2) −1
+(3) 1/2
+(4) 2
+= 3
+~ For x > 1, f(x) = ln x, so f′(2) = 1/2.
+
+Q 88 | cal | Differentiation & Applications
+Passage: Consider the following for the next three (03) items that follow:
+Let f(x) = |ln x|, x ≠ 1
+
+What is the derivative of f∘f(x), where 1 < x < 2?
+(1) 1/ln x
+(2) 1/(x ln x)
+(3) −1/ln x
+(4) −1/(x ln x)
+= 4
+~ For 1 < x < 2, 0 < ln x < ln 2 < 1, so f(x) = ln x and f(f(x)) = |ln(ln x)| = −ln(ln x). Its derivative is −1/(x ln x).
+
+Q 89 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the next two (02) items that follow:
+Let f(x) = { x + 6, x ≤ 1; px + q, 1 < x < 2; 5x, x ≥ 2 } and f(x) is continuous
+
+What is the value of p?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 2
+~ Continuity at x = 1: p + q = 7; at x = 2: 2p + q = 10. Subtracting gives p = 3.
+
+Q 90 | cal | Limits, Continuity & Differentiability
+Passage: Consider the following for the next two (02) items that follow:
+Let f(x) = { x + 6, x ≤ 1; px + q, 1 < x < 2; 5x, x ≥ 2 } and f(x) is continuous
+
+What is the value of q?
+(1) 2
+(2) 3
+(3) 4
+(4) 5
+= 3
+~ From p + q = 7 and p = 3, q = 4.
+
+Q 91 | cal | Differentiation & Applications
+Consider the following statements:
+1. f(x) = ln x is increasing in (0, ∞)
+2. g(x) = eˣ + e^(1/x) is decreasing in (0, ∞)
+Which of the statements given above is/are correct?
+(1) 1 only
+(2) 2 only
+(3) Both 1 and 2
+(4) Neither 1 nor 2
+= 1
+~ f′(x) = 1/x > 0 on (0, ∞), so 1 is true. g′(x) = eˣ − e^(1/x)/x² is negative for x < 1 but positive for x > 1 (g′(2) ≈ 6·98), so g is not decreasing throughout; 2 is false.
+
+Q 92 | cal | Differentiation & Applications
+What is the derivative of sin²x with respect to cos²x?
+(1) −1
+(2) 1
+(3) sin2x
+(4) cos2x
+= 1
+~ d(sin²x)/dx = 2 sin x cos x and d(cos²x)/dx = −2 sin x cos x, so the ratio is −1 (indeed sin²x = 1 − cos²x).
+
+Q 93 | cal | Integration & Area
+For what value of m with m < 0, is the area bounded by the lines y = x, y = mx and x = 2 equal to 3?
+(1) −1/2
+(2) −1
+(3) −3/2
+(4) −2
+= 1
+~ The region is a triangle with vertices (0, 0), (2, 2) and (2, 2m); area = ½ × 2 × (2 − 2m) = 2 − 2m. Setting 2 − 2m = 3 gives m = −1/2.
+
+Q 94 | cal | Differentiation & Applications
+What is the derivative of cosec(x°)?
+(1) −cosec(x°) cot(x°)
+(2) −(π/180) cosec(x°) cot(x°)
+(3) (π/180) cosec(x°) cot(x°)
+(4) −(π/180) cosec(x) cot(x)
+= 2
+~ x° = πx/180 radians, so by the chain rule d/dx cosec(πx/180) = −(π/180) cosec(x°) cot(x°). Option (4) wrongly uses x radians.
+
+Q 95 | cal | Differential Equations
+A solution of the differential equation (dy/dx)² − x(dy/dx) = 0 is
+(1) y = 2x
+(2) y = 2x + 4
+(3) y = x² − 1
+(4) y = (x² − 2)/2
+= 4
+~ The equation factors as y′(y′ − x) = 0, so y′ = 0 or y′ = x, i.e. y = c or y = x²/2 + c. y = (x² − 2)/2 = x²/2 − 1 is of this form; the others give y′ = 2 or 2x.
+
+Q 96 | alg | Sets, Relations & Functions
+If f(x) = x² + 2 and g(x) = 2x − 3, then what is (fg)(1) equal to?
+(1) 3
+(2) 1
+(3) −2
+(4) −3
+= 4
+~ (fg)(1) = f(1)·g(1) = (1 + 2)(2 − 3) = 3 × (−1) = −3.
+
+Q 97 | alg | Sets, Relations & Functions
+What is the range of the function f(x) = x + |x| if the domain is the set of real numbers?
+(1) (0, ∞)
+(2) [0, ∞)
+(3) (−∞, ∞)
+(4) [1, ∞)
+= 2
+~ f(x) = 2x for x ≥ 0 and 0 for x < 0, so it takes the value 0 and every positive value: range [0, ∞).
+
+Q 98 | trg | Ratios & Identities
+If f(x) = x(4x² − 3), then what is f(sinθ) equal to?
+(1) −sin3θ
+(2) −cos3θ
+(3) sin3θ
+(4) −sin4θ
+= 1
+~ f(sinθ) = 4sin³θ − 3sinθ = −(3sinθ − 4sin³θ) = −sin3θ.
+
+Q 99 | cal | Limits, Continuity & Differentiability
+What is lim(x→5) (5 − x)/|x − 5| equal to?
+(1) −1
+(2) 0
+(3) 1
+(4) Limit does not exist
+= 4
+~ For x < 5 the expression equals 1, for x > 5 it equals −1. The left and right limits differ (1 and −1), so the limit does not exist.
+
+Q 100 | cal | Limits, Continuity & Differentiability
+What is lim(x→1) (x⁹ − 1)/(x³ − 1) equal to?
+(1) −1
+(2) −3
+(3) 3
+(4) Limit does not exist
+= 3
+~ (x⁹ − 1)/(x³ − 1) = x⁶ + x³ + 1, which tends to 3 as x → 1 (or by L'Hôpital: 9x⁸/3x² → 3).
+
+Q 101 | sp | Statistics
+The mean and variance of five observations are 14 and 13·2 respectively. Three of the five observations are 11, 16 and 20. What are the other two observations?
+(1) 8 and 15
+(2) 9 and 14
+(3) 10 and 13
+(4) 11 and 12
+= 3
+~ Sum = 70, so the other two add to 23. Σx² = 5(13·2 + 14²) = 1046, and 121 + 256 + 400 = 777, so their squares add to 269 = 10² + 13². Check: 11, 16, 20, 10, 13 has mean 14 and variance 13·2.
+
+Q 102 | sp | Probability
+Let A and B be two independent events such that P(A̅) = 0·7, P(B̅) = k, P(A∪B) = 0·8. What is the value of k?
+(1) 5/7
+(2) 4/7
+(3) 2/7
+(4) 1/7
+= 3
+~ For independent events, P(A̅∩B̅) = P(A̅)P(B̅) = 1 − P(A∪B), so 0·7k = 0·2 and k = 2/7.
+
+Q 103 | sp | Probability
+A biased coin with the probability of getting head equal to 1/4 is tossed five times. What is the probability of getting tail in all the first four tosses followed by head?
+(1) 81/512
+(2) 81/1024
+(3) 81/256
+(4) 27/1024
+= 2
+~ P(tail) = 3/4, so P(TTTTH) = (3/4)⁴ × (1/4) = 81/1024.
+
+Q 104 | sp | Probability
+A coin is biased so that heads comes up thrice as likely as tails. In four independent tosses of the coin, what is probability of getting exactly three heads?
+(1) 81/256
+(2) 27/64
+(3) 27/256
+(4) 9/256
+= 2
+~ P(H) = 3/4, P(T) = 1/4. P(exactly 3 heads) = ⁴C₃(3/4)³(1/4) = 4 × 27/256 = 108/256 = 27/64.
+
+Q 105 | sp | Probability
+Let X and Y be two random variables such that X + Y = 100. If X follows Binomial distribution with parameters n = 100 and p = 4/5, what is the variance of Y?
+(1) 1
+(2) 1/2
+(3) 16
+(4) 1/16
+= 3
+~ Y = 100 − X, so Var(Y) = Var(X) = npq = 100 × 4/5 × 1/5 = 16.
+
+Q 106 | sp | Statistics
+If two lines of regression are x + 4y + 1 = 0 and 4x + 9y + 7 = 0, then what is the value of x when y = −3?
+(1) −13
+(2) −5
+(3) 5
+(4) 7
+= 3
+~ Taking x + 4y + 1 = 0 as y on x (b_yx = −1/4) and 4x + 9y + 7 = 0 as x on y (b_xy = −9/4) gives r² = 9/16 ≤ 1 (the other choice gives 16/9 > 1, impossible). So x = (−9y − 7)/4 = (27 − 7)/4 = 5 at y = −3.
+
+Q 107 | sp | Statistics
+The central angles p, q, r and s (in degrees) of four sectors in a Pie Chart satisfy the relation 9p = 3q = 2r = 6s. What is the value of 4p − q?
+(1) 12
+(2) 24
+(3) 30
+(4) 36
+= 4
+~ Let each equal k: p = k/9, q = k/3, r = k/2, s = k/6, and p + q + r + s = 10k/9 = 360°, so k = 324. Then p = 36, q = 108 and 4p − q = 144 − 108 = 36.
+
+Q 108 | sp | Statistics
+The observations 4, 1, 4, 3, 6, 2, 1, 3, 4, 5, 1, 6 are outputs of 12 dices thrown simultaneously. If m and M are means of lowest 8 observations and highest 4 observations respectively, then what is (2m + M) equal to?
+(1) 10
+(2) 12
+(3) 17
+(4) 21
+= 1
+~ Sorted: 1, 1, 1, 2, 3, 3, 4, 4 | 4, 5, 6, 6. m = 19/8 and M = 21/4, so 2m + M = 19/4 + 21/4 = 10.
+
+Q 109 | sp | Statistics
+A bivariate data set contains only two points (−1, 1) and (3, 2). What will be the line of regression of y on x?
+(1) x − 4y + 5 = 0
+(2) 3x + 2y − 1 = 0
+(3) x + 4y + 1 = 0
+(4) 5x − 4y + 1 = 0
+= 1
+~ With two points the regression line passes through both: slope = (2 − 1)/(3 + 1) = 1/4, so y − 1 = (x + 1)/4, i.e. x − 4y + 5 = 0.
+
+Q 110 | sp | Statistics
+A die is thrown 10 times and obtained the following outputs:
+1, 2, 1, 1, 2, 1, 4, 6, 5, 4
+What will be the mode of data so obtained?
+(1) 6
+(2) 4
+(3) 2
+(4) 1
+= 4
+~ 1 occurs four times, more than any other value (2 and 4 occur twice each), so the mode is 1.
+
+Q 111 | sp | Statistics
+Consider the following frequency distribution:
+x: 1, 2, 3, 5
+f: 4, 6, 9, 7
+What is the value of median of the distribution?
+(1) 1
+(2) 2
+(3) 3
+(4) 3·5
+= 3
+~ N = 26, so the median is the average of the 13th and 14th values. Cumulative frequencies are 4, 10, 19, 26, so both lie in x = 3; median = 3.
+
+Q 112 | sp | Statistics
+For data −1, 1, 4, 3, 8, 12, 17, 19, 9, 11; if M is the median of first 5 observations and N is the median of last five observations, then what is the value of 4M − N?
+(1) 7
+(2) 4
+(3) 1
+(4) 0
+= 4
+~ First five sorted: −1, 1, 3, 4, 8, so M = 3. Last five sorted: 9, 11, 12, 17, 19, so N = 12. 4M − N = 12 − 12 = 0.
+
+Q 113 | sp | Statistics
+Let P, Q, R represent mean, median and mode. If for some distribution 5P = 4Q = R/2, then what is (P + Q)/(2P + 0·7R) equal to?
+(1) 1/12
+(2) 1/7
+(3) 2/9
+(4) 1/4
+= 4
+~ Let each equal k: P = k/5, Q = k/4, R = 2k. Then (P + Q)/(2P + 0·7R) = (0·45k)/(0·4k + 1·4k) = 0·45/1·8 = 1/4.
+
+Q 114 | sp | Statistics
+If G is the geometric mean of numbers 1, 2, 2², 2³, . . . , 2ⁿ⁻¹, then what is the value of 1 + 2log₂G?
+(1) 1
+(2) 4
+(3) n − 1
+(4) n
+= 4
+~ The product is 2^(0 + 1 + … + (n − 1)) = 2^(n(n − 1)/2), so G = 2^((n − 1)/2) and 1 + 2log₂G = 1 + (n − 1) = n.
+
+Q 115 | sp | Statistics
+If H is the harmonic mean of numbers 1, 2, 2², 2³, . . . , 2ⁿ⁻¹, then what is n/H equal to?
+(1) 2 − 1/2ⁿ⁺¹
+(2) 2 − 1/2ⁿ⁻¹
+(3) 2 + 1/2ⁿ⁻¹
+(4) 2 − 1/2ⁿ
+= 2
+~ H = n/Σ(1/xᵢ), so n/H = 1 + 1/2 + 1/4 + … + 1/2ⁿ⁻¹ = (1 − (1/2)ⁿ)/(1 − 1/2) = 2 − 1/2ⁿ⁻¹.
+
+Q 116 | sp | Statistics
+Let P be the median, Q be the mean and R be the mode of observations x₁, x₂, x₃, . . . xₙ. Let S = Σᵢ₌₁ⁿ (2xᵢ − a)². S takes minimum value, when a is equal to
+(1) P
+(2) Q/2
+(3) 2Q
+(4) R
+= 3
+~ dS/da = −2Σ(2xᵢ − a) = 0 gives a = 2Σxᵢ/n = 2Q (sum of squared deviations is least about the mean of the values 2xᵢ, which is 2Q).
+
+Q 118 | sp | Probability
+Three dice are thrown. What is the probability that each face shows only multiples of 3?
+(1) 1/9
+(2) 1/18
+(3) 1/27
+(4) 1/3
+= 3
+~ On one die only 3 and 6 are multiples of 3, so the probability is 2/6 = 1/3 per die; for three independent dice it is (1/3)³ = 1/27.
+
+Q 119 | sp | Probability
+What is the probability that the month of December has 5 Sundays?
+(1) 1
+(2) 1/4
+(3) 3/7
+(4) 2/7
+= 3
+~ December has 31 days = 4 full weeks + 3 extra consecutive days. There are 7 equally likely sets of 3 consecutive days, and 3 of them contain a Sunday, so the probability is 3/7.
+
+Q 120 | sp | Probability
+A natural number n is chosen from the first 50 natural numbers. What is the probability that n + 50/n < 50?
+(1) 23/25
+(2) 47/50
+(3) 24/25
+(4) 49/50
+= 2
+~ n + 50/n < 50 ⇔ n² − 50n + 50 < 0 ⇔ 25 − √575 < n < 25 + √575, i.e. 1·02 < n < 48·98. So n = 2, 3, …, 48: 47 values, giving 47/50.

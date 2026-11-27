@@ -258,6 +258,44 @@ NEW = {
       ('Is there negative marking in UPSC CDS?', 'Yes, one-third of the question\'s marks for each wrong answer, in all three papers.'),
       ('Can women apply for UPSC CDS?', 'Yes, for the Officers\' Training Academy (OTA), and they pay no fee.'),
     ]),
+  'upsc-nda-2027-notification.html': dict(
+    exam='upsc-nda', board='UPSC', site='upsc.gov.in', crumb='NDA & NA (I) 2027 Notification',
+    title='UPSC NDA & NA (I) 2027 Notification (2 December 2026), Exam Date 11 April 2027, Age Limit, Pattern & Previous Papers | Learn with Anil',
+    desc='UPSC NDA & NA (I) 2027: notification scheduled for 2 December 2026, apply by 22 December, exam on Sunday 11 April 2027 with CDS (I) (UPSC Calendar 2027). '
+         'Eligibility, fee, the Maths and GAT pattern with negative marking, NDA (I) 2026 vacancies (394) and NDA previous year papers with answers.',
+    h1='UPSC NDA & NA (I) 2027: exam on Sunday, 11 April 2027',
+    lede='UPSC\'s Calendar 2027 schedules the National Defence Academy and Naval Academy Examination (I) 2027 for Sunday, 11 April 2027, the same day as CDS (I) 2027. '
+         'The notification is due on 2 December 2026, with applications until 22 December 2026. NDA & NA (II) 2027 follows on 19 September 2027. Below: the dates, '
+         'eligibility, the pattern, the 2026 vacancies and the NDA previous papers.',
+    hi='UPSC NDA और NA (I) 2027 परीक्षा: रविवार, 11 अप्रैल 2027। अधिसूचना 2 दिसंबर 2026 को, आवेदन 22 दिसंबर 2026 तक (UPSC कैलेंडर 2027)।',
+    pdf=UPSC_CAL, pdfname='UPSC Calendar of Examinations / Recruitment Tests 2027 (issued May 2026)',
+    more_src=[('https://www.businesstoday.in/education/exams/story/upsc-cse-2027-schedule-out-commission-releases-full-calendar-for-the-year-check-here-532625-2026-05-21', 'Business Today, UPSC 2027 calendar'),
+              ('https://www.freepressjournal.in/education/upsc-releases-nda-na-i-2026-notification-for-394-posts-at-upsconlinenicin-check-details-here', 'Free Press Journal, NDA & NA (I) 2026 (394 vacancies)')],
+    related=['upsc-cds-2027-notification.html', 'upsc-capf-2027-notification.html'],
+    sections=[
+      ('Important dates (UPSC Calendar 2027)', 'table', [
+        ('Notification', '2 December 2026 (scheduled)'), ('Last date to apply', '22 December 2026'), ('Written examination', 'Sunday, 11 April 2027'),
+        ('NDA & NA (II) 2027', 'Notification 12 May 2027; exam 19 September 2027'), ('Apply at', 'upsconline.gov.in')]),
+      ('NDA & NA (I) 2026 for reference', 'table', [
+        ('Notification', '10 December 2025'), ('Written examination', '12 April 2026'),
+        ('Vacancies', '394: Army 208, Navy 42, Air Force 120 (Flying 92, Ground Duties Tech 18, Non-Tech 10), Naval Academy 10+2 Cadet Entry 24')]),
+      ('Who can apply (2026 rules; the 2027 notification will confirm)', 'list', [
+        'Unmarried men and women, aged about 16½ to 19½ (the exact birth-date window is given in each notification).',
+        'Army wing: Class 12 pass or appearing. Navy, Air Force and the Naval Academy 10+2 Cadet Entry: Class 12 with Physics, Chemistry and Mathematics.',
+        'Fee ₹100; women, SC and ST candidates and wards of JCOs/NCOs/ORs pay nothing.']),
+      ('Exam pattern', 'table+', (['Paper', 'Questions · marks', 'Time'], [
+        ('Mathematics', '120 · 300', '2½ hours'), ('General Ability Test (Part A English 50 Q, Part B General Knowledge 100 Q)', '150 · 600', '2½ hours'),
+        ('SSB interview', '900', '—')])),
+      ('', 'note', 'Negative marking: one-third of the marks of a question for each wrong answer, in both papers.'),
+    ],
+    faqs=[
+      ('Is the UPSC NDA (I) 2027 notification out?', 'Not as of 27 November 2026. It is scheduled for 2 December 2026 in UPSC\'s Calendar 2027.'),
+      ('When is the UPSC NDA (I) 2027 exam?', 'Sunday, 11 April 2027, the same day as CDS (I) 2027.'),
+      ('What is the last date to apply for NDA (I) 2027?', '22 December 2026 as per the calendar.'),
+      ('How many vacancies are there in NDA (I) 2027?', 'Not announced yet. NDA & NA (I) 2026 had 394: Army 208, Navy 42, Air Force 120 and Naval Academy 24.'),
+      ('Is there negative marking in UPSC NDA?', 'Yes, one-third of the question\'s marks for each wrong answer, in Mathematics and the General Ability Test.'),
+      ('Can girls apply for UPSC NDA?', 'Yes. Unmarried women are eligible for all wings, and they pay no fee.'),
+    ]),
   'upsc-epfo-apfc-2026-notification.html': dict(
     exam='upsc-epfo', board='UPSC', site='upsc.gov.in', crumb='EPFO APFC 2026',
     title='UPSC EPFO APFC 2026: Exam on 20 December, 80 Posts, Admit Card, Pattern – and Is the EO/AO Notification Out? | Learn with Anil',
